@@ -1,0 +1,1670 @@
+{
+  "screenshotDir": "E:/Cyber Range Material/githubrepo/cybersecurity-portfolio-v2/codex/screenshots/phase-0-all-pages",
+  "pages": [
+    {
+      "page": "Home",
+      "path": "/",
+      "desktop": {
+        "articleCount": 4,
+        "buttonLikeCount": 17,
+        "document": {
+          "clientHeight": 1270,
+          "clientWidth": 1421,
+          "scrollHeight": 3325,
+          "scrollWidth": 1421
+        },
+        "headings": [
+          {
+            "tag": "h1",
+            "text": "Bryan Miller"
+          },
+          {
+            "tag": "h2",
+            "text": "Security work snapshot"
+          },
+          {
+            "tag": "h2",
+            "text": "Risk Reduction and Security Operations experience"
+          },
+          {
+            "tag": "h3",
+            "text": "Vulnerability Reduction Metrics"
+          },
+          {
+            "tag": "h3",
+            "text": "Education"
+          },
+          {
+            "tag": "h3",
+            "text": "Certificates"
+          },
+          {
+            "tag": "h3",
+            "text": "Experience"
+          },
+          {
+            "tag": "h3",
+            "text": "Vulnerability Reduction Metrics"
+          },
+          {
+            "tag": "h2",
+            "text": "Cybersecurity work organized for hiring review"
+          },
+          {
+            "tag": "h2",
+            "text": "Vulnerability Management Program Implementation"
+          },
+          {
+            "tag": "h2",
+            "text": "DISA STIG Remediation Project"
+          },
+          {
+            "tag": "h2",
+            "text": "Password Spray Threat Hunt: RDP Compromise Investigation"
+          },
+          {
+            "tag": "h2",
+            "text": "The Buyer / Akira Ransomware Threat Hunt"
+          }
+        ],
+        "links": [
+          {
+            "href": "/",
+            "text": "Bryan MillerVulnerability Management & Cybersecurity Analyst"
+          },
+          {
+            "href": "/",
+            "text": "Home"
+          },
+          {
+            "href": "/about",
+            "text": "About"
+          },
+          {
+            "href": "/resume",
+            "text": "Resume"
+          },
+          {
+            "href": "/projects",
+            "text": "Projects"
+          },
+          {
+            "href": "/skills",
+            "text": "Skills"
+          },
+          {
+            "href": "/contact",
+            "text": "Contact"
+          },
+          {
+            "href": "/projects",
+            "text": "View Projects"
+          },
+          {
+            "href": "/resume/Bryan_Miller_Resume.pdf",
+            "text": "Download Resume"
+          },
+          {
+            "href": "https://github.com/bryanpmiller",
+            "text": "View GitHub"
+          },
+          {
+            "href": "/projects/vulnerability-management-program",
+            "text": "View case study"
+          },
+          {
+            "href": "/projects/disa-stig-remediation",
+            "text": "View case study"
+          },
+          {
+            "href": "/projects/password-spray-threat-hunt",
+            "text": "View case study"
+          },
+          {
+            "href": "/projects/akira-ransomware-threat-hunt",
+            "text": "View case study"
+          },
+          {
+            "href": "https://github.com/bryanpmiller",
+            "text": "GitHub"
+          },
+          {
+            "href": "https://linkedin.com/in/bryan-p-miller",
+            "text": "LinkedIn"
+          },
+          {
+            "href": "/resume/Bryan_Miller_Resume.pdf",
+            "text": "Resume PDF"
+          }
+        ],
+        "navLinks": [
+          "Bryan MillerVulnerability Management & Cybersecurity Analyst",
+          "Home",
+          "About",
+          "Resume",
+          "Projects",
+          "Skills",
+          "Contact"
+        ],
+        "overflowCandidates": [
+          {
+            "className": "page-depth mx-auto w-full max-w-6xl px-5 py-12 sm:px-6 lg:px-8 lg:py-16",
+            "clientWidth": 1152,
+            "scrollWidth": 1200,
+            "tag": "main",
+            "text": "Vulnerability Management & Cybersecurity AnalystBryan MillerI help reduce security risk through vulnerability management"
+          },
+          {
+            "className": "block truncate",
+            "clientWidth": 66,
+            "scrollWidth": 81,
+            "tag": "span",
+            "text": "159.26.106.84"
+          },
+          {
+            "className": "block truncate",
+            "clientWidth": 89,
+            "scrollWidth": 94,
+            "tag": "span",
+            "text": "slflarewinsysmo"
+          }
+        ],
+        "sectionCount": 4,
+        "title": "Bryan Miller | Cybersecurity Portfolio",
+        "url": "http://localhost:3000/",
+        "viewport": {
+          "height": 1270,
+          "width": 1436
+        },
+        "screenshots": {
+          "viewport": "E:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-0-all-pages\\home-desktop-viewport.png",
+          "fullPage": "E:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-0-all-pages\\home-desktop-fullpage.png"
+        },
+        "mode": "desktop",
+        "page": "Home"
+      },
+      "mobile": {
+        "articleCount": 4,
+        "buttonLikeCount": 17,
+        "document": {
+          "clientHeight": 844,
+          "clientWidth": 375,
+          "scrollHeight": 6693,
+          "scrollWidth": 503
+        },
+        "headings": [
+          {
+            "tag": "h1",
+            "text": "Bryan Miller"
+          },
+          {
+            "tag": "h2",
+            "text": "Security work snapshot"
+          },
+          {
+            "tag": "h2",
+            "text": "Risk Reduction and Security Operations experience"
+          },
+          {
+            "tag": "h3",
+            "text": "Vulnerability Reduction Metrics"
+          },
+          {
+            "tag": "h3",
+            "text": "Education"
+          },
+          {
+            "tag": "h3",
+            "text": "Certificates"
+          },
+          {
+            "tag": "h3",
+            "text": "Experience"
+          },
+          {
+            "tag": "h3",
+            "text": "Vulnerability Reduction Metrics"
+          },
+          {
+            "tag": "h2",
+            "text": "Cybersecurity work organized for hiring review"
+          },
+          {
+            "tag": "h2",
+            "text": "Vulnerability Management Program Implementation"
+          },
+          {
+            "tag": "h2",
+            "text": "DISA STIG Remediation Project"
+          },
+          {
+            "tag": "h2",
+            "text": "Password Spray Threat Hunt: RDP Compromise Investigation"
+          },
+          {
+            "tag": "h2",
+            "text": "The Buyer / Akira Ransomware Threat Hunt"
+          }
+        ],
+        "links": [
+          {
+            "href": "/",
+            "text": "Bryan MillerVulnerability Management & Cybersecurity Analyst"
+          },
+          {
+            "href": "/",
+            "text": "Home"
+          },
+          {
+            "href": "/about",
+            "text": "About"
+          },
+          {
+            "href": "/resume",
+            "text": "Resume"
+          },
+          {
+            "href": "/projects",
+            "text": "Projects"
+          },
+          {
+            "href": "/skills",
+            "text": "Skills"
+          },
+          {
+            "href": "/contact",
+            "text": "Contact"
+          },
+          {
+            "href": "/projects",
+            "text": "View Projects"
+          },
+          {
+            "href": "/resume/Bryan_Miller_Resume.pdf",
+            "text": "Download Resume"
+          },
+          {
+            "href": "https://github.com/bryanpmiller",
+            "text": "View GitHub"
+          },
+          {
+            "href": "/projects/vulnerability-management-program",
+            "text": "View case study"
+          },
+          {
+            "href": "/projects/disa-stig-remediation",
+            "text": "View case study"
+          },
+          {
+            "href": "/projects/password-spray-threat-hunt",
+            "text": "View case study"
+          },
+          {
+            "href": "/projects/akira-ransomware-threat-hunt",
+            "text": "View case study"
+          },
+          {
+            "href": "https://github.com/bryanpmiller",
+            "text": "GitHub"
+          },
+          {
+            "href": "https://linkedin.com/in/bryan-p-miller",
+            "text": "LinkedIn"
+          },
+          {
+            "href": "/resume/Bryan_Miller_Resume.pdf",
+            "text": "Resume PDF"
+          }
+        ],
+        "navLinks": [
+          "Bryan MillerVulnerability Management & Cybersecurity Analyst",
+          "Home",
+          "About",
+          "Resume",
+          "Projects",
+          "Skills",
+          "Contact"
+        ],
+        "overflowCandidates": [
+          {
+            "className": "site-shell flex min-h-screen flex-col",
+            "clientWidth": 375,
+            "scrollWidth": 503,
+            "tag": "div",
+            "text": "Bryan MillerVulnerability Management & Cybersecurity AnalystHomeAboutResumeProjectsSkillsContactVulnerability Management"
+          },
+          {
+            "className": "flex-1",
+            "clientWidth": 375,
+            "scrollWidth": 503,
+            "tag": "div",
+            "text": "Vulnerability Management & Cybersecurity AnalystBryan MillerI help reduce security risk through vulnerability management"
+          },
+          {
+            "className": "page-depth mx-auto w-full max-w-6xl px-5 py-12 sm:px-6 lg:px-8 lg:py-16",
+            "clientWidth": 375,
+            "scrollWidth": 503,
+            "tag": "main",
+            "text": "Vulnerability Management & Cybersecurity AnalystBryan MillerI help reduce security risk through vulnerability management"
+          },
+          {
+            "className": "mt-16",
+            "clientWidth": 335,
+            "scrollWidth": 483,
+            "tag": "section",
+            "text": "Featured ProjectsCybersecurity work organized for hiring reviewEvidence-backed case studies covering vulnerability manag"
+          },
+          {
+            "className": "mt-8 grid gap-6 md:grid-cols-2",
+            "clientWidth": 335,
+            "scrollWidth": 483,
+            "tag": "div",
+            "text": "Scan Summary32 -> 4Critical100%High92%Medium88%Vulnerability Management AnalystVulnerability Management Program Implemen"
+          },
+          {
+            "className": "block truncate",
+            "clientWidth": 53,
+            "scrollWidth": 81,
+            "tag": "span",
+            "text": "159.26.106.84"
+          },
+          {
+            "className": "block truncate",
+            "clientWidth": 77,
+            "scrollWidth": 94,
+            "tag": "span",
+            "text": "slflarewinsysmo"
+          }
+        ],
+        "sectionCount": 4,
+        "title": "Bryan Miller | Cybersecurity Portfolio",
+        "url": "http://localhost:3000/",
+        "viewport": {
+          "height": 844,
+          "width": 390
+        },
+        "screenshots": {
+          "viewport": "E:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-0-all-pages\\home-mobile-viewport.png",
+          "fullPage": "E:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-0-all-pages\\home-mobile-fullpage.png"
+        },
+        "mode": "mobile",
+        "page": "Home"
+      }
+    },
+    {
+      "page": "About",
+      "path": "/about",
+      "desktop": {
+        "articleCount": 0,
+        "buttonLikeCount": 10,
+        "document": {
+          "clientHeight": 1270,
+          "clientWidth": 1421,
+          "scrollHeight": 1297,
+          "scrollWidth": 1421
+        },
+        "headings": [
+          {
+            "tag": "h1",
+            "text": "Professional summary"
+          },
+          {
+            "tag": "h2",
+            "text": "Cybersecurity focus"
+          },
+          {
+            "tag": "h2",
+            "text": "Profile highlights"
+          },
+          {
+            "tag": "h3",
+            "text": "Education"
+          },
+          {
+            "tag": "h3",
+            "text": "Certificates"
+          },
+          {
+            "tag": "h3",
+            "text": "Experience"
+          },
+          {
+            "tag": "h3",
+            "text": "Vulnerability Reduction Metrics"
+          },
+          {
+            "tag": "h2",
+            "text": "Target roles"
+          }
+        ],
+        "links": [
+          {
+            "href": "/",
+            "text": "Bryan MillerVulnerability Management & Cybersecurity Analyst"
+          },
+          {
+            "href": "/",
+            "text": "Home"
+          },
+          {
+            "href": "/about",
+            "text": "About"
+          },
+          {
+            "href": "/resume",
+            "text": "Resume"
+          },
+          {
+            "href": "/projects",
+            "text": "Projects"
+          },
+          {
+            "href": "/skills",
+            "text": "Skills"
+          },
+          {
+            "href": "/contact",
+            "text": "Contact"
+          },
+          {
+            "href": "https://github.com/bryanpmiller",
+            "text": "GitHub"
+          },
+          {
+            "href": "https://linkedin.com/in/bryan-p-miller",
+            "text": "LinkedIn"
+          },
+          {
+            "href": "/resume/Bryan_Miller_Resume.pdf",
+            "text": "Resume PDF"
+          }
+        ],
+        "navLinks": [
+          "Bryan MillerVulnerability Management & Cybersecurity Analyst",
+          "Home",
+          "About",
+          "Resume",
+          "Projects",
+          "Skills",
+          "Contact"
+        ],
+        "overflowCandidates": [
+          {
+            "className": "page-depth mx-auto w-full max-w-6xl px-5 py-12 sm:px-6 lg:px-8 lg:py-16",
+            "clientWidth": 1152,
+            "scrollWidth": 1200,
+            "tag": "main",
+            "text": "AboutProfessional summaryCybersecurity Analyst focused on vulnerability management, secure configuration, remediation au"
+          }
+        ],
+        "sectionCount": 3,
+        "title": "About | Bryan Miller",
+        "url": "http://localhost:3000/about",
+        "viewport": {
+          "height": 1270,
+          "width": 1436
+        },
+        "screenshots": {
+          "viewport": "E:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-0-all-pages\\about-desktop-viewport.png",
+          "fullPage": "E:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-0-all-pages\\about-desktop-fullpage.png"
+        },
+        "mode": "desktop",
+        "page": "About"
+      },
+      "mobile": {
+        "articleCount": 0,
+        "buttonLikeCount": 10,
+        "document": {
+          "clientHeight": 844,
+          "clientWidth": 375,
+          "scrollHeight": 2396,
+          "scrollWidth": 375
+        },
+        "headings": [
+          {
+            "tag": "h1",
+            "text": "Professional summary"
+          },
+          {
+            "tag": "h2",
+            "text": "Cybersecurity focus"
+          },
+          {
+            "tag": "h2",
+            "text": "Profile highlights"
+          },
+          {
+            "tag": "h3",
+            "text": "Education"
+          },
+          {
+            "tag": "h3",
+            "text": "Certificates"
+          },
+          {
+            "tag": "h3",
+            "text": "Experience"
+          },
+          {
+            "tag": "h3",
+            "text": "Vulnerability Reduction Metrics"
+          },
+          {
+            "tag": "h2",
+            "text": "Target roles"
+          }
+        ],
+        "links": [
+          {
+            "href": "/",
+            "text": "Bryan MillerVulnerability Management & Cybersecurity Analyst"
+          },
+          {
+            "href": "/",
+            "text": "Home"
+          },
+          {
+            "href": "/about",
+            "text": "About"
+          },
+          {
+            "href": "/resume",
+            "text": "Resume"
+          },
+          {
+            "href": "/projects",
+            "text": "Projects"
+          },
+          {
+            "href": "/skills",
+            "text": "Skills"
+          },
+          {
+            "href": "/contact",
+            "text": "Contact"
+          },
+          {
+            "href": "https://github.com/bryanpmiller",
+            "text": "GitHub"
+          },
+          {
+            "href": "https://linkedin.com/in/bryan-p-miller",
+            "text": "LinkedIn"
+          },
+          {
+            "href": "/resume/Bryan_Miller_Resume.pdf",
+            "text": "Resume PDF"
+          }
+        ],
+        "navLinks": [
+          "Bryan MillerVulnerability Management & Cybersecurity Analyst",
+          "Home",
+          "About",
+          "Resume",
+          "Projects",
+          "Skills",
+          "Contact"
+        ],
+        "overflowCandidates": [
+          {
+            "className": "mt-8 grid gap-6 lg:grid-cols-[1.15fr_0.85fr]",
+            "clientWidth": 335,
+            "scrollWidth": 349,
+            "tag": "section",
+            "text": "Profile highlightsEducationNorwich University (NSA-Accredited College) Bachelor of Science in Cybersecurity Focus on: Co"
+          }
+        ],
+        "sectionCount": 3,
+        "title": "About | Bryan Miller",
+        "url": "http://localhost:3000/about",
+        "viewport": {
+          "height": 844,
+          "width": 390
+        },
+        "screenshots": {
+          "viewport": "E:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-0-all-pages\\about-mobile-viewport.png",
+          "fullPage": "E:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-0-all-pages\\about-mobile-fullpage.png"
+        },
+        "mode": "mobile",
+        "page": "About"
+      }
+    },
+    {
+      "page": "Resume",
+      "path": "/resume",
+      "desktop": {
+        "articleCount": 0,
+        "buttonLikeCount": 11,
+        "document": {
+          "clientHeight": 1270,
+          "clientWidth": 1421,
+          "scrollHeight": 1313,
+          "scrollWidth": 1421
+        },
+        "headings": [
+          {
+            "tag": "h1",
+            "text": "Resume Snapshot"
+          },
+          {
+            "tag": "h2",
+            "text": "Profile"
+          },
+          {
+            "tag": "h3",
+            "text": "Education"
+          },
+          {
+            "tag": "h3",
+            "text": "Certificates"
+          },
+          {
+            "tag": "h3",
+            "text": "Experience"
+          },
+          {
+            "tag": "h3",
+            "text": "Vulnerability Reduction Metrics"
+          },
+          {
+            "tag": "h2",
+            "text": "Skills Snapshot"
+          },
+          {
+            "tag": "h3",
+            "text": "Vulnerability Management"
+          },
+          {
+            "tag": "h3",
+            "text": "Security Operations"
+          },
+          {
+            "tag": "h3",
+            "text": "Secure Configuration / Compliance"
+          },
+          {
+            "tag": "h3",
+            "text": "Automation / Scripting"
+          }
+        ],
+        "links": [
+          {
+            "href": "/",
+            "text": "Bryan MillerVulnerability Management & Cybersecurity Analyst"
+          },
+          {
+            "href": "/",
+            "text": "Home"
+          },
+          {
+            "href": "/about",
+            "text": "About"
+          },
+          {
+            "href": "/resume",
+            "text": "Resume"
+          },
+          {
+            "href": "/projects",
+            "text": "Projects"
+          },
+          {
+            "href": "/skills",
+            "text": "Skills"
+          },
+          {
+            "href": "/contact",
+            "text": "Contact"
+          },
+          {
+            "href": "/resume/Bryan_Miller_Resume.pdf",
+            "text": "Download PDF"
+          },
+          {
+            "href": "https://github.com/bryanpmiller",
+            "text": "GitHub"
+          },
+          {
+            "href": "https://linkedin.com/in/bryan-p-miller",
+            "text": "LinkedIn"
+          },
+          {
+            "href": "/resume/Bryan_Miller_Resume.pdf",
+            "text": "Resume PDF"
+          }
+        ],
+        "navLinks": [
+          "Bryan MillerVulnerability Management & Cybersecurity Analyst",
+          "Home",
+          "About",
+          "Resume",
+          "Projects",
+          "Skills",
+          "Contact"
+        ],
+        "overflowCandidates": [
+          {
+            "className": "page-depth mx-auto w-full max-w-6xl px-5 py-12 sm:px-6 lg:px-8 lg:py-16",
+            "clientWidth": 1152,
+            "scrollWidth": 1200,
+            "tag": "main",
+            "text": "ResumeResume SnapshotA concise resume snapshot highlighting key qualifications, technical focus areas, and measurable se"
+          }
+        ],
+        "sectionCount": 2,
+        "title": "Resume | Bryan Miller",
+        "url": "http://localhost:3000/resume",
+        "viewport": {
+          "height": 1270,
+          "width": 1436
+        },
+        "screenshots": {
+          "viewport": "E:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-0-all-pages\\resume-desktop-viewport.png",
+          "fullPage": "E:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-0-all-pages\\resume-desktop-fullpage.png"
+        },
+        "mode": "desktop",
+        "page": "Resume"
+      },
+      "mobile": {
+        "articleCount": 0,
+        "buttonLikeCount": 11,
+        "document": {
+          "clientHeight": 844,
+          "clientWidth": 375,
+          "scrollHeight": 2373,
+          "scrollWidth": 375
+        },
+        "headings": [
+          {
+            "tag": "h1",
+            "text": "Resume Snapshot"
+          },
+          {
+            "tag": "h2",
+            "text": "Profile"
+          },
+          {
+            "tag": "h3",
+            "text": "Education"
+          },
+          {
+            "tag": "h3",
+            "text": "Certificates"
+          },
+          {
+            "tag": "h3",
+            "text": "Experience"
+          },
+          {
+            "tag": "h3",
+            "text": "Vulnerability Reduction Metrics"
+          },
+          {
+            "tag": "h2",
+            "text": "Skills Snapshot"
+          },
+          {
+            "tag": "h3",
+            "text": "Vulnerability Management"
+          },
+          {
+            "tag": "h3",
+            "text": "Security Operations"
+          },
+          {
+            "tag": "h3",
+            "text": "Secure Configuration / Compliance"
+          },
+          {
+            "tag": "h3",
+            "text": "Automation / Scripting"
+          }
+        ],
+        "links": [
+          {
+            "href": "/",
+            "text": "Bryan MillerVulnerability Management & Cybersecurity Analyst"
+          },
+          {
+            "href": "/",
+            "text": "Home"
+          },
+          {
+            "href": "/about",
+            "text": "About"
+          },
+          {
+            "href": "/resume",
+            "text": "Resume"
+          },
+          {
+            "href": "/projects",
+            "text": "Projects"
+          },
+          {
+            "href": "/skills",
+            "text": "Skills"
+          },
+          {
+            "href": "/contact",
+            "text": "Contact"
+          },
+          {
+            "href": "/resume/Bryan_Miller_Resume.pdf",
+            "text": "Download PDF"
+          },
+          {
+            "href": "https://github.com/bryanpmiller",
+            "text": "GitHub"
+          },
+          {
+            "href": "https://linkedin.com/in/bryan-p-miller",
+            "text": "LinkedIn"
+          },
+          {
+            "href": "/resume/Bryan_Miller_Resume.pdf",
+            "text": "Resume PDF"
+          }
+        ],
+        "navLinks": [
+          "Bryan MillerVulnerability Management & Cybersecurity Analyst",
+          "Home",
+          "About",
+          "Resume",
+          "Projects",
+          "Skills",
+          "Contact"
+        ],
+        "overflowCandidates": [
+          {
+            "className": "mt-5 grid gap-5 md:grid-cols-2",
+            "clientWidth": 285,
+            "scrollWidth": 300,
+            "tag": "div",
+            "text": "EducationNorwich University (NSA-Accredited College) Bachelor of Science in Cybersecurity Focus on: Computer Forensics &"
+          }
+        ],
+        "sectionCount": 2,
+        "title": "Resume | Bryan Miller",
+        "url": "http://localhost:3000/resume",
+        "viewport": {
+          "height": 844,
+          "width": 390
+        },
+        "screenshots": {
+          "viewport": "E:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-0-all-pages\\resume-mobile-viewport.png",
+          "fullPage": "E:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-0-all-pages\\resume-mobile-fullpage.png"
+        },
+        "mode": "mobile",
+        "page": "Resume"
+      }
+    },
+    {
+      "page": "Projects",
+      "path": "/projects",
+      "desktop": {
+        "articleCount": 4,
+        "buttonLikeCount": 14,
+        "document": {
+          "clientHeight": 1270,
+          "clientWidth": 1421,
+          "scrollHeight": 1749,
+          "scrollWidth": 1421
+        },
+        "headings": [
+          {
+            "tag": "h1",
+            "text": "Case studies and evidence-based security work"
+          },
+          {
+            "tag": "h2",
+            "text": "Vulnerability Management Program Implementation"
+          },
+          {
+            "tag": "h2",
+            "text": "DISA STIG Remediation Project"
+          },
+          {
+            "tag": "h2",
+            "text": "Password Spray Threat Hunt: RDP Compromise Investigation"
+          },
+          {
+            "tag": "h2",
+            "text": "The Buyer / Akira Ransomware Threat Hunt"
+          }
+        ],
+        "links": [
+          {
+            "href": "/",
+            "text": "Bryan MillerVulnerability Management & Cybersecurity Analyst"
+          },
+          {
+            "href": "/",
+            "text": "Home"
+          },
+          {
+            "href": "/about",
+            "text": "About"
+          },
+          {
+            "href": "/resume",
+            "text": "Resume"
+          },
+          {
+            "href": "/projects",
+            "text": "Projects"
+          },
+          {
+            "href": "/skills",
+            "text": "Skills"
+          },
+          {
+            "href": "/contact",
+            "text": "Contact"
+          },
+          {
+            "href": "/projects/vulnerability-management-program",
+            "text": "View case study"
+          },
+          {
+            "href": "/projects/disa-stig-remediation",
+            "text": "View case study"
+          },
+          {
+            "href": "/projects/password-spray-threat-hunt",
+            "text": "View case study"
+          },
+          {
+            "href": "/projects/akira-ransomware-threat-hunt",
+            "text": "View case study"
+          },
+          {
+            "href": "https://github.com/bryanpmiller",
+            "text": "GitHub"
+          },
+          {
+            "href": "https://linkedin.com/in/bryan-p-miller",
+            "text": "LinkedIn"
+          },
+          {
+            "href": "/resume/Bryan_Miller_Resume.pdf",
+            "text": "Resume PDF"
+          }
+        ],
+        "navLinks": [
+          "Bryan MillerVulnerability Management & Cybersecurity Analyst",
+          "Home",
+          "About",
+          "Resume",
+          "Projects",
+          "Skills",
+          "Contact"
+        ],
+        "overflowCandidates": [
+          {
+            "className": "page-depth mx-auto w-full max-w-6xl px-5 py-12 sm:px-6 lg:px-8 lg:py-16",
+            "clientWidth": 1152,
+            "scrollWidth": 1200,
+            "tag": "main",
+            "text": "ProjectsCase studies and evidence-based security workA focused collection of cybersecurity projects showing vulnerabilit"
+          },
+          {
+            "className": "block truncate",
+            "clientWidth": 66,
+            "scrollWidth": 81,
+            "tag": "span",
+            "text": "159.26.106.84"
+          },
+          {
+            "className": "block truncate",
+            "clientWidth": 89,
+            "scrollWidth": 94,
+            "tag": "span",
+            "text": "slflarewinsysmo"
+          },
+          {
+            "className": "relative rounded border border-detection/30 bg-detection/10 px-2 py-3 text-center",
+            "clientWidth": 105,
+            "scrollWidth": 117,
+            "tag": "div",
+            "text": "AnyDesk"
+          },
+          {
+            "className": "relative rounded border border-detection/30 bg-detection/10 px-2 py-3 text-center",
+            "clientWidth": 105,
+            "scrollWidth": 117,
+            "tag": "div",
+            "text": "Staging"
+          },
+          {
+            "className": "relative rounded border border-detection/30 bg-detection/10 px-2 py-3 text-center",
+            "clientWidth": 105,
+            "scrollWidth": 117,
+            "tag": "div",
+            "text": "Evasion"
+          }
+        ],
+        "sectionCount": 1,
+        "title": "Projects | Bryan Miller",
+        "url": "http://localhost:3000/projects",
+        "viewport": {
+          "height": 1270,
+          "width": 1436
+        },
+        "screenshots": {
+          "viewport": "E:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-0-all-pages\\projects-desktop-viewport.png",
+          "fullPage": "E:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-0-all-pages\\projects-desktop-fullpage.png"
+        },
+        "mode": "desktop",
+        "page": "Projects"
+      },
+      "mobile": {
+        "articleCount": 4,
+        "buttonLikeCount": 14,
+        "document": {
+          "clientHeight": 844,
+          "clientWidth": 375,
+          "scrollHeight": 3268,
+          "scrollWidth": 503
+        },
+        "headings": [
+          {
+            "tag": "h1",
+            "text": "Case studies and evidence-based security work"
+          },
+          {
+            "tag": "h2",
+            "text": "Vulnerability Management Program Implementation"
+          },
+          {
+            "tag": "h2",
+            "text": "DISA STIG Remediation Project"
+          },
+          {
+            "tag": "h2",
+            "text": "Password Spray Threat Hunt: RDP Compromise Investigation"
+          },
+          {
+            "tag": "h2",
+            "text": "The Buyer / Akira Ransomware Threat Hunt"
+          }
+        ],
+        "links": [
+          {
+            "href": "/",
+            "text": "Bryan MillerVulnerability Management & Cybersecurity Analyst"
+          },
+          {
+            "href": "/",
+            "text": "Home"
+          },
+          {
+            "href": "/about",
+            "text": "About"
+          },
+          {
+            "href": "/resume",
+            "text": "Resume"
+          },
+          {
+            "href": "/projects",
+            "text": "Projects"
+          },
+          {
+            "href": "/skills",
+            "text": "Skills"
+          },
+          {
+            "href": "/contact",
+            "text": "Contact"
+          },
+          {
+            "href": "/projects/vulnerability-management-program",
+            "text": "View case study"
+          },
+          {
+            "href": "/projects/disa-stig-remediation",
+            "text": "View case study"
+          },
+          {
+            "href": "/projects/password-spray-threat-hunt",
+            "text": "View case study"
+          },
+          {
+            "href": "/projects/akira-ransomware-threat-hunt",
+            "text": "View case study"
+          },
+          {
+            "href": "https://github.com/bryanpmiller",
+            "text": "GitHub"
+          },
+          {
+            "href": "https://linkedin.com/in/bryan-p-miller",
+            "text": "LinkedIn"
+          },
+          {
+            "href": "/resume/Bryan_Miller_Resume.pdf",
+            "text": "Resume PDF"
+          }
+        ],
+        "navLinks": [
+          "Bryan MillerVulnerability Management & Cybersecurity Analyst",
+          "Home",
+          "About",
+          "Resume",
+          "Projects",
+          "Skills",
+          "Contact"
+        ],
+        "overflowCandidates": [
+          {
+            "className": "site-shell flex min-h-screen flex-col",
+            "clientWidth": 375,
+            "scrollWidth": 503,
+            "tag": "div",
+            "text": "Bryan MillerVulnerability Management & Cybersecurity AnalystHomeAboutResumeProjectsSkillsContactProjectsCase studies and"
+          },
+          {
+            "className": "flex-1",
+            "clientWidth": 375,
+            "scrollWidth": 503,
+            "tag": "div",
+            "text": "ProjectsCase studies and evidence-based security workA focused collection of cybersecurity projects showing vulnerabilit"
+          },
+          {
+            "className": "page-depth mx-auto w-full max-w-6xl px-5 py-12 sm:px-6 lg:px-8 lg:py-16",
+            "clientWidth": 375,
+            "scrollWidth": 503,
+            "tag": "main",
+            "text": "ProjectsCase studies and evidence-based security workA focused collection of cybersecurity projects showing vulnerabilit"
+          },
+          {
+            "className": "mt-10",
+            "clientWidth": 335,
+            "scrollWidth": 483,
+            "tag": "div",
+            "text": "Scan Summary32 -> 4Critical100%High92%Medium88%Vulnerability Management AnalystVulnerability Management Program Implemen"
+          },
+          {
+            "className": "",
+            "clientWidth": 335,
+            "scrollWidth": 483,
+            "tag": "section",
+            "text": "Scan Summary32 -> 4Critical100%High92%Medium88%Vulnerability Management AnalystVulnerability Management Program Implemen"
+          },
+          {
+            "className": "grid gap-6 md:grid-cols-2",
+            "clientWidth": 335,
+            "scrollWidth": 483,
+            "tag": "div",
+            "text": "Scan Summary32 -> 4Critical100%High92%Medium88%Vulnerability Management AnalystVulnerability Management Program Implemen"
+          },
+          {
+            "className": "block truncate",
+            "clientWidth": 53,
+            "scrollWidth": 81,
+            "tag": "span",
+            "text": "159.26.106.84"
+          },
+          {
+            "className": "block truncate",
+            "clientWidth": 77,
+            "scrollWidth": 94,
+            "tag": "span",
+            "text": "slflarewinsysmo"
+          }
+        ],
+        "sectionCount": 1,
+        "title": "Projects | Bryan Miller",
+        "url": "http://localhost:3000/projects",
+        "viewport": {
+          "height": 844,
+          "width": 390
+        },
+        "screenshots": {
+          "viewport": "E:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-0-all-pages\\projects-mobile-viewport.png",
+          "fullPage": "E:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-0-all-pages\\projects-mobile-fullpage.png"
+        },
+        "mode": "mobile",
+        "page": "Projects"
+      }
+    },
+    {
+      "page": "Skills",
+      "path": "/skills",
+      "desktop": {
+        "articleCount": 0,
+        "buttonLikeCount": 10,
+        "document": {
+          "clientHeight": 1270,
+          "clientWidth": 1421,
+          "scrollHeight": 1419,
+          "scrollWidth": 1421
+        },
+        "headings": [
+          {
+            "tag": "h1",
+            "text": "Cybersecurity skills grouped by role relevance"
+          },
+          {
+            "tag": "h2",
+            "text": "Vulnerability Management"
+          },
+          {
+            "tag": "h2",
+            "text": "Security Operations"
+          },
+          {
+            "tag": "h2",
+            "text": "Secure Configuration / Compliance"
+          },
+          {
+            "tag": "h2",
+            "text": "Automation / Scripting"
+          },
+          {
+            "tag": "h2",
+            "text": "Cloud / Network"
+          }
+        ],
+        "links": [
+          {
+            "href": "/",
+            "text": "Bryan MillerVulnerability Management & Cybersecurity Analyst"
+          },
+          {
+            "href": "/",
+            "text": "Home"
+          },
+          {
+            "href": "/about",
+            "text": "About"
+          },
+          {
+            "href": "/resume",
+            "text": "Resume"
+          },
+          {
+            "href": "/projects",
+            "text": "Projects"
+          },
+          {
+            "href": "/skills",
+            "text": "Skills"
+          },
+          {
+            "href": "/contact",
+            "text": "Contact"
+          },
+          {
+            "href": "https://github.com/bryanpmiller",
+            "text": "GitHub"
+          },
+          {
+            "href": "https://linkedin.com/in/bryan-p-miller",
+            "text": "LinkedIn"
+          },
+          {
+            "href": "/resume/Bryan_Miller_Resume.pdf",
+            "text": "Resume PDF"
+          }
+        ],
+        "navLinks": [
+          "Bryan MillerVulnerability Management & Cybersecurity Analyst",
+          "Home",
+          "About",
+          "Resume",
+          "Projects",
+          "Skills",
+          "Contact"
+        ],
+        "overflowCandidates": [
+          {
+            "className": "page-depth mx-auto w-full max-w-6xl px-5 py-12 sm:px-6 lg:px-8 lg:py-16",
+            "clientWidth": 1152,
+            "scrollWidth": 1200,
+            "tag": "main",
+            "text": "SkillsCybersecurity skills grouped by role relevanceA role-focused view of the tools, frameworks, and technical skills u"
+          }
+        ],
+        "sectionCount": 6,
+        "title": "Skills | Bryan Miller",
+        "url": "http://localhost:3000/skills",
+        "viewport": {
+          "height": 1270,
+          "width": 1436
+        },
+        "screenshots": {
+          "viewport": "E:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-0-all-pages\\skills-desktop-viewport.png",
+          "fullPage": "E:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-0-all-pages\\skills-desktop-fullpage.png"
+        },
+        "mode": "desktop",
+        "page": "Skills"
+      },
+      "mobile": {
+        "articleCount": 0,
+        "buttonLikeCount": 10,
+        "document": {
+          "clientHeight": 844,
+          "clientWidth": 375,
+          "scrollHeight": 2221,
+          "scrollWidth": 375
+        },
+        "headings": [
+          {
+            "tag": "h1",
+            "text": "Cybersecurity skills grouped by role relevance"
+          },
+          {
+            "tag": "h2",
+            "text": "Vulnerability Management"
+          },
+          {
+            "tag": "h2",
+            "text": "Security Operations"
+          },
+          {
+            "tag": "h2",
+            "text": "Secure Configuration / Compliance"
+          },
+          {
+            "tag": "h2",
+            "text": "Automation / Scripting"
+          },
+          {
+            "tag": "h2",
+            "text": "Cloud / Network"
+          }
+        ],
+        "links": [
+          {
+            "href": "/",
+            "text": "Bryan MillerVulnerability Management & Cybersecurity Analyst"
+          },
+          {
+            "href": "/",
+            "text": "Home"
+          },
+          {
+            "href": "/about",
+            "text": "About"
+          },
+          {
+            "href": "/resume",
+            "text": "Resume"
+          },
+          {
+            "href": "/projects",
+            "text": "Projects"
+          },
+          {
+            "href": "/skills",
+            "text": "Skills"
+          },
+          {
+            "href": "/contact",
+            "text": "Contact"
+          },
+          {
+            "href": "https://github.com/bryanpmiller",
+            "text": "GitHub"
+          },
+          {
+            "href": "https://linkedin.com/in/bryan-p-miller",
+            "text": "LinkedIn"
+          },
+          {
+            "href": "/resume/Bryan_Miller_Resume.pdf",
+            "text": "Resume PDF"
+          }
+        ],
+        "navLinks": [
+          "Bryan MillerVulnerability Management & Cybersecurity Analyst",
+          "Home",
+          "About",
+          "Resume",
+          "Projects",
+          "Skills",
+          "Contact"
+        ],
+        "overflowCandidates": [],
+        "sectionCount": 6,
+        "title": "Skills | Bryan Miller",
+        "url": "http://localhost:3000/skills",
+        "viewport": {
+          "height": 844,
+          "width": 390
+        },
+        "screenshots": {
+          "viewport": "E:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-0-all-pages\\skills-mobile-viewport.png",
+          "fullPage": "E:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-0-all-pages\\skills-mobile-fullpage.png"
+        },
+        "mode": "mobile",
+        "page": "Skills"
+      }
+    },
+    {
+      "page": "Contact",
+      "path": "/contact",
+      "desktop": {
+        "articleCount": 0,
+        "buttonLikeCount": 13,
+        "document": {
+          "clientHeight": 1270,
+          "clientWidth": 1436,
+          "scrollHeight": 1270,
+          "scrollWidth": 1436
+        },
+        "headings": [
+          {
+            "tag": "h1",
+            "text": "Where to find me"
+          },
+          {
+            "tag": "h2",
+            "text": "LinkedIn"
+          },
+          {
+            "tag": "h2",
+            "text": "GitHub"
+          },
+          {
+            "tag": "h2",
+            "text": "Resume"
+          }
+        ],
+        "links": [
+          {
+            "href": "/",
+            "text": "Bryan MillerVulnerability Management & Cybersecurity Analyst"
+          },
+          {
+            "href": "/",
+            "text": "Home"
+          },
+          {
+            "href": "/about",
+            "text": "About"
+          },
+          {
+            "href": "/resume",
+            "text": "Resume"
+          },
+          {
+            "href": "/projects",
+            "text": "Projects"
+          },
+          {
+            "href": "/skills",
+            "text": "Skills"
+          },
+          {
+            "href": "/contact",
+            "text": "Contact"
+          },
+          {
+            "href": "https://linkedin.com/in/bryan-p-miller",
+            "text": "View LinkedIn"
+          },
+          {
+            "href": "https://github.com/bryanpmiller",
+            "text": "View GitHub"
+          },
+          {
+            "href": "/resume/Bryan_Miller_Resume.pdf",
+            "text": "Open Resume"
+          },
+          {
+            "href": "https://github.com/bryanpmiller",
+            "text": "GitHub"
+          },
+          {
+            "href": "https://linkedin.com/in/bryan-p-miller",
+            "text": "LinkedIn"
+          },
+          {
+            "href": "/resume/Bryan_Miller_Resume.pdf",
+            "text": "Resume PDF"
+          }
+        ],
+        "navLinks": [
+          "Bryan MillerVulnerability Management & Cybersecurity Analyst",
+          "Home",
+          "About",
+          "Resume",
+          "Projects",
+          "Skills",
+          "Contact"
+        ],
+        "overflowCandidates": [
+          {
+            "className": "page-depth mx-auto w-full max-w-6xl px-5 py-12 sm:px-6 lg:px-8 lg:py-16",
+            "clientWidth": 1152,
+            "scrollWidth": 1200,
+            "tag": "main",
+            "text": "ContactWhere to find meConnect through LinkedIn, review my GitHub project evidence, or open my resume for direct contact"
+          }
+        ],
+        "sectionCount": 1,
+        "title": "Contact | Bryan Miller",
+        "url": "http://localhost:3000/contact",
+        "viewport": {
+          "height": 1270,
+          "width": 1436
+        },
+        "screenshots": {
+          "viewport": "E:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-0-all-pages\\contact-desktop-viewport.png",
+          "fullPage": "E:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-0-all-pages\\contact-desktop-fullpage.png"
+        },
+        "mode": "desktop",
+        "page": "Contact"
+      },
+      "mobile": {
+        "articleCount": 0,
+        "buttonLikeCount": 13,
+        "document": {
+          "clientHeight": 844,
+          "clientWidth": 375,
+          "scrollHeight": 1272,
+          "scrollWidth": 375
+        },
+        "headings": [
+          {
+            "tag": "h1",
+            "text": "Where to find me"
+          },
+          {
+            "tag": "h2",
+            "text": "LinkedIn"
+          },
+          {
+            "tag": "h2",
+            "text": "GitHub"
+          },
+          {
+            "tag": "h2",
+            "text": "Resume"
+          }
+        ],
+        "links": [
+          {
+            "href": "/",
+            "text": "Bryan MillerVulnerability Management & Cybersecurity Analyst"
+          },
+          {
+            "href": "/",
+            "text": "Home"
+          },
+          {
+            "href": "/about",
+            "text": "About"
+          },
+          {
+            "href": "/resume",
+            "text": "Resume"
+          },
+          {
+            "href": "/projects",
+            "text": "Projects"
+          },
+          {
+            "href": "/skills",
+            "text": "Skills"
+          },
+          {
+            "href": "/contact",
+            "text": "Contact"
+          },
+          {
+            "href": "https://linkedin.com/in/bryan-p-miller",
+            "text": "View LinkedIn"
+          },
+          {
+            "href": "https://github.com/bryanpmiller",
+            "text": "View GitHub"
+          },
+          {
+            "href": "/resume/Bryan_Miller_Resume.pdf",
+            "text": "Open Resume"
+          },
+          {
+            "href": "https://github.com/bryanpmiller",
+            "text": "GitHub"
+          },
+          {
+            "href": "https://linkedin.com/in/bryan-p-miller",
+            "text": "LinkedIn"
+          },
+          {
+            "href": "/resume/Bryan_Miller_Resume.pdf",
+            "text": "Resume PDF"
+          }
+        ],
+        "navLinks": [
+          "Bryan MillerVulnerability Management & Cybersecurity Analyst",
+          "Home",
+          "About",
+          "Resume",
+          "Projects",
+          "Skills",
+          "Contact"
+        ],
+        "overflowCandidates": [],
+        "sectionCount": 1,
+        "title": "Contact | Bryan Miller",
+        "url": "http://localhost:3000/contact",
+        "viewport": {
+          "height": 844,
+          "width": 390
+        },
+        "screenshots": {
+          "viewport": "E:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-0-all-pages\\contact-mobile-viewport.png",
+          "fullPage": "E:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-0-all-pages\\contact-mobile-fullpage.png"
+        },
+        "mode": "mobile",
+        "page": "Contact"
+      }
+    }
+  ],
+  "consoleWarningsAndErrors": []
+}

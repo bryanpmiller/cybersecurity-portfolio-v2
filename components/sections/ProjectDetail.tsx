@@ -13,20 +13,20 @@ type ProjectDetailProps = {
 
 const projectVisualClasses: Record<string, string> = {
   "vulnerability-management-program":
-    "border-lineStrong bg-[linear-gradient(180deg,rgba(17,31,50,0.94)_0%,rgba(9,24,39,0.96)_100%)] before:bg-[linear-gradient(90deg,rgba(251,191,36,0.85)_0%,rgba(45,212,191,0.8)_52%,rgba(34,211,238,0.75)_100%)]",
+    "border-lineStrong bg-[linear-gradient(180deg,rgba(24,33,49,0.94)_0%,rgba(13,17,26,0.96)_100%)] before:bg-[linear-gradient(90deg,rgba(246,193,119,0.82)_0%,rgba(125,211,199,0.78)_52%,rgba(110,231,216,0.72)_100%)]",
   "disa-stig-remediation":
-    "border-lineStrong bg-[linear-gradient(180deg,rgba(17,31,50,0.94)_0%,rgba(9,24,39,0.96)_100%)] before:bg-[linear-gradient(90deg,rgba(96,165,250,0.85)_0%,rgba(45,212,191,0.78)_100%)]",
+    "border-lineStrong bg-[linear-gradient(180deg,rgba(24,33,49,0.94)_0%,rgba(13,17,26,0.96)_100%)] before:bg-[linear-gradient(90deg,rgba(138,180,248,0.8)_0%,rgba(125,211,199,0.76)_100%)]",
   "password-spray-threat-hunt":
-    "border-lineStrong bg-[linear-gradient(180deg,rgba(17,31,50,0.94)_0%,rgba(9,24,39,0.96)_100%)] before:bg-[linear-gradient(90deg,rgba(139,92,246,0.85)_0%,rgba(34,211,238,0.76)_100%)]",
+    "border-lineStrong bg-[linear-gradient(180deg,rgba(24,33,49,0.94)_0%,rgba(13,17,26,0.96)_100%)] before:bg-[linear-gradient(90deg,rgba(167,139,250,0.8)_0%,rgba(110,231,216,0.72)_100%)]",
   "akira-ransomware-threat-hunt":
-    "border-lineStrong bg-[linear-gradient(180deg,rgba(17,31,50,0.94)_0%,rgba(9,24,39,0.96)_100%)] before:bg-[linear-gradient(90deg,rgba(139,92,246,0.85)_0%,rgba(34,211,238,0.72)_100%)]"
+    "border-lineStrong bg-[linear-gradient(180deg,rgba(24,33,49,0.94)_0%,rgba(13,17,26,0.96)_100%)] before:bg-[linear-gradient(90deg,rgba(167,139,250,0.78)_0%,rgba(110,231,216,0.7)_100%)]"
 };
 
 function getStatAccentClasses(statText: string) {
   const normalizedStat = statText.toLowerCase();
 
   if (normalizedStat.includes("critical")) {
-    return "before:bg-[linear-gradient(180deg,rgba(248,113,113,0.95)_0%,rgba(45,212,191,0.8)_100%)]";
+    return "before:bg-[linear-gradient(180deg,rgba(255,138,138,0.92)_0%,rgba(125,211,199,0.82)_100%)]";
   }
 
   if (normalizedStat.includes("high")) {

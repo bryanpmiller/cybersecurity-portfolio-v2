@@ -19,7 +19,7 @@ export function Navbar() {
 
   return (
     <header className="sticky top-0 z-20 border-b border-line bg-ink/75 shadow-[0_1px_0_rgba(255,255,255,0.03)] backdrop-blur-xl">
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-[linear-gradient(90deg,transparent,rgba(34,211,238,0.28),transparent)]" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-[linear-gradient(90deg,transparent,rgba(110,231,216,0.26),transparent)]" />
       <nav
         aria-label="Primary navigation"
         className="relative mx-auto flex max-w-6xl flex-col gap-4 px-5 py-4 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8"

@@ -51,7 +51,7 @@ function ProjectPreview({ shouldReduceMotion, slug }: { shouldReduceMotion: bool
         <div className="grid grid-cols-[auto_1fr_auto] items-center gap-2 font-mono text-[0.65rem] uppercase tracking-[0.12em] text-slate-400">
           <span>Critical</span>
           <div className="h-2 rounded-full bg-severityCritical/20">
-            <div className="h-2 w-full rounded-full bg-[linear-gradient(90deg,rgba(248,113,113,0.95),rgba(45,212,191,0.8))]" />
+            <div className="h-2 w-full rounded-full bg-[linear-gradient(90deg,rgba(255,138,138,0.92),rgba(125,211,199,0.82))]" />
           </div>
           <span className="text-mint">100%</span>
           <span>High</span>
@@ -285,7 +285,7 @@ export function FeaturedProjects({ projects = defaultProjects, showHeader = true
               whileInView={shouldReduceMotion ? undefined : { opacity: 1, y: 0 }}
             >
               <Card as="article" className="flex h-full flex-col" variant="project">
-                <div className="mb-5 h-48 overflow-hidden rounded-md border border-line bg-[linear-gradient(180deg,rgba(17,31,50,0.92)_0%,rgba(9,24,39,0.96)_100%)] p-4">
+                <div className="mb-5 h-48 overflow-hidden rounded-md border border-line bg-[linear-gradient(180deg,rgba(24,33,49,0.92)_0%,rgba(13,17,26,0.96)_100%)] p-4">
                   <ProjectPreview shouldReduceMotion={shouldReduceMotion} slug={project.slug} />
                 </div>
                 <p className="eyebrow-text inline-flex items-center gap-2 text-mint">

@@ -15,7 +15,7 @@ const cardVariants: Record<NonNullable<CardProps["variant"]>, string> = {
   project:
     "border-line bg-surface/80 p-6 shadow-soft transition-colors hover:border-lineStrong hover:bg-surface/90",
   terminal:
-    "relative overflow-hidden border-lineStrong bg-[linear-gradient(180deg,rgba(17,31,50,0.94)_0%,rgba(9,24,39,0.98)_100%)] p-0 shadow-soft",
+    "relative overflow-hidden border-lineStrong bg-[linear-gradient(180deg,rgba(24,33,49,0.94)_0%,rgba(13,17,26,0.98)_100%)] p-0 shadow-soft",
   evidence: "border-lineStrong bg-ink-soft/70 p-6 shadow-soft",
   glass: "border-line bg-surface/65 p-6 shadow-soft backdrop-blur"
 };

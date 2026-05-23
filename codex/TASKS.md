@@ -22,25 +22,30 @@ Edit this section before starting.
 
 Use these only for design inspiration, not direct copying.
 
-- Primary reference URL: `[REFERENCE_URL_HERE]`
-- Secondary reference URL: `[OPTIONAL_REFERENCE_URL_HERE]`
+- Primary reference URL: `https://chatgpt.com/codex/?utm_source=google&utm_medium=paid_search&utm_campaign=GOOG_X_SEM_GBR_Codex_CDX_BAU_ACQ_PER_MIX_ALL_NAMER_US_EN_111325&c_id=23226110534&c_agid=194939268903&c_crid=807810285009&c_kwid=kwd-111182835&c_ims=&c_pms=9031397&c_nw=g&c_dvc=c&gad_source=1&gad_campaignid=23226110534&gbraid=0AAAAA-I0E5ftKRws_DKMoAIMqW7455W9l&gclid=Cj0KCQjw_b_QBhCSARIsAP6hR4d3WgRitEHGQkw1csVZ-btvs1PYFSTqIyrVov85XYt6pKbB3AmxYvMaAtX4EALw_wcB`
+- Secondary reference URL: `https://lifestylebusiness.com/lifeos/?utm_source=youtube&utm_medium=channel_page&utm_campaign=description_link`
 - Additional reference URL: `[OPTIONAL_REFERENCE_URL_HERE]`
 
 ### My Site Inputs
 
 - Local development URL: `http://localhost:3000`
-- Current deployed URL: `[DEPLOYED_SITE_URL_HERE_OR_NOT_DEPLOYED_YET]`
-- Repository URL: `[REPO_URL_HERE]`
+- Current deployed URL: `NOT_DEPLOYED_YET`
+- Repository URL: `(https://github.com/bryanpmiller/cybersecurity-portfolio-v2)`
 
 ### What I Like About the Reference
 
-- Layout:
-- Typography:
-- Colors:
-- Project cards:
-- Animation:
-- Background treatment:
-- Overall feel:
+I like the overall design quality and direction of the reference site, but I want my portfolio to remain original and cybersecurity-focused.
+
+- Overall feel: polished, premium, modern, and intentional
+- Layout: strong section structure and clean visual flow
+- Spacing: generous whitespace and less cramped content
+- Typography: clear hierarchy between headings, body text, and labels
+- Cards: strong visual depth, clean borders, and professional hover states
+- Background: subtle visual texture/depth without feeling distracting
+- Animation: smooth, restrained, and polished
+- Navigation: clean, easy to scan, and not overcomplicated
+- Responsiveness: design feels intentional across screen sizes
+- Visual polish: the site feels custom-built rather than template-generated
 
 ### What I Do Not Want Copied
 
@@ -90,6 +95,17 @@ Do:
 - Apply similar quality standards to my site
 - Create an original design using my own content
 - Keep the site focused on cybersecurity, proof-of-work, and hiring outcomes
+
+When reviewing reference sites, inspect the full page, not only the first viewport.
+
+Reference analysis should include:
+
+- Desktop and mobile first viewport
+- Major middle-page sections
+- Lower-page sections and final CTA/footer treatment
+- Repeated card, media, CTA, and navigation patterns
+- Mobile behavior, overflow, sticky elements, and scroll issues
+- Clear notes on what to borrow and what not to copy
 
 ---
 
@@ -148,13 +164,34 @@ After each major task, Codex must update:
 
 ---
 
+## Site-Wide Review Rule
+
+The redesign is site-wide, not homepage-only.
+
+For every redesign phase, Codex must consider all primary pages:
+
+- Home
+- About
+- Resume
+- Projects
+- Skills
+- Contact
+
+If a phase changes a shared component, layout, visual system rule, navigation, card pattern, typography rule, spacing rule, or responsive behavior, Codex must review every primary page affected by that change.
+
+If a phase changes only one section or page-specific component, Codex must review that page and any other page where the changed component appears.
+
+After visual changes, Codex should inspect affected pages at desktop and mobile widths, capture screenshots when useful, and document notable layout, responsiveness, accessibility, or interaction issues in `codex/WORKLOG.md`.
+
+---
+
 ## Current Phase
 
-Current phase: Phase 0 — Initial Site Review
+Current phase: Phase 2 — Design Direction and Visual System
 
 Current next task:
 
-- [ ] Phase 0.1 — Inspect project structure and summarize current state
+- [ ] Phase 2.3 — Improve typography scale
 
 ---
 
@@ -162,20 +199,22 @@ Current next task:
 
 ### Tasks
 
-- [ ] 0.1 Identify the app framework.
-- [ ] 0.2 Identify package manager: npm, pnpm, yarn, or bun.
-- [ ] 0.3 Identify styling approach.
-- [ ] 0.4 Identify main homepage route.
-- [ ] 0.5 Identify shared layout files.
-- [ ] 0.6 Identify reusable components.
-- [ ] 0.7 Identify where project data/content is stored.
-- [ ] 0.8 Identify current fonts.
-- [ ] 0.9 Identify current color palette.
-- [ ] 0.10 Run the site locally if possible.
-- [ ] 0.11 Note console errors, build warnings, or layout issues.
-- [ ] 0.12 Provide a concise design audit.
-- [ ] 0.13 Update `codex/PROJECT_MEMORY.md`.
-- [ ] 0.14 Add a `codex/WORKLOG.md` entry.
+- [x] 0.1 Identify the app framework.
+- [x] 0.2 Identify package manager: npm, pnpm, yarn, or bun.
+- [x] 0.3 Identify styling approach.
+- [x] 0.4 Identify main homepage route.
+- [x] 0.5 Identify shared layout files.
+- [x] 0.6 Identify reusable components.
+- [x] 0.7 Identify where project data/content is stored.
+- [x] 0.8 Identify current fonts.
+- [x] 0.9 Identify current color palette.
+- [x] 0.10 Run the site locally if possible.
+- [x] 0.11 Inspect all primary pages in the browser: Home, About, Resume, Projects, Skills, and Contact.
+- [x] 0.12 Capture desktop and mobile screenshots for each primary page.
+- [x] 0.13 Note console errors, build warnings, or layout issues.
+- [x] 0.14 Provide a concise design audit across all primary pages.
+- [x] 0.15 Update `codex/PROJECT_MEMORY.md`.
+- [x] 0.16 Add a `codex/WORKLOG.md` entry.
 
 ### Codex Prompt
 
@@ -197,15 +236,15 @@ Analyze the reference URL(s) listed at the top of this file and extract design p
 
 ### Tasks
 
-- [ ] 1.1 Review the primary reference URL.
-- [ ] 1.2 Review any secondary reference URL(s).
-- [ ] 1.3 Review my current local or deployed site.
-- [ ] 1.4 Compare the reference against my current portfolio.
-- [ ] 1.5 Identify design principles to borrow.
-- [ ] 1.6 Identify elements not to copy.
-- [ ] 1.7 Recommend a unique cybersecurity-focused design direction.
-- [ ] 1.8 Update `codex/PROJECT_MEMORY.md` with reference notes.
-- [ ] 1.9 Add a `codex/WORKLOG.md` entry.
+- [x] 1.1 Review the primary reference URL.
+- [x] 1.2 Review any secondary reference URL(s).
+- [x] 1.3 Review my current local or deployed site.
+- [x] 1.4 Compare the reference against my current portfolio.
+- [x] 1.5 Identify design principles to borrow.
+- [x] 1.6 Identify elements not to copy.
+- [x] 1.7 Recommend a unique cybersecurity-focused design direction.
+- [x] 1.8 Update `codex/PROJECT_MEMORY.md` with reference notes.
+- [x] 1.9 Add a `codex/WORKLOG.md` entry.
 
 ### Codex Prompt
 
@@ -228,8 +267,8 @@ Before editing code, summarize:
 
 ## Phase 2 — Design Direction and Visual System
 
-- [ ] 2.1 Define visual direction.
-- [ ] 2.2 Define background, surface, text, border, and accent colors.
+- [x] 2.1 Define visual direction.
+- [x] 2.2 Define background, surface, text, border, and accent colors.
 - [ ] 2.3 Improve typography scale.
 - [ ] 2.4 Improve buttons, cards, links, borders, and focus states.
 - [ ] 2.5 Improve global section spacing and containers.

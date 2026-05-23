@@ -98,8 +98,8 @@ export function HeroSection() {
           as="aside"
           variant="terminal"
         >
-          <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(49,80,111,0.18)_1px,transparent_1px),linear-gradient(90deg,rgba(49,80,111,0.14)_1px,transparent_1px)] bg-[size:32px_32px] opacity-30" />
-          <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-[linear-gradient(90deg,transparent,rgba(34,211,238,0.75),rgba(45,212,191,0.58),transparent)]" />
+          <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(121,134,155,0.16)_1px,transparent_1px),linear-gradient(90deg,rgba(121,134,155,0.12)_1px,transparent_1px)] bg-[size:32px_32px] opacity-30" />
+          <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-[linear-gradient(90deg,transparent,rgba(110,231,216,0.72),rgba(167,139,250,0.5),transparent)]" />
           <div className="relative p-6">
             <div className="flex flex-col gap-3 border-b border-line pb-5 sm:flex-row sm:items-center sm:justify-between">
               <div>

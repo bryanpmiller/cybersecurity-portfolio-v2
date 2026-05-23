@@ -9,24 +9,24 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        ink: "#07111f",
-        "ink-soft": "#091827",
-        surface: "#0b1726",
-        surfaceElevated: "#111f32",
-        line: "#1d334b",
-        lineStrong: "#2f5272",
-        cyan: "#22d3ee",
-        blue: "#60a5fa",
-        mint: "#2dd4bf",
-        amber: "#fbbf24",
-        red: "#f87171",
-        violet: "#8b5cf6",
-        severityCritical: "#f87171",
-        severityHigh: "#fb923c",
-        severityMedium: "#fbbf24",
-        detection: "#8b5cf6",
-        remediation: "#60a5fa",
-        evidence: "#22d3ee"
+        ink: "#080a0f",
+        "ink-soft": "#0d111a",
+        surface: "#111722",
+        surfaceElevated: "#182131",
+        line: "#2a3342",
+        lineStrong: "#435166",
+        cyan: "#6ee7d8",
+        blue: "#8ab4f8",
+        mint: "#7dd3c7",
+        amber: "#f6c177",
+        red: "#ff8a8a",
+        violet: "#a78bfa",
+        severityCritical: "#ff8a8a",
+        severityHigh: "#f59e6c",
+        severityMedium: "#f6c177",
+        detection: "#a78bfa",
+        remediation: "#8ab4f8",
+        evidence: "#6ee7d8"
       },
       fontFamily: {
         body: ["var(--font-inter)", "ui-sans-serif", "system-ui", "sans-serif"],
@@ -34,7 +34,7 @@ const config: Config = {
         mono: ["var(--font-jetbrains-mono)", "ui-monospace", "SFMono-Regular", "monospace"]
       },
       boxShadow: {
-        soft: "0 24px 80px rgba(2, 8, 23, 0.38)"
+        soft: "0 24px 80px rgba(0, 0, 0, 0.42)"
       }
     }
   },

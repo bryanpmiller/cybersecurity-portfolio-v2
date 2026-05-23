@@ -18,9 +18,9 @@ function getReductionSeverity(label: string) {
       name: "Critical",
       accent: "text-severityCritical",
       border: "border-severityCritical/35",
-      bar: "bg-[linear-gradient(90deg,rgba(248,113,113,0.95)_0%,rgba(45,212,191,0.82)_100%)]",
+      bar: "bg-[linear-gradient(90deg,rgba(255,138,138,0.92)_0%,rgba(125,211,199,0.82)_100%)]",
       rail: "bg-severityCritical/15",
-      marker: "before:bg-[linear-gradient(180deg,rgba(248,113,113,0.95)_0%,rgba(45,212,191,0.82)_100%)]"
+      marker: "before:bg-[linear-gradient(180deg,rgba(255,138,138,0.92)_0%,rgba(125,211,199,0.82)_100%)]"
     };
   }
 
@@ -60,7 +60,7 @@ export function RiskReductionDashboard() {
       whileInView={shouldReduceMotion ? undefined : { opacity: 1, y: 0 }}
     >
       <Card as="section" className="mt-8" variant="terminal">
-        <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(49,80,111,0.16)_1px,transparent_1px),linear-gradient(90deg,rgba(49,80,111,0.12)_1px,transparent_1px)] bg-[size:36px_36px] opacity-25" />
+        <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(121,134,155,0.14)_1px,transparent_1px),linear-gradient(90deg,rgba(121,134,155,0.11)_1px,transparent_1px)] bg-[size:36px_36px] opacity-25" />
         <div className="relative p-5 sm:p-6">
           <div className="flex flex-col gap-4 border-b border-line pb-5 md:flex-row md:items-end md:justify-between">
             <div>
