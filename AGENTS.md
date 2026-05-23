@@ -1,8 +1,10 @@
-# AGENTS.md — Repo Instructions for Codex
+# AGENTS.md — Portfolio Repo Instructions for Codex
 
 ## Purpose
 
-This file defines how Codex should work in this repository.
+This repository is Bryan Miller's cybersecurity portfolio website.
+
+Codex should help improve the site as a professional, recruiter-friendly, cybersecurity proof-of-work portfolio.
 
 This file should live at the repository root.
 
@@ -15,97 +17,180 @@ Supporting workflow files live in the `codex/` folder.
 Before editing code, Codex must read:
 
 1. `codex/CODEX_START_HERE.md`
-2. `codex/PROJECT_BRIEF.md`
-3. `codex/TASKS.md`
-4. `codex/PROJECT_MEMORY.md`
-5. `codex/WORKLOG.md`
-6. `codex/DECISIONS.md`
-7. `codex/VALIDATION.md`
+2. `codex/TASKS.md`
+3. `codex/PROJECT_MEMORY.md`
+4. `codex/WORKLOG.md`
 
 Then Codex must:
 
 1. Identify the current phase and next incomplete task in `codex/TASKS.md`.
-2. Briefly summarize the current state and intended change.
-3. Make targeted, reviewable edits.
-
-If any workflow files are missing, create them using the workflow kit structure before continuing.
+2. Summarize the current project state.
+3. Explain the planned change briefly.
+4. Make targeted, reviewable edits.
 
 ---
 
-## Required Work Style
+## Portfolio Goal
+
+The site should clearly showcase:
+
+- Resume
+- Cybersecurity projects
+- Vulnerability management work
+- SecOps / detection engineering experience
+- PowerShell remediation work
+- KQL, Microsoft Defender, and Sentinel experience
+- Tenable exposure
+- DISA STIG hardening
+- Azure / NSG / firewall hardening work
+- GitHub proof-of-work documentation
+
+The site should feel polished enough to list on a resume.
+
+---
+
+## Design Direction
+
+The portfolio should feel:
+
+- Modern
+- Professional
+- Technical
+- Cybersecurity-focused
+- Recruiter-friendly
+- Specific to Bryan's real work
+- Clean and polished
+
+Avoid:
+
+- Fake hacker aesthetics
+- Excessive neon effects
+- Matrix-style backgrounds
+- Generic AI-template language
+- Overly flashy animations
+- Directly copying any reference website
+
+Use reference websites for inspiration only.
+
+---
+
+## Content Rules
+
+Do not invent:
+
+- Metrics
+- Projects
+- Experience
+- Certifications
+- Employers
+- Tools
+- Outcomes
+
+---
+
+## Content Preservation Rule
+
+For this portfolio redesign, Codex should focus on visual design, layout, styling, responsiveness, accessibility, and interaction polish.
+
+Do not rewrite, shorten, expand, rephrase, or replace existing page copy unless I explicitly ask for content changes.
+
+This includes:
+
+- Hero headline text
+- Hero paragraph text
+- Project descriptions
+- Resume/experience wording
+- Skills wording
+- Button labels
+- Section headings
+- Metrics/outcome wording
+- Contact text
+
+Codex may make only minor text-related changes when required for functionality or accessibility, such as:
+
+- Adding missing `alt` text
+- Adding `aria-label` values
+- Fixing obviously broken labels
+- Preserving existing text while moving it into a new layout/component
+
+If a design change would require rewriting content, Codex should stop and ask before changing the wording.
+
+Default rule:
+
+Preserve the existing words. Improve the design around them.
+
+---
+
+Use only supported claims.
+
+When metrics are already supported by resume or project content, they may be used carefully.
+
+Preferred writing style:
+
+- Clear
+- Direct
+- Human
+- Specific
+- Professional
+- No fluff
+
+Avoid phrases like:
+
+- Passionate about cybersecurity
+- Results-driven professional
+- Leveraging cutting-edge technology
+- Robust solutions
+- Dynamic environment
+- Proven track record
+
+---
+
+## Work Style
+
+Codex should:
 
 - Make small, reviewable changes.
-- Prefer targeted edits over broad rewrites.
-- Do not invent requirements.
-- Do not add unnecessary dependencies.
-- Preserve existing functionality unless the task explicitly changes it.
-- Keep user-facing behavior consistent unless a change is requested.
-- Explain tradeoffs when making architectural choices.
-- Update tracking files after each major task.
+- Work section by section.
+- Preserve existing functionality.
+- Keep mobile responsiveness in mind.
+- Keep accessibility basics in mind.
+- Avoid unnecessary dependencies.
+- Avoid unlicensed fonts or assets.
+- Run available checks when appropriate.
+- Explain any build or lint failures.
+- Preserve existing page copy unless Bryan explicitly asks for wording changes.
 
 ---
 
 ## Required Tracking Updates
 
-After each major task, update:
+After each major task, Codex must update:
 
 1. `codex/TASKS.md`
    - Check off completed items only.
    - Do not add long diary-style notes.
 
 2. `codex/PROJECT_MEMORY.md`
-   - Add durable project context, constraints, architecture notes, and current state.
+   - Add durable design decisions, constraints, architecture notes, and approved/rejected ideas.
 
 3. `codex/WORKLOG.md`
-   - Add a dated progress entry.
-
-4. `codex/DECISIONS.md`
-   - Add an entry only for meaningful technical/product/design decisions.
-
-5. `codex/VALIDATION.md`
-   - Update if test, lint, build, run, or deployment commands change.
-
----
-
-## Safety and Secrets
-
-- Do not expose secrets, tokens, private keys, API keys, or credentials.
-- Do not commit `.env` files unless they are explicitly safe examples like `.env.example`.
-- If a task requires secrets, ask for the variable names and expected format, not the secret values.
-- Follow `codex/SECURITY_AND_SECRETS.md`.
+   - Add a dated progress entry with completed work, files changed, issues found, checks run, and next steps.
 
 ---
 
 ## Validation Expectations
 
-Before finishing a task, run the most relevant checks available for the project.
+Before finishing a task, run relevant checks when available.
 
-Examples:
+Common examples:
 
 ```bash
 npm run lint
 npm run build
 npm test
-pytest
-ruff check .
-python -m unittest
 ```
 
-If checks cannot be run, explain why and document it in `codex/WORKLOG.md`.
-
----
-
-## Communication Style
-
-When responding after work:
-
-- Summarize what changed.
-- List files changed.
-- List checks run and results.
-- Mention anything that needs review.
-- Mention the next recommended task.
-
-Keep summaries concise and useful.
+If checks cannot be run, document why in `codex/WORKLOG.md`.
 
 ---
 
@@ -120,11 +205,13 @@ Briefly explain what changed.
 ### Files Changed
 
 - `path/to/file`
+- `path/to/file`
 
 ### Checks Run
 
 ```bash
-[command]
+npm run lint
+npm run build
 ```
 
 Result:
@@ -132,11 +219,9 @@ Result:
 
 ### Tracking Files Updated
 
-- `codex/TASKS.md`
-- `codex/PROJECT_MEMORY.md`
-- `codex/WORKLOG.md`
-- `codex/DECISIONS.md`, if needed
-- `codex/VALIDATION.md`, if needed
+- `codex/TASKS.md`: Checked off completed task items.
+- `codex/PROJECT_MEMORY.md`: Added durable decisions/context if needed.
+- `codex/WORKLOG.md`: Added dated progress entry.
 
 ### Issues / Notes
 

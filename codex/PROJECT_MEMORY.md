@@ -1,8 +1,8 @@
-# PROJECT_MEMORY.md — Durable Project Memory
+# PROJECT_MEMORY.md — Portfolio Redesign Working Memory
 
 ## Purpose
 
-This file stores durable project context.
+This file is the long-term memory file for the portfolio redesign project.
 
 This file lives at:
 
@@ -10,9 +10,9 @@ This file lives at:
 codex/PROJECT_MEMORY.md
 ```
 
-Use it to help Codex and future sessions understand the project without rereading every conversation.
+Codex should read this file before starting any major task and update it after making important decisions.
 
-Do not use this file as a chronological worklog. Use `codex/WORKLOG.md` for that.
+Use this file for durable project context, not temporary notes.
 
 ---
 
@@ -20,25 +20,169 @@ Do not use this file as a chronological worklog. Use `codex/WORKLOG.md` for that
 
 Status: Not started
 
-Current phase: Phase 0 — Project Intake and Repo Audit
+Current phase: Phase 0 — Initial Site Review
 
-Current next task:
+Current focus:
 
-- Read workflow files and inspect repository structure.
-
----
-
-## Project Summary
-
-```text
-[Short project summary goes here.]
-```
+- Review the existing portfolio site.
+- Analyze the reference website(s).
+- Build a stronger visual system.
+- Redesign the portfolio into a polished cybersecurity proof-of-work site.
 
 ---
 
-## Current Architecture Notes
+## Current Design Direction
 
-### Framework / Runtime
+Recommended direction:
+
+> A refined cybersecurity proof-of-work portfolio with a professional visual system, strong case-study cards, clear project outcomes, security tooling badges, subtle technical visuals, and recruiter-friendly content.
+
+The site should feel:
+
+- Modern
+- Professional
+- Technical
+- Cybersecurity-focused
+- Clean
+- Recruiter-friendly
+- Specific to Bryan's work
+- Less generic
+- Less AI-template-like
+
+The site should not feel:
+
+- Like a fake hacker site
+- Overly neon
+- Overloaded with animations
+- Generic developer-template style
+- Copied from the reference website
+
+---
+
+## Approved Decisions
+
+Add approved decisions here as they are made.
+
+---
+
+## Rejected Ideas
+
+Add rejected ideas here so Codex does not accidentally repeat them.
+
+---
+
+## Reference Website Notes
+
+### Primary Reference
+
+URL: `[REFERENCE_URL_HERE]`
+
+What works well:
+
+- TBD
+
+Design principles to borrow:
+
+- TBD
+
+What not to copy:
+
+- TBD
+
+How this should influence my portfolio:
+
+- TBD
+
+---
+
+## Visual System Rules
+
+### Colors
+
+- TBD
+
+### Typography
+
+- TBD
+
+### Spacing
+
+- TBD
+
+### Borders and Radius
+
+- TBD
+
+### Shadows and Depth
+
+- TBD
+
+### Background Treatment
+
+- TBD
+
+### Animation Rules
+
+- Motion should be subtle.
+- Avoid distracting effects.
+- Respect `prefers-reduced-motion`.
+
+---
+
+## Content Rules
+
+- Keep copy specific and direct.
+- Avoid generic AI-sounding phrases.
+- Avoid exaggerated claims.
+- Do not invent experience, metrics, projects, or certifications.
+- Use metrics only when supported by resume/site content.
+- Emphasize proof-of-work.
+- Tie project descriptions to real tools, methods, and outcomes.
+- Keep recruiter scanning in mind.
+
+---
+
+## Cybersecurity Positioning
+
+The portfolio should emphasize:
+
+- Vulnerability Management
+- SecOps
+- Detection Engineering
+- Microsoft Defender for Endpoint
+- Microsoft Sentinel
+- KQL
+- Tenable
+- DISA STIG hardening
+- PowerShell remediation
+- Azure NSG/firewall hardening
+- Threat hunting
+- Incident-style documentation
+- GitHub project documentation
+- Resume-ready proof of work
+
+---
+
+## Known Supported Metrics
+
+Only use these if already supported by the resume/site content.
+
+Potentially supported metrics:
+
+- Critical vulnerabilities reduced by 100%
+- High vulnerabilities reduced by 90%
+- Medium vulnerabilities reduced by 76%
+- Brute-force incidents reduced by 100% through NSG/firewall hardening
+
+Before using metrics, verify they are present in the project content or resume.
+
+---
+
+## Architecture Notes
+
+Fill this in after inspecting the codebase.
+
+### Framework
 
 - TBD
 
@@ -46,7 +190,7 @@ Current next task:
 
 - TBD
 
-### Main Entry Points
+### Styling Method
 
 - TBD
 
@@ -54,93 +198,39 @@ Current next task:
 
 - TBD
 
-### Data Storage
+### Main Homepage File
 
 - TBD
 
-### External Services
+### Shared Layout Files
 
 - TBD
 
-### Deployment Target
+### Data/Content Files
 
 - TBD
-
----
-
-## Current Design / Product Direction
-
-```text
-[Describe the current direction here.]
-```
 
 ---
 
 ## Important Constraints
 
-- Do not commit secrets.
+- Do not directly copy the reference website.
+- Do not add fake metrics.
+- Do not add fake projects.
+- Do not use unlicensed font files.
 - Do not add unnecessary dependencies.
-- Make small, reviewable changes.
-- Preserve existing functionality unless explicitly changing it.
-- Keep project scope aligned with `codex/PROJECT_BRIEF.md`.
-
-Project-specific constraints:
-
-- TBD
-
----
-
-## User Preferences
-
-- Prefer simple, maintainable code over clever abstractions.
-- Prefer straightforward documentation.
-- Prefer clear comments for non-obvious logic.
-- Prefer free-tier tools where possible.
-
-Project-specific preferences:
-
-- TBD
-
----
-
-## Current Known Issues
-
-```md
-- [ ] Issue description
-  - Impact:
-  - Likely cause:
-  - Next step:
-```
-
----
-
-## Important Files and What They Do
-
-```md
-- `path/to/file`: Purpose
-```
-
----
-
-## External References
-
-```text
-[Reference link]
-[Reference link]
-```
+- Do not break mobile layout.
+- Do not hide important recruiter content behind visual effects.
+- Keep the site professional enough to include on a resume.
 
 ---
 
 ## Open Questions
 
-```md
-- [ ] Question?
-```
+Track questions that need Bryan's input.
 
 ---
 
 ## Current Next Step
 
-```text
-Start with the next incomplete task in codex/TASKS.md.
-```
+Start with `codex/TASKS.md` Phase 0.

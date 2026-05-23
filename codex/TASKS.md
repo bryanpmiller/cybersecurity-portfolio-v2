@@ -1,8 +1,8 @@
-# TASKS.md — Master Project Roadmap
+# TASKS.md — Portfolio Website Design Transformation Plan
 
 ## Purpose
 
-This file is the master roadmap for the project.
+Use this file as the working task plan for redesigning my cybersecurity portfolio website with Codex.
 
 This file lives at:
 
@@ -10,151 +10,395 @@ This file lives at:
 codex/TASKS.md
 ```
 
-Use this file to track what needs to be done.
+The goal is not to clone another website. The goal is to study one or more reference websites for design inspiration, then transform my own portfolio into a more polished, modern, recruiter-friendly, cybersecurity-focused proof-of-work site.
 
-Do not use this file as a daily diary. Use `codex/WORKLOG.md` for progress notes and `codex/PROJECT_MEMORY.md` for durable context.
+---
+
+## Required Setup Inputs
+
+Edit this section before starting.
+
+### Reference Website Inputs
+
+Use these only for design inspiration, not direct copying.
+
+- Primary reference URL: `[REFERENCE_URL_HERE]`
+- Secondary reference URL: `[OPTIONAL_REFERENCE_URL_HERE]`
+- Additional reference URL: `[OPTIONAL_REFERENCE_URL_HERE]`
+
+### My Site Inputs
+
+- Local development URL: `http://localhost:3000`
+- Current deployed URL: `[DEPLOYED_SITE_URL_HERE_OR_NOT_DEPLOYED_YET]`
+- Repository URL: `[REPO_URL_HERE]`
+
+### What I Like About the Reference
+
+- Layout:
+- Typography:
+- Colors:
+- Project cards:
+- Animation:
+- Background treatment:
+- Overall feel:
+
+### What I Do Not Want Copied
+
+- Exact layout:
+- Exact colors:
+- Text:
+- Images:
+- Branding:
+- Proprietary animations:
+
+---
+
+## Project Goal
+
+Transform my current portfolio website into a professional cybersecurity portfolio that clearly showcases:
+
+- My resume
+- My cybersecurity projects
+- My vulnerability management experience
+- My SecOps / detection engineering work
+- My PowerShell, KQL, Tenable, Microsoft Defender, Sentinel, Azure, and STIG remediation skills
+- My ability to document technical work clearly
+- My ability to build and deploy a professional web project
+
+The finished site should feel polished enough to list on a resume as a proof-of-concept portfolio project.
+
+---
+
+## Reference Website Usage Rules
+
+Use reference websites only for inspiration.
+
+Do not:
+
+- Copy exact layouts pixel-for-pixel
+- Copy text
+- Copy branding
+- Copy images
+- Copy icons or visual assets without permission
+- Recreate proprietary animations exactly
+- Use identical class names, component names, or structure from the reference
+
+Do:
+
+- Analyze the design language
+- Identify what makes the reference look polished
+- Apply similar quality standards to my site
+- Create an original design using my own content
+- Keep the site focused on cybersecurity, proof-of-work, and hiring outcomes
+
+---
+
+## Codex Working Memory and File Update Rules
+
+This project uses these files:
+
+```text
+AGENTS.md                     Repo-level behavior rules
+codex/TASKS.md                Master roadmap / checklist
+codex/PROJECT_MEMORY.md       Decisions, constraints, design direction, and current project context
+codex/WORKLOG.md              Chronological progress log
+```
+
+Use:
+
+```text
+TASKS.md = What needs to be done
+PROJECT_MEMORY.md = What we decided
+WORKLOG.md = What has been done
+AGENTS.md = Rules Codex should always follow
+```
+
+Do not use `codex/TASKS.md` as a diary.
+
+---
+
+## Required Workflow Before Starting Work
+
+Before starting any new phase or major task, Codex must:
+
+1. Read `AGENTS.md`.
+2. Read `codex/CODEX_START_HERE.md`.
+3. Read `codex/TASKS.md`.
+4. Read `codex/PROJECT_MEMORY.md`.
+5. Read `codex/WORKLOG.md`.
+6. Identify the current phase and next incomplete task.
+7. Briefly summarize the current state before editing code.
+8. Make targeted, reviewable changes.
+
+---
+
+## Required Workflow After Completing Work
+
+After each major task, Codex must update:
+
+1. `codex/TASKS.md`
+   - Check off completed task items only.
+   - Do not add long explanations unless they are durable project instructions.
+
+2. `codex/PROJECT_MEMORY.md`
+   - Add or update important decisions, design rules, constraints, architecture notes, or content rules.
+
+3. `codex/WORKLOG.md`
+   - Add a dated entry summarizing the completed work, files changed, issues found, decisions made, and next steps.
 
 ---
 
 ## Current Phase
 
-Current phase: Phase 0 — Project Intake and Repo Audit
+Current phase: Phase 0 — Initial Site Review
 
 Current next task:
 
-- [ ] Phase 0.1 — Read project workflow files and summarize current state
+- [ ] Phase 0.1 — Inspect project structure and summarize current state
 
 ---
 
-## Phase 0 — Project Intake and Repo Audit
-
-### Phase Goal
-
-Understand the project before editing code.
+## Phase 0 — Initial Site Review
 
 ### Tasks
 
-- [ ] 0.1 Read `AGENTS.md`, `codex/PROJECT_BRIEF.md`, `codex/TASKS.md`, `codex/PROJECT_MEMORY.md`, `codex/WORKLOG.md`, `codex/DECISIONS.md`, and `codex/VALIDATION.md`.
-- [ ] 0.2 Inspect repository structure.
-- [ ] 0.3 Identify framework, package manager, and key folders.
-- [ ] 0.4 Identify dev, build, lint, and test commands.
-- [ ] 0.5 Identify current project status.
-- [ ] 0.6 Identify obvious risks, missing files, or setup problems.
-- [ ] 0.7 Update `codex/PROJECT_MEMORY.md` with architecture notes.
-- [ ] 0.8 Update `codex/VALIDATION.md` with discovered commands.
-- [ ] 0.9 Add a `codex/WORKLOG.md` entry.
+- [ ] 0.1 Identify the app framework.
+- [ ] 0.2 Identify package manager: npm, pnpm, yarn, or bun.
+- [ ] 0.3 Identify styling approach.
+- [ ] 0.4 Identify main homepage route.
+- [ ] 0.5 Identify shared layout files.
+- [ ] 0.6 Identify reusable components.
+- [ ] 0.7 Identify where project data/content is stored.
+- [ ] 0.8 Identify current fonts.
+- [ ] 0.9 Identify current color palette.
+- [ ] 0.10 Run the site locally if possible.
+- [ ] 0.11 Note console errors, build warnings, or layout issues.
+- [ ] 0.12 Provide a concise design audit.
+- [ ] 0.13 Update `codex/PROJECT_MEMORY.md`.
+- [ ] 0.14 Add a `codex/WORKLOG.md` entry.
 
-### Acceptance Criteria
+### Codex Prompt
 
-- [ ] Codex understands the repo structure.
-- [ ] Current state is documented.
-- [ ] Validation commands are documented.
-- [ ] No code changes were made unless needed for setup documentation.
+```text
+Review the current portfolio website and repository structure.
 
----
+Before making changes, give me a concise design audit. Focus on what currently makes the site feel generic, bland, or AI-generated. Identify the top 5 design improvements that would make the biggest difference.
 
-## Phase 1 — Requirements and Scope
-
-- [ ] 1.1 Review `codex/PROJECT_BRIEF.md`.
-- [ ] 1.2 Identify unclear requirements.
-- [ ] 1.3 Define MVP scope.
-- [ ] 1.4 Define out-of-scope items.
-- [ ] 1.5 Break work into feature tasks.
-- [ ] 1.6 Add missing tasks to this file.
-- [ ] 1.7 Update `codex/PROJECT_MEMORY.md` with scope decisions.
-- [ ] 1.8 Add important scope decisions to `codex/DECISIONS.md`.
+Do not edit code yet.
+```
 
 ---
 
-## Phase 2 — Architecture and Design Plan
+## Phase 1 — Reference Website Design Analysis
 
-- [ ] 2.1 Map current architecture.
-- [ ] 2.2 Identify files/modules/components likely to change.
-- [ ] 2.3 Identify data flow.
-- [ ] 2.4 Identify state management approach.
-- [ ] 2.5 Identify storage/database needs.
-- [ ] 2.6 Identify API boundaries if relevant.
-- [ ] 2.7 Identify security/privacy concerns.
-- [ ] 2.8 Document architectural decisions in `codex/DECISIONS.md`.
-- [ ] 2.9 Update `codex/PROJECT_MEMORY.md`.
+### Goal
 
----
+Analyze the reference URL(s) listed at the top of this file and extract design principles without copying directly.
 
-## Phase 3 — Implementation
+### Tasks
 
-Add project-specific tasks here.
+- [ ] 1.1 Review the primary reference URL.
+- [ ] 1.2 Review any secondary reference URL(s).
+- [ ] 1.3 Review my current local or deployed site.
+- [ ] 1.4 Compare the reference against my current portfolio.
+- [ ] 1.5 Identify design principles to borrow.
+- [ ] 1.6 Identify elements not to copy.
+- [ ] 1.7 Recommend a unique cybersecurity-focused design direction.
+- [ ] 1.8 Update `codex/PROJECT_MEMORY.md` with reference notes.
+- [ ] 1.9 Add a `codex/WORKLOG.md` entry.
 
-### Feature 1 — `[FEATURE_NAME]`
+### Codex Prompt
 
-- [ ] 3.1 Define expected behavior.
-- [ ] 3.2 Identify files to change.
-- [ ] 3.3 Implement minimal working version.
-- [ ] 3.4 Add or update tests if appropriate.
-- [ ] 3.5 Run validation checks.
-- [ ] 3.6 Update project tracking files.
+```text
+Analyze the reference website(s) listed in codex/TASKS.md only for design inspiration.
 
----
+Compare them against my current portfolio site. Focus on layout, spacing, typography, color palette, card design, section flow, background treatment, and interaction polish.
 
-## Phase 4 — UI/UX or Output Polish
+Do not copy the reference site directly. Extract design principles, then recommend a unique cybersecurity-focused direction for my portfolio.
 
-- [ ] 4.1 Review current user experience.
-- [ ] 4.2 Identify rough edges.
-- [ ] 4.3 Improve layout/output clarity.
-- [ ] 4.4 Improve error states.
-- [ ] 4.5 Improve accessibility if UI project.
-- [ ] 4.6 Improve mobile layout if UI project.
-- [ ] 4.7 Update documentation if behavior changed.
-- [ ] 4.8 Run validation checks.
+Before editing code, summarize:
+1. What the reference does well
+2. What my site currently lacks
+3. Which design principles we should borrow
+4. What we should avoid copying
+5. The first section you recommend redesigning
+```
 
 ---
 
-## Phase 5 — Testing and Validation
+## Phase 2 — Design Direction and Visual System
 
-- [ ] 5.1 Run lint checks.
-- [ ] 5.2 Run build checks.
-- [ ] 5.3 Run tests.
-- [ ] 5.4 Manually test core flows.
-- [ ] 5.5 Test failure/error states.
-- [ ] 5.6 Review logs/console output.
-- [ ] 5.7 Fix issues found.
-- [ ] 5.8 Update `codex/VALIDATION.md`.
-- [ ] 5.9 Add `codex/WORKLOG.md` entry.
+- [ ] 2.1 Define visual direction.
+- [ ] 2.2 Define background, surface, text, border, and accent colors.
+- [ ] 2.3 Improve typography scale.
+- [ ] 2.4 Improve buttons, cards, links, borders, and focus states.
+- [ ] 2.5 Improve global section spacing and containers.
+- [ ] 2.6 Run relevant checks.
+- [ ] 2.7 Update tracking files.
 
 ---
 
-## Phase 6 — Documentation
+## Phase 3 — Homepage Hero Redesign
 
-- [ ] 6.1 Update README.
-- [ ] 6.2 Document setup steps.
-- [ ] 6.3 Document run commands.
-- [ ] 6.4 Document build/test commands.
-- [ ] 6.5 Document environment variables.
-- [ ] 6.6 Add screenshots or examples if useful.
-- [ ] 6.7 Update `codex/HANDOFF.md`.
-
----
-
-## Phase 7 — Final Review and Handoff
-
-- [ ] 7.1 Review all changed files.
-- [ ] 7.2 Run final validation checks.
-- [ ] 7.3 Update `codex/PROJECT_MEMORY.md`.
-- [ ] 7.4 Update `codex/WORKLOG.md`.
-- [ ] 7.5 Update `codex/DECISIONS.md`.
-- [ ] 7.6 Update `codex/HANDOFF.md`.
-- [ ] 7.7 Summarize what changed and what remains.
+- [ ] 3.1 Audit current hero.
+- [ ] 3.2 Improve headline/subheadline structure.
+- [ ] 3.3 Improve CTA buttons.
+- [ ] 3.4 Add tasteful cybersecurity visual element.
+- [ ] 3.5 Validate mobile layout.
+- [ ] 3.6 Run relevant checks.
+- [ ] 3.7 Update tracking files.
 
 ---
 
-## Definition of Done
+## Phase 4 — Navigation and Page Structure
 
-A task is done when:
+- [ ] 4.1 Review navigation.
+- [ ] 4.2 Improve nav styling and mobile behavior.
+- [ ] 4.3 Improve section order for recruiter scanning.
+- [ ] 4.4 Run relevant checks.
+- [ ] 4.5 Update tracking files.
 
-- [ ] The requested behavior is implemented.
-- [ ] Relevant checks were run or documented as not run.
-- [ ] No obvious regressions were introduced.
-- [ ] `codex/TASKS.md` is updated.
-- [ ] `codex/PROJECT_MEMORY.md` is updated if durable context changed.
-- [ ] `codex/WORKLOG.md` has a progress entry.
-- [ ] `codex/DECISIONS.md` is updated if a meaningful decision was made.
-- [ ] User-facing documentation is updated if behavior changed.
+---
+
+## Phase 5 — Project Cards as Cybersecurity Case Studies
+
+- [ ] 5.1 Audit existing project cards.
+- [ ] 5.2 Convert cards into concise case studies.
+- [ ] 5.3 Show problem, tools, concepts, and outcome.
+- [ ] 5.4 Improve tags, links, hover states, and responsive grid.
+- [ ] 5.5 Run relevant checks.
+- [ ] 5.6 Update tracking files.
+
+---
+
+## Phase 6 — Skills and Tooling Section
+
+- [ ] 6.1 Audit current skills.
+- [ ] 6.2 Group skills by cybersecurity category.
+- [ ] 6.3 Remove duplicates.
+- [ ] 6.4 Improve visual layout.
+- [ ] 6.5 Run relevant checks.
+- [ ] 6.6 Update tracking files.
+
+---
+
+## Phase 7 — Experience / Resume Snapshot Section
+
+- [ ] 7.1 Add or improve experience snapshot.
+- [ ] 7.2 Use supported metrics only.
+- [ ] 7.3 Improve resume CTA.
+- [ ] 7.4 Run relevant checks.
+- [ ] 7.5 Update tracking files.
+
+---
+
+## Phase 8 — Impact Metrics Section
+
+- [ ] 8.1 Identify supported metrics.
+- [ ] 8.2 Design metrics strip or cards.
+- [ ] 8.3 Keep claims accurate.
+- [ ] 8.4 Run relevant checks.
+- [ ] 8.5 Update tracking files.
+
+---
+
+## Phase 9 — Cybersecurity Visual Elements
+
+- [ ] 9.1 Add tasteful security-themed visuals.
+- [ ] 9.2 Avoid fake hacker clichés.
+- [ ] 9.3 Tie visuals to real work.
+- [ ] 9.4 Run relevant checks.
+- [ ] 9.5 Update tracking files.
+
+---
+
+## Phase 10 — Animations and Interactions
+
+- [ ] 10.1 Audit existing interactions.
+- [ ] 10.2 Add subtle hover/transition states.
+- [ ] 10.3 Respect reduced motion.
+- [ ] 10.4 Run relevant checks.
+- [ ] 10.5 Update tracking files.
+
+---
+
+## Phase 11 — Responsive Design Pass
+
+- [ ] 11.1 Test mobile, tablet, laptop, and desktop widths.
+- [ ] 11.2 Fix spacing, wrapping, grids, nav, and overflow.
+- [ ] 11.3 Run relevant checks.
+- [ ] 11.4 Update tracking files.
+
+---
+
+## Phase 12 — Accessibility and Readability Pass
+
+- [ ] 12.1 Check semantic headings.
+- [ ] 12.2 Check contrast.
+- [ ] 12.3 Check focus states.
+- [ ] 12.4 Check link/button labels.
+- [ ] 12.5 Improve readability.
+- [ ] 12.6 Run relevant checks.
+- [ ] 12.7 Update tracking files.
+
+---
+
+## Phase 13 — Content Polish
+
+Focus on making existing text easier to scan visually. Do not rewrite the wording without approval.
+
+- [ ] 13.1 Remove generic AI-sounding phrases.
+- [ ] 13.2 Make copy direct, human, and specific.
+- [ ] 13.3 Strengthen project descriptions.
+- [ ] 13.4 Run relevant checks.
+- [ ] 13.5 Update tracking files.
+
+---
+
+## Phase 14 — Performance and Build Pass
+
+- [ ] 14.1 Run lint/build/test commands as available.
+- [ ] 14.2 Fix redesign-related errors.
+- [ ] 14.3 Review obvious performance issues.
+- [ ] 14.4 Update tracking files.
+
+---
+
+## Phase 15 — Final Recruiter Review
+
+- [ ] 15.1 Check if a recruiter can understand the portfolio in 5 seconds.
+- [ ] 15.2 Check if strongest projects are easy to find.
+- [ ] 15.3 Check if resume/GitHub/contact are obvious.
+- [ ] 15.4 Check cybersecurity credibility.
+- [ ] 15.5 Update tracking files.
+
+---
+
+## Phase 16 — Deployment Readiness
+
+- [ ] 16.1 Check public links.
+- [ ] 16.2 Check resume link/download.
+- [ ] 16.3 Check metadata and SEO basics.
+- [ ] 16.4 Run final production build.
+- [ ] 16.5 Update tracking files.
+
+---
+
+## Final Definition of Done
+
+The redesign is complete when:
+
+- [ ] Site visually feels polished and professional.
+- [ ] Site clearly communicates cybersecurity focus.
+- [ ] Hero section is strong.
+- [ ] Project cards feel like case studies.
+- [ ] Skills are grouped and scannable.
+- [ ] Resume/GitHub/contact are easy to access.
+- [ ] Mobile layout is clean.
+- [ ] Accessibility basics are handled.
+- [ ] Build passes.
+- [ ] Links work.
+- [ ] Content sounds human and specific.
+- [ ] Site is original and not a clone of the reference.
+- [ ] `codex/PROJECT_MEMORY.md` is updated with final design decisions.
+- [ ] `codex/WORKLOG.md` includes a final completion entry.

@@ -1,8 +1,8 @@
-# WORKLOG.md — Chronological Progress Log
+# WORKLOG.md — Portfolio Redesign Progress Log
 
 ## Purpose
 
-This file tracks what happened over time.
+This file is the chronological worklog for the portfolio redesign project.
 
 This file lives at:
 
@@ -10,9 +10,29 @@ This file lives at:
 codex/WORKLOG.md
 ```
 
-Add a new entry after each major task or work session.
+Codex should update this file after each major task or work session.
 
-Do not paste huge diffs here. Keep entries short but useful.
+Use this file to track what happened, what changed, what broke, what was decided, and what should happen next.
+
+---
+
+## Worklog Rules
+
+Each entry should include:
+
+- Date
+- Phase/task
+- Summary
+- Completed work
+- Files changed
+- Issues found
+- Decisions made
+- Checks run
+- Next steps
+
+Keep entries short but useful.
+
+Do not paste huge diffs into this file.
 
 ---
 
@@ -23,7 +43,7 @@ Do not paste huge diffs here. Keep entries short but useful.
 
 ### Summary
 
-Briefly explain what was worked on.
+Briefly describe what was worked on.
 
 ### Completed
 
@@ -45,7 +65,8 @@ Briefly explain what was worked on.
 ### Checks Run
 
 ```bash
-[command]
+npm run lint
+npm run build
 ```
 
 Result:
@@ -60,6 +81,6 @@ Result:
 
 ## Active Worklog
 
-Add entries below this line.
+Add new entries below this line.
 
 ---
