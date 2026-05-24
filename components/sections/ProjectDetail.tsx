@@ -1,8 +1,9 @@
-import { BadgeCheck, ExternalLink, FileText, Wrench } from "lucide-react";
+import { BadgeCheck, FileText, Wrench } from "lucide-react";
 import { PageContainer } from "@/components/layout/PageContainer";
 import { Button } from "@/components/ui/Button";
 import { Badge } from "@/components/ui/Badge";
 import { Card } from "@/components/ui/Card";
+import { GitHubMarkIcon } from "@/components/ui/GitHubMarkIcon";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import type { Project } from "@/lib/data/projects";
 import { profile } from "@/lib/data/profile";
@@ -140,11 +141,11 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
             )}
           </div>
           <div className="mt-6 flex flex-col gap-3">
-            <Button external href={project.githubUrl ?? profile.githubUrl} icon={<ExternalLink aria-hidden="true" className="size-4" />} variant="secondary">
+            <Button external href={project.githubUrl ?? profile.githubUrl} icon={<GitHubMarkIcon className="size-4" />} variant="secondary">
               View Full Write Up
             </Button>
             {project.supportingLinks?.map((link) => (
-              <Button external href={link.href} icon={<ExternalLink aria-hidden="true" className="size-4" />} key={link.href} variant="secondary">
+              <Button external href={link.href} icon={<GitHubMarkIcon className="size-4" />} key={link.href} variant="secondary">
                 {link.label}
               </Button>
             ))}

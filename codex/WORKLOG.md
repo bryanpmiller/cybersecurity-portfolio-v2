@@ -85,6 +85,102 @@ Add new entries below this line.
 
 ---
 
+## 2026-05-24 — Phase 5 Refinement: GitHub Link Icons
+
+### Summary
+
+Replaced generic GitHub-link icons with a shared GitHub Invertocat mark.
+
+### Completed
+
+- Added a shared `GitHubMarkIcon` component.
+- Replaced the project-card icon-only repository action icon with the shared GitHub mark.
+- Replaced the Home hero `View GitHub` CTA icon with the shared GitHub mark.
+- Replaced project detail GitHub button icons with the shared GitHub mark.
+- Kept the GitHub mark secondary to the project content and used it only to link to GitHub destinations.
+- Preserved existing link labels, accessible `aria-label` values, destinations, new-tab behavior, button sizing, and card layout.
+- Updated durable project memory with the GitHub icon usage decision.
+
+### Files Changed
+
+- `components/sections/FeaturedProjects.tsx`
+- `components/sections/HeroSection.tsx`
+- `components/sections/ProjectDetail.tsx`
+- `components/ui/GitHubMarkIcon.tsx`
+- `codex/PROJECT_MEMORY.md`
+- `codex/WORKLOG.md`
+
+### Issues Found
+
+- None.
+
+### Decisions Made
+
+- Use the GitHub Invertocat mark for GitHub links because GitHub allows permitted logos as social buttons or links back to GitHub, while avoiding use as Bryan's own logo or primary site branding.
+
+### Checks Run
+
+```bash
+npm.cmd run lint
+npm.cmd run build
+```
+
+Result:
+- `npm.cmd run lint`: Pass
+- `npm.cmd run build`: Pass
+- Browser validation: Pass on Home desktop, Projects mobile, and a representative project detail page. The Home hero GitHub CTA, project-card repository actions, and project detail GitHub buttons render with the shared SVG mark, with no horizontal overflow or console warnings/errors.
+
+### Next Steps
+
+- Continue with Phase 6.1: audit current skills.
+
+---
+
+## 2026-05-24 — Phase 5 Refinement: Project Card Snapshot Order
+
+### Summary
+
+Adjusted the project-card snapshot row order after review so the cards surface outcomes earlier for recruiter scanning.
+
+### Completed
+
+- Reordered the card snapshot rows from `Problem / Concepts / Outcome` to `Problem / Outcome / Concepts`.
+- Kept the dedicated `Tools` panel below the snapshot.
+- Preserved all existing card wording, project summaries, tool names, links, and sizing rules.
+- Updated durable project memory with the approved row-order rationale.
+
+### Files Changed
+
+- `components/sections/FeaturedProjects.tsx`
+- `codex/PROJECT_MEMORY.md`
+- `codex/WORKLOG.md`
+
+### Issues Found
+
+- None.
+
+### Decisions Made
+
+- Use `Problem / Outcome / Concepts / Tools` as the project-card scan order because it gives context, answers the recruiter’s “so what?” question sooner, then shows demonstrated concepts and stack.
+
+### Checks Run
+
+```bash
+npm.cmd run lint
+npm.cmd run build
+```
+
+Result:
+- `npm.cmd run lint`: Pass
+- `npm.cmd run build`: Pass
+- Browser validation: Pass on Home desktop and Projects mobile; all card snapshots render as `Problem / Outcome / Concepts`, with no horizontal overflow or console warnings/errors.
+
+### Next Steps
+
+- Continue with Phase 6.1: audit current skills.
+
+---
+
 ## 2026-05-24 — Phase 5.4, 5.5, and 5.6: Tags, Links, Hover States, Grid, Checks, and Tracking
 
 ### Summary

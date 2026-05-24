@@ -204,10 +204,11 @@ Initial implementation priority:
 ### Phase 5.4 Tags, Links, Hover States, and Responsive Grid
 
 - Project cards now use a structured bottom action row with the existing `View case study` link plus an icon-only external GitHub proof link when `githubUrl` exists.
-- The GitHub proof link uses an accessible `aria-label` and opens in a new tab without adding new visible copy to the card body.
+- GitHub links use the shared `GitHubMarkIcon` Invertocat mark for GitHub destinations on project cards, the Home hero GitHub CTA, and project detail GitHub buttons. The mark stays secondary to Bryan's content and is used only to link back to GitHub.
 - Tool tags keep the fixed/minimum tooling-panel height needed for alignment, while gaining clearer hover states, safer `max-w-full` behavior, and stronger card-hover polish.
 - The project-card grid now uses `auto-rows-fr` and stretched rows so card heights stay paired across the two-column desktop layout.
 - Focus-within, preview, action, and tag hover states were tuned inside `FeaturedProjects` without changing project summaries, snapshot text, project titles, roles, or case-study content.
+- Project card snapshot row order is `Problem`, `Outcome`, `Concepts`, followed by the dedicated `Tools` panel. This order gives recruiters context, the result, then the security concepts demonstrated before the tool stack.
 - Browser validation for Home and Projects at 1440px desktop and 390px mobile confirmed four case-study links, four GitHub proof links, no tag overflow, no horizontal overflow, no console warnings/errors, and preserved card alignment after delayed animation.
 - Phase 5.4 screenshots and audit data are saved in `codex/screenshots/phase-5-card-tags-links-grid/`.
 - `npm.cmd run lint` and `npm.cmd run build` both passed after the Phase 5.4 update.

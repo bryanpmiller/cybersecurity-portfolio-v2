@@ -3,8 +3,9 @@
 import Link from "next/link";
 import { motion, useReducedMotion } from "framer-motion";
 import type { LucideIcon } from "lucide-react";
-import { Activity, ArrowUpRight, CheckSquare, ExternalLink, Search, ShieldCheck, Wrench } from "lucide-react";
+import { Activity, ArrowUpRight, CheckSquare, Search, ShieldCheck, Wrench } from "lucide-react";
 import { Card } from "@/components/ui/Card";
+import { GitHubMarkIcon } from "@/components/ui/GitHubMarkIcon";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import type { Project } from "@/lib/data/projects";
 import { projects as defaultProjects } from "@/lib/data/projects";
@@ -263,12 +264,12 @@ function CaseStudySnapshot({ project }: { project: Project }) {
       value: project.cardSummary.problem
     },
     {
-      label: "Concepts",
-      value: project.cardSummary.concepts
-    },
-    {
       label: "Outcome",
       value: project.cardSummary.outcome
+    },
+    {
+      label: "Concepts",
+      value: project.cardSummary.concepts
     }
   ];
 
@@ -318,12 +319,12 @@ function ProjectActions({ project }: { project: Project }) {
       {project.githubUrl ? (
         <a
           aria-label={`Open GitHub repository for ${project.title}`}
-          className="focus-ring inline-flex size-10 shrink-0 items-center justify-center rounded-md border border-lineStrong/65 bg-ink-soft/75 text-slate-300 transition-[background,border-color,color,box-shadow] hover:border-evidence/45 hover:bg-surfaceElevated/85 hover:text-white hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.05)]"
+          className="focus-ring inline-flex size-10 shrink-0 items-center justify-center rounded-md border border-lineStrong/65 bg-ink-soft/75 text-white transition-[background,border-color,box-shadow] hover:border-evidence/45 hover:bg-surfaceElevated/85 hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.05)]"
           href={project.githubUrl}
           rel="noreferrer"
           target="_blank"
         >
-          <ExternalLink aria-hidden="true" className="size-4" />
+          <GitHubMarkIcon className="size-4" />
         </a>
       ) : null}
     </div>
