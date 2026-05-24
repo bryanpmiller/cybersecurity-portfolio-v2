@@ -9,20 +9,23 @@ type CardProps = {
 };
 
 const cardVariants: Record<NonNullable<CardProps["variant"]>, string> = {
-  default: "border-line bg-surface/80 p-6 shadow-soft",
+  default:
+    "border-line/90 bg-[linear-gradient(180deg,rgba(24,33,49,0.78)_0%,rgba(17,23,34,0.88)_100%)] p-5 shadow-soft shadow-black/25 ring-1 ring-white/[0.025] sm:p-6",
   metric:
-    "relative overflow-hidden border-lineStrong bg-surface/90 p-5 pl-6 shadow-soft before:absolute before:bottom-5 before:left-0 before:top-5 before:w-1 before:rounded-r-full",
+    "relative overflow-hidden border-lineStrong/90 bg-[linear-gradient(180deg,rgba(24,33,49,0.84)_0%,rgba(17,23,34,0.94)_100%)] p-4 pl-5 shadow-soft shadow-black/30 ring-1 ring-white/[0.03] before:absolute before:bottom-5 before:left-0 before:top-5 before:w-1 before:rounded-r-full sm:p-5 sm:pl-6",
   project:
-    "border-line bg-surface/80 p-6 shadow-soft transition-colors hover:border-lineStrong hover:bg-surface/90",
+    "border-line/90 bg-[linear-gradient(180deg,rgba(24,33,49,0.78)_0%,rgba(17,23,34,0.9)_100%)] p-5 shadow-soft shadow-black/25 ring-1 ring-white/[0.025] transition-[background,border-color,box-shadow] duration-200 hover:border-evidence/45 hover:bg-surface/90 hover:shadow-[0_28px_86px_rgba(0,0,0,0.48)] sm:p-6",
   terminal:
-    "relative overflow-hidden border-lineStrong bg-[linear-gradient(180deg,rgba(24,33,49,0.94)_0%,rgba(13,17,26,0.98)_100%)] p-0 shadow-soft",
-  evidence: "border-lineStrong bg-ink-soft/70 p-6 shadow-soft",
-  glass: "border-line bg-surface/65 p-6 shadow-soft backdrop-blur"
+    "relative overflow-hidden border-lineStrong/90 bg-[linear-gradient(180deg,rgba(24,33,49,0.94)_0%,rgba(13,17,26,0.98)_100%)] p-0 shadow-soft shadow-black/35 ring-1 ring-white/[0.035]",
+  evidence:
+    "border-lineStrong/80 bg-[linear-gradient(180deg,rgba(17,23,34,0.82)_0%,rgba(13,17,26,0.9)_100%)] p-5 shadow-soft shadow-black/25 ring-1 ring-white/[0.025] sm:p-6",
+  glass:
+    "border-line/90 bg-surface/65 p-5 shadow-soft shadow-black/25 ring-1 ring-white/[0.03] backdrop-blur sm:p-6"
 };
 
 export function Card({ children, className, as: Component = "div", variant = "default" }: CardProps) {
   return (
-    <Component className={cn("rounded-lg border", cardVariants[variant], className)}>
+    <Component className={cn("min-w-0 rounded-lg border", cardVariants[variant], className)}>
       {children}
     </Component>
   );

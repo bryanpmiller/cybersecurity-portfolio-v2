@@ -18,10 +18,10 @@ export default function ContactPage() {
         title="Where to find me"
         description="Connect through LinkedIn, review my GitHub project evidence, or open my resume for direct contact details."
       />
-      <section className="mt-10 grid gap-6 md:grid-cols-3">
+      <section className="mt-8 grid min-w-0 gap-5 sm:mt-10 md:grid-cols-3 lg:gap-6">
         <Card>
-          <h2 className="heading-text text-xl">LinkedIn</h2>
-          <p className="mt-3 text-sm leading-6 text-slate-300">Connect for recruiting conversations and professional background.</p>
+          <h2 className="panel-title">LinkedIn</h2>
+          <p className="compact-copy mt-3">Connect for recruiting conversations and professional background.</p>
           <div className="mt-5">
             <Button external href={profile.linkedinUrl} variant="secondary">
               View LinkedIn
@@ -29,8 +29,8 @@ export default function ContactPage() {
           </div>
         </Card>
         <Card>
-          <h2 className="heading-text text-xl">GitHub</h2>
-          <p className="mt-3 text-sm leading-6 text-slate-300">Review project repositories and supporting technical evidence.</p>
+          <h2 className="panel-title">GitHub</h2>
+          <p className="compact-copy mt-3">Review project repositories and supporting technical evidence.</p>
           <div className="mt-5">
             <Button external href={profile.githubUrl} variant="secondary">
               View GitHub
@@ -38,8 +38,8 @@ export default function ContactPage() {
           </div>
         </Card>
         <Card>
-          <h2 className="heading-text text-xl">Resume</h2>
-          <p className="mt-3 text-sm leading-6 text-slate-300">Use the resume PDF for direct contact details until a verified email link is added.</p>
+          <h2 className="panel-title">Resume</h2>
+          <p className="compact-copy mt-3">Use the resume PDF for direct contact details until a verified email link is added.</p>
           <div className="mt-5">
             <Button href={profile.resumeUrl} variant="secondary">
               Open Resume

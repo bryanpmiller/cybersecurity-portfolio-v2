@@ -1,0 +1,1591 @@
+{
+  "audits": [
+    {
+      "name": "home",
+      "route": "/",
+      "label": "desktop",
+      "shotFile": "e:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-4-navigation-review\\home-desktop.png",
+      "metrics": {
+        "activeLinks": [
+          "Home"
+        ],
+        "brand": {
+          "bottom": 59,
+          "height": 40,
+          "width": 376,
+          "x": 168,
+          "y": 19
+        },
+        "documentWidth": 1425,
+        "header": {
+          "bottom": 79,
+          "height": 79,
+          "width": 1425,
+          "x": 0,
+          "y": 0
+        },
+        "label": "desktop",
+        "links": [
+          {
+            "ariaCurrent": null,
+            "height": 40,
+            "href": "/",
+            "text": "Bryan MillerVulnerability Management & Cybersecurity Analyst",
+            "textFits": true,
+            "width": 376,
+            "x": 168,
+            "y": 19
+          },
+          {
+            "ariaCurrent": "page",
+            "height": 37,
+            "href": "/",
+            "text": "Home",
+            "textFits": true,
+            "width": 65,
+            "x": 794,
+            "y": 21
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/about",
+            "text": "About",
+            "textFits": true,
+            "width": 66,
+            "x": 865,
+            "y": 21
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/resume",
+            "text": "Resume",
+            "textFits": true,
+            "width": 79,
+            "x": 936,
+            "y": 21
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/projects",
+            "text": "Projects",
+            "textFits": true,
+            "width": 80,
+            "x": 1021,
+            "y": 21
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/skills",
+            "text": "Skills",
+            "textFits": true,
+            "width": 60,
+            "x": 1107,
+            "y": 21
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/contact",
+            "text": "Contact",
+            "textFits": true,
+            "width": 78,
+            "x": 1174,
+            "y": 21
+          }
+        ],
+        "nav": {
+          "bottom": 79,
+          "height": 79,
+          "width": 1152,
+          "x": 136,
+          "y": 0
+        },
+        "navBox": {
+          "bottom": 63,
+          "height": 47,
+          "width": 467,
+          "x": 789,
+          "y": 16
+        },
+        "navText": "Bryan MillerVulnerability Management & Cybersecurity AnalystHomeAboutResumeProjectsSkillsContact",
+        "overflowX": false,
+        "route": "/",
+        "stickyHeaderPosition": "sticky",
+        "title": "Bryan Miller | Cybersecurity Portfolio",
+        "viewport": {
+          "height": 1000,
+          "width": 1440
+        }
+      }
+    },
+    {
+      "name": "home",
+      "route": "/",
+      "label": "mobile",
+      "shotFile": "e:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-4-navigation-review\\home-mobile.png",
+      "metrics": {
+        "activeLinks": [
+          "Home"
+        ],
+        "brand": {
+          "bottom": 73,
+          "height": 57,
+          "width": 343,
+          "x": 16,
+          "y": 16
+        },
+        "documentWidth": 375,
+        "header": {
+          "bottom": 195,
+          "height": 195,
+          "width": 375,
+          "x": 0,
+          "y": 0
+        },
+        "label": "mobile",
+        "links": [
+          {
+            "ariaCurrent": null,
+            "height": 57,
+            "href": "/",
+            "text": "Bryan MillerVulnerability Management & Cybersecurity Analyst",
+            "textFits": true,
+            "width": 343,
+            "x": 16,
+            "y": 16
+          },
+          {
+            "ariaCurrent": "page",
+            "height": 37,
+            "href": "/",
+            "text": "Home",
+            "textFits": true,
+            "width": 65,
+            "x": 21,
+            "y": 93
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/about",
+            "text": "About",
+            "textFits": true,
+            "width": 66,
+            "x": 92,
+            "y": 93
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/resume",
+            "text": "Resume",
+            "textFits": true,
+            "width": 79,
+            "x": 163,
+            "y": 93
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/projects",
+            "text": "Projects",
+            "textFits": true,
+            "width": 80,
+            "x": 248,
+            "y": 93
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/skills",
+            "text": "Skills",
+            "textFits": true,
+            "width": 60,
+            "x": 21,
+            "y": 137
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/contact",
+            "text": "Contact",
+            "textFits": true,
+            "width": 78,
+            "x": 87,
+            "y": 137
+          }
+        ],
+        "nav": {
+          "bottom": 195,
+          "height": 195,
+          "width": 375,
+          "x": 0,
+          "y": 0
+        },
+        "navBox": {
+          "bottom": 179,
+          "height": 90,
+          "width": 343,
+          "x": 16,
+          "y": 89
+        },
+        "navText": "Bryan MillerVulnerability Management & Cybersecurity AnalystHomeAboutResumeProjectsSkillsContact",
+        "overflowX": false,
+        "route": "/",
+        "stickyHeaderPosition": "sticky",
+        "title": "Bryan Miller | Cybersecurity Portfolio",
+        "viewport": {
+          "height": 844,
+          "width": 390
+        }
+      }
+    },
+    {
+      "name": "about",
+      "route": "/about",
+      "label": "desktop",
+      "shotFile": null,
+      "metrics": {
+        "activeLinks": [
+          "About"
+        ],
+        "brand": {
+          "bottom": 59,
+          "height": 40,
+          "width": 376,
+          "x": 168,
+          "y": 19
+        },
+        "documentWidth": 1425,
+        "header": {
+          "bottom": 79,
+          "height": 79,
+          "width": 1425,
+          "x": 0,
+          "y": 0
+        },
+        "label": "desktop",
+        "links": [
+          {
+            "ariaCurrent": null,
+            "height": 40,
+            "href": "/",
+            "text": "Bryan MillerVulnerability Management & Cybersecurity Analyst",
+            "textFits": true,
+            "width": 376,
+            "x": 168,
+            "y": 19
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/",
+            "text": "Home",
+            "textFits": true,
+            "width": 65,
+            "x": 794,
+            "y": 21
+          },
+          {
+            "ariaCurrent": "page",
+            "height": 37,
+            "href": "/about",
+            "text": "About",
+            "textFits": true,
+            "width": 66,
+            "x": 865,
+            "y": 21
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/resume",
+            "text": "Resume",
+            "textFits": true,
+            "width": 79,
+            "x": 936,
+            "y": 21
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/projects",
+            "text": "Projects",
+            "textFits": true,
+            "width": 80,
+            "x": 1021,
+            "y": 21
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/skills",
+            "text": "Skills",
+            "textFits": true,
+            "width": 60,
+            "x": 1107,
+            "y": 21
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/contact",
+            "text": "Contact",
+            "textFits": true,
+            "width": 78,
+            "x": 1174,
+            "y": 21
+          }
+        ],
+        "nav": {
+          "bottom": 79,
+          "height": 79,
+          "width": 1152,
+          "x": 136,
+          "y": 0
+        },
+        "navBox": {
+          "bottom": 63,
+          "height": 47,
+          "width": 467,
+          "x": 789,
+          "y": 16
+        },
+        "navText": "Bryan MillerVulnerability Management & Cybersecurity AnalystHomeAboutResumeProjectsSkillsContact",
+        "overflowX": false,
+        "route": "/about",
+        "stickyHeaderPosition": "sticky",
+        "title": "About | Bryan Miller",
+        "viewport": {
+          "height": 1000,
+          "width": 1440
+        }
+      }
+    },
+    {
+      "name": "about",
+      "route": "/about",
+      "label": "mobile",
+      "shotFile": "e:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-4-navigation-review\\about-mobile.png",
+      "metrics": {
+        "activeLinks": [
+          "About"
+        ],
+        "brand": {
+          "bottom": 73,
+          "height": 57,
+          "width": 343,
+          "x": 16,
+          "y": 16
+        },
+        "documentWidth": 375,
+        "header": {
+          "bottom": 195,
+          "height": 195,
+          "width": 375,
+          "x": 0,
+          "y": 0
+        },
+        "label": "mobile",
+        "links": [
+          {
+            "ariaCurrent": null,
+            "height": 57,
+            "href": "/",
+            "text": "Bryan MillerVulnerability Management & Cybersecurity Analyst",
+            "textFits": true,
+            "width": 343,
+            "x": 16,
+            "y": 16
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/",
+            "text": "Home",
+            "textFits": true,
+            "width": 65,
+            "x": 21,
+            "y": 93
+          },
+          {
+            "ariaCurrent": "page",
+            "height": 37,
+            "href": "/about",
+            "text": "About",
+            "textFits": true,
+            "width": 66,
+            "x": 92,
+            "y": 93
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/resume",
+            "text": "Resume",
+            "textFits": true,
+            "width": 79,
+            "x": 163,
+            "y": 93
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/projects",
+            "text": "Projects",
+            "textFits": true,
+            "width": 80,
+            "x": 248,
+            "y": 93
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/skills",
+            "text": "Skills",
+            "textFits": true,
+            "width": 60,
+            "x": 21,
+            "y": 137
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/contact",
+            "text": "Contact",
+            "textFits": true,
+            "width": 78,
+            "x": 87,
+            "y": 137
+          }
+        ],
+        "nav": {
+          "bottom": 195,
+          "height": 195,
+          "width": 375,
+          "x": 0,
+          "y": 0
+        },
+        "navBox": {
+          "bottom": 179,
+          "height": 90,
+          "width": 343,
+          "x": 16,
+          "y": 89
+        },
+        "navText": "Bryan MillerVulnerability Management & Cybersecurity AnalystHomeAboutResumeProjectsSkillsContact",
+        "overflowX": false,
+        "route": "/about",
+        "stickyHeaderPosition": "sticky",
+        "title": "About | Bryan Miller",
+        "viewport": {
+          "height": 844,
+          "width": 390
+        }
+      }
+    },
+    {
+      "name": "resume",
+      "route": "/resume",
+      "label": "desktop",
+      "shotFile": null,
+      "metrics": {
+        "activeLinks": [
+          "Resume"
+        ],
+        "brand": {
+          "bottom": 59,
+          "height": 40,
+          "width": 376,
+          "x": 168,
+          "y": 19
+        },
+        "documentWidth": 1425,
+        "header": {
+          "bottom": 79,
+          "height": 79,
+          "width": 1425,
+          "x": 0,
+          "y": 0
+        },
+        "label": "desktop",
+        "links": [
+          {
+            "ariaCurrent": null,
+            "height": 40,
+            "href": "/",
+            "text": "Bryan MillerVulnerability Management & Cybersecurity Analyst",
+            "textFits": true,
+            "width": 376,
+            "x": 168,
+            "y": 19
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/",
+            "text": "Home",
+            "textFits": true,
+            "width": 65,
+            "x": 794,
+            "y": 21
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/about",
+            "text": "About",
+            "textFits": true,
+            "width": 66,
+            "x": 865,
+            "y": 21
+          },
+          {
+            "ariaCurrent": "page",
+            "height": 37,
+            "href": "/resume",
+            "text": "Resume",
+            "textFits": true,
+            "width": 79,
+            "x": 936,
+            "y": 21
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/projects",
+            "text": "Projects",
+            "textFits": true,
+            "width": 80,
+            "x": 1021,
+            "y": 21
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/skills",
+            "text": "Skills",
+            "textFits": true,
+            "width": 60,
+            "x": 1107,
+            "y": 21
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/contact",
+            "text": "Contact",
+            "textFits": true,
+            "width": 78,
+            "x": 1174,
+            "y": 21
+          }
+        ],
+        "nav": {
+          "bottom": 79,
+          "height": 79,
+          "width": 1152,
+          "x": 136,
+          "y": 0
+        },
+        "navBox": {
+          "bottom": 63,
+          "height": 47,
+          "width": 467,
+          "x": 789,
+          "y": 16
+        },
+        "navText": "Bryan MillerVulnerability Management & Cybersecurity AnalystHomeAboutResumeProjectsSkillsContact",
+        "overflowX": false,
+        "route": "/resume",
+        "stickyHeaderPosition": "sticky",
+        "title": "Resume | Bryan Miller",
+        "viewport": {
+          "height": 1000,
+          "width": 1440
+        }
+      }
+    },
+    {
+      "name": "resume",
+      "route": "/resume",
+      "label": "mobile",
+      "shotFile": "e:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-4-navigation-review\\resume-mobile.png",
+      "metrics": {
+        "activeLinks": [
+          "Resume"
+        ],
+        "brand": {
+          "bottom": 73,
+          "height": 57,
+          "width": 343,
+          "x": 16,
+          "y": 16
+        },
+        "documentWidth": 375,
+        "header": {
+          "bottom": 195,
+          "height": 195,
+          "width": 375,
+          "x": 0,
+          "y": 0
+        },
+        "label": "mobile",
+        "links": [
+          {
+            "ariaCurrent": null,
+            "height": 57,
+            "href": "/",
+            "text": "Bryan MillerVulnerability Management & Cybersecurity Analyst",
+            "textFits": true,
+            "width": 343,
+            "x": 16,
+            "y": 16
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/",
+            "text": "Home",
+            "textFits": true,
+            "width": 65,
+            "x": 21,
+            "y": 93
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/about",
+            "text": "About",
+            "textFits": true,
+            "width": 66,
+            "x": 92,
+            "y": 93
+          },
+          {
+            "ariaCurrent": "page",
+            "height": 37,
+            "href": "/resume",
+            "text": "Resume",
+            "textFits": true,
+            "width": 79,
+            "x": 163,
+            "y": 93
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/projects",
+            "text": "Projects",
+            "textFits": true,
+            "width": 80,
+            "x": 248,
+            "y": 93
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/skills",
+            "text": "Skills",
+            "textFits": true,
+            "width": 60,
+            "x": 21,
+            "y": 137
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/contact",
+            "text": "Contact",
+            "textFits": true,
+            "width": 78,
+            "x": 87,
+            "y": 137
+          }
+        ],
+        "nav": {
+          "bottom": 195,
+          "height": 195,
+          "width": 375,
+          "x": 0,
+          "y": 0
+        },
+        "navBox": {
+          "bottom": 179,
+          "height": 90,
+          "width": 343,
+          "x": 16,
+          "y": 89
+        },
+        "navText": "Bryan MillerVulnerability Management & Cybersecurity AnalystHomeAboutResumeProjectsSkillsContact",
+        "overflowX": false,
+        "route": "/resume",
+        "stickyHeaderPosition": "sticky",
+        "title": "Resume | Bryan Miller",
+        "viewport": {
+          "height": 844,
+          "width": 390
+        }
+      }
+    },
+    {
+      "name": "projects",
+      "route": "/projects",
+      "label": "desktop",
+      "shotFile": "e:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-4-navigation-review\\projects-desktop.png",
+      "metrics": {
+        "activeLinks": [
+          "Projects"
+        ],
+        "brand": {
+          "bottom": 59,
+          "height": 40,
+          "width": 376,
+          "x": 168,
+          "y": 19
+        },
+        "documentWidth": 1425,
+        "header": {
+          "bottom": 79,
+          "height": 79,
+          "width": 1425,
+          "x": 0,
+          "y": 0
+        },
+        "label": "desktop",
+        "links": [
+          {
+            "ariaCurrent": null,
+            "height": 40,
+            "href": "/",
+            "text": "Bryan MillerVulnerability Management & Cybersecurity Analyst",
+            "textFits": true,
+            "width": 376,
+            "x": 168,
+            "y": 19
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/",
+            "text": "Home",
+            "textFits": true,
+            "width": 65,
+            "x": 794,
+            "y": 21
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/about",
+            "text": "About",
+            "textFits": true,
+            "width": 66,
+            "x": 865,
+            "y": 21
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/resume",
+            "text": "Resume",
+            "textFits": true,
+            "width": 79,
+            "x": 936,
+            "y": 21
+          },
+          {
+            "ariaCurrent": "page",
+            "height": 37,
+            "href": "/projects",
+            "text": "Projects",
+            "textFits": true,
+            "width": 80,
+            "x": 1021,
+            "y": 21
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/skills",
+            "text": "Skills",
+            "textFits": true,
+            "width": 60,
+            "x": 1107,
+            "y": 21
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/contact",
+            "text": "Contact",
+            "textFits": true,
+            "width": 78,
+            "x": 1174,
+            "y": 21
+          }
+        ],
+        "nav": {
+          "bottom": 79,
+          "height": 79,
+          "width": 1152,
+          "x": 136,
+          "y": 0
+        },
+        "navBox": {
+          "bottom": 63,
+          "height": 47,
+          "width": 467,
+          "x": 789,
+          "y": 16
+        },
+        "navText": "Bryan MillerVulnerability Management & Cybersecurity AnalystHomeAboutResumeProjectsSkillsContact",
+        "overflowX": false,
+        "route": "/projects",
+        "stickyHeaderPosition": "sticky",
+        "title": "Projects | Bryan Miller",
+        "viewport": {
+          "height": 1000,
+          "width": 1440
+        }
+      }
+    },
+    {
+      "name": "projects",
+      "route": "/projects",
+      "label": "mobile",
+      "shotFile": "e:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-4-navigation-review\\projects-mobile.png",
+      "metrics": {
+        "activeLinks": [
+          "Projects"
+        ],
+        "brand": {
+          "bottom": 73,
+          "height": 57,
+          "width": 343,
+          "x": 16,
+          "y": 16
+        },
+        "documentWidth": 375,
+        "header": {
+          "bottom": 195,
+          "height": 195,
+          "width": 375,
+          "x": 0,
+          "y": 0
+        },
+        "label": "mobile",
+        "links": [
+          {
+            "ariaCurrent": null,
+            "height": 57,
+            "href": "/",
+            "text": "Bryan MillerVulnerability Management & Cybersecurity Analyst",
+            "textFits": true,
+            "width": 343,
+            "x": 16,
+            "y": 16
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/",
+            "text": "Home",
+            "textFits": true,
+            "width": 65,
+            "x": 21,
+            "y": 93
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/about",
+            "text": "About",
+            "textFits": true,
+            "width": 66,
+            "x": 92,
+            "y": 93
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/resume",
+            "text": "Resume",
+            "textFits": true,
+            "width": 79,
+            "x": 163,
+            "y": 93
+          },
+          {
+            "ariaCurrent": "page",
+            "height": 37,
+            "href": "/projects",
+            "text": "Projects",
+            "textFits": true,
+            "width": 80,
+            "x": 248,
+            "y": 93
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/skills",
+            "text": "Skills",
+            "textFits": true,
+            "width": 60,
+            "x": 21,
+            "y": 137
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/contact",
+            "text": "Contact",
+            "textFits": true,
+            "width": 78,
+            "x": 87,
+            "y": 137
+          }
+        ],
+        "nav": {
+          "bottom": 195,
+          "height": 195,
+          "width": 375,
+          "x": 0,
+          "y": 0
+        },
+        "navBox": {
+          "bottom": 179,
+          "height": 90,
+          "width": 343,
+          "x": 16,
+          "y": 89
+        },
+        "navText": "Bryan MillerVulnerability Management & Cybersecurity AnalystHomeAboutResumeProjectsSkillsContact",
+        "overflowX": false,
+        "route": "/projects",
+        "stickyHeaderPosition": "sticky",
+        "title": "Projects | Bryan Miller",
+        "viewport": {
+          "height": 844,
+          "width": 390
+        }
+      }
+    },
+    {
+      "name": "skills",
+      "route": "/skills",
+      "label": "desktop",
+      "shotFile": null,
+      "metrics": {
+        "activeLinks": [
+          "Skills"
+        ],
+        "brand": {
+          "bottom": 59,
+          "height": 40,
+          "width": 376,
+          "x": 168,
+          "y": 19
+        },
+        "documentWidth": 1425,
+        "header": {
+          "bottom": 79,
+          "height": 79,
+          "width": 1425,
+          "x": 0,
+          "y": 0
+        },
+        "label": "desktop",
+        "links": [
+          {
+            "ariaCurrent": null,
+            "height": 40,
+            "href": "/",
+            "text": "Bryan MillerVulnerability Management & Cybersecurity Analyst",
+            "textFits": true,
+            "width": 376,
+            "x": 168,
+            "y": 19
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/",
+            "text": "Home",
+            "textFits": true,
+            "width": 65,
+            "x": 794,
+            "y": 21
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/about",
+            "text": "About",
+            "textFits": true,
+            "width": 66,
+            "x": 865,
+            "y": 21
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/resume",
+            "text": "Resume",
+            "textFits": true,
+            "width": 79,
+            "x": 936,
+            "y": 21
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/projects",
+            "text": "Projects",
+            "textFits": true,
+            "width": 80,
+            "x": 1021,
+            "y": 21
+          },
+          {
+            "ariaCurrent": "page",
+            "height": 37,
+            "href": "/skills",
+            "text": "Skills",
+            "textFits": true,
+            "width": 60,
+            "x": 1107,
+            "y": 21
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/contact",
+            "text": "Contact",
+            "textFits": true,
+            "width": 78,
+            "x": 1174,
+            "y": 21
+          }
+        ],
+        "nav": {
+          "bottom": 79,
+          "height": 79,
+          "width": 1152,
+          "x": 136,
+          "y": 0
+        },
+        "navBox": {
+          "bottom": 63,
+          "height": 47,
+          "width": 467,
+          "x": 789,
+          "y": 16
+        },
+        "navText": "Bryan MillerVulnerability Management & Cybersecurity AnalystHomeAboutResumeProjectsSkillsContact",
+        "overflowX": false,
+        "route": "/skills",
+        "stickyHeaderPosition": "sticky",
+        "title": "Skills | Bryan Miller",
+        "viewport": {
+          "height": 1000,
+          "width": 1440
+        }
+      }
+    },
+    {
+      "name": "skills",
+      "route": "/skills",
+      "label": "mobile",
+      "shotFile": "e:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-4-navigation-review\\skills-mobile.png",
+      "metrics": {
+        "activeLinks": [
+          "Skills"
+        ],
+        "brand": {
+          "bottom": 73,
+          "height": 57,
+          "width": 343,
+          "x": 16,
+          "y": 16
+        },
+        "documentWidth": 375,
+        "header": {
+          "bottom": 195,
+          "height": 195,
+          "width": 375,
+          "x": 0,
+          "y": 0
+        },
+        "label": "mobile",
+        "links": [
+          {
+            "ariaCurrent": null,
+            "height": 57,
+            "href": "/",
+            "text": "Bryan MillerVulnerability Management & Cybersecurity Analyst",
+            "textFits": true,
+            "width": 343,
+            "x": 16,
+            "y": 16
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/",
+            "text": "Home",
+            "textFits": true,
+            "width": 65,
+            "x": 21,
+            "y": 93
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/about",
+            "text": "About",
+            "textFits": true,
+            "width": 66,
+            "x": 92,
+            "y": 93
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/resume",
+            "text": "Resume",
+            "textFits": true,
+            "width": 79,
+            "x": 163,
+            "y": 93
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/projects",
+            "text": "Projects",
+            "textFits": true,
+            "width": 80,
+            "x": 248,
+            "y": 93
+          },
+          {
+            "ariaCurrent": "page",
+            "height": 37,
+            "href": "/skills",
+            "text": "Skills",
+            "textFits": true,
+            "width": 60,
+            "x": 21,
+            "y": 137
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/contact",
+            "text": "Contact",
+            "textFits": true,
+            "width": 78,
+            "x": 87,
+            "y": 137
+          }
+        ],
+        "nav": {
+          "bottom": 195,
+          "height": 195,
+          "width": 375,
+          "x": 0,
+          "y": 0
+        },
+        "navBox": {
+          "bottom": 179,
+          "height": 90,
+          "width": 343,
+          "x": 16,
+          "y": 89
+        },
+        "navText": "Bryan MillerVulnerability Management & Cybersecurity AnalystHomeAboutResumeProjectsSkillsContact",
+        "overflowX": false,
+        "route": "/skills",
+        "stickyHeaderPosition": "sticky",
+        "title": "Skills | Bryan Miller",
+        "viewport": {
+          "height": 844,
+          "width": 390
+        }
+      }
+    },
+    {
+      "name": "contact",
+      "route": "/contact",
+      "label": "desktop",
+      "shotFile": null,
+      "metrics": {
+        "activeLinks": [
+          "Contact"
+        ],
+        "brand": {
+          "bottom": 59,
+          "height": 40,
+          "width": 376,
+          "x": 176,
+          "y": 19
+        },
+        "documentWidth": 1440,
+        "header": {
+          "bottom": 79,
+          "height": 79,
+          "width": 1440,
+          "x": 0,
+          "y": 0
+        },
+        "label": "desktop",
+        "links": [
+          {
+            "ariaCurrent": null,
+            "height": 40,
+            "href": "/",
+            "text": "Bryan MillerVulnerability Management & Cybersecurity Analyst",
+            "textFits": true,
+            "width": 376,
+            "x": 176,
+            "y": 19
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/",
+            "text": "Home",
+            "textFits": true,
+            "width": 65,
+            "x": 801,
+            "y": 21
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/about",
+            "text": "About",
+            "textFits": true,
+            "width": 66,
+            "x": 872,
+            "y": 21
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/resume",
+            "text": "Resume",
+            "textFits": true,
+            "width": 79,
+            "x": 944,
+            "y": 21
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/projects",
+            "text": "Projects",
+            "textFits": true,
+            "width": 80,
+            "x": 1029,
+            "y": 21
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/skills",
+            "text": "Skills",
+            "textFits": true,
+            "width": 60,
+            "x": 1115,
+            "y": 21
+          },
+          {
+            "ariaCurrent": "page",
+            "height": 37,
+            "href": "/contact",
+            "text": "Contact",
+            "textFits": true,
+            "width": 78,
+            "x": 1181,
+            "y": 21
+          }
+        ],
+        "nav": {
+          "bottom": 79,
+          "height": 79,
+          "width": 1152,
+          "x": 144,
+          "y": 0
+        },
+        "navBox": {
+          "bottom": 63,
+          "height": 47,
+          "width": 467,
+          "x": 797,
+          "y": 16
+        },
+        "navText": "Bryan MillerVulnerability Management & Cybersecurity AnalystHomeAboutResumeProjectsSkillsContact",
+        "overflowX": false,
+        "route": "/contact",
+        "stickyHeaderPosition": "sticky",
+        "title": "Contact | Bryan Miller",
+        "viewport": {
+          "height": 1000,
+          "width": 1440
+        }
+      }
+    },
+    {
+      "name": "contact",
+      "route": "/contact",
+      "label": "mobile",
+      "shotFile": "e:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-4-navigation-review\\contact-mobile.png",
+      "metrics": {
+        "activeLinks": [
+          "Contact"
+        ],
+        "brand": {
+          "bottom": 73,
+          "height": 57,
+          "width": 343,
+          "x": 16,
+          "y": 16
+        },
+        "documentWidth": 375,
+        "header": {
+          "bottom": 195,
+          "height": 195,
+          "width": 375,
+          "x": 0,
+          "y": 0
+        },
+        "label": "mobile",
+        "links": [
+          {
+            "ariaCurrent": null,
+            "height": 57,
+            "href": "/",
+            "text": "Bryan MillerVulnerability Management & Cybersecurity Analyst",
+            "textFits": true,
+            "width": 343,
+            "x": 16,
+            "y": 16
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/",
+            "text": "Home",
+            "textFits": true,
+            "width": 65,
+            "x": 21,
+            "y": 93
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/about",
+            "text": "About",
+            "textFits": true,
+            "width": 66,
+            "x": 92,
+            "y": 93
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/resume",
+            "text": "Resume",
+            "textFits": true,
+            "width": 79,
+            "x": 163,
+            "y": 93
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/projects",
+            "text": "Projects",
+            "textFits": true,
+            "width": 80,
+            "x": 248,
+            "y": 93
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/skills",
+            "text": "Skills",
+            "textFits": true,
+            "width": 60,
+            "x": 21,
+            "y": 137
+          },
+          {
+            "ariaCurrent": "page",
+            "height": 37,
+            "href": "/contact",
+            "text": "Contact",
+            "textFits": true,
+            "width": 78,
+            "x": 87,
+            "y": 137
+          }
+        ],
+        "nav": {
+          "bottom": 195,
+          "height": 195,
+          "width": 375,
+          "x": 0,
+          "y": 0
+        },
+        "navBox": {
+          "bottom": 179,
+          "height": 90,
+          "width": 343,
+          "x": 16,
+          "y": 89
+        },
+        "navText": "Bryan MillerVulnerability Management & Cybersecurity AnalystHomeAboutResumeProjectsSkillsContact",
+        "overflowX": false,
+        "route": "/contact",
+        "stickyHeaderPosition": "sticky",
+        "title": "Contact | Bryan Miller",
+        "viewport": {
+          "height": 844,
+          "width": 390
+        }
+      }
+    },
+    {
+      "name": "home",
+      "route": "/",
+      "label": "narrow-320",
+      "shotFile": "e:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-4-navigation-review\\home-narrow-320.png",
+      "metrics": {
+        "activeLinks": [
+          "Home"
+        ],
+        "brand": {
+          "bottom": 73,
+          "height": 57,
+          "width": 273,
+          "x": 16,
+          "y": 16
+        },
+        "documentWidth": 305,
+        "header": {
+          "bottom": 195,
+          "height": 195,
+          "width": 305,
+          "x": 0,
+          "y": 0
+        },
+        "label": "narrow-320",
+        "links": [
+          {
+            "ariaCurrent": null,
+            "height": 57,
+            "href": "/",
+            "text": "Bryan MillerVulnerability Management & Cybersecurity Analyst",
+            "textFits": true,
+            "width": 273,
+            "x": 16,
+            "y": 16
+          },
+          {
+            "ariaCurrent": "page",
+            "height": 37,
+            "href": "/",
+            "text": "Home",
+            "textFits": true,
+            "width": 65,
+            "x": 21,
+            "y": 93
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/about",
+            "text": "About",
+            "textFits": true,
+            "width": 66,
+            "x": 92,
+            "y": 93
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/resume",
+            "text": "Resume",
+            "textFits": true,
+            "width": 79,
+            "x": 163,
+            "y": 93
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/projects",
+            "text": "Projects",
+            "textFits": true,
+            "width": 80,
+            "x": 21,
+            "y": 137
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/skills",
+            "text": "Skills",
+            "textFits": true,
+            "width": 60,
+            "x": 107,
+            "y": 137
+          },
+          {
+            "ariaCurrent": null,
+            "height": 37,
+            "href": "/contact",
+            "text": "Contact",
+            "textFits": true,
+            "width": 78,
+            "x": 173,
+            "y": 137
+          }
+        ],
+        "nav": {
+          "bottom": 195,
+          "height": 195,
+          "width": 305,
+          "x": 0,
+          "y": 0
+        },
+        "navBox": {
+          "bottom": 179,
+          "height": 90,
+          "width": 273,
+          "x": 16,
+          "y": 89
+        },
+        "navText": "Bryan MillerVulnerability Management & Cybersecurity AnalystHomeAboutResumeProjectsSkillsContact",
+        "overflowX": false,
+        "route": "/",
+        "stickyHeaderPosition": "sticky",
+        "title": "Bryan Miller | Cybersecurity Portfolio",
+        "viewport": {
+          "height": 740,
+          "width": 320
+        }
+      }
+    }
+  ],
+  "logs": []
+}

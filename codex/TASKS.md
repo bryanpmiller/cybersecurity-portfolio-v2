@@ -187,11 +187,11 @@ After visual changes, Codex should inspect affected pages at desktop and mobile 
 
 ## Current Phase
 
-Current phase: Phase 2 — Design Direction and Visual System
+Current phase: Phase 5 — Project Cards as Cybersecurity Case Studies
 
 Current next task:
 
-- [ ] Phase 2.3 — Improve typography scale
+- [ ] Phase 5.1 — Audit existing project cards
 
 ---
 
@@ -269,33 +269,33 @@ Before editing code, summarize:
 
 - [x] 2.1 Define visual direction.
 - [x] 2.2 Define background, surface, text, border, and accent colors.
-- [ ] 2.3 Improve typography scale.
-- [ ] 2.4 Improve buttons, cards, links, borders, and focus states.
-- [ ] 2.5 Improve global section spacing and containers.
-- [ ] 2.6 Run relevant checks.
-- [ ] 2.7 Update tracking files.
+- [x] 2.3 Improve typography scale.
+- [x] 2.4 Improve buttons, cards, links, borders, and focus states.
+- [x] 2.5 Improve global section spacing and containers.
+- [x] 2.6 Run relevant checks.
+- [x] 2.7 Update tracking files.
 
 ---
 
 ## Phase 3 — Homepage Hero Redesign
 
-- [ ] 3.1 Audit current hero.
-- [ ] 3.2 Improve headline/subheadline structure.
-- [ ] 3.3 Improve CTA buttons.
-- [ ] 3.4 Add tasteful cybersecurity visual element.
-- [ ] 3.5 Validate mobile layout.
-- [ ] 3.6 Run relevant checks.
-- [ ] 3.7 Update tracking files.
+- [x] 3.1 Audit current hero.
+- [x] 3.2 Improve headline/subheadline structure.
+- [x] 3.3 Improve CTA buttons.
+- [x] 3.4 Add tasteful cybersecurity visual element.
+- [x] 3.5 Validate mobile layout.
+- [x] 3.6 Run relevant checks.
+- [x] 3.7 Update tracking files.
 
 ---
 
 ## Phase 4 — Navigation and Page Structure
 
-- [ ] 4.1 Review navigation.
-- [ ] 4.2 Improve nav styling and mobile behavior.
-- [ ] 4.3 Improve section order for recruiter scanning.
-- [ ] 4.4 Run relevant checks.
-- [ ] 4.5 Update tracking files.
+- [x] 4.1 Review navigation.
+- [x] 4.2 Improve nav styling and mobile behavior.
+- [x] 4.3 Improve section order for recruiter scanning.
+- [x] 4.4 Run relevant checks.
+- [x] 4.5 Update tracking files.
 
 ---
 

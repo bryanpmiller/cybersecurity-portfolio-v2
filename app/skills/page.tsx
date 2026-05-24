@@ -16,7 +16,7 @@ export default function SkillsPage() {
         title="Cybersecurity skills grouped by role relevance"
         description="A role-focused view of the tools, frameworks, and technical skills used across vulnerability management, secure configuration, automation, and threat hunting work."
       />
-      <div className="mt-10">
+      <div className="mt-8 min-w-0 sm:mt-10">
         <SkillsOverview showHeader={false} />
       </div>
     </PageContainer>

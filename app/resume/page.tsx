@@ -15,29 +15,29 @@ export const metadata: Metadata = {
 export default function ResumePage() {
   return (
     <PageContainer>
-      <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+      <div className="flex min-w-0 flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
         <SectionHeader eyebrow="Resume" title="Resume Snapshot" description={profile.resumeSnapshot} />
         <Button href={profile.resumeUrl}>Download PDF</Button>
       </div>
 
-      <Card as="section" className="mt-10">
-        <h2 className="heading-text text-xl">Profile</h2>
+      <Card as="section" className="mt-8 sm:mt-10">
+        <h2 className="panel-title">Profile</h2>
         <div className="mt-5 grid gap-5 md:grid-cols-2">
           {resumeHighlights.map((highlight) => (
-            <div className="rounded-md border border-line bg-ink-soft/70 p-4" key={highlight.title}>
-              <h3 className="heading-text text-base">{highlight.title}</h3>
-              <p className="mt-2 whitespace-pre-line text-sm leading-6 text-slate-300">{highlight.body}</p>
+            <div className="min-w-0 rounded-md border border-line bg-ink-soft/70 p-4" key={highlight.title}>
+              <h3 className="card-title">{highlight.title}</h3>
+              <p className="compact-copy mt-2 whitespace-pre-line">{highlight.body}</p>
             </div>
           ))}
         </div>
       </Card>
 
       <Card as="section" className="mt-8">
-        <h2 className="heading-text text-xl">Skills Snapshot</h2>
+        <h2 className="panel-title">Skills Snapshot</h2>
         <div className="mt-5 grid gap-5 md:grid-cols-2">
           {skillGroups.slice(0, 4).map((group) => (
-            <div className="rounded-md border border-line bg-ink-soft/70 p-4" key={group.title}>
-              <h3 className="heading-text text-base">{group.title}</h3>
+            <div className="min-w-0 rounded-md border border-line bg-ink-soft/70 p-4" key={group.title}>
+              <h3 className="card-title">{group.title}</h3>
               <p className="technical-block mt-2">{group.skills.join(", ")}</p>
             </div>
           ))}

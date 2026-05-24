@@ -73,7 +73,7 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
     <PageContainer>
       <SectionHeader eyebrow="Project case study" title={project.title} description={project.summary} />
 
-      <section className="mt-10 grid gap-6 lg:grid-cols-2">
+      <section className="mt-8 grid min-w-0 gap-5 sm:mt-10 lg:grid-cols-2 lg:gap-6">
         <Card className="flex h-full items-center" variant="glass">
           {project.caseStudy ? (
             <div
@@ -86,7 +86,7 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
                     className={`relative overflow-hidden rounded-md border border-line bg-surface/90 p-4 pl-5 text-center shadow-[inset_0_1px_0_rgba(255,255,255,0.03)] before:absolute before:bottom-4 before:left-0 before:top-4 before:w-1 before:rounded-r-full ${getStatAccentClasses(`${stat.label} ${stat.value}`)}`}
                     key={stat.label}
                   >
-                    <p className="heading-text text-2xl leading-tight">{stat.label}</p>
+                    <p className="section-title">{stat.label}</p>
                     <p className="stat-label mt-2">{stat.value}</p>
                   </div>
                 ))}
@@ -105,12 +105,12 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
         </Card>
 
         <Card as="aside" className="h-full" variant="glass">
-          <h2 className="heading-text inline-flex items-center gap-2 text-lg">
+          <h2 className="panel-title inline-flex items-center gap-2">
             <BadgeCheck aria-hidden="true" className="size-4 text-mint" />
             Role Demonstrated
           </h2>
-          <p className="mt-3 text-sm leading-6 text-slate-300">{project.role}</p>
-          <h2 className="heading-text mt-6 inline-flex items-center gap-2 text-lg">
+          <p className="supporting-copy mt-3">{project.role}</p>
+          <h2 className="panel-title mt-6 inline-flex items-center gap-2">
             <Wrench aria-hidden="true" className="size-4 text-evidence" />
             Tools Used
           </h2>
@@ -152,13 +152,13 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
         </Card>
       </section>
 
-      <section className="mt-6 grid gap-6">
+      <section className="mt-5 grid min-w-0 gap-5 lg:mt-6 lg:gap-6">
         {project.caseStudy ? caseStudySections.map((section) => (
           <Card as="section" key={section.heading} variant="evidence">
-            <h2 className="heading-text text-xl">{section.heading}</h2>
-            {section.content ? <p className="mt-4 text-base leading-7 text-slate-300">{section.content}</p> : null}
+            <h2 className="panel-title">{section.heading}</h2>
+            {section.content ? <p className="body-copy mt-4">{section.content}</p> : null}
             {section.items ? (
-              <ul className="mt-4 space-y-3 text-base leading-7 text-slate-300">
+              <ul className="body-copy mt-4 space-y-3">
                 {section.items.map((item) => (
                   <li className="border-l border-evidence/30 pl-4" key={item}>
                     {item}
@@ -169,8 +169,8 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
           </Card>
         )) : ["Problem", "Approach", "Evidence", "Outcome", "What I learned"].map((heading) => (
           <Card as="section" key={heading} variant="evidence">
-            <h2 className="heading-text text-xl">{heading}</h2>
-            <p className="mt-4 text-base leading-7 text-slate-300">
+            <h2 className="panel-title">{heading}</h2>
+            <p className="body-copy mt-4">
               Placeholder section for the final project narrative. Phase 3 will replace this with concise,
               evidence-based details and supporting artifacts from the GitHub project.
             </p>

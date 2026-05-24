@@ -43,12 +43,12 @@ function getStigStateClasses(state: string) {
 function ProjectPreview({ shouldReduceMotion, slug }: { shouldReduceMotion: boolean; slug: string }) {
   if (slug === "vulnerability-management-program") {
     return (
-      <div className="grid h-full gap-3">
+      <div className="grid h-full min-w-0 gap-3">
         <div className="flex items-center justify-between">
           <span className="font-mono text-[0.65rem] uppercase tracking-[0.14em] text-slate-400">Scan Summary</span>
           <span className="font-mono text-xs font-semibold text-mint">32 -&gt; 4</span>
         </div>
-        <div className="grid grid-cols-[auto_1fr_auto] items-center gap-2 font-mono text-[0.65rem] uppercase tracking-[0.12em] text-slate-400">
+        <div className="grid min-w-0 grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-2 font-mono text-[0.65rem] uppercase tracking-[0.12em] text-slate-400">
           <span>Critical</span>
           <div className="h-2 rounded-full bg-severityCritical/20">
             <div className="h-2 w-full rounded-full bg-[linear-gradient(90deg,rgba(255,138,138,0.92),rgba(125,211,199,0.82))]" />
@@ -84,13 +84,13 @@ function ProjectPreview({ shouldReduceMotion, slug }: { shouldReduceMotion: bool
     ];
 
     return (
-      <div className="grid h-full gap-1.5">
-        <div className="grid grid-cols-[1fr_auto] gap-2 font-mono text-[0.65rem] uppercase tracking-[0.12em] text-slate-400">
+      <div className="grid h-full min-w-0 gap-1.5">
+        <div className="grid min-w-0 grid-cols-[1fr_auto] gap-2 font-mono text-[0.65rem] uppercase tracking-[0.12em] text-slate-400">
           <span>STIG Control</span>
           <span>State</span>
         </div>
         {rows.map(([control, hint, state]) => (
-          <div className="grid grid-cols-[1fr_auto] items-center gap-3 rounded border border-line bg-ink-soft/70 px-3 py-2" key={control}>
+          <div className="grid min-w-0 grid-cols-[minmax(0,1fr)_auto] items-center gap-3 rounded border border-line bg-ink-soft/70 px-3 py-2" key={control}>
             <div className="grid min-w-0 grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
               <p className="truncate font-mono text-[0.7rem] font-semibold leading-none text-slate-100">{control}</p>
               <span className="hidden rounded border border-line bg-surface/70 px-1.5 py-1 font-mono text-[0.58rem] leading-none text-slate-500 sm:inline">
@@ -110,9 +110,9 @@ function ProjectPreview({ shouldReduceMotion, slug }: { shouldReduceMotion: bool
     const events = ["159.26.106.84", "RDP", "slflare", "slflarewinsysmo"];
 
     return (
-      <div className="grid h-full content-between gap-3">
+      <div className="grid h-full min-w-0 content-between gap-3">
         <motion.div
-          className="flex items-center gap-2"
+          className="flex min-w-0 items-center gap-1.5 sm:gap-2"
           initial={shouldReduceMotion ? false : "hidden"}
           variants={{
             hidden: {},
@@ -128,7 +128,7 @@ function ProjectPreview({ shouldReduceMotion, slug }: { shouldReduceMotion: bool
         >
           {events.map((event, index) => (
             <motion.div
-              className="flex min-w-0 flex-1 items-center gap-2"
+              className="flex min-w-0 flex-1 items-center gap-1.5 sm:gap-2"
               key={event}
               variants={{
                 hidden: { opacity: 0, x: -14 },
@@ -139,7 +139,7 @@ function ProjectPreview({ shouldReduceMotion, slug }: { shouldReduceMotion: bool
                 }
               }}
             >
-              <div className="min-w-0 rounded border border-detection/30 bg-detection/10 px-2 py-2 text-center font-mono text-[0.65rem] font-semibold text-slate-100">
+              <div className="min-w-0 rounded border border-detection/30 bg-detection/10 px-1.5 py-2 text-center font-mono text-[0.62rem] font-semibold text-slate-100 sm:px-2 sm:text-[0.65rem]">
                 <span className="block truncate">{event}</span>
               </div>
               {index < events.length - 1 ? (
@@ -187,9 +187,9 @@ function ProjectPreview({ shouldReduceMotion, slug }: { shouldReduceMotion: bool
     const tags = ["T1219", "T1074", "T1562", "T1486"];
 
     return (
-      <div className="grid h-full gap-4">
+      <div className="grid h-full min-w-0 gap-4">
         <motion.div
-          className="grid grid-cols-4 gap-2"
+          className="grid min-w-0 grid-cols-4 gap-1.5 sm:gap-2"
           initial={shouldReduceMotion ? false : "hidden"}
           variants={{
             hidden: {},
@@ -205,7 +205,7 @@ function ProjectPreview({ shouldReduceMotion, slug }: { shouldReduceMotion: bool
         >
           {stages.map((stage, index) => (
             <motion.div
-              className="relative rounded border border-detection/30 bg-detection/10 px-2 py-3 text-center"
+              className="relative min-w-0 rounded border border-detection/30 bg-detection/10 px-1.5 py-3 text-center sm:px-2"
               key={stage}
               variants={{
                 hidden: { opacity: 0, y: 14 },
@@ -225,7 +225,7 @@ function ProjectPreview({ shouldReduceMotion, slug }: { shouldReduceMotion: bool
                   }}
                 />
               ) : null}
-              <p className="font-mono text-[0.65rem] font-semibold text-slate-100">{stage}</p>
+              <p className="truncate font-mono text-[0.62rem] font-semibold text-slate-100 sm:text-[0.65rem]">{stage}</p>
             </motion.div>
           ))}
         </motion.div>
@@ -257,7 +257,7 @@ export function FeaturedProjects({ projects = defaultProjects, showHeader = true
   const shouldReduceMotion = useReducedMotion() ?? false;
 
   return (
-    <section className={showHeader ? "mt-16" : ""}>
+    <section className={showHeader ? "mt-14 min-w-0 sm:mt-16" : "min-w-0"}>
       {showHeader ? (
         <SectionHeader
           description="Evidence-backed case studies covering vulnerability management, secure configuration, remediation automation, and threat hunting."
@@ -266,13 +266,13 @@ export function FeaturedProjects({ projects = defaultProjects, showHeader = true
           title="Cybersecurity work organized for hiring review"
         />
       ) : null}
-      <div className={showHeader ? "mt-8 grid gap-6 md:grid-cols-2" : "grid gap-6 md:grid-cols-2"}>
+      <div className={showHeader ? "mt-8 grid min-w-0 gap-5 md:grid-cols-2 lg:gap-6" : "grid min-w-0 gap-5 md:grid-cols-2 lg:gap-6"}>
         {projects.map((project) => {
           const ProjectIcon = projectIcons[project.slug] ?? ShieldCheck;
 
           return (
             <motion.div
-              className="h-full"
+              className="min-w-0 h-full"
               initial={shouldReduceMotion ? false : { opacity: 0, y: 18 }}
               key={project.slug}
               style={{ transformOrigin: "center" }}
@@ -284,16 +284,16 @@ export function FeaturedProjects({ projects = defaultProjects, showHeader = true
               }}
               whileInView={shouldReduceMotion ? undefined : { opacity: 1, y: 0 }}
             >
-              <Card as="article" className="flex h-full flex-col" variant="project">
-                <div className="mb-5 h-48 overflow-hidden rounded-md border border-line bg-[linear-gradient(180deg,rgba(24,33,49,0.92)_0%,rgba(13,17,26,0.96)_100%)] p-4">
+              <Card as="article" className="flex h-full min-w-0 flex-col overflow-hidden" variant="project">
+                <div className="mb-5 h-48 min-w-0 overflow-hidden rounded-md border border-line bg-[linear-gradient(180deg,rgba(24,33,49,0.92)_0%,rgba(13,17,26,0.96)_100%)] p-3 sm:p-4">
                   <ProjectPreview shouldReduceMotion={shouldReduceMotion} slug={project.slug} />
                 </div>
                 <p className="eyebrow-text inline-flex items-center gap-2 text-mint">
                   <ProjectIcon aria-hidden="true" className="size-3.5" />
                   {project.role}
                 </p>
-                <h2 className="heading-text mt-3 text-xl">{project.title}</h2>
-                <p className="mt-3 flex-1 text-sm leading-6 text-slate-300">{project.summary}</p>
+                <h2 className="panel-title mt-3">{project.title}</h2>
+                <p className="supporting-copy mt-3 flex-1">{project.summary}</p>
                 <div className="mt-5 grid grid-cols-[1rem_1fr] items-start gap-3">
                   <Wrench aria-hidden="true" className="mt-2 size-4 text-slate-500" />
                   <div className="flex min-w-0 flex-wrap gap-2">
@@ -303,7 +303,7 @@ export function FeaturedProjects({ projects = defaultProjects, showHeader = true
                   </div>
                 </div>
                 <Link
-                  className="focus-ring mt-6 inline-flex w-fit items-center gap-2 rounded-md font-mono text-xs font-semibold uppercase tracking-[0.12em] text-evidence transition hover:text-blue"
+                  className="text-link mt-6 inline-flex w-fit items-center gap-2 font-mono text-xs font-semibold uppercase tracking-[0.12em]"
                   href={`/projects/${project.slug}`}
                 >
                   View case study

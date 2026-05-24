@@ -1,0 +1,1020 @@
+{
+  "audits": [
+    {
+      "name": "projects",
+      "route": "/projects",
+      "label": "desktop",
+      "shotFile": "e:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-4-section-order\\projects-desktop.png",
+      "metrics": {
+        "headings": [
+          {
+            "bounds": {
+              "bottom": 274,
+              "height": 100,
+              "width": 768,
+              "x": 168,
+              "y": 174
+            },
+            "tag": "H1",
+            "text": "Case studies and evidence-based security work",
+            "visibleInFirstViewport": true
+          },
+          {
+            "bounds": {
+              "bottom": 871,
+              "height": 47,
+              "width": 483,
+              "x": 193,
+              "y": 824
+            },
+            "tag": "H2",
+            "text": "Vulnerability Management Program Implementation",
+            "visibleInFirstViewport": true
+          },
+          {
+            "bounds": {
+              "bottom": 848,
+              "height": 24,
+              "width": 483,
+              "x": 749,
+              "y": 824
+            },
+            "tag": "H2",
+            "text": "DISA STIG Remediation Project",
+            "visibleInFirstViewport": true
+          },
+          {
+            "bounds": {
+              "bottom": 1501,
+              "height": 47,
+              "width": 483,
+              "x": 193,
+              "y": 1454
+            },
+            "tag": "H2",
+            "text": "Password Spray Threat Hunt: RDP Compromise Investigation",
+            "visibleInFirstViewport": false
+          },
+          {
+            "bounds": {
+              "bottom": 1462,
+              "height": 24,
+              "width": 483,
+              "x": 749,
+              "y": 1438
+            },
+            "tag": "H2",
+            "text": "The Buyer / Akira Ransomware Threat Hunt",
+            "visibleInFirstViewport": false
+          }
+        ],
+        "label": "desktop",
+        "overflowX": false,
+        "projectIndex": {
+          "bottom": 516,
+          "height": 99,
+          "width": 1088,
+          "x": 168,
+          "y": 418
+        },
+        "projectIndexLinks": [
+          {
+            "bounds": {
+              "bottom": 504,
+              "height": 73,
+              "width": 260,
+              "x": 181,
+              "y": 430
+            },
+            "href": "/projects/vulnerability-management-program",
+            "text": "Case studyVulnerability Management Program Implementation",
+            "textFits": true
+          },
+          {
+            "bounds": {
+              "bottom": 504,
+              "height": 73,
+              "width": 260,
+              "x": 449,
+              "y": 430
+            },
+            "href": "/projects/disa-stig-remediation",
+            "text": "Case studyDISA STIG Remediation Project",
+            "textFits": true
+          },
+          {
+            "bounds": {
+              "bottom": 504,
+              "height": 73,
+              "width": 260,
+              "x": 716,
+              "y": 430
+            },
+            "href": "/projects/password-spray-threat-hunt",
+            "text": "Case studyPassword Spray Threat Hunt: RDP Compromise Investigation",
+            "textFits": true
+          },
+          {
+            "bounds": {
+              "bottom": 504,
+              "height": 73,
+              "width": 260,
+              "x": 984,
+              "y": 430
+            },
+            "href": "/projects/akira-ransomware-threat-hunt",
+            "text": "Case studyThe Buyer / Akira Ransomware Threat Hunt",
+            "textFits": true
+          }
+        ],
+        "route": "/projects",
+        "viewport": {
+          "height": 1000,
+          "width": 1440
+        },
+        "visibleMainLinks": [
+          {
+            "bounds": {
+              "bottom": 504,
+              "height": 73,
+              "width": 260,
+              "x": 181,
+              "y": 430
+            },
+            "href": "/projects/vulnerability-management-program",
+            "text": "Case studyVulnerability Management Program Implementation",
+            "textFits": true,
+            "visibleInFirstViewport": true
+          },
+          {
+            "bounds": {
+              "bottom": 504,
+              "height": 73,
+              "width": 260,
+              "x": 449,
+              "y": 430
+            },
+            "href": "/projects/disa-stig-remediation",
+            "text": "Case studyDISA STIG Remediation Project",
+            "textFits": true,
+            "visibleInFirstViewport": true
+          },
+          {
+            "bounds": {
+              "bottom": 504,
+              "height": 73,
+              "width": 260,
+              "x": 716,
+              "y": 430
+            },
+            "href": "/projects/password-spray-threat-hunt",
+            "text": "Case studyPassword Spray Threat Hunt: RDP Compromise Investigation",
+            "textFits": true,
+            "visibleInFirstViewport": true
+          },
+          {
+            "bounds": {
+              "bottom": 504,
+              "height": 73,
+              "width": 260,
+              "x": 984,
+              "y": 430
+            },
+            "href": "/projects/akira-ransomware-threat-hunt",
+            "text": "Case studyThe Buyer / Akira Ransomware Threat Hunt",
+            "textFits": true,
+            "visibleInFirstViewport": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "projects",
+      "route": "/projects",
+      "label": "mobile",
+      "shotFile": "e:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-4-section-order\\projects-mobile.png",
+      "metrics": {
+        "headings": [
+          {
+            "bounds": {
+              "bottom": 321,
+              "height": 112,
+              "width": 343,
+              "x": 16,
+              "y": 208
+            },
+            "tag": "H1",
+            "text": "Case studies and evidence-based security work",
+            "visibleInFirstViewport": true
+          },
+          {
+            "bounds": {
+              "bottom": 1245,
+              "height": 47,
+              "width": 301,
+              "x": 37,
+              "y": 1198
+            },
+            "tag": "H2",
+            "text": "Vulnerability Management Program Implementation",
+            "visibleInFirstViewport": false
+          },
+          {
+            "bounds": {
+              "bottom": 1971,
+              "height": 24,
+              "width": 301,
+              "x": 37,
+              "y": 1948
+            },
+            "tag": "H2",
+            "text": "DISA STIG Remediation Project",
+            "visibleInFirstViewport": false
+          },
+          {
+            "bounds": {
+              "bottom": 2648,
+              "height": 47,
+              "width": 301,
+              "x": 37,
+              "y": 2601
+            },
+            "tag": "H2",
+            "text": "Password Spray Threat Hunt: RDP Compromise Investigation",
+            "visibleInFirstViewport": false
+          },
+          {
+            "bounds": {
+              "bottom": 3365,
+              "height": 47,
+              "width": 301,
+              "x": 37,
+              "y": 3317
+            },
+            "tag": "H2",
+            "text": "The Buyer / Akira Ransomware Threat Hunt",
+            "visibleInFirstViewport": false
+          }
+        ],
+        "label": "mobile",
+        "overflowX": false,
+        "projectIndex": {
+          "bottom": 871,
+          "height": 343,
+          "width": 343,
+          "x": 16,
+          "y": 529
+        },
+        "projectIndexLinks": [
+          {
+            "bounds": {
+              "bottom": 615,
+              "height": 73,
+              "width": 317,
+              "x": 29,
+              "y": 541
+            },
+            "href": "/projects/vulnerability-management-program",
+            "text": "Case studyVulnerability Management Program Implementation",
+            "textFits": true
+          },
+          {
+            "bounds": {
+              "bottom": 696,
+              "height": 73,
+              "width": 317,
+              "x": 29,
+              "y": 623
+            },
+            "href": "/projects/disa-stig-remediation",
+            "text": "Case studyDISA STIG Remediation Project",
+            "textFits": true
+          },
+          {
+            "bounds": {
+              "bottom": 777,
+              "height": 73,
+              "width": 317,
+              "x": 29,
+              "y": 704
+            },
+            "href": "/projects/password-spray-threat-hunt",
+            "text": "Case studyPassword Spray Threat Hunt: RDP Compromise Investigation",
+            "textFits": true
+          },
+          {
+            "bounds": {
+              "bottom": 859,
+              "height": 73,
+              "width": 317,
+              "x": 29,
+              "y": 785
+            },
+            "href": "/projects/akira-ransomware-threat-hunt",
+            "text": "Case studyThe Buyer / Akira Ransomware Threat Hunt",
+            "textFits": true
+          }
+        ],
+        "route": "/projects",
+        "viewport": {
+          "height": 844,
+          "width": 390
+        },
+        "visibleMainLinks": [
+          {
+            "bounds": {
+              "bottom": 615,
+              "height": 73,
+              "width": 317,
+              "x": 29,
+              "y": 541
+            },
+            "href": "/projects/vulnerability-management-program",
+            "text": "Case studyVulnerability Management Program Implementation",
+            "textFits": true,
+            "visibleInFirstViewport": true
+          },
+          {
+            "bounds": {
+              "bottom": 696,
+              "height": 73,
+              "width": 317,
+              "x": 29,
+              "y": 623
+            },
+            "href": "/projects/disa-stig-remediation",
+            "text": "Case studyDISA STIG Remediation Project",
+            "textFits": true,
+            "visibleInFirstViewport": true
+          },
+          {
+            "bounds": {
+              "bottom": 777,
+              "height": 73,
+              "width": 317,
+              "x": 29,
+              "y": 704
+            },
+            "href": "/projects/password-spray-threat-hunt",
+            "text": "Case studyPassword Spray Threat Hunt: RDP Compromise Investigation",
+            "textFits": true,
+            "visibleInFirstViewport": true
+          },
+          {
+            "bounds": {
+              "bottom": 859,
+              "height": 73,
+              "width": 317,
+              "x": 29,
+              "y": 785
+            },
+            "href": "/projects/akira-ransomware-threat-hunt",
+            "text": "Case studyThe Buyer / Akira Ransomware Threat Hunt",
+            "textFits": true,
+            "visibleInFirstViewport": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "projects",
+      "route": "/projects",
+      "label": "narrow-320",
+      "shotFile": "e:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-4-section-order\\projects-narrow-320.png",
+      "metrics": {
+        "headings": [
+          {
+            "bounds": {
+              "bottom": 358,
+              "height": 150,
+              "width": 273,
+              "x": 16,
+              "y": 208
+            },
+            "tag": "H1",
+            "text": "Case studies and evidence-based security work",
+            "visibleInFirstViewport": true
+          },
+          {
+            "bounds": {
+              "bottom": 1334,
+              "height": 71,
+              "width": 231,
+              "x": 37,
+              "y": 1263
+            },
+            "tag": "H2",
+            "text": "Vulnerability Management Program Implementation",
+            "visibleInFirstViewport": false
+          },
+          {
+            "bounds": {
+              "bottom": 2221,
+              "height": 47,
+              "width": 231,
+              "x": 37,
+              "y": 2174
+            },
+            "tag": "H2",
+            "text": "DISA STIG Remediation Project",
+            "visibleInFirstViewport": false
+          },
+          {
+            "bounds": {
+              "bottom": 3011,
+              "height": 71,
+              "width": 231,
+              "x": 37,
+              "y": 2940
+            },
+            "tag": "H2",
+            "text": "Password Spray Threat Hunt: RDP Compromise Investigation",
+            "visibleInFirstViewport": false
+          },
+          {
+            "bounds": {
+              "bottom": 3888,
+              "height": 71,
+              "width": 231,
+              "x": 37,
+              "y": 3818
+            },
+            "tag": "H2",
+            "text": "The Buyer / Akira Ransomware Threat Hunt",
+            "visibleInFirstViewport": false
+          }
+        ],
+        "label": "narrow-320",
+        "overflowX": false,
+        "projectIndex": {
+          "bottom": 937,
+          "height": 343,
+          "width": 273,
+          "x": 16,
+          "y": 594
+        },
+        "projectIndexLinks": [
+          {
+            "bounds": {
+              "bottom": 680,
+              "height": 73,
+              "width": 247,
+              "x": 29,
+              "y": 607
+            },
+            "href": "/projects/vulnerability-management-program",
+            "text": "Case studyVulnerability Management Program Implementation",
+            "textFits": true
+          },
+          {
+            "bounds": {
+              "bottom": 761,
+              "height": 73,
+              "width": 247,
+              "x": 29,
+              "y": 688
+            },
+            "href": "/projects/disa-stig-remediation",
+            "text": "Case studyDISA STIG Remediation Project",
+            "textFits": true
+          },
+          {
+            "bounds": {
+              "bottom": 843,
+              "height": 73,
+              "width": 247,
+              "x": 29,
+              "y": 769
+            },
+            "href": "/projects/password-spray-threat-hunt",
+            "text": "Case studyPassword Spray Threat Hunt: RDP Compromise Investigation",
+            "textFits": true
+          },
+          {
+            "bounds": {
+              "bottom": 924,
+              "height": 73,
+              "width": 247,
+              "x": 29,
+              "y": 851
+            },
+            "href": "/projects/akira-ransomware-threat-hunt",
+            "text": "Case studyThe Buyer / Akira Ransomware Threat Hunt",
+            "textFits": true
+          }
+        ],
+        "route": "/projects",
+        "viewport": {
+          "height": 740,
+          "width": 320
+        },
+        "visibleMainLinks": [
+          {
+            "bounds": {
+              "bottom": 680,
+              "height": 73,
+              "width": 247,
+              "x": 29,
+              "y": 607
+            },
+            "href": "/projects/vulnerability-management-program",
+            "text": "Case studyVulnerability Management Program Implementation",
+            "textFits": true,
+            "visibleInFirstViewport": true
+          },
+          {
+            "bounds": {
+              "bottom": 761,
+              "height": 73,
+              "width": 247,
+              "x": 29,
+              "y": 688
+            },
+            "href": "/projects/disa-stig-remediation",
+            "text": "Case studyDISA STIG Remediation Project",
+            "textFits": true,
+            "visibleInFirstViewport": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "home",
+      "route": "/",
+      "label": "mobile",
+      "shotFile": null,
+      "metrics": {
+        "headings": [
+          {
+            "bounds": {
+              "bottom": 222,
+              "height": 37,
+              "width": 343,
+              "x": 16,
+              "y": 185
+            },
+            "tag": "H1",
+            "text": "Bryan Miller",
+            "visibleInFirstViewport": true
+          },
+          {
+            "bounds": {
+              "bottom": 786,
+              "height": 24,
+              "width": 301,
+              "x": 37,
+              "y": 762
+            },
+            "tag": "H2",
+            "text": "Security work snapshot",
+            "visibleInFirstViewport": true
+          },
+          {
+            "bounds": {
+              "bottom": 1708,
+              "height": 54,
+              "width": 343,
+              "x": 16,
+              "y": 1655
+            },
+            "tag": "H2",
+            "text": "Risk Reduction and Security Operations experience",
+            "visibleInFirstViewport": false
+          },
+          {
+            "bounds": {
+              "bottom": 1957,
+              "height": 54,
+              "width": 301,
+              "x": 37,
+              "y": 1903
+            },
+            "tag": "H3",
+            "text": "Vulnerability Reduction Metrics",
+            "visibleInFirstViewport": false
+          },
+          {
+            "bounds": {
+              "bottom": 2760,
+              "height": 21,
+              "width": 309,
+              "x": 33,
+              "y": 2739
+            },
+            "tag": "H3",
+            "text": "Education",
+            "visibleInFirstViewport": false
+          },
+          {
+            "bounds": {
+              "bottom": 2954,
+              "height": 21,
+              "width": 309,
+              "x": 33,
+              "y": 2933
+            },
+            "tag": "H3",
+            "text": "Certificates",
+            "visibleInFirstViewport": false
+          },
+          {
+            "bounds": {
+              "bottom": 3100,
+              "height": 21,
+              "width": 309,
+              "x": 33,
+              "y": 3079
+            },
+            "tag": "H3",
+            "text": "Experience",
+            "visibleInFirstViewport": false
+          },
+          {
+            "bounds": {
+              "bottom": 3294,
+              "height": 21,
+              "width": 309,
+              "x": 33,
+              "y": 3273
+            },
+            "tag": "H3",
+            "text": "Vulnerability Reduction Metrics",
+            "visibleInFirstViewport": false
+          },
+          {
+            "bounds": {
+              "bottom": 3531,
+              "height": 54,
+              "width": 343,
+              "x": 16,
+              "y": 3477
+            },
+            "tag": "H2",
+            "text": "Cybersecurity work organized for hiring review",
+            "visibleInFirstViewport": false
+          },
+          {
+            "bounds": {
+              "bottom": 4033,
+              "height": 47,
+              "width": 301,
+              "x": 37,
+              "y": 3985
+            },
+            "tag": "H2",
+            "text": "Vulnerability Management Program Implementation",
+            "visibleInFirstViewport": false
+          },
+          {
+            "bounds": {
+              "bottom": 4759,
+              "height": 24,
+              "width": 301,
+              "x": 37,
+              "y": 4735
+            },
+            "tag": "H2",
+            "text": "DISA STIG Remediation Project",
+            "visibleInFirstViewport": false
+          },
+          {
+            "bounds": {
+              "bottom": 5435,
+              "height": 47,
+              "width": 301,
+              "x": 37,
+              "y": 5388
+            },
+            "tag": "H2",
+            "text": "Password Spray Threat Hunt: RDP Compromise Investigation",
+            "visibleInFirstViewport": false
+          },
+          {
+            "bounds": {
+              "bottom": 6152,
+              "height": 47,
+              "width": 301,
+              "x": 37,
+              "y": 6105
+            },
+            "tag": "H2",
+            "text": "The Buyer / Akira Ransomware Threat Hunt",
+            "visibleInFirstViewport": false
+          }
+        ],
+        "label": "mobile",
+        "overflowX": false,
+        "projectIndex": null,
+        "projectIndexLinks": [],
+        "route": "/",
+        "viewport": {
+          "height": 844,
+          "width": 390
+        },
+        "visibleMainLinks": [
+          {
+            "bounds": {
+              "bottom": 493,
+              "height": 45,
+              "width": 343,
+              "x": 16,
+              "y": 448
+            },
+            "href": "/projects",
+            "text": "View Projects",
+            "textFits": true,
+            "visibleInFirstViewport": true
+          },
+          {
+            "bounds": {
+              "bottom": 549,
+              "height": 44,
+              "width": 165,
+              "x": 16,
+              "y": 505
+            },
+            "href": "/resume/Bryan_Miller_Resume.pdf",
+            "text": "Download Resume",
+            "textFits": true,
+            "visibleInFirstViewport": true
+          },
+          {
+            "bounds": {
+              "bottom": 549,
+              "height": 44,
+              "width": 165,
+              "x": 193,
+              "y": 505
+            },
+            "href": "https://github.com/bryanpmiller",
+            "text": "View GitHub",
+            "textFits": true,
+            "visibleInFirstViewport": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "resume",
+      "route": "/resume",
+      "label": "mobile",
+      "shotFile": null,
+      "metrics": {
+        "headings": [
+          {
+            "bounds": {
+              "bottom": 246,
+              "height": 37,
+              "width": 343,
+              "x": 16,
+              "y": 208
+            },
+            "tag": "H1",
+            "text": "Resume Snapshot",
+            "visibleInFirstViewport": true
+          },
+          {
+            "bounds": {
+              "bottom": 519,
+              "height": 24,
+              "width": 301,
+              "x": 37,
+              "y": 496
+            },
+            "tag": "H2",
+            "text": "Profile",
+            "visibleInFirstViewport": true
+          },
+          {
+            "bounds": {
+              "bottom": 577,
+              "height": 21,
+              "width": 268,
+              "x": 53,
+              "y": 556
+            },
+            "tag": "H3",
+            "text": "Education",
+            "visibleInFirstViewport": true
+          },
+          {
+            "bounds": {
+              "bottom": 803,
+              "height": 21,
+              "width": 268,
+              "x": 53,
+              "y": 782
+            },
+            "tag": "H3",
+            "text": "Certificates",
+            "visibleInFirstViewport": true
+          },
+          {
+            "bounds": {
+              "bottom": 957,
+              "height": 21,
+              "width": 268,
+              "x": 53,
+              "y": 936
+            },
+            "tag": "H3",
+            "text": "Experience",
+            "visibleInFirstViewport": false
+          },
+          {
+            "bounds": {
+              "bottom": 1183,
+              "height": 21,
+              "width": 268,
+              "x": 53,
+              "y": 1162
+            },
+            "tag": "H3",
+            "text": "Vulnerability Reduction Metrics",
+            "visibleInFirstViewport": false
+          },
+          {
+            "bounds": {
+              "bottom": 1401,
+              "height": 24,
+              "width": 301,
+              "x": 37,
+              "y": 1377
+            },
+            "tag": "H2",
+            "text": "Skills Snapshot",
+            "visibleInFirstViewport": false
+          },
+          {
+            "bounds": {
+              "bottom": 1458,
+              "height": 21,
+              "width": 268,
+              "x": 53,
+              "y": 1438
+            },
+            "tag": "H3",
+            "text": "Vulnerability Management",
+            "visibleInFirstViewport": false
+          },
+          {
+            "bounds": {
+              "bottom": 1636,
+              "height": 21,
+              "width": 268,
+              "x": 53,
+              "y": 1616
+            },
+            "tag": "H3",
+            "text": "Security Operations",
+            "visibleInFirstViewport": false
+          },
+          {
+            "bounds": {
+              "bottom": 1835,
+              "height": 42,
+              "width": 268,
+              "x": 53,
+              "y": 1794
+            },
+            "tag": "H3",
+            "text": "Secure Configuration / Compliance",
+            "visibleInFirstViewport": false
+          },
+          {
+            "bounds": {
+              "bottom": 2013,
+              "height": 21,
+              "width": 268,
+              "x": 53,
+              "y": 1993
+            },
+            "tag": "H3",
+            "text": "Automation / Scripting",
+            "visibleInFirstViewport": false
+          }
+        ],
+        "label": "mobile",
+        "overflowX": false,
+        "projectIndex": null,
+        "projectIndexLinks": [],
+        "route": "/resume",
+        "viewport": {
+          "height": 844,
+          "width": 390
+        },
+        "visibleMainLinks": [
+          {
+            "bounds": {
+              "bottom": 443,
+              "height": 45,
+              "width": 343,
+              "x": 16,
+              "y": 398
+            },
+            "href": "/resume/Bryan_Miller_Resume.pdf",
+            "text": "Download PDF",
+            "textFits": true,
+            "visibleInFirstViewport": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "contact",
+      "route": "/contact",
+      "label": "mobile",
+      "shotFile": null,
+      "metrics": {
+        "headings": [
+          {
+            "bounds": {
+              "bottom": 246,
+              "height": 37,
+              "width": 343,
+              "x": 16,
+              "y": 208
+            },
+            "tag": "H1",
+            "text": "Where to find me",
+            "visibleInFirstViewport": true
+          },
+          {
+            "bounds": {
+              "bottom": 422,
+              "height": 24,
+              "width": 301,
+              "x": 37,
+              "y": 398
+            },
+            "tag": "H2",
+            "text": "LinkedIn",
+            "visibleInFirstViewport": true
+          },
+          {
+            "bounds": {
+              "bottom": 632,
+              "height": 24,
+              "width": 301,
+              "x": 37,
+              "y": 609
+            },
+            "tag": "H2",
+            "text": "GitHub",
+            "visibleInFirstViewport": true
+          },
+          {
+            "bounds": {
+              "bottom": 843,
+              "height": 24,
+              "width": 301,
+              "x": 37,
+              "y": 819
+            },
+            "tag": "H2",
+            "text": "Resume",
+            "visibleInFirstViewport": true
+          }
+        ],
+        "label": "mobile",
+        "overflowX": false,
+        "projectIndex": null,
+        "projectIndexLinks": [],
+        "route": "/contact",
+        "viewport": {
+          "height": 844,
+          "width": 390
+        },
+        "visibleMainLinks": [
+          {
+            "bounds": {
+              "bottom": 547,
+              "height": 45,
+              "width": 136,
+              "x": 37,
+              "y": 502
+            },
+            "href": "https://linkedin.com/in/bryan-p-miller",
+            "text": "View LinkedIn",
+            "textFits": true,
+            "visibleInFirstViewport": true
+          },
+          {
+            "bounds": {
+              "bottom": 758,
+              "height": 45,
+              "width": 125,
+              "x": 37,
+              "y": 712
+            },
+            "href": "https://github.com/bryanpmiller",
+            "text": "View GitHub",
+            "textFits": true,
+            "visibleInFirstViewport": true
+          }
+        ]
+      }
+    }
+  ],
+  "logs": []
+}

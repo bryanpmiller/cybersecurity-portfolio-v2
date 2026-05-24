@@ -1,0 +1,189 @@
+{
+  "pages": [
+    {
+      "buttons": [
+        {
+          "height": 45,
+          "text": "View Projects",
+          "textFits": true,
+          "width": 160
+        },
+        {
+          "height": 45,
+          "text": "Download Resume",
+          "textFits": true,
+          "width": 191
+        },
+        {
+          "height": 45,
+          "text": "View GitHub",
+          "textFits": true,
+          "width": 149
+        }
+      ],
+      "label": "desktop",
+      "overflowX": false,
+      "route": "/",
+      "title": "Bryan Miller | Cybersecurity Portfolio",
+      "viewport": {
+        "height": 1000,
+        "width": 1440
+      }
+    },
+    {
+      "buttons": [
+        {
+          "height": 45,
+          "text": "View Projects",
+          "textFits": true,
+          "width": 343
+        },
+        {
+          "height": 44,
+          "text": "Download Resume",
+          "textFits": true,
+          "width": 165
+        },
+        {
+          "height": 44,
+          "text": "View GitHub",
+          "textFits": true,
+          "width": 165
+        }
+      ],
+      "label": "mobile",
+      "overflowX": false,
+      "route": "/",
+      "title": "Bryan Miller | Cybersecurity Portfolio",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "buttons": [],
+      "label": "desktop",
+      "overflowX": false,
+      "route": "/about",
+      "title": "About | Bryan Miller",
+      "viewport": {
+        "height": 1000,
+        "width": 1440
+      }
+    },
+    {
+      "buttons": [],
+      "label": "mobile",
+      "overflowX": false,
+      "route": "/about",
+      "title": "About | Bryan Miller",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "buttons": [],
+      "label": "desktop",
+      "overflowX": false,
+      "route": "/resume",
+      "title": "Resume | Bryan Miller",
+      "viewport": {
+        "height": 1000,
+        "width": 1440
+      }
+    },
+    {
+      "buttons": [],
+      "label": "mobile",
+      "overflowX": false,
+      "route": "/resume",
+      "title": "Resume | Bryan Miller",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "buttons": [],
+      "label": "desktop",
+      "overflowX": false,
+      "route": "/projects",
+      "title": "Projects | Bryan Miller",
+      "viewport": {
+        "height": 1000,
+        "width": 1440
+      }
+    },
+    {
+      "buttons": [],
+      "label": "mobile",
+      "overflowX": false,
+      "route": "/projects",
+      "title": "Projects | Bryan Miller",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "buttons": [],
+      "label": "desktop",
+      "overflowX": false,
+      "route": "/skills",
+      "title": "Skills | Bryan Miller",
+      "viewport": {
+        "height": 1000,
+        "width": 1440
+      }
+    },
+    {
+      "buttons": [],
+      "label": "mobile",
+      "overflowX": false,
+      "route": "/skills",
+      "title": "Skills | Bryan Miller",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "buttons": [
+        {
+          "height": 45,
+          "text": "View GitHub",
+          "textFits": true,
+          "width": 125
+        }
+      ],
+      "label": "desktop",
+      "overflowX": false,
+      "route": "/contact",
+      "title": "Contact | Bryan Miller",
+      "viewport": {
+        "height": 1000,
+        "width": 1440
+      }
+    },
+    {
+      "buttons": [
+        {
+          "height": 45,
+          "text": "View GitHub",
+          "textFits": true,
+          "width": 125
+        }
+      ],
+      "label": "mobile",
+      "overflowX": false,
+      "route": "/contact",
+      "title": "Contact | Bryan Miller",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    }
+  ],
+  "logs": []
+}

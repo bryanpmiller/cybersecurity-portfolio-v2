@@ -22,6 +22,7 @@ const sectionIcons: Record<string, LucideIcon> = {
 export function SectionHeader({ eyebrow, title, description, level = "h1" }: SectionHeaderProps) {
   const Heading = level;
   const Icon = eyebrow ? sectionIcons[eyebrow] : null;
+  const headingClassName = level === "h1" ? "page-title" : "section-title";
 
   return (
     <div className="max-w-3xl">
@@ -31,8 +32,8 @@ export function SectionHeader({ eyebrow, title, description, level = "h1" }: Sec
           {eyebrow}
         </p>
       ) : null}
-      <Heading className="heading-text text-3xl sm:text-4xl">{title}</Heading>
-      {description ? <p className="mt-4 text-base leading-7 text-slate-300">{description}</p> : null}
+      <Heading className={headingClassName}>{title}</Heading>
+      {description ? <p className="lede-text mt-4">{description}</p> : null}
     </div>
   );
 }

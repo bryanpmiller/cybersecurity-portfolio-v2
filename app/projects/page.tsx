@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { PageContainer } from "@/components/layout/PageContainer";
 import { FeaturedProjects } from "@/components/sections/FeaturedProjects";
 import { SectionHeader } from "@/components/ui/SectionHeader";
@@ -18,7 +19,24 @@ export default function ProjectsPage() {
         title="Case studies and evidence-based security work"
         description="A focused collection of cybersecurity projects showing vulnerability management, secure configuration, remediation automation, and threat hunting through concise case studies and supporting GitHub evidence."
       />
-      <div className="mt-10">
+      <nav
+        aria-label="Project case studies"
+        className="mt-6 grid min-w-0 gap-2 rounded-md border border-line bg-surface/65 p-2.5 sm:mt-8 sm:grid-cols-2 sm:p-3 lg:grid-cols-4"
+      >
+        {projects.map((project) => (
+          <Link
+            className="focus-ring group min-w-0 rounded-md border border-lineStrong/55 bg-ink-soft/75 px-3 py-2.5 transition-[background,border-color,box-shadow,color] hover:border-evidence/45 hover:bg-surfaceElevated/85 hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.05)] sm:py-3"
+            href={`/projects/${project.slug}`}
+            key={project.slug}
+          >
+            <span className="badge-text text-evidence">Case study</span>
+            <span className="mt-1 line-clamp-2 min-w-0 text-sm font-semibold leading-5 text-slate-100 group-hover:text-white">
+              {project.title}
+            </span>
+          </Link>
+        ))}
+      </nav>
+      <div className="mt-8 min-w-0 sm:mt-10">
         <FeaturedProjects projects={projects} showHeader={false} />
       </div>
     </PageContainer>

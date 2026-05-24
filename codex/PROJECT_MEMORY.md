@@ -18,14 +18,14 @@ Use this file for durable project context, not temporary notes.
 
 ## Current Project Status
 
-Status: Phase 2.2 complete
+Status: Phase 4 complete
 
-Current phase: Phase 2 — Design Direction and Visual System
+Current phase: Phase 5 — Project Cards as Cybersecurity Case Studies
 
 Current focus:
 
-- Build a stronger visual system.
-- Redesign the portfolio into a polished cybersecurity proof-of-work site.
+- Audit existing project cards before improving them as cybersecurity case studies.
+- Keep the portfolio polished, recruiter-friendly, and proof-of-work focused.
 
 ---
 
@@ -88,6 +88,81 @@ Initial implementation priority:
 - Define colors, typography, surfaces, spacing, cards, and interaction states in Phase 2 before redesigning individual sections.
 - Apply the visual system first to shared layout/components and the Home hero/card system.
 - Keep all later changes site-wide by checking affected pages: Home, About, Resume, Projects, Skills, and Contact.
+
+### Phase 3.1 Hero Audit
+
+- Current hero screenshots and audit data are saved in `codex/screenshots/phase-3-hero-audit/`.
+- The Phase 2 visual system gives the hero a stronger professional foundation: polished dark workspace feel, clear CTAs, recruiter-friendly proof chips, and a useful evidence panel.
+- Browser audit found no horizontal overflow in the hero at 1440px desktop or 390px mobile widths, and no console warnings/errors were recorded during the hero pass.
+- Current H1 is `Bryan Miller`; this preserves the existing copy but does not make the role/value proposition the largest first-read signal by itself. Phase 3.2 should strengthen the headline/subheadline hierarchy around existing words unless Bryan approves wording changes.
+- Desktop first viewport is strong: the hero occupies about 72% of the viewport and lets the next Evidence section peek below the fold.
+- Mobile first viewport is clean but tall: the hero occupies more than one viewport, proof chips and the evidence card move lower, and CTA stacking consumes meaningful first-screen space. Phase 3.3 and 3.5 should tune hierarchy and mobile density.
+- The right-side proof panel is polished but still somewhat abstract. Phase 3.4 should evolve it into a more distinctive cybersecurity proof visual tied to real portfolio work, such as vulnerability reduction, remediation flow, scan evidence, KQL/Sentinel investigation, or STIG hardening.
+
+### Phase 3.2 Hero Headline Structure
+
+- Phase 3.2 preserved the existing hero words while making the role line more prominent: `Bryan Miller` remains the H1, and `Vulnerability Management & Cybersecurity Analyst` now appears as a stronger heading-style role statement directly below it.
+- The positioning sentence remains supporting copy beneath the name/title structure.
+- Browser review showed no horizontal overflow at 1440px desktop or 390px mobile widths, and no console warnings/errors were recorded.
+- Mobile remains clean but tall; CTA density and proof-chip placement should be addressed in Phase 3.3 and Phase 3.5.
+
+### Phase 3.3 Hero CTA Buttons
+
+- Phase 3.3 preserved all CTA labels and destinations: `View Projects`, `Download Resume`, and `View GitHub`.
+- The primary `View Projects` action now becomes a full-width anchor button on mobile, while `Download Resume` and `View GitHub` pair beneath it in a compact two-column row.
+- On larger screens, the CTAs remain in a single horizontal row with the original hierarchy and spacing.
+- The shared `Button` component now accepts an optional `className` prop for scoped layout overrides without changing its default styling.
+- Browser review confirmed CTA text fits at desktop and 390px mobile widths, local fonts are available, no horizontal overflow was found, and no console warnings/errors were recorded.
+- A quick desktop/mobile audit across Home, About, Resume, Projects, Skills, and Contact found no horizontal overflow after the shared Button API change.
+
+### Phase 3.4 Hero Cybersecurity Visual
+
+- Phase 3.4 kept the right-side hero panel content intact while making it feel more like an analyst evidence display.
+- Portfolio signal rows now include restrained numbered status markers on larger screens, using the existing signal labels and statuses.
+- The existing `Critical findings reduced` and `High findings reduced` evidence rows now include visual progress bars based on their supported percentage values.
+- The visual treatment avoids fake-hacker styling, neon overload, copied assets, or invented claims.
+- Browser review captured desktop, mobile first viewport, and mobile scrolled-panel screenshots in `codex/screenshots/phase-3-cybersecurity-visual/`.
+- Browser metrics found no horizontal overflow, verified local font availability, and recorded no console warnings/errors.
+
+### Phase 3.5 Mobile Hero Validation
+
+- Phase 3.5 validated the redesigned hero at 320px, 360px, 390px, and 430px mobile widths.
+- Mobile tuning reduced hero height across tested widths by tightening small-screen spacing, using a calmer mobile hero lead size, and reducing right-panel padding on narrow screens.
+- CTA labels, proof chips, H1, role line, and the evidence panel all fit without horizontal overflow at the tested widths.
+- The evidence panel now peeks into the first viewport at 360px and larger tested mobile widths; at 320px it remains below the fold, which is acceptable because the phone viewport is very constrained and the primary content/CTA remains visible.
+- Browser review screenshots and audit data are saved in `codex/screenshots/phase-3-mobile-layout/`.
+- `npm.cmd run lint` and `npm.cmd run build` both passed after the Phase 3 mobile validation changes.
+
+### Phase 4.1 Navigation Review
+
+- Browser navigation review screenshots and audit data are saved in `codex/screenshots/phase-4-navigation-review/`.
+- Current desktop navigation is functionally solid: sticky header is about 79px tall, brand/title and nav links fit cleanly, active states are correct, and no horizontal overflow was found.
+- Current mobile navigation is functional but tall: header height is about 195px at 320-390px widths, with the brand/title stacked above a two-row nav chip group.
+- Nav link text fits at tested desktop, 390px mobile, and 320px narrow widths.
+- Active `aria-current="page"` state works on Home, About, Resume, Projects, Skills, and Contact.
+- Project detail routes correctly keep the `Projects` nav item active.
+- No console warnings/errors were recorded during the navigation audit.
+- Phase 4.2 should reduce mobile vertical footprint while preserving obvious links, active states, sticky behavior, and accessible semantic navigation.
+
+### Phase 4.2 Navigation Styling and Mobile Behavior
+
+- Phase 4.2 reduced the mobile sticky header height from about 195px to about 138px at tested 320px and 390px widths.
+- Mobile keeps all six primary nav links visible in a two-row chip group; no hamburger/menu state was added.
+- The brand title is hidden below the `sm` breakpoint because the same role text is presented prominently in the hero, while the brand name remains visible.
+- Desktop navigation remains visually and dimensionally unchanged at the tested 1440px width.
+- Active states continue to work on Home, About, Resume, Projects, Skills, Contact, and representative project detail routes.
+- Browser audit found no horizontal overflow, all nav link text fit, and no console warnings/errors.
+
+### Phase 4.3 Section Order for Recruiter Scanning
+
+- Phase 4.3 reviewed visible section order across Home, About, Resume, Projects, Skills, and Contact at desktop and mobile widths.
+- Existing Home order remains appropriate: hero first, evidence/metrics second, featured projects third. This gives recruiters role, proof, then case-study depth.
+- Existing About, Resume, Skills, and Contact page order remains appropriate: each starts with a page header, then immediate recruiter-relevant content or actions.
+- The Projects page needed faster case-study access on mobile because project cards began near or below the first viewport.
+- Added a compact `Project case studies` link index directly below the Projects page header, using existing project titles and routes only.
+- The Projects index gives recruiters direct access to each case study before the longer project cards.
+- Browser review found no horizontal overflow, project index links fit, and no console warnings/errors at desktop, 390px mobile, and 320px narrow widths.
+- `npm.cmd run lint` and `npm.cmd run build` both passed after the section-order update.
 
 ---
 
@@ -258,22 +333,38 @@ How this should influence my portfolio:
 
 ### Typography
 
-- Current fonts use `next/font/google`: Inter for body, Space Grotesk for headings, and JetBrains Mono for technical labels.
-- Production build currently depends on Google font fetches at build time.
+- The site no longer uses `next/font/google`; Phase 2.6 removed build-time Google font fetching so production builds are network-independent.
+- Font CSS variables are defined in `app/globals.css` with local/system fallback stacks: body uses Inter/Segoe UI/system fallbacks, headings use Space Grotesk/Segoe UI/system fallbacks, and mono text uses JetBrains Mono/Cascadia Code/SFMono/Consolas fallbacks.
+- `app/globals.css` now includes local `@font-face` rules for Inter, Space Grotesk, and JetBrains Mono. Font files and license files live in `public/fonts/`; the one-off downloader script was removed after the files were added.
+- The local font strategy preserves the original Google-font visual direction while keeping production builds independent from Google font fetching.
+- Phase 2.3 introduced reusable typography utilities: `display-text`, `page-title`, `section-title`, `panel-title`, `card-title`, `lede-text`, `hero-lede`, `body-copy`, `supporting-copy`, and `compact-copy`.
+- Page-level `h1` headings now have a stronger scale than section headings, while `h2`/card titles use smaller, tighter scales for recruiter scanning.
+- Body copy should use `body-copy` for main narrative text, `supporting-copy` for card summaries, and `compact-copy` for denser supporting panels.
+- Keep technical labels in mono, uppercase, and restrained; avoid negative letter spacing and viewport-width font scaling.
 
 ### Spacing
 
 - Current layout uses a max-width `PageContainer` with `max-w-6xl`, responsive horizontal padding, and `py-12 lg:py-16`.
 - Spacing is generally readable but mobile nav plus section padding creates a tall first viewport.
+- Phase 2.5 adjusted the shared page container to use `px-4 py-10` on mobile, `sm:px-6 sm:py-12`, and `lg:px-8 lg:py-16`.
+- Nav and footer gutters now align with the page container at mobile and larger breakpoints.
+- Section gaps now tighten slightly on mobile and open back up at larger breakpoints.
+- Cards and grids should default to `min-w-0` where technical preview content, long tags, or dense evidence rows can affect responsive sizing.
+- Home and Projects mobile horizontal overflow was fixed in Phase 2.5 by constraining project card grids, card wrappers, preview panels, and technical preview internals.
 
 ### Borders and Radius
 
 - Cards and controls mostly use small radii (`rounded-md`, `rounded-lg`) with thin borders.
 - This fits the desired professional technical style and should be preserved unless a phase calls for a specific refinement.
+- Phase 2.4 refined buttons, nav states, badges, cards, footer links, and focus states while preserving the small-radius technical style.
+- Buttons now use stronger border, shadow, and hover treatments; primary actions use restrained evidence gradients, while secondary actions stay dark and quiet.
+- Cards now use subtle gradient surfaces, thin rings, improved border opacity, and controlled hover depth for project cards.
+- Focus states use the shared evidence accent and must remain visible on dark surfaces.
 
 ### Shadows and Depth
 
 - Depth currently comes from translucent dark surfaces, thin borders, subtle glows, and a custom `soft` shadow token.
+- Keep depth subtle and functional: use it to separate controls and proof surfaces, not to create flashy floating panels.
 
 ### Background Treatment
 
@@ -397,10 +488,10 @@ Before using metrics, verify they are present in the project content or resume.
 
 Track questions that need Bryan's input.
 
-- Should the build be changed later to avoid network-dependent Google font fetching, such as by using local fonts or system fallbacks?
+- None currently.
 
 ---
 
 ## Current Next Step
 
-Continue with `codex/TASKS.md` Phase 2.3: improve typography scale.
+Continue with `codex/TASKS.md` Phase 5.1: audit existing project cards.

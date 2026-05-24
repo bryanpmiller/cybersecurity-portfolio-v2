@@ -65,7 +65,7 @@ export function RiskReductionDashboard() {
           <div className="flex flex-col gap-4 border-b border-line pb-5 md:flex-row md:items-end md:justify-between">
             <div>
               <p className="eyebrow-text text-mint">Remediation dashboard</p>
-              <h3 className="heading-text mt-2 text-2xl">Vulnerability Reduction Metrics</h3>
+              <h3 className="section-title mt-2">Vulnerability Reduction Metrics</h3>
             </div>
             <div className="grid w-full grid-cols-3 gap-2 md:w-auto md:min-w-64">
               {vulnerabilityReductionStats.map((stat, index) => {
@@ -111,7 +111,7 @@ export function RiskReductionDashboard() {
                         <p className={`font-mono text-xs font-semibold uppercase tracking-[0.14em] ${severity.accent}`}>
                           {severity.name}
                         </p>
-                        <p className="heading-text mt-3 text-4xl">{stat.value}</p>
+                        <p className="heading-text mt-3 text-4xl leading-none">{stat.value}</p>
                       </div>
                       <span className="badge-text grid rounded-md border border-mint/30 bg-mint/10 px-3 py-2 text-center text-mint">
                         <span>Findings</span>

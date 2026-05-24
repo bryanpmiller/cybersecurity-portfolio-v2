@@ -10,7 +10,7 @@ export default function Home() {
     <PageContainer>
       <HeroSection />
 
-      <section className="mt-16">
+      <section className="mt-14 min-w-0 sm:mt-16">
         <SectionHeader
           description="A concise snapshot of resume-backed experience, security operations work, and measurable vulnerability reduction."
           eyebrow="Evidence"
@@ -18,11 +18,11 @@ export default function Home() {
           title="Risk Reduction and Security Operations experience"
         />
         <RiskReductionDashboard />
-        <div className="mt-6 grid gap-3 md:grid-cols-2">
+        <div className="mt-6 grid min-w-0 gap-3 md:grid-cols-2">
           {resumeHighlights.slice(0, 4).map((highlight) => (
-            <div className="rounded-md border border-line bg-surface/70 p-4" key={highlight.title}>
-              <h3 className="heading-text text-base">{highlight.title}</h3>
-              <p className="mt-2 whitespace-pre-line text-sm leading-6 text-slate-300">{highlight.body}</p>
+            <div className="min-w-0 rounded-md border border-line bg-surface/70 p-4" key={highlight.title}>
+              <h3 className="card-title">{highlight.title}</h3>
+              <p className="compact-copy mt-2 whitespace-pre-line">{highlight.body}</p>
             </div>
           ))}
         </div>

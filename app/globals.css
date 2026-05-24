@@ -2,8 +2,72 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Inter";
+  src:
+    local("Inter Variable"),
+    local("Inter"),
+    url("/fonts/inter-variable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  src:
+    local("Space Grotesk"),
+    url("/fonts/space-grotesk-variable.woff2") format("woff2");
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src:
+    local("JetBrains Mono"),
+    url("/fonts/jetbrains-mono-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src:
+    local("JetBrains Mono Medium"),
+    url("/fonts/jetbrains-mono-medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src:
+    local("JetBrains Mono SemiBold"),
+    url("/fonts/jetbrains-mono-semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src:
+    local("JetBrains Mono Bold"),
+    url("/fonts/jetbrains-mono-bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   color-scheme: dark;
+  --font-inter: "Inter", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  --font-space-grotesk: "Space Grotesk", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  --font-jetbrains-mono: "JetBrains Mono", "Cascadia Code", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
   --background: #080a0f;
   --foreground: #f4f7fb;
   --ink-soft: #0d111a;
@@ -29,6 +93,7 @@ body {
   background: linear-gradient(180deg, var(--background) 0%, var(--ink-soft) 48%, #0a0d13 100%);
   color: var(--foreground);
   font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  text-rendering: optimizeLegibility;
 }
 
 body::before,
@@ -77,7 +142,7 @@ a {
 }
 
 .focus-ring {
-  @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-evidence focus-visible:ring-offset-2 focus-visible:ring-offset-ink;
+  @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-evidence/80 focus-visible:ring-offset-2 focus-visible:ring-offset-ink;
 }
 
 @layer components {
@@ -108,10 +173,56 @@ a {
 
   .heading-text {
     @apply font-heading font-semibold tracking-normal text-white;
+    line-height: 1.08;
   }
 
   .eyebrow-text {
     @apply font-mono text-xs font-semibold uppercase tracking-[0.16em] text-evidence;
+  }
+
+  .display-text {
+    @apply font-heading text-4xl font-semibold tracking-normal text-white sm:text-5xl lg:text-6xl;
+    line-height: 1.02;
+  }
+
+  .page-title {
+    @apply font-heading text-4xl font-semibold tracking-normal text-white sm:text-5xl;
+    line-height: 1.04;
+  }
+
+  .section-title {
+    @apply font-heading text-2xl font-semibold tracking-normal text-white sm:text-3xl;
+    line-height: 1.12;
+  }
+
+  .panel-title {
+    @apply font-heading text-xl font-semibold tracking-normal text-white;
+    line-height: 1.18;
+  }
+
+  .card-title {
+    @apply font-heading text-base font-semibold tracking-normal text-white;
+    line-height: 1.3;
+  }
+
+  .lede-text {
+    @apply text-base leading-7 text-slate-300 sm:text-lg sm:leading-8;
+  }
+
+  .hero-lede {
+    @apply text-base leading-7 text-slate-200 sm:text-xl sm:leading-8;
+  }
+
+  .body-copy {
+    @apply text-base leading-7 text-slate-300;
+  }
+
+  .supporting-copy {
+    @apply text-[0.95rem] leading-7 text-slate-300;
+  }
+
+  .compact-copy {
+    @apply text-sm leading-6 text-slate-300;
   }
 
   .badge-text {
@@ -123,6 +234,10 @@ a {
   }
 
   .technical-block {
-    @apply font-mono text-xs leading-6 text-slate-300;
+    @apply font-mono text-[0.78rem] leading-6 text-slate-300;
+  }
+
+  .text-link {
+    @apply rounded-md text-evidence underline-offset-4 transition-colors hover:text-blue hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-evidence/80 focus-visible:ring-offset-2 focus-visible:ring-offset-ink;
   }
 }
