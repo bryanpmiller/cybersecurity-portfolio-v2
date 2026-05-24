@@ -10,7 +10,7 @@ import { getSkillsForGroup, skillGroups } from "@/lib/data/skills";
 
 export const metadata: Metadata = {
   title: "Resume",
-  description: "Web resume and PDF download for Bryan Miller."
+  description: "Web resume and PDF download for Bryan Miller's full resume."
 };
 
 export default function ResumePage() {
@@ -26,7 +26,7 @@ export default function ResumePage() {
       <div className="flex min-w-0 flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
         <SectionHeader eyebrow="Resume" title="Resume Snapshot" description={profile.resumeSnapshot} />
         <Button className="w-full sm:w-auto" href={profile.resumeUrl} icon={<Download aria-hidden="true" className="size-4" />}>
-          Download PDF
+          Full Resume
         </Button>
       </div>
 
@@ -52,22 +52,6 @@ export default function ResumePage() {
                   </div>
                 ))}
               </div>
-            </div>
-          </div>
-
-          <div className="mt-6 flex min-w-0 flex-col gap-3 rounded-md border border-line bg-surface/55 p-4 sm:flex-row sm:items-center sm:justify-between">
-            <p className="eyebrow-text text-slate-400">Resume Action</p>
-            <div className="grid min-w-0 gap-3 sm:flex">
-              <Button
-                className="w-full sm:w-auto"
-                href={profile.resumeUrl}
-                icon={<Download aria-hidden="true" className="size-4" />}
-              >
-                Download PDF
-              </Button>
-              <Button className="w-full sm:w-auto" href="/projects" icon={<Folder aria-hidden="true" className="size-4" />} variant="secondary">
-                View Projects
-              </Button>
             </div>
           </div>
         </Card>
