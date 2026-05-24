@@ -113,6 +113,8 @@ Codex may make only minor text-related changes when required for functionality o
 - Fixing obviously broken labels
 - Preserving existing text while moving it into a new layout/component
 
+Codex may also rename organizational labels when needed for clearer grouping, as long as the underlying claims, tools, experience, metrics, descriptions, and button/link labels remain supported and unchanged. Examples include skill category names, card grouping labels, or section-adjacent taxonomy labels.
+
 If a design change would require rewriting content, Codex should stop and ask before changing the wording.
 
 Default rule:
@@ -176,6 +178,14 @@ After each major task, Codex must update:
 3. `codex/WORKLOG.md`
    - Add a dated progress entry with completed work, files changed, issues found, checks run, and next steps.
 
+For micro-changes, Codex may use lighter tracking:
+
+- A micro-change is a small, localized fix or approved content/taxonomy tweak that does not complete a roadmap task, introduce a durable design rule, change architecture, or affect multiple workflows.
+- For micro-changes, update `codex/WORKLOG.md` with a compact entry only.
+- Skip `codex/TASKS.md` unless a roadmap checkbox is completed or the current phase/next task changes.
+- Skip `codex/PROJECT_MEMORY.md` unless the change creates or updates a durable decision, constraint, approved/rejected idea, architecture note, or content rule.
+- Batch related micro-changes into one compact worklog entry when they happen in the same work session.
+
 ---
 
 ## Validation Expectations
@@ -191,6 +201,13 @@ npm test
 ```
 
 If checks cannot be run, document why in `codex/WORKLOG.md`.
+
+For micro-changes, choose the lightest relevant validation:
+
+- Markdown-only workkit updates usually do not need lint/build.
+- Small copy/data/style edits may run lint first and defer build until the end of a related batch.
+- Browser validation is expected for visual layout, responsive, interaction, or accessibility-risk changes, but is optional for pure markdown or low-risk data changes.
+- Major phase completion should still run the available full checks, typically lint and build.
 
 ---
 

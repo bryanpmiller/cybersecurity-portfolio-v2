@@ -1,7 +1,7 @@
 export const resumeHighlights = [
   {
     title: "Education",
-    body: "Norwich University (NSA-Accredited College)\nBachelor of Science in Cybersecurity\nFocus on: Computer Forensics & Vulnerability Management\n GPA 3.99 Summa Cum Laude"
+    body: "Norwich University (NSA-Accredited College)\nBachelor of Science in Cybersecurity\nFocus on: Computer Forensics & Vulnerability Management\nGPA 3.99 Summa Cum Laude\n\nCypress College\nAssociate of Science in Business Administration\nGraduated with Honors"
   },
   {
     title: "Certificates",
@@ -12,8 +12,8 @@ export const resumeHighlights = [
     body: "Vulnerability scanning, reporting, PowerShell-based remediation, Tenable, DISA STIG compliance, MDE/Sentinel threat hunting, detection rules, dashboards, and Azure NSG/firewall controls."
   },
   {
-    title: "Vulnerability Reduction Metrics",
-    body: "100% reduction in critical vulnerabilities\n 92% reduction in high vulnerabilities\n 88% reduction in medium vulnerabilities."
+    title: "Security Impact Metrics",
+    body: "100% reduction in critical vulnerabilities\n92% reduction in high vulnerabilities\n88% reduction in medium vulnerabilities\n100% reduction in brute force incidents through inbound NSG and firewall controls."
   }
 ];
 
@@ -31,3 +31,13 @@ export const vulnerabilityReductionStats = [
     label: "Medium vulnerabilities reduced for the server team"
   }
 ];
+
+export const impactMetrics = [
+  ...vulnerabilityReductionStats,
+  {
+    value: "100%",
+    label: "Brute force incidents reduced through inbound NSG and firewall controls"
+  }
+];
+
+export const supplementalImpactMetrics = impactMetrics.slice(vulnerabilityReductionStats.length);

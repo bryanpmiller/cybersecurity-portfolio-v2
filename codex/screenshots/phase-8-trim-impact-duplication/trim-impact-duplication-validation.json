@@ -1,0 +1,39 @@
+{
+  "desktop": {
+    "additionalImpactCallouts": 1,
+    "calloutOverflow": [
+      {
+        "clientWidth": 1087,
+        "scrollWidth": 1087,
+        "text": "Additional Security Impact100%Brute force incidents reduced through inbound NSG and firewall controlsBrute Force"
+      }
+    ],
+    "hasBruteForceMetric": true,
+    "hasVulnerabilityDashboard": true,
+    "horizontalOverflow": 0,
+    "impactMetricCards": 0,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    }
+  },
+  "mobile": {
+    "additionalImpactCallouts": 1,
+    "calloutOverflow": [
+      {
+        "clientWidth": 341,
+        "scrollWidth": 341,
+        "text": "Additional Security Impact100%Brute force incidents reduced through inbound NSG and firewall controlsBrute Force"
+      }
+    ],
+    "hasBruteForceMetric": true,
+    "hasVulnerabilityDashboard": true,
+    "horizontalOverflow": 0,
+    "impactMetricCards": 0,
+    "viewport": {
+      "height": 844,
+      "width": 390
+    }
+  },
+  "logs": []
+}

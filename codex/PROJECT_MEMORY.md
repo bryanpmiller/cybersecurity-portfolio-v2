@@ -18,13 +18,13 @@ Use this file for durable project context, not temporary notes.
 
 ## Current Project Status
 
-Status: Phase 5 complete
+Status: Phase 8 complete
 
-Current phase: Phase 6 — Skills and Tooling Section
+Current phase: Phase 9 — Cybersecurity Visual Elements
 
 Current focus:
 
-- Begin Phase 6 by auditing the current skills and tooling presentation before making layout or grouping changes.
+- Continue with Phase 9 by adding tasteful cybersecurity visual elements tied to real work.
 - Keep the portfolio polished, recruiter-friendly, and proof-of-work focused.
 
 ---
@@ -213,6 +213,46 @@ Initial implementation priority:
 - Phase 5.4 screenshots and audit data are saved in `codex/screenshots/phase-5-card-tags-links-grid/`.
 - `npm.cmd run lint` and `npm.cmd run build` both passed after the Phase 5.4 update.
 
+### Phase 6 Skills and Tooling
+
+- Skills are now stored as `primarySkills` and `supportingSkills` per category in `lib/data/skills.ts`.
+- Skill categories are: Vulnerability Management, SecOps / Detection Engineering, Secure Configuration / Hardening, Automation / Scripting, Cloud / Network Security, and Governance / Compliance Frameworks.
+- `KQL/SQL` was de-duplicated by keeping `KQL` under SecOps / Detection Engineering. Bryan later approved moving `SQL` into SecOps / Detection Engineering as a supporting analytics/query capability.
+- Bryan approved adding `Automation Tools`, `Automated Remediation`, `Web App Development`, and `Full-Stack Development` as supporting capabilities under Automation / Scripting.
+- The Skills page uses six equal-height category cards with icons, core tools / methods chips, and supporting capability lists.
+- Core skills on the Skills page should visually read as the primary foreground items: muted `Core tools / methods` labels, brighter near-white chip text, stronger evidence borders, and a slightly raised chip surface.
+- Skill labels use title-style capitalization where appropriate while preserving acronyms such as `KQL`, `SQL`, `CVE/CWE`, `CVSS`, `SIEM/EDR`, and `DISA STIG`.
+- The Resume page skills snapshot now uses all six skill groups instead of only the first four, with compact skill-count badges and core/supporting skill lines.
+- Phase 6 screenshots and validation data are saved in `codex/screenshots/phase-6-skills-tooling/`.
+- Browser validation found no horizontal overflow, no text parent-overflow candidates, and no console warnings/errors on Skills and Resume at 1440px desktop and 390px mobile widths.
+- `npm.cmd run lint` and `npm.cmd run build` both passed after the Phase 6 update.
+
+### Phase 7 Experience / Resume Snapshot
+
+- The Resume page now leads with a dedicated `Experience Snapshot` card after the page header.
+- The experience snapshot uses the existing `Experience` resume highlight body without rewriting it.
+- Supported metrics in the Resume experience card come from `vulnerabilityReductionStats`: 100% critical reduction, 92% high reduction, and 88% medium reduction.
+- The Profile card on Resume now focuses on Education and Certificates because Experience and Vulnerability Reduction Metrics are surfaced in the stronger top snapshot.
+- The Resume CTA is now reinforced with a top `Download PDF` action plus an in-card `Resume Action` row containing `Download PDF` and `View Projects`.
+- Browser validation found no horizontal overflow, no text parent-overflow candidates, three supported metrics present, and no console warnings/errors on Resume at 1440px desktop and 390px mobile widths.
+- Phase 7 screenshots and validation data are saved in `codex/screenshots/phase-7-experience-resume/`.
+- `npm.cmd run lint` and `npm.cmd run build` both passed after the Phase 7 update.
+
+### Phase 8 Impact Metrics
+
+- The Home evidence section now includes a compact impact metrics strip before the detailed remediation dashboard.
+- The Home impact strip is intentionally supplemental: it only surfaces the resume PDF-backed 100% brute force incident reduction through inbound NSG/firewall controls.
+- Bryan preferred this supplemental metric to mimic the remediation dashboard pattern. It now renders as `Network Security Dashboard` using the same terminal-style surface, grid texture, metric card, badge, and reduction bar language.
+- The detailed `RiskReductionDashboard` owns the vulnerability reduction metrics: 100% critical vulnerability reduction, 92% high vulnerability reduction, and 88% medium vulnerability reduction.
+- The brute force metric was added after verifying the resume PDF source at `/resume/Bryan_Miller_Resume.pdf`.
+- No unsupported metrics or claims were added.
+- Cypress College education details were added from the resume PDF: Associate of Science in Business Administration and Graduated with Honors.
+- Resume-backed skills added to the shared skills data: Active Directory, Security Configuration, Access Control, Wireshark, Network Forensics, OWASP Top 10, Disaster Recovery Planning, Security Policies, and Information Security Management.
+- The site intentionally does not show the intern title from the resume PDF, per Bryan's direction.
+- Browser validation found one supplemental impact callout on Home, no duplicate impact cards above the dashboard, no page-level horizontal overflow, no callout internal overflow, and no console warnings/errors.
+- Phase 8 screenshots and validation data are saved in `codex/screenshots/phase-8-impact-metrics/`.
+- `npm.cmd run lint` and `npm.cmd run build` both passed after the Phase 8 update.
+
 ---
 
 ## Approved Decisions
@@ -225,6 +265,8 @@ Initial implementation priority:
 - Reference analysis must inspect the full page, including middle and lower sections, not only the first viewport.
 - Phase 2 visual direction is a polished cybersecurity analyst workspace: evidence-led, calm, technical, recruiter-friendly, and original.
 - When Codex notices adjacent improvement opportunities during a phase, present them to Bryan for approval before making changes outside the current task scope.
+- Codex may rename organizational labels, such as skill category names, card grouping labels, or section-adjacent taxonomy labels, when needed for clearer grouping, as long as underlying claims, tools, experience, metrics, descriptions, and button/link labels remain supported and unchanged.
+- Micro-changes may use compact tracking: update only `codex/WORKLOG.md` unless the change completes a roadmap task or creates a durable decision, and scale validation to risk while still running full checks for major phase completion.
 
 ---
 
@@ -439,6 +481,7 @@ How this should influence my portfolio:
 - Emphasize proof-of-work.
 - Tie project descriptions to real tools, methods, and outcomes.
 - Keep recruiter scanning in mind.
+- Organizational labels may be renamed for clearer grouping, but substantive page copy still requires Bryan's approval before rewriting.
 
 ---
 
@@ -467,14 +510,14 @@ The portfolio should emphasize:
 
 Only use these if already supported by the resume/site content.
 
-Potentially supported metrics:
+Verified supported metrics:
 
 - Critical vulnerabilities reduced by 100%
 - High vulnerabilities reduced by 92%
 - Medium vulnerabilities reduced by 88%
-- Brute-force incidents reduced by 100% through NSG/firewall hardening
+- Brute force incidents reduced by 100% through inbound NSG/firewall controls
 
-Before using metrics, verify they are present in the project content or resume.
+These are verified against the resume PDF and/or existing site content before use.
 
 ---
 
@@ -544,4 +587,4 @@ Track questions that need Bryan's input.
 
 ## Current Next Step
 
-Continue with `codex/TASKS.md` Phase 6.1: audit current skills.
+Continue with `codex/TASKS.md` Phase 9.1: add tasteful security-themed visuals.

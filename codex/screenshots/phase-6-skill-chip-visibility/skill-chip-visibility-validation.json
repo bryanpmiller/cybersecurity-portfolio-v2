@@ -1,0 +1,61 @@
+{
+  "results": [
+    {
+      "viewport": "desktop",
+      "screenshot": "E:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-6-skill-chip-visibility\\skills-desktop.png",
+      "metrics": {
+        "clientWidth": 1425,
+        "coreChipCount": 6,
+        "coreLabelStyle": {
+          "background": "none",
+          "borderColor": "rgb(229, 231, 235)",
+          "color": "rgb(148, 163, 184)",
+          "fontWeight": "600",
+          "height": 16,
+          "width": 300
+        },
+        "firstChipStyle": {
+          "background": "linear-gradient(rgba(110, 231, 216, 0.2) 0%, rgba(24, 33, 49, 0.9) 100%)",
+          "borderColor": "rgba(110, 231, 216, 0.65)",
+          "color": "rgb(248, 250, 252)",
+          "fontWeight": "600",
+          "height": 37,
+          "width": 76
+        },
+        "horizontalOverflow": false,
+        "scrollWidth": 1425,
+        "title": "Skills | Bryan Miller",
+        "url": "http://localhost:3000/skills"
+      }
+    },
+    {
+      "viewport": "mobile",
+      "screenshot": "E:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-6-skill-chip-visibility\\skills-mobile.png",
+      "metrics": {
+        "clientWidth": 375,
+        "coreChipCount": 6,
+        "coreLabelStyle": {
+          "background": "none",
+          "borderColor": "rgb(229, 231, 235)",
+          "color": "rgb(148, 163, 184)",
+          "fontWeight": "600",
+          "height": 16,
+          "width": 301
+        },
+        "firstChipStyle": {
+          "background": "linear-gradient(rgba(110, 231, 216, 0.2) 0%, rgba(24, 33, 49, 0.9) 100%)",
+          "borderColor": "rgba(110, 231, 216, 0.65)",
+          "color": "rgb(248, 250, 252)",
+          "fontWeight": "600",
+          "height": 37,
+          "width": 76
+        },
+        "horizontalOverflow": false,
+        "scrollWidth": 375,
+        "title": "Skills | Bryan Miller",
+        "url": "http://localhost:3000/skills"
+      }
+    }
+  ],
+  "logs": []
+}

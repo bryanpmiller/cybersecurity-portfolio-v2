@@ -1,0 +1,27 @@
+{
+  "desktop": {
+    "hasNetworkTitle": true,
+    "hasRemediationTitle": true,
+    "horizontalOverflow": 0,
+    "networkBarInlineWidth": "width: 76.7752%;",
+    "networkBarWidth": "762.625px",
+    "networkBelowRemediation": true,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    }
+  },
+  "mobile": {
+    "hasNetworkTitle": true,
+    "hasRemediationTitle": true,
+    "horizontalOverflow": 0,
+    "networkBarInlineWidth": "width: 10.3018%;",
+    "networkBarWidth": "27.1875px",
+    "networkBelowRemediation": true,
+    "viewport": {
+      "height": 844,
+      "width": 390
+    }
+  },
+  "logs": []
+}

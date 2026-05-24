@@ -1,0 +1,133 @@
+{
+  "results": [
+    {
+      "page": "skills",
+      "viewport": "desktop",
+      "screenshot": "E:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-6-skills-tooling\\skills-desktop.png",
+      "metrics": {
+        "clientWidth": 1425,
+        "coreLabelCount": 6,
+        "horizontalOverflow": false,
+        "longTextIssues": [],
+        "scrollWidth": 1425,
+        "skillCountBadges": 0,
+        "supportingLabelCount": 6,
+        "title": "Skills | Bryan Miller",
+        "url": "http://localhost:3000/skills",
+        "viewport": {
+          "height": 900,
+          "width": 1440
+        },
+        "visibleHeadings": [
+          "Cybersecurity skills grouped by role relevance",
+          "Vulnerability Management",
+          "SecOps / Detection Engineering",
+          "Secure Configuration / Hardening",
+          "Automation / Scripting",
+          "Cloud / Network Security",
+          "Governance / Compliance Frameworks"
+        ]
+      }
+    },
+    {
+      "page": "resume",
+      "viewport": "desktop",
+      "screenshot": "E:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-6-skills-tooling\\resume-desktop.png",
+      "metrics": {
+        "clientWidth": 1425,
+        "coreLabelCount": 0,
+        "horizontalOverflow": false,
+        "longTextIssues": [],
+        "scrollWidth": 1425,
+        "skillCountBadges": 6,
+        "supportingLabelCount": 0,
+        "title": "Resume | Bryan Miller",
+        "url": "http://localhost:3000/resume",
+        "viewport": {
+          "height": 900,
+          "width": 1440
+        },
+        "visibleHeadings": [
+          "Resume Snapshot",
+          "Profile",
+          "Education",
+          "Certificates",
+          "Experience",
+          "Vulnerability Reduction Metrics",
+          "Skills Snapshot",
+          "Vulnerability Management",
+          "SecOps / Detection Engineering",
+          "Secure Configuration / Hardening",
+          "Automation / Scripting",
+          "Cloud / Network Security",
+          "Governance / Compliance Frameworks"
+        ]
+      }
+    },
+    {
+      "page": "skills",
+      "viewport": "mobile",
+      "screenshot": "E:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-6-skills-tooling\\skills-mobile.png",
+      "metrics": {
+        "clientWidth": 375,
+        "coreLabelCount": 6,
+        "horizontalOverflow": false,
+        "longTextIssues": [],
+        "scrollWidth": 375,
+        "skillCountBadges": 0,
+        "supportingLabelCount": 6,
+        "title": "Skills | Bryan Miller",
+        "url": "http://localhost:3000/skills",
+        "viewport": {
+          "height": 844,
+          "width": 390
+        },
+        "visibleHeadings": [
+          "Cybersecurity skills grouped by role relevance",
+          "Vulnerability Management",
+          "SecOps / Detection Engineering",
+          "Secure Configuration / Hardening",
+          "Automation / Scripting",
+          "Cloud / Network Security",
+          "Governance / Compliance Frameworks"
+        ]
+      }
+    },
+    {
+      "page": "resume",
+      "viewport": "mobile",
+      "screenshot": "E:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-6-skills-tooling\\resume-mobile.png",
+      "metrics": {
+        "clientWidth": 375,
+        "coreLabelCount": 0,
+        "horizontalOverflow": false,
+        "longTextIssues": [],
+        "scrollWidth": 375,
+        "skillCountBadges": 6,
+        "supportingLabelCount": 0,
+        "title": "Resume | Bryan Miller",
+        "url": "http://localhost:3000/resume",
+        "viewport": {
+          "height": 844,
+          "width": 390
+        },
+        "visibleHeadings": [
+          "Resume Snapshot",
+          "Profile",
+          "Education",
+          "Certificates",
+          "Experience",
+          "Vulnerability Reduction Metrics",
+          "Skills Snapshot",
+          "Vulnerability Management",
+          "SecOps / Detection Engineering",
+          "Secure Configuration / Hardening",
+          "Automation / Scripting",
+          "Cloud / Network Security",
+          "Governance / Compliance Frameworks"
+        ]
+      }
+    }
+  ],
+  "logs": []
+}

@@ -27,7 +27,7 @@ export default function AboutPage() {
             {resumeHighlights.map((highlight) => (
               <div className="min-w-0 rounded-md border border-line bg-ink-soft/70 p-4" key={highlight.title}>
                 <h3 className="card-title">{highlight.title}</h3>
-                <p className="compact-copy mt-2">{highlight.body}</p>
+                <p className="compact-copy mt-2 whitespace-pre-line">{highlight.body}</p>
               </div>
             ))}
           </div>

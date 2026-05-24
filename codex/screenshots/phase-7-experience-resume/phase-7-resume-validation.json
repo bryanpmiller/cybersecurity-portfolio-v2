@@ -1,0 +1,165 @@
+{
+  "results": [
+    {
+      "viewport": "desktop",
+      "screenshot": "E:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-7-experience-resume\\resume-desktop.png",
+      "metrics": {
+        "buttons": [
+          {
+            "href": "/",
+            "text": "Bryan MillerVulnerability Management & Cybersecurity Analyst"
+          },
+          {
+            "href": "/",
+            "text": "Home"
+          },
+          {
+            "href": "/about",
+            "text": "About"
+          },
+          {
+            "href": "/resume",
+            "text": "Resume"
+          },
+          {
+            "href": "/projects",
+            "text": "Projects"
+          },
+          {
+            "href": "/skills",
+            "text": "Skills"
+          },
+          {
+            "href": "/contact",
+            "text": "Contact"
+          },
+          {
+            "href": "/resume/Bryan_Miller_Resume.pdf",
+            "text": "Download PDF"
+          },
+          {
+            "href": "/resume/Bryan_Miller_Resume.pdf",
+            "text": "Download PDF"
+          },
+          {
+            "href": "/projects",
+            "text": "View Projects"
+          },
+          {
+            "href": "https://github.com/bryanpmiller",
+            "text": "GitHub"
+          },
+          {
+            "href": "https://linkedin.com/in/bryan-p-miller",
+            "text": "LinkedIn"
+          },
+          {
+            "href": "/resume/Bryan_Miller_Resume.pdf",
+            "text": "Resume PDF"
+          }
+        ],
+        "clientWidth": 1425,
+        "headings": [
+          "Resume Snapshot",
+          "Experience Snapshot",
+          "Profile",
+          "Education",
+          "Certificates",
+          "Skills Snapshot",
+          "Vulnerability Management",
+          "SecOps / Detection Engineering",
+          "Secure Configuration / Hardening",
+          "Automation / Scripting",
+          "Cloud / Network Security",
+          "Governance / Compliance Frameworks"
+        ],
+        "horizontalOverflow": false,
+        "metricCount": 3,
+        "scrollWidth": 1425,
+        "textOverflow": [],
+        "title": "Resume | Bryan Miller"
+      }
+    },
+    {
+      "viewport": "mobile",
+      "screenshot": "E:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-7-experience-resume\\resume-mobile.png",
+      "metrics": {
+        "buttons": [
+          {
+            "href": "/",
+            "text": "Bryan MillerVulnerability Management & Cybersecurity Analyst"
+          },
+          {
+            "href": "/",
+            "text": "Home"
+          },
+          {
+            "href": "/about",
+            "text": "About"
+          },
+          {
+            "href": "/resume",
+            "text": "Resume"
+          },
+          {
+            "href": "/projects",
+            "text": "Projects"
+          },
+          {
+            "href": "/skills",
+            "text": "Skills"
+          },
+          {
+            "href": "/contact",
+            "text": "Contact"
+          },
+          {
+            "href": "/resume/Bryan_Miller_Resume.pdf",
+            "text": "Download PDF"
+          },
+          {
+            "href": "/resume/Bryan_Miller_Resume.pdf",
+            "text": "Download PDF"
+          },
+          {
+            "href": "/projects",
+            "text": "View Projects"
+          },
+          {
+            "href": "https://github.com/bryanpmiller",
+            "text": "GitHub"
+          },
+          {
+            "href": "https://linkedin.com/in/bryan-p-miller",
+            "text": "LinkedIn"
+          },
+          {
+            "href": "/resume/Bryan_Miller_Resume.pdf",
+            "text": "Resume PDF"
+          }
+        ],
+        "clientWidth": 375,
+        "headings": [
+          "Resume Snapshot",
+          "Experience Snapshot",
+          "Profile",
+          "Education",
+          "Certificates",
+          "Skills Snapshot",
+          "Vulnerability Management",
+          "SecOps / Detection Engineering",
+          "Secure Configuration / Hardening",
+          "Automation / Scripting",
+          "Cloud / Network Security",
+          "Governance / Compliance Frameworks"
+        ],
+        "horizontalOverflow": false,
+        "metricCount": 3,
+        "scrollWidth": 375,
+        "textOverflow": [],
+        "title": "Resume | Bryan Miller"
+      }
+    }
+  ],
+  "logs": []
+}

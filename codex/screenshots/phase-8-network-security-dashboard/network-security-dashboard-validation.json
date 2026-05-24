@@ -1,0 +1,71 @@
+{
+  "desktop": {
+    "hasBruteForceMetric": true,
+    "hasNetworkTitle": true,
+    "hasRemediationTitle": true,
+    "horizontalOverflow": 0,
+    "networkDashboardCount": 2,
+    "textOverflow": [
+      {
+        "clientWidth": 1152,
+        "scrollWidth": 1200,
+        "tag": "MAIN",
+        "text": "Bryan MillerVulnerability Management & Cybersecurity AnalystI help reduce security risk th"
+      },
+      {
+        "clientWidth": 66,
+        "scrollWidth": 81,
+        "tag": "SPAN",
+        "text": "159.26.106.84"
+      },
+      {
+        "clientWidth": 89,
+        "scrollWidth": 94,
+        "tag": "SPAN",
+        "text": "slflarewinsysmo"
+      }
+    ],
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    }
+  },
+  "mobile": {
+    "hasBruteForceMetric": true,
+    "hasNetworkTitle": true,
+    "hasRemediationTitle": true,
+    "horizontalOverflow": 0,
+    "networkDashboardCount": 2,
+    "textOverflow": [
+      {
+        "clientWidth": 30,
+        "scrollWidth": 77,
+        "tag": "SPAN",
+        "text": "159.26.106.84"
+      },
+      {
+        "clientWidth": 30,
+        "scrollWidth": 42,
+        "tag": "SPAN",
+        "text": "slflare"
+      },
+      {
+        "clientWidth": 51,
+        "scrollWidth": 89,
+        "tag": "SPAN",
+        "text": "slflarewinsysmo"
+      },
+      {
+        "clientWidth": 51,
+        "scrollWidth": 60,
+        "tag": "P",
+        "text": "Encryption"
+      }
+    ],
+    "viewport": {
+      "height": 844,
+      "width": 390
+    }
+  },
+  "logs": []
+}

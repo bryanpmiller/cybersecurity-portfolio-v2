@@ -162,6 +162,21 @@ After each major task, Codex must update:
 3. `codex/WORKLOG.md`
    - Add a dated entry summarizing the completed work, files changed, issues found, decisions made, and next steps.
 
+For micro-changes, use lighter tracking:
+
+- A micro-change is a small, localized fix or approved content/taxonomy tweak that does not complete a roadmap task, introduce a durable design rule, change architecture, or affect multiple workflows.
+- For micro-changes, update only `codex/WORKLOG.md` with a compact entry.
+- Do not update `codex/TASKS.md` unless a roadmap checkbox is completed or the current phase/next task changes.
+- Do not update `codex/PROJECT_MEMORY.md` unless the change creates or updates a durable decision, constraint, approved/rejected idea, architecture note, or content rule.
+- Batch related micro-changes into one compact worklog entry when they happen in the same work session.
+
+Validation may also be scaled to risk:
+
+- Markdown-only workkit updates usually do not need lint/build.
+- Small copy/data/style edits may run lint first and defer build until the end of a related batch.
+- Browser validation is expected for visual layout, responsive, interaction, or accessibility-risk changes, but is optional for pure markdown or low-risk data changes.
+- Major phase completion should still run available full checks, usually lint and build.
+
 ---
 
 ## Site-Wide Review Rule
@@ -185,13 +200,29 @@ After visual changes, Codex should inspect affected pages at desktop and mobile 
 
 ---
 
+## Organizational Label Rule
+
+Preserve existing substantive page copy unless Bryan explicitly approves wording changes.
+
+Codex may rename organizational labels when needed for clearer grouping, as long as the underlying claims, tools, experience, metrics, descriptions, and button/link labels remain supported and unchanged.
+
+Examples:
+
+- Skill category names
+- Card grouping labels
+- Section-adjacent taxonomy labels
+
+If a design change requires rewriting project descriptions, resume/experience wording, metrics, outcomes, button labels, section headings, or other substantive copy, Codex must stop and ask first.
+
+---
+
 ## Current Phase
 
-Current phase: Phase 6 — Skills and Tooling Section
+Current phase: Phase 9 — Cybersecurity Visual Elements
 
 Current next task:
 
-- [ ] Phase 6.1 — Audit current skills
+- [ ] Phase 9.1 — Add tasteful security-themed visuals
 
 ---
 
@@ -312,32 +343,32 @@ Before editing code, summarize:
 
 ## Phase 6 — Skills and Tooling Section
 
-- [ ] 6.1 Audit current skills.
-- [ ] 6.2 Group skills by cybersecurity category.
-- [ ] 6.3 Remove duplicates.
-- [ ] 6.4 Improve visual layout.
-- [ ] 6.5 Run relevant checks.
-- [ ] 6.6 Update tracking files.
+- [x] 6.1 Audit current skills.
+- [x] 6.2 Group skills by cybersecurity category.
+- [x] 6.3 Remove duplicates.
+- [x] 6.4 Improve visual layout.
+- [x] 6.5 Run relevant checks.
+- [x] 6.6 Update tracking files.
 
 ---
 
 ## Phase 7 — Experience / Resume Snapshot Section
 
-- [ ] 7.1 Add or improve experience snapshot.
-- [ ] 7.2 Use supported metrics only.
-- [ ] 7.3 Improve resume CTA.
-- [ ] 7.4 Run relevant checks.
-- [ ] 7.5 Update tracking files.
+- [x] 7.1 Add or improve experience snapshot.
+- [x] 7.2 Use supported metrics only.
+- [x] 7.3 Improve resume CTA.
+- [x] 7.4 Run relevant checks.
+- [x] 7.5 Update tracking files.
 
 ---
 
 ## Phase 8 — Impact Metrics Section
 
-- [ ] 8.1 Identify supported metrics.
-- [ ] 8.2 Design metrics strip or cards.
-- [ ] 8.3 Keep claims accurate.
-- [ ] 8.4 Run relevant checks.
-- [ ] 8.5 Update tracking files.
+- [x] 8.1 Identify supported metrics.
+- [x] 8.2 Design metrics strip or cards.
+- [x] 8.3 Keep claims accurate.
+- [x] 8.4 Run relevant checks.
+- [x] 8.5 Update tracking files.
 
 ---
 

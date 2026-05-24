@@ -34,6 +34,10 @@ Keep entries short but useful.
 
 Do not paste huge diffs into this file.
 
+For micro-changes, use a compact entry instead of the full template. Batch related micro-changes when possible.
+
+A micro-change is a small, localized fix or approved content/taxonomy tweak that does not complete a roadmap task, introduce a durable design rule, change architecture, or affect multiple workflows.
+
 ---
 
 ## Entry Template
@@ -79,9 +83,538 @@ Result:
 
 ---
 
+## Compact Entry Template
+
+Use this for micro-changes:
+
+```md
+## YYYY-MM-DD — Small Fixes
+
+- Area: brief change summary.
+- Files: `path/to/file`, `path/to/file`.
+- Checks: `npm.cmd run lint` pass; `npm.cmd run build` pass/not run with reason.
+- Notes: blockers, follow-up, or `None`.
+```
+
+---
+
 ## Active Worklog
 
 Add new entries below this line.
+
+---
+
+## 2026-05-23 -- Reminder Callout (Review this with me on next start)
+
+- The Remediation Dashboard to have a load in animation but the network security dashboard does not. If you the network security dashboard is on the screen and you refresh the Network Security Dashboard stays stagnant.
+
+---
+
+## 2026-05-24 — Small Fixes
+
+- Home metrics: moved `Network Security Dashboard` below the remediation dashboard and changed its reduction bar to animate from 0 to 100% like the remediation bars.
+- Files: `app/page.tsx`, `components/sections/ImpactMetricsStrip.tsx`, `codex/WORKLOG.md`, `codex/screenshots/phase-8-network-dashboard-order/`.
+- Checks: `npm.cmd run lint` pass; `npm.cmd run build` pass; Browser validation pass on Home desktop and 390px mobile.
+- Notes: Network dashboard remains scoped to the resume-backed brute force metric; remediation dashboard remains scoped to vulnerability reductions.
+
+---
+
+## 2026-05-24 — Phase 8.1-8.5: Impact Metrics Section
+
+### Summary
+
+Completed Phase 8 by adding a first-read impact metrics strip to the Home evidence section using supported resume-backed impact metrics.
+
+### Completed
+
+- Identified supported metrics from `vulnerabilityReductionStats` and the resume PDF.
+- Added a reusable `ImpactMetricsStrip` component for supplemental impact metrics.
+- Added the resume-backed brute force reduction metric to `impactMetrics`.
+- Added Cypress College education details from the resume PDF.
+- Added resume-backed skills to the shared skills data.
+- Placed the supplemental brute force impact callout above the existing remediation dashboard on Home.
+- Kept the detailed `RiskReductionDashboard` as the owner of the vulnerability reduction metrics.
+- Validated Home, About, Resume, and Skills at desktop and mobile widths in Browser.
+- Captured Phase 8 screenshots and validation data.
+- Ran lint and production build successfully.
+- Marked Phase 8.1 through Phase 8.5 complete in `codex/TASKS.md`.
+
+### Files Changed
+
+- `app/page.tsx`
+- `app/resume/page.tsx`
+- `components/sections/ImpactMetricsStrip.tsx`
+- `lib/data/resume.ts`
+- `lib/data/skills.ts`
+- `codex/TASKS.md`
+- `codex/PROJECT_MEMORY.md`
+- `codex/WORKLOG.md`
+- `codex/screenshots/phase-8-impact-metrics/`
+- `codex/screenshots/phase-8-source-truth-additions/`
+
+### Issues Found
+
+- The first metric-strip pass used an off-card decorative glow that triggered an internal overflow check even though page-level overflow was zero; the glow was tightened inside the card.
+- After adding the fourth metric, the first four-card pass squeezed the `100%` value beside the badge on desktop; the metric-card header was adjusted so the value has its own line.
+- Bryan pointed out that the four-card impact strip duplicated the vulnerability metrics already shown in the dashboard; the Home strip was trimmed to a single supplemental brute force impact callout.
+- Bryan then asked for the supplemental callout to be called `Network Security Dashboard` and mimic the remediation dashboard design; it now uses the same terminal-style dashboard treatment.
+- Browser validation found no page-level horizontal overflow, no callout internal overflow, and no console warnings/errors on Home, About, Resume, and Skills at tested desktop and mobile widths.
+
+### Decisions Made
+
+- Use the detailed remediation dashboard for the existing 100%, 92%, and 88% vulnerability reduction metrics.
+- Use the Home strip only for supplemental impact not already covered by the dashboard.
+- Use matching dashboard patterns for network security and remediation metrics so the section feels intentional rather than bolted on.
+- Keep the Resume page supported metrics list broader than Home because it functions as a resume snapshot rather than a section-level visual.
+- Do not show the intern title from the resume PDF on the site.
+
+### Checks Run
+
+```bash
+npm.cmd run lint
+npm.cmd run build
+```
+
+Result:
+- `npm.cmd run lint`: Pass
+- `npm.cmd run build`: Pass
+- Browser validation: Pass on Home, About, Resume, and Skills at 1280px desktop and 390px mobile widths; follow-up Home pass confirmed the Network Security Dashboard, no duplicate impact cards, and no horizontal overflow.
+
+### Next Steps
+
+- Continue with Phase 9.1: add tasteful security-themed visuals.
+
+---
+
+## 2026-05-24 — Small Fixes
+
+- Resume: strengthened Profile and Skills Snapshot card titles with a subtle evidence left rule, slightly larger heading size, and stronger contrast.
+- Files: `app/resume/page.tsx`, `codex/WORKLOG.md`, `codex/screenshots/resume-title-emphasis/`.
+- Checks: `npm.cmd run lint` pass; `npm.cmd run build` pass; Browser validation pass on Resume at 1440px desktop and 390px mobile.
+- Notes: No title or text wording changed.
+
+---
+
+## 2026-05-24 — Phase 7.1-7.5: Experience / Resume Snapshot Section
+
+### Summary
+
+Completed Phase 7 by improving the Resume page's experience snapshot, supported metrics treatment, and resume CTA area.
+
+### Completed
+
+- Added a dedicated `Experience Snapshot` card near the top of the Resume page.
+- Used the existing Experience resume highlight body without rewriting it.
+- Surfaced supported vulnerability reduction metrics from `vulnerabilityReductionStats`.
+- Reworked the Resume Profile card to focus on Education and Certificates after moving Experience and metrics into the top snapshot.
+- Added a clearer `Resume Action` row with the existing `Download PDF` and `View Projects` labels.
+- Added icons to Resume page CTA buttons.
+- Validated the Resume page at desktop and mobile widths in Browser.
+- Captured Phase 7 screenshots and validation data.
+- Ran lint and production build successfully.
+- Marked Phase 7.1 through Phase 7.5 complete in `codex/TASKS.md`.
+
+### Files Changed
+
+- `app/resume/page.tsx`
+- `codex/TASKS.md`
+- `codex/PROJECT_MEMORY.md`
+- `codex/WORKLOG.md`
+- `codex/screenshots/phase-7-experience-resume/`
+
+### Issues Found
+
+- The previous Resume page contained the right information, but Experience and Vulnerability Reduction Metrics were buried in the Profile grid.
+- Browser validation found no horizontal overflow, no text parent-overflow candidates, and no console warnings/errors on Resume at tested desktop and mobile widths.
+
+### Decisions Made
+
+- Keep the Resume page experience copy unchanged and improve the layout around it.
+- Use only already-supported vulnerability reduction metrics for the Resume snapshot.
+- Keep Education and Certificates in the Profile card after surfacing Experience and metrics in the stronger top section.
+
+### Checks Run
+
+```bash
+npm.cmd run lint
+npm.cmd run build
+```
+
+Result:
+- `npm.cmd run lint`: Pass
+- `npm.cmd run build`: Pass
+- Browser validation: Pass on Resume at 1440px desktop and 390px mobile widths.
+
+### Next Steps
+
+- Continue with Phase 8.1: identify supported metrics.
+
+---
+
+## 2026-05-24 — Small Fixes
+
+- Workkit: added micro-change tracking, compact worklog, batching, and risk-scaled validation rules to reduce usage while preserving traceability.
+- Files: `AGENTS.md`, `codex/TASKS.md`, `codex/PROJECT_MEMORY.md`, `codex/WORKLOG.md`.
+- Checks: Not run; markdown-only process update.
+- Notes: Major phase work still requires full roadmap/memory/worklog tracking and full checks.
+
+---
+
+## 2026-05-24 — About Page Formatting: Education Highlight
+
+### Summary
+
+Matched the About page education highlight formatting to the Home and Resume page highlight formatting.
+
+### Completed
+
+- Added `whitespace-pre-line` to About page profile highlight body text.
+- Preserved the existing education wording while honoring the line breaks already present in shared resume highlight data.
+
+### Files Changed
+
+- `app/about/page.tsx`
+- `codex/WORKLOG.md`
+
+### Issues Found
+
+- About rendered shared highlight text as a wrapped paragraph, while Home and Resume preserved the intended line breaks.
+
+### Decisions Made
+
+- Use the same `whitespace-pre-line` rendering pattern already used on Home and Resume for shared resume highlight text.
+
+### Checks Run
+
+```bash
+npm.cmd run lint
+npm.cmd run build
+```
+
+Result:
+- `npm.cmd run lint`: Pass
+- `npm.cmd run build`: Pass
+
+### Next Steps
+
+- Continue with Phase 7.1: add or improve the experience snapshot.
+
+---
+
+## 2026-05-24 — Phase 6 Refinement: Automation Tools Skill
+
+### Summary
+
+Added `Automation Tools` back under Automation / Scripting after Bryan approved it.
+
+### Completed
+
+- Updated the shared skills data so Skills and Resume include `Automation Tools`.
+- Updated project memory with the approved Automation / Scripting supporting capability list.
+
+### Files Changed
+
+- `lib/data/skills.ts`
+- `codex/PROJECT_MEMORY.md`
+- `codex/WORKLOG.md`
+
+### Issues Found
+
+- None.
+
+### Decisions Made
+
+- Keep `Automation Tools` as a supporting capability under Automation / Scripting.
+
+### Checks Run
+
+```bash
+npm.cmd run lint
+npm.cmd run build
+```
+
+Result:
+- `npm.cmd run lint`: Pass
+- `npm.cmd run build`: Pass
+
+### Next Steps
+
+- Continue with Phase 7.1: add or improve the experience snapshot.
+
+---
+
+## 2026-05-24 — Phase 6 Refinement: Skills Capitalization
+
+### Summary
+
+Updated skill labels and Skills page taxonomy labels to use title-style capitalization.
+
+### Completed
+
+- Capitalized skill labels in `lib/data/skills.ts`.
+- Preserved technical acronyms including `KQL`, `SQL`, `CVE/CWE`, `CVSS`, `SIEM/EDR`, and `DISA STIG`.
+- Capitalized `Core Tools / Methods` and `Supporting Capabilities` labels on the Skills page.
+- Updated project memory with the capitalization convention.
+
+### Files Changed
+
+- `lib/data/skills.ts`
+- `components/sections/SkillsOverview.tsx`
+- `codex/PROJECT_MEMORY.md`
+- `codex/WORKLOG.md`
+
+### Issues Found
+
+- None.
+
+### Decisions Made
+
+- Use title-style capitalization for skill labels while preserving established technical acronym casing.
+
+### Checks Run
+
+```bash
+npm.cmd run lint
+npm.cmd run build
+```
+
+Result:
+- `npm.cmd run lint`: Pass
+- `npm.cmd run build`: Pass
+
+### Next Steps
+
+- Continue with Phase 7.1: add or improve the experience snapshot.
+
+---
+
+## 2026-05-24 — Phase 6 Refinement: Automated Remediation Skill
+
+### Summary
+
+Added `Automated Remediation` as an approved supporting capability under Automation / Scripting.
+
+### Completed
+
+- Updated the shared skills data so the Skills and Resume pages include the new capability.
+- Updated project memory with the approved Automation / Scripting supporting capabilities.
+
+### Files Changed
+
+- `lib/data/skills.ts`
+- `codex/PROJECT_MEMORY.md`
+- `codex/WORKLOG.md`
+
+### Issues Found
+
+- None.
+
+### Decisions Made
+
+- Keep `Automated Remediation` under Automation / Scripting because it connects scripting work to vulnerability remediation proof-of-work.
+
+### Checks Run
+
+```bash
+npm.cmd run lint
+npm.cmd run build
+```
+
+Result:
+- `npm.cmd run lint`: Pass
+- `npm.cmd run build`: Pass
+
+### Next Steps
+
+- Continue with Phase 7.1: add or improve the experience snapshot.
+
+---
+
+## 2026-05-24 — Phase 6 Refinement: Skill Placement Updates
+
+### Summary
+
+Updated skill placement based on Bryan's direction.
+
+### Completed
+
+- Moved `SQL` from Automation / Scripting into SecOps / Detection Engineering as a supporting capability.
+- Added `Web App Development` and `Full-Stack Development` as supporting capabilities under Automation / Scripting.
+- Recorded the approved placement decision in project memory.
+
+### Files Changed
+
+- `lib/data/skills.ts`
+- `codex/PROJECT_MEMORY.md`
+- `codex/WORKLOG.md`
+
+### Issues Found
+
+- None.
+
+### Decisions Made
+
+- Treat `SQL` as more relevant to SecOps analytics/querying than automation in the current skills taxonomy.
+
+### Checks Run
+
+```bash
+npm.cmd run lint
+npm.cmd run build
+```
+
+Result:
+- `npm.cmd run lint`: Pass
+- `npm.cmd run build`: Pass
+
+### Next Steps
+
+- Continue with Phase 7.1: add or improve the experience snapshot.
+
+---
+
+## 2026-05-24 — Phase 6 Refinement: Core Skill Chip Visibility
+
+### Summary
+
+Improved the visibility of the core skill chips on the Skills page.
+
+### Completed
+
+- Muted the `Core tools / methods` label so it no longer competes with the skill chips.
+- Increased core skill chip contrast with near-white text, a stronger evidence border, heavier mono weight, and a more distinct raised surface.
+- Validated the Skills page at desktop and mobile widths in Browser.
+- Captured updated screenshots and validation data.
+
+### Files Changed
+
+- `components/sections/SkillsOverview.tsx`
+- `codex/PROJECT_MEMORY.md`
+- `codex/WORKLOG.md`
+- `codex/screenshots/phase-6-skill-chip-visibility/`
+
+### Issues Found
+
+- Before the update, the core skill chips blended into the `Core tools / methods` label because both used similar evidence-color emphasis.
+- Browser validation found no horizontal overflow and no console warnings/errors after the change.
+
+### Decisions Made
+
+- Keep taxonomy labels quieter than the actual skill chips so recruiter scanning lands on the tools first.
+
+### Checks Run
+
+```bash
+npm.cmd run lint
+npm.cmd run build
+```
+
+Result:
+- `npm.cmd run lint`: Pass
+- `npm.cmd run build`: Pass
+- Browser validation: Pass on Skills at 1440px desktop and 390px mobile widths.
+
+### Next Steps
+
+- Continue with Phase 7.1: add or improve the experience snapshot.
+
+---
+
+## 2026-05-24 — Workkit Update: Organizational Label Rule
+
+### Summary
+
+Added a durable clarification that Codex may rename organizational labels when needed for clearer grouping without treating that as substantive copy rewriting.
+
+### Completed
+
+- Added the rule to `AGENTS.md` under the content preservation guidance.
+- Added a matching working rule to `codex/TASKS.md`.
+- Recorded the rule in `codex/PROJECT_MEMORY.md` under approved decisions and content rules.
+
+### Files Changed
+
+- `AGENTS.md`
+- `codex/TASKS.md`
+- `codex/PROJECT_MEMORY.md`
+- `codex/WORKLOG.md`
+
+### Issues Found
+
+- None.
+
+### Decisions Made
+
+- Skill category names, card grouping labels, and section-adjacent taxonomy labels may be renamed for clearer grouping.
+- Substantive claims, tools, experience, metrics, descriptions, outcomes, button/link labels, and other core page copy still require Bryan's approval before rewriting.
+
+### Checks Run
+
+Result:
+- Not run; markdown-only workkit update.
+
+### Next Steps
+
+- Continue with Phase 7.1: add or improve the experience snapshot.
+
+---
+
+## 2026-05-24 — Phase 6.1-6.6: Skills and Tooling Section
+
+### Summary
+
+Completed the Phase 6 skills and tooling pass across the Skills page and Resume skills snapshot.
+
+### Completed
+
+- Audited the existing skills data and rendering surfaces.
+- Reworked skills into primary and supporting skills per cybersecurity category.
+- Split the old `KQL/SQL` entry so `KQL` stays under SecOps / Detection Engineering and `SQL` stays under Automation / Scripting.
+- Added separate categories for Cloud / Network Security and Governance / Compliance Frameworks.
+- Rebuilt the Skills page cards with icons, core tools / methods chips, supporting capability lists, and responsive two/three-column layout.
+- Updated the Resume skills snapshot to show all six skill groups with compact skill-count badges.
+- Validated Skills and Resume at desktop and mobile widths in Browser.
+- Captured Phase 6 screenshots and validation data.
+- Ran lint and production build successfully.
+- Marked Phase 6.1 through Phase 6.6 complete in `codex/TASKS.md`.
+
+### Files Changed
+
+- `lib/data/skills.ts`
+- `components/sections/SkillsOverview.tsx`
+- `app/resume/page.tsx`
+- `codex/TASKS.md`
+- `codex/PROJECT_MEMORY.md`
+- `codex/WORKLOG.md`
+- `codex/screenshots/phase-6-skills-tooling/`
+
+### Issues Found
+
+- The prior Skills section was accurate but visually flat, with all skills rendered as one badge cluster per group.
+- The Resume skills snapshot only showed the first four skill groups, leaving Cloud / Network skills out of that page.
+- Browser validation found no horizontal overflow, no text parent-overflow candidates, and no console warnings/errors on Skills or Resume at tested desktop and mobile widths.
+
+### Decisions Made
+
+- Keep skills grouped by recruiter-relevant cybersecurity categories instead of broad generic buckets.
+- Keep `KQL` in SecOps / Detection Engineering and preserve `SQL` separately under Automation / Scripting to remove the duplicated KQL concept.
+- Keep the Skills page as the fuller tooling surface and make the Resume skills snapshot denser but still complete.
+
+### Checks Run
+
+```bash
+npm.cmd run lint
+npm.cmd run build
+```
+
+Result:
+- `npm.cmd run lint`: Pass
+- `npm.cmd run build`: Pass
+- Browser validation: Pass on Skills and Resume at 1440px desktop and 390px mobile widths.
+
+### Next Steps
+
+- Continue with Phase 7.1: add or improve the experience snapshot.
 
 ---
 

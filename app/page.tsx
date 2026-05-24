@@ -1,6 +1,7 @@
 import { PageContainer } from "@/components/layout/PageContainer";
 import { FeaturedProjects } from "@/components/sections/FeaturedProjects";
 import { HeroSection } from "@/components/sections/HeroSection";
+import { NetworkSecurityDashboard } from "@/components/sections/ImpactMetricsStrip";
 import { RiskReductionDashboard } from "@/components/sections/RiskReductionDashboard";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { resumeHighlights } from "@/lib/data/resume";
@@ -18,6 +19,7 @@ export default function Home() {
           title="Risk Reduction and Security Operations experience"
         />
         <RiskReductionDashboard />
+        <NetworkSecurityDashboard />
         <div className="mt-6 grid min-w-0 gap-3 md:grid-cols-2">
           {resumeHighlights.slice(0, 4).map((highlight) => (
             <div className="min-w-0 rounded-md border border-line bg-surface/70 p-4" key={highlight.title}>

@@ -1,56 +1,67 @@
 export type SkillGroup = {
   title: string;
-  skills: string[];
+  primarySkills: string[];
+  supportingSkills: string[];
 };
 
 export const skillGroups: SkillGroup[] = [
   {
     title: "Vulnerability Management",
-    skills: [
-      "Tenable",
-      "Vulnerability scanning",
-      "CVE/CWE management",
-      "CVSS scoring",
-      "Risk prioritization",
-      "Remediation tracking",
-      "Remediation validation"
+    primarySkills: ["Tenable", "Vulnerability Scanning", "Risk Prioritization"],
+    supportingSkills: [
+      "CVE/CWE Management",
+      "CVSS Scoring",
+      "Remediation Tracking",
+      "Remediation Validation"
     ]
   },
   {
-    title: "Security Operations",
-    skills: [
-      "Microsoft Defender for Endpoint",
-      "Microsoft Sentinel",
-      "KQL",
-      "SIEM/EDR analysis",
-      "Threat hunting",
-      "Incident triage",
-      "Detection rules",
-      "Dashboards"
+    title: "SecOps / Detection Engineering",
+    primarySkills: ["Microsoft Defender for Endpoint", "Microsoft Sentinel", "KQL"],
+    supportingSkills: [
+      "SIEM/EDR Analysis",
+      "Threat Hunting",
+      "Incident Triage",
+      "Detection Rules",
+      "Dashboards",
+      "SQL"
     ]
   },
   {
-    title: "Secure Configuration / Compliance",
-    skills: [
-      "DISA STIG",
-      "Windows hardening",
-      "Linux security basics",
-      "NIST CSF",
-      "NIST 800-37",
-      "NIST 800-53",
-      "NIST 800-61",
-      "NIST 800-40",
-      "PCI-DSS",
-      "HIPAA",
-      "GDPR"
-    ]
+    title: "Secure Configuration / Hardening",
+    primarySkills: ["DISA STIG", "Windows Hardening", "Linux Security Basics"],
+    supportingSkills: ["Active Directory", "Security Configuration", "Access Control", "NIST 800-53", "NIST 800-40"]
   },
   {
     title: "Automation / Scripting",
-    skills: ["PowerShell", "Bash", "Python", "KQL/SQL"]
+    primarySkills: ["PowerShell", "Bash", "Python"],
+    supportingSkills: [
+      "Automation Tools",
+      "Automated Remediation",
+      "Web App Development",
+      "Full-Stack Development"
+    ]
   },
   {
-    title: "Cloud / Network",
-    skills: ["Azure NSGs", "Firewall rules", "pfSense", "VLANs", "SSH", "RDP", "Network security"]
+    title: "Cloud / Network Security",
+    primarySkills: ["Azure NSGs", "Firewall Rules", "pfSense"],
+    supportingSkills: ["Wireshark", "VLANs", "SSH", "RDP", "Network Security", "Network Forensics"]
+  },
+  {
+    title: "Governance / Compliance Frameworks",
+    primarySkills: ["NIST CSF", "NIST 800-37", "NIST 800-61"],
+    supportingSkills: [
+      "PCI-DSS",
+      "HIPAA",
+      "GDPR",
+      "OWASP Top 10",
+      "Disaster Recovery Planning",
+      "Security Policies",
+      "Information Security Management"
+    ]
   }
 ];
+
+export function getSkillsForGroup(group: SkillGroup) {
+  return [...group.primarySkills, ...group.supportingSkills];
+}
