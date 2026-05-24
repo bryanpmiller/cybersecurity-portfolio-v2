@@ -9,6 +9,11 @@ export type Project = {
     label: string;
     href: string;
   }>;
+  cardSummary?: {
+    problem: string;
+    concepts: string;
+    outcome: string;
+  };
   caseStudy?: {
     problem: string;
     approach: string[];
@@ -49,6 +54,11 @@ export const projects: Project[] = [
         href: "https://github.com/bryanpmiller/scripts"
       }
     ],
+    cardSummary: {
+      problem: "No policy, scan approval, priority model, or verification loop existed.",
+      concepts: "Governance, authenticated scanning, risk prioritization, and validation.",
+      outcome: "Findings fell from 32 to 4, with criticals eliminated."
+    },
     caseStudy: {
       problem:
         "The simulated organization began without an established vulnerability management policy or operating process. The project needed to move from an unmanaged baseline to a repeatable program with governance, scanning permission, prioritized remediation, and verification.",
@@ -126,6 +136,11 @@ export const projects: Project[] = [
         href: "https://github.com/bryanpmiller/DISA-STIG-Remediation/tree/main/assets"
       }
     ],
+    cardSummary: {
+      problem: "Windows 11 STIG findings needed scripted fixes and validation proof.",
+      concepts: "Registry policy, audit policy, PowerShell checks, and evidence capture.",
+      outcome: "Selected controls are documented without claiming full compliance."
+    },
     caseStudy: {
       problem:
         "Selected Windows 11 DISA STIG findings required configuration changes and validation evidence showing failed, remediated, and passed states.",
@@ -194,6 +209,11 @@ export const projects: Project[] = [
         href: "https://github.com/bryanpmiller/password-spray-threat-hunt/tree/main/screenshots"
       }
     ],
+    cardSummary: {
+      problem: "RDP access after password spraying needed full endpoint pivots.",
+      concepts: "RDP logon analysis, KQL pivots, ATT&CK mapping, and exfil review.",
+      outcome: "The report reconstructs the attack path and attempted exfiltration."
+    },
     caseStudy: {
       problem:
         "A cloud-hosted Windows VM in a cyber range showed activity consistent with password-spray-driven compromise over RDP. The hunt needed to identify the attacker source, compromised account, execution artifacts, persistence, evasion, discovery, collection, C2, and exfiltration attempt.",
@@ -268,6 +288,11 @@ export const projects: Project[] = [
         href: "https://github.com/bryanpmiller/the-buyer-threathunt/tree/main/screenshots"
       }
     ],
+    cardSummary: {
+      problem: "Akira activity needed host scoping, timeline rebuild, and gap review.",
+      concepts: "Ransomware timeline, remote access triage, tampering, and impact.",
+      outcome: "Affected hosts, IOC timing, and detections are documented."
+    },
     caseStudy: {
       problem:
         "The investigation needed to determine how a ransomware event unfolded across AS-PC2 and AS-SRV, identify supporting evidence, map observed behavior to ATT&CK, and document detection gaps.",

@@ -85,6 +85,283 @@ Add new entries below this line.
 
 ---
 
+## 2026-05-24 — Phase 5.4, 5.5, and 5.6: Tags, Links, Hover States, Grid, Checks, and Tracking
+
+### Summary
+
+Closed out Phase 5 by improving the project-card action row, tool tags, hover/focus polish, and responsive grid behavior.
+
+### Completed
+
+- Added a structured bottom action row to project cards.
+- Preserved the existing `View case study` link and added an icon-only external GitHub proof link when a project has `githubUrl`.
+- Improved tool-tag hover states and safer wrapping behavior without changing tool names.
+- Added stretched `auto-rows-fr` project grids so paired desktop cards remain equal-height.
+- Tuned card preview, focus-within, action-link, and tag hover states.
+- Validated Home and Projects at 1440px desktop and 390px mobile widths in Browser.
+- Captured Phase 5.4 screenshots and validation data.
+- Ran lint and production build successfully.
+- Marked Phase 5.4, Phase 5.5, and Phase 5.6 complete in `codex/TASKS.md`.
+
+### Files Changed
+
+- `components/sections/FeaturedProjects.tsx`
+- `codex/TASKS.md`
+- `codex/PROJECT_MEMORY.md`
+- `codex/WORKLOG.md`
+- `codex/screenshots/phase-5-card-tags-links-grid/`
+
+### Issues Found
+
+- Initial build failed because this installed `lucide-react` version does not export `Github`; fixed by using the supported `ExternalLink` icon.
+- Browser validation found four case-study links and four GitHub proof links on both Home and Projects.
+- No tag overflow, horizontal overflow, clipped card sections, or console warnings/errors were found on the affected pages at tested widths.
+
+### Decisions Made
+
+- Use an icon-only GitHub proof link with an accessible label to avoid adding more visible text to already dense cards.
+- Preserve the fixed/minimum section sizing introduced in Phase 5.2 and Phase 5.3 because it keeps card alignment stable.
+- Treat the remaining Akira mobile detail-page long-string overflow from Phase 5.1 as a separate follow-up, not part of this card-grid pass.
+
+### Checks Run
+
+```bash
+npm.cmd run lint
+npm.cmd run build
+```
+
+Result:
+- `npm.cmd run lint`: Pass
+- `npm.cmd run build`: Pass
+- Browser validation: Pass on Home and Projects at desktop and 390px mobile widths.
+
+### Next Steps
+
+- Continue with Phase 6.1: audit current skills.
+
+---
+
+## 2026-05-24 — Phase 5.3: Show Problem, Tools, Concepts, and Outcome
+
+### Summary
+
+Updated the case-study card snapshot language so the cards explicitly show problem, concepts, tools, and outcome.
+
+### Completed
+
+- Renamed the middle snapshot row from `Evidence` to `Concepts`.
+- Replaced `cardSummary.evidence` with `cardSummary.concepts` in project data.
+- Added concise project-specific concepts summaries derived from existing case-study content.
+- Kept tools visible in the dedicated tooling panel.
+- Validated Home and Projects at desktop and 390px mobile widths in Browser.
+- Ran lint and production build successfully.
+- Marked Phase 5.3 complete in `codex/TASKS.md`.
+
+### Files Changed
+
+- `lib/data/projects.ts`
+- `components/sections/FeaturedProjects.tsx`
+- `codex/TASKS.md`
+- `codex/PROJECT_MEMORY.md`
+- `codex/WORKLOG.md`
+- `codex/screenshots/phase-5-card-concepts/`
+
+### Issues Found
+
+- No horizontal overflow, clipped snapshot values, or console warnings/errors were found on affected pages.
+- Lower-card alignment held after delayed scroll/animation.
+
+### Decisions Made
+
+- Use `Concepts` instead of `Evidence` on cards because the card also has a separate tools panel and the full detail pages carry deeper evidence.
+- Maintain fixed/minimum project-card section sizing so future card edits do not break alignment.
+
+### Checks Run
+
+```bash
+npm.cmd run lint
+npm.cmd run build
+```
+
+Result:
+- `npm.cmd run lint`: Pass
+- `npm.cmd run build`: Pass
+- Browser validation: Pass on Home and Projects at desktop and 390px mobile widths.
+
+### Next Steps
+
+- Continue with Phase 5.4: improve tags, links, hover states, and responsive grid.
+
+---
+
+## 2026-05-24 — Phase 5.2 Correction: Card Content and Alignment
+
+### Summary
+
+Reworked the Phase 5.2 card pass after review feedback so the case-study snapshot content is meaningful and card sections align better.
+
+### Completed
+
+- Added project-specific `cardSummary` fields to `lib/data/projects.ts`.
+- Replaced the generic snapshot values with concise summaries derived from each project's problem, evidence, and outcome sections.
+- Rebuilt the project card body so title/summary, snapshot, tooling, and CTA stack more consistently.
+- Replaced the off-balance tool row with a compact tooling panel.
+- Bottom-aligned the `View case study` CTA across cards.
+- Normalized intro, snapshot, and tooling heights so the lower project cards align after delayed scroll/animation.
+- Shortened all card summaries so mobile snapshot values read as complete sentences without visible ellipses.
+- Validated Home and Projects at desktop and 390px mobile widths in Browser.
+- Ran lint and production build successfully.
+
+### Files Changed
+
+- `lib/data/projects.ts`
+- `components/sections/FeaturedProjects.tsx`
+- `codex/PROJECT_MEMORY.md`
+- `codex/WORKLOG.md`
+- `codex/screenshots/phase-5-card-case-study/`
+
+### Issues Found
+
+- The first Phase 5.2 snapshot pulled values that were technically existing data but did not summarize the project sections well.
+- The first Phase 5.2 layout did not align CTA placement consistently and made the tools area feel visually uneven.
+- Corrected browser validation found no horizontal overflow on Home or Projects at tested desktop and mobile widths.
+- Browser metrics confirmed four snapshots, four tooling panels, equal desktop section offsets, equal CTA bottom offsets, and no clipped lower-card snapshot values.
+- No console warnings/errors were recorded during the corrected Browser review.
+
+### Decisions Made
+
+- Use explicit per-project card summaries instead of deriving snapshot values directly from long detail-page fields.
+- Keep the summaries concise and tied to supported case-study content.
+- Project card alignment depends on fixed/minimum section sizing across the role, title, summary, case-study snapshot rows, tooling panel, and bottom CTA. Future content or layout changes inside those sections should preserve those constraints or retune them across all cards.
+- Keep deeper concepts/outcome refinement queued for Phase 5.3.
+
+### Checks Run
+
+```bash
+npm.cmd run lint
+npm.cmd run build
+```
+
+Result:
+- `npm.cmd run lint`: Pass
+- `npm.cmd run build`: Pass
+- Browser validation: Pass with no horizontal overflow or console warnings/errors on affected pages.
+
+### Next Steps
+
+- Continue with Phase 5.3: show problem, tools, concepts, and outcome.
+
+---
+
+## 2026-05-24 — Phase 5.2: Convert Cards Into Concise Case Studies
+
+### Summary
+
+Converted project list cards into more explicit case-study cards while preserving existing project wording and claims.
+
+### Completed
+
+- Added a compact case-study snapshot to each project card.
+- Used existing `caseStudy.problem`, `caseStudy.evidenceBlock.label`, and `caseStudy.outcome` data for the snapshot.
+- Preserved existing project title, role, summary, preview visual, tools, and `View case study` link text.
+- Tuned the snapshot layout so mobile uses readable compact rows and larger screens stay dense.
+- Validated Home and Projects at desktop and 390px mobile widths in Browser.
+- Captured Phase 5.2 screenshots and audit data.
+- Ran lint and production build successfully.
+- Marked Phase 5.2 complete in `codex/TASKS.md`.
+
+### Files Changed
+
+- `components/sections/FeaturedProjects.tsx`
+- `codex/TASKS.md`
+- `codex/PROJECT_MEMORY.md`
+- `codex/WORKLOG.md`
+- `codex/screenshots/phase-5-card-case-study/`
+
+### Issues Found
+
+- No horizontal overflow was found on Home or Projects at tested desktop and mobile widths.
+- Browser validation found four case-study snapshots on Home and Projects.
+- No console warnings/errors were recorded during the Phase 5.2 Browser review.
+- The previously found Akira mobile detail-page overflow remains a recommended follow-up; it was not changed during this card-only pass.
+
+### Decisions Made
+
+- Keep Phase 5.2 focused on card layout and case-study scanning, not content rewriting.
+- Use existing case-study data as the only content source for the new snapshot.
+- Leave deeper problem/tools/concepts/outcome refinement for Phase 5.3.
+
+### Checks Run
+
+```bash
+npm.cmd run lint
+npm.cmd run build
+```
+
+Result:
+- `npm.cmd run lint`: Pass
+- `npm.cmd run build`: Pass
+- Browser validation: Pass with no horizontal overflow or console warnings/errors on affected pages.
+
+### Next Steps
+
+- Continue with Phase 5.3: show problem, tools, concepts, and outcome.
+
+---
+
+## 2026-05-24 — Phase 5.1: Audit Existing Project Cards
+
+### Summary
+
+Audited the current project-card structure and data model before making Phase 5 design changes.
+
+### Completed
+
+- Reviewed `lib/data/projects.ts` and confirmed all four projects already include structured case-study data.
+- Reviewed `FeaturedProjects` usage on Home and Projects.
+- Reviewed `ProjectDetail` to confirm the detail pages already expose problem, approach, evidence, outcome, and lessons.
+- Completed rendered browser validation after the local browser origin policy was corrected.
+- Captured Phase 5.1 viewport screenshots and audit data for Home, Projects, and all four project detail pages.
+- Identified Phase 5.2 opportunities without changing UI code.
+- Added Bryan's collaboration rule: adjacent improvement opportunities should be presented for approval before implementation.
+- Marked Phase 5.1 complete in `codex/TASKS.md`.
+
+### Files Changed
+
+- `codex/TASKS.md`
+- `codex/PROJECT_MEMORY.md`
+- `codex/WORKLOG.md`
+- `codex/screenshots/phase-5-project-card-audit/`
+
+### Issues Found
+
+- Project cards are polished and functional, but list cards do not yet expose explicit problem/evidence/outcome structure.
+- Project preview visuals are hand-coded by slug inside `FeaturedProjects`, which could become harder to maintain as projects grow.
+- Tool badge rows can get dense on projects with longer tool lists.
+- Projects and Home project-card list views showed no horizontal overflow at 1440px desktop or 390px mobile widths.
+- All project detail pages include the expected case-study sections.
+- Mobile detail review found horizontal overflow on the Akira ransomware case study from long technical strings in section content.
+- Mobile detail review found one non-page-overflow text candidate on the password-spray detail page for `MicrosoftUpdateSync`.
+- No browser console warnings/errors were recorded during the rendered audit.
+
+### Decisions Made
+
+- Treat Phase 5.2 as a layout/design pass around existing project copy, not a content rewrite.
+- Use existing `caseStudy` fields as the source for any case-study card structure.
+- Present adjacent improvement ideas to Bryan before making out-of-scope changes.
+
+### Checks Run
+
+Result:
+- Browser rendered audit completed for Home, Projects, and all project detail pages.
+- Lint/build not run; no site code changes were made.
+
+### Next Steps
+
+- Continue with Phase 5.2: convert cards into concise case studies.
+
+---
+
 ## 2026-05-23 — Phase 4.3, 4.4, and 4.5: Section Order, Checks, and Tracking
 
 ### Summary

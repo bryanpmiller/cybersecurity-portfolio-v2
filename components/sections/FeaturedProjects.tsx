@@ -3,8 +3,7 @@
 import Link from "next/link";
 import { motion, useReducedMotion } from "framer-motion";
 import type { LucideIcon } from "lucide-react";
-import { Activity, ArrowUpRight, CheckSquare, Search, ShieldCheck, Wrench } from "lucide-react";
-import { Badge } from "@/components/ui/Badge";
+import { Activity, ArrowUpRight, CheckSquare, ExternalLink, Search, ShieldCheck, Wrench } from "lucide-react";
 import { Card } from "@/components/ui/Card";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import type { Project } from "@/lib/data/projects";
@@ -253,6 +252,84 @@ function ProjectPreview({ shouldReduceMotion, slug }: { shouldReduceMotion: bool
   );
 }
 
+function CaseStudySnapshot({ project }: { project: Project }) {
+  if (!project.cardSummary) {
+    return null;
+  }
+
+  const snapshotRows = [
+    {
+      label: "Problem",
+      value: project.cardSummary.problem
+    },
+    {
+      label: "Concepts",
+      value: project.cardSummary.concepts
+    },
+    {
+      label: "Outcome",
+      value: project.cardSummary.outcome
+    }
+  ];
+
+  return (
+    <div aria-label={`${project.title} case study snapshot`} className="mt-5 grid gap-2 rounded-md border border-line bg-ink-soft/60 p-3">
+      {snapshotRows.map((row) => (
+        <div className="grid min-h-[5.75rem] min-w-0 content-start gap-1 rounded border border-line/80 bg-surface/45 px-3 py-2" key={row.label}>
+          <p className="font-mono text-[0.6rem] font-semibold uppercase tracking-[0.1em] text-evidence">{row.label}</p>
+          <p className="line-clamp-2 text-sm leading-5 text-slate-300">{row.value}</p>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function ToolingPanel({ tools }: { tools: string[] }) {
+  return (
+    <div className="mt-5 rounded-md border border-line bg-ink-soft/55 p-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.03)] transition-colors duration-200 group-hover/project:border-lineStrong/80 group-hover/project:bg-ink-soft/70">
+      <p className="font-mono text-[0.62rem] font-semibold uppercase tracking-[0.12em] text-slate-400">
+        <Wrench aria-hidden="true" className="mr-2 inline size-3.5 align-[-0.2em] text-evidence" />
+        Tools
+      </p>
+      <div className="mt-3 flex min-h-[4.875rem] min-w-0 content-start flex-wrap gap-1.5">
+        {tools.map((tool) => (
+          <span
+            className="max-w-full rounded border border-lineStrong/60 bg-surface/70 px-2.5 py-1.5 text-xs font-semibold leading-none text-slate-200 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)] transition-[background,border-color,color] duration-200 group-hover/project:border-evidence/30 group-hover/project:bg-surfaceElevated/80 group-hover/project:text-white"
+            key={tool}
+          >
+            {tool}
+          </span>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function ProjectActions({ project }: { project: Project }) {
+  return (
+    <div className="mt-auto grid min-w-0 grid-cols-[minmax(0,1fr)_auto] items-center gap-2 pt-6">
+      <Link
+        className="text-link focus-ring group/link inline-flex min-h-10 min-w-0 items-center justify-center gap-2 rounded-md border border-evidence/35 bg-evidence/10 px-3 py-2 text-center font-mono text-xs font-semibold uppercase tracking-[0.12em] text-evidence transition-[background,border-color,color,box-shadow] hover:border-evidence/70 hover:bg-evidence/15 hover:text-white hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.06)]"
+        href={`/projects/${project.slug}`}
+      >
+        <span className="truncate">View case study</span>
+        <ArrowUpRight aria-hidden="true" className="size-3.5 shrink-0 transition-transform duration-200 group-hover/link:-translate-y-0.5 group-hover/link:translate-x-0.5" />
+      </Link>
+      {project.githubUrl ? (
+        <a
+          aria-label={`Open GitHub repository for ${project.title}`}
+          className="focus-ring inline-flex size-10 shrink-0 items-center justify-center rounded-md border border-lineStrong/65 bg-ink-soft/75 text-slate-300 transition-[background,border-color,color,box-shadow] hover:border-evidence/45 hover:bg-surfaceElevated/85 hover:text-white hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.05)]"
+          href={project.githubUrl}
+          rel="noreferrer"
+          target="_blank"
+        >
+          <ExternalLink aria-hidden="true" className="size-4" />
+        </a>
+      ) : null}
+    </div>
+  );
+}
+
 export function FeaturedProjects({ projects = defaultProjects, showHeader = true }: FeaturedProjectsProps) {
   const shouldReduceMotion = useReducedMotion() ?? false;
 
@@ -266,7 +343,7 @@ export function FeaturedProjects({ projects = defaultProjects, showHeader = true
           title="Cybersecurity work organized for hiring review"
         />
       ) : null}
-      <div className={showHeader ? "mt-8 grid min-w-0 gap-5 md:grid-cols-2 lg:gap-6" : "grid min-w-0 gap-5 md:grid-cols-2 lg:gap-6"}>
+      <div className={showHeader ? "mt-8 grid min-w-0 auto-rows-fr items-stretch gap-5 md:grid-cols-2 lg:gap-6" : "grid min-w-0 auto-rows-fr items-stretch gap-5 md:grid-cols-2 lg:gap-6"}>
         {projects.map((project) => {
           const ProjectIcon = projectIcons[project.slug] ?? ShieldCheck;
 
@@ -284,31 +361,21 @@ export function FeaturedProjects({ projects = defaultProjects, showHeader = true
               }}
               whileInView={shouldReduceMotion ? undefined : { opacity: 1, y: 0 }}
             >
-              <Card as="article" className="flex h-full min-w-0 flex-col overflow-hidden" variant="project">
-                <div className="mb-5 h-48 min-w-0 overflow-hidden rounded-md border border-line bg-[linear-gradient(180deg,rgba(24,33,49,0.92)_0%,rgba(13,17,26,0.96)_100%)] p-3 sm:p-4">
+              <Card as="article" className="group/project flex h-full min-w-0 flex-col overflow-hidden focus-within:border-evidence/45 focus-within:shadow-[0_28px_86px_rgba(0,0,0,0.48)]" variant="project">
+                <div className="mb-5 h-48 min-w-0 overflow-hidden rounded-md border border-line bg-[linear-gradient(180deg,rgba(24,33,49,0.92)_0%,rgba(13,17,26,0.96)_100%)] p-3 transition-[border-color,box-shadow] duration-200 group-hover/project:border-evidence/35 group-hover/project:shadow-[inset_0_1px_0_rgba(255,255,255,0.05)] sm:p-4">
                   <ProjectPreview shouldReduceMotion={shouldReduceMotion} slug={project.slug} />
                 </div>
-                <p className="eyebrow-text inline-flex items-center gap-2 text-mint">
-                  <ProjectIcon aria-hidden="true" className="size-3.5" />
-                  {project.role}
-                </p>
-                <h2 className="panel-title mt-3">{project.title}</h2>
-                <p className="supporting-copy mt-3 flex-1">{project.summary}</p>
-                <div className="mt-5 grid grid-cols-[1rem_1fr] items-start gap-3">
-                  <Wrench aria-hidden="true" className="mt-2 size-4 text-slate-500" />
-                  <div className="flex min-w-0 flex-wrap gap-2">
-                    {project.tools.map((tool) => (
-                      <Badge key={tool}>{tool}</Badge>
-                    ))}
-                  </div>
+                <div className="flex flex-1 flex-col">
+                  <p className="eyebrow-text inline-flex min-h-8 items-start gap-2 text-mint">
+                    <ProjectIcon aria-hidden="true" className="size-3.5" />
+                    {project.role}
+                  </p>
+                  <h2 className="panel-title mt-3 min-h-[3.25rem]">{project.title}</h2>
+                  <p className="supporting-copy mt-3 min-h-[10.5rem] md:min-h-28">{project.summary}</p>
+                  <CaseStudySnapshot project={project} />
+                  <ToolingPanel tools={project.tools} />
+                  <ProjectActions project={project} />
                 </div>
-                <Link
-                  className="text-link mt-6 inline-flex w-fit items-center gap-2 font-mono text-xs font-semibold uppercase tracking-[0.12em]"
-                  href={`/projects/${project.slug}`}
-                >
-                  View case study
-                  <ArrowUpRight aria-hidden="true" className="size-3.5" />
-                </Link>
               </Card>
             </motion.div>
           );

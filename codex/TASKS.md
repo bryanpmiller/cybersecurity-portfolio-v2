@@ -187,11 +187,11 @@ After visual changes, Codex should inspect affected pages at desktop and mobile 
 
 ## Current Phase
 
-Current phase: Phase 5 — Project Cards as Cybersecurity Case Studies
+Current phase: Phase 6 — Skills and Tooling Section
 
 Current next task:
 
-- [ ] Phase 5.1 — Audit existing project cards
+- [ ] Phase 6.1 — Audit current skills
 
 ---
 
@@ -301,12 +301,12 @@ Before editing code, summarize:
 
 ## Phase 5 — Project Cards as Cybersecurity Case Studies
 
-- [ ] 5.1 Audit existing project cards.
-- [ ] 5.2 Convert cards into concise case studies.
-- [ ] 5.3 Show problem, tools, concepts, and outcome.
-- [ ] 5.4 Improve tags, links, hover states, and responsive grid.
-- [ ] 5.5 Run relevant checks.
-- [ ] 5.6 Update tracking files.
+- [x] 5.1 Audit existing project cards.
+- [x] 5.2 Convert cards into concise case studies.
+- [x] 5.3 Show problem, tools, concepts, and outcome.
+- [x] 5.4 Improve tags, links, hover states, and responsive grid.
+- [x] 5.5 Run relevant checks.
+- [x] 5.6 Update tracking files.
 
 ---
 

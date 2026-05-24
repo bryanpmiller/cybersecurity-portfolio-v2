@@ -227,6 +227,10 @@ Result:
 
 Mention any errors, blockers, or things that need review.
 
+### Proposed upgrades to the Workkit
+
+ If you find other areas worth checking or updating as you work present them to me here. This is a first pass with this rehaul kit and I want to improve it where possible as we work. Dont automatically make changes, but present them to me and we can decide together.
+
 ### Recommended Next Task
 
 State the next logical task from `codex/TASKS.md`.

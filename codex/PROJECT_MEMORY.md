@@ -18,13 +18,13 @@ Use this file for durable project context, not temporary notes.
 
 ## Current Project Status
 
-Status: Phase 4 complete
+Status: Phase 5 complete
 
-Current phase: Phase 5 — Project Cards as Cybersecurity Case Studies
+Current phase: Phase 6 — Skills and Tooling Section
 
 Current focus:
 
-- Audit existing project cards before improving them as cybersecurity case studies.
+- Begin Phase 6 by auditing the current skills and tooling presentation before making layout or grouping changes.
 - Keep the portfolio polished, recruiter-friendly, and proof-of-work focused.
 
 ---
@@ -164,6 +164,54 @@ Initial implementation priority:
 - Browser review found no horizontal overflow, project index links fit, and no console warnings/errors at desktop, 390px mobile, and 320px narrow widths.
 - `npm.cmd run lint` and `npm.cmd run build` both passed after the section-order update.
 
+### Phase 5.1 Project Card Audit
+
+- Existing project data already supports a strong case-study model in `lib/data/projects.ts`: each project has a title, summary, role, tools, GitHub link, supporting links, and structured `caseStudy` fields for problem, approach, evidence, outcome, lessons, visual stats, and an evidence block.
+- `FeaturedProjects` currently renders the same card pattern on Home and Projects: visual preview, role, title, summary, tools, and a `View case study` link.
+- The current cards are polished and functional, but the list cards do not yet expose the case-study structure directly. Recruiters must click into the detail page to see explicit `Problem`, `Evidence`, and `Outcome` framing.
+- The project previews are visually useful but are hand-coded by slug inside `FeaturedProjects`, which makes future card additions harder and mixes data-specific visualization logic into the card component.
+- Tool badges are scannable but can become dense on cards with longer tool lists, especially for the ransomware project with six tools.
+- Detail pages already present the desired case-study sections and can guide the Phase 5 card redesign without inventing new copy or claims.
+- Recommended Phase 5.2 direction: preserve existing project words, but reorganize card layout to surface concise case-study cues from existing fields, likely using labels such as problem/evidence/outcome only if they are UI labels rather than rewritten project copy.
+- Rendered browser validation was completed after the local browser origin policy was corrected. Audit screenshots and data are saved in `codex/screenshots/phase-5-project-card-audit/`.
+- Projects and Home project-card list views passed at 1440px desktop and 390px mobile widths: four project cards render, all `View case study` links are present, the Projects index has four links, no horizontal overflow was found, and no console warnings/errors were recorded.
+- Project detail pages expose all expected sections: `Problem`, `Approach`, `Evidence`, `Outcome`, and `What I learned`.
+- Detail pages passed desktop overflow checks, but mobile detail review found Akira ransomware horizontal overflow from long technical strings in section content, and one non-page-overflow text candidate on the password-spray detail page for `MicrosoftUpdateSync`.
+- Phase 5 implementation should address long technical string wrapping in project detail content while improving list-card case-study structure.
+
+### Phase 5.2 Project Card Case-Study Conversion
+
+- `FeaturedProjects` now includes a compact case-study snapshot on each project card using project-specific `cardSummary` text in `lib/data/projects.ts`.
+- Snapshot labels are `Problem`, `Evidence`, and `Outcome`; values are concise summaries derived from each project's full case-study sections.
+- The card layout preserves existing project title, role, summary, preview visual, tools, and `View case study` link text.
+- Project card summaries were added only where needed to make the new card UI meaningful; no unsupported claims, metrics, links, or tool names were added.
+- Tools now render in a dedicated compact tooling panel, and the `View case study` CTA is bottom-aligned across cards.
+- Browser validation for Home and Projects at 1440px desktop and 390px mobile found four snapshots, four tooling panels, aligned desktop card sections, equal CTA bottom offsets, no clipped lower-card snapshot values, no horizontal overflow, and no console warnings/errors.
+- Project card alignment depends on fixed/minimum section sizing across the full card: role, title, summary, case-study snapshot rows, tooling panel, and bottom CTA. Future content or layout changes inside any of those sections should preserve those sizing constraints or intentionally retune them across all cards.
+- Phase 5.2 screenshots and audit data are saved in `codex/screenshots/phase-5-card-case-study/`.
+- `npm.cmd run lint` and `npm.cmd run build` both passed after the card update.
+
+### Phase 5.3 Problem, Tools, Concepts, and Outcome
+
+- Project card snapshots now explicitly show `Problem`, `Concepts`, and `Outcome`.
+- `cardSummary.evidence` was replaced with `cardSummary.concepts` in `lib/data/projects.ts`.
+- Concepts text is short, project-specific, and derived from existing case-study content without adding unsupported claims.
+- Tools remain visible in the dedicated compact tooling panel below the snapshot.
+- Browser validation for Home and Projects at 1440px desktop and 390px mobile confirmed the `Problem / Concepts / Outcome` labels, four tooling panels, no clipped snapshot values, no horizontal overflow, no console warnings/errors, and preserved lower-card alignment after delayed scroll/animation.
+- Phase 5.3 screenshots and audit data are saved in `codex/screenshots/phase-5-card-concepts/`.
+- `npm.cmd run lint` and `npm.cmd run build` both passed after the Phase 5.3 update.
+
+### Phase 5.4 Tags, Links, Hover States, and Responsive Grid
+
+- Project cards now use a structured bottom action row with the existing `View case study` link plus an icon-only external GitHub proof link when `githubUrl` exists.
+- The GitHub proof link uses an accessible `aria-label` and opens in a new tab without adding new visible copy to the card body.
+- Tool tags keep the fixed/minimum tooling-panel height needed for alignment, while gaining clearer hover states, safer `max-w-full` behavior, and stronger card-hover polish.
+- The project-card grid now uses `auto-rows-fr` and stretched rows so card heights stay paired across the two-column desktop layout.
+- Focus-within, preview, action, and tag hover states were tuned inside `FeaturedProjects` without changing project summaries, snapshot text, project titles, roles, or case-study content.
+- Browser validation for Home and Projects at 1440px desktop and 390px mobile confirmed four case-study links, four GitHub proof links, no tag overflow, no horizontal overflow, no console warnings/errors, and preserved card alignment after delayed animation.
+- Phase 5.4 screenshots and audit data are saved in `codex/screenshots/phase-5-card-tags-links-grid/`.
+- `npm.cmd run lint` and `npm.cmd run build` both passed after the Phase 5.4 update.
+
 ---
 
 ## Approved Decisions
@@ -175,6 +223,7 @@ Initial implementation priority:
 - After visual changes, affected pages should be inspected at desktop and mobile widths; notable layout, responsiveness, accessibility, or interaction issues should be documented in `codex/WORKLOG.md`.
 - Reference analysis must inspect the full page, including middle and lower sections, not only the first viewport.
 - Phase 2 visual direction is a polished cybersecurity analyst workspace: evidence-led, calm, technical, recruiter-friendly, and original.
+- When Codex notices adjacent improvement opportunities during a phase, present them to Bryan for approval before making changes outside the current task scope.
 
 ---
 
@@ -494,4 +543,4 @@ Track questions that need Bryan's input.
 
 ## Current Next Step
 
-Continue with `codex/TASKS.md` Phase 5.1: audit existing project cards.
+Continue with `codex/TASKS.md` Phase 6.1: audit current skills.
