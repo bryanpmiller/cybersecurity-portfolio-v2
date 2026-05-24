@@ -1,7 +1,7 @@
 export const resumeHighlights = [
   {
     title: "Education",
-    body: "Norwich University (NSA-Accredited College)\nBachelor of Science in Cybersecurity\nFocus on: Computer Forensics & Vulnerability Management\nGPA 3.99 Summa Cum Laude\n\nCypress College\nAssociate of Science in Business Administration\nGraduated with Honors"
+    body: "Norwich University (NSA-Accredited College)\nBachelor of Science in Cybersecurity\nFocus on: Computer Forensics & Vulnerability Management\nGPA 3.99 Summa Cum Laude"
   },
   {
     title: "Certificates",
