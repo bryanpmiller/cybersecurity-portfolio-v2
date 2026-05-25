@@ -19,6 +19,8 @@ const categoryIcons: Record<string, LucideIcon> = {
 };
 
 export function SkillsOverview({ showHeader = true }: SkillsOverviewProps) {
+  const GroupHeading = showHeader ? "h3" : "h2";
+
   return (
     <section className={showHeader ? "mt-14 min-w-0 sm:mt-16" : "min-w-0"}>
       {showHeader ? (
@@ -49,7 +51,7 @@ export function SkillsOverview({ showHeader = true }: SkillsOverviewProps) {
                     <Icon aria-hidden="true" className="size-5" strokeWidth={1.8} />
                   </span>
                   <div className="min-w-0">
-                    <h2 className="panel-title">{group.title}</h2>
+                    <GroupHeading className="panel-title">{group.title}</GroupHeading>
                   </div>
                 </div>
 

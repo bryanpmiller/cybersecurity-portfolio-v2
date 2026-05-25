@@ -94,7 +94,7 @@ function ProjectPreview({ shouldReduceMotion, slug }: { shouldReduceMotion: bool
           <div className="grid min-w-0 grid-cols-[minmax(0,1fr)_auto] items-center gap-3 rounded border border-line bg-ink-soft/70 px-3 py-2" key={control}>
             <div className="grid min-w-0 grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
               <p className="truncate font-mono text-[0.7rem] font-semibold leading-none text-slate-100">{control}</p>
-              <span className="hidden rounded border border-line bg-surface/70 px-1.5 py-1 font-mono text-[0.58rem] leading-none text-slate-500 sm:inline">
+              <span className="hidden rounded border border-line bg-surface/70 px-1.5 py-1 font-mono text-[0.65rem] leading-none text-slate-400 sm:inline">
                 {hint}
               </span>
             </div>
@@ -175,7 +175,7 @@ function ProjectPreview({ shouldReduceMotion, slug }: { shouldReduceMotion: bool
                 viewport={{ amount: 0.8, once: true }}
                 whileInView={shouldReduceMotion ? undefined : { scaleX: 1 }}
               />
-              <span className="font-mono text-[0.62rem] uppercase tracking-[0.1em] text-slate-500">{state}</span>
+              <span className="font-mono text-[0.65rem] uppercase tracking-[0.1em] text-slate-400">{state}</span>
             </motion.div>
           ))}
         </div>
@@ -334,6 +334,7 @@ function ProjectActions({ project }: { project: Project }) {
 
 export function FeaturedProjects({ projects = defaultProjects, showHeader = true }: FeaturedProjectsProps) {
   const shouldReduceMotion = useReducedMotion() ?? false;
+  const ProjectTitle = showHeader ? "h3" : "h2";
 
   return (
     <section className={showHeader ? "mt-14 min-w-0 sm:mt-16" : "min-w-0"}>
@@ -374,7 +375,7 @@ export function FeaturedProjects({ projects = defaultProjects, showHeader = true
                     <ProjectIcon aria-hidden="true" className="size-3.5" />
                     {project.role}
                   </p>
-                  <h2 className="panel-title mt-3 min-h-[3.25rem]">{project.title}</h2>
+                  <ProjectTitle className="panel-title mt-3 min-h-[3.25rem]">{project.title}</ProjectTitle>
                   <p className="supporting-copy mt-3 min-h-[10.5rem] md:min-h-28">{project.summary}</p>
                   <CaseStudySnapshot project={project} />
                   <ToolingPanel tools={project.tools} />

@@ -1,0 +1,800 @@
+[
+  {
+    "route": "/",
+    "name": "home",
+    "viewportName": "mobile",
+    "hasSkipLink": true,
+    "hasSkipTarget": true,
+    "headingIssues": [],
+    "headings": [
+      {
+        "level": 1,
+        "text": "Bryan Miller"
+      },
+      {
+        "level": 2,
+        "text": "Security work snapshot"
+      },
+      {
+        "level": 2,
+        "text": "Risk Reduction and Security Operations experience"
+      },
+      {
+        "level": 3,
+        "text": "Vulnerability Reduction Metrics"
+      },
+      {
+        "level": 3,
+        "text": "Network Security Dashboard"
+      },
+      {
+        "level": 3,
+        "text": "Education"
+      },
+      {
+        "level": 3,
+        "text": "Certificates"
+      },
+      {
+        "level": 3,
+        "text": "Experience"
+      },
+      {
+        "level": 3,
+        "text": "Security Impact Metrics"
+      },
+      {
+        "level": 2,
+        "text": "Cybersecurity work organized for hiring review"
+      },
+      {
+        "level": 3,
+        "text": "Vulnerability Management Program Implementation"
+      },
+      {
+        "level": 3,
+        "text": "DISA STIG Remediation Project"
+      },
+      {
+        "level": 3,
+        "text": "Password Spray Threat Hunt: RDP Compromise Investigation"
+      },
+      {
+        "level": 3,
+        "text": "The Buyer / Akira Ransomware Threat Hunt"
+      }
+    ],
+    "interactiveIssues": [],
+    "lowContrast": [
+      {
+        "color": "rgb(8, 10, 15)",
+        "fontSize": 14,
+        "fontWeight": 600,
+        "ratio": 1,
+        "text": "View Projects"
+      }
+    ],
+    "lowContrastCount": 1,
+    "mainCount": 1,
+    "overflowX": -15,
+    "title": "Bryan Miller | Cybersecurity Portfolio",
+    "viewport": {
+      "height": 900,
+      "width": 390
+    },
+    "consoleIssues": []
+  },
+  {
+    "route": "/about",
+    "name": "about",
+    "viewportName": "mobile",
+    "hasSkipLink": true,
+    "hasSkipTarget": true,
+    "headingIssues": [],
+    "headings": [
+      {
+        "level": 1,
+        "text": "Professional summary"
+      },
+      {
+        "level": 2,
+        "text": "Cybersecurity focus"
+      },
+      {
+        "level": 2,
+        "text": "Profile highlights"
+      },
+      {
+        "level": 3,
+        "text": "Education"
+      },
+      {
+        "level": 3,
+        "text": "Certificates"
+      },
+      {
+        "level": 3,
+        "text": "Experience"
+      },
+      {
+        "level": 3,
+        "text": "Security Impact Metrics"
+      },
+      {
+        "level": 2,
+        "text": "Target roles"
+      }
+    ],
+    "interactiveIssues": [],
+    "lowContrast": [],
+    "lowContrastCount": 0,
+    "mainCount": 1,
+    "overflowX": -15,
+    "title": "About | Bryan Miller",
+    "viewport": {
+      "height": 900,
+      "width": 390
+    },
+    "consoleIssues": []
+  },
+  {
+    "route": "/resume",
+    "name": "resume",
+    "viewportName": "mobile",
+    "hasSkipLink": true,
+    "hasSkipTarget": true,
+    "headingIssues": [],
+    "headings": [
+      {
+        "level": 1,
+        "text": "Resume Snapshot"
+      },
+      {
+        "level": 2,
+        "text": "Experience Snapshot"
+      },
+      {
+        "level": 2,
+        "text": "Profile"
+      },
+      {
+        "level": 3,
+        "text": "Education"
+      },
+      {
+        "level": 3,
+        "text": "Certificates"
+      },
+      {
+        "level": 2,
+        "text": "Skills Snapshot"
+      },
+      {
+        "level": 3,
+        "text": "Vulnerability Management"
+      },
+      {
+        "level": 3,
+        "text": "SecOps / Detection Engineering"
+      },
+      {
+        "level": 3,
+        "text": "Secure Configuration / Hardening"
+      },
+      {
+        "level": 3,
+        "text": "Automation / Scripting"
+      },
+      {
+        "level": 3,
+        "text": "Cloud / Network Security"
+      },
+      {
+        "level": 3,
+        "text": "Governance / Compliance Frameworks"
+      }
+    ],
+    "interactiveIssues": [],
+    "lowContrast": [
+      {
+        "color": "rgb(8, 10, 15)",
+        "fontSize": 14,
+        "fontWeight": 600,
+        "ratio": 1,
+        "text": "Full Resume"
+      }
+    ],
+    "lowContrastCount": 1,
+    "mainCount": 1,
+    "overflowX": -15,
+    "title": "Resume | Bryan Miller",
+    "viewport": {
+      "height": 900,
+      "width": 390
+    },
+    "consoleIssues": []
+  },
+  {
+    "route": "/projects",
+    "name": "projects",
+    "viewportName": "mobile",
+    "hasSkipLink": true,
+    "hasSkipTarget": true,
+    "headingIssues": [],
+    "headings": [
+      {
+        "level": 1,
+        "text": "Case studies and evidence-based security work"
+      },
+      {
+        "level": 2,
+        "text": "Vulnerability Management Program Implementation"
+      },
+      {
+        "level": 2,
+        "text": "DISA STIG Remediation Project"
+      },
+      {
+        "level": 2,
+        "text": "Password Spray Threat Hunt: RDP Compromise Investigation"
+      },
+      {
+        "level": 2,
+        "text": "The Buyer / Akira Ransomware Threat Hunt"
+      }
+    ],
+    "interactiveIssues": [],
+    "lowContrast": [],
+    "lowContrastCount": 0,
+    "mainCount": 1,
+    "overflowX": -15,
+    "title": "Projects | Bryan Miller",
+    "viewport": {
+      "height": 900,
+      "width": 390
+    },
+    "consoleIssues": []
+  },
+  {
+    "route": "/skills",
+    "name": "skills",
+    "viewportName": "mobile",
+    "hasSkipLink": true,
+    "hasSkipTarget": true,
+    "headingIssues": [],
+    "headings": [
+      {
+        "level": 1,
+        "text": "Cybersecurity skills grouped by role relevance"
+      },
+      {
+        "level": 2,
+        "text": "Vulnerability Management"
+      },
+      {
+        "level": 2,
+        "text": "SecOps / Detection Engineering"
+      },
+      {
+        "level": 2,
+        "text": "Secure Configuration / Hardening"
+      },
+      {
+        "level": 2,
+        "text": "Automation / Scripting"
+      },
+      {
+        "level": 2,
+        "text": "Cloud / Network Security"
+      },
+      {
+        "level": 2,
+        "text": "Governance / Compliance Frameworks"
+      }
+    ],
+    "interactiveIssues": [],
+    "lowContrast": [],
+    "lowContrastCount": 0,
+    "mainCount": 1,
+    "overflowX": -15,
+    "title": "Skills | Bryan Miller",
+    "viewport": {
+      "height": 900,
+      "width": 390
+    },
+    "consoleIssues": []
+  },
+  {
+    "route": "/contact",
+    "name": "contact",
+    "viewportName": "mobile",
+    "hasSkipLink": true,
+    "hasSkipTarget": true,
+    "headingIssues": [],
+    "headings": [
+      {
+        "level": 1,
+        "text": "Where to find me"
+      },
+      {
+        "level": 2,
+        "text": "LinkedIn"
+      },
+      {
+        "level": 2,
+        "text": "GitHub"
+      },
+      {
+        "level": 2,
+        "text": "Resume"
+      }
+    ],
+    "interactiveIssues": [],
+    "lowContrast": [],
+    "lowContrastCount": 0,
+    "mainCount": 1,
+    "overflowX": -15,
+    "title": "Contact | Bryan Miller",
+    "viewport": {
+      "height": 900,
+      "width": 390
+    },
+    "consoleIssues": []
+  },
+  {
+    "route": "/projects/vulnerability-management-program",
+    "name": "project-detail",
+    "viewportName": "mobile",
+    "hasSkipLink": true,
+    "hasSkipTarget": true,
+    "headingIssues": [],
+    "headings": [
+      {
+        "level": 1,
+        "text": "Vulnerability Management Program Implementation"
+      },
+      {
+        "level": 2,
+        "text": "Role Demonstrated"
+      },
+      {
+        "level": 2,
+        "text": "Tools Used"
+      },
+      {
+        "level": 2,
+        "text": "Evidence chain"
+      },
+      {
+        "level": 2,
+        "text": "Problem"
+      },
+      {
+        "level": 2,
+        "text": "Approach"
+      },
+      {
+        "level": 2,
+        "text": "Evidence"
+      },
+      {
+        "level": 2,
+        "text": "Outcome"
+      },
+      {
+        "level": 2,
+        "text": "What I learned"
+      }
+    ],
+    "interactiveIssues": [],
+    "lowContrast": [],
+    "lowContrastCount": 0,
+    "mainCount": 1,
+    "overflowX": -15,
+    "title": "Vulnerability Management Program Implementation | Bryan Miller",
+    "viewport": {
+      "height": 900,
+      "width": 390
+    },
+    "consoleIssues": []
+  },
+  {
+    "route": "/",
+    "name": "home",
+    "viewportName": "desktop",
+    "hasSkipLink": true,
+    "hasSkipTarget": true,
+    "headingIssues": [],
+    "headings": [
+      {
+        "level": 1,
+        "text": "Bryan Miller"
+      },
+      {
+        "level": 2,
+        "text": "Security work snapshot"
+      },
+      {
+        "level": 2,
+        "text": "Risk Reduction and Security Operations experience"
+      },
+      {
+        "level": 3,
+        "text": "Vulnerability Reduction Metrics"
+      },
+      {
+        "level": 3,
+        "text": "Network Security Dashboard"
+      },
+      {
+        "level": 3,
+        "text": "Education"
+      },
+      {
+        "level": 3,
+        "text": "Certificates"
+      },
+      {
+        "level": 3,
+        "text": "Experience"
+      },
+      {
+        "level": 3,
+        "text": "Security Impact Metrics"
+      },
+      {
+        "level": 2,
+        "text": "Cybersecurity work organized for hiring review"
+      },
+      {
+        "level": 3,
+        "text": "Vulnerability Management Program Implementation"
+      },
+      {
+        "level": 3,
+        "text": "DISA STIG Remediation Project"
+      },
+      {
+        "level": 3,
+        "text": "Password Spray Threat Hunt: RDP Compromise Investigation"
+      },
+      {
+        "level": 3,
+        "text": "The Buyer / Akira Ransomware Threat Hunt"
+      }
+    ],
+    "interactiveIssues": [],
+    "lowContrast": [
+      {
+        "color": "rgb(8, 10, 15)",
+        "fontSize": 14,
+        "fontWeight": 600,
+        "ratio": 1,
+        "text": "View Projects"
+      }
+    ],
+    "lowContrastCount": 1,
+    "mainCount": 1,
+    "overflowX": -15,
+    "title": "Bryan Miller | Cybersecurity Portfolio",
+    "viewport": {
+      "height": 1100,
+      "width": 1440
+    },
+    "consoleIssues": []
+  },
+  {
+    "route": "/about",
+    "name": "about",
+    "viewportName": "desktop",
+    "hasSkipLink": true,
+    "hasSkipTarget": true,
+    "headingIssues": [],
+    "headings": [
+      {
+        "level": 1,
+        "text": "Professional summary"
+      },
+      {
+        "level": 2,
+        "text": "Cybersecurity focus"
+      },
+      {
+        "level": 2,
+        "text": "Profile highlights"
+      },
+      {
+        "level": 3,
+        "text": "Education"
+      },
+      {
+        "level": 3,
+        "text": "Certificates"
+      },
+      {
+        "level": 3,
+        "text": "Experience"
+      },
+      {
+        "level": 3,
+        "text": "Security Impact Metrics"
+      },
+      {
+        "level": 2,
+        "text": "Target roles"
+      }
+    ],
+    "interactiveIssues": [],
+    "lowContrast": [],
+    "lowContrastCount": 0,
+    "mainCount": 1,
+    "overflowX": -15,
+    "title": "About | Bryan Miller",
+    "viewport": {
+      "height": 1100,
+      "width": 1440
+    },
+    "consoleIssues": []
+  },
+  {
+    "route": "/resume",
+    "name": "resume",
+    "viewportName": "desktop",
+    "hasSkipLink": true,
+    "hasSkipTarget": true,
+    "headingIssues": [],
+    "headings": [
+      {
+        "level": 1,
+        "text": "Resume Snapshot"
+      },
+      {
+        "level": 2,
+        "text": "Experience Snapshot"
+      },
+      {
+        "level": 2,
+        "text": "Profile"
+      },
+      {
+        "level": 3,
+        "text": "Education"
+      },
+      {
+        "level": 3,
+        "text": "Certificates"
+      },
+      {
+        "level": 2,
+        "text": "Skills Snapshot"
+      },
+      {
+        "level": 3,
+        "text": "Vulnerability Management"
+      },
+      {
+        "level": 3,
+        "text": "SecOps / Detection Engineering"
+      },
+      {
+        "level": 3,
+        "text": "Secure Configuration / Hardening"
+      },
+      {
+        "level": 3,
+        "text": "Automation / Scripting"
+      },
+      {
+        "level": 3,
+        "text": "Cloud / Network Security"
+      },
+      {
+        "level": 3,
+        "text": "Governance / Compliance Frameworks"
+      }
+    ],
+    "interactiveIssues": [],
+    "lowContrast": [
+      {
+        "color": "rgb(8, 10, 15)",
+        "fontSize": 14,
+        "fontWeight": 600,
+        "ratio": 1,
+        "text": "Full Resume"
+      }
+    ],
+    "lowContrastCount": 1,
+    "mainCount": 1,
+    "overflowX": -15,
+    "title": "Resume | Bryan Miller",
+    "viewport": {
+      "height": 1100,
+      "width": 1440
+    },
+    "consoleIssues": []
+  },
+  {
+    "route": "/projects",
+    "name": "projects",
+    "viewportName": "desktop",
+    "hasSkipLink": true,
+    "hasSkipTarget": true,
+    "headingIssues": [],
+    "headings": [
+      {
+        "level": 1,
+        "text": "Case studies and evidence-based security work"
+      },
+      {
+        "level": 2,
+        "text": "Vulnerability Management Program Implementation"
+      },
+      {
+        "level": 2,
+        "text": "DISA STIG Remediation Project"
+      },
+      {
+        "level": 2,
+        "text": "Password Spray Threat Hunt: RDP Compromise Investigation"
+      },
+      {
+        "level": 2,
+        "text": "The Buyer / Akira Ransomware Threat Hunt"
+      }
+    ],
+    "interactiveIssues": [],
+    "lowContrast": [],
+    "lowContrastCount": 0,
+    "mainCount": 1,
+    "overflowX": -15,
+    "title": "Projects | Bryan Miller",
+    "viewport": {
+      "height": 1100,
+      "width": 1440
+    },
+    "consoleIssues": []
+  },
+  {
+    "route": "/skills",
+    "name": "skills",
+    "viewportName": "desktop",
+    "hasSkipLink": true,
+    "hasSkipTarget": true,
+    "headingIssues": [],
+    "headings": [
+      {
+        "level": 1,
+        "text": "Cybersecurity skills grouped by role relevance"
+      },
+      {
+        "level": 2,
+        "text": "Vulnerability Management"
+      },
+      {
+        "level": 2,
+        "text": "SecOps / Detection Engineering"
+      },
+      {
+        "level": 2,
+        "text": "Secure Configuration / Hardening"
+      },
+      {
+        "level": 2,
+        "text": "Automation / Scripting"
+      },
+      {
+        "level": 2,
+        "text": "Cloud / Network Security"
+      },
+      {
+        "level": 2,
+        "text": "Governance / Compliance Frameworks"
+      }
+    ],
+    "interactiveIssues": [],
+    "lowContrast": [],
+    "lowContrastCount": 0,
+    "mainCount": 1,
+    "overflowX": -15,
+    "title": "Skills | Bryan Miller",
+    "viewport": {
+      "height": 1100,
+      "width": 1440
+    },
+    "consoleIssues": []
+  },
+  {
+    "route": "/contact",
+    "name": "contact",
+    "viewportName": "desktop",
+    "hasSkipLink": true,
+    "hasSkipTarget": true,
+    "headingIssues": [],
+    "headings": [
+      {
+        "level": 1,
+        "text": "Where to find me"
+      },
+      {
+        "level": 2,
+        "text": "LinkedIn"
+      },
+      {
+        "level": 2,
+        "text": "GitHub"
+      },
+      {
+        "level": 2,
+        "text": "Resume"
+      }
+    ],
+    "interactiveIssues": [],
+    "lowContrast": [],
+    "lowContrastCount": 0,
+    "mainCount": 1,
+    "overflowX": 0,
+    "title": "Contact | Bryan Miller",
+    "viewport": {
+      "height": 1100,
+      "width": 1440
+    },
+    "consoleIssues": []
+  },
+  {
+    "route": "/projects/vulnerability-management-program",
+    "name": "project-detail",
+    "viewportName": "desktop",
+    "hasSkipLink": true,
+    "hasSkipTarget": true,
+    "headingIssues": [],
+    "headings": [
+      {
+        "level": 1,
+        "text": "Vulnerability Management Program Implementation"
+      },
+      {
+        "level": 2,
+        "text": "Role Demonstrated"
+      },
+      {
+        "level": 2,
+        "text": "Tools Used"
+      },
+      {
+        "level": 2,
+        "text": "Evidence chain"
+      },
+      {
+        "level": 2,
+        "text": "Problem"
+      },
+      {
+        "level": 2,
+        "text": "Approach"
+      },
+      {
+        "level": 2,
+        "text": "Evidence"
+      },
+      {
+        "level": 2,
+        "text": "Outcome"
+      },
+      {
+        "level": 2,
+        "text": "What I learned"
+      }
+    ],
+    "interactiveIssues": [],
+    "lowContrast": [],
+    "lowContrastCount": 0,
+    "mainCount": 1,
+    "overflowX": -15,
+    "title": "Vulnerability Management Program Implementation | Bryan Miller",
+    "viewport": {
+      "height": 1100,
+      "width": 1440
+    },
+    "consoleIssues": []
+  }
+]

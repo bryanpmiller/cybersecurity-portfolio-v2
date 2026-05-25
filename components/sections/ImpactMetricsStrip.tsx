@@ -61,7 +61,7 @@ export function NetworkSecurityDashboard() {
                   </div>
                   <p className="stat-label mt-4 text-slate-300">{stat.label}</p>
                   <div className="mt-5">
-                    <div className="mb-2 flex items-center justify-between font-mono text-[0.65rem] uppercase tracking-[0.12em] text-slate-500">
+                    <div className="mb-2 flex items-center justify-between font-mono text-[0.65rem] uppercase tracking-[0.12em] text-slate-400">
                       <span>Reduction</span>
                       <span>{stat.value}</span>
                     </div>

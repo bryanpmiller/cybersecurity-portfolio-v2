@@ -81,7 +81,7 @@ export function RiskReductionDashboard() {
                     whileInView={shouldReduceMotion ? undefined : { opacity: 1, y: 0 }}
                   >
                     <p className={`font-mono text-lg font-semibold leading-none ${severity.accent}`}>{stat.value}</p>
-                    <p className="mt-1 font-mono text-[0.58rem] uppercase tracking-[0.12em] text-slate-500">
+                    <p className="mt-1 font-mono text-[0.65rem] uppercase tracking-[0.12em] text-slate-400">
                       {severity.name}
                     </p>
                   </motion.div>
@@ -120,7 +120,7 @@ export function RiskReductionDashboard() {
                     </div>
                     <p className="stat-label mt-4 text-slate-300">{stat.label}</p>
                     <div className="mt-5">
-                      <div className="mb-2 flex items-center justify-between font-mono text-[0.65rem] uppercase tracking-[0.12em] text-slate-500">
+                      <div className="mb-2 flex items-center justify-between font-mono text-[0.65rem] uppercase tracking-[0.12em] text-slate-400">
                         <span>Reduction</span>
                         <span>{stat.value}</span>
                       </div>
