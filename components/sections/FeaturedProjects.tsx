@@ -6,6 +6,7 @@ import type { LucideIcon } from "lucide-react";
 import { Activity, ArrowUpRight, CheckSquare, Search, ShieldCheck, Wrench } from "lucide-react";
 import { Card } from "@/components/ui/Card";
 import { GitHubMarkIcon } from "@/components/ui/GitHubMarkIcon";
+import { Reveal } from "@/components/ui/Reveal";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import type { Project } from "@/lib/data/projects";
 import { projects as defaultProjects } from "@/lib/data/projects";
@@ -337,12 +338,14 @@ export function FeaturedProjects({ projects = defaultProjects, showHeader = true
   return (
     <section className={showHeader ? "mt-14 min-w-0 sm:mt-16" : "min-w-0"}>
       {showHeader ? (
-        <SectionHeader
-          description="Evidence-backed case studies covering vulnerability management, secure configuration, remediation automation, and threat hunting."
-          eyebrow="Featured Projects"
-          level="h2"
-          title="Cybersecurity work organized for hiring review"
-        />
+        <Reveal>
+          <SectionHeader
+            description="Evidence-backed case studies covering vulnerability management, secure configuration, remediation automation, and threat hunting."
+            eyebrow="Featured Projects"
+            level="h2"
+            title="Cybersecurity work organized for hiring review"
+          />
+        </Reveal>
       ) : null}
       <div className={showHeader ? "mt-8 grid min-w-0 auto-rows-fr items-stretch gap-5 md:grid-cols-2 lg:gap-6" : "grid min-w-0 auto-rows-fr items-stretch gap-5 md:grid-cols-2 lg:gap-6"}>
         {projects.map((project) => {

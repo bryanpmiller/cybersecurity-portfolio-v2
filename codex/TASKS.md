@@ -216,13 +216,25 @@ If a design change requires rewriting project descriptions, resume/experience wo
 
 ---
 
+## Workkit Adjustments / Improvements
+
+Adjustment: Workkit updates must identify each process change as either an `Adjustment` or an `Improvement` in `codex/WORKLOG.md`.
+
+Improvement: Before adding a new visual proof surface, Codex should check whether the same claim, metric, tool list, or workflow summary is already presented nearby. Prefer improving, replacing, or relocating an existing surface instead of stacking repeated cards.
+
+Improvement: For shared wrapper components, Codex should verify whether arbitrary HTML attributes are forwarded before relying on `aria-*`, `data-*`, or role attributes.
+
+Improvement: After production build validation, Codex should check generated file churn such as `next-env.d.ts` and restore unrelated changes before finishing.
+
+---
+
 ## Current Phase
 
-Current phase: Phase 9 — Cybersecurity Visual Elements
+Current phase: Phase 12 — Accessibility and Readability Pass
 
 Current next task:
 
-- [ ] Phase 9.1 — Add tasteful security-themed visuals
+- [ ] Phase 12.1 — Check semantic headings
 
 ---
 
@@ -374,30 +386,31 @@ Before editing code, summarize:
 
 ## Phase 9 — Cybersecurity Visual Elements
 
-- [ ] 9.1 Add tasteful security-themed visuals.
-- [ ] 9.2 Avoid fake hacker clichés.
-- [ ] 9.3 Tie visuals to real work.
-- [ ] 9.4 Run relevant checks.
-- [ ] 9.5 Update tracking files.
+- [x] 9.1 Add tasteful security-themed visuals.
+- [x] 9.2 Avoid fake hacker clichés.
+- [x] 9.3 Tie visuals to real work.
+- [x] 9.4 Run relevant checks.
+- [x] 9.5 Update tracking files.
 
 ---
 
 ## Phase 10 — Animations and Interactions
 
-- [ ] 10.1 Audit existing interactions.
-- [ ] 10.2 Add subtle hover/transition states.
-- [ ] 10.3 Respect reduced motion.
-- [ ] 10.4 Run relevant checks.
-- [ ] 10.5 Update tracking files.
+- [x] 10.1 Audit existing interactions.
+- [x] 10.2 Add subtle hover/transition states.
+- [x] 10.2a Apply the shared `Reveal` pattern to major non-Home page sections.
+- [x] 10.3 Respect reduced motion.
+- [x] 10.4 Run relevant checks.
+- [x] 10.5 Update tracking files.
 
 ---
 
 ## Phase 11 — Responsive Design Pass
 
-- [ ] 11.1 Test mobile, tablet, laptop, and desktop widths.
-- [ ] 11.2 Fix spacing, wrapping, grids, nav, and overflow.
-- [ ] 11.3 Run relevant checks.
-- [ ] 11.4 Update tracking files.
+- [x] 11.1 Test mobile, tablet, laptop, and desktop widths.
+- [x] 11.2 Fix spacing, wrapping, grids, nav, and overflow.
+- [x] 11.3 Run relevant checks.
+- [x] 11.4 Update tracking files.
 
 ---
 

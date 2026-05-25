@@ -164,6 +164,18 @@ Codex should:
 
 ---
 
+## Workkit Adjustments / Improvements
+
+Adjustment: When Codex updates the workkit itself, label each change as an `Adjustment` or `Improvement` in the tracking entry so process changes are easy to distinguish from portfolio implementation work.
+
+Improvement: Before adding a new visual proof surface, check nearby sections for duplicate claims, metrics, tools, or workflow summaries. Prefer improving or replacing an existing surface over adding another card that repeats the same information.
+
+Improvement: When adding `aria-*` attributes to shared wrapper components, confirm the component forwards arbitrary HTML props. If it does not, use an internal semantic label or intentionally update the shared component API.
+
+Improvement: After `next build`, check whether generated files such as `next-env.d.ts` changed. If the change is unrelated validation churn, restore it before finishing.
+
+---
+
 ## Required Tracking Updates
 
 After each major task, Codex must update:

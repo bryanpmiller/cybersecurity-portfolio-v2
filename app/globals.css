@@ -222,7 +222,7 @@ a {
   }
 
   .compact-copy {
-    @apply text-sm leading-6 text-slate-300;
+    @apply break-words text-sm leading-6 text-slate-300;
   }
 
   .badge-text {

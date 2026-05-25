@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { PageContainer } from "@/components/layout/PageContainer";
 import { SkillsOverview } from "@/components/sections/SkillsOverview";
+import { Reveal } from "@/components/ui/Reveal";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 
 export const metadata: Metadata = {
@@ -11,14 +12,18 @@ export const metadata: Metadata = {
 export default function SkillsPage() {
   return (
     <PageContainer>
-      <SectionHeader
-        eyebrow="Skills"
-        title="Cybersecurity skills grouped by role relevance"
-        description="A role-focused view of the tools, frameworks, and technical skills used across vulnerability management, secure configuration, automation, and threat hunting work."
-      />
-      <div className="mt-8 min-w-0 sm:mt-10">
-        <SkillsOverview showHeader={false} />
-      </div>
+      <Reveal>
+        <SectionHeader
+          eyebrow="Skills"
+          title="Cybersecurity skills grouped by role relevance"
+          description="A role-focused view of the tools, frameworks, and technical skills used across vulnerability management, secure configuration, automation, and threat hunting work."
+        />
+      </Reveal>
+      <Reveal delay={0.06}>
+        <div className="mt-8 min-w-0 sm:mt-10">
+          <SkillsOverview showHeader={false} />
+        </div>
+      </Reveal>
     </PageContainer>
   );
 }

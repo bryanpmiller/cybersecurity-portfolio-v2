@@ -1,0 +1,26 @@
+{
+  "clientWidth": 1265,
+  "hasHorizontalOverflow": false,
+  "hasNetworkDashboard": true,
+  "hasReductionDashboard": true,
+  "networkInViewport": true,
+  "networkMetricWrapperComputed": {
+    "opacity": "1",
+    "transform": "none"
+  },
+  "networkRect": {
+    "bottom": 511,
+    "height": 339,
+    "top": 173
+  },
+  "networkWrapperComputed": {
+    "opacity": "1",
+    "transform": "none"
+  },
+  "reductionRect": {
+    "bottom": 141,
+    "height": 355,
+    "top": -214
+  },
+  "scrollWidth": 1265
+}

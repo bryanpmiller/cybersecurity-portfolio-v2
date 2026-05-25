@@ -104,6 +104,214 @@ Add new entries below this line.
 
 ---
 
+## 2026-05-25 — Phase 11.1-11.4: Responsive Design Pass
+
+### Summary
+
+Completed Phase 11 by testing the portfolio across narrow mobile, mobile, tablet, laptop, and desktop widths, then fixing the remaining 320px overflow issues.
+
+### Completed
+
+- Tested Home, About, Resume, Projects, Skills, Contact, and a representative project detail route.
+- Tested widths: 320px, 390px, 768px, 1024px, and 1440px.
+- Captured viewport screenshots and JSON audit data for the responsive pass.
+- Fixed narrow-width overflow from long compact text by adding `break-words` to the shared `compact-copy` utility.
+- Fixed narrow Resume skill heading wrapping by adding `break-words` to the snapshot title class.
+- Fixed Home 320px overflow from reveal wrappers in grid layouts by making `Reveal` default to `min-w-0`.
+- Re-ran the full responsive matrix after fixes.
+- Ran lint and production build successfully.
+- Restored `next-env.d.ts` after production build generated route-reference churn.
+- Marked Phase 11.1 through Phase 11.4 complete in `codex/TASKS.md`.
+
+### Files Changed
+
+- `app/globals.css`
+- `app/resume/page.tsx`
+- `components/ui/Reveal.tsx`
+- `codex/TASKS.md`
+- `codex/PROJECT_MEMORY.md`
+- `codex/WORKLOG.md`
+- `codex/screenshots/phase-11-responsive-pass/`
+
+### Issues Found
+
+- Initial 320px audit found page-level horizontal overflow on Home, About, and Resume.
+- About and Resume overflow came from long compact text, especially the Security+ verification ID.
+- Home overflow came from `Reveal` wrappers around the snapshot cards acting as grid items without a `min-w-0` default.
+- Final responsive audit found no page-level horizontal overflow, no clipped buttons, and no console warnings/errors across tested pages and widths.
+
+### Decisions Made
+
+- Keep `compact-copy` safe for long supported strings by default.
+- Keep `Reveal` safe as a grid/flex child by default with `min-w-0`.
+
+### Checks Run
+
+```bash
+npm.cmd run lint
+npm.cmd run build
+```
+
+Result:
+- `npm.cmd run lint`: Pass
+- `npm.cmd run build`: Pass
+- Browser validation: Pass across Home, About, Resume, Projects, Skills, Contact, and one project detail route at 320px, 390px, 768px, 1024px, and 1440px widths.
+
+### Next Steps
+
+- Continue with Phase 12.1: check semantic headings.
+
+---
+
+## 2026-05-25 — Phase 10.1-10.5: Animations and Interactions
+
+### Summary
+
+Completed Phase 10 by standardizing restrained reveal motion across major non-Home page sections while leaving the already-tuned Home page unchanged in this pass.
+
+### Completed
+
+- Added Phase 10 scope for applying the shared `Reveal` pattern to major non-Home page sections.
+- Applied reveal motion to About page header, focus card, profile highlights, and target roles.
+- Applied reveal motion to Resume page header/CTA, experience snapshot, profile card, and skills snapshot.
+- Applied reveal motion to Projects page header, case-study index, and project grid wrapper; project cards retain their existing card-level animation.
+- Applied reveal motion to Skills page header and skill category cards.
+- Applied reveal motion to Contact page header and contact cards.
+- Applied reveal motion to project detail page header, visual/stat panel, role/tools/evidence panel, and case-study sections.
+- Preserved reduced-motion behavior through the shared `Reveal` component.
+- Ran lint, production build, and Browser validation across affected pages.
+- Marked Phase 10.1 through Phase 10.5 complete in `codex/TASKS.md`.
+
+### Files Changed
+
+- `app/about/page.tsx`
+- `app/contact/page.tsx`
+- `app/projects/page.tsx`
+- `app/resume/page.tsx`
+- `app/skills/page.tsx`
+- `components/sections/ProjectDetail.tsx`
+- `components/sections/SkillsOverview.tsx`
+- `components/ui/Reveal.tsx`
+- `codex/TASKS.md`
+- `codex/PROJECT_MEMORY.md`
+- `codex/WORKLOG.md`
+- `codex/screenshots/phase-10-reveal-pass/`
+
+### Issues Found
+
+- `next-env.d.ts` changed during production build validation and was restored as unrelated generated churn.
+- Browser validation found no page-level horizontal overflow and no console warnings/errors on affected pages at tested desktop and mobile widths.
+
+### Decisions Made
+
+- Use `Reveal` for meaningful blocks only: page headers, major cards, section groups, repeated cards, and project detail sections.
+- Do not animate every badge, chip, paragraph, nav item, footer element, or tiny text row.
+
+### Checks Run
+
+```bash
+npm.cmd run lint
+npm.cmd run build
+```
+
+Result:
+- `npm.cmd run lint`: Pass
+- `npm.cmd run build`: Pass
+- Browser validation: Pass on About, Resume, Projects, Skills, Contact, and one representative project detail route at desktop and 390px mobile widths.
+
+### Next Steps
+
+- Continue with Phase 11.1: test mobile, tablet, laptop, and desktop widths.
+
+---
+
+## 2026-05-25 — Small Fixes
+
+- Area: added consistent Home reveal animation to the Evidence section heading, the Education / Certificates / Experience / Security Impact Metrics snapshot cards, and the Featured Projects heading; existing hero, dashboards, and project-card animations remain intact.
+- Files: `app/page.tsx`, `components/sections/FeaturedProjects.tsx`, `components/ui/Reveal.tsx`, `codex/WORKLOG.md`, `codex/screenshots/home-reveal-animations/`.
+- Checks: `npm.cmd run lint` pass; `npm.cmd run build` pass; Browser validation pass on Home desktop and 390px mobile.
+- Notes: New `Reveal` component centralizes the subtle fade/slide-in behavior and respects reduced-motion preferences.
+
+---
+
+## 2026-05-25 — Small Fixes
+
+- Area: matched `Network Security Dashboard` load-in behavior to the remediation dashboard by adding the same outer dashboard entrance motion, badge entrance motion, and metric-card entrance motion while preserving the existing reduction bar animation and reduced-motion handling.
+- Files: `components/sections/ImpactMetricsStrip.tsx`, `codex/WORKLOG.md`, `codex/screenshots/network-dashboard-animation/`.
+- Checks: `npm.cmd run lint` pass; `npm.cmd run build` pass; Browser validation pass on Home desktop and 390px mobile.
+- Notes: `next-env.d.ts` changed during build validation and was restored as generated churn; stale screenshots from the removed evidence map were cleaned up.
+
+---
+
+## 2026-05-25 — Workkit Adjustments and Evidence Map Review
+
+- Adjustment: added a rule that workkit/process updates should be labeled as `Adjustment` or `Improvement` in tracking entries.
+- Improvement: added duplicate-proof-surface guidance so new visual cards are checked against nearby claims, metrics, tool lists, and workflow summaries before being added.
+- Improvement: added guidance to verify shared wrapper components forward arbitrary HTML props before relying on `aria-*`, `data-*`, or role attributes.
+- Improvement: added guidance to check and restore unrelated generated churn such as `next-env.d.ts` after production build validation.
+- Evidence section: refreshed Home and confirmed the new evidence map repeated hero `Active Portfolio Signal` information, then removed the map from Home and deleted the unused component.
+- Files: `AGENTS.md`, `codex/TASKS.md`, `codex/PROJECT_MEMORY.md`, `codex/WORKLOG.md`, `app/page.tsx`, `components/sections/SecurityEvidenceMap.tsx`, `codex/screenshots/evidence-map-review/`.
+- Checks: `npm.cmd run lint` pass; `npm.cmd run build` pass; Browser validation pass on Home desktop and 390px mobile.
+- Notes: Network dashboard load-in behavior remains the next fix after the duplicate visual is removed.
+
+---
+
+## 2026-05-25 — Phase 9.1-9.5: Cybersecurity Visual Elements
+
+### Summary
+
+Completed Phase 9 by adding a restrained security evidence workflow visual to the Home evidence section and confirming the previous Network Security Dashboard animation note had already been addressed.
+
+### Completed
+
+- Reviewed the latest worklog note about the Network Security Dashboard load-in behavior and confirmed the follow-up entry already fixed it.
+- Added a new `SecurityEvidenceMap` component that connects supported portfolio workflows and tools without adding unsupported claims.
+- Placed the visual between the Home evidence section header and the existing remediation/network security dashboards.
+- Used only supported visual anchors: Tenable, PowerShell, DISA STIG, MDE / Sentinel, KQL pivots, Azure NSG, MITRE ATT&CK, GitHub evidence, and scan exports.
+- Kept the treatment restrained with terminal-style surface, subtle grid texture, small-radius tiles, muted connectors, and existing accent colors.
+- Removed an unused `Folder` import from the Resume page that lint surfaced during validation.
+- Captured Home desktop/mobile screenshots and a Resume smoke screenshot.
+- Marked Phase 9.1 through Phase 9.5 complete in `codex/TASKS.md`.
+
+### Files Changed
+
+- `app/page.tsx`
+- `app/resume/page.tsx`
+- `components/sections/SecurityEvidenceMap.tsx`
+- `codex/TASKS.md`
+- `codex/PROJECT_MEMORY.md`
+- `codex/WORKLOG.md`
+- `codex/screenshots/phase-9-security-visuals/`
+
+### Issues Found
+
+- The first implementation placed an `aria-label` on the shared `Card` component, but `Card` does not forward arbitrary HTML attributes. The visual now includes a hidden heading inside the section instead of changing the shared Card API.
+- Browser validation reported only localized hidden/text truncation candidates and known project-preview truncation, with no page-level horizontal overflow.
+- `next-env.d.ts` briefly changed during production build validation and was restored to keep the diff focused.
+
+### Decisions Made
+
+- Treat the new evidence map as a workflow connector, not a new metrics surface.
+- Keep cybersecurity visuals tied to Bryan's actual proof areas instead of generic lock, matrix, or neon-hacker motifs.
+
+### Checks Run
+
+```bash
+npm.cmd run lint
+npm.cmd run build
+```
+
+Result:
+- `npm.cmd run lint`: Pass
+- `npm.cmd run build`: Pass
+- Browser validation: Pass on Home desktop and 390px mobile; Resume desktop smoke check passed.
+
+### Next Steps
+
+- Continue with Phase 10.1: audit existing interactions.
+
+---
+
 ## 2026-05-23 -- Reminder Callout (Review this with me on next start)
 
 - The Remediation Dashboard to have a load in animation but the network security dashboard does not. If you the network security dashboard is on the screen and you refresh the Network Security Dashboard stays stagnant.

@@ -18,13 +18,13 @@ Use this file for durable project context, not temporary notes.
 
 ## Current Project Status
 
-Status: Phase 8 complete
+Status: Phase 11 complete
 
-Current phase: Phase 9 — Cybersecurity Visual Elements
+Current phase: Phase 12 — Accessibility and Readability Pass
 
 Current focus:
 
-- Continue with Phase 9 by adding tasteful cybersecurity visual elements tied to real work.
+- Continue with Phase 12 by checking semantic headings, contrast, focus states, labels, and readability.
 - Keep the portfolio polished, recruiter-friendly, and proof-of-work focused.
 
 ---
@@ -255,6 +255,46 @@ Initial implementation priority:
 
 ---
 
+### Phase 9 Cybersecurity Visual Elements
+
+- Adjustment: The Home `SecurityEvidenceMap` visual was removed after review because it repeated the same high-level tool/workflow signals already presented in the hero `Active Portfolio Signal` card.
+- The removed map used supported portfolio concepts and tools only: Tenable scanning, PowerShell remediation, DISA STIG validation, MDE/Sentinel hunting, KQL pivots, Azure NSG, MITRE ATT&CK, GitHub evidence, and scan exports.
+- Decision: Do not stack attractive visual cards when they repeat nearby proof. Prefer replacing an existing surface, improving the existing hero proof panel, or using the pattern later where it replaces another navigation/overview element.
+- The `RiskReductionDashboard` and `NetworkSecurityDashboard` remain the primary Home metric surfaces.
+- Browser validation for Home desktop and 390px mobile found no page-level horizontal overflow and no console warnings/errors after the duplicate visual was removed.
+- Evidence map review screenshots and validation data are saved in `codex/screenshots/evidence-map-review/`.
+- `npm.cmd run lint` and `npm.cmd run build` both passed after the Phase 9 update.
+
+---
+
+### Phase 10 Animations and Interactions
+
+- Phase 10 established the shared `Reveal` component as the default restrained load-in pattern for major page sections.
+- `Reveal` uses a subtle opacity and vertical-position entrance, runs once per viewport, and respects `prefers-reduced-motion`.
+- Home already had reveal coverage for the hero, Evidence section heading, dashboards, resume snapshot cards, Featured Projects heading, and project cards before the site-wide pass.
+- The site-wide pass applied the reveal pattern to non-Home primary pages: About, Resume, Projects, Skills, Contact, and project detail pages.
+- The pattern should be applied to meaningful blocks, not every small badge, chip, line of text, nav item, or footer element.
+- The `NetworkSecurityDashboard` now matches the `RiskReductionDashboard` motion rhythm with an outer dashboard entrance, badge entrance, metric-card entrance, and existing reduction-bar animation.
+- Browser validation found no page-level horizontal overflow and no console warnings/errors on About, Resume, Projects, Skills, Contact, and a representative project detail route at desktop and 390px mobile widths.
+- Phase 10 screenshots and validation data are saved in `codex/screenshots/phase-10-reveal-pass/`, with supporting earlier screenshots in `codex/screenshots/home-reveal-animations/` and `codex/screenshots/network-dashboard-animation/`.
+- `npm.cmd run lint` and `npm.cmd run build` both passed after the Phase 10 update.
+
+---
+
+### Phase 11 Responsive Design Pass
+
+- Phase 11 tested Home, About, Resume, Projects, Skills, Contact, and a representative project detail route across 320px narrow mobile, 390px mobile, 768px tablet, 1024px laptop, and 1440px desktop widths.
+- The initial 320px pass found horizontal overflow on Home, About, and Resume.
+- The overflow source was long unbroken/compact content and a `Reveal` wrapper used inside grids without a `min-w-0` default.
+- `compact-copy` now includes `break-words` so long supported strings, such as the Security+ verification ID, wrap within card boundaries.
+- Resume snapshot headings now include `break-words` so long skill category labels can wrap safely at narrow widths.
+- The shared `Reveal` component now defaults to `min-w-0`, which prevents reveal wrappers from forcing grid items wider than their containers.
+- Final responsive validation found no page-level horizontal overflow, no clipped buttons, and no console warnings/errors across all tested pages and widths.
+- Phase 11 screenshots and validation data are saved in `codex/screenshots/phase-11-responsive-pass/`.
+- `npm.cmd run lint` and `npm.cmd run build` both passed after the Phase 11 update.
+
+---
+
 ## Approved Decisions
 
 - Phase 0 must inspect all primary pages, not only the homepage: Home, About, Resume, Projects, Skills, and Contact.
@@ -267,6 +307,10 @@ Initial implementation priority:
 - When Codex notices adjacent improvement opportunities during a phase, present them to Bryan for approval before making changes outside the current task scope.
 - Codex may rename organizational labels, such as skill category names, card grouping labels, or section-adjacent taxonomy labels, when needed for clearer grouping, as long as underlying claims, tools, experience, metrics, descriptions, and button/link labels remain supported and unchanged.
 - Micro-changes may use compact tracking: update only `codex/WORKLOG.md` unless the change completes a roadmap task or creates a durable decision, and scale validation to risk while still running full checks for major phase completion.
+- Adjustment: Workkit/process updates should be explicitly labeled as `Adjustment` or `Improvement` in the tracking entry.
+- Improvement: New visual proof surfaces should be checked against nearby sections for duplicated claims, metrics, tool lists, and workflow summaries before they are added.
+- Improvement: Shared wrapper components must be checked for arbitrary prop forwarding before relying on `aria-*`, `data-*`, or role attributes.
+- Improvement: Production build validation can update generated files such as `next-env.d.ts`; unrelated generated churn should be restored before finishing.
 
 ---
 
@@ -587,4 +631,4 @@ Track questions that need Bryan's input.
 
 ## Current Next Step
 
-Continue with `codex/TASKS.md` Phase 9.1: add tasteful security-themed visuals.
+Continue with `codex/TASKS.md` Phase 12.1: check semantic headings.
