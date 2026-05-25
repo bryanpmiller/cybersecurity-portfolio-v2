@@ -18,14 +18,30 @@ Use this file for durable project context, not temporary notes.
 
 ## Current Project Status
 
-Status: Phase 11 complete
+Status: Phase 14 complete
 
-Current phase: Phase 12 — Accessibility and Readability Pass
+Current phase: Phase 15 — Final Recruiter Review
 
 Current focus:
 
-- Continue with Phase 12 by checking semantic headings, contrast, focus states, labels, and readability.
+- Continue with Phase 15 by checking resume/GitHub/contact access and cybersecurity credibility.
 - Keep the portfolio polished, recruiter-friendly, and proof-of-work focused.
+
+### Phase 15.1 Recruiter First-Read Review
+
+- Phase 15.1 Browser validation found the Home first viewport communicates the essentials within a 5-second recruiter read.
+- Desktop first viewport shows `Bryan Miller`, `Vulnerability Management & Cybersecurity Analyst`, the risk-reduction positioning sentence, three primary actions (`View Projects`, `Download Resume`, `View GitHub`), proof chips, the active portfolio signal panel, and a visible peek into the Evidence section.
+- Mobile first viewport shows the name, role, positioning sentence, all three primary actions, proof chips, and the top of the active portfolio signal panel without horizontal overflow.
+- No UI changes were needed for 15.1 because the first-read signal is already clear and supported.
+
+### Phase 15.2 Project Discoverability Review
+
+- Phase 15.2 Browser validation found the strongest projects are easy to find.
+- The Home first viewport includes a visible `View Projects` CTA on desktop and mobile.
+- The Projects page starts with a clear `Security case studies with GitHub evidence` heading and a four-link case-study index above the fold on desktop and mobile.
+- The strongest proof projects, `Vulnerability Management Program Implementation` and `DISA STIG Remediation Project`, are ordered first in both the quick index and the card grid.
+- Desktop shows the first two project cards in the first viewport, including vulnerability reduction metrics and STIG remediation visual proof. Mobile shows the full case-study index above the first project card, which is an acceptable recruiter path on a narrow viewport.
+- No UI changes were needed for 15.2 because project access and ordering already support fast scanning.
 
 ---
 
@@ -292,6 +308,49 @@ Initial implementation priority:
 - Final responsive validation found no page-level horizontal overflow, no clipped buttons, and no console warnings/errors across all tested pages and widths.
 - Phase 11 screenshots and validation data are saved in `codex/screenshots/phase-11-responsive-pass/`.
 - `npm.cmd run lint` and `npm.cmd run build` both passed after the Phase 11 update.
+
+---
+
+### Phase 12 Accessibility and Readability Pass
+
+- Phase 12 tested Home, About, Resume, Projects, Skills, Contact, and a representative project detail route at 390px mobile and 1440px desktop widths.
+- The shared `PageContainer` now provides the `main-content` target used by a site-wide skip link.
+- The root layout now includes a keyboard-visible `Skip to content` link before navigation.
+- Reusable project and skill cards now choose heading levels based on context: nested cards use `h3` when a section header is present, and page-level card grids keep `h2`.
+- Low-contrast micro labels in dashboard and project preview surfaces were raised from very muted slate text to stronger slate text while preserving the visual style.
+- Browser validation found one visible `main` landmark per tested page, one visible `h1` per tested page, no heading-level skips, no unlabeled visible links/buttons, no unprotected external links, no page-level horizontal overflow, and no console warnings/errors.
+- The quick contrast audit flagged primary button text as low contrast because it could not resolve gradient button backgrounds; visual inspection and the existing primary-button design remain acceptable.
+- Phase 12 screenshots and validation data are saved in `codex/screenshots/phase-12-accessibility-readability/`.
+- `npm.cmd run lint` and `npm.cmd run build` both passed after the Phase 12 update.
+
+---
+
+### Phase 13 Content Polish
+
+- Phase 13 removed generic framing phrases such as `concise snapshot`, `focused collection`, `role-focused view`, and `evidence-based` from visible page copy.
+- Content edits stayed conservative and preserved supported claims, metrics, tools, roles, button labels, and project outcomes.
+- Profile copy now reads more directly while keeping the same positioning around vulnerability management, secure configuration, remediation automation, threat hunting, security operations, threat detection, and technical compliance.
+- Project summaries now foreground the actual work more quickly: lab vulnerability management, PowerShell STIG remediation, Microsoft Defender / Sentinel-style password-spray hunting, and Akira ransomware investigation.
+- Projects and Skills page descriptions were tightened for recruiter scanning without adding new claims.
+- Contact copy was adjusted from generic `professional background` wording to `work history`.
+- Browser validation found no tracked generic-phrase hits, no page-level horizontal overflow, and no console warnings/errors across Home, About, Resume, Projects, Skills, Contact, and a representative project detail route at 390px mobile and 1440px desktop widths.
+- Phase 13 screenshots and validation data are saved in `codex/screenshots/phase-13-content-polish/`.
+- `npm.cmd run lint` and `npm.cmd run build` both passed after the Phase 13 update.
+
+---
+
+### Phase 14 Performance and Build Pass
+
+- `npm.cmd run lint` passed.
+- `npm.cmd run build` passed, compiling successfully and prerendering all app routes as static content.
+- `npm.cmd run test --if-present` completed with no test script configured.
+- No redesign-related lint, TypeScript, or build errors were found, so no code fixes were required in Phase 14.
+- `next-env.d.ts` changed during production build validation and was restored as unrelated generated churn.
+- Static build inspection found generated JS chunks under `.next/static/chunks` and a single generated CSS chunk; no large public image payloads are present.
+- Largest public assets are self-hosted fonts and the resume PDF. This is expected for the current local-font strategy.
+- Browser validation across Home, About, Resume, Projects, Skills, Contact, and a representative project detail route at 390px mobile and 1440px desktop found no page-level horizontal overflow and no console warnings/errors.
+- The in-app browser surface did not expose useful resource timing entries for this run, so performance review relied on production build output, static asset inspection, and rendered-page smoke validation.
+- Phase 14 screenshots and validation data are saved in `codex/screenshots/phase-14-performance-build/`.
 
 ---
 
@@ -631,4 +690,4 @@ Track questions that need Bryan's input.
 
 ## Current Next Step
 
-Continue with `codex/TASKS.md` Phase 12.1: check semantic headings.
+Continue with `codex/TASKS.md` Phase 15.3: check if resume/GitHub/contact are obvious.

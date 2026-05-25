@@ -16,7 +16,7 @@ export default function SkillsPage() {
         <SectionHeader
           eyebrow="Skills"
           title="Cybersecurity skills grouped by role relevance"
-          description="A role-focused view of the tools, frameworks, and technical skills used across vulnerability management, secure configuration, automation, and threat hunting work."
+          description="Tools, frameworks, and technical skills used across vulnerability management, secure configuration, automation, and threat hunting work."
         />
       </Reveal>
       <Reveal delay={0.06}>

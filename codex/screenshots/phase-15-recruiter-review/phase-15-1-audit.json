@@ -1,0 +1,133 @@
+{
+  "auditDesktop151": {
+    "h1": "Bryan Miller",
+    "heroBottom": 745,
+    "navLinks": [
+      "Bryan MillerVulnerability Management & Cybersecurity Analyst",
+      "Home",
+      "About",
+      "Resume",
+      "Projects",
+      "Skills",
+      "Contact"
+    ],
+    "nextSectionPeeking": true,
+    "overflowX": false,
+    "primaryPositioning": true,
+    "titleSignal": true,
+    "viewport": {
+      "height": 950,
+      "width": 1440
+    },
+    "visibleLinks": [
+      {
+        "href": "/projects",
+        "text": "View Projects",
+        "visible": true
+      },
+      {
+        "href": "/resume/Bryan_Miller_Resume.pdf",
+        "text": "Download Resume",
+        "visible": true
+      },
+      {
+        "href": "https://github.com/bryanpmiller",
+        "text": "View GitHub",
+        "visible": true
+      }
+    ],
+    "visibleText": [
+      "Bryan Miller",
+      "Vulnerability Management & Cybersecurity Analyst",
+      "I reduce security risk through vulnerability management, secure configuration, remediation automation, and threat-focused investigation.",
+      "View Projects",
+      "Download Resume",
+      "View GitHub",
+      "Security+",
+      "B.S. Cybersecurity",
+      "100% critical reduction",
+      "Active Portfolio Signal",
+      "Security work snapshot",
+      "Live Evidence",
+      "01",
+      "Vulnerability Management",
+      "Verified",
+      "02",
+      "PowerShell Remediation",
+      "Built",
+      "03",
+      "MDE / Sentinel Hunting",
+      "Documented",
+      "04",
+      "DISA STIG Hardening",
+      "Validated",
+      "Recent Evidence",
+      "> Critical findings reduced",
+      ">",
+      "100%",
+      "> High findings reduced",
+      "92%",
+      "> Tools",
+      "Tenable, PowerShell, MDE, Sentinel",
+      "Evidence",
+      "Risk Reduction and Security Operations experience",
+      "Resume-backed experience, security operations work, and measurable vulnerability reduction."
+    ]
+  },
+  "auditMobile151": {
+    "h1": "Bryan Miller",
+    "heroBottom": 1568,
+    "navLinks": [
+      "Bryan MillerVulnerability Management & Cybersecurity Analyst",
+      "Home",
+      "About",
+      "Resume",
+      "Projects",
+      "Skills",
+      "Contact"
+    ],
+    "nextSectionPeeking": false,
+    "overflowX": false,
+    "primaryPositioning": true,
+    "titleSignal": true,
+    "viewport": {
+      "height": 1000,
+      "width": 390
+    },
+    "visibleLinks": [
+      {
+        "href": "/projects",
+        "text": "View Projects",
+        "visible": true
+      },
+      {
+        "href": "/resume/Bryan_Miller_Resume.pdf",
+        "text": "Download Resume",
+        "visible": true
+      },
+      {
+        "href": "https://github.com/bryanpmiller",
+        "text": "View GitHub",
+        "visible": true
+      }
+    ],
+    "visibleText": [
+      "Bryan Miller",
+      "Vulnerability Management & Cybersecurity Analyst",
+      "I reduce security risk through vulnerability management, secure configuration, remediation automation, and threat-focused investigation.",
+      "View Projects",
+      "Download Resume",
+      "View GitHub",
+      "Security+",
+      "B.S. Cybersecurity",
+      "100% critical reduction",
+      "Active Portfolio Signal",
+      "Security work snapshot",
+      "Live Evidence",
+      "Vulnerability Management",
+      "Verified",
+      "PowerShell Remediation"
+    ]
+  },
+  "logsPhase151": []
+}

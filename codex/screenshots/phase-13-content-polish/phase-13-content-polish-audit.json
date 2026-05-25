@@ -1,0 +1,332 @@
+[
+  {
+    "route": "/",
+    "name": "home",
+    "viewport": "mobile",
+    "bannedHits": [],
+    "h1": "Bryan Miller",
+    "overflowX": -15,
+    "textOverflow": [
+      {
+        "overBy": 102,
+        "tag": "a",
+        "text": "Skip to content",
+        "width": 33
+      },
+      {
+        "overBy": 47,
+        "tag": "span",
+        "text": "159.26.106.84",
+        "width": 30
+      },
+      {
+        "overBy": 12,
+        "tag": "span",
+        "text": "slflare",
+        "width": 30
+      },
+      {
+        "overBy": 38,
+        "tag": "span",
+        "text": "slflarewinsysmo",
+        "width": 51
+      },
+      {
+        "overBy": 9,
+        "tag": "p",
+        "text": "Encryption",
+        "width": 51
+      }
+    ],
+    "title": "Bryan Miller | Cybersecurity Portfolio",
+    "consoleIssues": []
+  },
+  {
+    "route": "/about",
+    "name": "about",
+    "viewport": "mobile",
+    "bannedHits": [],
+    "h1": "Professional summary",
+    "overflowX": -15,
+    "textOverflow": [
+      {
+        "overBy": 102,
+        "tag": "a",
+        "text": "Skip to content",
+        "width": 33
+      }
+    ],
+    "title": "About | Bryan Miller",
+    "consoleIssues": []
+  },
+  {
+    "route": "/resume",
+    "name": "resume",
+    "viewport": "mobile",
+    "bannedHits": [],
+    "h1": "Resume Snapshot",
+    "overflowX": -15,
+    "textOverflow": [
+      {
+        "overBy": 102,
+        "tag": "a",
+        "text": "Skip to content",
+        "width": 33
+      }
+    ],
+    "title": "Resume | Bryan Miller",
+    "consoleIssues": []
+  },
+  {
+    "route": "/projects",
+    "name": "projects",
+    "viewport": "mobile",
+    "bannedHits": [],
+    "h1": "Security case studies with GitHub evidence",
+    "overflowX": -15,
+    "textOverflow": [
+      {
+        "overBy": 102,
+        "tag": "a",
+        "text": "Skip to content",
+        "width": 33
+      },
+      {
+        "overBy": 47,
+        "tag": "span",
+        "text": "159.26.106.84",
+        "width": 30
+      },
+      {
+        "overBy": 12,
+        "tag": "span",
+        "text": "slflare",
+        "width": 30
+      },
+      {
+        "overBy": 38,
+        "tag": "span",
+        "text": "slflarewinsysmo",
+        "width": 51
+      },
+      {
+        "overBy": 9,
+        "tag": "p",
+        "text": "Encryption",
+        "width": 51
+      }
+    ],
+    "title": "Projects | Bryan Miller",
+    "consoleIssues": []
+  },
+  {
+    "route": "/skills",
+    "name": "skills",
+    "viewport": "mobile",
+    "bannedHits": [],
+    "h1": "Cybersecurity skills grouped by role relevance",
+    "overflowX": -15,
+    "textOverflow": [
+      {
+        "overBy": 102,
+        "tag": "a",
+        "text": "Skip to content",
+        "width": 33
+      }
+    ],
+    "title": "Skills | Bryan Miller",
+    "consoleIssues": []
+  },
+  {
+    "route": "/contact",
+    "name": "contact",
+    "viewport": "mobile",
+    "bannedHits": [],
+    "h1": "Where to find me",
+    "overflowX": -15,
+    "textOverflow": [
+      {
+        "overBy": 102,
+        "tag": "a",
+        "text": "Skip to content",
+        "width": 33
+      }
+    ],
+    "title": "Contact | Bryan Miller",
+    "consoleIssues": []
+  },
+  {
+    "route": "/projects/password-spray-threat-hunt",
+    "name": "project-detail",
+    "viewport": "mobile",
+    "bannedHits": [],
+    "h1": "Password Spray Threat Hunt: RDP Compromise Investigation",
+    "overflowX": -15,
+    "textOverflow": [
+      {
+        "overBy": 102,
+        "tag": "a",
+        "text": "Skip to content",
+        "width": 33
+      },
+      {
+        "overBy": 33,
+        "tag": "p",
+        "text": "MicrosoftUpdateSync",
+        "width": 223
+      }
+    ],
+    "title": "Password Spray Threat Hunt: RDP Compromise Investigation | Bryan Miller",
+    "consoleIssues": []
+  },
+  {
+    "route": "/",
+    "name": "home",
+    "viewport": "desktop",
+    "bannedHits": [],
+    "h1": "Bryan Miller",
+    "overflowX": -15,
+    "textOverflow": [
+      {
+        "overBy": 102,
+        "tag": "a",
+        "text": "Skip to content",
+        "width": 33
+      },
+      {
+        "overBy": 15,
+        "tag": "span",
+        "text": "159.26.106.84",
+        "width": 66
+      },
+      {
+        "overBy": 5,
+        "tag": "span",
+        "text": "slflarewinsysmo",
+        "width": 89
+      }
+    ],
+    "title": "Bryan Miller | Cybersecurity Portfolio",
+    "consoleIssues": []
+  },
+  {
+    "route": "/about",
+    "name": "about",
+    "viewport": "desktop",
+    "bannedHits": [],
+    "h1": "Professional summary",
+    "overflowX": -15,
+    "textOverflow": [
+      {
+        "overBy": 102,
+        "tag": "a",
+        "text": "Skip to content",
+        "width": 33
+      }
+    ],
+    "title": "About | Bryan Miller",
+    "consoleIssues": []
+  },
+  {
+    "route": "/resume",
+    "name": "resume",
+    "viewport": "desktop",
+    "bannedHits": [],
+    "h1": "Resume Snapshot",
+    "overflowX": -15,
+    "textOverflow": [
+      {
+        "overBy": 102,
+        "tag": "a",
+        "text": "Skip to content",
+        "width": 33
+      }
+    ],
+    "title": "Resume | Bryan Miller",
+    "consoleIssues": []
+  },
+  {
+    "route": "/projects",
+    "name": "projects",
+    "viewport": "desktop",
+    "bannedHits": [],
+    "h1": "Security case studies with GitHub evidence",
+    "overflowX": -15,
+    "textOverflow": [
+      {
+        "overBy": 102,
+        "tag": "a",
+        "text": "Skip to content",
+        "width": 33
+      },
+      {
+        "overBy": 15,
+        "tag": "span",
+        "text": "159.26.106.84",
+        "width": 66
+      },
+      {
+        "overBy": 5,
+        "tag": "span",
+        "text": "slflarewinsysmo",
+        "width": 89
+      }
+    ],
+    "title": "Projects | Bryan Miller",
+    "consoleIssues": []
+  },
+  {
+    "route": "/skills",
+    "name": "skills",
+    "viewport": "desktop",
+    "bannedHits": [],
+    "h1": "Cybersecurity skills grouped by role relevance",
+    "overflowX": -15,
+    "textOverflow": [
+      {
+        "overBy": 102,
+        "tag": "a",
+        "text": "Skip to content",
+        "width": 33
+      }
+    ],
+    "title": "Skills | Bryan Miller",
+    "consoleIssues": []
+  },
+  {
+    "route": "/contact",
+    "name": "contact",
+    "viewport": "desktop",
+    "bannedHits": [],
+    "h1": "Where to find me",
+    "overflowX": 0,
+    "textOverflow": [
+      {
+        "overBy": 102,
+        "tag": "a",
+        "text": "Skip to content",
+        "width": 33
+      }
+    ],
+    "title": "Contact | Bryan Miller",
+    "consoleIssues": []
+  },
+  {
+    "route": "/projects/password-spray-threat-hunt",
+    "name": "project-detail",
+    "viewport": "desktop",
+    "bannedHits": [],
+    "h1": "Password Spray Threat Hunt: RDP Compromise Investigation",
+    "overflowX": -15,
+    "textOverflow": [
+      {
+        "overBy": 102,
+        "tag": "a",
+        "text": "Skip to content",
+        "width": 33
+      }
+    ],
+    "title": "Password Spray Threat Hunt: RDP Compromise Investigation | Bryan Miller",
+    "consoleIssues": []
+  }
+]

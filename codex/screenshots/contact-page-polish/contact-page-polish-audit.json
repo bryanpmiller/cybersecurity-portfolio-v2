@@ -1,0 +1,20 @@
+[
+  {
+    "name": "desktop",
+    "width": 1440,
+    "height": 950,
+    "buttons": [],
+    "cards": [],
+    "overflowX": 0,
+    "consoleIssues": []
+  },
+  {
+    "name": "mobile",
+    "width": 390,
+    "height": 1000,
+    "buttons": [],
+    "cards": [],
+    "overflowX": 0,
+    "consoleIssues": []
+  }
+]

@@ -18,8 +18,8 @@ export default function ProjectsPage() {
       <Reveal>
         <SectionHeader
           eyebrow="Projects"
-          title="Case studies and evidence-based security work"
-          description="A focused collection of cybersecurity projects showing vulnerability management, secure configuration, remediation automation, and threat hunting through concise case studies and supporting GitHub evidence."
+          title="Security case studies with GitHub evidence"
+          description="Cybersecurity projects covering vulnerability management, secure configuration, remediation automation, and threat hunting through case-study notes and GitHub evidence."
         />
       </Reveal>
       <Reveal delay={0.06}>

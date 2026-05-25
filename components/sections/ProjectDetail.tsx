@@ -182,8 +182,8 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
             <Card as="section" variant="evidence">
               <h2 className="panel-title">{heading}</h2>
               <p className="body-copy mt-4">
-                Placeholder section for the final project narrative. Phase 3 will replace this with concise,
-                evidence-based details and supporting artifacts from the GitHub project.
+                Placeholder section for the final project narrative. This will be replaced with project details and
+                GitHub evidence.
               </p>
             </Card>
           </Reveal>

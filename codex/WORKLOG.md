@@ -104,6 +104,350 @@ Add new entries below this line.
 
 ---
 
+## 2026-05-25 — Phase 15.2: Project Discoverability Review
+
+### Summary
+
+Audited whether recruiters can quickly find the strongest project evidence from Home and the Projects page.
+
+### Completed
+
+- Reviewed the Home first viewport project path at 1440px desktop and 390px mobile widths.
+- Reviewed the Projects page at 1440px desktop and 390px mobile widths.
+- Confirmed the Projects page has a visible four-link case-study index above the fold on desktop and mobile.
+- Confirmed `Vulnerability Management Program Implementation` and `DISA STIG Remediation Project` lead both the project index and the card grid.
+- Captured discoverability screenshots and audit JSON.
+- Marked Phase 15.2 complete in `codex/TASKS.md`.
+
+### Files Changed
+
+- `codex/TASKS.md`
+- `codex/PROJECT_MEMORY.md`
+- `codex/WORKLOG.md`
+- `codex/screenshots/phase-15-recruiter-review/`
+
+### Issues Found
+
+- No project-discoverability blocker found.
+- No horizontal overflow or Browser console errors were found during the 15.2 review.
+
+### Decisions Made
+
+- No UI changes are needed for Phase 15.2 because strongest projects are already prominent through the Home CTA, Projects quick index, and first-card ordering.
+
+### Checks Run
+
+Result:
+- Browser validation: Pass on Home and Projects desktop/mobile.
+- Lint/build not run; documentation and screenshot-only phase audit with no code changes.
+
+### Next Steps
+
+- Continue with Phase 15.3: check if resume/GitHub/contact are obvious.
+
+---
+
+## 2026-05-25 — Phase 15.1: Recruiter 5-Second Read
+
+### Summary
+
+Audited the Home first viewport to check whether a recruiter can quickly understand who Bryan is, what cybersecurity work he does, and where the proof/actions are.
+
+### Completed
+
+- Reviewed Home at 1440px desktop and 390px mobile widths.
+- Confirmed the first viewport exposes the name, role, positioning sentence, proof chips, primary actions, and portfolio signal panel.
+- Confirmed desktop also previews the Evidence section below the hero.
+- Captured first-read screenshots and audit JSON.
+- Marked Phase 15.1 complete in `codex/TASKS.md`.
+
+### Files Changed
+
+- `codex/TASKS.md`
+- `codex/PROJECT_MEMORY.md`
+- `codex/WORKLOG.md`
+- `codex/screenshots/phase-15-recruiter-review/`
+
+### Issues Found
+
+- No first-read blocker found.
+- No horizontal overflow or Browser console errors were found during the 15.1 review.
+
+### Decisions Made
+
+- No UI changes are needed for Phase 15.1 because the Home first viewport already communicates Bryan's role, focus areas, proof signals, and primary actions quickly.
+
+### Checks Run
+
+Result:
+- Browser validation: Pass on Home desktop and mobile.
+- Lint/build not run; documentation and screenshot-only phase audit with no code changes.
+
+### Next Steps
+
+- Continue with Phase 15.2: check if strongest projects are easy to find.
+
+---
+
+## 2026-05-25 — Small Fixes
+
+- Area: updated project-card GitHub icon links to use the same white border, glow, hover, and focus treatment as the Contact GitHub badge.
+- Files: `components/sections/FeaturedProjects.tsx`, `codex/WORKLOG.md`, `codex/screenshots/project-github-glow/`.
+- Checks: `npm.cmd run lint` pass; `npm.cmd run build` pass; Browser validation pass on Projects desktop/mobile and Home desktop with no horizontal overflow or console errors.
+- Notes: `next-env.d.ts` changed during build validation and was restored as generated churn.
+
+---
+
+## 2026-05-25 — Small Fixes
+
+- Area: applied matching glow/ring treatments to all Contact card badges and added accent-aware secondary button hover/focus styling so Contact buttons match their card color schemes instead of always highlighting cyan.
+- Files: `app/contact/page.tsx`, `components/ui/Button.tsx`, `codex/WORKLOG.md`, `codex/screenshots/contact-badge-button-accents/`.
+- Checks: `npm.cmd run lint` pass; `npm.cmd run build` pass; Browser validation pass on Contact desktop and mobile with no horizontal overflow or console errors.
+- Notes: `next-env.d.ts` changed during build validation and was restored as generated churn.
+
+---
+
+## 2026-05-25 — Small Fixes
+
+- Area: added a restrained white outline/glow to the Contact GitHub Invertocat badge so the white SVG feels intentional against the card surface.
+- Files: `app/contact/page.tsx`, `codex/WORKLOG.md`, `codex/screenshots/contact-github-logo/`.
+- Checks: `npm.cmd run lint` pass; Browser validation pass on Contact desktop with no horizontal overflow or console errors.
+- Notes: build deferred because this is a localized style-only micro-change after the previous Contact build pass.
+
+---
+
+## 2026-05-25 — Small Fixes
+
+- Area: updated the Contact GitHub card to use the local GitHub Invertocat SVG in the card badge and the GitHub lockup SVG as the button label, matching the LinkedIn logo-button treatment.
+- Files: `app/contact/page.tsx`, `components/ui/GitHubLogo.tsx`, `public/images/logos/GitHub_Invertocat_White.svg`, `public/images/logos/GitHub_Lockup_White_Clearspace.svg`, `codex/WORKLOG.md`, `codex/screenshots/contact-github-logo/`.
+- Checks: `npm.cmd run lint` pass; `npm.cmd run build` pass; Browser validation pass on Contact desktop and mobile with loaded local GitHub SVGs, no horizontal overflow, and no console errors.
+- Notes: `next-env.d.ts` changed during build validation and was restored as generated churn.
+
+---
+
+## 2026-05-25 — Small Fixes
+
+- Area: moved the LinkedIn logo assets into `public/images/logos/`, removed the temporary `components/ui/linkedin-logo/` staging folder, and updated Contact to use the compact LinkedIn bug in the card badge with the LinkedIn wordmark as the button label.
+- Files: `app/contact/page.tsx`, `components/ui/Button.tsx`, `components/ui/LinkedInLogo.tsx`, `public/images/logos/LI-In-Bug.png`, `public/images/logos/linkedin-logo.png`, `codex/WORKLOG.md`, `codex/screenshots/contact-linkedin-logo/`.
+- Checks: `npm.cmd run lint` pass; `npm.cmd run build` pass; Browser validation pass on Contact desktop and mobile with loaded local logo images, no horizontal overflow, and no console errors.
+- Notes: no legal/license text was present in the provided LinkedIn logo folder; `next-env.d.ts` changed during build validation and was restored as generated churn.
+
+---
+
+## 2026-05-25 — Small Fixes
+
+- Area: polished the Contact page cards with aligned evidence-style card treatment, visible LinkedIn/GitHub/Resume icons, and icon-bearing buttons while preserving the existing Resume card wording.
+- Files: `app/contact/page.tsx`, `codex/WORKLOG.md`, `codex/screenshots/contact-page-polish/`.
+- Checks: `npm.cmd run lint` pass; `npm.cmd run build` pass; Browser validation pass on Contact desktop and mobile with no horizontal overflow or console errors.
+- Notes: `next-env.d.ts` changed during build validation and was restored as generated churn.
+
+---
+
+## 2026-05-25 — Phase 14.1-14.4: Performance and Build Pass
+
+### Summary
+
+Completed Phase 14 by running available project checks, inspecting production build output, reviewing generated/static asset sizes, and smoke-validating rendered pages for obvious runtime issues.
+
+### Completed
+
+- Ran lint successfully.
+- Ran production build successfully.
+- Ran `npm.cmd run test --if-present`; no test script is configured.
+- Checked and restored `next-env.d.ts` after production build generated route-reference churn.
+- Inspected generated `.next/static` chunk sizes.
+- Inspected public asset sizes.
+- Browser-validated Home, About, Resume, Projects, Skills, Contact, and one representative project detail route at 390px mobile and 1440px desktop widths.
+- Captured viewport screenshots and JSON audit data for the performance/build pass.
+- Marked Phase 14.1 through Phase 14.4 complete in `codex/TASKS.md`.
+
+### Files Changed
+
+- `codex/TASKS.md`
+- `codex/PROJECT_MEMORY.md`
+- `codex/WORKLOG.md`
+- `codex/screenshots/phase-14-performance-build/`
+
+### Issues Found
+
+- No lint, TypeScript, or production build errors were found.
+- No page-level horizontal overflow or console warnings/errors were found in Browser validation.
+- The in-app browser surface did not expose useful resource timing entries, so runtime performance timing could not be measured there.
+- Largest public assets are the self-hosted font files and resume PDF; no large public image payloads were found.
+- `next-env.d.ts` changed during production build validation and was restored as unrelated generated churn.
+
+### Decisions Made
+
+- No code changes were needed for Phase 14.
+- Keep the self-hosted font strategy because it preserves network-independent builds; revisit font subsetting only if a later performance target requires it.
+
+### Checks Run
+
+```bash
+npm.cmd run lint
+npm.cmd run build
+npm.cmd run test --if-present
+```
+
+Result:
+- `npm.cmd run lint`: Pass
+- `npm.cmd run build`: Pass
+- `npm.cmd run test --if-present`: Pass, no test script configured
+- Browser validation: Pass on Home, About, Resume, Projects, Skills, Contact, and one project detail route at 390px mobile and 1440px desktop widths.
+
+### Next Steps
+
+- Continue with Phase 15.1: check if a recruiter can understand the portfolio in 5 seconds.
+
+---
+
+## 2026-05-25 — Small Fixes
+
+- Area: aligned Home Evidence snapshot cards by making the reveal wrappers and visible card surfaces fill their grid cells; desktop row bottoms now align while mobile remains natural single-column stacking.
+- Files: `app/page.tsx`, `codex/WORKLOG.md`, `codex/screenshots/home-snapshot-alignment/`.
+- Checks: `npm.cmd run lint` pass; `npm.cmd run build` pass; Browser validation pass on Home desktop and mobile.
+- Notes: `next-env.d.ts` changed during build validation and was restored as generated churn.
+
+---
+
+## 2026-05-25 — Phase 13.1-13.5: Content Polish
+
+### Summary
+
+Completed Phase 13 by removing generic framing language and tightening visible profile, project, page-header, and contact copy without adding claims or changing supported outcomes.
+
+### Completed
+
+- Replaced generic wording such as `concise snapshot`, `focused collection`, `role-focused view`, and `evidence-based` in visible page copy.
+- Tightened profile positioning and resume snapshot wording while preserving the same skills and role focus.
+- Strengthened all four project summaries to lead with the actual work and tools.
+- Tightened Projects, Skills, Home Evidence, Featured Projects, and Contact page copy for recruiter scanning.
+- Cleaned an unused fallback project-detail placeholder phrase.
+- Searched app/component/data copy for tracked generic phrases.
+- Validated Home, About, Resume, Projects, Skills, Contact, and one representative project detail route at 390px mobile and 1440px desktop widths.
+- Captured viewport screenshots and JSON audit data for the content polish pass.
+- Ran lint and production build successfully.
+- Restored `next-env.d.ts` after production build generated route-reference churn.
+- Marked Phase 13.1 through Phase 13.5 complete in `codex/TASKS.md`.
+
+### Files Changed
+
+- `app/contact/page.tsx`
+- `app/page.tsx`
+- `app/projects/page.tsx`
+- `app/skills/page.tsx`
+- `components/sections/FeaturedProjects.tsx`
+- `components/sections/ProjectDetail.tsx`
+- `components/sections/SkillsOverview.tsx`
+- `lib/data/profile.ts`
+- `lib/data/projects.ts`
+- `codex/TASKS.md`
+- `codex/PROJECT_MEMORY.md`
+- `codex/WORKLOG.md`
+- `codex/screenshots/phase-13-content-polish/`
+
+### Issues Found
+
+- Several visible section descriptions used generic framing instead of naming the actual evidence or work.
+- Project summaries were accurate but could lead with the proof-of-work more directly.
+- Browser text-overflow candidates were limited to the hidden skip link and intentionally truncated technical strings; no page-level overflow was found.
+- `next-env.d.ts` changed during production build validation and was restored as unrelated generated churn.
+
+### Decisions Made
+
+- Treat Bryan's request to complete Phase 13 as approval for conservative copy polish within the roadmap scope.
+- Preserve claims, metrics, tools, roles, button labels, destinations, and outcomes.
+- Prefer direct evidence wording over broad marketing phrases.
+
+### Checks Run
+
+```bash
+npm.cmd run lint
+npm.cmd run build
+```
+
+Result:
+- `npm.cmd run lint`: Pass
+- `npm.cmd run build`: Pass
+- Browser validation: Pass on Home, About, Resume, Projects, Skills, Contact, and one project detail route at 390px mobile and 1440px desktop widths.
+
+### Next Steps
+
+- Continue with Phase 14.1: run lint/build/test commands as available.
+
+---
+
+## 2026-05-25 — Small Fixes
+
+- Area: tightened mobile project-card spacing by limiting equal-height grid rows and fixed section minimum heights to tablet/desktop breakpoints; mobile cards now size naturally while desktop card alignment is preserved.
+- Files: `components/sections/FeaturedProjects.tsx`, `codex/WORKLOG.md`, `codex/screenshots/project-card-mobile-spacing/`.
+- Checks: `npm.cmd run lint` pass; `npm.cmd run build` pass; Browser validation pass on Projects mobile, Home mobile, and Projects desktop.
+- Notes: `next-env.d.ts` changed during build validation and was restored as generated churn.
+
+---
+
+## 2026-05-25 — Phase 12.1-12.7: Accessibility and Readability Pass
+
+### Summary
+
+Completed Phase 12 by tightening semantic heading structure, keyboard access, visible labels, contrast, and readability without changing substantive portfolio copy.
+
+### Completed
+
+- Added a site-wide skip link before navigation.
+- Added a shared `main-content` target to the page container.
+- Adjusted reusable project and skill card heading levels so nested section cards do not flatten the heading hierarchy.
+- Improved very small muted label contrast in dashboard and project preview surfaces.
+- Audited Home, About, Resume, Projects, Skills, Contact, and one representative project detail route at 390px mobile and 1440px desktop widths.
+- Captured viewport screenshots and JSON audit data for the accessibility/readability pass.
+- Ran lint and production build successfully.
+- Restored `next-env.d.ts` after production build generated route-reference churn.
+- Marked Phase 12.1 through Phase 12.7 complete in `codex/TASKS.md`.
+
+### Files Changed
+
+- `app/layout.tsx`
+- `components/layout/PageContainer.tsx`
+- `components/sections/FeaturedProjects.tsx`
+- `components/sections/ImpactMetricsStrip.tsx`
+- `components/sections/RiskReductionDashboard.tsx`
+- `components/sections/SkillsOverview.tsx`
+- `codex/TASKS.md`
+- `codex/PROJECT_MEMORY.md`
+- `codex/WORKLOG.md`
+- `codex/screenshots/phase-12-accessibility-readability/`
+
+### Issues Found
+
+- Nested reusable card headings needed contextual heading levels on Home versus the Projects and Skills pages.
+- Some micro labels were readable visually but too muted for an accessibility pass.
+- The quick contrast script flagged primary button text because it cannot resolve gradient backgrounds; visual/button styling remains acceptable.
+- `next-env.d.ts` changed during production build validation and was restored as unrelated generated churn.
+
+### Decisions Made
+
+- Keep the skip link site-wide as a baseline keyboard navigation affordance.
+- Use contextual heading levels for reusable section components while preserving their existing visual classes.
+- Keep micro labels at stronger slate contrast when they carry meaningful status or axis text.
+
+### Checks Run
+
+```bash
+npm.cmd run lint
+npm.cmd run build
+```
+
+Result:
+- `npm.cmd run lint`: Pass
+- `npm.cmd run build`: Pass
+- Browser validation: Pass on Home, About, Resume, Projects, Skills, Contact, and one project detail route at 390px mobile and 1440px desktop widths.
+
+### Next Steps
+
+- Continue with Phase 13.1: remove generic AI-sounding phrases, preserving substantive copy unless Bryan approves changes.
+
+---
+
 ## 2026-05-25 — Phase 11.1-11.4: Responsive Design Pass
 
 ### Summary

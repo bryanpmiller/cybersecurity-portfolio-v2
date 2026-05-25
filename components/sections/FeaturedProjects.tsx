@@ -277,7 +277,7 @@ function CaseStudySnapshot({ project }: { project: Project }) {
   return (
     <div aria-label={`${project.title} case study snapshot`} className="mt-5 grid gap-2 rounded-md border border-line bg-ink-soft/60 p-3">
       {snapshotRows.map((row) => (
-        <div className="grid min-h-[5.75rem] min-w-0 content-start gap-1 rounded border border-line/80 bg-surface/45 px-3 py-2" key={row.label}>
+        <div className="grid min-w-0 content-start gap-1 rounded border border-line/80 bg-surface/45 px-3 py-2 md:min-h-[5.75rem]" key={row.label}>
           <p className="font-mono text-[0.6rem] font-semibold uppercase tracking-[0.1em] text-evidence">{row.label}</p>
           <p className="line-clamp-2 text-sm leading-5 text-slate-300">{row.value}</p>
         </div>
@@ -293,7 +293,7 @@ function ToolingPanel({ tools }: { tools: string[] }) {
         <Wrench aria-hidden="true" className="mr-2 inline size-3.5 align-[-0.2em] text-evidence" />
         Tools
       </p>
-      <div className="mt-3 flex min-h-[4.875rem] min-w-0 content-start flex-wrap gap-1.5">
+      <div className="mt-3 flex min-w-0 content-start flex-wrap gap-1.5 md:min-h-[4.875rem]">
         {tools.map((tool) => (
           <span
             className="max-w-full rounded border border-lineStrong/60 bg-surface/70 px-2.5 py-1.5 text-xs font-semibold leading-none text-slate-200 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)] transition-[background,border-color,color] duration-200 group-hover/project:border-evidence/30 group-hover/project:bg-surfaceElevated/80 group-hover/project:text-white"
@@ -320,7 +320,7 @@ function ProjectActions({ project }: { project: Project }) {
       {project.githubUrl ? (
         <a
           aria-label={`Open GitHub repository for ${project.title}`}
-          className="focus-ring inline-flex size-10 shrink-0 items-center justify-center rounded-md border border-lineStrong/65 bg-ink-soft/75 text-white transition-[background,border-color,box-shadow] hover:border-evidence/45 hover:bg-surfaceElevated/85 hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.05)]"
+          className="inline-flex size-10 shrink-0 items-center justify-center rounded-md border border-white/35 bg-white/5 text-white shadow-[0_0_16px_rgba(255,255,255,0.1),inset_0_1px_0_rgba(255,255,255,0.1)] ring-1 ring-white/10 transition-[background,border-color,box-shadow,transform] hover:-translate-y-0.5 hover:border-white/55 hover:bg-white/10 hover:shadow-[0_0_22px_rgba(255,255,255,0.16),inset_0_1px_0_rgba(255,255,255,0.14)] focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75 focus-visible:ring-offset-2 focus-visible:ring-offset-ink active:translate-y-0"
           href={project.githubUrl}
           rel="noreferrer"
           target="_blank"
@@ -341,14 +341,14 @@ export function FeaturedProjects({ projects = defaultProjects, showHeader = true
       {showHeader ? (
         <Reveal>
           <SectionHeader
-            description="Evidence-backed case studies covering vulnerability management, secure configuration, remediation automation, and threat hunting."
+            description="Case studies covering vulnerability management, secure configuration, remediation automation, and threat hunting."
             eyebrow="Featured Projects"
             level="h2"
             title="Cybersecurity work organized for hiring review"
           />
         </Reveal>
       ) : null}
-      <div className={showHeader ? "mt-8 grid min-w-0 auto-rows-fr items-stretch gap-5 md:grid-cols-2 lg:gap-6" : "grid min-w-0 auto-rows-fr items-stretch gap-5 md:grid-cols-2 lg:gap-6"}>
+      <div className={showHeader ? "mt-8 grid min-w-0 items-stretch gap-5 md:auto-rows-fr md:grid-cols-2 lg:gap-6" : "grid min-w-0 items-stretch gap-5 md:auto-rows-fr md:grid-cols-2 lg:gap-6"}>
         {projects.map((project) => {
           const ProjectIcon = projectIcons[project.slug] ?? ShieldCheck;
 
@@ -375,8 +375,8 @@ export function FeaturedProjects({ projects = defaultProjects, showHeader = true
                     <ProjectIcon aria-hidden="true" className="size-3.5" />
                     {project.role}
                   </p>
-                  <ProjectTitle className="panel-title mt-3 min-h-[3.25rem]">{project.title}</ProjectTitle>
-                  <p className="supporting-copy mt-3 min-h-[10.5rem] md:min-h-28">{project.summary}</p>
+                  <ProjectTitle className="panel-title mt-3 md:min-h-[3.25rem]">{project.title}</ProjectTitle>
+                  <p className="supporting-copy mt-3 md:min-h-28">{project.summary}</p>
                   <CaseStudySnapshot project={project} />
                   <ToolingPanel tools={project.tools} />
                   <ProjectActions project={project} />

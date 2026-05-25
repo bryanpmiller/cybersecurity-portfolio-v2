@@ -1,0 +1,145 @@
+{
+  "before": {
+    "cards": [
+      {
+        "actionTopGap": 55,
+        "cardHeight": 1124,
+        "eyebrowHeight": 32,
+        "index": 0,
+        "previewHeight": 192,
+        "snapshotHeight": 317,
+        "snapshotRows": [
+          92,
+          92,
+          92
+        ],
+        "summaryHeight": 168,
+        "titleHeight": 52,
+        "titleText": "Vulnerability Management Program Implementation",
+        "toolsHeight": 142
+      },
+      {
+        "actionTopGap": 55,
+        "cardHeight": 1124,
+        "eyebrowHeight": 32,
+        "index": 1,
+        "previewHeight": 192,
+        "snapshotHeight": 317,
+        "snapshotRows": [
+          92,
+          92,
+          92
+        ],
+        "summaryHeight": 168,
+        "titleHeight": 52,
+        "titleText": "DISA STIG Remediation Project",
+        "toolsHeight": 142
+      },
+      {
+        "actionTopGap": 55,
+        "cardHeight": 1124,
+        "eyebrowHeight": 32,
+        "index": 2,
+        "previewHeight": 192,
+        "snapshotHeight": 317,
+        "snapshotRows": [
+          92,
+          92,
+          92
+        ],
+        "summaryHeight": 168,
+        "titleHeight": 52,
+        "titleText": "Password Spray Threat Hunt: RDP Compromise Investigation",
+        "toolsHeight": 142
+      },
+      {
+        "actionTopGap": 24,
+        "cardHeight": 1124,
+        "eyebrowHeight": 32,
+        "index": 3,
+        "previewHeight": 192,
+        "snapshotHeight": 317,
+        "snapshotRows": [
+          92,
+          92,
+          92
+        ],
+        "summaryHeight": 168,
+        "titleHeight": 52,
+        "titleText": "The Buyer / Akira Ransomware Threat Hunt",
+        "toolsHeight": 173
+      }
+    ],
+    "innerWidth": 390
+  },
+  "after": {
+    "cards": [
+      {
+        "actionTopGap": 24,
+        "cardHeight": 1011,
+        "index": 0,
+        "previewHeight": 192,
+        "snapshotHeight": 269,
+        "snapshotRows": [
+          76,
+          76,
+          76
+        ],
+        "summaryHeight": 140,
+        "titleHeight": 47,
+        "titleText": "Vulnerability Management Program Implementation",
+        "toolsHeight": 142
+      },
+      {
+        "actionTopGap": 24,
+        "cardHeight": 959,
+        "index": 1,
+        "previewHeight": 192,
+        "snapshotHeight": 269,
+        "snapshotRows": [
+          76,
+          76,
+          76
+        ],
+        "summaryHeight": 112,
+        "titleHeight": 24,
+        "titleText": "DISA STIG Remediation Project",
+        "toolsHeight": 142
+      },
+      {
+        "actionTopGap": 24,
+        "cardHeight": 1039,
+        "index": 2,
+        "previewHeight": 192,
+        "snapshotHeight": 269,
+        "snapshotRows": [
+          76,
+          76,
+          76
+        ],
+        "summaryHeight": 168,
+        "titleHeight": 47,
+        "titleText": "Password Spray Threat Hunt: RDP Compromise Investigation",
+        "toolsHeight": 142
+      },
+      {
+        "actionTopGap": 24,
+        "cardHeight": 1070,
+        "index": 3,
+        "previewHeight": 192,
+        "snapshotHeight": 269,
+        "snapshotRows": [
+          76,
+          76,
+          76
+        ],
+        "summaryHeight": 168,
+        "titleHeight": 47,
+        "titleText": "The Buyer / Akira Ransomware Threat Hunt",
+        "toolsHeight": 173
+      }
+    ],
+    "innerWidth": 390,
+    "overflowX": -15
+  }
+}

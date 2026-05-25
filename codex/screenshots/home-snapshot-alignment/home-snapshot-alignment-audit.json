@@ -1,0 +1,88 @@
+[
+  {
+    "name": "desktop",
+    "width": 1440,
+    "height": 1000,
+    "cards": [
+      {
+        "bottom": 1904,
+        "height": 158,
+        "title": "Education",
+        "top": 1746
+      },
+      {
+        "bottom": 1904,
+        "height": 158,
+        "title": "Certificates",
+        "top": 1746
+      },
+      {
+        "bottom": 2098,
+        "height": 182,
+        "title": "Experience",
+        "top": 1916
+      },
+      {
+        "bottom": 2098,
+        "height": 182,
+        "title": "Security Impact Metrics",
+        "top": 1916
+      }
+    ],
+    "overflowX": -15,
+    "rowBottoms": {
+      "bottomRow": [
+        2098,
+        2098
+      ],
+      "topRow": [
+        1904,
+        1904
+      ]
+    },
+    "consoleIssues": []
+  },
+  {
+    "name": "mobile",
+    "width": 390,
+    "height": 1000,
+    "cards": [
+      {
+        "bottom": 3378,
+        "height": 182,
+        "title": "Education",
+        "top": 3196
+      },
+      {
+        "bottom": 3524,
+        "height": 134,
+        "title": "Certificates",
+        "top": 3390
+      },
+      {
+        "bottom": 3718,
+        "height": 182,
+        "title": "Experience",
+        "top": 3536
+      },
+      {
+        "bottom": 3912,
+        "height": 182,
+        "title": "Security Impact Metrics",
+        "top": 3730
+      }
+    ],
+    "overflowX": -15,
+    "rowBottoms": {
+      "bottomRow": [
+        3718,
+        3912
+      ],
+      "topRow": [
+        3378,
+        3524
+      ]
+    },
+    "consoleIssues": []
+  }
+]

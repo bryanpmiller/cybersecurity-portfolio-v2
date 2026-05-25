@@ -62,20 +62,6 @@ export default function ResumePage() {
         </Reveal>
       ) : null}
 
-      <Reveal delay={0.12}>
-        <Card as="section" className="mt-8 sm:mt-10">
-          <h2 className="panel-title">Profile</h2>
-          <div className="mt-5 grid gap-5 md:grid-cols-2">
-            {profileHighlights.map((highlight) => (
-              <div className="min-w-0 rounded-md border border-line bg-ink-soft/70 p-4" key={highlight.title}>
-                <h3 className={snapshotTitleClassName}>{highlight.title}</h3>
-                <p className="compact-copy mt-2 whitespace-pre-line">{highlight.body}</p>
-              </div>
-            ))}
-          </div>
-        </Card>
-      </Reveal>
-
       <Reveal delay={0.18}>
         <Card as="section" className="mt-8">
           <h2 className="panel-title">Skills Snapshot</h2>
@@ -88,8 +74,24 @@ export default function ResumePage() {
                     {getSkillsForGroup(group).length} skills
                   </span>
                 </div>
-                <p className="technical-block mt-3">{group.primarySkills.join(", ")}</p>
+                <p className="technical-block mt-3 font-semibold text-evidence">
+                  {group.primarySkills.join(", ")}
+                </p>
                 <p className="compact-copy mt-2">{group.supportingSkills.join(", ")}</p>
+              </div>
+            ))}
+          </div>
+        </Card>
+      </Reveal>
+
+      <Reveal delay={0.12}>
+        <Card as="section" className="mt-8 sm:mt-10">
+          <h2 className="panel-title">Qualifications</h2>
+          <div className="mt-5 grid gap-5 md:grid-cols-2">
+            {profileHighlights.map((highlight) => (
+              <div className="min-w-0 rounded-md border border-line bg-ink-soft/70 p-4" key={highlight.title}>
+                <h3 className={snapshotTitleClassName}>{highlight.title}</h3>
+                <p className="compact-copy mt-2 whitespace-pre-line">{highlight.body}</p>
               </div>
             ))}
           </div>

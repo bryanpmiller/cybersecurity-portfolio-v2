@@ -230,11 +230,11 @@ Improvement: After production build validation, Codex should check generated fil
 
 ## Current Phase
 
-Current phase: Phase 12 — Accessibility and Readability Pass
+Current phase: Phase 15 — Final Recruiter Review
 
 Current next task:
 
-- [ ] Phase 12.1 — Check semantic headings
+- [ ] Phase 15.3 — Check if resume/GitHub/contact are obvious
 
 ---
 
@@ -416,13 +416,13 @@ Before editing code, summarize:
 
 ## Phase 12 — Accessibility and Readability Pass
 
-- [ ] 12.1 Check semantic headings.
-- [ ] 12.2 Check contrast.
-- [ ] 12.3 Check focus states.
-- [ ] 12.4 Check link/button labels.
-- [ ] 12.5 Improve readability.
-- [ ] 12.6 Run relevant checks.
-- [ ] 12.7 Update tracking files.
+- [x] 12.1 Check semantic headings.
+- [x] 12.2 Check contrast.
+- [x] 12.3 Check focus states.
+- [x] 12.4 Check link/button labels.
+- [x] 12.5 Improve readability.
+- [x] 12.6 Run relevant checks.
+- [x] 12.7 Update tracking files.
 
 ---
 
@@ -430,27 +430,27 @@ Before editing code, summarize:
 
 Focus on making existing text easier to scan visually. Do not rewrite the wording without approval.
 
-- [ ] 13.1 Remove generic AI-sounding phrases.
-- [ ] 13.2 Make copy direct, human, and specific.
-- [ ] 13.3 Strengthen project descriptions.
-- [ ] 13.4 Run relevant checks.
-- [ ] 13.5 Update tracking files.
+- [x] 13.1 Remove generic AI-sounding phrases.
+- [x] 13.2 Make copy direct, human, and specific.
+- [x] 13.3 Strengthen project descriptions.
+- [x] 13.4 Run relevant checks.
+- [x] 13.5 Update tracking files.
 
 ---
 
 ## Phase 14 — Performance and Build Pass
 
-- [ ] 14.1 Run lint/build/test commands as available.
-- [ ] 14.2 Fix redesign-related errors.
-- [ ] 14.3 Review obvious performance issues.
-- [ ] 14.4 Update tracking files.
+- [x] 14.1 Run lint/build/test commands as available.
+- [x] 14.2 Fix redesign-related errors.
+- [x] 14.3 Review obvious performance issues.
+- [x] 14.4 Update tracking files.
 
 ---
 
 ## Phase 15 — Final Recruiter Review
 
-- [ ] 15.1 Check if a recruiter can understand the portfolio in 5 seconds.
-- [ ] 15.2 Check if strongest projects are easy to find.
+- [x] 15.1 Check if a recruiter can understand the portfolio in 5 seconds.
+- [x] 15.2 Check if strongest projects are easy to find.
 - [ ] 15.3 Check if resume/GitHub/contact are obvious.
 - [ ] 15.4 Check cybersecurity credibility.
 - [ ] 15.5 Update tracking files.

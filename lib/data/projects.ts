@@ -42,7 +42,7 @@ export const projects: Project[] = [
     role: "Vulnerability Management Analyst",
     tools: ["Tenable", "Azure Cloud Infrastructure", "Azure Virtual Machines", "PowerShell", "Windows Server"],
     summary:
-      "A simulated end-to-end vulnerability management program covering policy creation, stakeholder buy-in, authenticated scanning, prioritization, remediation, and verification.",
+      "Lab vulnerability management program with policy creation, stakeholder buy-in, authenticated scanning, prioritization, remediation, and verification.",
     githubUrl: "https://github.com/bryanpmiller/vulnerability-management-program",
     supportingLinks: [
       {
@@ -124,7 +124,7 @@ export const projects: Project[] = [
     role: "Security Analyst / Technical Compliance Analyst",
     tools: ["PowerShell", "DISA STIG", "Windows 11", "Windows Registry", "auditpol", "gpupdate"],
     summary:
-      "PowerShell Remediation Scripts and Screenshot-based validation evidence for selected Windows 11 DISA STIG findings in a lab environment.",
+      "PowerShell remediation scripts with screenshot validation for selected Windows 11 DISA STIG findings in a lab environment.",
     githubUrl: "https://github.com/bryanpmiller/DISA-STIG-Remediation",
     supportingLinks: [
       {
@@ -201,7 +201,7 @@ export const projects: Project[] = [
     role: "SecOps Analyst / SOC Analyst / Threat Detection Analyst",
     tools: ["Microsoft Defender for Endpoint", "Sentinel-style KQL", "MITRE ATT&CK", "Windows telemetry"],
     summary:
-      "A Microsoft Defender and Sentinel-style threat hunt reconstructing a cyber-range Windows VM compromise from password-spray-driven RDP access through execution, persistence, evasion, C2, and attempted exfiltration.",
+      "Microsoft Defender and Sentinel-style threat hunt that reconstructs a cyber-range Windows VM compromise from password-spray RDP access through execution, persistence, evasion, C2, and attempted exfiltration.",
     githubUrl: "https://github.com/bryanpmiller/password-spray-threat-hunt",
     supportingLinks: [
       {
@@ -280,7 +280,7 @@ export const projects: Project[] = [
     role: "Threat Hunter / SecOps Analyst",
     tools: ["MDE Advanced Hunting", "Microsoft Sentinel", "SIEM", "KQL", "Microsoft Defender for Endpoint", "MITRE ATT&CK"],
     summary:
-      "A cyber-range Akira ransomware investigation reconstructing remote access, staging, lateral movement, defense evasion, data staging, and impact artifacts using Microsoft Defender telemetry.",
+      "Cyber-range Akira ransomware hunt using Microsoft Defender telemetry to reconstruct remote access, staging, lateral movement, defense evasion, data staging, and impact artifacts.",
     githubUrl: "https://github.com/bryanpmiller/the-buyer-threathunt",
     supportingLinks: [
       {
