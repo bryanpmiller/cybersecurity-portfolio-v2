@@ -27,6 +27,17 @@ Current focus:
 - The redesign roadmap is complete and the site is ready for deployment.
 - Deployed URL is `https://bryanpmiller.com`; post-deployment smoke testing has passed.
 
+
+### Round 3 Premium Creative Systems Pass
+
+- Round 2 / Phase 0-16 is complete and remains the implementation baseline.
+- Round 3 is a premium creative systems pass, not a full rebuild.
+- Round 3 should move the site from a polished cybersecurity portfolio toward a premium cybersecurity proof-of-work brand experience.
+- New guidance files live in `codex/architects/`.
+- Codex should read only the architect files relevant to the current task, not every architect file by default.
+- `codex/CODEX_START_HERE.md` is deprecated for default startup and should not be read during normal sessions unless Bryan explicitly asks to review legacy workflow notes.
+- Round 3 priorities: executive readability, art direction, typography/spacing hierarchy, editorial flow, restrained motion, case-study experience, duplicate-proof reduction, and token-efficient task scoping.
+- Existing supported claims, metrics, project facts, and substantive copy remain protected by the content preservation rules.
 ### Phase 15.1 Recruiter First-Read Review
 
 - Phase 15.1 Browser validation found the Home first viewport communicates the essentials within a 5-second recruiter read.
@@ -403,6 +414,11 @@ Initial implementation priority:
 
 ## Approved Decisions
 
+
+- Round 3 adds targeted architect guidance in `codex/architects/`; Codex should read only the architect files relevant to the current task.
+- `codex/CODEX_START_HERE.md` is deprecated for default startup; `AGENTS.md`, `codex/TASKS.md`, `codex/PROJECT_MEMORY.md`, and `codex/WORKLOG.md` are the active startup files.
+- Round 3 should use audit-first, implementation-second workflows and avoid broad redesign prompts.
+- Round 3 should prefer improving or replacing existing proof surfaces before adding new visual cards or dashboards.
 - Phase 0 must inspect all primary pages, not only the homepage: Home, About, Resume, Projects, Skills, and Contact.
 - Browser screenshots should be saved under `codex/screenshots/` in task-specific folders.
 - Preserve existing page copy during design work unless Bryan explicitly approves wording changes.
@@ -737,4 +753,4 @@ Track questions that need Bryan's input.
 
 ## Current Next Step
 
-Post-deployment smoke testing is complete. Future work can move to small content/portfolio updates or maintenance.
+Begin Round 3.1: audit the deployed site against the new architect guidance and recommend 3-5 targeted premium polish improvements before editing code.

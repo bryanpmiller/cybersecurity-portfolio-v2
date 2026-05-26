@@ -26,15 +26,32 @@ The other workflow files live inside `codex/` so they do not clutter your projec
 
 ---
 
+## Current Workflow Note
+
+`AGENTS.md` is the active startup source of truth.
+
+`codex/CODEX_START_HERE.md` is deprecated for default startup. It can remain in the repository as historical reference, but Codex should not read it during normal sessions unless Bryan explicitly asks to review legacy workflow notes.
+
+Round 3 adds a targeted architect guidance layer in:
+
+```text
+codex/architects/
+```
+
+Do not read every architect file by default. Read only the architect file(s) relevant to the current task.
+
+---
+
 ## File Roles
 
 ```text
 AGENTS.md = Always-on repo instructions for Codex
-codex/CODEX_START_HERE.md = Manual starting point / first file to tag or reference
+codex/CODEX_START_HERE.md = Deprecated historical starter; not part of default startup
 codex/TASKS.md = Master redesign roadmap and checklist
 codex/PROJECT_MEMORY.md = Design decisions, context, constraints, architecture notes
 codex/WORKLOG.md = Chronological progress log
 codex/README.md = Human setup guide for this workflow kit
+codex/architects/ = Round 3 targeted architect guidance files
 ```
 
 The key rule:
@@ -89,16 +106,38 @@ Usually leave this mostly alone. Only edit it if you want Codex to always follow
 
 ---
 
+## Round 3 Architect Layer
+
+Round 3 is a premium creative systems pass layered on top of the completed Phase 0-16 redesign workflow.
+
+The architect files are:
+
+```text
+codex/architects/
+|-- 00_CREATIVE_BRIEF.md
+|-- 01_EXECUTIVE_EXPERIENCE_ARCHITECT.md
+|-- 02_VISUAL_SYSTEM_ARCHITECT.md
+|-- 03_MOTION_SYSTEM_ARCHITECT.md
+|-- 04_EDITORIAL_STRUCTURE_ARCHITECT.md
+|-- 05_CASE_STUDY_ARCHITECT.md
+|-- 06_TOKEN_EFFICIENCY_ARCHITECT.md
+`-- 07_REVIEW_AND_POLISH_ARCHITECT.md
+```
+
+Use these files only when relevant to the task. This keeps Codex sessions focused and reduces token usage.
+
+---
+
 ## Starter Prompt for Codex
 
 ```text
-Read AGENTS.md, codex/CODEX_START_HERE.md, codex/TASKS.md, codex/PROJECT_MEMORY.md, and codex/WORKLOG.md.
+Read AGENTS.md, codex/TASKS.md, codex/PROJECT_MEMORY.md, and codex/WORKLOG.md.
 
 Use AGENTS.md as the repo-level rules. Use codex/TASKS.md as the master roadmap. Use codex/PROJECT_MEMORY.md as the long-term project memory. Use codex/WORKLOG.md as the chronological progress tracker.
 
 Before editing code, identify the current phase and next incomplete task. Then summarize the current project state and explain your plan.
 
-Start with Phase 0 unless codex/TASKS.md shows that Phase 0 is already complete.
+Identify the current phase and next incomplete task in codex/TASKS.md. For Round 3 tasks, read only the relevant architect file(s) from codex/architects/ before editing.
 ```
 
 ---

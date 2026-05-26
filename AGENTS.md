@@ -16,10 +16,9 @@ Supporting workflow files live in the `codex/` folder.
 
 Before editing code, Codex must read:
 
-1. `codex/CODEX_START_HERE.md`
-2. `codex/TASKS.md`
-3. `codex/PROJECT_MEMORY.md`
-4. `codex/WORKLOG.md`
+1. `codex/TASKS.md`
+2. `codex/PROJECT_MEMORY.md`
+3. `codex/WORKLOG.md`
 
 Then Codex must:
 
@@ -28,9 +27,11 @@ Then Codex must:
 3. Explain the planned change briefly.
 4. Make targeted, reviewable edits.
 
----
+`codex/CODEX_START_HERE.md` is deprecated for default startup. It may remain in the repository as historical reference, but Codex should not read it during normal startup unless Bryan explicitly asks to review legacy workflow notes.
 
-## Portfolio Goal
+For Round 3 premium creative systems work, Codex should also read only the relevant architect file(s) from `codex/architects/`. Do not read every architect file by default.
+
+---## Portfolio Goal
 
 The site should clearly showcase:
 
@@ -74,6 +75,43 @@ Use reference websites for inspiration only.
 
 ---
 
+## Round 3 Architect Guidance
+
+Round 3 adds a creative systems layer to the existing workkit.
+
+The architect files live in:
+
+```text
+codex/architects/
+```
+
+Use them as targeted guidance, not as required reading for every task.
+
+### Architect Routing
+
+Read only the architect file(s) relevant to the task:
+
+- Overall premium direction: `codex/architects/00_CREATIVE_BRIEF.md`
+- Executive / CEO-facing polish: `codex/architects/01_EXECUTIVE_EXPERIENCE_ARCHITECT.md`
+- Typography, spacing, cards, colors, and visual consistency: `codex/architects/02_VISUAL_SYSTEM_ARCHITECT.md`
+- Motion, hover states, scroll reveals, and interaction polish: `codex/architects/03_MOTION_SYSTEM_ARCHITECT.md`
+- Homepage/page flow, storytelling, and section order: `codex/architects/04_EDITORIAL_STRUCTURE_ARCHITECT.md`
+- Project cards, case studies, evidence blocks, and GitHub proof paths: `codex/architects/05_CASE_STUDY_ARCHITECT.md`
+- Token usage, task scope, patch safety, and validation scaling: `codex/architects/06_TOKEN_EFFICIENCY_ARCHITECT.md`
+- Final premium polish and review gates: `codex/architects/07_REVIEW_AND_POLISH_ARCHITECT.md`
+
+### Round 3 Operating Rules
+
+- Do not perform broad redesigns without first identifying the exact section, component, and page scope.
+- Prefer audit-first, implementation-second workflows.
+- Prefer improving existing proof surfaces before adding new ones.
+- Preserve supported claims, metrics, project facts, and existing substantive copy unless Bryan explicitly approves changes.
+- Use patch-style edits and small reviewable diffs.
+- Scale validation to risk, following the existing validation rules.
+- If architect guidance conflicts with `AGENTS.md`, `AGENTS.md` wins.
+- If architect guidance conflicts with supported resume/site facts, supported facts win.
+
+---
 ## Content Rules
 
 Do not invent:

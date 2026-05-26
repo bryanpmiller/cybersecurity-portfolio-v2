@@ -230,11 +230,11 @@ Improvement: After production build validation, Codex should check generated fil
 
 ## Current Phase
 
-Current phase: Phase 16 — Deployment Readiness
+Current phase: Round 3.1 - Current Site Premium Audit
 
 Current next task:
 
-- [x] Deploy the current local build to `https://bryanpmiller.com` and run a post-deployment smoke test
+- [ ] Round 3.1 - Audit the deployed site against the new architect guidance and recommend 3-5 targeted premium polish improvements.
 
 ---
 
@@ -485,3 +485,111 @@ The redesign is complete when:
 - [x] Site is original and not a clone of the reference.
 - [x] `codex/PROJECT_MEMORY.md` is updated with final design decisions.
 - [x] `codex/WORKLOG.md` includes a final completion entry.
+
+---
+
+## Round 3 - Premium Creative Systems Pass
+
+### Purpose
+
+Round 3 is not a rebuild. It is a premium creative systems pass on top of the completed Phase 0-16 redesign.
+
+The goal is to move the site from:
+
+```text
+polished cybersecurity portfolio
+```
+
+toward:
+
+```text
+premium cybersecurity proof-of-work brand experience
+```
+
+Round 3 should improve art direction, executive readability, visual hierarchy, editorial flow, motion polish, case-study experience, and token efficiency.
+
+### Architect Guidance
+
+Round 3 uses targeted architect files in:
+
+```text
+codex/architects/
+```
+
+Do not read every architect file by default. Read only the architect file(s) relevant to the task.
+
+- `00_CREATIVE_BRIEF.md` - overall premium direction
+- `01_EXECUTIVE_EXPERIENCE_ARCHITECT.md` - executive/CEO-facing polish
+- `02_VISUAL_SYSTEM_ARCHITECT.md` - typography, spacing, cards, surfaces, colors
+- `03_MOTION_SYSTEM_ARCHITECT.md` - motion, hover states, interaction polish
+- `04_EDITORIAL_STRUCTURE_ARCHITECT.md` - page flow, storytelling, section rhythm
+- `05_CASE_STUDY_ARCHITECT.md` - project cards, case studies, evidence paths
+- `06_TOKEN_EFFICIENCY_ARCHITECT.md` - scope control, token reduction, patch safety
+- `07_REVIEW_AND_POLISH_ARCHITECT.md` - final review gates
+
+### Round 3.0 - Workkit Setup
+
+- [x] 3.0.1 Add `codex/architects/` folder.
+- [x] 3.0.2 Add creative brief architect guidance.
+- [x] 3.0.3 Add executive experience architect guidance.
+- [x] 3.0.4 Add visual system architect guidance.
+- [x] 3.0.5 Add motion system architect guidance.
+- [x] 3.0.6 Add editorial structure architect guidance.
+- [x] 3.0.7 Add case study architect guidance.
+- [x] 3.0.8 Add token efficiency architect guidance.
+- [x] 3.0.9 Add review and polish architect guidance.
+- [x] 3.0.10 Update startup workflow so `CODEX_START_HERE.md` is no longer required by default.
+
+### Round 3.1 - Current Site Premium Audit
+
+- [ ] 3.1.1 Review Home, About, Resume, Projects, Skills, Contact, and project detail pages against relevant architect guidance.
+- [ ] 3.1.2 Identify what still feels basic, generic, dense, or AI-generated.
+- [ ] 3.1.3 Identify duplicate proof surfaces, repeated metrics, or repeated tool/workflow summaries.
+- [ ] 3.1.4 Identify typography, spacing, section rhythm, and motion issues that most affect premium feel.
+- [ ] 3.1.5 Recommend only 3-5 targeted improvements before editing code.
+- [ ] 3.1.6 Update tracking files.
+
+### Round 3.2 - Hero and First-Viewport Product Experience
+
+- [ ] 3.2.1 Audit the hero against the creative brief and executive experience architect.
+- [ ] 3.2.2 Improve hierarchy, rhythm, and proof placement only if needed.
+- [ ] 3.2.3 Preserve core claims and CTA labels unless Bryan approves copy changes.
+- [ ] 3.2.4 Validate desktop and mobile first viewport.
+- [ ] 3.2.5 Update tracking files.
+
+### Round 3.3 - Editorial Homepage Flow
+
+- [ ] 3.3.1 Review section order and emotional pacing.
+- [ ] 3.3.2 Reduce card density or repeated proof where needed.
+- [ ] 3.3.3 Improve transitions between proof, metrics, projects, capabilities, and CTA sections.
+- [ ] 3.3.4 Validate affected desktop and mobile views.
+- [ ] 3.3.5 Update tracking files.
+
+### Round 3.4 - Case Study Experience Pass
+
+- [ ] 3.4.1 Review project cards and detail pages against the case study architect.
+- [ ] 3.4.2 Improve problem/outcome/evidence hierarchy where needed.
+- [ ] 3.4.3 Improve visual evidence surfaces only when they clarify real proof.
+- [ ] 3.4.4 Reduce repeated metrics, tools, or workflow summaries.
+- [ ] 3.4.5 Validate affected desktop and mobile views.
+- [ ] 3.4.6 Update tracking files.
+
+### Round 3.5 - Motion and Interaction Polish
+
+- [ ] 3.5.1 Audit existing reveal, hover, dashboard, and interaction motion.
+- [ ] 3.5.2 Tune motion for consistency and restraint.
+- [ ] 3.5.3 Confirm `prefers-reduced-motion` behavior remains intact.
+- [ ] 3.5.4 Validate affected desktop and mobile views.
+- [ ] 3.5.5 Update tracking files.
+
+### Round 3.6 - Executive Polish Review
+
+- [ ] 3.6.1 Run recruiter scan.
+- [ ] 3.6.2 Run executive scan.
+- [ ] 3.6.3 Run technical credibility scan.
+- [ ] 3.6.4 Run visual polish scan.
+- [ ] 3.6.5 Run motion restraint scan.
+- [ ] 3.6.6 Run duplicate proof scan.
+- [ ] 3.6.7 Run mobile premium scan.
+- [ ] 3.6.8 Run final relevant checks.
+- [ ] 3.6.9 Update tracking files.
