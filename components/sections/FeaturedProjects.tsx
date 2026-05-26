@@ -277,7 +277,7 @@ function CaseStudySnapshot({ project }: { project: Project }) {
   return (
     <div aria-label={`${project.title} case study snapshot`} className="mt-5 grid gap-2 rounded-md border border-line bg-ink-soft/60 p-3">
       {snapshotRows.map((row) => (
-        <div className="grid min-w-0 content-start gap-1 rounded border border-line/80 bg-surface/45 px-3 py-2 md:min-h-[5.75rem]" key={row.label}>
+        <div className="grid min-w-0 content-start gap-1 rounded border border-line/80 bg-surface/45 px-3 py-2 md:min-h-[5.75rem] transition-colors duration-200 group-hover/project:border-lineStrong/80 group-hover/project:bg-ink-soft/70" key={row.label}>
           <p className="font-mono text-[0.6rem] font-semibold uppercase tracking-[0.1em] text-evidence">{row.label}</p>
           <p className="line-clamp-2 text-sm leading-5 text-slate-300">{row.value}</p>
         </div>
@@ -296,7 +296,7 @@ function ToolingPanel({ tools }: { tools: string[] }) {
       <div className="mt-3 flex min-w-0 content-start flex-wrap gap-1.5 md:min-h-[4.875rem]">
         {tools.map((tool) => (
           <span
-            className="max-w-full rounded border border-lineStrong/60 bg-surface/70 px-2.5 py-1.5 text-xs font-semibold leading-none text-slate-200 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)] transition-[background,border-color,color] duration-200 group-hover/project:border-evidence/30 group-hover/project:bg-surfaceElevated/80 group-hover/project:text-white"
+            className="max-w-full rounded border border-lineStrong/60 bg-surface/70 px-2.5 py-1.5 text-xs font-semibold leading-none text-slate-200 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]"
             key={tool}
           >
             {tool}
@@ -311,7 +311,7 @@ function ProjectActions({ project }: { project: Project }) {
   return (
     <div className="mt-auto grid min-w-0 grid-cols-[minmax(0,1fr)_auto] items-center gap-2 pt-6">
       <Link
-        className="text-link focus-ring group/link inline-flex min-h-10 min-w-0 items-center justify-center gap-2 rounded-md border border-evidence/35 bg-evidence/10 px-3 py-2 text-center font-mono text-xs font-semibold uppercase tracking-[0.12em] text-evidence transition-[background,border-color,color,box-shadow] hover:border-evidence/70 hover:bg-evidence/15 hover:text-white hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.06)]"
+        className="text-link focus-ring group/link inline-flex min-h-10 min-w-0 items-center justify-center gap-2 rounded-md border border-evidence/35 bg-evidence/10 px-3 py-2 text-center font-mono text-xs font-semibold uppercase tracking-[0.12em] text-evidence shadow-[0_0_16px_rgba(255,255,255,0.1),inset_0_1px_0_rgba(255,255,255,0.1)] transition-[background,border-color,color,box-shadow,transform] hover:-translate-y-0.5 hover:border-evidence/70 hover:bg-evidence/15 hover:text-white hover:shadow-[0_0_22px_rgba(255,255,255,0.16),inset_0_1px_0_rgba(255,255,255,0.14)] active:translate-y-0"
         href={`/projects/${project.slug}`}
       >
         <span className="truncate">View case study</span>
@@ -367,7 +367,7 @@ export function FeaturedProjects({ projects = defaultProjects, showHeader = true
               whileInView={shouldReduceMotion ? undefined : { opacity: 1, y: 0 }}
             >
               <Card as="article" className="group/project flex h-full min-w-0 flex-col overflow-hidden focus-within:border-evidence/45 focus-within:shadow-[0_28px_86px_rgba(0,0,0,0.48)]" variant="project">
-                <div className="mb-5 h-48 min-w-0 overflow-hidden rounded-md border border-line bg-[linear-gradient(180deg,rgba(24,33,49,0.92)_0%,rgba(13,17,26,0.96)_100%)] p-3 transition-[border-color,box-shadow] duration-200 group-hover/project:border-evidence/35 group-hover/project:shadow-[inset_0_1px_0_rgba(255,255,255,0.05)] sm:p-4">
+                <div className="mb-5 h-48 min-w-0 overflow-hidden rounded-md border border-line bg-ink-soft/55 p-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.03)] transition-colors duration-200 group-hover/project:border-lineStrong/80 group-hover/project:bg-ink-soft/70 sm:p-4">
                   <ProjectPreview shouldReduceMotion={shouldReduceMotion} slug={project.slug} />
                 </div>
                 <div className="flex flex-1 flex-col">
