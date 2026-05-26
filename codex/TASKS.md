@@ -29,7 +29,7 @@ Use these only for design inspiration, not direct copying.
 ### My Site Inputs
 
 - Local development URL: `http://localhost:3000`
-- Current deployed URL: `NOT_DEPLOYED_YET`
+- Current deployed URL: `https://bryanpmiller.com`
 - Repository URL: `(https://github.com/bryanpmiller/cybersecurity-portfolio-v2)`
 
 ### What I Like About the Reference
@@ -230,11 +230,11 @@ Improvement: After production build validation, Codex should check generated fil
 
 ## Current Phase
 
-Current phase: Phase 15 — Final Recruiter Review
+Current phase: Phase 16 — Deployment Readiness
 
 Current next task:
 
-- [ ] Phase 16.1 — Check public links
+- [ ] Deploy the current local build to `https://bryanpmiller.com` and run a post-deployment smoke test
 
 ---
 
@@ -459,11 +459,11 @@ Focus on making existing text easier to scan visually. Do not rewrite the wordin
 
 ## Phase 16 — Deployment Readiness
 
-- [ ] 16.1 Check public links.
-- [ ] 16.2 Check resume link/download.
-- [ ] 16.3 Check metadata and SEO basics.
-- [ ] 16.4 Run final production build.
-- [ ] 16.5 Update tracking files.
+- [x] 16.1 Check public links.
+- [x] 16.2 Check resume link/download.
+- [x] 16.3 Check metadata and SEO basics.
+- [x] 16.4 Run final production build.
+- [x] 16.5 Update tracking files.
 
 ---
 
@@ -471,17 +471,17 @@ Focus on making existing text easier to scan visually. Do not rewrite the wordin
 
 The redesign is complete when:
 
-- [ ] Site visually feels polished and professional.
-- [ ] Site clearly communicates cybersecurity focus.
-- [ ] Hero section is strong.
-- [ ] Project cards feel like case studies.
-- [ ] Skills are grouped and scannable.
-- [ ] Resume/GitHub/contact are easy to access.
-- [ ] Mobile layout is clean.
-- [ ] Accessibility basics are handled.
-- [ ] Build passes.
-- [ ] Links work.
-- [ ] Content sounds human and specific.
-- [ ] Site is original and not a clone of the reference.
-- [ ] `codex/PROJECT_MEMORY.md` is updated with final design decisions.
-- [ ] `codex/WORKLOG.md` includes a final completion entry.
+- [x] Site visually feels polished and professional.
+- [x] Site clearly communicates cybersecurity focus.
+- [x] Hero section is strong.
+- [x] Project cards feel like case studies.
+- [x] Skills are grouped and scannable.
+- [x] Resume/GitHub/contact are easy to access.
+- [x] Mobile layout is clean.
+- [x] Accessibility basics are handled.
+- [x] Build passes.
+- [x] Links work.
+- [x] Content sounds human and specific.
+- [x] Site is original and not a clone of the reference.
+- [x] `codex/PROJECT_MEMORY.md` is updated with final design decisions.
+- [x] `codex/WORKLOG.md` includes a final completion entry.

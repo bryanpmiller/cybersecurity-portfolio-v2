@@ -104,6 +104,85 @@ Add new entries below this line.
 
 ---
 
+## 2026-05-26 — Phase 16 Follow-Up: Deployed URL Configuration
+
+- Area: configured `https://bryanpmiller.com` as the deployed site URL for metadata, canonical URLs, Open Graph URLs, `robots.txt`, and `sitemap.xml`.
+- Files: `lib/metadata.ts`, `app/robots.ts`, `app/sitemap.ts`, page metadata files, `codex/TASKS.md`, `codex/PROJECT_MEMORY.md`, `codex/WORKLOG.md`, `codex/screenshots/phase-16-deployment-readiness/`.
+- Checks: `npm.cmd run lint` pass; `npm.cmd run build` pass; local browser validation pass for canonical URLs, `robots.txt`, and `sitemap.xml`.
+- Notes: live `https://bryanpmiller.com` resolves to the portfolio, but it has not yet been updated with the local canonical/robots/sitemap changes. Publish the current build and rerun live smoke testing.
+
+---
+
+## 2026-05-26 — Phase 16.1-16.5: Deployment Readiness
+
+### Summary
+
+Completed the deployment-readiness pass by checking links, resume PDF behavior, metadata/SEO basics, and the final production build.
+
+### Completed
+
+- Extracted rendered links and metadata from all primary pages and project detail routes.
+- Checked local routes for Home, About, Resume, Projects, Skills, Contact, all four project detail pages, and the resume PDF.
+- Confirmed `/resume/Bryan_Miller_Resume.pdf` returns `200 OK`, `application/pdf`, and a nonzero content length.
+- Browser-checked public GitHub links for Bryan's profile, project repositories, supporting repositories, and linked evidence folders.
+- Confirmed the LinkedIn URL resolves to LinkedIn's auth wall rather than a not-found page.
+- Added shared metadata helpers for route-specific Open Graph, Twitter, robots, and keyword metadata.
+- Updated all page metadata exports to use the shared metadata helper while preserving existing title and description wording.
+- Ran lint, production build, and the optional test command.
+- Restored `next-env.d.ts` after production build generated route-reference churn.
+- Marked Phase 16 and the final definition of done complete in `codex/TASKS.md`.
+
+### Files Changed
+
+- `app/layout.tsx`
+- `app/about/page.tsx`
+- `app/resume/page.tsx`
+- `app/projects/page.tsx`
+- `app/skills/page.tsx`
+- `app/contact/page.tsx`
+- `app/projects/vulnerability-management-program/page.tsx`
+- `app/projects/disa-stig-remediation/page.tsx`
+- `app/projects/password-spray-threat-hunt/page.tsx`
+- `app/projects/akira-ransomware-threat-hunt/page.tsx`
+- `lib/metadata.ts`
+- `codex/TASKS.md`
+- `codex/PROJECT_MEMORY.md`
+- `codex/WORKLOG.md`
+- `codex/screenshots/phase-16-deployment-readiness/`
+
+### Issues Found
+
+- Node-side external `fetch` was blocked for public sites in this environment, so public URLs were validated through the in-app browser instead.
+- LinkedIn redirects unauthenticated visitors to its auth wall; the link resolves, but full profile visibility depends on LinkedIn access/session behavior.
+- No deployed URL is available yet, so canonical URLs, sitemap generation, and live post-deployment smoke testing remain pending until deployment.
+- `next-env.d.ts` changed during production build validation and was restored as unrelated generated churn.
+
+### Decisions Made
+
+- Keep canonical URLs and sitemap generation out of this pass until the deployed URL is known.
+- Centralize metadata generation in `lib/metadata.ts` so page-specific social metadata stays consistent without duplicating SEO boilerplate.
+- Treat the redesign roadmap as complete and deployment-ready, with a separate post-deployment smoke test recommended once the live URL exists.
+
+### Checks Run
+
+```bash
+npm.cmd run lint
+npm.cmd run build
+npm.cmd run test --if-present
+```
+
+Result:
+- `npm.cmd run lint`: Pass
+- `npm.cmd run build`: Pass
+- `npm.cmd run test --if-present`: Pass, no test script configured
+- Browser validation: Pass for rendered metadata, local route/PDF checks, and public link reachability checks as noted above.
+
+### Next Steps
+
+- Deploy the site and provide the deployed URL for a live smoke test.
+
+---
+
 ## 2026-05-26 — Phase 15.4-15.5: Cybersecurity Credibility Review
 
 ### Summary

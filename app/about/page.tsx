@@ -1,15 +1,12 @@
-import type { Metadata } from "next";
 import { PageContainer } from "@/components/layout/PageContainer";
 import { Card } from "@/components/ui/Card";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { profile, targetRoles } from "@/lib/data/profile";
 import { resumeHighlights } from "@/lib/data/resume";
+import { createPageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: "About",
-  description: "Professional summary for Bryan Miller's cybersecurity portfolio."
-};
+export const metadata = createPageMetadata("About", "Professional summary for Bryan Miller's cybersecurity portfolio.", "/about");
 
 export default function AboutPage() {
   return (

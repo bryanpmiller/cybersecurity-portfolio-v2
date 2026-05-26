@@ -1,13 +1,14 @@
-import type { Metadata } from "next";
 import { PageContainer } from "@/components/layout/PageContainer";
 import { SkillsOverview } from "@/components/sections/SkillsOverview";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionHeader } from "@/components/ui/SectionHeader";
+import { createPageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: "Skills",
-  description: "Cybersecurity skills grouped by vulnerability management, SecOps, compliance, automation, and network security."
-};
+export const metadata = createPageMetadata(
+  "Skills",
+  "Cybersecurity skills grouped by vulnerability management, SecOps, compliance, automation, and network security.",
+  "/skills"
+);
 
 export default function SkillsPage() {
   return (

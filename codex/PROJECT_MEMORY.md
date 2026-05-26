@@ -18,14 +18,14 @@ Use this file for durable project context, not temporary notes.
 
 ## Current Project Status
 
-Status: Phase 15 complete
+Status: Phase 16 complete
 
-Current phase: Phase 16 — Deployment Readiness
+Current phase: Deployment-ready
 
 Current focus:
 
-- Continue with Phase 16 by checking public links, resume download behavior, metadata, SEO basics, and final production build readiness.
-- Keep the portfolio polished, recruiter-friendly, proof-of-work focused, and deployment-ready.
+- The redesign roadmap is complete and the site is ready for deployment.
+- Deployed URL is `https://bryanpmiller.com`; after publishing the current local changes, run a post-deployment smoke test against the live URL.
 
 ### Phase 15.1 Recruiter First-Read Review
 
@@ -63,6 +63,21 @@ Current focus:
 - `ProjectDetail` narrative content now uses scoped long-token wrapping so hashes, paths, artifacts, and other technical strings can break safely on narrow screens without changing the copy.
 - Post-fix validation confirmed all four project detail pages keep mobile page width constrained while preserving `Problem`, `Approach`, `Evidence`, and `Outcome` sections.
 - `npm.cmd run lint` and `npm.cmd run build` both passed after the fix. `next-env.d.ts` changed during build validation and was restored as generated churn.
+
+### Phase 16 Deployment Readiness
+
+- Phase 16 completed the final deployment-readiness pass.
+- Rendered link extraction found internal routes, the resume PDF, GitHub profile/repository/folder links, and LinkedIn links.
+- Local route checks passed for Home, About, Resume, Projects, Skills, Contact, all four project detail routes, and `/resume/Bryan_Miller_Resume.pdf`.
+- The resume PDF returned `200 OK`, `application/pdf`, and a nonzero content length during local validation.
+- Public GitHub links loaded successfully in the in-app browser: Bryan's profile, all project repositories, supporting repositories, and linked evidence folders.
+- LinkedIn redirected to its normal public auth wall instead of a not-found page; this confirms the URL resolves, but full profile visibility depends on LinkedIn session/access behavior.
+- Metadata and SEO basics were centralized in `lib/metadata.ts`; pages now render page-specific title, description, Open Graph title/description, Twitter title/description, keywords, and robots metadata.
+- The deployed site URL is `https://bryanpmiller.com`.
+- Canonical URLs, Open Graph URLs, generated `robots.txt`, and generated `sitemap.xml` are configured for `https://bryanpmiller.com`.
+- Live smoke check on `https://bryanpmiller.com` confirmed the domain resolves to the portfolio, but the live site did not yet include the newly added canonical/robots/sitemap changes. Publish the current local build, then rerun live smoke testing.
+- Final validation passed: `npm.cmd run lint`, `npm.cmd run build`, and `npm.cmd run test --if-present`. The optional test command ran successfully with no configured test script.
+- `next-env.d.ts` changed during production build validation and was restored as generated churn.
 
 ---
 
@@ -711,4 +726,4 @@ Track questions that need Bryan's input.
 
 ## Current Next Step
 
-Continue with `codex/TASKS.md` Phase 16.1: check public links.
+Deploy the current local build to `https://bryanpmiller.com` and run a post-deployment smoke test.

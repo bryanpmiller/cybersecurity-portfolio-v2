@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { Download } from "lucide-react";
 import { PageContainer } from "@/components/layout/PageContainer";
 import { Button } from "@/components/ui/Button";
@@ -8,11 +7,9 @@ import { SectionHeader } from "@/components/ui/SectionHeader";
 import { profile } from "@/lib/data/profile";
 import { impactMetrics, resumeHighlights } from "@/lib/data/resume";
 import { getSkillsForGroup, skillGroups } from "@/lib/data/skills";
+import { createPageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: "Resume",
-  description: "Web resume and PDF download for Bryan Miller's full resume."
-};
+export const metadata = createPageMetadata("Resume", "Web resume and PDF download for Bryan Miller's full resume.", "/resume");
 
 export default function ResumePage() {
   const experienceHighlight = resumeHighlights.find((highlight) => highlight.title === "Experience");

@@ -1,16 +1,16 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import { PageContainer } from "@/components/layout/PageContainer";
 import { FeaturedProjects } from "@/components/sections/FeaturedProjects";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { projects } from "@/lib/data/projects";
+import { createPageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: "Projects",
-  description:
-    "Evidence-based cybersecurity case studies covering vulnerability management, DISA STIG remediation, password spray investigation, and ransomware threat hunting."
-};
+export const metadata = createPageMetadata(
+  "Projects",
+  "Evidence-based cybersecurity case studies covering vulnerability management, DISA STIG remediation, password spray investigation, and ransomware threat hunting.",
+  "/projects"
+);
 
 export default function ProjectsPage() {
   return (

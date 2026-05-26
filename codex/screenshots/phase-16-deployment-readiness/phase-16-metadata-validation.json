@@ -1,0 +1,112 @@
+[
+  {
+    "route": "/",
+    "description": "Cybersecurity analyst working across vulnerability management, secure configuration, remediation automation, and threat hunting.",
+    "keywords": "Bryan Miller,cybersecurity portfolio,vulnerability management,cybersecurity analyst,security analyst,SecOps,threat hunting,Microsoft Defender for Endpoint,Microsoft Sentinel,KQL,Tenable,PowerShell remediation,DISA STIG,Azure network security",
+    "ogDescription": "Cybersecurity analyst working across vulnerability management, secure configuration, remediation automation, and threat hunting.",
+    "ogTitle": "Bryan Miller | Cybersecurity Portfolio",
+    "robots": "index, follow",
+    "title": "Bryan Miller | Cybersecurity Portfolio",
+    "twitterDescription": "Cybersecurity analyst working across vulnerability management, secure configuration, remediation automation, and threat hunting.",
+    "twitterTitle": "Bryan Miller | Cybersecurity Portfolio"
+  },
+  {
+    "route": "/about",
+    "description": "Professional summary for Bryan Miller's cybersecurity portfolio.",
+    "keywords": "Bryan Miller,cybersecurity portfolio,vulnerability management,cybersecurity analyst,security analyst,SecOps,threat hunting,Microsoft Defender for Endpoint,Microsoft Sentinel,KQL,Tenable,PowerShell remediation,DISA STIG,Azure network security",
+    "ogDescription": "Professional summary for Bryan Miller's cybersecurity portfolio.",
+    "ogTitle": "About | Bryan Miller",
+    "robots": "index, follow",
+    "title": "About | Bryan Miller",
+    "twitterDescription": "Professional summary for Bryan Miller's cybersecurity portfolio.",
+    "twitterTitle": "About | Bryan Miller"
+  },
+  {
+    "route": "/resume",
+    "description": "Web resume and PDF download for Bryan Miller's full resume.",
+    "keywords": "Bryan Miller,cybersecurity portfolio,vulnerability management,cybersecurity analyst,security analyst,SecOps,threat hunting,Microsoft Defender for Endpoint,Microsoft Sentinel,KQL,Tenable,PowerShell remediation,DISA STIG,Azure network security",
+    "ogDescription": "Web resume and PDF download for Bryan Miller's full resume.",
+    "ogTitle": "Resume | Bryan Miller",
+    "robots": "index, follow",
+    "title": "Resume | Bryan Miller",
+    "twitterDescription": "Web resume and PDF download for Bryan Miller's full resume.",
+    "twitterTitle": "Resume | Bryan Miller"
+  },
+  {
+    "route": "/projects",
+    "description": "Evidence-based cybersecurity case studies covering vulnerability management, DISA STIG remediation, password spray investigation, and ransomware threat hunting.",
+    "keywords": "Bryan Miller,cybersecurity portfolio,vulnerability management,cybersecurity analyst,security analyst,SecOps,threat hunting,Microsoft Defender for Endpoint,Microsoft Sentinel,KQL,Tenable,PowerShell remediation,DISA STIG,Azure network security",
+    "ogDescription": "Evidence-based cybersecurity case studies covering vulnerability management, DISA STIG remediation, password spray investigation, and ransomware threat hunting.",
+    "ogTitle": "Projects | Bryan Miller",
+    "robots": "index, follow",
+    "title": "Projects | Bryan Miller",
+    "twitterDescription": "Evidence-based cybersecurity case studies covering vulnerability management, DISA STIG remediation, password spray investigation, and ransomware threat hunting.",
+    "twitterTitle": "Projects | Bryan Miller"
+  },
+  {
+    "route": "/skills",
+    "description": "Cybersecurity skills grouped by vulnerability management, SecOps, compliance, automation, and network security.",
+    "keywords": "Bryan Miller,cybersecurity portfolio,vulnerability management,cybersecurity analyst,security analyst,SecOps,threat hunting,Microsoft Defender for Endpoint,Microsoft Sentinel,KQL,Tenable,PowerShell remediation,DISA STIG,Azure network security",
+    "ogDescription": "Cybersecurity skills grouped by vulnerability management, SecOps, compliance, automation, and network security.",
+    "ogTitle": "Skills | Bryan Miller",
+    "robots": "index, follow",
+    "title": "Skills | Bryan Miller",
+    "twitterDescription": "Cybersecurity skills grouped by vulnerability management, SecOps, compliance, automation, and network security.",
+    "twitterTitle": "Skills | Bryan Miller"
+  },
+  {
+    "route": "/contact",
+    "description": "Contact links for Bryan Miller, including LinkedIn, GitHub, and resume access.",
+    "keywords": "Bryan Miller,cybersecurity portfolio,vulnerability management,cybersecurity analyst,security analyst,SecOps,threat hunting,Microsoft Defender for Endpoint,Microsoft Sentinel,KQL,Tenable,PowerShell remediation,DISA STIG,Azure network security",
+    "ogDescription": "Contact links for Bryan Miller, including LinkedIn, GitHub, and resume access.",
+    "ogTitle": "Contact | Bryan Miller",
+    "robots": "index, follow",
+    "title": "Contact | Bryan Miller",
+    "twitterDescription": "Contact links for Bryan Miller, including LinkedIn, GitHub, and resume access.",
+    "twitterTitle": "Contact | Bryan Miller"
+  },
+  {
+    "route": "/projects/vulnerability-management-program",
+    "description": "Lab vulnerability management program with policy creation, stakeholder buy-in, authenticated scanning, prioritization, remediation, and verification.",
+    "keywords": "Bryan Miller,cybersecurity portfolio,vulnerability management,cybersecurity analyst,security analyst,SecOps,threat hunting,Microsoft Defender for Endpoint,Microsoft Sentinel,KQL,Tenable,PowerShell remediation,DISA STIG,Azure network security",
+    "ogDescription": "Lab vulnerability management program with policy creation, stakeholder buy-in, authenticated scanning, prioritization, remediation, and verification.",
+    "ogTitle": "Vulnerability Management Program Implementation | Bryan Miller",
+    "robots": "index, follow",
+    "title": "Vulnerability Management Program Implementation | Bryan Miller",
+    "twitterDescription": "Lab vulnerability management program with policy creation, stakeholder buy-in, authenticated scanning, prioritization, remediation, and verification.",
+    "twitterTitle": "Vulnerability Management Program Implementation | Bryan Miller"
+  },
+  {
+    "route": "/projects/disa-stig-remediation",
+    "description": "PowerShell remediation scripts with screenshot validation for selected Windows 11 DISA STIG findings in a lab environment.",
+    "keywords": "Bryan Miller,cybersecurity portfolio,vulnerability management,cybersecurity analyst,security analyst,SecOps,threat hunting,Microsoft Defender for Endpoint,Microsoft Sentinel,KQL,Tenable,PowerShell remediation,DISA STIG,Azure network security",
+    "ogDescription": "PowerShell remediation scripts with screenshot validation for selected Windows 11 DISA STIG findings in a lab environment.",
+    "ogTitle": "DISA STIG Remediation Project | Bryan Miller",
+    "robots": "index, follow",
+    "title": "DISA STIG Remediation Project | Bryan Miller",
+    "twitterDescription": "PowerShell remediation scripts with screenshot validation for selected Windows 11 DISA STIG findings in a lab environment.",
+    "twitterTitle": "DISA STIG Remediation Project | Bryan Miller"
+  },
+  {
+    "route": "/projects/password-spray-threat-hunt",
+    "description": "Microsoft Defender and Sentinel-style threat hunt that reconstructs a cyber-range Windows VM compromise from password-spray RDP access through execution, persistence, evasion, C2, and attempted exfiltration.",
+    "keywords": "Bryan Miller,cybersecurity portfolio,vulnerability management,cybersecurity analyst,security analyst,SecOps,threat hunting,Microsoft Defender for Endpoint,Microsoft Sentinel,KQL,Tenable,PowerShell remediation,DISA STIG,Azure network security",
+    "ogDescription": "Microsoft Defender and Sentinel-style threat hunt that reconstructs a cyber-range Windows VM compromise from password-spray RDP access through execution, persistence, evasion, C2, and attempted exfiltration.",
+    "ogTitle": "Password Spray Threat Hunt: RDP Compromise Investigation | Bryan Miller",
+    "robots": "index, follow",
+    "title": "Password Spray Threat Hunt: RDP Compromise Investigation | Bryan Miller",
+    "twitterDescription": "Microsoft Defender and Sentinel-style threat hunt that reconstructs a cyber-range Windows VM compromise from password-spray RDP access through execution, persistence, evasion, C2, and attempted exfiltration.",
+    "twitterTitle": "Password Spray Threat Hunt: RDP Compromise Investigation | Bryan Miller"
+  },
+  {
+    "route": "/projects/akira-ransomware-threat-hunt",
+    "description": "Cyber-range Akira ransomware hunt using Microsoft Defender telemetry to reconstruct remote access, staging, lateral movement, defense evasion, data staging, and impact artifacts.",
+    "keywords": "Bryan Miller,cybersecurity portfolio,vulnerability management,cybersecurity analyst,security analyst,SecOps,threat hunting,Microsoft Defender for Endpoint,Microsoft Sentinel,KQL,Tenable,PowerShell remediation,DISA STIG,Azure network security",
+    "ogDescription": "Cyber-range Akira ransomware hunt using Microsoft Defender telemetry to reconstruct remote access, staging, lateral movement, defense evasion, data staging, and impact artifacts.",
+    "ogTitle": "The Buyer / Akira Ransomware Threat Hunt | Bryan Miller",
+    "robots": "index, follow",
+    "title": "The Buyer / Akira Ransomware Threat Hunt | Bryan Miller",
+    "twitterDescription": "Cyber-range Akira ransomware hunt using Microsoft Defender telemetry to reconstruct remote access, staging, lateral movement, defense evasion, data staging, and impact artifacts.",
+    "twitterTitle": "The Buyer / Akira Ransomware Threat Hunt | Bryan Miller"
+  }
+]

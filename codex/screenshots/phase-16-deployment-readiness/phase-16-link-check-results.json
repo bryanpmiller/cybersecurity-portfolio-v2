@@ -1,0 +1,165 @@
+{
+  "localResults": [
+    {
+      "url": "http://127.0.0.1:3000/",
+      "ok": true,
+      "status": 200,
+      "statusText": "OK",
+      "finalUrl": "http://127.0.0.1:3000/",
+      "contentType": "text/html; charset=utf-8",
+      "contentLength": null
+    },
+    {
+      "url": "http://127.0.0.1:3000/about",
+      "ok": true,
+      "status": 200,
+      "statusText": "OK",
+      "finalUrl": "http://127.0.0.1:3000/about",
+      "contentType": "text/html; charset=utf-8",
+      "contentLength": null
+    },
+    {
+      "url": "http://127.0.0.1:3000/resume",
+      "ok": true,
+      "status": 200,
+      "statusText": "OK",
+      "finalUrl": "http://127.0.0.1:3000/resume",
+      "contentType": "text/html; charset=utf-8",
+      "contentLength": null
+    },
+    {
+      "url": "http://127.0.0.1:3000/projects",
+      "ok": true,
+      "status": 200,
+      "statusText": "OK",
+      "finalUrl": "http://127.0.0.1:3000/projects",
+      "contentType": "text/html; charset=utf-8",
+      "contentLength": null
+    },
+    {
+      "url": "http://127.0.0.1:3000/skills",
+      "ok": true,
+      "status": 200,
+      "statusText": "OK",
+      "finalUrl": "http://127.0.0.1:3000/skills",
+      "contentType": "text/html; charset=utf-8",
+      "contentLength": null
+    },
+    {
+      "url": "http://127.0.0.1:3000/contact",
+      "ok": true,
+      "status": 200,
+      "statusText": "OK",
+      "finalUrl": "http://127.0.0.1:3000/contact",
+      "contentType": "text/html; charset=utf-8",
+      "contentLength": null
+    },
+    {
+      "url": "http://127.0.0.1:3000/resume/Bryan_Miller_Resume.pdf",
+      "ok": true,
+      "status": 200,
+      "statusText": "OK",
+      "finalUrl": "http://127.0.0.1:3000/resume/Bryan_Miller_Resume.pdf",
+      "contentType": "application/pdf",
+      "contentLength": "69086"
+    },
+    {
+      "url": "http://127.0.0.1:3000/projects/vulnerability-management-program",
+      "ok": true,
+      "status": 200,
+      "statusText": "OK",
+      "finalUrl": "http://127.0.0.1:3000/projects/vulnerability-management-program",
+      "contentType": "text/html; charset=utf-8",
+      "contentLength": null
+    },
+    {
+      "url": "http://127.0.0.1:3000/projects/disa-stig-remediation",
+      "ok": true,
+      "status": 200,
+      "statusText": "OK",
+      "finalUrl": "http://127.0.0.1:3000/projects/disa-stig-remediation",
+      "contentType": "text/html; charset=utf-8",
+      "contentLength": null
+    },
+    {
+      "url": "http://127.0.0.1:3000/projects/password-spray-threat-hunt",
+      "ok": true,
+      "status": 200,
+      "statusText": "OK",
+      "finalUrl": "http://127.0.0.1:3000/projects/password-spray-threat-hunt",
+      "contentType": "text/html; charset=utf-8",
+      "contentLength": null
+    },
+    {
+      "url": "http://127.0.0.1:3000/projects/akira-ransomware-threat-hunt",
+      "ok": true,
+      "status": 200,
+      "statusText": "OK",
+      "finalUrl": "http://127.0.0.1:3000/projects/akira-ransomware-threat-hunt",
+      "contentType": "text/html; charset=utf-8",
+      "contentLength": null
+    }
+  ],
+  "publicResults": [
+    {
+      "url": "https://github.com/bryanpmiller",
+      "ok": false,
+      "error": "fetch failed"
+    },
+    {
+      "url": "https://linkedin.com/in/bryan-p-miller",
+      "ok": false,
+      "error": "fetch failed"
+    },
+    {
+      "url": "https://github.com/bryanpmiller/vulnerability-management-program",
+      "ok": false,
+      "error": "fetch failed"
+    },
+    {
+      "url": "https://github.com/bryanpmiller/programmatic-vulnerability-remediations",
+      "ok": false,
+      "error": "fetch failed"
+    },
+    {
+      "url": "https://github.com/bryanpmiller/scripts",
+      "ok": false,
+      "error": "fetch failed"
+    },
+    {
+      "url": "https://github.com/bryanpmiller/DISA-STIG-Remediation",
+      "ok": false,
+      "error": "fetch failed"
+    },
+    {
+      "url": "https://github.com/bryanpmiller/DISA-STIG-Remediation/tree/main/scripts",
+      "ok": false,
+      "error": "fetch failed"
+    },
+    {
+      "url": "https://github.com/bryanpmiller/DISA-STIG-Remediation/tree/main/assets",
+      "ok": false,
+      "error": "fetch failed"
+    },
+    {
+      "url": "https://github.com/bryanpmiller/password-spray-threat-hunt",
+      "ok": false,
+      "error": "fetch failed"
+    },
+    {
+      "url": "https://github.com/bryanpmiller/password-spray-threat-hunt/tree/main/screenshots",
+      "ok": false,
+      "error": "fetch failed"
+    },
+    {
+      "url": "https://github.com/bryanpmiller/the-buyer-threathunt",
+      "ok": false,
+      "error": "fetch failed"
+    },
+    {
+      "url": "https://github.com/bryanpmiller/the-buyer-threathunt/tree/main/screenshots",
+      "ok": false,
+      "error": "fetch failed"
+    }
+  ]
+}

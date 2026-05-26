@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { FileText } from "lucide-react";
 import { PageContainer } from "@/components/layout/PageContainer";
 import { Button } from "@/components/ui/Button";
@@ -8,11 +7,9 @@ import { LinkedInLogo } from "@/components/ui/LinkedInLogo";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { profile } from "@/lib/data/profile";
+import { createPageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: "Contact",
-  description: "Contact links for Bryan Miller, including LinkedIn, GitHub, and resume access."
-};
+export const metadata = createPageMetadata("Contact", "Contact links for Bryan Miller, including LinkedIn, GitHub, and resume access.", "/contact");
 
 export default function ContactPage() {
   return (
