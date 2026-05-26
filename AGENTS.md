@@ -29,7 +29,7 @@ Then Codex must:
 
 `codex/CODEX_START_HERE.md` is deprecated for default startup. It may remain in the repository as historical reference, but Codex should not read it during normal startup unless Bryan explicitly asks to review legacy workflow notes.
 
-For Round 3 premium creative systems work, Codex should also read only the relevant architect file(s) from `codex/architects/`. Do not read every architect file by default.
+For Round 3 tasks involving visual direction, motion inspiration, section pacing, or premium polish, Codex may also read `codex/references/ROUND3_REFERENCE_NOTES.md` when the active task calls for it. Do not read reference notes by default for unrelated maintenance tasks.
 
 ---
 
