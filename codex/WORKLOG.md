@@ -104,6 +104,31 @@ Add new entries below this line.
 
 ---
 
+## 2026-05-26 — Security Scan: Public Website
+
+- Area: ran a Codex Security repository-wide review plus passive live header checks for `https://bryanpmiller.com`.
+- Files: `codex/PROJECT_MEMORY.md`, `codex/WORKLOG.md`; scan artifacts written to `codex\codex-security-scans\cybersecurity-portfolio-v2\97fdf6c_20260525202354\artifacts\`, which is ignored by git.
+- Checks: `npm.cmd audit --omit=dev --json` pass with 0 vulnerabilities; `npm.cmd audit --json` pass with 0 vulnerabilities; `npm.cmd run lint` pass; `npm.cmd run build` pass; live HTTPS header check pass; HTTP-to-HTTPS redirect check pass; `pdfinfo public\resume\Bryan_Miller_Resume.pdf` pass with `JavaScript: no`.
+- Notes: no confirmed exploitable vulnerabilities found. Hardening opportunities remain for CSP, HSTS, hiding `X-Powered-By`, explicit `noopener noreferrer`, and future validation if static data becomes CMS-backed.
+
+## 2026-05-26 — Security Scan Artifact Storage
+
+- Area: moved the local `codex-security-scans` artifact folder from `C:\tmp` into `codex/` after Bryan updated the local ignore rule for the scan folder.
+- Files: `codex/PROJECT_MEMORY.md`, `codex/WORKLOG.md`, `codex/codex-security-scans/`.
+- Checks: verified the old `C:\tmp\codex-security-scans` path no longer exists and the repo-local artifact folder contains 8 files.
+- Notes: `audit-report.json` remains deleted per Bryan's cleanup; `codex/codex-security-scans/` is local-only.
+
+---
+
+## 2026-05-26 — Phase 16 Follow-Up: Live Smoke Test
+
+- Area: smoke-tested the deployed `https://bryanpmiller.com` site after publishing the Phase 16 updates.
+- Files: `codex/TASKS.md`, `codex/PROJECT_MEMORY.md`, `codex/WORKLOG.md`, `codex/screenshots/phase-16-deployment-readiness/`.
+- Checks: live HTTP checks pass for primary pages, project routes, `robots.txt`, `sitemap.xml`, and resume PDF; live Browser validation pass for titles, H1s, canonical URLs, Open Graph URLs, desktop/mobile overflow, 404 content, and console warnings/errors.
+- Notes: GitHub links return 200; LinkedIn blocks scripted HTTP requests with 999 but previously resolved in browser to LinkedIn's auth wall rather than a not-found page.
+
+---
+
 ## 2026-05-26 — Phase 16 Follow-Up: Deployed URL Configuration
 
 - Area: configured `https://bryanpmiller.com` as the deployed site URL for metadata, canonical URLs, Open Graph URLs, `robots.txt`, and `sitemap.xml`.

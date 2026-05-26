@@ -234,7 +234,7 @@ Current phase: Phase 16 — Deployment Readiness
 
 Current next task:
 
-- [ ] Deploy the current local build to `https://bryanpmiller.com` and run a post-deployment smoke test
+- [x] Deploy the current local build to `https://bryanpmiller.com` and run a post-deployment smoke test
 
 ---
 

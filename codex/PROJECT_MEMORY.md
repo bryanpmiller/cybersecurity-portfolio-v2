@@ -25,7 +25,7 @@ Current phase: Deployment-ready
 Current focus:
 
 - The redesign roadmap is complete and the site is ready for deployment.
-- Deployed URL is `https://bryanpmiller.com`; after publishing the current local changes, run a post-deployment smoke test against the live URL.
+- Deployed URL is `https://bryanpmiller.com`; post-deployment smoke testing has passed.
 
 ### Phase 15.1 Recruiter First-Read Review
 
@@ -75,9 +75,20 @@ Current focus:
 - Metadata and SEO basics were centralized in `lib/metadata.ts`; pages now render page-specific title, description, Open Graph title/description, Twitter title/description, keywords, and robots metadata.
 - The deployed site URL is `https://bryanpmiller.com`.
 - Canonical URLs, Open Graph URLs, generated `robots.txt`, and generated `sitemap.xml` are configured for `https://bryanpmiller.com`.
-- Live smoke check on `https://bryanpmiller.com` confirmed the domain resolves to the portfolio, but the live site did not yet include the newly added canonical/robots/sitemap changes. Publish the current local build, then rerun live smoke testing.
+- Live smoke testing on `https://bryanpmiller.com` passed after deployment: primary pages and project detail routes returned 200, rendered without 404 content, had route-specific canonical/Open Graph URLs, had no console warnings/errors, and showed no desktop/mobile horizontal overflow.
+- Live `robots.txt` and `sitemap.xml` return 200 and point to `https://bryanpmiller.com`.
+- Live resume PDF returns 200 as `application/pdf`.
 - Final validation passed: `npm.cmd run lint`, `npm.cmd run build`, and `npm.cmd run test --if-present`. The optional test command ran successfully with no configured test script.
 - `next-env.d.ts` changed during production build validation and was restored as generated churn.
+
+### Post-Deployment Security Scan
+
+- A repository-wide Codex Security scan plus passive live-site header checks found no confirmed exploitable vulnerabilities in the current public website implementation.
+- The site remains a static-first public Next.js portfolio with no API routes, auth, cookies, database, upload, form submission, or user-generated content.
+- `npm.cmd audit --omit=dev --json` and `npm.cmd audit --json` both reported zero known vulnerabilities for the checked-out lockfile.
+- Live HTTP redirects to HTTPS, and live HTTPS responses include the configured baseline headers: `X-Frame-Options`, `X-Content-Type-Options`, `Referrer-Policy`, and `Permissions-Policy`.
+- Hardening backlog: add a production Content Security Policy, add or confirm HSTS at the edge, remove `X-Powered-By: Next.js`, optionally change external link rel values to explicit `noopener noreferrer`, and add URL/slug/value validation if static data ever becomes CMS-backed.
+- Security scan artifacts are stored locally in the repo workspace at `codex\codex-security-scans\cybersecurity-portfolio-v2\97fdf6c_20260525202354\artifacts\`; Bryan updated the local gitignore rule so the scan folder stays local-only.
 
 ---
 
@@ -726,4 +737,4 @@ Track questions that need Bryan's input.
 
 ## Current Next Step
 
-Deploy the current local build to `https://bryanpmiller.com` and run a post-deployment smoke test.
+Post-deployment smoke testing is complete. Future work can move to small content/portfolio updates or maintenance.
