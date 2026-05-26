@@ -104,6 +104,13 @@ Add new entries below this line.
 
 ---
 
+## 2026-05-26 — Follow-Up Note: Update README.md
+
+- Area: note to revsit README.md in root.
+- Files: `README.md`.
+- Checks: not run; tracking note only.
+- Notes: This needs a complete update for Version 2.
+  
 ## 2026-05-26 — Follow-Up Note: Hero Proof Items
 
 - Area: note to revisit `components/sections/HeroSection.tsx` `proofItems`.
