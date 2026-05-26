@@ -234,7 +234,7 @@ Current phase: Phase 15 — Final Recruiter Review
 
 Current next task:
 
-- [ ] Phase 15.3 — Check if resume/GitHub/contact are obvious
+- [ ] Phase 16.1 — Check public links
 
 ---
 
@@ -451,9 +451,9 @@ Focus on making existing text easier to scan visually. Do not rewrite the wordin
 
 - [x] 15.1 Check if a recruiter can understand the portfolio in 5 seconds.
 - [x] 15.2 Check if strongest projects are easy to find.
-- [ ] 15.3 Check if resume/GitHub/contact are obvious.
-- [ ] 15.4 Check cybersecurity credibility.
-- [ ] 15.5 Update tracking files.
+- [x] 15.3 Check if resume/GitHub/contact are obvious.
+- [x] 15.4 Check cybersecurity credibility.
+- [x] 15.5 Update tracking files.
 
 ---
 

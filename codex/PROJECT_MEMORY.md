@@ -18,14 +18,14 @@ Use this file for durable project context, not temporary notes.
 
 ## Current Project Status
 
-Status: Phase 14 complete
+Status: Phase 15 complete
 
-Current phase: Phase 15 — Final Recruiter Review
+Current phase: Phase 16 — Deployment Readiness
 
 Current focus:
 
-- Continue with Phase 15 by checking resume/GitHub/contact access and cybersecurity credibility.
-- Keep the portfolio polished, recruiter-friendly, and proof-of-work focused.
+- Continue with Phase 16 by checking public links, resume download behavior, metadata, SEO basics, and final production build readiness.
+- Keep the portfolio polished, recruiter-friendly, proof-of-work focused, and deployment-ready.
 
 ### Phase 15.1 Recruiter First-Read Review
 
@@ -42,6 +42,27 @@ Current focus:
 - The strongest proof projects, `Vulnerability Management Program Implementation` and `DISA STIG Remediation Project`, are ordered first in both the quick index and the card grid.
 - Desktop shows the first two project cards in the first viewport, including vulnerability reduction metrics and STIG remediation visual proof. Mobile shows the full case-study index above the first project card, which is an acceptable recruiter path on a narrow viewport.
 - No UI changes were needed for 15.2 because project access and ordering already support fast scanning.
+
+### Phase 15.3 Resume/GitHub/Contact Review
+
+- Phase 15.3 Browser validation found resume, GitHub, and contact paths are obvious enough for recruiter scanning.
+- The sticky navigation exposes `Resume` and `Contact` on desktop and mobile across the audited Home, Resume, and Contact pages.
+- The Home first viewport exposes `Download Resume` and `View GitHub` on desktop and mobile.
+- The Resume page exposes a prominent `Full Resume` PDF action above the fold on desktop and mobile.
+- The Contact page exposes LinkedIn, GitHub, and Resume contact cards on desktop; mobile shows LinkedIn and GitHub actions in the first viewport, with Resume available through the visible nav and lower Resume card.
+- Footer links repeat `GitHub`, `LinkedIn`, and `Resume PDF` on desktop where the Contact page is short enough for the footer to appear in the first viewport.
+- No UI changes were needed for 15.3 because the primary action paths are already visible and supported without adding duplicate surfaces.
+
+### Phase 15.4 Cybersecurity Credibility Review
+
+- Phase 15.4 Browser validation found the portfolio has strong cybersecurity credibility signals across Home, About, Resume, Projects, Skills, Contact, and all four project detail pages.
+- Home surfaces Bryan's role, Security+, cybersecurity focus areas, supported vulnerability reduction metrics, risk/security dashboards, and project evidence without fake-hacker styling.
+- Projects and project detail pages expose concrete case-study structure: roles, tools, GitHub evidence, problem, approach, evidence, outcome, lessons, and technical evidence chains.
+- Skills and Resume pages reinforce role-relevant credibility through vulnerability management, SecOps/detection engineering, secure configuration/hardening, automation, cloud/network security, governance/compliance, Security+, Norwich University cybersecurity education, and supported impact metrics.
+- The credibility pass found one mobile layout issue on the Akira ransomware project detail page: a SHA256 hash in the Evidence list caused horizontal overflow at 390px.
+- `ProjectDetail` narrative content now uses scoped long-token wrapping so hashes, paths, artifacts, and other technical strings can break safely on narrow screens without changing the copy.
+- Post-fix validation confirmed all four project detail pages keep mobile page width constrained while preserving `Problem`, `Approach`, `Evidence`, and `Outcome` sections.
+- `npm.cmd run lint` and `npm.cmd run build` both passed after the fix. `next-env.d.ts` changed during build validation and was restored as generated churn.
 
 ---
 
@@ -690,4 +711,4 @@ Track questions that need Bryan's input.
 
 ## Current Next Step
 
-Continue with `codex/TASKS.md` Phase 15.3: check if resume/GitHub/contact are obvious.
+Continue with `codex/TASKS.md` Phase 16.1: check public links.

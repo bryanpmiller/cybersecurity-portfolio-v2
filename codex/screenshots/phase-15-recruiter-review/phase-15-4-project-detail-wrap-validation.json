@@ -1,0 +1,118 @@
+[
+  {
+    "name": "project-vulnerability-management",
+    "url": "/projects/vulnerability-management-program",
+    "screenshot": "E:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-15-recruiter-review\\credibility-project-vulnerability-management-mobile-after-wrap.png",
+    "consoleCount": 0,
+    "clientWidth": 375,
+    "hasApproach": true,
+    "hasEvidence": true,
+    "hasOutcome": true,
+    "hasProblem": true,
+    "overflowers": [
+      {
+        "className": "focus-ring sr-only fixed left-4 top-4 z-50 rounded-md border border-evidence/45 bg-ink px-4 py-3 text-sm font-semibold text-white shadow-soft focus:not-sr-only",
+        "clientWidth": 32,
+        "left": 15,
+        "right": 48,
+        "scrollWidth": 134,
+        "tag": "a",
+        "text": "Skip to content",
+        "width": 33
+      }
+    ],
+    "scrollWidth": 375
+  },
+  {
+    "name": "project-disa-stig",
+    "url": "/projects/disa-stig-remediation",
+    "screenshot": "E:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-15-recruiter-review\\credibility-project-disa-stig-mobile-after-wrap.png",
+    "consoleCount": 0,
+    "clientWidth": 375,
+    "hasApproach": true,
+    "hasEvidence": true,
+    "hasOutcome": true,
+    "hasProblem": true,
+    "overflowers": [
+      {
+        "className": "focus-ring sr-only fixed left-4 top-4 z-50 rounded-md border border-evidence/45 bg-ink px-4 py-3 text-sm font-semibold text-white shadow-soft focus:not-sr-only",
+        "clientWidth": 32,
+        "left": 15,
+        "right": 48,
+        "scrollWidth": 134,
+        "tag": "a",
+        "text": "Skip to content",
+        "width": 33
+      }
+    ],
+    "scrollWidth": 375
+  },
+  {
+    "name": "project-password-spray",
+    "url": "/projects/password-spray-threat-hunt",
+    "screenshot": "E:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-15-recruiter-review\\credibility-project-password-spray-mobile-after-wrap.png",
+    "consoleCount": 0,
+    "clientWidth": 375,
+    "hasApproach": true,
+    "hasEvidence": true,
+    "hasOutcome": true,
+    "hasProblem": true,
+    "overflowers": [
+      {
+        "className": "focus-ring sr-only fixed left-4 top-4 z-50 rounded-md border border-evidence/45 bg-ink px-4 py-3 text-sm font-semibold text-white shadow-soft focus:not-sr-only",
+        "clientWidth": 32,
+        "left": 15,
+        "right": 48,
+        "scrollWidth": 134,
+        "tag": "a",
+        "text": "Skip to content",
+        "width": 33
+      },
+      {
+        "className": "relative overflow-hidden rounded-md border border-line bg-surface/90 p-4 pl-5 text-center shadow-[inset_0_1px_0_rgba(255,255,255,0.03)] before:absolute before:bottom-4 before:left-0 before:top-4 before:w-1 before:rounded-r-full before:bg-evidence",
+        "clientWidth": 259,
+        "left": 57,
+        "right": 317,
+        "scrollWidth": 276,
+        "tag": "div",
+        "text": "MicrosoftUpdateSyncPersistence Artifact",
+        "width": 260
+      },
+      {
+        "className": "section-title",
+        "clientWidth": 223,
+        "left": 78,
+        "right": 301,
+        "scrollWidth": 256,
+        "tag": "p",
+        "text": "MicrosoftUpdateSync",
+        "width": 223
+      }
+    ],
+    "scrollWidth": 375
+  },
+  {
+    "name": "project-akira",
+    "url": "/projects/akira-ransomware-threat-hunt",
+    "screenshot": "E:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-15-recruiter-review\\credibility-project-akira-mobile-after-wrap.png",
+    "consoleCount": 0,
+    "clientWidth": 375,
+    "hasApproach": true,
+    "hasEvidence": true,
+    "hasOutcome": true,
+    "hasProblem": true,
+    "overflowers": [
+      {
+        "className": "focus-ring sr-only fixed left-4 top-4 z-50 rounded-md border border-evidence/45 bg-ink px-4 py-3 text-sm font-semibold text-white shadow-soft focus:not-sr-only",
+        "clientWidth": 32,
+        "left": 15,
+        "right": 48,
+        "scrollWidth": 134,
+        "tag": "a",
+        "text": "Skip to content",
+        "width": 33
+      }
+    ],
+    "scrollWidth": 375
+  }
+]

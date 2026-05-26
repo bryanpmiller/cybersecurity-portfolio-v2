@@ -165,11 +165,11 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
           <Reveal delay={index * 0.05} key={section.heading} y={12}>
             <Card as="section" variant="evidence">
               <h2 className="panel-title">{section.heading}</h2>
-              {section.content ? <p className="body-copy mt-4">{section.content}</p> : null}
+              {section.content ? <p className="body-copy mt-4 break-words [overflow-wrap:anywhere]">{section.content}</p> : null}
               {section.items ? (
-                <ul className="body-copy mt-4 space-y-3">
+                <ul className="body-copy mt-4 space-y-3 break-words [overflow-wrap:anywhere]">
                   {section.items.map((item) => (
-                    <li className="border-l border-evidence/30 pl-4" key={item}>
+                    <li className="min-w-0 border-l border-evidence/30 pl-4" key={item}>
                       {item}
                     </li>
                   ))}

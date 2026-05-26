@@ -104,6 +104,104 @@ Add new entries below this line.
 
 ---
 
+## 2026-05-26 — Phase 15.4-15.5: Cybersecurity Credibility Review
+
+### Summary
+
+Audited whether the portfolio presents credible cybersecurity proof for recruiter review, then fixed a mobile overflow issue found in a project detail evidence list.
+
+### Completed
+
+- Reviewed Home, About, Resume, Projects, Skills, Contact, and all four project detail pages at 1440px desktop and 390px mobile widths.
+- Confirmed the site surfaces role-relevant cybersecurity proof: vulnerability management, Tenable, PowerShell remediation, DISA STIG hardening, MDE/Sentinel/KQL threat hunting, Azure NSG/firewall controls, Security+, GitHub evidence, and supported reduction metrics.
+- Confirmed project detail pages expose case-study credibility through role, tools, evidence chains, problem, approach, evidence, outcome, and lessons.
+- Found and fixed mobile horizontal overflow on the Akira ransomware project detail page caused by a long SHA256 hash in an Evidence list item.
+- Added scoped long-token wrapping to project detail narrative content without changing any project copy.
+- Revalidated all four project detail pages on mobile after the fix.
+- Captured credibility screenshots and audit JSON.
+- Marked Phase 15.4 and Phase 15.5 complete in `codex/TASKS.md`.
+
+### Files Changed
+
+- `components/sections/ProjectDetail.tsx`
+- `codex/TASKS.md`
+- `codex/PROJECT_MEMORY.md`
+- `codex/WORKLOG.md`
+- `codex/screenshots/phase-15-recruiter-review/`
+
+### Issues Found
+
+- Akira ransomware project detail mobile view overflowed horizontally at 390px because a SHA256 hash could not wrap inside the Evidence card.
+- `next-env.d.ts` changed during production build validation and was restored as unrelated generated churn.
+
+### Decisions Made
+
+- Keep the existing cybersecurity copy and claims intact.
+- Use scoped wrapping in project detail narrative sections so long hashes, paths, and technical artifacts do not break mobile layout.
+- Treat Phase 15 as complete because the final recruiter review and tracking update are both done.
+
+### Checks Run
+
+```bash
+npm.cmd run lint
+npm.cmd run build
+```
+
+Result:
+- `npm.cmd run lint`: Pass
+- `npm.cmd run build`: Pass
+- Browser validation: Pass on all audited credibility pages; post-fix mobile validation passed on all four project detail pages.
+
+### Next Steps
+
+- Continue with Phase 16.1: check public links.
+
+---
+
+## 2026-05-26 — Phase 15.3: Resume/GitHub/Contact Review
+
+### Summary
+
+Audited whether recruiters can quickly find Bryan's resume, GitHub proof, and contact paths.
+
+### Completed
+
+- Reviewed Home, Resume, and Contact at 1440px desktop and 390px mobile widths.
+- Confirmed sticky nav exposes `Resume` and `Contact` on desktop and mobile.
+- Confirmed the Home first viewport exposes `Download Resume` and `View GitHub`.
+- Confirmed the Resume page exposes a prominent `Full Resume` PDF action above the fold.
+- Confirmed the Contact page exposes LinkedIn, GitHub, and Resume cards, with GitHub visible in the mobile first viewport and Resume still available through nav plus the lower card.
+- Captured action-path screenshots and audit JSON.
+- Marked Phase 15.3 complete in `codex/TASKS.md`.
+
+### Files Changed
+
+- `codex/TASKS.md`
+- `codex/PROJECT_MEMORY.md`
+- `codex/WORKLOG.md`
+- `codex/screenshots/phase-15-recruiter-review/`
+
+### Issues Found
+
+- No action-path blocker found.
+- No horizontal overflow or Browser console warnings/errors were found during the 15.3 review.
+
+### Decisions Made
+
+- No UI changes are needed for Phase 15.3 because resume, GitHub, and contact paths are already visible without adding duplicate action surfaces.
+
+### Checks Run
+
+Result:
+- Browser validation: Pass on Home, Resume, and Contact desktop/mobile.
+- Lint/build not run; documentation and screenshot-only phase audit with no code changes.
+
+### Next Steps
+
+- Continue with Phase 15.4: check cybersecurity credibility.
+
+---
+
 ## 2026-05-25 — Phase 15.2: Project Discoverability Review
 
 ### Summary

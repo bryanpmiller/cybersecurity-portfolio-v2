@@ -1,0 +1,1862 @@
+[
+  {
+    "name": "home",
+    "url": "/",
+    "label": "desktop",
+    "width": 1440,
+    "height": 900,
+    "screenshot": "E:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-15-recruiter-review\\credibility-home-desktop.png",
+    "console": [],
+    "foundTerms": [
+      "Vulnerability Management",
+      "Tenable",
+      "PowerShell",
+      "DISA STIG",
+      "Microsoft Defender",
+      "Sentinel",
+      "KQL",
+      "Azure",
+      "NSG",
+      "MITRE ATT&CK",
+      "Security+",
+      "GitHub",
+      "Evidence",
+      "Remediation",
+      "100%",
+      "92%",
+      "88%"
+    ],
+    "hasApproach": false,
+    "hasEvidence": true,
+    "hasGithubEvidence": true,
+    "hasOutcome": false,
+    "hasProblem": false,
+    "hasTools": false,
+    "headings": [
+      "Bryan Miller",
+      "Security work snapshot",
+      "Risk Reduction and Security Operations experience",
+      "Vulnerability Reduction Metrics",
+      "Network Security Dashboard",
+      "Education",
+      "Certificates",
+      "Experience",
+      "Security Impact Metrics",
+      "Cybersecurity work organized for hiring review",
+      "Vulnerability Management Program Implementation",
+      "DISA STIG Remediation Project",
+      "Password Spray Threat Hunt: RDP Compromise Investigation",
+      "The Buyer / Akira Ransomware Threat Hunt"
+    ],
+    "projectCards": 4,
+    "title": "Bryan Miller | Cybersecurity Portfolio",
+    "viewport": {
+      "height": 900,
+      "scrollWidth": 1425,
+      "width": 1440
+    },
+    "visibleLinks": [
+      {
+        "href": "#main-content",
+        "inViewport": true,
+        "text": "Skip to content"
+      },
+      {
+        "href": "/",
+        "inViewport": true,
+        "text": "Bryan MillerVulnerability Management & Cybersecurity Analyst"
+      },
+      {
+        "href": "/",
+        "inViewport": true,
+        "text": "Home"
+      },
+      {
+        "href": "/about",
+        "inViewport": true,
+        "text": "About"
+      },
+      {
+        "href": "/resume",
+        "inViewport": true,
+        "text": "Resume"
+      },
+      {
+        "href": "/projects",
+        "inViewport": true,
+        "text": "Projects"
+      },
+      {
+        "href": "/skills",
+        "inViewport": true,
+        "text": "Skills"
+      },
+      {
+        "href": "/contact",
+        "inViewport": true,
+        "text": "Contact"
+      },
+      {
+        "href": "/projects",
+        "inViewport": true,
+        "text": "View Projects"
+      },
+      {
+        "href": "/resume/Bryan_Miller_Resume.pdf",
+        "inViewport": true,
+        "text": "Download Resume"
+      },
+      {
+        "href": "https://github.com/bryanpmiller",
+        "inViewport": true,
+        "text": "View GitHub"
+      }
+    ]
+  },
+  {
+    "name": "about",
+    "url": "/about",
+    "label": "desktop",
+    "width": 1440,
+    "height": 900,
+    "screenshot": "E:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-15-recruiter-review\\credibility-about-desktop.png",
+    "console": [],
+    "foundTerms": [
+      "Vulnerability Management",
+      "Tenable",
+      "PowerShell",
+      "DISA STIG",
+      "Sentinel",
+      "Azure",
+      "NSG",
+      "Security+",
+      "GitHub",
+      "100%",
+      "92%",
+      "88%"
+    ],
+    "hasApproach": false,
+    "hasEvidence": false,
+    "hasGithubEvidence": true,
+    "hasOutcome": false,
+    "hasProblem": false,
+    "hasTools": false,
+    "headings": [
+      "Professional summary",
+      "Cybersecurity focus",
+      "Profile highlights",
+      "Education",
+      "Certificates",
+      "Experience",
+      "Security Impact Metrics",
+      "Target roles"
+    ],
+    "projectCards": 0,
+    "title": "About | Bryan Miller",
+    "viewport": {
+      "height": 900,
+      "scrollWidth": 1425,
+      "width": 1440
+    },
+    "visibleLinks": [
+      {
+        "href": "#main-content",
+        "inViewport": true,
+        "text": "Skip to content"
+      },
+      {
+        "href": "/",
+        "inViewport": true,
+        "text": "Bryan MillerVulnerability Management & Cybersecurity Analyst"
+      },
+      {
+        "href": "/",
+        "inViewport": true,
+        "text": "Home"
+      },
+      {
+        "href": "/about",
+        "inViewport": true,
+        "text": "About"
+      },
+      {
+        "href": "/resume",
+        "inViewport": true,
+        "text": "Resume"
+      },
+      {
+        "href": "/projects",
+        "inViewport": true,
+        "text": "Projects"
+      },
+      {
+        "href": "/skills",
+        "inViewport": true,
+        "text": "Skills"
+      },
+      {
+        "href": "/contact",
+        "inViewport": true,
+        "text": "Contact"
+      }
+    ]
+  },
+  {
+    "name": "resume",
+    "url": "/resume",
+    "label": "desktop",
+    "width": 1440,
+    "height": 900,
+    "screenshot": "E:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-15-recruiter-review\\credibility-resume-desktop.png",
+    "console": [],
+    "foundTerms": [
+      "Vulnerability Management",
+      "Tenable",
+      "PowerShell",
+      "DISA STIG",
+      "Microsoft Defender",
+      "Sentinel",
+      "KQL",
+      "Azure",
+      "NSG",
+      "Threat Hunting",
+      "Security+",
+      "GitHub",
+      "Remediation",
+      "100%",
+      "92%",
+      "88%"
+    ],
+    "hasApproach": false,
+    "hasEvidence": false,
+    "hasGithubEvidence": true,
+    "hasOutcome": false,
+    "hasProblem": false,
+    "hasTools": true,
+    "headings": [
+      "Resume Snapshot",
+      "Experience Snapshot",
+      "Skills Snapshot",
+      "Vulnerability Management",
+      "SecOps / Detection Engineering",
+      "Secure Configuration / Hardening",
+      "Automation / Scripting",
+      "Cloud / Network Security",
+      "Governance / Compliance Frameworks",
+      "Qualifications",
+      "Education",
+      "Certificates"
+    ],
+    "projectCards": 0,
+    "title": "Resume | Bryan Miller",
+    "viewport": {
+      "height": 900,
+      "scrollWidth": 1425,
+      "width": 1440
+    },
+    "visibleLinks": [
+      {
+        "href": "#main-content",
+        "inViewport": true,
+        "text": "Skip to content"
+      },
+      {
+        "href": "/",
+        "inViewport": true,
+        "text": "Bryan MillerVulnerability Management & Cybersecurity Analyst"
+      },
+      {
+        "href": "/",
+        "inViewport": true,
+        "text": "Home"
+      },
+      {
+        "href": "/about",
+        "inViewport": true,
+        "text": "About"
+      },
+      {
+        "href": "/resume",
+        "inViewport": true,
+        "text": "Resume"
+      },
+      {
+        "href": "/projects",
+        "inViewport": true,
+        "text": "Projects"
+      },
+      {
+        "href": "/skills",
+        "inViewport": true,
+        "text": "Skills"
+      },
+      {
+        "href": "/contact",
+        "inViewport": true,
+        "text": "Contact"
+      },
+      {
+        "href": "/resume/Bryan_Miller_Resume.pdf",
+        "inViewport": true,
+        "text": "Full Resume"
+      }
+    ]
+  },
+  {
+    "name": "projects",
+    "url": "/projects",
+    "label": "desktop",
+    "width": 1440,
+    "height": 900,
+    "screenshot": "E:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-15-recruiter-review\\credibility-projects-desktop.png",
+    "console": [],
+    "foundTerms": [
+      "Vulnerability Management",
+      "Tenable",
+      "PowerShell",
+      "DISA STIG",
+      "Microsoft Defender",
+      "Sentinel",
+      "KQL",
+      "Azure",
+      "MITRE ATT&CK",
+      "GitHub",
+      "Remediation",
+      "100%",
+      "92%",
+      "88%"
+    ],
+    "hasApproach": false,
+    "hasEvidence": false,
+    "hasGithubEvidence": true,
+    "hasOutcome": false,
+    "hasProblem": false,
+    "hasTools": false,
+    "headings": [
+      "Security case studies with GitHub evidence",
+      "Vulnerability Management Program Implementation",
+      "DISA STIG Remediation Project",
+      "Password Spray Threat Hunt: RDP Compromise Investigation",
+      "The Buyer / Akira Ransomware Threat Hunt"
+    ],
+    "projectCards": 4,
+    "title": "Projects | Bryan Miller",
+    "viewport": {
+      "height": 900,
+      "scrollWidth": 1425,
+      "width": 1440
+    },
+    "visibleLinks": [
+      {
+        "href": "#main-content",
+        "inViewport": true,
+        "text": "Skip to content"
+      },
+      {
+        "href": "/",
+        "inViewport": true,
+        "text": "Bryan MillerVulnerability Management & Cybersecurity Analyst"
+      },
+      {
+        "href": "/",
+        "inViewport": true,
+        "text": "Home"
+      },
+      {
+        "href": "/about",
+        "inViewport": true,
+        "text": "About"
+      },
+      {
+        "href": "/resume",
+        "inViewport": true,
+        "text": "Resume"
+      },
+      {
+        "href": "/projects",
+        "inViewport": true,
+        "text": "Projects"
+      },
+      {
+        "href": "/skills",
+        "inViewport": true,
+        "text": "Skills"
+      },
+      {
+        "href": "/contact",
+        "inViewport": true,
+        "text": "Contact"
+      },
+      {
+        "href": "/projects/vulnerability-management-program",
+        "inViewport": true,
+        "text": "Case studyVulnerability Management Program Implementation"
+      },
+      {
+        "href": "/projects/disa-stig-remediation",
+        "inViewport": true,
+        "text": "Case studyDISA STIG Remediation Project"
+      },
+      {
+        "href": "/projects/password-spray-threat-hunt",
+        "inViewport": true,
+        "text": "Case studyPassword Spray Threat Hunt: RDP Compromise Investigation"
+      },
+      {
+        "href": "/projects/akira-ransomware-threat-hunt",
+        "inViewport": true,
+        "text": "Case studyThe Buyer / Akira Ransomware Threat Hunt"
+      }
+    ]
+  },
+  {
+    "name": "skills",
+    "url": "/skills",
+    "label": "desktop",
+    "width": 1440,
+    "height": 900,
+    "screenshot": "E:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-15-recruiter-review\\credibility-skills-desktop.png",
+    "console": [],
+    "foundTerms": [
+      "Vulnerability Management",
+      "Tenable",
+      "PowerShell",
+      "DISA STIG",
+      "Microsoft Defender",
+      "Sentinel",
+      "KQL",
+      "Azure",
+      "NSG",
+      "Threat Hunting",
+      "GitHub",
+      "Remediation"
+    ],
+    "hasApproach": false,
+    "hasEvidence": false,
+    "hasGithubEvidence": true,
+    "hasOutcome": false,
+    "hasProblem": false,
+    "hasTools": true,
+    "headings": [
+      "Cybersecurity skills grouped by role relevance",
+      "Vulnerability Management",
+      "SecOps / Detection Engineering",
+      "Secure Configuration / Hardening",
+      "Automation / Scripting",
+      "Cloud / Network Security",
+      "Governance / Compliance Frameworks"
+    ],
+    "projectCards": 0,
+    "title": "Skills | Bryan Miller",
+    "viewport": {
+      "height": 900,
+      "scrollWidth": 1425,
+      "width": 1440
+    },
+    "visibleLinks": [
+      {
+        "href": "#main-content",
+        "inViewport": true,
+        "text": "Skip to content"
+      },
+      {
+        "href": "/",
+        "inViewport": true,
+        "text": "Bryan MillerVulnerability Management & Cybersecurity Analyst"
+      },
+      {
+        "href": "/",
+        "inViewport": true,
+        "text": "Home"
+      },
+      {
+        "href": "/about",
+        "inViewport": true,
+        "text": "About"
+      },
+      {
+        "href": "/resume",
+        "inViewport": true,
+        "text": "Resume"
+      },
+      {
+        "href": "/projects",
+        "inViewport": true,
+        "text": "Projects"
+      },
+      {
+        "href": "/skills",
+        "inViewport": true,
+        "text": "Skills"
+      },
+      {
+        "href": "/contact",
+        "inViewport": true,
+        "text": "Contact"
+      }
+    ]
+  },
+  {
+    "name": "contact",
+    "url": "/contact",
+    "label": "desktop",
+    "width": 1440,
+    "height": 900,
+    "screenshot": "E:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-15-recruiter-review\\credibility-contact-desktop.png",
+    "console": [],
+    "foundTerms": [
+      "GitHub"
+    ],
+    "hasApproach": false,
+    "hasEvidence": false,
+    "hasGithubEvidence": true,
+    "hasOutcome": false,
+    "hasProblem": false,
+    "hasTools": false,
+    "headings": [
+      "Where to find me",
+      "LinkedIn",
+      "GitHub",
+      "Resume"
+    ],
+    "projectCards": 0,
+    "title": "Contact | Bryan Miller",
+    "viewport": {
+      "height": 900,
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    "visibleLinks": [
+      {
+        "href": "#main-content",
+        "inViewport": true,
+        "text": "Skip to content"
+      },
+      {
+        "href": "/",
+        "inViewport": true,
+        "text": "Bryan MillerVulnerability Management & Cybersecurity Analyst"
+      },
+      {
+        "href": "/",
+        "inViewport": true,
+        "text": "Home"
+      },
+      {
+        "href": "/about",
+        "inViewport": true,
+        "text": "About"
+      },
+      {
+        "href": "/resume",
+        "inViewport": true,
+        "text": "Resume"
+      },
+      {
+        "href": "/projects",
+        "inViewport": true,
+        "text": "Projects"
+      },
+      {
+        "href": "/skills",
+        "inViewport": true,
+        "text": "Skills"
+      },
+      {
+        "href": "/contact",
+        "inViewport": true,
+        "text": "Contact"
+      },
+      {
+        "href": "https://linkedin.com/in/bryan-p-miller",
+        "inViewport": true,
+        "text": "View LinkedIn"
+      },
+      {
+        "href": "https://github.com/bryanpmiller",
+        "inViewport": true,
+        "text": "View GitHub"
+      },
+      {
+        "href": "/resume/Bryan_Miller_Resume.pdf",
+        "inViewport": true,
+        "text": "Open Resume"
+      },
+      {
+        "href": "https://github.com/bryanpmiller",
+        "inViewport": true,
+        "text": "GitHub"
+      },
+      {
+        "href": "https://linkedin.com/in/bryan-p-miller",
+        "inViewport": true,
+        "text": "LinkedIn"
+      },
+      {
+        "href": "/resume/Bryan_Miller_Resume.pdf",
+        "inViewport": true,
+        "text": "Resume PDF"
+      }
+    ]
+  },
+  {
+    "name": "project-vulnerability-management",
+    "url": "/projects/vulnerability-management-program",
+    "label": "desktop",
+    "width": 1440,
+    "height": 900,
+    "screenshot": "E:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-15-recruiter-review\\credibility-project-vulnerability-management-desktop.png",
+    "console": [],
+    "foundTerms": [
+      "Vulnerability Management",
+      "Tenable",
+      "PowerShell",
+      "Azure",
+      "GitHub",
+      "Evidence",
+      "Outcome",
+      "Remediation",
+      "100%",
+      "92%",
+      "88%"
+    ],
+    "hasApproach": true,
+    "hasEvidence": true,
+    "hasGithubEvidence": true,
+    "hasOutcome": true,
+    "hasProblem": true,
+    "hasTools": true,
+    "headings": [
+      "Vulnerability Management Program Implementation",
+      "Role Demonstrated",
+      "Tools Used",
+      "Evidence chain",
+      "Problem",
+      "Approach",
+      "Evidence",
+      "Outcome",
+      "What I learned"
+    ],
+    "projectCards": 0,
+    "title": "Vulnerability Management Program Implementation | Bryan Miller",
+    "viewport": {
+      "height": 900,
+      "scrollWidth": 1425,
+      "width": 1440
+    },
+    "visibleLinks": [
+      {
+        "href": "#main-content",
+        "inViewport": true,
+        "text": "Skip to content"
+      },
+      {
+        "href": "/",
+        "inViewport": true,
+        "text": "Bryan MillerVulnerability Management & Cybersecurity Analyst"
+      },
+      {
+        "href": "/",
+        "inViewport": true,
+        "text": "Home"
+      },
+      {
+        "href": "/about",
+        "inViewport": true,
+        "text": "About"
+      },
+      {
+        "href": "/resume",
+        "inViewport": true,
+        "text": "Resume"
+      },
+      {
+        "href": "/projects",
+        "inViewport": true,
+        "text": "Projects"
+      },
+      {
+        "href": "/skills",
+        "inViewport": true,
+        "text": "Skills"
+      },
+      {
+        "href": "/contact",
+        "inViewport": true,
+        "text": "Contact"
+      }
+    ]
+  },
+  {
+    "name": "project-disa-stig",
+    "url": "/projects/disa-stig-remediation",
+    "label": "desktop",
+    "width": 1440,
+    "height": 900,
+    "screenshot": "E:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-15-recruiter-review\\credibility-project-disa-stig-desktop.png",
+    "console": [],
+    "foundTerms": [
+      "PowerShell",
+      "DISA STIG",
+      "GitHub",
+      "Evidence",
+      "Outcome",
+      "Remediation"
+    ],
+    "hasApproach": true,
+    "hasEvidence": true,
+    "hasGithubEvidence": true,
+    "hasOutcome": true,
+    "hasProblem": true,
+    "hasTools": true,
+    "headings": [
+      "DISA STIG Remediation Project",
+      "Role Demonstrated",
+      "Tools Used",
+      "STIG evidence workflow",
+      "Problem",
+      "Approach",
+      "Evidence",
+      "Outcome",
+      "What I learned"
+    ],
+    "projectCards": 0,
+    "title": "DISA STIG Remediation Project | Bryan Miller",
+    "viewport": {
+      "height": 900,
+      "scrollWidth": 1425,
+      "width": 1440
+    },
+    "visibleLinks": [
+      {
+        "href": "#main-content",
+        "inViewport": true,
+        "text": "Skip to content"
+      },
+      {
+        "href": "/",
+        "inViewport": true,
+        "text": "Bryan MillerVulnerability Management & Cybersecurity Analyst"
+      },
+      {
+        "href": "/",
+        "inViewport": true,
+        "text": "Home"
+      },
+      {
+        "href": "/about",
+        "inViewport": true,
+        "text": "About"
+      },
+      {
+        "href": "/resume",
+        "inViewport": true,
+        "text": "Resume"
+      },
+      {
+        "href": "/projects",
+        "inViewport": true,
+        "text": "Projects"
+      },
+      {
+        "href": "/skills",
+        "inViewport": true,
+        "text": "Skills"
+      },
+      {
+        "href": "/contact",
+        "inViewport": true,
+        "text": "Contact"
+      }
+    ]
+  },
+  {
+    "name": "project-password-spray",
+    "url": "/projects/password-spray-threat-hunt",
+    "label": "desktop",
+    "width": 1440,
+    "height": 900,
+    "screenshot": "E:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-15-recruiter-review\\credibility-project-password-spray-desktop.png",
+    "console": [],
+    "foundTerms": [
+      "Microsoft Defender",
+      "Sentinel",
+      "KQL",
+      "MITRE ATT&CK",
+      "GitHub",
+      "Evidence",
+      "Outcome"
+    ],
+    "hasApproach": true,
+    "hasEvidence": true,
+    "hasGithubEvidence": true,
+    "hasOutcome": true,
+    "hasProblem": true,
+    "hasTools": true,
+    "headings": [
+      "Password Spray Threat Hunt: RDP Compromise Investigation",
+      "Role Demonstrated",
+      "Tools Used",
+      "KQL investigation pivots",
+      "Problem",
+      "Approach",
+      "Evidence",
+      "Outcome",
+      "What I learned"
+    ],
+    "projectCards": 0,
+    "title": "Password Spray Threat Hunt: RDP Compromise Investigation | Bryan Miller",
+    "viewport": {
+      "height": 900,
+      "scrollWidth": 1425,
+      "width": 1440
+    },
+    "visibleLinks": [
+      {
+        "href": "#main-content",
+        "inViewport": true,
+        "text": "Skip to content"
+      },
+      {
+        "href": "/",
+        "inViewport": true,
+        "text": "Bryan MillerVulnerability Management & Cybersecurity Analyst"
+      },
+      {
+        "href": "/",
+        "inViewport": true,
+        "text": "Home"
+      },
+      {
+        "href": "/about",
+        "inViewport": true,
+        "text": "About"
+      },
+      {
+        "href": "/resume",
+        "inViewport": true,
+        "text": "Resume"
+      },
+      {
+        "href": "/projects",
+        "inViewport": true,
+        "text": "Projects"
+      },
+      {
+        "href": "/skills",
+        "inViewport": true,
+        "text": "Skills"
+      },
+      {
+        "href": "/contact",
+        "inViewport": true,
+        "text": "Contact"
+      }
+    ]
+  },
+  {
+    "name": "project-akira",
+    "url": "/projects/akira-ransomware-threat-hunt",
+    "label": "desktop",
+    "width": 1440,
+    "height": 900,
+    "screenshot": "E:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-15-recruiter-review\\credibility-project-akira-desktop.png",
+    "console": [],
+    "foundTerms": [
+      "PowerShell",
+      "Microsoft Defender",
+      "Sentinel",
+      "KQL",
+      "MITRE ATT&CK",
+      "GitHub",
+      "Evidence",
+      "Outcome"
+    ],
+    "hasApproach": true,
+    "hasEvidence": true,
+    "hasGithubEvidence": true,
+    "hasOutcome": true,
+    "hasProblem": true,
+    "hasTools": true,
+    "headings": [
+      "The Buyer / Akira Ransomware Threat Hunt",
+      "Role Demonstrated",
+      "Tools Used",
+      "Ransomware Hunt Pivots",
+      "Problem",
+      "Approach",
+      "Evidence",
+      "Outcome",
+      "What I learned"
+    ],
+    "projectCards": 0,
+    "title": "The Buyer / Akira Ransomware Threat Hunt | Bryan Miller",
+    "viewport": {
+      "height": 900,
+      "scrollWidth": 1425,
+      "width": 1440
+    },
+    "visibleLinks": [
+      {
+        "href": "#main-content",
+        "inViewport": true,
+        "text": "Skip to content"
+      },
+      {
+        "href": "/",
+        "inViewport": true,
+        "text": "Bryan MillerVulnerability Management & Cybersecurity Analyst"
+      },
+      {
+        "href": "/",
+        "inViewport": true,
+        "text": "Home"
+      },
+      {
+        "href": "/about",
+        "inViewport": true,
+        "text": "About"
+      },
+      {
+        "href": "/resume",
+        "inViewport": true,
+        "text": "Resume"
+      },
+      {
+        "href": "/projects",
+        "inViewport": true,
+        "text": "Projects"
+      },
+      {
+        "href": "/skills",
+        "inViewport": true,
+        "text": "Skills"
+      },
+      {
+        "href": "/contact",
+        "inViewport": true,
+        "text": "Contact"
+      }
+    ]
+  },
+  {
+    "name": "home",
+    "url": "/",
+    "label": "mobile",
+    "width": 390,
+    "height": 844,
+    "screenshot": "E:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-15-recruiter-review\\credibility-home-mobile.png",
+    "console": [],
+    "foundTerms": [
+      "Vulnerability Management",
+      "Tenable",
+      "PowerShell",
+      "DISA STIG",
+      "Microsoft Defender",
+      "Sentinel",
+      "KQL",
+      "Azure",
+      "NSG",
+      "MITRE ATT&CK",
+      "Security+",
+      "GitHub",
+      "Evidence",
+      "Remediation",
+      "100%",
+      "92%",
+      "88%"
+    ],
+    "hasApproach": false,
+    "hasEvidence": true,
+    "hasGithubEvidence": true,
+    "hasOutcome": false,
+    "hasProblem": false,
+    "hasTools": false,
+    "headings": [
+      "Bryan Miller",
+      "Security work snapshot",
+      "Risk Reduction and Security Operations experience",
+      "Vulnerability Reduction Metrics",
+      "Network Security Dashboard",
+      "Education",
+      "Certificates",
+      "Experience",
+      "Security Impact Metrics",
+      "Cybersecurity work organized for hiring review",
+      "Vulnerability Management Program Implementation",
+      "DISA STIG Remediation Project",
+      "Password Spray Threat Hunt: RDP Compromise Investigation",
+      "The Buyer / Akira Ransomware Threat Hunt"
+    ],
+    "projectCards": 4,
+    "title": "Bryan Miller | Cybersecurity Portfolio",
+    "viewport": {
+      "height": 844,
+      "scrollWidth": 375,
+      "width": 390
+    },
+    "visibleLinks": [
+      {
+        "href": "#main-content",
+        "inViewport": true,
+        "text": "Skip to content"
+      },
+      {
+        "href": "/",
+        "inViewport": true,
+        "text": "Bryan MillerVulnerability Management & Cybersecurity Analyst"
+      },
+      {
+        "href": "/",
+        "inViewport": true,
+        "text": "Home"
+      },
+      {
+        "href": "/about",
+        "inViewport": true,
+        "text": "About"
+      },
+      {
+        "href": "/resume",
+        "inViewport": true,
+        "text": "Resume"
+      },
+      {
+        "href": "/projects",
+        "inViewport": true,
+        "text": "Projects"
+      },
+      {
+        "href": "/skills",
+        "inViewport": true,
+        "text": "Skills"
+      },
+      {
+        "href": "/contact",
+        "inViewport": true,
+        "text": "Contact"
+      },
+      {
+        "href": "/projects",
+        "inViewport": true,
+        "text": "View Projects"
+      },
+      {
+        "href": "/resume/Bryan_Miller_Resume.pdf",
+        "inViewport": true,
+        "text": "Download Resume"
+      },
+      {
+        "href": "https://github.com/bryanpmiller",
+        "inViewport": true,
+        "text": "View GitHub"
+      }
+    ]
+  },
+  {
+    "name": "about",
+    "url": "/about",
+    "label": "mobile",
+    "width": 390,
+    "height": 844,
+    "screenshot": "E:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-15-recruiter-review\\credibility-about-mobile.png",
+    "console": [],
+    "foundTerms": [
+      "Vulnerability Management",
+      "Tenable",
+      "PowerShell",
+      "DISA STIG",
+      "Sentinel",
+      "Azure",
+      "NSG",
+      "Security+",
+      "GitHub",
+      "100%",
+      "92%",
+      "88%"
+    ],
+    "hasApproach": false,
+    "hasEvidence": false,
+    "hasGithubEvidence": true,
+    "hasOutcome": false,
+    "hasProblem": false,
+    "hasTools": false,
+    "headings": [
+      "Professional summary",
+      "Cybersecurity focus",
+      "Profile highlights",
+      "Education",
+      "Certificates",
+      "Experience",
+      "Security Impact Metrics",
+      "Target roles"
+    ],
+    "projectCards": 0,
+    "title": "About | Bryan Miller",
+    "viewport": {
+      "height": 844,
+      "scrollWidth": 375,
+      "width": 390
+    },
+    "visibleLinks": [
+      {
+        "href": "#main-content",
+        "inViewport": true,
+        "text": "Skip to content"
+      },
+      {
+        "href": "/",
+        "inViewport": true,
+        "text": "Bryan MillerVulnerability Management & Cybersecurity Analyst"
+      },
+      {
+        "href": "/",
+        "inViewport": true,
+        "text": "Home"
+      },
+      {
+        "href": "/about",
+        "inViewport": true,
+        "text": "About"
+      },
+      {
+        "href": "/resume",
+        "inViewport": true,
+        "text": "Resume"
+      },
+      {
+        "href": "/projects",
+        "inViewport": true,
+        "text": "Projects"
+      },
+      {
+        "href": "/skills",
+        "inViewport": true,
+        "text": "Skills"
+      },
+      {
+        "href": "/contact",
+        "inViewport": true,
+        "text": "Contact"
+      }
+    ]
+  },
+  {
+    "name": "resume",
+    "url": "/resume",
+    "label": "mobile",
+    "width": 390,
+    "height": 844,
+    "screenshot": "E:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-15-recruiter-review\\credibility-resume-mobile.png",
+    "console": [],
+    "foundTerms": [
+      "Vulnerability Management",
+      "Tenable",
+      "PowerShell",
+      "DISA STIG",
+      "Microsoft Defender",
+      "Sentinel",
+      "KQL",
+      "Azure",
+      "NSG",
+      "Threat Hunting",
+      "Security+",
+      "GitHub",
+      "Remediation",
+      "100%",
+      "92%",
+      "88%"
+    ],
+    "hasApproach": false,
+    "hasEvidence": false,
+    "hasGithubEvidence": true,
+    "hasOutcome": false,
+    "hasProblem": false,
+    "hasTools": true,
+    "headings": [
+      "Resume Snapshot",
+      "Experience Snapshot",
+      "Skills Snapshot",
+      "Vulnerability Management",
+      "SecOps / Detection Engineering",
+      "Secure Configuration / Hardening",
+      "Automation / Scripting",
+      "Cloud / Network Security",
+      "Governance / Compliance Frameworks",
+      "Qualifications",
+      "Education",
+      "Certificates"
+    ],
+    "projectCards": 0,
+    "title": "Resume | Bryan Miller",
+    "viewport": {
+      "height": 844,
+      "scrollWidth": 375,
+      "width": 390
+    },
+    "visibleLinks": [
+      {
+        "href": "#main-content",
+        "inViewport": true,
+        "text": "Skip to content"
+      },
+      {
+        "href": "/",
+        "inViewport": true,
+        "text": "Bryan MillerVulnerability Management & Cybersecurity Analyst"
+      },
+      {
+        "href": "/",
+        "inViewport": true,
+        "text": "Home"
+      },
+      {
+        "href": "/about",
+        "inViewport": true,
+        "text": "About"
+      },
+      {
+        "href": "/resume",
+        "inViewport": true,
+        "text": "Resume"
+      },
+      {
+        "href": "/projects",
+        "inViewport": true,
+        "text": "Projects"
+      },
+      {
+        "href": "/skills",
+        "inViewport": true,
+        "text": "Skills"
+      },
+      {
+        "href": "/contact",
+        "inViewport": true,
+        "text": "Contact"
+      },
+      {
+        "href": "/resume/Bryan_Miller_Resume.pdf",
+        "inViewport": true,
+        "text": "Full Resume"
+      }
+    ]
+  },
+  {
+    "name": "projects",
+    "url": "/projects",
+    "label": "mobile",
+    "width": 390,
+    "height": 844,
+    "screenshot": "E:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-15-recruiter-review\\credibility-projects-mobile.png",
+    "console": [],
+    "foundTerms": [
+      "Vulnerability Management",
+      "Tenable",
+      "PowerShell",
+      "DISA STIG",
+      "Microsoft Defender",
+      "Sentinel",
+      "KQL",
+      "Azure",
+      "MITRE ATT&CK",
+      "GitHub",
+      "Remediation",
+      "100%",
+      "92%",
+      "88%"
+    ],
+    "hasApproach": false,
+    "hasEvidence": false,
+    "hasGithubEvidence": true,
+    "hasOutcome": false,
+    "hasProblem": false,
+    "hasTools": false,
+    "headings": [
+      "Security case studies with GitHub evidence",
+      "Vulnerability Management Program Implementation",
+      "DISA STIG Remediation Project",
+      "Password Spray Threat Hunt: RDP Compromise Investigation",
+      "The Buyer / Akira Ransomware Threat Hunt"
+    ],
+    "projectCards": 4,
+    "title": "Projects | Bryan Miller",
+    "viewport": {
+      "height": 844,
+      "scrollWidth": 375,
+      "width": 390
+    },
+    "visibleLinks": [
+      {
+        "href": "#main-content",
+        "inViewport": true,
+        "text": "Skip to content"
+      },
+      {
+        "href": "/",
+        "inViewport": true,
+        "text": "Bryan MillerVulnerability Management & Cybersecurity Analyst"
+      },
+      {
+        "href": "/",
+        "inViewport": true,
+        "text": "Home"
+      },
+      {
+        "href": "/about",
+        "inViewport": true,
+        "text": "About"
+      },
+      {
+        "href": "/resume",
+        "inViewport": true,
+        "text": "Resume"
+      },
+      {
+        "href": "/projects",
+        "inViewport": true,
+        "text": "Projects"
+      },
+      {
+        "href": "/skills",
+        "inViewport": true,
+        "text": "Skills"
+      },
+      {
+        "href": "/contact",
+        "inViewport": true,
+        "text": "Contact"
+      },
+      {
+        "href": "/projects/vulnerability-management-program",
+        "inViewport": true,
+        "text": "Case studyVulnerability Management Program Implementation"
+      },
+      {
+        "href": "/projects/disa-stig-remediation",
+        "inViewport": true,
+        "text": "Case studyDISA STIG Remediation Project"
+      },
+      {
+        "href": "/projects/password-spray-threat-hunt",
+        "inViewport": true,
+        "text": "Case studyPassword Spray Threat Hunt: RDP Compromise Investigation"
+      },
+      {
+        "href": "/projects/akira-ransomware-threat-hunt",
+        "inViewport": true,
+        "text": "Case studyThe Buyer / Akira Ransomware Threat Hunt"
+      }
+    ]
+  },
+  {
+    "name": "skills",
+    "url": "/skills",
+    "label": "mobile",
+    "width": 390,
+    "height": 844,
+    "screenshot": "E:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-15-recruiter-review\\credibility-skills-mobile.png",
+    "console": [],
+    "foundTerms": [
+      "Vulnerability Management",
+      "Tenable",
+      "PowerShell",
+      "DISA STIG",
+      "Microsoft Defender",
+      "Sentinel",
+      "KQL",
+      "Azure",
+      "NSG",
+      "Threat Hunting",
+      "GitHub",
+      "Remediation"
+    ],
+    "hasApproach": false,
+    "hasEvidence": false,
+    "hasGithubEvidence": true,
+    "hasOutcome": false,
+    "hasProblem": false,
+    "hasTools": true,
+    "headings": [
+      "Cybersecurity skills grouped by role relevance",
+      "Vulnerability Management",
+      "SecOps / Detection Engineering",
+      "Secure Configuration / Hardening",
+      "Automation / Scripting",
+      "Cloud / Network Security",
+      "Governance / Compliance Frameworks"
+    ],
+    "projectCards": 0,
+    "title": "Skills | Bryan Miller",
+    "viewport": {
+      "height": 844,
+      "scrollWidth": 375,
+      "width": 390
+    },
+    "visibleLinks": [
+      {
+        "href": "#main-content",
+        "inViewport": true,
+        "text": "Skip to content"
+      },
+      {
+        "href": "/",
+        "inViewport": true,
+        "text": "Bryan MillerVulnerability Management & Cybersecurity Analyst"
+      },
+      {
+        "href": "/",
+        "inViewport": true,
+        "text": "Home"
+      },
+      {
+        "href": "/about",
+        "inViewport": true,
+        "text": "About"
+      },
+      {
+        "href": "/resume",
+        "inViewport": true,
+        "text": "Resume"
+      },
+      {
+        "href": "/projects",
+        "inViewport": true,
+        "text": "Projects"
+      },
+      {
+        "href": "/skills",
+        "inViewport": true,
+        "text": "Skills"
+      },
+      {
+        "href": "/contact",
+        "inViewport": true,
+        "text": "Contact"
+      }
+    ]
+  },
+  {
+    "name": "contact",
+    "url": "/contact",
+    "label": "mobile",
+    "width": 390,
+    "height": 844,
+    "screenshot": "E:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-15-recruiter-review\\credibility-contact-mobile.png",
+    "console": [],
+    "foundTerms": [
+      "GitHub"
+    ],
+    "hasApproach": false,
+    "hasEvidence": false,
+    "hasGithubEvidence": true,
+    "hasOutcome": false,
+    "hasProblem": false,
+    "hasTools": false,
+    "headings": [
+      "Where to find me",
+      "LinkedIn",
+      "GitHub",
+      "Resume"
+    ],
+    "projectCards": 0,
+    "title": "Contact | Bryan Miller",
+    "viewport": {
+      "height": 844,
+      "scrollWidth": 375,
+      "width": 390
+    },
+    "visibleLinks": [
+      {
+        "href": "#main-content",
+        "inViewport": true,
+        "text": "Skip to content"
+      },
+      {
+        "href": "/",
+        "inViewport": true,
+        "text": "Bryan MillerVulnerability Management & Cybersecurity Analyst"
+      },
+      {
+        "href": "/",
+        "inViewport": true,
+        "text": "Home"
+      },
+      {
+        "href": "/about",
+        "inViewport": true,
+        "text": "About"
+      },
+      {
+        "href": "/resume",
+        "inViewport": true,
+        "text": "Resume"
+      },
+      {
+        "href": "/projects",
+        "inViewport": true,
+        "text": "Projects"
+      },
+      {
+        "href": "/skills",
+        "inViewport": true,
+        "text": "Skills"
+      },
+      {
+        "href": "/contact",
+        "inViewport": true,
+        "text": "Contact"
+      },
+      {
+        "href": "https://linkedin.com/in/bryan-p-miller",
+        "inViewport": true,
+        "text": "View LinkedIn"
+      },
+      {
+        "href": "https://github.com/bryanpmiller",
+        "inViewport": true,
+        "text": "View GitHub"
+      }
+    ]
+  },
+  {
+    "name": "project-vulnerability-management",
+    "url": "/projects/vulnerability-management-program",
+    "label": "mobile",
+    "width": 390,
+    "height": 844,
+    "screenshot": "E:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-15-recruiter-review\\credibility-project-vulnerability-management-mobile.png",
+    "console": [],
+    "foundTerms": [
+      "Vulnerability Management",
+      "Tenable",
+      "PowerShell",
+      "Azure",
+      "GitHub",
+      "Evidence",
+      "Outcome",
+      "Remediation",
+      "100%",
+      "92%",
+      "88%"
+    ],
+    "hasApproach": true,
+    "hasEvidence": true,
+    "hasGithubEvidence": true,
+    "hasOutcome": true,
+    "hasProblem": true,
+    "hasTools": true,
+    "headings": [
+      "Vulnerability Management Program Implementation",
+      "Role Demonstrated",
+      "Tools Used",
+      "Evidence chain",
+      "Problem",
+      "Approach",
+      "Evidence",
+      "Outcome",
+      "What I learned"
+    ],
+    "projectCards": 0,
+    "title": "Vulnerability Management Program Implementation | Bryan Miller",
+    "viewport": {
+      "height": 844,
+      "scrollWidth": 375,
+      "width": 390
+    },
+    "visibleLinks": [
+      {
+        "href": "#main-content",
+        "inViewport": true,
+        "text": "Skip to content"
+      },
+      {
+        "href": "/",
+        "inViewport": true,
+        "text": "Bryan MillerVulnerability Management & Cybersecurity Analyst"
+      },
+      {
+        "href": "/",
+        "inViewport": true,
+        "text": "Home"
+      },
+      {
+        "href": "/about",
+        "inViewport": true,
+        "text": "About"
+      },
+      {
+        "href": "/resume",
+        "inViewport": true,
+        "text": "Resume"
+      },
+      {
+        "href": "/projects",
+        "inViewport": true,
+        "text": "Projects"
+      },
+      {
+        "href": "/skills",
+        "inViewport": true,
+        "text": "Skills"
+      },
+      {
+        "href": "/contact",
+        "inViewport": true,
+        "text": "Contact"
+      }
+    ]
+  },
+  {
+    "name": "project-disa-stig",
+    "url": "/projects/disa-stig-remediation",
+    "label": "mobile",
+    "width": 390,
+    "height": 844,
+    "screenshot": "E:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-15-recruiter-review\\credibility-project-disa-stig-mobile.png",
+    "console": [],
+    "foundTerms": [
+      "PowerShell",
+      "DISA STIG",
+      "GitHub",
+      "Evidence",
+      "Outcome",
+      "Remediation"
+    ],
+    "hasApproach": true,
+    "hasEvidence": true,
+    "hasGithubEvidence": true,
+    "hasOutcome": true,
+    "hasProblem": true,
+    "hasTools": true,
+    "headings": [
+      "DISA STIG Remediation Project",
+      "Role Demonstrated",
+      "Tools Used",
+      "STIG evidence workflow",
+      "Problem",
+      "Approach",
+      "Evidence",
+      "Outcome",
+      "What I learned"
+    ],
+    "projectCards": 0,
+    "title": "DISA STIG Remediation Project | Bryan Miller",
+    "viewport": {
+      "height": 844,
+      "scrollWidth": 375,
+      "width": 390
+    },
+    "visibleLinks": [
+      {
+        "href": "#main-content",
+        "inViewport": true,
+        "text": "Skip to content"
+      },
+      {
+        "href": "/",
+        "inViewport": true,
+        "text": "Bryan MillerVulnerability Management & Cybersecurity Analyst"
+      },
+      {
+        "href": "/",
+        "inViewport": true,
+        "text": "Home"
+      },
+      {
+        "href": "/about",
+        "inViewport": true,
+        "text": "About"
+      },
+      {
+        "href": "/resume",
+        "inViewport": true,
+        "text": "Resume"
+      },
+      {
+        "href": "/projects",
+        "inViewport": true,
+        "text": "Projects"
+      },
+      {
+        "href": "/skills",
+        "inViewport": true,
+        "text": "Skills"
+      },
+      {
+        "href": "/contact",
+        "inViewport": true,
+        "text": "Contact"
+      }
+    ]
+  },
+  {
+    "name": "project-password-spray",
+    "url": "/projects/password-spray-threat-hunt",
+    "label": "mobile",
+    "width": 390,
+    "height": 844,
+    "screenshot": "E:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-15-recruiter-review\\credibility-project-password-spray-mobile.png",
+    "console": [],
+    "foundTerms": [
+      "Microsoft Defender",
+      "Sentinel",
+      "KQL",
+      "MITRE ATT&CK",
+      "GitHub",
+      "Evidence",
+      "Outcome"
+    ],
+    "hasApproach": true,
+    "hasEvidence": true,
+    "hasGithubEvidence": true,
+    "hasOutcome": true,
+    "hasProblem": true,
+    "hasTools": true,
+    "headings": [
+      "Password Spray Threat Hunt: RDP Compromise Investigation",
+      "Role Demonstrated",
+      "Tools Used",
+      "KQL investigation pivots",
+      "Problem",
+      "Approach",
+      "Evidence",
+      "Outcome",
+      "What I learned"
+    ],
+    "projectCards": 0,
+    "title": "Password Spray Threat Hunt: RDP Compromise Investigation | Bryan Miller",
+    "viewport": {
+      "height": 844,
+      "scrollWidth": 375,
+      "width": 390
+    },
+    "visibleLinks": [
+      {
+        "href": "#main-content",
+        "inViewport": true,
+        "text": "Skip to content"
+      },
+      {
+        "href": "/",
+        "inViewport": true,
+        "text": "Bryan MillerVulnerability Management & Cybersecurity Analyst"
+      },
+      {
+        "href": "/",
+        "inViewport": true,
+        "text": "Home"
+      },
+      {
+        "href": "/about",
+        "inViewport": true,
+        "text": "About"
+      },
+      {
+        "href": "/resume",
+        "inViewport": true,
+        "text": "Resume"
+      },
+      {
+        "href": "/projects",
+        "inViewport": true,
+        "text": "Projects"
+      },
+      {
+        "href": "/skills",
+        "inViewport": true,
+        "text": "Skills"
+      },
+      {
+        "href": "/contact",
+        "inViewport": true,
+        "text": "Contact"
+      }
+    ]
+  },
+  {
+    "name": "project-akira",
+    "url": "/projects/akira-ransomware-threat-hunt",
+    "label": "mobile",
+    "width": 390,
+    "height": 844,
+    "screenshot": "E:\\Cyber Range Material\\githubrepo\\cybersecurity-portfolio-v2\\codex\\screenshots\\phase-15-recruiter-review\\credibility-project-akira-mobile.png",
+    "console": [],
+    "foundTerms": [
+      "PowerShell",
+      "Microsoft Defender",
+      "Sentinel",
+      "KQL",
+      "MITRE ATT&CK",
+      "GitHub",
+      "Evidence",
+      "Outcome"
+    ],
+    "hasApproach": true,
+    "hasEvidence": true,
+    "hasGithubEvidence": true,
+    "hasOutcome": true,
+    "hasProblem": true,
+    "hasTools": true,
+    "headings": [
+      "The Buyer / Akira Ransomware Threat Hunt",
+      "Role Demonstrated",
+      "Tools Used",
+      "Ransomware Hunt Pivots",
+      "Problem",
+      "Approach",
+      "Evidence",
+      "Outcome",
+      "What I learned"
+    ],
+    "projectCards": 0,
+    "title": "The Buyer / Akira Ransomware Threat Hunt | Bryan Miller",
+    "viewport": {
+      "height": 844,
+      "scrollWidth": 651,
+      "width": 390
+    },
+    "visibleLinks": [
+      {
+        "href": "#main-content",
+        "inViewport": true,
+        "text": "Skip to content"
+      },
+      {
+        "href": "/",
+        "inViewport": true,
+        "text": "Bryan MillerVulnerability Management & Cybersecurity Analyst"
+      },
+      {
+        "href": "/",
+        "inViewport": true,
+        "text": "Home"
+      },
+      {
+        "href": "/about",
+        "inViewport": true,
+        "text": "About"
+      },
+      {
+        "href": "/resume",
+        "inViewport": true,
+        "text": "Resume"
+      },
+      {
+        "href": "/projects",
+        "inViewport": true,
+        "text": "Projects"
+      },
+      {
+        "href": "/skills",
+        "inViewport": true,
+        "text": "Skills"
+      },
+      {
+        "href": "/contact",
+        "inViewport": true,
+        "text": "Contact"
+      }
+    ]
+  }
+]
