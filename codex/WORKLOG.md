@@ -104,6 +104,17 @@ Add new entries below this line.
 
 ---
 
+## 2026-05-25 - Workkit Update: Round 3 Architect Layer
+
+- Adjustment: removed codex/CODEX_START_HERE.md from the default startup workflow in AGENTS.md; it is now treated as deprecated historical reference unless Bryan explicitly asks to review it.
+- Improvement: added targeted Round 3 architect guidance files under codex/architects/ for creative direction, executive polish, visual system governance, motion, editorial flow, case studies, token efficiency, and final review.
+- Improvement: appended the Round 3 premium creative systems roadmap to codex/TASKS.md without replacing completed Phase 0-16 history.
+- Improvement: updated codex/PROJECT_MEMORY.md with the active Round 3 direction and startup guidance.
+- Improvement: updated codex/README.md so the human setup guide no longer conflicts with the new startup flow.
+- Files: AGENTS.md, codex/README.md, codex/TASKS.md, codex/PROJECT_MEMORY.md, codex/WORKLOG.md, codex/architects/*.md.
+- Checks: not run; markdown-only workkit update.
+- Notes: run git diff before committing; backup creation was disabled with -NoBackups.
+
 ## 2026-05-26 — Follow-Up Note: Update README.md
 
 - Area: note to revsit README.md in root.
