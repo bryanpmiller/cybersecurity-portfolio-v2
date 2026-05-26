@@ -27,7 +27,6 @@ Current focus:
 - The redesign roadmap is complete and the site is ready for deployment.
 - Deployed URL is `https://bryanpmiller.com`; post-deployment smoke testing has passed.
 
-
 ### Round 3 Premium Creative Systems Pass
 
 - Round 2 / Phase 0-16 is complete and remains the implementation baseline.
@@ -38,6 +37,7 @@ Current focus:
 - `codex/CODEX_START_HERE.md` is deprecated for default startup and should not be read during normal sessions unless Bryan explicitly asks to review legacy workflow notes.
 - Round 3 priorities: executive readability, art direction, typography/spacing hierarchy, editorial flow, restrained motion, case-study experience, duplicate-proof reduction, and token-efficient task scoping.
 - Existing supported claims, metrics, project facts, and substantive copy remain protected by the content preservation rules.
+
 ### Phase 15.1 Recruiter First-Read Review
 
 - Phase 15.1 Browser validation found the Home first viewport communicates the essentials within a 5-second recruiter read.

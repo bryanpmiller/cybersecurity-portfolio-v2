@@ -135,16 +135,19 @@ Do not use `codex/TASKS.md` as a diary.
 
 ## Required Workflow Before Starting Work
 
-Before starting any new phase or major task, Codex must:
+Before starting any new phase or major task, Codex must always:
 
 1. Read `AGENTS.md`.
-2. Read `codex/CODEX_START_HERE.md`.
-3. Read `codex/TASKS.md`.
-4. Read `codex/PROJECT_MEMORY.md`.
-5. Read `codex/WORKLOG.md`.
-6. Identify the current phase and next incomplete task.
-7. Briefly summarize the current state before editing code.
-8. Make targeted, reviewable changes.
+2. Read `codex/TASKS.md`.
+3. Read `codex/PROJECT_MEMORY.md`.
+4. Read `codex/WORKLOG.md`.
+5. Identify the current phase and next incomplete task.
+6. Briefly summarize the current state before editing code.
+7. Make targeted, reviewable changes.
+
+For Round 3 tasks only, Codex must additionally read the relevant architect file(s) from `codex/architects/` before editing.
+
+Do not read every architect file by default. Choose only the architect file(s) that match the current task scope.
 
 ---
 

@@ -31,7 +31,9 @@ Then Codex must:
 
 For Round 3 premium creative systems work, Codex should also read only the relevant architect file(s) from `codex/architects/`. Do not read every architect file by default.
 
----## Portfolio Goal
+---
+
+## Portfolio Goal
 
 The site should clearly showcase:
 
@@ -112,6 +114,7 @@ Read only the architect file(s) relevant to the task:
 - If architect guidance conflicts with supported resume/site facts, supported facts win.
 
 ---
+
 ## Content Rules
 
 Do not invent:
