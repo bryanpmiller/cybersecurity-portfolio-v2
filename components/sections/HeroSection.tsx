@@ -28,9 +28,9 @@ const portfolioSignals = [
 ];
 
 const proofItems = [
-  "Security+",
-  "B.S. Cybersecurity",
-  `${vulnerabilityReductionStats[0].value} critical reduction`
+  "CompTIA Security+",
+  "B.S. Cybersecurity | Vulnerbility Management",
+  //`${vulnerabilityReductionStats[0].value} critical reduction`
 ];
 
 const evidenceRows = [

@@ -104,6 +104,15 @@ Add new entries below this line.
 
 ---
 
+## 2026-05-26 — Follow-Up Note: Hero Proof Items
+
+- Area: note to revisit `components/sections/HeroSection.tsx` `proofItems`.
+- Files: `codex/WORKLOG.md`.
+- Checks: not run; tracking note only.
+- Notes: address the `proofItems` content/structure in a future cleanup pass.
+
+---
+
 ## 2026-05-26 — Security Scan: Public Website
 
 - Area: ran a Codex Security repository-wide review plus passive live header checks for `https://bryanpmiller.com`.
