@@ -543,9 +543,52 @@ Do not read every architect file by default. Read only the architect file(s) rel
 - [x] 3.0.9 Add review and polish architect guidance.
 - [x] 3.0.10 Update startup workflow so `CODEX_START_HERE.md` is no longer required by default.
 
+### Round 3.0b - Reference and Motion Inspiration Capture
+
+- This is a human task list. If we are on this phase remind me to complete these tasks and check them off.
+- [ ] 3.0b.1 Collect 5-10 reference examples for premium visual direction, spacing, motion, case-study presentation, and executive polish.
+- [ ] 3.0b.2 Save notes in `codex/references/ROUND3_REFERENCE_NOTES.md`.
+- [ ] 3.0b.3 Identify what to borrow as design principles only.
+- [ ] 3.0b.4 Identify what not to copy.
+- [ ] 3.0b.5 Use the reference notes to guide Round 3.1 audit recommendations.
+
 ### Round 3.1 - Current Site Premium Audit
 
-- [ ] 3.1.1 Review Home, About, Resume, Projects, Skills, Contact, and project detail pages against relevant architect guidance.
+Before starting Round 3.1, Codex must read:
+
+- `codex/references/ROUND3_REFERENCE_NOTES.md`
+- the relevant Round 3 architect file(s) from `codex/architects/`
+
+For the default Round 3.1 audit, the expected architect files are:
+
+- `codex/architects/00_CREATIVE_BRIEF.md`
+- `codex/architects/01_EXECUTIVE_EXPERIENCE_ARCHITECT.md`
+- `codex/architects/02_VISUAL_SYSTEM_ARCHITECT.md`
+- `codex/architects/04_EDITORIAL_STRUCTURE_ARCHITECT.md`
+- `codex/architects/06_TOKEN_EFFICIENCY_ARCHITECT.md`
+- `codex/architects/07_REVIEW_AND_POLISH_ARCHITECT.md`
+
+Read `codex/architects/03_MOTION_SYSTEM_ARCHITECT.md` only if the audit includes motion, hover-state, reveal, scroll, or interaction recommendations.
+
+Read `codex/architects/05_CASE_STUDY_ARCHITECT.md` only if the audit includes project-card, project-detail, case-study, evidence-block, or GitHub proof-path recommendations.
+
+Round 3.1 is audit-only. Do not edit code during this task.
+
+Codex must use `codex/references/ROUND3_REFERENCE_NOTES.md` plus the relevant Round 3 architect guidance to recommend only 3-5 targeted improvements before implementation.
+
+Each recommendation must include:
+
+1. affected page/section/component
+2. why it matters
+3. which reference principle or architect rule supports it
+4. expected implementation scope
+5. validation needed
+6. whether copy changes are required
+
+Do not propose full-site rewrites. Do not add unsupported claims. Do not clone reference layouts directly.
+
+- [ ] 3.1.0 Confirm `codex/references/ROUND3_REFERENCE_NOTES.md` exists and has been filled out with reference notes.
+- [ ] 3.1.1 Review Home, About, Resume, Projects, Skills, Contact, and project detail pages against relevant architect guidance and `ROUND3_REFERENCE_NOTES.md`.
 - [ ] 3.1.2 Identify what still feels basic, generic, dense, or AI-generated.
 - [ ] 3.1.3 Identify duplicate proof surfaces, repeated metrics, or repeated tool/workflow summaries.
 - [ ] 3.1.4 Identify typography, spacing, section rhythm, and motion issues that most affect premium feel.
