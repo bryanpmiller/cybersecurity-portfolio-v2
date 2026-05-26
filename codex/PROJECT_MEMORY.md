@@ -107,7 +107,7 @@ Current focus:
 
 Recommended direction:
 
-> A refined cybersecurity proof-of-work portfolio that feels like a polished analyst workspace: calm, technical, evidence-led, recruiter-friendly, and original. Borrow the restraint and product polish of the Codex reference, plus the page pacing and confidence of the LifeOS reference, while avoiding sales-page structure, lifestyle branding, fake-hacker styling, and copied assets.
+> A premium cybersecurity proof-of-work brand experience that feels like a refined analyst workspace: calm, technical, evidence-led, executive-readable, recruiter-friendly, and original. The site should preserve the restraint and product polish established in Round 2, while Round 3 improves art direction, typography, spacing, editorial flow, motion restraint, and case-study storytelling. Avoid sales-page structure, lifestyle branding, fake-hacker styling, copied assets, and visual proof surfaces that repeat the same claims.
 
 The site should feel:
 
