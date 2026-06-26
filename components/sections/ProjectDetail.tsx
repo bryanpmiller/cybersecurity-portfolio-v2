@@ -15,20 +15,20 @@ type ProjectDetailProps = {
 
 const projectVisualClasses: Record<string, string> = {
   "vulnerability-management-program":
-    "border-lineStrong bg-[linear-gradient(180deg,rgba(24,33,49,0.94)_0%,rgba(13,17,26,0.96)_100%)] before:bg-[linear-gradient(90deg,rgba(246,193,119,0.82)_0%,rgba(125,211,199,0.78)_52%,rgba(110,231,216,0.72)_100%)]",
+    "border-lineStrong bg-ink-soft before:bg-evidence",
   "disa-stig-remediation":
-    "border-lineStrong bg-[linear-gradient(180deg,rgba(24,33,49,0.94)_0%,rgba(13,17,26,0.96)_100%)] before:bg-[linear-gradient(90deg,rgba(138,180,248,0.8)_0%,rgba(125,211,199,0.76)_100%)]",
+    "border-lineStrong bg-ink-soft before:bg-remediation",
   "password-spray-threat-hunt":
-    "border-lineStrong bg-[linear-gradient(180deg,rgba(24,33,49,0.94)_0%,rgba(13,17,26,0.96)_100%)] before:bg-[linear-gradient(90deg,rgba(167,139,250,0.8)_0%,rgba(110,231,216,0.72)_100%)]",
+    "border-lineStrong bg-ink-soft before:bg-detection",
   "akira-ransomware-threat-hunt":
-    "border-lineStrong bg-[linear-gradient(180deg,rgba(24,33,49,0.94)_0%,rgba(13,17,26,0.96)_100%)] before:bg-[linear-gradient(90deg,rgba(167,139,250,0.78)_0%,rgba(110,231,216,0.7)_100%)]"
+    "border-lineStrong bg-ink-soft before:bg-detection"
 };
 
 function getStatAccentClasses(statText: string) {
   const normalizedStat = statText.toLowerCase();
 
   if (normalizedStat.includes("critical")) {
-    return "before:bg-[linear-gradient(180deg,rgba(255,138,138,0.92)_0%,rgba(125,211,199,0.82)_100%)]";
+    return "before:bg-severityCritical";
   }
 
   if (normalizedStat.includes("high")) {
@@ -88,7 +88,7 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
                 <div className="mt-5 grid gap-3">
                   {project.caseStudy.visual.stats.map((stat) => (
                     <div
-                      className={`relative overflow-hidden rounded-md border border-line bg-surface/90 p-4 pl-5 text-center shadow-[inset_0_1px_0_rgba(255,255,255,0.03)] before:absolute before:bottom-4 before:left-0 before:top-4 before:w-1 before:rounded-r-full ${getStatAccentClasses(`${stat.label} ${stat.value}`)}`}
+                      className={`relative overflow-hidden rounded-md border border-line bg-surface/90 p-4 pl-5 text-center before:absolute before:bottom-4 before:left-0 before:top-4 before:w-1 before:rounded-r-full ${getStatAccentClasses(`${stat.label} ${stat.value}`)}`}
                       key={stat.label}
                     >
                       <p className="section-title">{stat.label}</p>
@@ -127,7 +127,7 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
               ))}
             </div>
             <div className="mt-6 rounded-md border border-lineStrong bg-ink-soft/70 p-4">
-              <h2 className="eyebrow-text inline-flex items-center gap-2 text-white">
+              <h2 className="eyebrow-text inline-flex items-center gap-2 text-ink">
                 <FileText aria-hidden="true" className="size-3.5" />
                 {project.caseStudy?.evidenceBlock.label ?? "Evidence Preview"}
               </h2>

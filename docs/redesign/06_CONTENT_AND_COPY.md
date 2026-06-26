@@ -54,7 +54,7 @@ Supporting direction:
 - Sentinel/KQL-style analysis
 - Threat hunting
 - Incident response fundamentals
-- Brute-force reduction
+- RDP-related brute-force attempt reduction
 - NSG and firewall controls
 - Practical risk reduction
 
@@ -162,27 +162,33 @@ Codex should fill this in as sections are finalized.
 
 Headline:
 
-> 
+> Vulnerability Management & Security Analyst
 
 Supporting copy:
 
-> 
+> Cybersecurity analyst focused on reducing operational risk. I work across vulnerability management, secure configuration, PowerShell remediation, and security investigations, translating technical findings into measurable improvements.
 
 ### Proof Section
 
-> 
+> In my current security internship, I supported vulnerability management and remediation work that reduced critical server findings by 100%, high findings by 92%, and medium findings by 88%.
+>
+> Inbound NSG and firewall controls were applied to restrict RDP exposure, reducing observed RDP-related brute-force attempts by 100%.
 
 ### Featured Case Study
 
 > 
 
-### Capabilities
+### Skills
 
-> 
+> Skills used across vulnerability management, Windows hardening, PowerShell remediation, and security investigations.
+>
+> Keep the public-facing label as Skills. Group the skills by work area and use concise tools/methods text rather than long badge lists.
 
 ### Background
 
-> 
+> My background combines USMC fire direction, operations leadership, and hands-on cybersecurity work. That path shaped how I approach security: define the problem, verify the evidence, prioritize the risk, and document the fix.
+>
+> Supporting points should connect USMC fire direction, operations leadership, cybersecurity education, Security+, and current hands-on security work without overexplaining the career transition.
 
 ### Contact CTA
 

@@ -12,11 +12,10 @@ Redesign the homepage around editorial hierarchy, proof, and case-study credibil
 
 1. Hero
 2. Proof / impact section
-3. Featured case study
-4. Selected projects
-5. Capabilities
-6. Background
-7. Contact CTA
+3. Featured case studies
+4. Capabilities
+5. Background
+6. Contact CTA
 
 ## Homepage Must Answer
 
@@ -48,40 +47,42 @@ Restructure the homepage around editorial hierarchy.
 
 ### Previous Homepage Structure
 
-Codex should fill this in.
-
-- 
-- 
-- 
+- Hero
+- Combined evidence section containing risk reduction dashboards, network security metrics, and resume highlights
+- Featured projects grid
 
 ### New Homepage Structure
 
-Codex should fill this in.
-
-- 
-- 
-- 
+- Hero
+- Proof / impact section
+- Featured case studies
+- Capabilities
+- Background
+- Contact CTA
 
 ### Components Affected
 
 | Component/File | Change Needed |
 |---|---|
-|  |  |
+| `app/page.tsx` | Reordered homepage into the approved editorial sequence and now renders one unified featured case-studies section instead of separate featured and selected-project sections. |
+| `components/sections/FeaturedProjects.tsx` | No longer used by the homepage project section after the unified featured case-study refinement. |
+| `components/sections/SkillsOverview.tsx` | Reused existing capabilities section as a homepage structural section for later Phase 8 refinement. |
 
 ### Content Moved or Consolidated
 
-- 
-- 
-- 
+- Resume highlights moved out of the proof area and into a dedicated background section.
+- The project area now uses one unified featured case-studies section instead of separate featured and supporting project sections.
+- Password Spray, The Buyer, Vulnerability Management, and DISA appear in the user-requested order.
+- Contact path added as a dedicated closing CTA rather than relying only on navigation.
 
 ## Phase 3 Checklist
 
-- [ ] Homepage structure revised
-- [ ] Section order improved
-- [ ] Repetitive sections consolidated
-- [ ] Editorial hierarchy established
-- [ ] `README.md` phase status board updated
-- [ ] `07_IMPLEMENTATION_LOG.md` updated
+- [x] Homepage structure revised
+- [x] Section order improved
+- [x] Repetitive sections consolidated
+- [x] Editorial hierarchy established
+- [x] `README.md` phase status board updated
+- [x] `07_IMPLEMENTATION_LOG.md` updated
 
 ---
 
@@ -130,34 +131,40 @@ Optional secondary links:
 
 ## Required Notes
 
-### Final Headline
+### Final H1
 
-> 
+> Bryan Miller
+
+### Final Role Line
+
+> Vulnerability Management & Security Analyst
 
 ### Final Supporting Copy
 
-> 
+> Cybersecurity analyst focused on reducing operational risk. I work across vulnerability management, secure configuration, PowerShell remediation, and security investigations, translating technical findings into measurable improvements.
 
 ### CTA Labels
 
-- 
-- 
+- View Case Studies
+- Download Resume
+- View GitHub
 
 ### Files Changed
 
 | File | Change Summary |
 |---|---|
-|  |  |
+| `components/sections/HeroSection.tsx` | Replaced the previous live-signal/dashboard-style hero panel with a restrained portfolio evidence panel, restored Bryan Miller as the controlled H1, removed the generic hero eyebrow, matched the name color to the supporting paragraph color, placed Vulnerability Management & Security Analyst below as the role line, reduced CTA sizing, moved credential pills below the buttons, and removed the oversized headline treatment. |
+| `lib/data/profile.ts` | Rolled the risk-reduction sentence into the supporting positioning copy as the first sentence. |
 
 ## Phase 4 Checklist
 
-- [ ] Hero copy rewritten
-- [ ] Terminal/hacker language removed
-- [ ] Hero visual styling simplified
-- [ ] CTAs clarified
-- [ ] Mobile hero reviewed
-- [ ] `README.md` phase status board updated
-- [ ] `07_IMPLEMENTATION_LOG.md` updated
+- [x] Hero copy rewritten
+- [x] Terminal/hacker language removed
+- [x] Hero visual styling simplified
+- [x] CTAs clarified
+- [x] Mobile hero reviewed
+- [x] `README.md` phase status board updated
+- [x] `07_IMPLEMENTATION_LOG.md` updated
 
 ---
 
@@ -172,7 +179,7 @@ Keep the metrics, but make them feel like executive proof points rather than gam
 - 100% critical vulnerability reduction
 - 92% high vulnerability reduction
 - 88% medium vulnerability reduction
-- 100% brute-force incident reduction
+- 100% RDP-related brute-force attempt reduction
 
 ## Design Direction
 
@@ -200,32 +207,37 @@ Avoid:
 
 ### Final Proof Section Copy
 
-> 
+> In my current security internship, I supported vulnerability management and remediation work that reduced critical server findings by 100%, high findings by 92%, and medium findings by 88%.
+>
+> Inbound NSG and firewall controls were applied to restrict RDP exposure, reducing observed RDP-related brute-force attempts by 100%.
 
 ### Final Metrics Displayed
 
 | Metric | Label | Context |
 |---|---|---|
-| 100% |  |  |
-| 92% |  |  |
-| 88% |  |  |
-| 100% |  |  |
+| 100% | Critical findings eliminated | 2 -> 0 critical server findings through vulnerability management and remediation work. |
+| 92% | High findings reduced | 12 -> 1 high server finding after prioritized remediation and verification. |
+| 88% | Medium findings reduced | 17 -> 2 medium server findings with remediation tracked through validation. |
+| 100% | RDP brute-force attempts reduced | Inbound NSG and firewall controls reduced observed RDP-related brute-force attempts. |
 
 ### Files Changed
 
 | File | Change Summary |
 |---|---|
-|  |  |
+| `app/page.tsx` | Updated the proof section header to frame the area as measured security outcomes. |
+| `components/sections/RiskReductionDashboard.tsx` | Replaced dashboard-style cards and progress bars with restrained vulnerability management proof blocks using large numbers, short labels, and exact context. |
+| `components/sections/ImpactMetricsStrip.tsx` | Replaced the network dashboard treatment with a single executive proof block for RDP-related brute-force attempt reduction. |
+| `docs/redesign/06_CONTENT_AND_COPY.md` | Recorded the final Phase 5 proof copy. |
 
 ## Phase 5 Checklist
 
-- [ ] Metrics preserved
-- [ ] Metrics restyled
-- [ ] Dashboard/gamified styling removed
-- [ ] Proof section feels credible and restrained
-- [ ] Mobile layout reviewed
-- [ ] `README.md` phase status board updated
-- [ ] `07_IMPLEMENTATION_LOG.md` updated
+- [x] Metrics preserved
+- [x] Metrics restyled
+- [x] Dashboard/gamified styling removed
+- [x] Proof section feels credible and restrained
+- [x] Mobile layout reviewed
+- [x] `README.md` phase status board updated
+- [x] `07_IMPLEMENTATION_LOG.md` updated
 
 ---
 
@@ -233,7 +245,7 @@ Avoid:
 
 ## Objective
 
-Create one strong featured case study section instead of treating every project equally.
+Create a strong featured case-study section. Current user direction is to remove the single featured-project treatment and make all homepage projects featured case studies.
 
 ## Preferred Featured Project
 
@@ -275,45 +287,51 @@ Avoid:
 
 ### Featured Project Selected
 
-- 
+- Password Spray Threat Hunt: RDP Compromise Investigation
+- The Buyer / Akira Ransomware Threat Hunt
+- Vulnerability Management Program Implementation
+- DISA STIG Remediation Project
 
 ### Final Summary
 
-> 
+> Homepage projects now share one consistent featured case-study card treatment with role context, summary, Problem / Outcome / Concepts evidence, labeled tools, and a direct case-study CTA.
 
 ### Problem
 
-> 
+> The previous homepage used a distinct featured case study and separate supporting project cards, which made the project area feel visually inconsistent.
 
 ### Action
 
-> 
+> Removed the standalone featured-case-study section and rendered all four projects through the same balanced editorial case-study card.
 
 ### Result
 
-> 
+> The homepage now presents every project as a featured case study in the requested order: Password Spray, The Buyer, Vulnerability Management, and DISA.
 
 ### Tools
 
-- 
-- 
-- 
+- Microsoft Defender for Endpoint
+- Sentinel-style KQL
+- MDE Advanced Hunting
+- Tenable
+- PowerShell
+- DISA STIG
 
 ### Files Changed
 
 | File | Change Summary |
 |---|---|
-|  |  |
+| `app/page.tsx` | Removed the separate featured case-study section and rendered all four projects as unified featured case-study cards in the requested order. |
 
 ## Phase 6 Checklist
 
-- [ ] Featured case study created
-- [ ] Problem/action/result structure added
-- [ ] Tools shown cleanly
-- [ ] CTA included
-- [ ] Generic card feel avoided
-- [ ] `README.md` phase status board updated
-- [ ] `07_IMPLEMENTATION_LOG.md` updated
+- [x] Featured case study created
+- [x] Problem/action/result structure added
+- [x] Tools shown cleanly
+- [x] CTA included
+- [x] Generic card feel avoided
+- [x] `README.md` phase status board updated
+- [x] `07_IMPLEMENTATION_LOG.md` updated
 
 ---
 
@@ -365,31 +383,37 @@ Avoid:
 
 | Project | Label | Outcome/Evidence | Tools |
 |---|---|---|---|
-|  |  |  |  |
+| Password Spray Threat Hunt: RDP Compromise Investigation | SecOps Analyst / SOC Analyst / Threat Detection Analyst | Problem, outcome, and concepts summary preserved from the previous card. | Microsoft Defender for Endpoint, Sentinel-style KQL, MITRE ATT&CK, Windows telemetry |
+| The Buyer / Akira Ransomware Threat Hunt | Threat Hunter / SecOps Analyst | Problem, outcome, and concepts summary preserved from the previous card. | MDE Advanced Hunting, Microsoft Sentinel, SIEM, KQL |
+| Vulnerability Management Program Implementation | Vulnerability Management Analyst | Problem, outcome, and concepts summary preserved from the previous card. | Tenable, Azure Cloud Infrastructure, Azure Virtual Machines, PowerShell |
+| DISA STIG Remediation Project | Security Analyst / Technical Compliance Analyst | Problem, outcome, and concepts summary preserved from the previous card. | PowerShell, DISA STIG, Windows 11, Windows Registry |
 
 ### Layout Chosen
 
-- 
+- Unified featured case-study list with white card surfaces, top project context, a horizontal Problem / Outcome / Concepts evidence band, a restrained labeled Tools row, and a clear case-study CTA.
 
 ### Why This Layout Was Chosen
 
-- 
+- It makes every homepage project feel like a featured case-study preview instead of separating one featured item from supporting cards.
+- It preserves each project title, role alignment, summary, Problem / Outcome / Concepts context, tools, and case-study link while reducing decorative previews and badge-heavy visual noise.
+- It avoids a visually heavy right rail by letting the evidence content span the card width in a balanced band beneath the project summary.
+- It removes the singular featured-project hierarchy so Password Spray, The Buyer, Vulnerability Management, and DISA all appear as featured case studies.
 
 ### Files Changed
 
 | File | Change Summary |
 |---|---|
-|  |  |
+| `app/page.tsx` | Replaced the selected-projects grid and standalone featured case-study section with unified featured case-study cards ordered Password Spray, The Buyer, Vulnerability Management, and DISA. |
 
 ## Phase 7 Checklist
 
-- [ ] Project previews redesigned
-- [ ] Generic card grid reduced
-- [ ] Each project has clear evidence
-- [ ] Tool badges reduced or grouped
-- [ ] Mobile layout reviewed
-- [ ] `README.md` phase status board updated
-- [ ] `07_IMPLEMENTATION_LOG.md` updated
+- [x] Project previews redesigned
+- [x] Generic card grid reduced
+- [x] Each project has clear evidence
+- [x] Tool badges reduced or grouped
+- [x] Mobile layout reviewed
+- [x] `README.md` phase status board updated
+- [x] `07_IMPLEMENTATION_LOG.md` updated
 
 ---
 
@@ -449,26 +473,31 @@ Avoid:
 
 ## Required Notes
 
-### Final Capability Groups
+### Final Skill Groups
 
 | Group | Description | Supporting Tools/Skills |
 |---|---|---|
-|  |  |  |
+| Vulnerability Management | Assessment and remediation work that turns scan results into prioritized, validated risk reduction. | Tenable scanning, risk prioritization, remediation tracking, validation reporting, CVE/CWE review, CVSS scoring, authenticated scanning, finding verification |
+| Hardening & Compliance | Secure configuration and compliance remediation for Windows-focused lab environments. | DISA STIG review, Windows hardening, secure configuration, PowerShell remediation, Windows Registry, auditpol, gpupdate, NIST 800-53, access control |
+| Security Operations & Investigation | Evidence-led investigation workflows using endpoint, identity, network, and query-based telemetry. | Microsoft Defender for Endpoint, Sentinel-style KQL, Microsoft Sentinel, SIEM/EDR analysis, Windows telemetry, MITRE ATT&CK mapping, threat hunting |
+| Automation / Scripting | Repeatable scripts and operational controls that make remediation and validation work easier to reproduce. | PowerShell, automated remediation, repeatable security checks, Bash, Python, Azure NSGs, firewall rules, pfSense, Wireshark |
 
 ### Files Changed
 
 | File | Change Summary |
 |---|---|
-|  |  |
+| `components/sections/SkillsOverview.tsx` | Replaced the equal card-and-chip grid with four restrained grouped skills panels using descriptions, focus lists, and a single tools/methods text area. |
+| `lib/data/skills.ts` | Consolidated six skill groups into four role-relevant skills groups with descriptions and curated supporting tools/methods. |
+| `app/skills/page.tsx` | Restored the public-facing Skills label and aligned the standalone skills page metadata and header copy with the grouped skills framing. |
 
 ## Phase 8 Checklist
 
-- [ ] Badge wall reduced
-- [ ] Skills grouped into capabilities
-- [ ] Section is easy to scan
-- [ ] Recruiter-friendly language used
-- [ ] `README.md` phase status board updated
-- [ ] `07_IMPLEMENTATION_LOG.md` updated
+- [x] Badge wall reduced
+- [x] Skills grouped into capabilities
+- [x] Section is easy to scan
+- [x] Recruiter-friendly language used
+- [x] `README.md` phase status board updated
+- [x] `07_IMPLEMENTATION_LOG.md` updated
 
 ---
 
@@ -509,19 +538,21 @@ Avoid:
 
 ### Final Background Copy
 
-> 
+> My background combines USMC fire direction, operations leadership, and hands-on cybersecurity work. That path shaped how I approach security: define the problem, verify the evidence, prioritize the risk, and document the fix.
+>
+> Supporting points connect USMC fire direction and operations leadership, Norwich University cybersecurity coursework, CompTIA Security+, vulnerability management, secure configuration, PowerShell remediation, Defender/Sentinel-style investigation, and measured risk reduction.
 
 ### Files Changed
 
 | File | Change Summary |
 |---|---|
-|  |  |
+| `app/page.tsx` | Replaced the three-card resume highlight cluster with a single restrained background section that connects USMC fire direction, operations leadership, cybersecurity education, certification, and current hands-on security work. |
 
 ## Phase 9 Checklist
 
-- [ ] Background section rewritten
-- [ ] Career path connected clearly
-- [ ] Tone is confident but honest
-- [ ] No generic passion language
-- [ ] `README.md` phase status board updated
-- [ ] `07_IMPLEMENTATION_LOG.md` updated
+- [x] Background section rewritten
+- [x] Career path connected clearly
+- [x] Tone is confident but honest
+- [x] No generic passion language
+- [x] `README.md` phase status board updated
+- [x] `07_IMPLEMENTATION_LOG.md` updated

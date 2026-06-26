@@ -22,26 +22,26 @@ const focusAccentClasses = {
 
 const secondaryAccentClasses = {
   evidence:
-    "hover:border-evidence/50 hover:bg-surfaceElevated hover:text-white hover:shadow-[0_18px_42px_rgba(0,0,0,0.26),inset_0_1px_0_rgba(255,255,255,0.08)]",
+    "hover:border-evidence/45 hover:bg-surfaceElevated hover:text-ink",
   remediation:
-    "hover:border-remediation/55 hover:bg-remediation/10 hover:text-white hover:shadow-[0_18px_42px_rgba(138,180,248,0.14),inset_0_1px_0_rgba(255,255,255,0.08)]",
+    "hover:border-remediation/45 hover:bg-remediation/10 hover:text-ink",
   mint:
-    "hover:border-mint/55 hover:bg-mint/10 hover:text-white hover:shadow-[0_18px_42px_rgba(125,211,199,0.14),inset_0_1px_0_rgba(255,255,255,0.08)]",
+    "hover:border-mint/45 hover:bg-mint/10 hover:text-ink",
   white:
-    "hover:border-white/55 hover:bg-white/10 hover:text-white hover:shadow-[0_18px_42px_rgba(255,255,255,0.12),inset_0_1px_0_rgba(255,255,255,0.1)]"
+    "hover:border-lineStrong hover:bg-surfaceElevated hover:text-ink"
 };
 
 export function Button({ href, children, accent = "evidence", ariaLabel, className, variant = "primary", external = false, icon }: ButtonProps) {
   const classes =
     variant === "primary"
-      ? "border border-evidence/55 bg-[linear-gradient(180deg,rgba(110,231,216,1)_0%,rgba(125,211,199,1)_100%)] text-ink shadow-[0_16px_34px_rgba(110,231,216,0.14),inset_0_1px_0_rgba(255,255,255,0.42)] hover:border-evidence hover:bg-[linear-gradient(180deg,rgba(110,231,216,1)_0%,rgba(138,180,248,1)_100%)] hover:shadow-[0_18px_42px_rgba(110,231,216,0.2),inset_0_1px_0_rgba(255,255,255,0.5)]"
+      ? "border border-evidence bg-evidence text-white shadow-soft hover:border-ink hover:bg-ink hover:text-white"
       : cn(
-          "border border-lineStrong/80 bg-surfaceElevated/80 text-slate-100 shadow-[0_14px_34px_rgba(0,0,0,0.18),inset_0_1px_0_rgba(255,255,255,0.06)]",
+          "border border-line bg-surface text-slate-200 shadow-soft",
           secondaryAccentClasses[accent]
         );
 
   const buttonClassName = cn(
-    "inline-flex min-h-11 items-center justify-center gap-2 rounded-md px-5 py-3 text-sm font-semibold transition-[background,border-color,box-shadow,color,transform] duration-200 hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-ink active:translate-y-0",
+    "inline-flex min-h-11 items-center justify-center gap-2 rounded-md px-5 py-3 text-sm font-semibold transition-[background,border-color,box-shadow,color] duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-surface active:bg-surfaceElevated",
     focusAccentClasses[accent],
     classes,
     className

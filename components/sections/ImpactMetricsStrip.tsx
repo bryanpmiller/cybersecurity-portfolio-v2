@@ -1,87 +1,41 @@
 "use client";
 
-import { motion, useReducedMotion } from "framer-motion";
+import { ShieldCheck } from "lucide-react";
 import { Card } from "@/components/ui/Card";
+import { Reveal } from "@/components/ui/Reveal";
 import { supplementalImpactMetrics } from "@/lib/data/resume";
 
 export function NetworkSecurityDashboard() {
-  const shouldReduceMotion = useReducedMotion();
+  const bruteForceMetric = supplementalImpactMetrics[0];
+
+  if (!bruteForceMetric) {
+    return null;
+  }
 
   return (
-    <motion.div
-      initial={shouldReduceMotion ? false : { opacity: 0, y: 18 }}
-      transition={{ duration: 0.45, ease: "easeOut" }}
-      viewport={{ once: true, margin: "-80px" }}
-      whileInView={shouldReduceMotion ? undefined : { opacity: 1, y: 0 }}
-    >
-      <Card as="section" className="mt-8" variant="terminal">
-        <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(121,134,155,0.14)_1px,transparent_1px),linear-gradient(90deg,rgba(121,134,155,0.11)_1px,transparent_1px)] bg-[size:36px_36px] opacity-25" />
-        <div className="relative p-5 sm:p-6">
-          <div className="flex flex-col gap-4 border-b border-line pb-5 md:flex-row md:items-end md:justify-between">
-            <div>
-              <p className="eyebrow-text text-mint">Network security dashboard</p>
-              <h3 className="section-title mt-2">Network Security Dashboard</h3>
-            </div>
-            <motion.span
-              className="badge-text w-fit rounded-md border border-remediation/40 bg-ink-soft/80 px-3 py-2 text-remediation"
-              initial={shouldReduceMotion ? false : { opacity: 0, y: 8 }}
-              transition={{ duration: 0.35, ease: "easeOut" }}
-              viewport={{ once: true }}
-              whileInView={shouldReduceMotion ? undefined : { opacity: 1, y: 0 }}
-            >
-              Brute Force
-            </motion.span>
+    <Reveal y={14}>
+      <Card as="section" className="mt-5 p-5 sm:p-6 lg:p-7" variant="evidence">
+        <div className="grid gap-6 md:grid-cols-[minmax(0,1fr)_minmax(220px,0.35fr)] md:items-center">
+          <div className="min-w-0">
+            <p className="eyebrow-text">Network security proof</p>
+            <h3 className="section-title mt-3">RDP brute-force attempts reduced through access controls</h3>
+            <p className="body-copy mt-4 max-w-3xl">
+              Inbound NSG and firewall controls were applied to restrict RDP exposure, reducing observed
+              RDP-related brute-force attempts by 100%.
+            </p>
           </div>
 
-          <div className="mt-5 grid gap-4">
-            {supplementalImpactMetrics.map((stat, index) => (
-              <motion.div
-                initial={shouldReduceMotion ? false : { opacity: 0, y: 14 }}
-                key={stat.label}
-                style={{ transformOrigin: "center" }}
-                transition={{ duration: 0.42, delay: 0.1 + index * 0.08, ease: "easeOut" }}
-                viewport={{ once: true }}
-                whileInView={shouldReduceMotion ? undefined : { opacity: 1, y: 0 }}
-              >
-                <Card
-                  className="before:bg-remediation"
-                  variant="metric"
-                >
-                  <div className="flex items-start justify-between gap-4">
-                    <div>
-                      <p className="font-mono text-xs font-semibold uppercase tracking-[0.14em] text-remediation">
-                        Brute Force
-                      </p>
-                      <p className="heading-text mt-3 text-4xl leading-none">{stat.value}</p>
-                    </div>
-                    <span className="badge-text grid rounded-md border border-mint/30 bg-mint/10 px-3 py-2 text-center text-mint">
-                      <span>Incidents</span>
-                      <span>Reduced</span>
-                    </span>
-                  </div>
-                  <p className="stat-label mt-4 text-slate-300">{stat.label}</p>
-                  <div className="mt-5">
-                    <div className="mb-2 flex items-center justify-between font-mono text-[0.65rem] uppercase tracking-[0.12em] text-slate-400">
-                      <span>Reduction</span>
-                      <span>{stat.value}</span>
-                    </div>
-                    <div className="h-2.5 overflow-hidden rounded-full bg-remediation/15">
-                      <motion.div
-                        className="h-full rounded-full bg-[linear-gradient(90deg,rgba(138,180,248,0.94)_0%,rgba(125,211,199,0.84)_100%)]"
-                        initial={shouldReduceMotion ? false : { width: 0 }}
-                        transition={{ duration: 0.65, delay: 0.2 + index * 0.08, ease: "easeOut" }}
-                        viewport={{ once: true }}
-                        whileInView={shouldReduceMotion ? undefined : { width: stat.value }}
-                        style={shouldReduceMotion ? { width: stat.value } : undefined}
-                      />
-                    </div>
-                  </div>
-                </Card>
-              </motion.div>
-            ))}
+          <div className="min-w-0 rounded-md border border-remediation/40 bg-ink-soft/70 p-4">
+            <div className="flex items-center gap-2 text-remediation">
+              <ShieldCheck aria-hidden="true" className="size-4" />
+              <p className="text-xs font-semibold uppercase tracking-[0.12em]">Verified reduction</p>
+            </div>
+            <p className="heading-text mt-4 text-5xl leading-none text-remediation">{bruteForceMetric.value}</p>
+            <p className="mt-3 text-sm font-semibold text-ink">RDP brute-force attempts reduced</p>
+            <p className="compact-copy mt-2">Access controls reduced observed RDP brute-force attempts.</p>
           </div>
         </div>
       </Card>
-    </motion.div>
+    </Reveal>
   );
 }

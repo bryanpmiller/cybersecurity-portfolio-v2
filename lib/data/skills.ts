@@ -1,5 +1,6 @@
 export type SkillGroup = {
   title: string;
+  description: string;
   primarySkills: string[];
   supportingSkills: string[];
 };
@@ -7,57 +8,50 @@ export type SkillGroup = {
 export const skillGroups: SkillGroup[] = [
   {
     title: "Vulnerability Management",
-    primarySkills: ["Tenable", "Vulnerability Scanning", "Risk Prioritization"],
+    description: "Assessment and remediation work that turns scan results into prioritized, validated risk reduction.",
+    primarySkills: ["Tenable scanning", "Risk prioritization", "Remediation tracking", "Validation reporting"],
     supportingSkills: [
-      "CVE/CWE Management",
-      "CVSS Scoring",
-      "Remediation Tracking",
-      "Remediation Validation"
+      "CVE/CWE review",
+      "CVSS scoring",
+      "Authenticated scanning",
+      "Finding verification"
     ]
   },
   {
-    title: "SecOps / Detection Engineering",
-    primarySkills: ["Microsoft Defender for Endpoint", "Microsoft Sentinel", "KQL"],
+    title: "Hardening & Compliance",
+    description: "Secure configuration and compliance remediation for Windows-focused lab environments.",
+    primarySkills: ["DISA STIG review", "Windows hardening", "Secure configuration", "PowerShell remediation"],
     supportingSkills: [
-      "SIEM/EDR Analysis",
-      "Threat Hunting",
-      "Incident Triage",
-      "Detection Rules",
-      "Dashboards",
-      "SQL"
+      "Windows Registry",
+      "auditpol",
+      "gpupdate",
+      "NIST 800-53",
+      "Access control"
     ]
   },
   {
-    title: "Secure Configuration / Hardening",
-    primarySkills: ["DISA STIG", "Windows Hardening", "Linux Security Basics"],
-    supportingSkills: ["Active Directory", "Security Configuration", "Access Control", "NIST 800-53", "NIST 800-40"]
+    title: "Security Operations & Investigation",
+    description: "Evidence-led investigation workflows using endpoint, identity, network, and query-based telemetry.",
+    primarySkills: ["Microsoft Defender for Endpoint", "Sentinel-style KQL", "Threat hunting", "Incident triage"],
+    supportingSkills: [
+      "Microsoft Sentinel",
+      "SIEM/EDR analysis",
+      "Windows telemetry",
+      "MITRE ATT&CK mapping",
+      "Network forensics"
+    ]
   },
   {
     title: "Automation / Scripting",
-    primarySkills: ["PowerShell", "Bash", "Python"],
+    description: "Repeatable scripts and operational controls that make remediation and validation work easier to reproduce.",
+    primarySkills: ["PowerShell", "Automated remediation", "Repeatable security checks", "Operational documentation"],
     supportingSkills: [
-      "Automation Tools",
-      "Automated Remediation",
-      "Web App Development",
-      "Full-Stack Development"
-    ]
-  },
-  {
-    title: "Cloud / Network Security",
-    primarySkills: ["Azure NSGs", "Firewall Rules", "pfSense"],
-    supportingSkills: ["Wireshark", "VLANs", "SSH", "RDP", "Network Security", "Network Forensics"]
-  },
-  {
-    title: "Governance / Compliance Frameworks",
-    primarySkills: ["NIST CSF", "NIST 800-37", "NIST 800-61"],
-    supportingSkills: [
-      "PCI-DSS",
-      "HIPAA",
-      "GDPR",
-      "OWASP Top 10",
-      "Disaster Recovery Planning",
-      "Security Policies",
-      "Information Security Management"
+      "Bash",
+      "Python",
+      "Azure NSGs",
+      "Firewall rules",
+      "pfSense",
+      "Wireshark"
     ]
   }
 ];
