@@ -152,7 +152,7 @@ Avoid making the transition sound apologetic.
 
 Preferred framing:
 
-> My background combines military fire direction, operations leadership, and hands-on cybersecurity work. That path shaped how I approach security: clearly define the problem, verify the evidence, prioritize the risk, and document the fix.
+> My Marine Corps fire direction control experience was built around pressure, precision, and accountability. I led small teams, trained Marines on required systems and operating procedures, and learned how much outcomes depend on accurate data.
 
 ## Approved Final Copy
 
@@ -186,9 +186,9 @@ Supporting copy:
 
 ### Background
 
-> My background combines USMC fire direction, operations leadership, and hands-on cybersecurity work. That path shaped how I approach security: define the problem, verify the evidence, prioritize the risk, and document the fix.
+> My Marine Corps fire direction control experience was built around pressure, precision, and accountability. I led small teams, trained Marines on required systems and operating procedures, and learned how much outcomes depend on accurate data. I bring that same mindset to vulnerability management, secure configuration, remediation scripting, and security investigation.
 >
-> Supporting points should connect USMC fire direction, operations leadership, cybersecurity education, Security+, and current hands-on security work without overexplaining the career transition.
+> Supporting points should connect Marine Corps fire direction control, small-team leadership, systems training, cybersecurity education, Security+, current vulnerability management and SecOps internship work, PowerShell remediation, Defender detections, Sentinel dashboards, and measured risk reduction without overexplaining the career transition.
 
 ### Contact CTA
 

@@ -60,6 +60,10 @@ Surface usage rule: pale blue should mostly appear in the page background, subtl
 
 Hero credential proof pills should use flat white surfaces, a slightly stronger blue border, and a tiny soft shadow so they remain readable against the pale blue page atmosphere.
 
+Navbar surfaces should avoid flat white-on-white stacking. Use a subtle pale-blue elevated header surface, a white translucent nav group with a visible blue-tinted border, and a soft active-link fill so the navigation remains readable on desktop and mobile.
+
+Homepage case-study CTAs should use a mid-weight featured button treatment: light royal-blue fill, blue border, dark evidence text, and a restrained shadow. Reserve the solid deep-blue primary button for stronger dedicated-page actions such as `/projects` expanded case-study cards.
+
 Semantic evidence colors use a restrained color-wheel strategy so the blue/white base stays professional while security data remains readable:
 
 - Critical uses red-violet/eggplant for the strongest alert color.
@@ -91,6 +95,7 @@ Implemented:
 
 - Primary CTA uses a solid muted evidence color with no neon gradient.
 - Secondary CTA uses white/light surfaces with subtle borders and soft shadow.
+- Featured CTA uses a light royal-blue fill for homepage case-study actions that need more presence than secondary buttons without becoming a solid primary block.
 - Hover and focus states are clear but restrained.
 - Button hover no longer uses glow or lift effects.
 
@@ -134,9 +139,9 @@ Phase 2 intentionally changed the design foundation without restructuring homepa
 | `tailwind.config.ts` | Replaced dark/neon theme tokens with blue shades, white, and red-violet palette, local slate text scale, matched evidence colors, and softer shadows. |
 | `app/globals.css` | Switched to pale blue/white light color scheme, removed global cyber grid texture, reduced glow/radial effects, updated typography utilities, link/focus styles, and page depth treatment. |
 | `components/ui/Card.tsx` | Flattened card variants to neutral light surfaces with subtle borders, softer shadows, and smaller radius. |
-| `components/ui/Button.tsx` | Replaced neon gradient buttons with solid muted primary and restrained secondary styling. |
+| `components/ui/Button.tsx` | Replaced neon gradient buttons with solid muted primary, restrained secondary, and light-blue featured CTA styling. |
 | `components/ui/Badge.tsx` | Reworked shared badge styling into a quiet bordered tag. |
-| `components/layout/Navbar.tsx` | Updated sticky nav to a light translucent shell with restrained active states. |
+| `components/layout/Navbar.tsx` | Updated sticky nav to a pale-blue elevated header with a distinct white nav group, blue-tinted border, and restrained active states. |
 | `components/layout/Footer.tsx` | Changed footer from dark ink to light surface. |
 | `app/layout.tsx` | Updated skip-link styling for light theme contrast. |
 | `components/sections/HeroSection.tsx` | Removed grid/glow overlays from the hero side panel and adjusted light-theme contrast. |

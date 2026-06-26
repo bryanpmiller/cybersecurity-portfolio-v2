@@ -159,15 +159,15 @@ Codex must update this table after every phase.
 | Phase | Status | Owner File | Summary | Blockers |
 |---|---|---|---|---|
 | Phase 1 — Site Audit | Complete | `02_SITE_AUDIT.md` | Audited tech stack, key files, template signals, content to preserve/rewrite, and recommended implementation order. No website code edited. | None |
-| Phase 2 — Design System | Complete | `03_DESIGN_SYSTEM.md` | Refactored global tokens, typography utilities, card/button/badge styles, shell surfaces, reduced grid/glow/terminal styling, and refined the active palette to pale blue `#EFFAFD`, white/near-white surfaces, royal blue `#4A8BDF`, and eggplant `#A0006D` with matched evidence colors. Pale blue is now reserved mostly for page atmosphere instead of repeated component fills; hero proof pills use white surfaces with stronger borders. | Build, lint, type check, route checks, and browser visual check passed. |
+| Phase 2 — Design System | Complete | `03_DESIGN_SYSTEM.md` | Refactored global tokens, typography utilities, card/button/badge styles, shell surfaces, reduced grid/glow/terminal styling, and refined the active palette to pale blue `#EFFAFD`, white/near-white surfaces, royal blue `#4A8BDF`, and eggplant `#A0006D` with matched evidence colors. Pale blue is now reserved mostly for page atmosphere; hero proof pills, navbar surfaces, and featured CTAs use stronger but restrained white/blue contrast. | Build, lint, type check, route checks, and browser visual check passed. |
 | Phase 3 — Homepage Structure | Complete | `04_HOMEPAGE_REDESIGN.md` | Reordered the homepage into the approved editorial hierarchy: hero, proof/impact, unified featured case studies, capabilities, background, and contact CTA. | None |
 | Phase 4 — Hero Section | Complete | `04_HOMEPAGE_REDESIGN.md` / `06_CONTENT_AND_COPY.md` | Reworked the hero so Bryan Miller is the controlled H1, removed the generic "Cybersecurity Portfolio" eyebrow, softened the name color to match the supporting copy, restored Vulnerability Management & Security Analyst as the role line, kept the risk-reduction sentence in supporting copy, and kept credential pills below the buttons. | Browser visual check blocked by browser tool sandbox metadata error; build, lint, type check, and route checks passed. |
 | Phase 5 — Proof / Metrics | Complete | `04_HOMEPAGE_REDESIGN.md` / `06_CONTENT_AND_COPY.md` | Reworked the proof section from dashboard-style metric cards into restrained executive proof blocks with large numbers, short labels, and concise context while preserving the 100%, 92%, 88%, and 100% outcomes; network security proof is scoped to RDP-related brute-force attempts reduced through inbound NSG and firewall controls. | Build, lint, type check, and route checks passed; browser visual check blocked by browser tool sandbox metadata error. |
 | Phase 6 — Featured Case Study | Complete | `04_HOMEPAGE_REDESIGN.md` / `05_CASE_STUDY_REDESIGN.md` | User direction changed from one featured project to all projects receiving the featured case-study treatment in a single unified section. | None |
 | Phase 7 — Selected Projects | Complete | `04_HOMEPAGE_REDESIGN.md` / `05_CASE_STUDY_REDESIGN.md` | Reworked homepage projects into unified featured case-study panels ordered Password Spray, The Buyer, Vulnerability Management, and DISA, preserving title, role, summary, Problem / Outcome / Concepts context, labeled tools, and case-study CTAs. | None |
 | Phase 8 — Capabilities | Complete | `04_HOMEPAGE_REDESIGN.md` / `06_CONTENT_AND_COPY.md` | Replaced the badge-heavy skills grid with four grouped skills panels: Vulnerability Management, Hardening & Compliance, Security Operations & Investigation, and Automation / Scripting. The public-facing label remains Skills, while the section uses short descriptions, focus areas, and restrained tools/methods text instead of chip-heavy badge walls. | Build, lint, type check, and route checks passed; browser visual check blocked by browser tool sandbox metadata error. |
-| Phase 9 — Background | Complete | `04_HOMEPAGE_REDESIGN.md` / `06_CONTENT_AND_COPY.md` | Replaced the resume-highlight card cluster with a concise professional background section connecting USMC fire direction, operations leadership, cybersecurity education, CompTIA Security+, and current hands-on security work. | Build, lint, type check, and route checks passed; browser visual check blocked by browser tool sandbox metadata error. |
-| Phase 10 — Case Study Pages | Not started | `05_CASE_STUDY_REDESIGN.md` |  |  |
+| Phase 9 — Background | Complete | `04_HOMEPAGE_REDESIGN.md` / `06_CONTENT_AND_COPY.md` | Replaced the resume-highlight card cluster with a concise professional background section grounded in Marine Corps fire direction control, small-team leadership, data accuracy, cybersecurity education, CompTIA Security+, and current internship work. | Build, lint, type check, and route checks passed; browser visual check blocked by browser tool sandbox metadata error. |
+| Phase 10 — Case Study Pages | Complete | `05_CASE_STUDY_REDESIGN.md` | Reworked the shared project detail experience into professional article-style case studies and refreshed `/projects` into an editorial project index with homepage-aligned case-study cards, numbered review links, hiring relevance, tools, and GitHub evidence actions. | Build, lint, type check, route checks, and desktop/mobile browser visual checks passed. |
 | Phase 11 — Template Signal Cleanup | Not started | `02_SITE_AUDIT.md` / `07_IMPLEMENTATION_LOG.md` |  |  |
 | Phase 12 — Mobile / Accessibility / QA | Not started | `08_QA_FINAL_REVIEW.md` |  |  |
 | Phase 13 — Final Review | Not started | `08_QA_FINAL_REVIEW.md` |  |  |
@@ -295,13 +295,13 @@ Suggested structure:
 1. Title
 2. Role alignment
 3. Executive summary
-4. Problem
-5. Environment/tools
-6. Approach
-7. Evidence
-8. Result
-9. What I learned
-10. Hiring relevance
+4. Hiring relevance
+5. Problem
+6. Environment/tools
+7. Approach
+8. Evidence
+9. Result
+10. What I learned
 
 ### Phase 11 — Template Signal Cleanup
 

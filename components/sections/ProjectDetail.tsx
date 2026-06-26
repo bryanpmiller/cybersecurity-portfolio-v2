@@ -1,4 +1,4 @@
-import { BadgeCheck, FileText, Wrench } from "lucide-react";
+import { BriefcaseBusiness, FileText, Target } from "lucide-react";
 import { PageContainer } from "@/components/layout/PageContainer";
 import { Button } from "@/components/ui/Button";
 import { Badge } from "@/components/ui/Badge";
@@ -11,17 +11,6 @@ import { profile } from "@/lib/data/profile";
 
 type ProjectDetailProps = {
   project: Project;
-};
-
-const projectVisualClasses: Record<string, string> = {
-  "vulnerability-management-program":
-    "border-lineStrong bg-ink-soft before:bg-evidence",
-  "disa-stig-remediation":
-    "border-lineStrong bg-ink-soft before:bg-remediation",
-  "password-spray-threat-hunt":
-    "border-lineStrong bg-ink-soft before:bg-detection",
-  "akira-ransomware-threat-hunt":
-    "border-lineStrong bg-ink-soft before:bg-detection"
 };
 
 function getStatAccentClasses(statText: string) {
@@ -45,31 +34,7 @@ function getStatAccentClasses(statText: string) {
 export function ProjectDetail({ project }: ProjectDetailProps) {
   const evidenceLines = project.caseStudy?.evidenceBlock.lines ?? [];
   const numberedEvidenceLines = evidenceLines.map((line) => line.replace(/^\d+\.\s*/, ""));
-
-  const caseStudySections = project.caseStudy
-    ? [
-      {
-        heading: "Problem",
-        content: project.caseStudy.problem
-      },
-      {
-        heading: "Approach",
-        items: project.caseStudy.approach
-      },
-      {
-        heading: "Evidence",
-        items: project.caseStudy.evidence
-      },
-      {
-        heading: "Outcome",
-        content: project.caseStudy.outcome
-      },
-      {
-        heading: "What I learned",
-        items: project.caseStudy.lessons
-      }
-    ]
-    : [];
+  const caseStudy = project.caseStudy;
 
   return (
     <PageContainer>
@@ -77,118 +42,144 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
         <SectionHeader eyebrow="Project case study" title={project.title} description={project.summary} />
       </Reveal>
 
-      <section className="mt-8 grid min-w-0 gap-5 sm:mt-10 lg:grid-cols-2 lg:gap-6">
-        <Reveal className="h-full" delay={0.06}>
-          <Card className="flex h-full items-center" variant="glass">
-            {project.caseStudy ? (
-              <div
-                className={`relative w-full overflow-hidden rounded-md border p-5 before:absolute before:inset-x-0 before:top-0 before:h-px ${projectVisualClasses[project.slug] ?? "border-line bg-surfaceElevated before:bg-evidence"}`}
-              >
-                <p className="eyebrow-text">{project.caseStudy.visual.label}</p>
-                <div className="mt-5 grid gap-3">
-                  {project.caseStudy.visual.stats.map((stat) => (
-                    <div
-                      className={`relative overflow-hidden rounded-md border border-line bg-surface/90 p-4 pl-5 text-center before:absolute before:bottom-4 before:left-0 before:top-4 before:w-1 before:rounded-r-full ${getStatAccentClasses(`${stat.label} ${stat.value}`)}`}
-                      key={stat.label}
-                    >
-                      <p className="section-title">{stat.label}</p>
-                      <p className="stat-label mt-2">{stat.value}</p>
-                    </div>
-                  ))}
-                </div>
+      <div className="mt-8 grid min-w-0 gap-6 sm:mt-10 lg:grid-cols-[minmax(0,1fr)_22rem] lg:items-start">
+        <Reveal delay={0.06}>
+          <Card as="article" className="p-5 sm:p-6 lg:p-8" variant="evidence">
+            <div className="max-w-3xl">
+              <p className="eyebrow-text inline-flex items-center gap-2">
+                <BriefcaseBusiness aria-hidden="true" className="size-3.5" />
+                Role alignment
+              </p>
+              <p className="supporting-copy mt-3">{project.role}</p>
+              <h2 className="section-title mt-8">Executive summary</h2>
+              <p className="body-copy mt-4">{project.summary}</p>
+            </div>
+
+            {caseStudy ? (
+              <section className="mt-8 max-w-3xl border-t border-line pt-8">
+                <h2 className="panel-title">Hiring relevance</h2>
+                <p className="body-copy mt-4 break-words [overflow-wrap:anywhere]">{caseStudy.hiringRelevance}</p>
+              </section>
+            ) : null}
+
+            {caseStudy ? (
+              <div className="mt-8 grid gap-3 border-y border-line py-5 sm:grid-cols-2 xl:grid-cols-4">
+                {caseStudy.visual.stats.map((stat) => (
+                  <div
+                    className={`relative min-w-0 rounded-md border border-line bg-surface p-4 pl-5 before:absolute before:bottom-4 before:left-0 before:top-4 before:w-1 before:rounded-r-full ${getStatAccentClasses(`${stat.label} ${stat.value}`)}`}
+                    key={stat.label}
+                  >
+                    <p className="stat-label">{stat.label}</p>
+                    <p className="compact-copy mt-2">{stat.value}</p>
+                  </div>
+                ))}
               </div>
-            ) : (
-              <div className="mb-6 h-56 rounded-md border border-line bg-gradient-to-br from-ink via-surfaceElevated to-ink-soft p-5">
-                <div className="grid h-full grid-cols-3 gap-3">
-                  <div className="rounded border border-evidence/20 bg-evidence/10" />
-                  <div className="rounded border border-mint/20 bg-mint/10" />
-                  <div className="rounded border border-lineStrong bg-surfaceElevated/60" />
-                  <div className="col-span-3 rounded border border-line bg-ink-soft/70" />
-                </div>
+            ) : null}
+
+            {caseStudy ? (
+              <div className="mt-8 grid min-w-0 gap-8">
+                <section className="max-w-3xl">
+                  <h2 className="panel-title">Problem</h2>
+                  <p className="body-copy mt-4 break-words [overflow-wrap:anywhere]">{caseStudy.problem}</p>
+                </section>
+
+                <section className="max-w-3xl border-t border-line pt-8">
+                  <h2 className="panel-title">Environment / Tools</h2>
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    {project.tools.map((tool) => (
+                      <Badge key={tool}>{tool}</Badge>
+                    ))}
+                  </div>
+                </section>
+
+                <section className="border-t border-line pt-8">
+                  <h2 className="panel-title">Approach</h2>
+                  <ol className="body-copy mt-5 grid gap-4 break-words [overflow-wrap:anywhere]">
+                    {caseStudy.approach.map((item, index) => (
+                      <li className="grid min-w-0 gap-3 sm:grid-cols-[2.5rem_minmax(0,1fr)]" key={item}>
+                        <span className="flex size-9 items-center justify-center rounded-md border border-lineStrong/45 bg-evidence/10 text-sm font-semibold text-evidence">
+                          {index + 1}
+                        </span>
+                        <span className="pt-1">{item}</span>
+                      </li>
+                    ))}
+                  </ol>
+                </section>
+
+                <section className="border-t border-line pt-8">
+                  <h2 className="panel-title">Evidence</h2>
+                  <ul className="body-copy mt-5 grid gap-3 break-words [overflow-wrap:anywhere]">
+                    {caseStudy.evidence.map((item) => (
+                      <li className="min-w-0 border-l border-evidence/30 pl-4" key={item}>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="mt-6 rounded-md border border-lineStrong/55 bg-ink-soft p-4 sm:p-5">
+                    <p className="eyebrow-text inline-flex items-center gap-2">
+                      <FileText aria-hidden="true" className="size-3.5" />
+                      {caseStudy.evidenceBlock.label}
+                    </p>
+                    <ol className="compact-copy mt-4 grid gap-2">
+                      {numberedEvidenceLines.map((line, index) => (
+                        <li className="grid min-w-0 gap-2 sm:grid-cols-[1.75rem_minmax(0,1fr)]" key={line}>
+                          <span className="text-evidence">{index + 1}.</span>
+                          <span className="break-words [overflow-wrap:anywhere]">{line}</span>
+                        </li>
+                      ))}
+                    </ol>
+                  </div>
+                </section>
+
+                <section className="max-w-3xl border-t border-line pt-8">
+                  <h2 className="panel-title">Result</h2>
+                  <p className="body-copy mt-4 break-words [overflow-wrap:anywhere]">{caseStudy.outcome}</p>
+                </section>
+
+                <section className="border-t border-line pt-8">
+                  <h2 className="panel-title">What I learned</h2>
+                  <ul className="body-copy mt-5 grid gap-3 break-words [overflow-wrap:anywhere]">
+                    {caseStudy.lessons.map((item) => (
+                      <li className="min-w-0 border-l border-remediation/35 pl-4" key={item}>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </section>
+
               </div>
-            )}
+            ) : null}
           </Card>
         </Reveal>
 
-        <Reveal className="h-full" delay={0.12}>
-          <Card as="aside" className="h-full" variant="glass">
-            <h2 className="panel-title inline-flex items-center gap-2">
-              <BadgeCheck aria-hidden="true" className="size-4 text-mint" />
-              Role Demonstrated
-            </h2>
-            <p className="supporting-copy mt-3">{project.role}</p>
-            <h2 className="panel-title mt-6 inline-flex items-center gap-2">
-              <Wrench aria-hidden="true" className="size-4 text-evidence" />
-              Tools Used
-            </h2>
-            <div className="mt-3 flex flex-wrap gap-2">
-              {project.tools.map((tool) => (
-                <Badge key={tool}>{tool}</Badge>
-              ))}
-            </div>
-            <div className="mt-6 rounded-md border border-lineStrong bg-ink-soft/70 p-4">
-              <h2 className="eyebrow-text inline-flex items-center gap-2 text-ink">
-                <FileText aria-hidden="true" className="size-3.5" />
-                {project.caseStudy?.evidenceBlock.label ?? "Evidence Preview"}
-              </h2>
-              {project.caseStudy ? (
-                <ol className="technical-block mt-3 list-decimal space-y-2 pl-5">
-                  {numberedEvidenceLines.map((line) => (
-                    <li className="pl-2" key={line}>
-                      <code className="break-words font-mono">{line}</code>
-                    </li>
-                  ))}
-                </ol>
-              ) : (
-                <pre className="technical-block mt-3 whitespace-pre-wrap break-words">
-                  <code className="break-words font-mono">{`// Placeholder evidence block
-// Add query, script excerpt, or screenshot summary in Phase 3.`}</code>
-                </pre>
-              )}
-            </div>
-            <div className="mt-6 flex flex-col gap-3">
-              <Button external href={project.githubUrl ?? profile.githubUrl} icon={<GitHubMarkIcon className="size-4" />} variant="secondary">
-                View Full Write Up
+        <aside className="grid content-start gap-4 lg:self-stretch">
+          <Card as="section" className="p-5" variant="glass">
+            <p className="eyebrow-text inline-flex items-center gap-2">
+              <Target aria-hidden="true" className="size-3.5" />
+              Case study focus
+            </p>
+            <p className="body-copy mt-3">{caseStudy?.visual.label ?? project.role}</p>
+          </Card>
+
+          <Card as="section" className="p-5 lg:sticky lg:top-24" variant="glass">
+            <p className="eyebrow-text">Evidence links</p>
+            <div className="mt-4 grid gap-3">
+              <Button className="grid w-full grid-cols-[1.25rem_minmax(0,1fr)_1.25rem] items-center gap-3 px-4 text-center" external href={project.githubUrl ?? profile.githubUrl} variant="secondary">
+                <GitHubMarkIcon className="size-4 justify-self-start" />
+                <span className="min-w-0 text-center">View repository</span>
+                <span aria-hidden="true" />
               </Button>
               {project.supportingLinks?.map((link) => (
-                <Button external href={link.href} icon={<GitHubMarkIcon className="size-4" />} key={link.href} variant="secondary">
-                  {link.label}
+                <Button className="grid w-full grid-cols-[1.25rem_minmax(0,1fr)_1.25rem] items-center gap-3 px-4 text-center" external href={link.href} key={link.href} variant="secondary">
+                  <GitHubMarkIcon className="size-4 justify-self-start" />
+                  <span className="min-w-0 text-center">{link.label}</span>
+                  <span aria-hidden="true" />
                 </Button>
               ))}
             </div>
           </Card>
-        </Reveal>
-      </section>
-
-      <section className="mt-5 grid min-w-0 gap-5 lg:mt-6 lg:gap-6">
-        {project.caseStudy ? caseStudySections.map((section, index) => (
-          <Reveal delay={index * 0.05} key={section.heading} y={12}>
-            <Card as="section" variant="evidence">
-              <h2 className="panel-title">{section.heading}</h2>
-              {section.content ? <p className="body-copy mt-4 break-words [overflow-wrap:anywhere]">{section.content}</p> : null}
-              {section.items ? (
-                <ul className="body-copy mt-4 space-y-3 break-words [overflow-wrap:anywhere]">
-                  {section.items.map((item) => (
-                    <li className="min-w-0 border-l border-evidence/30 pl-4" key={item}>
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              ) : null}
-            </Card>
-          </Reveal>
-        )) : ["Problem", "Approach", "Evidence", "Outcome", "What I learned"].map((heading, index) => (
-          <Reveal delay={index * 0.05} key={heading} y={12}>
-            <Card as="section" variant="evidence">
-              <h2 className="panel-title">{heading}</h2>
-              <p className="body-copy mt-4">
-                Placeholder section for the final project narrative. This will be replaced with project details and
-                GitHub evidence.
-              </p>
-            </Card>
-          </Reveal>
-        ))}
-      </section>
+        </aside>
+      </div>
     </PageContainer>
   );
 }
