@@ -311,7 +311,7 @@ function ProjectActions({ project }: { project: Project }) {
   return (
     <div className="mt-auto grid min-w-0 grid-cols-[minmax(0,1fr)_auto] items-center gap-2 pt-6">
       <Link
-        className="text-link focus-ring group/link inline-flex min-h-10 min-w-0 items-center justify-center gap-2 rounded-md border border-evidence/35 bg-evidence/10 px-3 py-2 text-center font-mono text-xs font-semibold uppercase tracking-[0.12em] text-evidence shadow-[0_0_16px_rgba(255,255,255,0.1),inset_0_1px_0_rgba(255,255,255,0.1)] transition-[background,border-color,color,box-shadow,transform] hover:-translate-y-0.5 hover:border-evidence/70 hover:bg-evidence/15 hover:text-white hover:shadow-[0_0_22px_rgba(255,255,255,0.16),inset_0_1px_0_rgba(255,255,255,0.14)] active:translate-y-0"
+        className="text-link focus-ring group/link inline-flex min-h-10 min-w-0 items-center justify-center gap-2 rounded-md border border-evidence/35 bg-evidence/10 px-3 py-2 text-center text-xs font-semibold uppercase tracking-[0.1em] text-evidence transition-[background,border-color,color] hover:border-evidence/70 hover:bg-evidence/15 hover:text-ink"
         href={`/projects/${project.slug}`}
       >
         <span className="truncate">View case study</span>
@@ -320,7 +320,7 @@ function ProjectActions({ project }: { project: Project }) {
       {project.githubUrl ? (
         <a
           aria-label={`Open GitHub repository for ${project.title}`}
-          className="inline-flex size-10 shrink-0 items-center justify-center rounded-md border border-white/35 bg-white/5 text-white shadow-[0_0_16px_rgba(255,255,255,0.1),inset_0_1px_0_rgba(255,255,255,0.1)] ring-1 ring-white/10 transition-[background,border-color,box-shadow,transform] hover:-translate-y-0.5 hover:border-white/55 hover:bg-white/10 hover:shadow-[0_0_22px_rgba(255,255,255,0.16),inset_0_1px_0_rgba(255,255,255,0.14)] focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75 focus-visible:ring-offset-2 focus-visible:ring-offset-ink active:translate-y-0"
+          className="inline-flex size-10 shrink-0 items-center justify-center rounded-md border border-ink bg-ink text-white transition-[background,border-color] hover:border-evidence hover:bg-evidence focus:outline-none focus-visible:ring-2 focus-visible:ring-evidence/75 focus-visible:ring-offset-2 focus-visible:ring-offset-surface"
           href={project.githubUrl}
           rel="noreferrer"
           target="_blank"
@@ -366,8 +366,8 @@ export function FeaturedProjects({ projects = defaultProjects, showHeader = true
               }}
               whileInView={shouldReduceMotion ? undefined : { opacity: 1, y: 0 }}
             >
-              <Card as="article" className="group/project flex h-full min-w-0 flex-col overflow-hidden focus-within:border-evidence/45 focus-within:shadow-[0_28px_86px_rgba(0,0,0,0.48)]" variant="project">
-                <div className="mb-5 h-48 min-w-0 overflow-hidden rounded-md border border-line bg-ink-soft/55 p-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.03)] transition-colors duration-200 group-hover/project:border-lineStrong/80 group-hover/project:bg-ink-soft/70 sm:p-4">
+              <Card as="article" className="group/project flex h-full min-w-0 flex-col overflow-hidden focus-within:border-evidence/45" variant="project">
+                <div className="mb-5 h-48 min-w-0 overflow-hidden rounded-md border border-line bg-ink-soft/55 p-3 transition-colors duration-200 group-hover/project:border-lineStrong/80 group-hover/project:bg-ink-soft/70 sm:p-4">
                   <ProjectPreview shouldReduceMotion={shouldReduceMotion} slug={project.slug} />
                 </div>
                 <div className="flex flex-1 flex-col">

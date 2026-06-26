@@ -1,10 +1,10 @@
 export const profile = {
   name: "Bryan Miller",
-  title: "Vulnerability Management & Cybersecurity Analyst",
+  title: "Vulnerability Management & Security Analyst",
   headline:
-    "Cybersecurity analyst working across vulnerability management, secure configuration, remediation automation, and threat hunting.",
+    "Cybersecurity analyst focused on reducing operational risk.",
   positioning:
-    "I reduce security risk through vulnerability management, secure configuration, remediation automation, and threat-focused investigation.",
+    "Cybersecurity analyst focused on reducing operational risk. I work across vulnerability management, secure configuration, PowerShell remediation, and security investigations, translating technical findings into measurable improvements.",
   professionalSummary:
     "My strongest fit is vulnerability management, security operations, threat detection, and technical compliance. This portfolio organizes the evidence: scanning, reporting, remediation automation, secure configuration, threat hunting, and validation.",
   resumeSnapshot:

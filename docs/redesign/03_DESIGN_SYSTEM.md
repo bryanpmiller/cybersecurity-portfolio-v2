@@ -1,4 +1,4 @@
-# 03 — Design System
+# 03 - Design System
 
 This document owns Phase 2 design system work.
 
@@ -37,135 +37,159 @@ Avoid:
 - Terminal-inspired decoration
 - Dashboard-heavy styling
 
-## Suggested Palette Direction
+## Implemented Palette Direction
 
-Adapt this to the existing project structure.
+The Phase 2 implementation keeps existing semantic color names so later phases can move faster, but remaps them to a calmer light-first system.
+
+Palette refinement: after reviewing the cream/black trial, the active palette was adjusted to the requested blue shades, white, and red-violet direction. This palette should feel polished, organized, professional, and lightly dynamic. Use pale blue as page atmosphere rather than a default component fill, white and near-white as the clean content canvas, deep navy as the confident typography/CTA anchor, royal blue as the technical proof color, and eggplant/red-violet as the highest-emphasis evidence accent.
 
 ```css
---background: #f7f5f0;
+--background: #effafd;
 --surface: #ffffff;
---text-primary: #111827;
---text-secondary: #4b5563;
---border: #e5e7eb;
---accent: #2f6f68;
---accent-dark: #0f3d3e;
---dark-section: #0f172a;
+--surface-elevated: #f6fbfe;
+--text-primary: #080b3f;
+--text-secondary: #33415f;
+--border: #d8e8f5;
+--border-strong: #4a8bdf;
+--accent: #243b8f;
+--accent-secondary: #4a8bdf;
+--accent-high: #a0006d;
 ```
+
+Surface usage rule: pale blue should mostly appear in the page background, subtle atmosphere, and occasional emphasis. Repeated panels, rows, proof pills, evidence containers, and card interiors should default to white or near-white so the palette stays elegant and does not wash out the content.
+
+Hero credential proof pills should use flat white surfaces, a slightly stronger blue border, and a tiny soft shadow so they remain readable against the pale blue page atmosphere.
+
+Semantic evidence colors use a restrained color-wheel strategy so the blue/white base stays professional while security data remains readable:
+
+- Critical uses red-violet/eggplant for the strongest alert color.
+- High and medium use adjacent violet-blue and royal blue shades to stay within the system.
+- Detection/remediation use deeper blue and teal-blue values for technical investigation and corrective action.
+- These colors should appear in charts, metric bars, small status pills, and project preview evidence only. They should not become broad page backgrounds, glows, or decorative accents.
+
+- Critical: `#a0006d`
+- High: `#6d4fb0`
+- Medium: `#4a8bdf`
+- Detection: `#243b8f`
+- Remediation: `#2c7fba`
+- Evidence/accent: `#243b8f`
 
 ## Typography Direction
 
-The typography should be the primary visual feature.
+The typography is now a stronger visual feature:
 
-Use:
-
-- Large hero headline
-- Clear section headings
-- Readable body text
-- Strong line height
-- Restrained labels
-- Clean case-study body text
-
-Avoid:
-
-- Tiny dense text
-- Too many uppercase labels
-- Overly futuristic type styling
-- Code-like type for normal content
+- Page, section, panel, and card headings use dark ink text instead of white-on-dark styling.
+- Eyebrow labels are still restrained and uppercase, but no longer default to monospace.
+- Body, lede, compact, and supporting copy use a darker local slate scale for readable light-theme contrast.
+- Monospace remains available for real code, query, command, and evidence snippets.
 
 ## Component Direction
 
 ### Buttons
 
-Use:
+Implemented:
 
-- Clear primary CTA
-- Subtle secondary CTA
-- No neon glow
-- Strong hover/focus states
+- Primary CTA uses a solid muted evidence color with no neon gradient.
+- Secondary CTA uses white/light surfaces with subtle borders and soft shadow.
+- Hover and focus states are clear but restrained.
+- Button hover no longer uses glow or lift effects.
 
 ### Cards
 
-Use fewer cards.
+Implemented:
 
-When cards are used:
-
-- Soft border
-- Subtle shadow
-- No glow
-- Clear heading
-- Short supporting text
-- Strong spacing
+- Shared cards now use white/light surfaces, subtle borders, 6px radius, and a soft enterprise shadow.
+- The previous `terminal` card variant no longer renders as a terminal surface; it is temporarily mapped to the neutral card foundation until later section phases rename/remove it.
+- Metric, project, evidence, glass, and default variants now share a calmer foundation.
 
 ### Code / Query Blocks
 
-Use clean formatting only for real technical evidence.
+Implemented:
 
-Allowed:
-
-- Real PowerShell
-- Real KQL
-- Real commands
-- Real config snippets
-
-Avoid:
-
-- Fake terminal prompts
-- Decorative command-line text
-- “Access granted” language
+- `.technical-block` remains monospace and is reserved for real technical evidence.
+- Decorative terminal and grid overlays were reduced or removed from the most visible sections.
 
 ## Phase 2 Tasks
 
-- [ ] Update global color tokens
-- [ ] Update typography scale
-- [ ] Update spacing scale
-- [ ] Update border radius
-- [ ] Update shadows
-- [ ] Update card styles
-- [ ] Update buttons
-- [ ] Update section backgrounds
-- [ ] Update code/query block styles
-- [ ] Update links
-- [ ] Remove or reduce glow effects
+- [x] Update global color tokens
+- [x] Update typography scale
+- [x] Update spacing scale
+- [x] Update border radius
+- [x] Update shadows
+- [x] Update card styles
+- [x] Update buttons
+- [x] Update section backgrounds
+- [x] Update code/query block styles
+- [x] Update links
+- [x] Remove or reduce glow effects
 
 ## Phase 2 Implementation Notes
 
-Codex should fill this in.
+Phase 2 intentionally changed the design foundation without restructuring homepage content or rewriting section copy. Dashboard labels and project-card layouts remain for later phases, but their inherited styling is now lighter, calmer, and less cyber-template driven.
 
 ### Files Changed
 
 | File | Change Summary |
 |---|---|
-|  |  |
+| `tailwind.config.ts` | Replaced dark/neon theme tokens with blue shades, white, and red-violet palette, local slate text scale, matched evidence colors, and softer shadows. |
+| `app/globals.css` | Switched to pale blue/white light color scheme, removed global cyber grid texture, reduced glow/radial effects, updated typography utilities, link/focus styles, and page depth treatment. |
+| `components/ui/Card.tsx` | Flattened card variants to neutral light surfaces with subtle borders, softer shadows, and smaller radius. |
+| `components/ui/Button.tsx` | Replaced neon gradient buttons with solid muted primary and restrained secondary styling. |
+| `components/ui/Badge.tsx` | Reworked shared badge styling into a quiet bordered tag. |
+| `components/layout/Navbar.tsx` | Updated sticky nav to a light translucent shell with restrained active states. |
+| `components/layout/Footer.tsx` | Changed footer from dark ink to light surface. |
+| `app/layout.tsx` | Updated skip-link styling for light theme contrast. |
+| `components/sections/HeroSection.tsx` | Removed grid/glow overlays from the hero side panel and adjusted light-theme contrast. |
+| `components/sections/RiskReductionDashboard.tsx` | Removed grid overlay and replaced saturated critical gradient with muted solid severity treatment. |
+| `components/sections/ImpactMetricsStrip.tsx` | Removed grid overlay and replaced bar gradient with muted remediation color. |
+| `components/sections/SkillsOverview.tsx` | Reduced badge glow/gradient treatment and removed monospace from normal capability label. |
+| `components/sections/FeaturedProjects.tsx` | Reduced glow-heavy project actions and GitHub button treatment while preserving layout for later phases. |
+| `components/sections/ProjectDetail.tsx` | Replaced dark gradient visual panels with light neutral evidence panels and fixed heading contrast. |
+| `app/contact/page.tsx` | Removed glow shadows from contact icon treatments and improved GitHub icon contrast. |
+| `app/projects/page.tsx` | Reduced glow/hover treatment in project index navigation and fixed light-theme contrast. |
+| `app/resume/page.tsx` | Fixed resume snapshot title contrast for the light theme. |
 
 ### New Design Tokens or Styles
 
-- 
-- 
-- 
+- Blue/white/red-violet page foundation: `#effafd`, `#ffffff`, `#f8fcff`, `#f6fbfe`, `#080b3f`, `#4a8bdf`, `#a0006d`
+- Deep blue accent for accessible CTAs and focus states: `#243b8f`
+- Matched evidence colors: `#a0006d`, `#6d4fb0`, `#4a8bdf`, `#243b8f`, `#2c7fba`
+- Softer shadows: `shadow-soft` and `shadow-raised`
+- Local slate scale tuned for readable light-theme text
 
 ### Removed or Reduced Visual Patterns
 
-- 
-- 
-- 
+- Removed global cyber grid and dotted background texture.
+- Removed bright teal radial glow washes from the global page foundation.
+- Removed terminal/grid overlays from the hero and metrics panels.
+- Reduced neon gradients, glow shadows, and glass effects in shared components.
+- Reduced monospace usage in global labels and skills section labels.
 
 ### Build / Lint / Type Check Results
 
 | Check | Result | Notes |
 |---|---|---|
-| Build |  |  |
-| Lint |  |  |
-| Type check |  |  |
-| Tests |  |  |
+| Build | Passed | `npm.cmd run build` completed successfully. |
+| Lint | Passed | `npm.cmd run lint` completed successfully. |
+| Type check | Passed | `npx.cmd tsc --noEmit` completed successfully. |
+| Tests | Not available | No test script is defined in `package.json`. |
+| Local route check | Passed | Dev server returned `200` for homepage, secondary pages, and project detail routes. |
+| Browser screenshot check | Passed | Browser visual inspection is working after the tool/runtime update. Hero proof pills were inspected in-browser with zero console errors. |
+| Palette refinement checks | Passed | `npm.cmd run lint`, `npm.cmd run build`, and `npx.cmd tsc --noEmit` passed after the beige/dark-grey palette update. |
+| Cream/black palette checks | Passed | `npm.cmd run lint`, `npm.cmd run build`, and `npx.cmd tsc --noEmit` passed after the cream/black palette update. |
+| Evidence palette checks | Passed | `npm.cmd run lint`, `npm.cmd run build`, and `npx.cmd tsc --noEmit` passed after adding the color-wheel evidence palette. |
+| Blue/red-violet palette checks | Passed | `npm.cmd run lint`, `npm.cmd run build`, and `npx.cmd tsc --noEmit` passed after applying the blue shades, white, and red-violet palette. Route checks also returned HTTP 200. |
+| Surface usage refinement checks | Passed | `npm.cmd run lint`, `npm.cmd run build`, and `npx.cmd tsc --noEmit` passed after reserving pale blue for page atmosphere and shifting repeated component fills to white/near-white. Route checks also returned HTTP 200. |
+| Hero proof pill refinement checks | Passed | Browser computed styles confirmed true white pill backgrounds, stronger royal-blue borders, tiny shadows, and zero console errors. |
 
 ## Phase 2 Completion Checklist
 
-- [ ] Global colors updated
-- [ ] Typography improved
-- [ ] Spacing system improved
-- [ ] Buttons updated
-- [ ] Cards updated
-- [ ] Neon/glow effects reduced
-- [ ] Build/lint/type checks run if available
-- [ ] `README.md` phase status board updated
-- [ ] `07_IMPLEMENTATION_LOG.md` updated
+- [x] Global colors updated
+- [x] Typography improved
+- [x] Spacing system improved
+- [x] Buttons updated
+- [x] Cards updated
+- [x] Neon/glow effects reduced
+- [x] Build/lint/type checks run if available
+- [x] `README.md` phase status board updated
+- [x] `07_IMPLEMENTATION_LOG.md` updated

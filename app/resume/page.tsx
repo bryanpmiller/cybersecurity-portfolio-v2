@@ -17,7 +17,7 @@ export default function ResumePage() {
     (highlight) => highlight.title === "Education" || highlight.title === "Certificates"
   );
   const snapshotTitleClassName =
-    "card-title break-words border-l-2 border-evidence/70 pl-3 text-[1.05rem] text-white";
+    "card-title break-words border-l-2 border-evidence/70 pl-3 text-[1.05rem] text-ink";
 
   return (
     <PageContainer>

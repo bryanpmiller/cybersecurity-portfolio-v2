@@ -158,15 +158,15 @@ Codex must update this table after every phase.
 
 | Phase | Status | Owner File | Summary | Blockers |
 |---|---|---|---|---|
-| Phase 1 — Site Audit | Not started | `02_SITE_AUDIT.md` |  |  |
-| Phase 2 — Design System | Not started | `03_DESIGN_SYSTEM.md` |  |  |
-| Phase 3 — Homepage Structure | Not started | `04_HOMEPAGE_REDESIGN.md` |  |  |
-| Phase 4 — Hero Section | Not started | `04_HOMEPAGE_REDESIGN.md` / `06_CONTENT_AND_COPY.md` |  |  |
-| Phase 5 — Proof / Metrics | Not started | `04_HOMEPAGE_REDESIGN.md` |  |  |
-| Phase 6 — Featured Case Study | Not started | `04_HOMEPAGE_REDESIGN.md` / `05_CASE_STUDY_REDESIGN.md` |  |  |
-| Phase 7 — Selected Projects | Not started | `04_HOMEPAGE_REDESIGN.md` / `05_CASE_STUDY_REDESIGN.md` |  |  |
-| Phase 8 — Capabilities | Not started | `04_HOMEPAGE_REDESIGN.md` / `06_CONTENT_AND_COPY.md` |  |  |
-| Phase 9 — Background | Not started | `04_HOMEPAGE_REDESIGN.md` / `06_CONTENT_AND_COPY.md` |  |  |
+| Phase 1 — Site Audit | Complete | `02_SITE_AUDIT.md` | Audited tech stack, key files, template signals, content to preserve/rewrite, and recommended implementation order. No website code edited. | None |
+| Phase 2 — Design System | Complete | `03_DESIGN_SYSTEM.md` | Refactored global tokens, typography utilities, card/button/badge styles, shell surfaces, reduced grid/glow/terminal styling, and refined the active palette to pale blue `#EFFAFD`, white/near-white surfaces, royal blue `#4A8BDF`, and eggplant `#A0006D` with matched evidence colors. Pale blue is now reserved mostly for page atmosphere instead of repeated component fills; hero proof pills use white surfaces with stronger borders. | Build, lint, type check, route checks, and browser visual check passed. |
+| Phase 3 — Homepage Structure | Complete | `04_HOMEPAGE_REDESIGN.md` | Reordered the homepage into the approved editorial hierarchy: hero, proof/impact, unified featured case studies, capabilities, background, and contact CTA. | None |
+| Phase 4 — Hero Section | Complete | `04_HOMEPAGE_REDESIGN.md` / `06_CONTENT_AND_COPY.md` | Reworked the hero so Bryan Miller is the controlled H1, removed the generic "Cybersecurity Portfolio" eyebrow, softened the name color to match the supporting copy, restored Vulnerability Management & Security Analyst as the role line, kept the risk-reduction sentence in supporting copy, and kept credential pills below the buttons. | Browser visual check blocked by browser tool sandbox metadata error; build, lint, type check, and route checks passed. |
+| Phase 5 — Proof / Metrics | Complete | `04_HOMEPAGE_REDESIGN.md` / `06_CONTENT_AND_COPY.md` | Reworked the proof section from dashboard-style metric cards into restrained executive proof blocks with large numbers, short labels, and concise context while preserving the 100%, 92%, 88%, and 100% outcomes; network security proof is scoped to RDP-related brute-force attempts reduced through inbound NSG and firewall controls. | Build, lint, type check, and route checks passed; browser visual check blocked by browser tool sandbox metadata error. |
+| Phase 6 — Featured Case Study | Complete | `04_HOMEPAGE_REDESIGN.md` / `05_CASE_STUDY_REDESIGN.md` | User direction changed from one featured project to all projects receiving the featured case-study treatment in a single unified section. | None |
+| Phase 7 — Selected Projects | Complete | `04_HOMEPAGE_REDESIGN.md` / `05_CASE_STUDY_REDESIGN.md` | Reworked homepage projects into unified featured case-study panels ordered Password Spray, The Buyer, Vulnerability Management, and DISA, preserving title, role, summary, Problem / Outcome / Concepts context, labeled tools, and case-study CTAs. | None |
+| Phase 8 — Capabilities | Complete | `04_HOMEPAGE_REDESIGN.md` / `06_CONTENT_AND_COPY.md` | Replaced the badge-heavy skills grid with four grouped skills panels: Vulnerability Management, Hardening & Compliance, Security Operations & Investigation, and Automation / Scripting. The public-facing label remains Skills, while the section uses short descriptions, focus areas, and restrained tools/methods text instead of chip-heavy badge walls. | Build, lint, type check, and route checks passed; browser visual check blocked by browser tool sandbox metadata error. |
+| Phase 9 — Background | Complete | `04_HOMEPAGE_REDESIGN.md` / `06_CONTENT_AND_COPY.md` | Replaced the resume-highlight card cluster with a concise professional background section connecting USMC fire direction, operations leadership, cybersecurity education, CompTIA Security+, and current hands-on security work. | Build, lint, type check, and route checks passed; browser visual check blocked by browser tool sandbox metadata error. |
 | Phase 10 — Case Study Pages | Not started | `05_CASE_STUDY_REDESIGN.md` |  |  |
 | Phase 11 — Template Signal Cleanup | Not started | `02_SITE_AUDIT.md` / `07_IMPLEMENTATION_LOG.md` |  |  |
 | Phase 12 — Mobile / Accessibility / QA | Not started | `08_QA_FINAL_REVIEW.md` |  |  |
@@ -233,11 +233,10 @@ Preferred structure:
 
 1. Hero
 2. Proof / impact section
-3. Featured case study
-4. Selected projects
-5. Capabilities
-6. Background
-7. Contact CTA
+3. Featured case studies
+4. Capabilities
+5. Background
+6. Contact CTA
 
 ### Phase 4 — Hero Section
 
@@ -254,11 +253,11 @@ Metrics to preserve:
 - 100% critical vulnerability reduction
 - 92% high vulnerability reduction
 - 88% medium vulnerability reduction
-- 100% brute-force incident reduction
+- 100% RDP-related brute-force attempt reduction
 
 ### Phase 6 — Featured Case Study
 
-Create one prominent featured case study, preferably the Vulnerability Management Program.
+Create a prominent featured case-study experience. Current user direction is to treat all four homepage projects as featured case studies rather than singling out only one.
 
 Use:
 

@@ -13,7 +13,7 @@ export const resumeHighlights = [
   },
   {
     title: "Security Impact Metrics",
-    body: "100% reduction in critical vulnerabilities\n92% reduction in high vulnerabilities\n88% reduction in medium vulnerabilities\n100% reduction in brute force incidents through inbound NSG and firewall controls."
+    body: "100% reduction in critical vulnerabilities\n92% reduction in high vulnerabilities\n88% reduction in medium vulnerabilities\n100% reduction in RDP-related brute-force attempts through inbound NSG and firewall controls."
   }
 ];
 
@@ -36,7 +36,7 @@ export const impactMetrics = [
   ...vulnerabilityReductionStats,
   {
     value: "100%",
-    label: "Brute force incidents reduced through inbound NSG and firewall controls"
+    label: "RDP-related brute-force attempts reduced through inbound NSG and firewall controls"
   }
 ];
 

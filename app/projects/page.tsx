@@ -29,12 +29,12 @@ export default function ProjectsPage() {
         >
           {projects.map((project) => (
             <Link
-              className="focus-ring group min-w-0 rounded-md border border-lineStrong/55 bg-ink-soft/75 px-3 py-2.5 transition-[background,border-color,box-shadow,color] hover:border-evidence/45 hover:bg-surfaceElevated/85 hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.05)] sm:py-3"
+              className="focus-ring group min-w-0 rounded-md border border-line bg-ink-soft px-3 py-2.5 transition-[background,border-color,color] hover:border-evidence/45 hover:bg-surfaceElevated/85 sm:py-3"
               href={`/projects/${project.slug}`}
               key={project.slug}
             >
               <span className="badge-text text-evidence">Case study</span>
-              <span className="mt-1 line-clamp-2 min-w-0 text-sm font-semibold leading-5 text-slate-100 group-hover:text-white">
+              <span className="mt-1 line-clamp-2 min-w-0 text-sm font-semibold leading-5 text-slate-100 group-hover:text-ink">
                 {project.title}
               </span>
             </Link>

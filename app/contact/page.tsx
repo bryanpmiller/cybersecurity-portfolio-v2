@@ -25,7 +25,7 @@ export default function ContactPage() {
         <Reveal className="h-full" delay={0.06}>
           <Card as="section" className="group flex h-full flex-col overflow-hidden border-lineStrong/80" variant="evidence">
             <div className="flex min-w-0 items-start gap-4">
-              <span className="flex size-11 shrink-0 items-center justify-center rounded-md border border-remediation/35 bg-remediation/10 text-remediation shadow-[0_0_18px_rgba(138,180,248,0.13),inset_0_1px_0_rgba(255,255,255,0.08)] ring-1 ring-remediation/10 transition-[background,border-color,box-shadow] duration-200 group-hover:border-remediation/55 group-hover:bg-remediation/15 group-hover:shadow-[0_0_24px_rgba(138,180,248,0.2),inset_0_1px_0_rgba(255,255,255,0.12)]">
+              <span className="flex size-11 shrink-0 items-center justify-center rounded-md border border-remediation/35 bg-remediation/10 text-remediation transition-[background,border-color] duration-200 group-hover:border-remediation/55 group-hover:bg-remediation/15">
                 <LinkedInLogo className="h-auto w-6" variant="bug" />
               </span>
               <div className="min-w-0">
@@ -44,7 +44,7 @@ export default function ContactPage() {
         <Reveal className="h-full" delay={0.12}>
           <Card as="section" className="group flex h-full flex-col overflow-hidden border-lineStrong/80" variant="evidence">
             <div className="flex min-w-0 items-start gap-4">
-              <span className="flex size-11 shrink-0 items-center justify-center rounded-md border border-white/35 bg-white/5 text-white shadow-[0_0_18px_rgba(255,255,255,0.12),inset_0_1px_0_rgba(255,255,255,0.12)] ring-1 ring-white/10 transition-[background,border-color,box-shadow] duration-200 group-hover:border-white/55 group-hover:bg-white/10 group-hover:shadow-[0_0_24px_rgba(255,255,255,0.18),inset_0_1px_0_rgba(255,255,255,0.16)]">
+              <span className="flex size-11 shrink-0 items-center justify-center rounded-md border border-ink bg-ink text-white transition-[background,border-color] duration-200 group-hover:border-evidence group-hover:bg-evidence">
                 <GitHubLogo className="h-6 w-auto" variant="invertocat" />
               </span>
               <div className="min-w-0">
@@ -63,7 +63,7 @@ export default function ContactPage() {
         <Reveal className="h-full" delay={0.18}>
           <Card as="section" className="group flex h-full flex-col overflow-hidden border-lineStrong/80" variant="evidence">
             <div className="flex min-w-0 items-start gap-4">
-              <span className="flex size-11 shrink-0 items-center justify-center rounded-md border border-mint/35 bg-mint/10 text-mint shadow-[0_0_18px_rgba(125,211,199,0.13),inset_0_1px_0_rgba(255,255,255,0.08)] ring-1 ring-mint/10 transition-[background,border-color,box-shadow] duration-200 group-hover:border-mint/55 group-hover:bg-mint/15 group-hover:shadow-[0_0_24px_rgba(125,211,199,0.2),inset_0_1px_0_rgba(255,255,255,0.12)]">
+              <span className="flex size-11 shrink-0 items-center justify-center rounded-md border border-mint/35 bg-mint/10 text-mint transition-[background,border-color] duration-200 group-hover:border-mint/55 group-hover:bg-mint/15">
                 <FileText aria-hidden="true" className="size-5" strokeWidth={1.8} />
               </span>
               <div className="min-w-0">
