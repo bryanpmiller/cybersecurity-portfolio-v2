@@ -8,7 +8,7 @@ type ButtonProps = {
   accent?: "evidence" | "remediation" | "mint" | "white";
   ariaLabel?: string;
   className?: string;
-  variant?: "primary" | "secondary";
+  variant?: "primary" | "secondary" | "featured";
   external?: boolean;
   icon?: ReactNode;
 };
@@ -35,6 +35,8 @@ export function Button({ href, children, accent = "evidence", ariaLabel, classNa
   const classes =
     variant === "primary"
       ? "border border-evidence bg-evidence text-white shadow-soft hover:border-ink hover:bg-ink hover:text-white"
+      : variant === "featured"
+        ? "border border-blue/45 bg-blue/[0.14] text-evidence shadow-[0_14px_34px_rgba(36,59,143,0.10)] hover:border-evidence hover:bg-evidence hover:text-white"
       : cn(
           "border border-line bg-surface text-slate-200 shadow-soft",
           secondaryAccentClasses[accent]

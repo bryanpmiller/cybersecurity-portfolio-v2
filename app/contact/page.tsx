@@ -3,6 +3,7 @@ import { PageContainer } from "@/components/layout/PageContainer";
 import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
 import { GitHubLogo } from "@/components/ui/GitHubLogo";
+import { GitHubMarkIcon } from "@/components/ui/GitHubMarkIcon";
 import { LinkedInLogo } from "@/components/ui/LinkedInLogo";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionHeader } from "@/components/ui/SectionHeader";
@@ -54,8 +55,8 @@ export default function ContactPage() {
             </div>
             <p className="compact-copy mt-3">Review project repositories and supporting technical evidence.</p>
             <div className="mt-auto pt-6">
-              <Button accent="white" ariaLabel="View GitHub" external href={profile.githubUrl} variant="secondary">
-                <GitHubLogo className="h-5 w-auto" />
+              <Button external href={profile.githubUrl} icon={<GitHubMarkIcon className="size-4" />} variant="secondary">
+                View GitHub
               </Button>
             </div>
           </Card>

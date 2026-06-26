@@ -390,12 +390,13 @@ Avoid:
 
 ### Layout Chosen
 
-- Unified featured case-study list with white card surfaces, top project context, a horizontal Problem / Outcome / Concepts evidence band, a restrained labeled Tools row, and a clear case-study CTA.
+- Unified featured case-study list with white card surfaces, top project context, a horizontal Problem / Outcome / Concepts evidence band, a restrained labeled Tools row, and a light-blue featured case-study CTA.
 
 ### Why This Layout Was Chosen
 
 - It makes every homepage project feel like a featured case-study preview instead of separating one featured item from supporting cards.
 - It preserves each project title, role alignment, summary, Problem / Outcome / Concepts context, tools, and case-study link while reducing decorative previews and badge-heavy visual noise.
+- It gives the homepage case-study CTA more emphasis than a secondary white button without using the solid primary treatment reserved for the dedicated `/projects` page.
 - It avoids a visually heavy right rail by letting the evidence content span the card width in a balanced band beneath the project summary.
 - It removes the singular featured-project hierarchy so Password Spray, The Buyer, Vulnerability Management, and DISA all appear as featured case studies.
 
@@ -404,6 +405,8 @@ Avoid:
 | File | Change Summary |
 |---|---|
 | `app/page.tsx` | Replaced the selected-projects grid and standalone featured case-study section with unified featured case-study cards ordered Password Spray, The Buyer, Vulnerability Management, and DISA. |
+| `components/sections/ProjectCaseStudyCard.tsx` | Updated compact homepage cards to use the light-blue featured CTA treatment while keeping expanded `/projects` cards on the solid primary button. |
+| `components/ui/Button.tsx` | Added the shared featured button variant for mid-emphasis case-study actions. |
 
 ## Phase 7 Checklist
 
@@ -538,15 +541,15 @@ Avoid:
 
 ### Final Background Copy
 
-> My background combines USMC fire direction, operations leadership, and hands-on cybersecurity work. That path shaped how I approach security: define the problem, verify the evidence, prioritize the risk, and document the fix.
+> My Marine Corps fire direction control experience was built around pressure, precision, and accountability. I led small teams, trained Marines on required systems and operating procedures, and learned how much outcomes depend on accurate data. I bring that same mindset to vulnerability management, secure configuration, remediation scripting, and security investigation.
 >
-> Supporting points connect USMC fire direction and operations leadership, Norwich University cybersecurity coursework, CompTIA Security+, vulnerability management, secure configuration, PowerShell remediation, Defender/Sentinel-style investigation, and measured risk reduction.
+> Supporting points connect Marine Corps fire direction control, small-team leadership, systems training, Norwich University cybersecurity coursework, CompTIA Security+, current vulnerability management and SecOps internship work, PowerShell remediation, Defender detections, Sentinel dashboards, and measured risk reduction.
 
 ### Files Changed
 
 | File | Change Summary |
 |---|---|
-| `app/page.tsx` | Replaced the three-card resume highlight cluster with a single restrained background section that connects USMC fire direction, operations leadership, cybersecurity education, certification, and current hands-on security work. |
+| `app/page.tsx` | Replaced the three-card resume highlight cluster with a single restrained background section and refined the wording around Marine Corps fire direction control, small-team leadership, data accuracy, cybersecurity education, certification, and current internship work. |
 
 ## Phase 9 Checklist
 

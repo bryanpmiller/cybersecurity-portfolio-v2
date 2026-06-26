@@ -9,10 +9,10 @@ Codex must update this file after each phase.
 ## Current Working Summary
 
 - Current phase: Phase 10 - Case Study Pages
-- Current status: Not started
-- Last completed phase: Phase 9 - Background
-- Current blockers: Browser visual inspection is blocked by the browser tool sandbox metadata error.
-- Next recommended action: Begin Phase 10 by redesigning project detail pages into professional case-study pages.
+- Current status: Complete
+- Last completed phase: Phase 10 - Case Study Pages
+- Current blockers: None.
+- Next recommended action: Begin Phase 11 by searching for and removing remaining template signals.
 
 ## Design Decision Log
 
@@ -46,6 +46,14 @@ Codex must update this file after each phase.
 | 2026-06-26 / Phase 5 refinement | Scope the network security proof to RDP-related brute-force attempts. | User clarified that the result was a 100% reduction in RDP-related brute-force attempts, and the prior paragraph read like internal commentary instead of a professional summary. | `components/sections/ImpactMetricsStrip.tsx`, `lib/data/resume.ts`, `docs/redesign/04_HOMEPAGE_REDESIGN.md`, `docs/redesign/06_CONTENT_AND_COPY.md`, `docs/redesign/README.md`, `docs/redesign/07_IMPLEMENTATION_LOG.md` |
 | 2026-06-26 / Phase 8 refinement | Restore the public-facing Skills label and simplify the section summary. | User noted that "Capabilities" and the "A concise view..." summary sounded AI-written and not like a professional self-authored portfolio section. | `app/skills/page.tsx`, `components/sections/SkillsOverview.tsx`, `docs/redesign/04_HOMEPAGE_REDESIGN.md`, `docs/redesign/06_CONTENT_AND_COPY.md`, `docs/redesign/README.md`, `docs/redesign/07_IMPLEMENTATION_LOG.md` |
 | 2026-06-26 / Phase 9 | Replace the homepage resume-highlight cluster with a concise background narrative. | Phase 9 calls for a confident, grounded connection between USMC fire direction, operations leadership, cybersecurity education, and current hands-on security work without overexplaining the transition. | `app/page.tsx`, `docs/redesign/04_HOMEPAGE_REDESIGN.md`, `docs/redesign/06_CONTENT_AND_COPY.md`, `docs/redesign/README.md`, `docs/redesign/07_IMPLEMENTATION_LOG.md` |
+| 2026-06-26 / Phase 9 refinement | Refine the background wording and resolve the stale incomplete status note. | The implementation log still showed Phase 9 as incomplete because the background wording needed one more pass. The revised copy is more direct, less generic, and ties operations discipline to current security work. | `app/page.tsx`, `docs/redesign/04_HOMEPAGE_REDESIGN.md`, `docs/redesign/06_CONTENT_AND_COPY.md`, `docs/redesign/README.md`, `docs/redesign/07_IMPLEMENTATION_LOG.md` |
+| 2026-06-26 / Phase 9 grounding refinement | Ground the background section in specific Marine Corps and internship experience. | User clarified that fire direction control built pressure performance, data accuracy, small-team leadership, and systems training. Resume PDF confirms current Vulnerability Management & SecOps internship scope, including scanning/reporting, PowerShell remediation, DISA STIG, Defender detections, Sentinel dashboards, and NSG/firewall controls. | `app/page.tsx`, `docs/redesign/04_HOMEPAGE_REDESIGN.md`, `docs/redesign/06_CONTENT_AND_COPY.md`, `docs/redesign/README.md`, `docs/redesign/07_IMPLEMENTATION_LOG.md` |
+| 2026-06-26 / Contact QA fix | Replace the invisible GitHub contact button content with a visible icon-and-text action. | The contact card used a white GitHub lockup image inside a light secondary button, making the button look empty. The new button uses the current-color GitHub mark and visible "View GitHub" text. | `app/contact/page.tsx`, `docs/redesign/07_IMPLEMENTATION_LOG.md` |
+| 2026-06-26 / Phase 10 | Convert project detail pages into article-style case studies. | The previous project detail layout still read like proof widgets and side panels. Phase 10 required complete case-study structure, stronger readability, minimal badge use, and explicit hiring relevance across all project pages. | `components/sections/ProjectDetail.tsx`, `lib/data/projects.ts`, `docs/redesign/05_CASE_STUDY_REDESIGN.md`, `docs/redesign/README.md`, `docs/redesign/07_IMPLEMENTATION_LOG.md` |
+| 2026-06-26 / Phase 10 refinement | Move hiring relevance near the top and make evidence links easier to access. | User wanted recruiters and hiring managers to see project importance immediately, requested consistent GitHub icons for every evidence link, and asked for evidence links to remain available while scrolling on desktop. | `components/sections/ProjectDetail.tsx`, `docs/redesign/05_CASE_STUDY_REDESIGN.md`, `docs/redesign/README.md`, `docs/redesign/07_IMPLEMENTATION_LOG.md` |
+| 2026-06-26 / Phase 10 evidence-link polish | Make evidence-link buttons visually uniform and keep only Evidence Links sticky. | User noted the repository buttons looked jumbled and clarified that Case Study Focus should remain visible as normal context, but should not scroll with the sticky Evidence Links panel. Evidence-link buttons now use a fixed left GitHub icon column with centered text. | `components/sections/ProjectDetail.tsx`, `docs/redesign/05_CASE_STUDY_REDESIGN.md`, `docs/redesign/README.md`, `docs/redesign/07_IMPLEMENTATION_LOG.md` |
+| 2026-06-26 / Phase 10 project-index refinement | Refresh `/projects` to match the redesigned homepage project style. | User noted the dedicated projects page still used the old homepage card style. The page now uses a shared case-study card component, a restrained project review path, full-width numbered case-study panels, hiring relevance, tools, and GitHub evidence actions. | `app/projects/page.tsx`, `app/page.tsx`, `components/sections/ProjectCaseStudyCard.tsx`, `lib/data/projects.ts`, `docs/redesign/05_CASE_STUDY_REDESIGN.md`, `docs/redesign/README.md`, `docs/redesign/07_IMPLEMENTATION_LOG.md` |
+| 2026-06-26 / Design refinement | Add a mid-emphasis homepage case-study CTA and separate the navbar surfaces. | User liked the stronger `/projects` case-study CTA but wanted the homepage version less jarring than solid blue. The homepage now uses a light royal-blue featured CTA, while the navbar uses a pale-blue elevated header, distinct white nav group, blue-tinted border, and softer active state for better desktop/mobile separation. | `components/ui/Button.tsx`, `components/sections/ProjectCaseStudyCard.tsx`, `components/layout/Navbar.tsx`, `docs/redesign/03_DESIGN_SYSTEM.md`, `docs/redesign/04_HOMEPAGE_REDESIGN.md`, `docs/redesign/README.md`, `docs/redesign/07_IMPLEMENTATION_LOG.md` |
 
 ## Phase Log
 
@@ -466,9 +474,9 @@ Issues/blockers: Browser visual inspection remains blocked by the browser tool s
 
 ### Phase 9 - Background
 
-Status: Incomplete - Need to work on the wording for this section
+Status: Complete
 
-Summary: Replaced the three-card resume highlight cluster on the homepage with a single restrained background section. The new section connects USMC fire direction, operations leadership, Norwich University cybersecurity coursework, CompTIA Security+, and current hands-on security work in a concise professional narrative.
+Summary: Replaced the three-card resume highlight cluster on the homepage with a single restrained background section. The wording was refined to connect Marine Corps fire direction control, pressure performance, data accuracy, small-team leadership, systems training, Norwich University cybersecurity coursework, CompTIA Security+, and current Vulnerability Management & SecOps internship work.
 
 Files changed:
 
@@ -493,20 +501,88 @@ Commands run:
 - `npm.cmd run build`
 - `npx.cmd tsc --noEmit`
 - `Invoke-WebRequest` route checks
+- `Get-Content -Path app/page.tsx`
+- `Get-Content -Path package.json`
+- `Select-String -Path docs/redesign/README.md -Pattern "Phase 9|Phase 10" -Context 0,0`
+- `Select-String -Path docs/redesign/07_IMPLEMENTATION_LOG.md -Pattern "Phase 9" -Context 0,8`
+- `Select-String -Path docs/redesign/04_HOMEPAGE_REDESIGN.md -Pattern "Phase 9|Background" -Context 0,8`
+- `Select-String -Path docs/redesign/06_CONTENT_AND_COPY.md -Pattern "Phase 9|Background" -Context 0,8`
+- `Get-Content -Path docs/redesign/04_HOMEPAGE_REDESIGN.md | Select-Object -Skip 532 -First 32`
+- `Get-Content -Path docs/redesign/06_CONTENT_AND_COPY.md | Select-Object -Skip 136 -First 64`
+- `Get-Content -Path docs/redesign/07_IMPLEMENTATION_LOG.md | Select-Object -Skip 462 -First 42`
+- `npm.cmd run lint` after Phase 9 wording refinement
+- `npx.cmd tsc --noEmit` after Phase 9 wording refinement
+- `npm.cmd run build` after Phase 9 wording refinement
+- `npm.cmd run start -- -p 3052 -H 127.0.0.1` for production route checks
+- `Invoke-WebRequest` route checks after Phase 9 wording refinement
+- `Get-NetTCPConnection` checks to confirm temporary verification ports were stopped
+- `pdfplumber` extraction from `public/resume/Bryan_Miller_Resume.pdf` to verify current internship wording
+- `npm.cmd run lint` after Phase 9 grounding refinement
+- `npx.cmd tsc --noEmit` after Phase 9 grounding refinement
+- `npm.cmd run build` after Phase 9 grounding refinement
+- `npm.cmd run start -- -p 3054 -H 127.0.0.1` for production route checks after Phase 9 grounding refinement
+- `Invoke-WebRequest` route checks after Phase 9 grounding refinement
 
-Issues/blockers: Browser visual inspection remains blocked by the browser tool sandbox metadata error. Lint, build, type check, and route checks passed.
+Issues/blockers: Browser visual inspection remains blocked by the browser tool sandbox metadata error. Lint, build, type check, and production route checks passed after the wording and grounding refinements. An initial hidden dev-server route check on port 3050 did not become reachable, so production `next start` route checks were used instead.
 
 ### Phase 10 - Case Study Pages
 
-Status: Not started
+Status: Complete
 
-Summary:
+Summary: Reworked all four project detail pages through the shared `ProjectDetail` component. Each page now presents a professional article-style case study with role alignment, executive summary, recruiter-facing hiring relevance near the top, proof stats, problem, environment/tools, approach, evidence, result, what I learned, case-study focus context, and evidence links. The Case Study Focus card stays in normal page flow while the Evidence Links panel alone is sticky on desktop; each evidence-link button uses a fixed left GitHub icon column with centered text while staying in normal flow on mobile. Added grounded hiring-relevance copy to each project in `lib/data/projects.ts`. Refreshed `/projects` from the old animated project-preview grid into a homepage-aligned project index with a restrained review path, full-width numbered case-study cards, hiring relevance, tools, and GitHub evidence actions.
 
 Files changed:
 
+- `components/sections/ProjectDetail.tsx`
+- `components/sections/ProjectCaseStudyCard.tsx`
+- `app/page.tsx`
+- `app/projects/page.tsx`
+- `lib/data/projects.ts`
+- `docs/redesign/05_CASE_STUDY_REDESIGN.md`
+- `docs/redesign/README.md`
+- `docs/redesign/07_IMPLEMENTATION_LOG.md`
+
 Commands run:
 
-Issues/blockers:
+- `Get-Content -Path docs/redesign/README.md`
+- `Get-Content -Path docs/redesign/05_CASE_STUDY_REDESIGN.md`
+- `Get-Content -Path components/sections/ProjectDetail.tsx`
+- `Get-Content -Path lib/data/projects.ts`
+- `npm.cmd run lint`
+- `npx.cmd tsc --noEmit`
+- `git diff -- components/sections/ProjectDetail.tsx lib/data/projects.ts`
+- `Get-Content -Path docs/redesign/07_IMPLEMENTATION_LOG.md | Select-Object -Skip 464 -First 80`
+- `Get-Content -Path docs/redesign/07_IMPLEMENTATION_LOG.md | Select-Object -Last 70`
+- `Select-String -Path docs/redesign/README.md -Pattern "Phase 10" -Context 0,1`
+- `npm.cmd run lint` after Phase 10 documentation updates
+- `npx.cmd tsc --noEmit` after Phase 10 documentation updates
+- `npm.cmd run build` after Phase 10 documentation updates
+- `npm.cmd run start -- -p 3057 -H 127.0.0.1` for Phase 10 production route checks
+- `Invoke-WebRequest` route checks after Phase 10
+- `npm.cmd run start -- -p 3058 -H 127.0.0.1` for Phase 10 browser visual checks
+- In-app browser desktop check at 1280x900 for `/projects/password-spray-threat-hunt`
+- In-app browser mobile check at 390x844 for `/projects/password-spray-threat-hunt`
+- `npm.cmd run lint` after Phase 10 evidence-link refinement
+- `npx.cmd tsc --noEmit` after Phase 10 evidence-link refinement
+- `npm.cmd run build` after Phase 10 evidence-link refinement
+- `npm.cmd run start -- -p 3061 -H 127.0.0.1` for Phase 10 evidence-link refinement route/browser checks
+- `Invoke-WebRequest` route checks after Phase 10 evidence-link refinement
+- In-app browser desktop sticky-sidebar check at 1280x900 for `/projects/vulnerability-management-program`
+- In-app browser mobile normal-flow check at 390x844 for `/projects/vulnerability-management-program`
+- `Get-Content -Raw app/projects/page.tsx`
+- `Get-Content -Raw app/page.tsx`
+- `Get-Content -Raw components/sections/FeaturedProjects.tsx`
+- `Get-Content -Raw components/ui/Card.tsx`
+- `Get-Content -Raw components/ui/Button.tsx`
+- `npm.cmd run lint` after `/projects` index refinement
+- `npx.cmd tsc --noEmit` after `/projects` index refinement
+- `npm.cmd run build` after `/projects` index refinement
+- `npm.cmd run start -- --hostname 127.0.0.1 --port 3064` for `/projects` route/browser checks
+- `Invoke-WebRequest` route checks after `/projects` index refinement
+- In-app browser desktop check at 1280x900 for `/projects`
+- In-app browser mobile check at 390x844 for `/projects`
+
+Issues/blockers: None currently. Lint, type check, build, production route checks, and desktop/mobile browser visual checks passed. The production build flipped `next-env.d.ts` to `.next/types/routes.d.ts`; it was restored to the existing dev route reference so generated-file noise stayed out of the change.
 
 ### Phase 11 - Template Signal Cleanup
 
@@ -679,6 +755,38 @@ Issues/blockers:
 | `npm.cmd run build` | Phase 9 background build verification | Passed | Next.js production build completed and prerendered all routes |
 | `npx.cmd tsc --noEmit` | Phase 9 background type verification | Passed | Completed with no TypeScript errors; rerun after restoring `next-env.d.ts` also passed |
 | `Invoke-WebRequest` route checks | Phase 9 background route verification | Passed | Homepage, secondary pages, and all project detail routes returned HTTP 200 |
+| `npm.cmd run lint` | Phase 9 wording refinement lint verification | Passed | Completed after refining the homepage background wording |
+| `npx.cmd tsc --noEmit` | Phase 9 wording refinement type verification | Passed | Completed with no TypeScript errors |
+| `npm.cmd run build` | Phase 9 wording refinement build verification | Passed | Next.js production build completed and prerendered all routes |
+| `Invoke-WebRequest` route checks | Phase 9 wording refinement route verification | Passed | `/`, secondary pages, and all four project detail routes returned HTTP 200 from production `next start` on port 3052 |
+| `npm.cmd run lint` | Phase 9 grounding refinement lint verification | Passed | Completed after grounding background wording in Marine Corps and internship experience |
+| `npx.cmd tsc --noEmit` | Phase 9 grounding refinement type verification | Passed | Completed with no TypeScript errors |
+| `npm.cmd run build` | Phase 9 grounding refinement build verification | Passed | Next.js production build completed and prerendered all routes |
+| `Invoke-WebRequest` route checks | Phase 9 grounding refinement route verification | Passed | `/`, secondary pages, and all four project detail routes returned HTTP 200 from production `next start` on port 3054 |
+| `npm.cmd run lint` | Contact GitHub button lint verification | Passed | Completed after replacing the invisible GitHub button content |
+| `npx.cmd tsc --noEmit` | Contact GitHub button type verification | Passed | Completed with no TypeScript errors |
+| `npm.cmd run build` | Contact GitHub button build verification | Passed | Next.js production build completed and prerendered all routes |
+| `Invoke-WebRequest` route check | Contact GitHub button route verification | Passed | `/contact` returned HTTP 200 from production `next start` on port 3055 |
+| `npm.cmd run lint` | Phase 10 case-study pages lint verification | Passed | Completed after redesigning shared project detail pages |
+| `npx.cmd tsc --noEmit` | Phase 10 case-study pages type verification | Passed | Completed with no TypeScript errors |
+| `npm.cmd run build` | Phase 10 case-study pages build verification | Passed | Next.js production build completed and prerendered all routes |
+| `Invoke-WebRequest` route checks | Phase 10 case-study pages route verification | Passed | `/`, secondary pages, and all four project detail routes returned HTTP 200 from production `next start` on port 3057 |
+| Browser visual inspection | Phase 10 desktop/mobile case-study visual verification | Passed | `/projects/password-spray-threat-hunt` had no horizontal overflow at 1280x900 or 390x844; required case-study sections were present after reveal animations settled |
+| `npm.cmd run lint` | Phase 10 evidence-link refinement lint verification | Passed | Completed after updating evidence-link icons, hiring relevance order, and desktop sticky sidebar behavior |
+| `npx.cmd tsc --noEmit` | Phase 10 evidence-link refinement type verification | Passed | Completed with no TypeScript errors |
+| `npm.cmd run build` | Phase 10 evidence-link refinement build verification | Passed | Next.js production build completed and prerendered all routes |
+| `Invoke-WebRequest` route checks | Phase 10 evidence-link refinement route verification | Passed | `/`, `/projects/vulnerability-management-program`, and `/projects/password-spray-threat-hunt` returned HTTP 200 from production `next start` on port 3061 |
+| Browser visual inspection | Phase 10 evidence-link refinement visual verification | Passed | Desktop confirmed hiring relevance before Problem, all evidence links use GitHub SVG icons, sticky sidebar remains visible while scrolling, and mobile keeps sidebar/evidence links static with no horizontal overflow |
+| `npm.cmd run lint` | Phase 10 `/projects` index refinement lint verification | Passed | Completed after replacing the old project-preview grid with shared case-study cards |
+| `npx.cmd tsc --noEmit` | Phase 10 `/projects` index refinement type verification | Passed | Completed with no TypeScript errors |
+| `npm.cmd run build` | Phase 10 `/projects` index refinement build verification | Passed | Next.js production build completed and prerendered all routes |
+| `Invoke-WebRequest` route checks | Phase 10 `/projects` index refinement route verification | Passed | `/`, `/projects`, `/projects/password-spray-threat-hunt`, and `/projects/vulnerability-management-program` returned HTTP 200 from production `next start` on port 3064 |
+| Browser visual inspection | Phase 10 `/projects` index refinement visual verification | Passed | Desktop and mobile `/projects` checks confirmed four case-study articles, four GitHub actions, no old preview-widget text, and no horizontal overflow |
+| `npm.cmd run lint` | Design refinement lint verification | Passed | Completed after adding the featured CTA variant and navbar surface adjustment |
+| `npx.cmd tsc --noEmit` | Design refinement type verification | Passed | Completed with no TypeScript errors after the CTA/nav updates |
+| `npm.cmd run build` | Design refinement build verification | Passed | Next.js production build completed and prerendered all routes after the CTA/nav updates |
+| `Invoke-WebRequest` route checks | Design refinement route verification | Passed | `/` and `/projects` returned HTTP 200 from production `next start` on port 3065 |
+| Browser visual inspection | Design refinement visual verification | Passed | Desktop and mobile homepage checks confirmed the navbar surface separation, light-blue homepage case-study CTA, and no horizontal overflow |
 
 ## Files Changed Index
 
@@ -728,11 +836,22 @@ Issues/blockers:
 | `docs/redesign/06_CONTENT_AND_COPY.md` | Phase 8 | Recorded the approved public-facing Skills label and grouped skill copy direction. |
 | `docs/redesign/README.md` | Phase 8 | Marked Phase 8 complete in the phase status board. |
 | `docs/redesign/07_IMPLEMENTATION_LOG.md` | Phase 8 | Logged Phase 8 decisions, files changed, commands, verification results, and next phase. |
-| `app/page.tsx` | Phase 9 | Replaced the homepage resume-highlight card cluster with a concise background section connecting USMC fire direction, operations leadership, cybersecurity education, Security+, and hands-on security work. |
-| `docs/redesign/04_HOMEPAGE_REDESIGN.md` | Phase 9 | Documented final background copy, changed files, and checklist completion. |
-| `docs/redesign/06_CONTENT_AND_COPY.md` | Phase 9 | Recorded approved background copy direction. |
-| `docs/redesign/README.md` | Phase 9 | Marked Phase 9 complete in the phase status board. |
-| `docs/redesign/07_IMPLEMENTATION_LOG.md` | Phase 9 | Logged Phase 9 decisions, files changed, commands, verification results, and next phase. |
+| `app/page.tsx` | Phase 9 | Replaced the homepage resume-highlight card cluster with a concise background section grounded in Marine Corps fire direction control, small-team leadership, data accuracy, cybersecurity education, Security+, and current internship work. |
+| `docs/redesign/04_HOMEPAGE_REDESIGN.md` | Phase 9 | Documented final grounded background copy, changed files, and checklist completion. |
+| `docs/redesign/06_CONTENT_AND_COPY.md` | Phase 9 | Recorded approved grounded background copy direction. |
+| `docs/redesign/README.md` | Phase 9 | Marked Phase 9 complete in the phase status board with the grounded background summary. |
+| `docs/redesign/07_IMPLEMENTATION_LOG.md` | Phase 9 | Logged Phase 9 decisions, grounding refinement, files changed, commands, verification results, and next phase. |
+| `app/contact/page.tsx` | Contact QA fix | Replaced the blank-looking GitHub action button with a visible GitHub mark and "View GitHub" text. |
+| `components/sections/ProjectDetail.tsx` | Phase 10 | Reworked shared project detail pages into professional article-style case studies with role alignment, executive summary, recruiter-facing hiring relevance near the top, proof stats, structured sections, case-study focus context, a sticky desktop evidence-links panel, and uniform GitHub-icon link buttons. |
+| `components/sections/ProjectCaseStudyCard.tsx` | Phase 10 project-index refinement | Added a shared compact/expanded case-study card so the homepage and `/projects` use the same project presentation system. |
+| `components/ui/Button.tsx` | Design refinement | Added a light royal-blue featured variant for homepage case-study CTAs. |
+| `components/layout/Navbar.tsx` | Design refinement | Adjusted the sticky navigation to use a pale-blue elevated header, a distinct white nav group, blue-tinted border, and softer active state. |
+| `app/page.tsx` | Phase 10 project-index refinement | Reused the shared compact case-study card for homepage featured case studies. |
+| `app/projects/page.tsx` | Phase 10 project-index refinement | Replaced the old project-preview grid with a restrained review path and expanded full-width case-study cards. |
+| `lib/data/projects.ts` | Phase 10 | Added hiring relevance copy to each project case study and centralized the case-study display order. |
+| `docs/redesign/05_CASE_STUDY_REDESIGN.md` | Phase 10 | Documented found case-study routes, template completion, project-index refinement, files changed, and checklist completion. |
+| `docs/redesign/README.md` | Phase 10 | Marked Phase 10 complete in the phase status board and noted the refreshed `/projects` index. |
+| `docs/redesign/07_IMPLEMENTATION_LOG.md` | Phase 10 | Logged Phase 10 decisions, project-index refinement, files changed, commands, verification results, and next phase. |
 
 ## Unresolved Issues
 

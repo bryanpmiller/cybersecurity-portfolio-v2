@@ -18,7 +18,7 @@ export function Navbar() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-20 border-b border-line bg-surface/88 shadow-soft backdrop-blur-xl">
+    <header className="sticky top-0 z-20 border-b border-line bg-surfaceElevated/95 shadow-soft backdrop-blur-xl">
       <nav
         aria-label="Primary navigation"
         className="relative mx-auto flex max-w-6xl flex-col gap-3 px-4 py-3 sm:px-6 sm:py-4 lg:flex-row lg:items-center lg:justify-between lg:gap-4 lg:px-8"
@@ -31,7 +31,7 @@ export function Navbar() {
             </span>
           </span>
         </Link>
-        <div className="flex flex-wrap gap-1.5 rounded-md border border-line bg-ink-soft p-1">
+        <div className="flex flex-wrap gap-1.5 rounded-md border border-lineStrong/25 bg-surface/90 p-1 shadow-[inset_0_1px_0_rgba(255,255,255,0.82),0_10px_28px_rgba(8,11,63,0.05)]">
           {navItems.map((item) => {
             const isActive = item.href === "/" ? pathname === item.href : pathname.startsWith(item.href);
 
@@ -39,9 +39,10 @@ export function Navbar() {
               <Link
                 aria-current={isActive ? "page" : undefined}
                 className={cn(
-                  "focus-ring rounded-md border border-transparent px-2.5 py-1.5 text-[0.82rem] font-medium text-slate-300 transition-[background,border-color,color] sm:px-3 sm:py-2 sm:text-sm",
-                  "hover:border-lineStrong hover:bg-surface hover:text-ink",
-                  isActive && "border-lineStrong bg-surface text-ink"
+                  "focus-ring rounded-md border px-2.5 py-1.5 text-[0.82rem] font-medium transition-[background,border-color,color] sm:px-3 sm:py-2 sm:text-sm",
+                  isActive
+                    ? "border-lineStrong/35 bg-evidence/[0.08] text-ink"
+                    : "border-transparent text-slate-300 hover:border-lineStrong/35 hover:bg-surfaceElevated hover:text-ink"
                 )}
                 href={item.href}
                 key={item.href}

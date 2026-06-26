@@ -20,6 +20,7 @@ export type Project = {
     evidence: string[];
     outcome: string;
     lessons: string[];
+    hiringRelevance: string;
     visual: {
       label: string;
       stats: Array<{
@@ -34,6 +35,13 @@ export type Project = {
   };
   featured?: boolean;
 };
+
+export const projectCaseStudyOrder = [
+  "password-spray-threat-hunt",
+  "akira-ransomware-threat-hunt",
+  "vulnerability-management-program",
+  "disa-stig-remediation"
+];
 
 export const projects: Project[] = [
   {
@@ -82,6 +90,8 @@ export const projects: Project[] = [
         "Authenticated scanning and follow-up validation provide the evidence needed to show whether remediation actually worked.",
         "Prioritizing fixes by operational impact and remediation effort creates a practical path from baseline discovery to maintenance mode."
       ],
+      hiringRelevance:
+        "Security teams need analysts who can turn scan output into prioritized remediation, communicate clearly with system owners, and validate that fixes reduced real risk.",
       visual: {
         label: "Full remediation cycle",
         stats: [
@@ -164,6 +174,8 @@ export const projects: Project[] = [
         "Compliance evidence is stronger when remediation commands are paired with verification output and screenshots.",
         "Some configuration findings may require policy-level enforcement instead of local scripting alone."
       ],
+      hiringRelevance:
+        "This work shows practical secure-configuration judgment: reading control requirements, translating them into repeatable remediation, and preserving evidence without overstating compliance.",
       visual: {
         label: "STIG Remediation Evidence",
         stats: [
@@ -238,6 +250,8 @@ export const projects: Project[] = [
         "Process, registry, file, identity, and network telemetry need to be correlated to build a reliable attack timeline.",
         "Scheduled tasks, Defender exclusions, discovery commands, archive creation, and outbound connections can form a defensible intrusion narrative."
       ],
+      hiringRelevance:
+        "SOC and SecOps teams need analysts who can pivot across endpoint telemetry, explain what the evidence supports, and separate confirmed activity from unsupported assumptions.",
       visual: {
         label: "Threat hunt chain",
         stats: [
@@ -318,6 +332,8 @@ export const projects: Project[] = [
         "MDE telemetry can support a timeline across process, file, registry, network, and logon evidence.",
         "Detection recommendations are stronger when tied to specific observed commands, hashes, paths, accounts, and ATT&CK techniques."
       ],
+      hiringRelevance:
+        "This case study demonstrates the ability to reconstruct ransomware activity from telemetry, preserve a defensible timeline, and turn observed behavior into detection opportunities.",
       visual: {
         label: "Ransomware investigation scope",
         stats: [
@@ -358,4 +374,10 @@ export const projects: Project[] = [
 
 export function getProjectBySlug(slug: string) {
   return projects.find((project) => project.slug === slug);
+}
+
+export function getOrderedCaseStudyProjects() {
+  return projectCaseStudyOrder
+    .map((slug) => projects.find((project) => project.slug === slug))
+    .filter((project): project is Project => Boolean(project));
 }
