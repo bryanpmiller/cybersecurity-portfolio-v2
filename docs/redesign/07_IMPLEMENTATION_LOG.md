@@ -60,6 +60,8 @@ Codex must update this file after each phase.
 | 2026-06-28 / Post-final refinement | Reorder the shared skills groups on the homepage and `/skills`. | The requested desktop order is Security Operations & Investigation with Vulnerability Management on the first row, then Hardening & Compliance with Automation / Scripting on the second row. The shared `skillGroups` data controls both pages, so one source change keeps them aligned. | `lib/data/skills.ts`, `docs/redesign/04_HOMEPAGE_REDESIGN.md`, `docs/redesign/README.md`, `docs/redesign/07_IMPLEMENTATION_LOG.md` |
 | 2026-06-28 / Post-final email contact | Add a visible recruiter-friendly email contact path. | The site is built for recruiters, so a visible direct email lowers contact friction. The contact page uses the cleaner recruiter-facing Gmail address, and the visible address now sits in the email card action area beside the Email button. | `lib/data/profile.ts`, `app/contact/page.tsx`, `components/layout/Footer.tsx`, `components/ui/Button.tsx`, `docs/redesign/08_QA_FINAL_REVIEW.md`, `docs/redesign/README.md`, `docs/redesign/07_IMPLEMENTATION_LOG.md` |
 | 2026-06-28 / Post-final project tool refinement | List every project tool on homepage case-study cards. | The `+N more` chip hid relevant tools on compact homepage cards. Listing all tools keeps the evidence visible for recruiters while the project tool lists remain short enough to scan. | `components/sections/ProjectCaseStudyCard.tsx`, `docs/redesign/04_HOMEPAGE_REDESIGN.md`, `docs/redesign/07_IMPLEMENTATION_LOG.md` |
+| 2026-06-28 / Post-final homepage hiring relevance | Add compact Hiring Relevance strips to homepage case-study cards. | Recruiters and hiring managers can scan role value faster when the homepage connects each project to the job need before they open the full case study. The compact strip reuses approved case-study copy without adding a heavy new section. | `components/sections/ProjectCaseStudyCard.tsx`, `docs/redesign/04_HOMEPAGE_REDESIGN.md`, `docs/redesign/README.md`, `docs/redesign/07_IMPLEMENTATION_LOG.md` |
+| 2026-06-28 / Post-final hiring relevance copy | Rewrite hiring relevance copy as project proof statements. | User noted that "teams need analysts who..." sounds like explaining hiring needs back to recruiters. The revised copy keeps the same information but frames each card around what the project demonstrates, with varied sentence openings. | `lib/data/projects.ts`, `docs/redesign/06_CONTENT_AND_COPY.md`, `docs/redesign/05_CASE_STUDY_REDESIGN.md`, `docs/redesign/07_IMPLEMENTATION_LOG.md` |
 
 ## Phase Log
 
@@ -782,6 +784,57 @@ Commands run:
 
 Issues/blockers: None.
 
+### Post-Final Homepage Hiring Relevance Refinement
+
+Status: Complete
+
+Summary: Added compact Hiring Relevance strips to homepage case-study cards using the existing `project.caseStudy.hiringRelevance` copy. The `/projects` page keeps the same shared content with the fuller expanded card styling.
+
+Files changed:
+
+- `components/sections/ProjectCaseStudyCard.tsx`
+- `docs/redesign/04_HOMEPAGE_REDESIGN.md`
+- `docs/redesign/README.md`
+- `docs/redesign/07_IMPLEMENTATION_LOG.md`
+
+Commands run:
+
+- `Get-Content -Raw docs/redesign/README.md`
+- `Get-Content` inspections of `ProjectCaseStudyCard`, homepage section, project data, and redesign docs
+- `npm.cmd run lint`
+- `npx.cmd tsc --noEmit`
+- `npm.cmd run build`
+- `npm.cmd run start -- -H 127.0.0.1 -p 3076` for production route checks
+- `Invoke-WebRequest` route checks for `/` and `/projects`
+
+Issues/blockers: None.
+
+### Post-Final Hiring Relevance Copy Refinement
+
+Status: Complete
+
+Summary: Rewrote the hiring relevance copy for all four projects so each card reads as a concise proof statement about what the project demonstrates. The revised wording avoids repeatedly telling recruiters what teams need and varies the sentence openings across projects.
+
+Files changed:
+
+- `lib/data/projects.ts`
+- `docs/redesign/06_CONTENT_AND_COPY.md`
+- `docs/redesign/05_CASE_STUDY_REDESIGN.md`
+- `docs/redesign/07_IMPLEMENTATION_LOG.md`
+
+Commands run:
+
+- `Get-Content -Raw docs/redesign/README.md`
+- `Select-String` inspections of hiring relevance copy and implementation log entries
+- `Get-Content` inspections of content/copy and case-study redesign documentation
+- `npm.cmd run lint`
+- `npx.cmd tsc --noEmit`
+- `npm.cmd run build`
+- `npm.cmd run start -- -H 127.0.0.1 -p 3077` for production route checks
+- `Invoke-WebRequest` route checks for `/` and `/projects`
+
+Issues/blockers: None.
+
 ## Commands and Results
 
 | Command | Purpose | Result | Notes |
@@ -983,6 +1036,14 @@ Issues/blockers: None.
 | `npx.cmd tsc --noEmit` | Project tool refinement type verification | Passed | Completed with no TypeScript errors |
 | `npm.cmd run build` | Project tool refinement build verification | Passed | Next.js production build completed and prerendered all routes |
 | `Invoke-WebRequest` route checks | Project tool refinement production route verification | Passed | `/` and `/projects` returned HTTP 200 from production `next start` on port 3075 |
+| `npm.cmd run lint` | Homepage hiring relevance lint verification | Passed | Completed after adding compact Hiring Relevance strips to homepage cards |
+| `npx.cmd tsc --noEmit` | Homepage hiring relevance type verification | Passed | Completed with no TypeScript errors |
+| `npm.cmd run build` | Homepage hiring relevance build verification | Passed | Next.js production build completed and prerendered all routes |
+| `Invoke-WebRequest` route checks | Homepage hiring relevance production route verification | Passed | `/` and `/projects` returned HTTP 200 from production `next start` on port 3076 |
+| `npm.cmd run lint` | Hiring relevance copy refinement lint verification | Passed | Completed after rewriting project hiring relevance copy |
+| `npx.cmd tsc --noEmit` | Hiring relevance copy refinement type verification | Passed | Completed with no TypeScript errors |
+| `npm.cmd run build` | Hiring relevance copy refinement build verification | Passed | Next.js production build completed and prerendered all routes |
+| `Invoke-WebRequest` route checks | Hiring relevance copy refinement production route verification | Passed | `/` and `/projects` returned HTTP 200 from production `next start` on port 3077 |
 
 ## Files Changed Index
 
@@ -1091,6 +1152,14 @@ Issues/blockers: None.
 | `components/sections/ProjectCaseStudyCard.tsx` | Post-final project tool refinement | Removed the tool limit and `+N more` chip so project cards list every tool. |
 | `docs/redesign/04_HOMEPAGE_REDESIGN.md` | Post-final project tool refinement | Updated the Phase 7 homepage notes to reflect full tool lists on project cards. |
 | `docs/redesign/07_IMPLEMENTATION_LOG.md` | Post-final project tool refinement | Logged the tool-list decision, changed files, commands, and verification results. |
+| `components/sections/ProjectCaseStudyCard.tsx` | Post-final homepage hiring relevance | Added compact Hiring Relevance strips to homepage cards while preserving the fuller expanded card treatment. |
+| `docs/redesign/04_HOMEPAGE_REDESIGN.md` | Post-final homepage hiring relevance | Updated Phase 7 homepage notes to include the Hiring Relevance strip. |
+| `docs/redesign/README.md` | Post-final homepage hiring relevance | Updated the Phase 7 summary to mention hiring relevance on homepage case-study panels. |
+| `docs/redesign/07_IMPLEMENTATION_LOG.md` | Post-final homepage hiring relevance | Logged the hiring-relevance decision, changed files, commands, and verification results. |
+| `lib/data/projects.ts` | Post-final hiring relevance copy | Rewrote project hiring relevance blurbs as proof-focused project statements with varied openings. |
+| `docs/redesign/06_CONTENT_AND_COPY.md` | Post-final hiring relevance copy | Added hiring relevance copy direction to avoid recruiter-explaining phrasing. |
+| `docs/redesign/05_CASE_STUDY_REDESIGN.md` | Post-final hiring relevance copy | Updated the project data summary to reflect refined hiring relevance copy. |
+| `docs/redesign/07_IMPLEMENTATION_LOG.md` | Post-final hiring relevance copy | Logged the copy decision, changed files, commands, and verification results. |
 
 ## Unresolved Issues
 

@@ -390,12 +390,12 @@ Avoid:
 
 ### Layout Chosen
 
-- Unified featured case-study list with white card surfaces, top project context, a horizontal Problem / Outcome / Concepts evidence band, a restrained labeled Tools row that lists every project tool, and a light-blue featured case-study CTA.
+- Unified featured case-study list with white card surfaces, top project context, a compact Hiring Relevance strip, a horizontal Problem / Outcome / Concepts evidence band, a restrained labeled Tools row that lists every project tool, and a light-blue featured case-study CTA.
 
 ### Why This Layout Was Chosen
 
 - It makes every homepage project feel like a featured case-study preview instead of separating one featured item from supporting cards.
-- It preserves each project title, role alignment, summary, Problem / Outcome / Concepts context, full tool list, and case-study link while reducing decorative previews and badge-heavy visual noise.
+- It preserves each project title, role alignment, summary, hiring relevance, Problem / Outcome / Concepts context, full tool list, and case-study link while reducing decorative previews and badge-heavy visual noise.
 - It gives the homepage case-study CTA more emphasis than a secondary white button without using the solid primary treatment reserved for the dedicated `/projects` page.
 - It avoids a visually heavy right rail by letting the evidence content span the card width in a balanced band beneath the project summary.
 - It removes the singular featured-project hierarchy so Password Spray, The Buyer, Vulnerability Management, and DISA all appear as featured case studies.
@@ -405,7 +405,7 @@ Avoid:
 | File | Change Summary |
 |---|---|
 | `app/page.tsx` | Replaced the selected-projects grid and standalone featured case-study section with unified featured case-study cards ordered Password Spray, The Buyer, Vulnerability Management, and DISA. |
-| `components/sections/ProjectCaseStudyCard.tsx` | Updated compact homepage cards to use the light-blue featured CTA treatment while keeping expanded `/projects` cards on the solid primary button; post-final refinement removed the `+N more` tool chip so all project tools are listed. |
+| `components/sections/ProjectCaseStudyCard.tsx` | Updated compact homepage cards to use the light-blue featured CTA treatment while keeping expanded `/projects` cards on the solid primary button; post-final refinements removed the `+N more` tool chip so all project tools are listed and added compact Hiring Relevance strips to homepage cards. |
 | `components/ui/Button.tsx` | Added the shared featured button variant for mid-emphasis case-study actions. |
 
 ## Phase 7 Checklist

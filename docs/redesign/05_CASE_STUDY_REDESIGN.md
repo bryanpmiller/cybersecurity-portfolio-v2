@@ -166,7 +166,7 @@ The `/projects` page should use the same restrained case-study card language as 
 | `components/sections/ProjectCaseStudyCard.tsx` | Added a shared homepage/projects case-study card component with compact and expanded modes. |
 | `app/page.tsx` | Reused the shared compact case-study card component for homepage featured case studies. |
 | `app/projects/page.tsx` | Replaced the old project-preview grid with a refreshed project review path and expanded full-width case-study cards. |
-| `lib/data/projects.ts` | Added `hiringRelevance` copy to each case study so the required Phase 10 template is complete. |
+| `lib/data/projects.ts` | Added and refined `hiringRelevance` copy to each case study so the required Phase 10 template is complete and the wording focuses on what each project demonstrates. |
 | `docs/redesign/05_CASE_STUDY_REDESIGN.md` | Documented discovered routes, template completion, and Phase 10 file changes. |
 | `docs/redesign/README.md` | Updated Phase 10 status board entry. |
 | `docs/redesign/07_IMPLEMENTATION_LOG.md` | Logged Phase 10 decisions, files changed, commands, verification, and next phase. |

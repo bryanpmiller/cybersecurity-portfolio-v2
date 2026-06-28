@@ -103,10 +103,15 @@ export function ProjectCaseStudyCard({ project, order, variant = "compact" }: Pr
           </div>
         </div>
 
-        {isExpanded && project.caseStudy?.hiringRelevance ? (
-          <div className="rounded-md border border-line bg-surfaceElevated/75 p-4 sm:p-5">
+        {project.caseStudy?.hiringRelevance ? (
+          <div
+            className={cn(
+              "rounded-md border border-line",
+              isExpanded ? "bg-surfaceElevated/75 p-4 sm:p-5" : "bg-surfaceElevated/65 px-4 py-3"
+            )}
+          >
             <p className="eyebrow-text text-[0.62rem]">Hiring relevance</p>
-            <p className="compact-copy mt-2 max-w-4xl">{project.caseStudy.hiringRelevance}</p>
+            <p className={cn("compact-copy max-w-4xl", isExpanded ? "mt-2" : "mt-1.5")}>{project.caseStudy.hiringRelevance}</p>
           </div>
         ) : null}
 

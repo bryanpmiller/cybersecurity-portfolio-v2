@@ -138,6 +138,18 @@ Examples:
 
 > Automated Windows security configuration checks and remediation steps using PowerShell to support repeatable hardening work.
 
+## Hiring Relevance Copy Direction
+
+Hiring relevance should explain what each project demonstrates about the work, not tell recruiters or hiring managers what their teams need.
+
+Prefer varied proof-focused phrasing:
+
+> The ransomware hunt demonstrates the ability to reconstruct ransomware activity from telemetry, preserve a defensible timeline, and turn observed behavior into detection opportunities.
+
+Avoid repetitive or recruiter-explaining phrasing:
+
+> Security teams need analysts who can...
+
 ## Background Copy Direction
 
 The background should connect:

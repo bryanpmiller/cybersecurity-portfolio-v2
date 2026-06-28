@@ -91,7 +91,7 @@ export const projects: Project[] = [
         "Prioritizing fixes by operational impact and remediation effort creates a practical path from baseline discovery to maintenance mode."
       ],
       hiringRelevance:
-        "Security teams need analysts who can turn scan output into prioritized remediation, communicate clearly with system owners, and validate that fixes reduced real risk.",
+        "The vulnerability management project shows the ability to turn scan output into prioritized remediation, communicate risk clearly, and validate that fixes reduced exposure.",
       visual: {
         label: "Full remediation cycle",
         stats: [
@@ -175,7 +175,7 @@ export const projects: Project[] = [
         "Some configuration findings may require policy-level enforcement instead of local scripting alone."
       ],
       hiringRelevance:
-        "This work shows practical secure-configuration judgment: reading control requirements, translating them into repeatable remediation, and preserving evidence without overstating compliance.",
+        "The STIG remediation work shows practical secure-configuration judgment: interpreting control requirements, translating them into repeatable PowerShell changes, and preserving validation evidence without overstating compliance.",
       visual: {
         label: "STIG Remediation Evidence",
         stats: [
@@ -251,7 +251,7 @@ export const projects: Project[] = [
         "Scheduled tasks, Defender exclusions, discovery commands, archive creation, and outbound connections can form a defensible intrusion narrative."
       ],
       hiringRelevance:
-        "SOC and SecOps teams need analysts who can pivot across endpoint telemetry, explain what the evidence supports, and separate confirmed activity from unsupported assumptions.",
+        "The RDP compromise investigation shows the ability to pivot across endpoint telemetry, explain what the evidence supports, and separate confirmed activity from unsupported assumptions.",
       visual: {
         label: "Threat hunt chain",
         stats: [
@@ -333,7 +333,7 @@ export const projects: Project[] = [
         "Detection recommendations are stronger when tied to specific observed commands, hashes, paths, accounts, and ATT&CK techniques."
       ],
       hiringRelevance:
-        "This case study demonstrates the ability to reconstruct ransomware activity from telemetry, preserve a defensible timeline, and turn observed behavior into detection opportunities.",
+        "The ransomware hunt demonstrates the ability to reconstruct ransomware activity from telemetry, preserve a defensible timeline, and turn observed behavior into detection opportunities.",
       visual: {
         label: "Ransomware investigation scope",
         stats: [
