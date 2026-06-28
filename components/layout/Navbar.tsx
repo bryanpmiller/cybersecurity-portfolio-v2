@@ -23,7 +23,7 @@ export function Navbar() {
         aria-label="Primary navigation"
         className="relative mx-auto flex max-w-6xl flex-col gap-3 px-4 py-3 sm:px-6 sm:py-4 lg:flex-row lg:items-center lg:justify-between lg:gap-4 lg:px-8"
       >
-        <Link className="focus-ring w-fit rounded-md" href="/">
+        <Link className="focus-ring flex min-h-11 w-fit items-center rounded-md pr-2" href="/">
           <span>
             <span className="heading-text block text-base leading-tight">{profile.name}</span>
             <span className="mt-1 hidden text-xs font-medium text-slate-400 sm:block">
@@ -39,7 +39,7 @@ export function Navbar() {
               <Link
                 aria-current={isActive ? "page" : undefined}
                 className={cn(
-                  "focus-ring rounded-md border px-2.5 py-1.5 text-[0.82rem] font-medium transition-[background,border-color,color] sm:px-3 sm:py-2 sm:text-sm",
+                  "focus-ring inline-flex min-h-11 items-center rounded-md border px-3 text-[0.82rem] font-medium transition-[background,border-color,color] sm:px-3.5 sm:text-sm",
                   isActive
                     ? "border-lineStrong/35 bg-evidence/[0.08] text-ink"
                     : "border-transparent text-slate-300 hover:border-lineStrong/35 hover:bg-surfaceElevated hover:text-ink"

@@ -15,9 +15,7 @@ const config: Config = {
         surfaceElevated: "#f6fbfe",
         line: "#d8e8f5",
         lineStrong: "#4a8bdf",
-        cyan: "#4a8bdf",
         blue: "#4a8bdf",
-        mint: "#2c7fba",
         amber: "#6c72b8",
         red: "#a0006d",
         violet: "#a0006d",
@@ -25,7 +23,7 @@ const config: Config = {
         severityHigh: "#6d4fb0",
         severityMedium: "#4a8bdf",
         detection: "#243b8f",
-        remediation: "#2c7fba",
+        remediation: "#1e6f9f",
         evidence: "#243b8f",
         slate: {
           50: "#080b3f",

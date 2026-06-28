@@ -1,11 +1,11 @@
 import { BriefcaseBusiness, FileText, Target } from "lucide-react";
 import { PageContainer } from "@/components/layout/PageContainer";
 import { Button } from "@/components/ui/Button";
-import { Badge } from "@/components/ui/Badge";
 import { Card } from "@/components/ui/Card";
 import { GitHubMarkIcon } from "@/components/ui/GitHubMarkIcon";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionHeader } from "@/components/ui/SectionHeader";
+import { ToolTag } from "@/components/ui/ToolTag";
 import type { Project } from "@/lib/data/projects";
 import { profile } from "@/lib/data/profile";
 
@@ -87,7 +87,7 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
                   <h2 className="panel-title">Environment / Tools</h2>
                   <div className="mt-4 flex flex-wrap gap-2">
                     {project.tools.map((tool) => (
-                      <Badge key={tool}>{tool}</Badge>
+                      <ToolTag key={tool}>{tool}</ToolTag>
                     ))}
                   </div>
                 </section>

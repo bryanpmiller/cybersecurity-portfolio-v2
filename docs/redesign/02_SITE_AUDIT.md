@@ -124,7 +124,7 @@ Review:
 ### Existing Content To Preserve
 
 - Name, role direction, resume link, GitHub link, LinkedIn link, and contact path from `lib/data/profile.ts`.
-- Metrics from `lib/data/resume.ts`: 100% critical vulnerability reduction, 92% high vulnerability reduction, 88% medium vulnerability reduction, and 100% brute-force incident reduction.
+- Metrics from `lib/data/resume.ts`: 100% critical vulnerability reduction, 92% high vulnerability reduction, 88% medium vulnerability reduction, and 100% reduction in observed RDP-related brute-force attempts.
 - Vulnerability Management Program project and supporting links, including Tenable, Azure, PowerShell, Windows Server, remediation scripts, and CVE mapping.
 - DISA STIG Remediation project, including selected-control scope, PowerShell remediation, screenshot validation, and the explicit note that full compliance is not claimed.
 - Password Spray Threat Hunt project, including MDE/Sentinel-style KQL, RDP/password-spray investigation, ATT&CK mapping, attempted exfiltration wording, and key artifacts.
@@ -146,7 +146,7 @@ Review:
 1. Phase 2: Refactor the design foundation first: light-first palette, typography defaults, spacing, card/button treatments, borders, shadows, and removal of global grid/glow effects.
 2. Phase 3: Rebuild homepage structure around editorial hierarchy: hero, proof/impact, featured case study, selected projects, capabilities, background, and contact CTA.
 3. Phase 4-5: Rewrite the hero and proof section together so the strongest metrics appear quickly without dashboard/gamified treatment.
-4. Phase 6-7: Promote the Vulnerability Management Program as the featured case study and redesign supporting projects as varied professional previews.
+4. Phase 6-7: Present all four homepage projects as unified featured case-study previews in the approved order.
 5. Phase 8-9: Consolidate skills into capability groups and add a concise background section connecting military/operations experience to cybersecurity work.
 6. Phase 10: Redesign project detail pages using the existing case-study data model.
 7. Phase 11-13: Sweep remaining template signals, then complete mobile/accessibility QA and final designer/hiring-manager review.
@@ -161,3 +161,27 @@ Review:
 - [x] Recommended implementation order documented
 - [x] `README.md` phase status board updated
 - [x] `07_IMPLEMENTATION_LOG.md` updated
+
+## Phase 11 Cleanup Results
+
+Status: Complete
+
+The Phase 11 sweep removed remaining implementation-level template signals without changing the approved site structure or content. The live site no longer imports components or tokens named around dashboard, terminal, neon/cyan/mint, or badge-heavy presentation patterns.
+
+Completed cleanup:
+
+- Removed the unused `components/sections/FeaturedProjects.tsx` component, which still contained old mini-chart, scan-summary, progress-bar, monospace, and project-card styling.
+- Renamed `RiskReductionDashboard.tsx` to `VulnerabilityReductionProof.tsx` and `ImpactMetricsStrip.tsx` to `NetworkSecurityProof.tsx`.
+- Updated homepage imports and component names so proof sections are framed as evidence/proof rather than dashboards.
+- Removed unused `metric`, `project`, and `terminal` card variants from `components/ui/Card.tsx`.
+- Renamed the shared tool pill from `Badge` to `ToolTag` and the global text utility from `badge-text` to `chip-text`.
+- Replaced active `mint` styling references with the semantic `remediation` color token and removed unused `cyan`/`mint` aliases from Tailwind.
+- Reworded remaining "dashboards" copy in background/resume data to "Sentinel workbooks."
+- Removed non-code monospace styling from resume skill summaries and homepage case-study evidence labels.
+
+Verification:
+
+- `npm.cmd run lint` passed.
+- `npx.cmd tsc --noEmit` passed.
+- `npm.cmd run build` passed.
+- Production route checks returned HTTP 200 for `/`, `/about`, `/resume`, `/skills`, `/projects`, all four project detail routes, and `/contact`.

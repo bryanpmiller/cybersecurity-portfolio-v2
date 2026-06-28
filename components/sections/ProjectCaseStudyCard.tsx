@@ -49,12 +49,12 @@ function ToolList({ limit, tools }: { limit: number; tools: string[] }) {
       </p>
       <div className="mt-3 flex min-w-0 flex-wrap gap-2">
         {visibleTools.map((tool) => (
-          <span className="badge-text rounded-md border border-line bg-surface px-3 py-2 text-slate-300" key={tool}>
+          <span className="chip-text rounded-md border border-line bg-surface px-3 py-2 text-slate-300" key={tool}>
             {tool}
           </span>
         ))}
         {remainingCount > 0 ? (
-          <span className="badge-text rounded-md border border-line bg-surfaceElevated px-3 py-2 text-slate-400">
+          <span className="chip-text rounded-md border border-line bg-surfaceElevated px-3 py-2 text-slate-400">
             +{remainingCount} more
           </span>
         ) : null}
@@ -122,7 +122,7 @@ export function ProjectCaseStudyCard({ project, order, variant = "compact" }: Pr
         <div className="grid min-w-0 gap-3 rounded-md border border-line bg-ink-soft/70 p-3 sm:p-4 lg:grid-cols-3">
           {getProjectEvidenceRows(project).map((row) => (
             <div className="rounded-md border border-line bg-surface/80 p-3 sm:p-4" key={row.label}>
-              <p className="font-mono text-[0.62rem] font-semibold uppercase tracking-[0.12em] text-evidence">
+              <p className="text-xs font-semibold uppercase tracking-[0.12em] text-evidence">
                 {row.label}
               </p>
               <p className="compact-copy mt-1.5">{row.value}</p>

@@ -36,8 +36,8 @@ export default function ProjectsPage() {
             <p className="eyebrow-text">Project review path</p>
             <h2 className="panel-title mt-3">Start with the outcome, then drill into evidence.</h2>
             <p className="body-copy mt-3 max-w-2xl">
-              Each project is organized so a recruiter or security lead can quickly see the problem, result, tools,
-              and repository evidence before opening the full case study.
+              Each project is structured so the problem, result, tools, and repository evidence are clear beforing
+              opening the full case study.
             </p>
           </div>
           <nav aria-label="Project case studies" className="grid min-w-0 gap-2">

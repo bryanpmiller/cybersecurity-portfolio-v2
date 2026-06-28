@@ -9,7 +9,7 @@ export const resumeHighlights = [
   },
   {
     title: "Experience",
-    body: "Vulnerability scanning, reporting, PowerShell-based remediation, Tenable, DISA STIG compliance, MDE/Sentinel threat hunting, detection rules, dashboards, and Azure NSG/firewall controls."
+    body: "Vulnerability scanning, reporting, PowerShell-based remediation, Tenable, DISA STIG compliance, MDE/Sentinel threat hunting, detection rules, Sentinel workbooks, and Azure NSG/firewall controls."
   },
   {
     title: "Security Impact Metrics",

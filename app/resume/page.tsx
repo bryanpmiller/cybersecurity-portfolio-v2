@@ -67,7 +67,7 @@ export default function ResumePage() {
               <div className="min-w-0 rounded-md border border-line bg-ink-soft/70 p-4" key={group.title}>
                 <div className="flex min-w-0 items-start justify-between gap-3">
                   <h3 className={`${snapshotTitleClassName} min-w-0`}>{group.title}</h3>
-                  <span className="badge-text shrink-0 rounded-md border border-lineStrong/70 bg-surface/70 px-2 py-1 text-slate-300">
+                  <span className="chip-text shrink-0 rounded-md border border-lineStrong/70 bg-surface/70 px-2 py-1 text-slate-300">
                     {getSkillsForGroup(group).length} skills
                   </span>
                 </div>

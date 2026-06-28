@@ -42,7 +42,7 @@ export default function AboutPage() {
             <h2 className="panel-title">Target roles</h2>
             <div className="mt-5 grid gap-3">
               {targetRoles.map((role) => (
-                <div className="badge-text rounded-md border border-line bg-ink-soft/70 px-4 py-3 text-slate-200" key={role}>
+                <div className="chip-text rounded-md border border-line bg-ink-soft/70 px-4 py-3 text-slate-200" key={role}>
                   {role}
                 </div>
               ))}
