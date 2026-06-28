@@ -59,6 +59,7 @@ Codex must update this file after each phase.
 | 2026-06-28 / Phase 13 | Accept the redesign after final designer and hiring-manager review. | The final review found the site meets the redesign acceptance criteria: professional visual direction, clear proof points, credible case studies, honest scope, mobile readiness, and no remaining required fixes. | `docs/redesign/08_QA_FINAL_REVIEW.md`, `docs/redesign/README.md`, `docs/redesign/07_IMPLEMENTATION_LOG.md` |
 | 2026-06-28 / Post-final refinement | Reorder the shared skills groups on the homepage and `/skills`. | The requested desktop order is Security Operations & Investigation with Vulnerability Management on the first row, then Hardening & Compliance with Automation / Scripting on the second row. The shared `skillGroups` data controls both pages, so one source change keeps them aligned. | `lib/data/skills.ts`, `docs/redesign/04_HOMEPAGE_REDESIGN.md`, `docs/redesign/README.md`, `docs/redesign/07_IMPLEMENTATION_LOG.md` |
 | 2026-06-28 / Post-final email contact | Add a visible recruiter-friendly email contact path. | The site is built for recruiters, so a visible direct email lowers contact friction. The contact page uses the cleaner recruiter-facing Gmail address, and the visible address now sits in the email card action area beside the Email button. | `lib/data/profile.ts`, `app/contact/page.tsx`, `components/layout/Footer.tsx`, `components/ui/Button.tsx`, `docs/redesign/08_QA_FINAL_REVIEW.md`, `docs/redesign/README.md`, `docs/redesign/07_IMPLEMENTATION_LOG.md` |
+| 2026-06-28 / Post-final project tool refinement | List every project tool on homepage case-study cards. | The `+N more` chip hid relevant tools on compact homepage cards. Listing all tools keeps the evidence visible for recruiters while the project tool lists remain short enough to scan. | `components/sections/ProjectCaseStudyCard.tsx`, `docs/redesign/04_HOMEPAGE_REDESIGN.md`, `docs/redesign/07_IMPLEMENTATION_LOG.md` |
 
 ## Phase Log
 
@@ -756,6 +757,31 @@ Commands run:
 
 Issues/blockers: None.
 
+### Post-Final Project Tool Refinement
+
+Status: Complete
+
+Summary: Removed the homepage project-card tool limit so compact case-study cards list every project tool instead of showing `+1 more` or `+2 more`. The shared project card now maps the full `project.tools` array for both homepage and `/projects` cards.
+
+Files changed:
+
+- `components/sections/ProjectCaseStudyCard.tsx`
+- `docs/redesign/04_HOMEPAGE_REDESIGN.md`
+- `docs/redesign/07_IMPLEMENTATION_LOG.md`
+
+Commands run:
+
+- `Get-Content -Raw docs/redesign/README.md`
+- `rg -n` search for `+ more`, tool slicing, and project tool rendering
+- `Get-Content` inspections of `ProjectCaseStudyCard`, homepage, projects page, and redesign docs
+- `npm.cmd run lint`
+- `npx.cmd tsc --noEmit`
+- `npm.cmd run build`
+- `npm.cmd run start -- -H 127.0.0.1 -p 3075` for production route checks
+- `Invoke-WebRequest` route checks for `/` and `/projects`
+
+Issues/blockers: None.
+
 ## Commands and Results
 
 | Command | Purpose | Result | Notes |
@@ -953,6 +979,10 @@ Issues/blockers: None.
 | `npx.cmd tsc --noEmit` | Email card layout refinement type verification | Passed | Completed with no TypeScript errors |
 | `npm.cmd run build` | Email card layout refinement build verification | Passed | Next.js production build completed and prerendered all routes |
 | `Invoke-WebRequest` route checks | Email card layout refinement production route verification | Passed | `/contact` returned HTTP 200 and rendered `bryan.p.miller7@gmail.com` plus its `mailto:` link |
+| `npm.cmd run lint` | Project tool refinement lint verification | Passed | Completed after removing the project-card tool limit |
+| `npx.cmd tsc --noEmit` | Project tool refinement type verification | Passed | Completed with no TypeScript errors |
+| `npm.cmd run build` | Project tool refinement build verification | Passed | Next.js production build completed and prerendered all routes |
+| `Invoke-WebRequest` route checks | Project tool refinement production route verification | Passed | `/` and `/projects` returned HTTP 200 from production `next start` on port 3075 |
 
 ## Files Changed Index
 
@@ -1058,6 +1088,9 @@ Issues/blockers: None.
 | `docs/redesign/08_QA_FINAL_REVIEW.md` | Post-final email contact | Updated link review, recommendations, concerns, final files, and final notes for the verified email path. |
 | `docs/redesign/README.md` | Post-final email contact | Updated the Phase 13 summary now that the direct email path is complete. |
 | `docs/redesign/07_IMPLEMENTATION_LOG.md` | Post-final email contact | Logged the email contact decision, changed files, commands, and verification results. |
+| `components/sections/ProjectCaseStudyCard.tsx` | Post-final project tool refinement | Removed the tool limit and `+N more` chip so project cards list every tool. |
+| `docs/redesign/04_HOMEPAGE_REDESIGN.md` | Post-final project tool refinement | Updated the Phase 7 homepage notes to reflect full tool lists on project cards. |
+| `docs/redesign/07_IMPLEMENTATION_LOG.md` | Post-final project tool refinement | Logged the tool-list decision, changed files, commands, and verification results. |
 
 ## Unresolved Issues
 

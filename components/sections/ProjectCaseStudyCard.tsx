@@ -37,10 +37,7 @@ function getProjectEvidenceRows(project: Project) {
   ];
 }
 
-function ToolList({ limit, tools }: { limit: number; tools: string[] }) {
-  const visibleTools = tools.slice(0, limit);
-  const remainingCount = tools.length - visibleTools.length;
-
+function ToolList({ tools }: { tools: string[] }) {
   return (
     <div className="min-w-0">
       <p className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.12em] text-evidence">
@@ -48,16 +45,11 @@ function ToolList({ limit, tools }: { limit: number; tools: string[] }) {
         Tools
       </p>
       <div className="mt-3 flex min-w-0 flex-wrap gap-2">
-        {visibleTools.map((tool) => (
+        {tools.map((tool) => (
           <span className="chip-text rounded-md border border-line bg-surface px-3 py-2 text-slate-300" key={tool}>
             {tool}
           </span>
         ))}
-        {remainingCount > 0 ? (
-          <span className="chip-text rounded-md border border-line bg-surfaceElevated px-3 py-2 text-slate-400">
-            +{remainingCount} more
-          </span>
-        ) : null}
       </div>
     </div>
   );
@@ -65,7 +57,6 @@ function ToolList({ limit, tools }: { limit: number; tools: string[] }) {
 
 export function ProjectCaseStudyCard({ project, order, variant = "compact" }: ProjectCaseStudyCardProps) {
   const isExpanded = variant === "expanded";
-  const toolLimit = isExpanded ? 8 : 4;
 
   return (
     <Card
@@ -131,7 +122,7 @@ export function ProjectCaseStudyCard({ project, order, variant = "compact" }: Pr
         </div>
 
         <div className="border-t border-line pt-4">
-          <ToolList limit={toolLimit} tools={project.tools} />
+          <ToolList tools={project.tools} />
         </div>
       </div>
     </Card>

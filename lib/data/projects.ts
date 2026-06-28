@@ -132,7 +132,7 @@ export const projects: Project[] = [
     slug: "disa-stig-remediation",
     title: "DISA STIG Remediation Project",
     role: "Security Analyst / Technical Compliance Analyst",
-    tools: ["PowerShell", "DISA STIG", "Windows 11", "Windows Registry", "auditpol", "gpupdate"],
+    tools: ["PowerShell", "DISA STIG", "Custom DISA STIG GPT", "Windows 11", "Windows Registry", "auditpol", "gpupdate"],
     summary:
       "PowerShell remediation scripts with screenshot validation for selected Windows 11 DISA STIG findings in a lab environment.",
     githubUrl: "https://github.com/bryanpmiller/DISA-STIG-Remediation",
@@ -211,7 +211,7 @@ export const projects: Project[] = [
     slug: "password-spray-threat-hunt",
     title: "Password Spray Threat Hunt: RDP Compromise Investigation",
     role: "SecOps Analyst / SOC Analyst / Threat Detection Analyst",
-    tools: ["Microsoft Defender for Endpoint", "Sentinel-style KQL", "MITRE ATT&CK", "Windows telemetry"],
+    tools: ["MDE Advanced Hunting", "Microsoft Sentinel", "Microsoft Defender for Endpoint", "SIEM", "KQL", "MITRE ATT&CK"],
     summary:
       "Microsoft Defender and Sentinel-style threat hunt that reconstructs a cyber-range Windows VM compromise from password-spray RDP access through execution, persistence, evasion, C2, and attempted exfiltration.",
     githubUrl: "https://github.com/bryanpmiller/password-spray-threat-hunt",
@@ -292,7 +292,7 @@ export const projects: Project[] = [
     slug: "akira-ransomware-threat-hunt",
     title: "The Buyer / Akira Ransomware Threat Hunt",
     role: "Threat Hunter / SecOps Analyst",
-    tools: ["MDE Advanced Hunting", "Microsoft Sentinel", "SIEM", "KQL", "Microsoft Defender for Endpoint", "MITRE ATT&CK"],
+    tools: ["MDE Advanced Hunting", "Microsoft Sentinel", "Microsoft Defender for Endpoint", "SIEM", "KQL", "MITRE ATT&CK"],
     summary:
       "Cyber-range Akira ransomware hunt using Microsoft Defender telemetry to reconstruct remote access, staging, lateral movement, defense evasion, data staging, and impact artifacts.",
     githubUrl: "https://github.com/bryanpmiller/the-buyer-threathunt",
