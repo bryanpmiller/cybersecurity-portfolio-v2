@@ -7,6 +7,18 @@ export type SkillGroup = {
 
 export const skillGroups: SkillGroup[] = [
   {
+    title: "Security Operations & Investigation",
+    description: "Evidence-led investigation workflows using endpoint, identity, network, and query-based telemetry.",
+    primarySkills: ["Microsoft Defender for Endpoint", "Sentinel-style KQL", "Threat hunting", "Incident triage"],
+    supportingSkills: [
+      "Microsoft Sentinel",
+      "SIEM/EDR analysis",
+      "Windows telemetry",
+      "MITRE ATT&CK mapping",
+      "Network forensics"
+    ]
+  },
+  {
     title: "Vulnerability Management",
     description: "Assessment and remediation work that turns scan results into prioritized, validated risk reduction.",
     primarySkills: ["Tenable scanning", "Risk prioritization", "Remediation tracking", "Validation reporting"],
@@ -27,18 +39,6 @@ export const skillGroups: SkillGroup[] = [
       "gpupdate",
       "NIST 800-53",
       "Access control"
-    ]
-  },
-  {
-    title: "Security Operations & Investigation",
-    description: "Evidence-led investigation workflows using endpoint, identity, network, and query-based telemetry.",
-    primarySkills: ["Microsoft Defender for Endpoint", "Sentinel-style KQL", "Threat hunting", "Incident triage"],
-    supportingSkills: [
-      "Microsoft Sentinel",
-      "SIEM/EDR analysis",
-      "Windows telemetry",
-      "MITRE ATT&CK mapping",
-      "Network forensics"
     ]
   },
   {

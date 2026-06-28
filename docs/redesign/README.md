@@ -165,12 +165,12 @@ Codex must update this table after every phase.
 | Phase 5 — Proof / Metrics | Complete | `04_HOMEPAGE_REDESIGN.md` / `06_CONTENT_AND_COPY.md` | Reworked the proof section from dashboard-style metric cards into restrained executive proof blocks with large numbers, short labels, and concise context while preserving the 100%, 92%, 88%, and 100% outcomes; network security proof is scoped to RDP-related brute-force attempts reduced through inbound NSG and firewall controls. | Build, lint, type check, and route checks passed; browser visual check blocked by browser tool sandbox metadata error. |
 | Phase 6 — Featured Case Study | Complete | `04_HOMEPAGE_REDESIGN.md` / `05_CASE_STUDY_REDESIGN.md` | User direction changed from one featured project to all projects receiving the featured case-study treatment in a single unified section. | None |
 | Phase 7 — Selected Projects | Complete | `04_HOMEPAGE_REDESIGN.md` / `05_CASE_STUDY_REDESIGN.md` | Reworked homepage projects into unified featured case-study panels ordered Password Spray, The Buyer, Vulnerability Management, and DISA, preserving title, role, summary, Problem / Outcome / Concepts context, labeled tools, and case-study CTAs. | None |
-| Phase 8 — Capabilities | Complete | `04_HOMEPAGE_REDESIGN.md` / `06_CONTENT_AND_COPY.md` | Replaced the badge-heavy skills grid with four grouped skills panels: Vulnerability Management, Hardening & Compliance, Security Operations & Investigation, and Automation / Scripting. The public-facing label remains Skills, while the section uses short descriptions, focus areas, and restrained tools/methods text instead of chip-heavy badge walls. | Build, lint, type check, and route checks passed; browser visual check blocked by browser tool sandbox metadata error. |
+| Phase 8 — Capabilities | Complete | `04_HOMEPAGE_REDESIGN.md` / `06_CONTENT_AND_COPY.md` | Replaced the badge-heavy skills grid with four grouped skills panels ordered Security Operations & Investigation, Vulnerability Management, Hardening & Compliance, and Automation / Scripting. The public-facing label remains Skills, while the section uses short descriptions, focus areas, and restrained tools/methods text instead of chip-heavy badge walls. | Build, lint, type check, and route checks passed; browser visual check blocked by browser tool sandbox metadata error. |
 | Phase 9 — Background | Complete | `04_HOMEPAGE_REDESIGN.md` / `06_CONTENT_AND_COPY.md` | Replaced the resume-highlight card cluster with a concise professional background section grounded in Marine Corps fire direction control, small-team leadership, data accuracy, cybersecurity education, CompTIA Security+, and current internship work. | Build, lint, type check, and route checks passed; browser visual check blocked by browser tool sandbox metadata error. |
 | Phase 10 — Case Study Pages | Complete | `05_CASE_STUDY_REDESIGN.md` | Reworked the shared project detail experience into professional article-style case studies and refreshed `/projects` into an editorial project index with homepage-aligned case-study cards, numbered review links, hiring relevance, tools, and GitHub evidence actions. | Build, lint, type check, route checks, and desktop/mobile browser visual checks passed. |
-| Phase 11 — Template Signal Cleanup | Not started | `02_SITE_AUDIT.md` / `07_IMPLEMENTATION_LOG.md` |  |  |
-| Phase 12 — Mobile / Accessibility / QA | Not started | `08_QA_FINAL_REVIEW.md` |  |  |
-| Phase 13 — Final Review | Not started | `08_QA_FINAL_REVIEW.md` |  |  |
+| Phase 11 — Template Signal Cleanup | Complete | `02_SITE_AUDIT.md` / `07_IMPLEMENTATION_LOG.md` | Removed stale template-signal implementation leftovers: deleted the unused animated `FeaturedProjects` component, renamed proof components away from dashboard language, removed retired card variants, replaced badge/mint aliases with neutral tag/remediation naming, and softened remaining non-code monospace styling. | Build, lint, type check, and route checks passed. |
+| Phase 12 — Mobile / Accessibility / QA | Complete | `08_QA_FINAL_REVIEW.md` | Completed responsive, accessibility, link, route, console, lint, type, and build QA. Fixed mobile nav/footer tap targets and darkened the remediation token for small-text contrast. | None |
+| Phase 13 — Final Review | Complete | `08_QA_FINAL_REVIEW.md` | Completed final senior frontend designer and cybersecurity hiring-manager review. No required fixes remain before acceptance; the verified direct email contact path is now added, and the remaining optional future item is deployment review. | None |
 
 ## Required Codex Workflow
 
@@ -277,9 +277,9 @@ Replace badge walls with grouped capabilities.
 
 Suggested groups:
 
+- Security Operations & Investigation
 - Vulnerability Management
 - Hardening & Compliance
-- Security Operations & Investigation
 - Automation & Scripting
 
 ### Phase 9 — Background

@@ -199,7 +199,7 @@ a {
     @apply break-words text-sm leading-6 text-slate-300;
   }
 
-  .badge-text {
+  .chip-text {
     @apply text-xs font-semibold leading-5;
   }
 
@@ -208,7 +208,7 @@ a {
   }
 
   .technical-block {
-    @apply font-mono text-[0.78rem] leading-6 text-slate-300;
+    @apply text-sm leading-6 text-slate-300;
   }
 
   .text-link {

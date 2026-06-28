@@ -480,10 +480,12 @@ Avoid:
 
 | Group | Description | Supporting Tools/Skills |
 |---|---|---|
+| Security Operations & Investigation | Evidence-led investigation workflows using endpoint, identity, network, and query-based telemetry. | Microsoft Defender for Endpoint, Sentinel-style KQL, Microsoft Sentinel, SIEM/EDR analysis, Windows telemetry, MITRE ATT&CK mapping, threat hunting |
 | Vulnerability Management | Assessment and remediation work that turns scan results into prioritized, validated risk reduction. | Tenable scanning, risk prioritization, remediation tracking, validation reporting, CVE/CWE review, CVSS scoring, authenticated scanning, finding verification |
 | Hardening & Compliance | Secure configuration and compliance remediation for Windows-focused lab environments. | DISA STIG review, Windows hardening, secure configuration, PowerShell remediation, Windows Registry, auditpol, gpupdate, NIST 800-53, access control |
-| Security Operations & Investigation | Evidence-led investigation workflows using endpoint, identity, network, and query-based telemetry. | Microsoft Defender for Endpoint, Sentinel-style KQL, Microsoft Sentinel, SIEM/EDR analysis, Windows telemetry, MITRE ATT&CK mapping, threat hunting |
 | Automation / Scripting | Repeatable scripts and operational controls that make remediation and validation work easier to reproduce. | PowerShell, automated remediation, repeatable security checks, Bash, Python, Azure NSGs, firewall rules, pfSense, Wireshark |
+
+Post-final refinement: the shared skills order now places Security Operations & Investigation and Vulnerability Management on the first desktop row, with Hardening & Compliance and Automation / Scripting on the second row.
 
 ### Files Changed
 

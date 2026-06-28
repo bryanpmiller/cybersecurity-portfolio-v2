@@ -5,7 +5,7 @@ import { Card } from "@/components/ui/Card";
 import { Reveal } from "@/components/ui/Reveal";
 import { supplementalImpactMetrics } from "@/lib/data/resume";
 
-export function NetworkSecurityDashboard() {
+export function NetworkSecurityProof() {
   const bruteForceMetric = supplementalImpactMetrics[0];
 
   if (!bruteForceMetric) {

@@ -1,9 +1,9 @@
 import { PageContainer } from "@/components/layout/PageContainer";
 import { HeroSection } from "@/components/sections/HeroSection";
-import { NetworkSecurityDashboard } from "@/components/sections/ImpactMetricsStrip";
+import { NetworkSecurityProof } from "@/components/sections/NetworkSecurityProof";
 import { ProjectCaseStudyCard } from "@/components/sections/ProjectCaseStudyCard";
-import { RiskReductionDashboard } from "@/components/sections/RiskReductionDashboard";
 import { SkillsOverview } from "@/components/sections/SkillsOverview";
+import { VulnerabilityReductionProof } from "@/components/sections/VulnerabilityReductionProof";
 import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
 import { Reveal } from "@/components/ui/Reveal";
@@ -15,7 +15,7 @@ const backgroundPoints = [
   {
     label: "Operations foundation",
     value:
-      "Marine Corps fire direction control built experience performing under pressure, protecting data accuracy, leading small teams, and training Marines on required systems."
+      "Marine Corps Fire Direction Control built experience performing under pressure, ensuring data accuracy, leading small teams, and training Marines on required systems."
   },
   {
     label: "Cybersecurity preparation",
@@ -25,7 +25,7 @@ const backgroundPoints = [
   {
     label: "Current security work",
     value:
-      "Internship work includes vulnerability scanning and reporting, risk prioritization, DISA STIG reviews, PowerShell remediation, Defender detections, Sentinel dashboards, and NSG/firewall controls."
+      "Internship work includes vulnerability scanning and reporting, risk prioritization, DISA STIG reviews, PowerShell remediation, Defender detections, Sentinel workbooks, and NSG/firewall controls."
   }
 ];
 
@@ -45,8 +45,8 @@ export default function Home() {
             title="Measured security outcomes"
           />
         </Reveal>
-        <RiskReductionDashboard />
-        <NetworkSecurityDashboard />
+        <VulnerabilityReductionProof />
+        <NetworkSecurityProof />
       </section>
 
       <section className="mt-14 min-w-0 scroll-mt-24 sm:mt-16" id="featured-case-studies">
@@ -85,8 +85,8 @@ export default function Home() {
             <div className="min-w-0">
               <p className="eyebrow-text">Professional foundation</p>
               <p className="body-copy mt-3 max-w-2xl">
-                My Marine Corps fire direction control experience was built around pressure, precision, and
-                accountability. I led small teams, trained Marines on required systems and operating procedures, and
+                My Marine Corps Fire Direction Control experience was built around pressure, precision, and
+                accountability. Additionally, I led small teams, trained Marines on required systems and operating procedures, and
                 learned how much outcomes depend on accurate data. I bring that same mindset to vulnerability
                 management, secure configuration, remediation scripting, and security investigation.
               </p>

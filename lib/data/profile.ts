@@ -9,6 +9,8 @@ export const profile = {
     "My strongest fit is vulnerability management, security operations, threat detection, and technical compliance. This portfolio organizes the evidence: scanning, reporting, remediation automation, secure configuration, threat hunting, and validation.",
   resumeSnapshot:
     "Resume-backed qualifications, technical focus areas, and measurable security work. Open the full resume in the browser or download the PDF.",
+  email: "bryan.p.miller7@gmail.com",
+  emailUrl: "mailto:bryan.p.miller7@gmail.com",
   githubUrl: "https://github.com/bryanpmiller",
   linkedinUrl: "https://linkedin.com/in/bryan-p-miller",
   resumeUrl: "/resume/Bryan_Miller_Resume.pdf"

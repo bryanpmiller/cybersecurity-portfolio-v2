@@ -75,7 +75,7 @@ Semantic evidence colors use a restrained color-wheel strategy so the blue/white
 - High: `#6d4fb0`
 - Medium: `#4a8bdf`
 - Detection: `#243b8f`
-- Remediation: `#2c7fba`
+- Remediation: `#1e6f9f`
 - Evidence/accent: `#243b8f`
 
 ## Typography Direction
@@ -104,14 +104,13 @@ Implemented:
 Implemented:
 
 - Shared cards now use white/light surfaces, subtle borders, 6px radius, and a soft enterprise shadow.
-- The previous `terminal` card variant no longer renders as a terminal surface; it is temporarily mapped to the neutral card foundation until later section phases rename/remove it.
-- Metric, project, evidence, glass, and default variants now share a calmer foundation.
+- Phase 11 removed the retired `terminal`, `metric`, and `project` card variants; active shared card variants are now `default`, `evidence`, and `glass`.
 
 ### Code / Query Blocks
 
 Implemented:
 
-- `.technical-block` remains monospace and is reserved for real technical evidence.
+- `.technical-block` now uses normal body typography for resume and summary text; monospace should be used only for real code or query snippets.
 - Decorative terminal and grid overlays were reduced or removed from the most visible sections.
 
 ## Phase 2 Tasks
@@ -130,7 +129,7 @@ Implemented:
 
 ## Phase 2 Implementation Notes
 
-Phase 2 intentionally changed the design foundation without restructuring homepage content or rewriting section copy. Dashboard labels and project-card layouts remain for later phases, but their inherited styling is now lighter, calmer, and less cyber-template driven.
+Phase 2 intentionally changed the design foundation without restructuring homepage content or rewriting section copy. Later phases removed the remaining dashboard labels, old project-card layouts, and retired terminal/badge implementation names.
 
 ### Files Changed
 
@@ -140,15 +139,15 @@ Phase 2 intentionally changed the design foundation without restructuring homepa
 | `app/globals.css` | Switched to pale blue/white light color scheme, removed global cyber grid texture, reduced glow/radial effects, updated typography utilities, link/focus styles, and page depth treatment. |
 | `components/ui/Card.tsx` | Flattened card variants to neutral light surfaces with subtle borders, softer shadows, and smaller radius. |
 | `components/ui/Button.tsx` | Replaced neon gradient buttons with solid muted primary, restrained secondary, and light-blue featured CTA styling. |
-| `components/ui/Badge.tsx` | Reworked shared badge styling into a quiet bordered tag. |
+| `components/ui/ToolTag.tsx` | Reworked shared tool styling into a quiet bordered tag after Phase 11 renamed the old Badge primitive. |
 | `components/layout/Navbar.tsx` | Updated sticky nav to a pale-blue elevated header with a distinct white nav group, blue-tinted border, and restrained active states. |
 | `components/layout/Footer.tsx` | Changed footer from dark ink to light surface. |
 | `app/layout.tsx` | Updated skip-link styling for light theme contrast. |
 | `components/sections/HeroSection.tsx` | Removed grid/glow overlays from the hero side panel and adjusted light-theme contrast. |
-| `components/sections/RiskReductionDashboard.tsx` | Removed grid overlay and replaced saturated critical gradient with muted solid severity treatment. |
-| `components/sections/ImpactMetricsStrip.tsx` | Removed grid overlay and replaced bar gradient with muted remediation color. |
+| `components/sections/VulnerabilityReductionProof.tsx` | Removed grid overlay and replaced saturated critical gradient with muted solid severity treatment; Phase 11 renamed the former dashboard component. |
+| `components/sections/NetworkSecurityProof.tsx` | Removed grid overlay and replaced bar gradient with muted remediation color; Phase 11 renamed the former dashboard component. |
 | `components/sections/SkillsOverview.tsx` | Reduced badge glow/gradient treatment and removed monospace from normal capability label. |
-| `components/sections/FeaturedProjects.tsx` | Reduced glow-heavy project actions and GitHub button treatment while preserving layout for later phases. |
+| `components/sections/ProjectCaseStudyCard.tsx` | Replaced the old project-preview treatment with shared homepage and project-index case-study cards. |
 | `components/sections/ProjectDetail.tsx` | Replaced dark gradient visual panels with light neutral evidence panels and fixed heading contrast. |
 | `app/contact/page.tsx` | Removed glow shadows from contact icon treatments and improved GitHub icon contrast. |
 | `app/projects/page.tsx` | Reduced glow/hover treatment in project index navigation and fixed light-theme contrast. |
@@ -158,7 +157,7 @@ Phase 2 intentionally changed the design foundation without restructuring homepa
 
 - Blue/white/red-violet page foundation: `#effafd`, `#ffffff`, `#f8fcff`, `#f6fbfe`, `#080b3f`, `#4a8bdf`, `#a0006d`
 - Deep blue accent for accessible CTAs and focus states: `#243b8f`
-- Matched evidence colors: `#a0006d`, `#6d4fb0`, `#4a8bdf`, `#243b8f`, `#2c7fba`
+- Matched evidence colors: `#a0006d`, `#6d4fb0`, `#4a8bdf`, `#243b8f`, `#1e6f9f`
 - Softer shadows: `shadow-soft` and `shadow-raised`
 - Local slate scale tuned for readable light-theme text
 

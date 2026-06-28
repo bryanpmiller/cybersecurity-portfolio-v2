@@ -74,10 +74,10 @@ export function HeroSection() {
         <div className="mt-5 flex flex-wrap gap-2 border-t border-line pt-4 sm:gap-3">
           {proofItems.map((item) => (
             <span
-              className="badge-text inline-flex items-center gap-2 rounded-full border border-lineStrong/35 bg-surface px-3.5 py-2 text-slate-300 shadow-[0_10px_24px_rgba(8,11,63,0.07)]"
+              className="chip-text inline-flex items-center gap-2 rounded-full border border-lineStrong/35 bg-surface px-3.5 py-2 text-slate-300 shadow-[0_10px_24px_rgba(8,11,63,0.07)]"
               key={item}
             >
-              <ShieldCheck aria-hidden="true" className="size-3.5 text-mint" />
+              <ShieldCheck aria-hidden="true" className="size-3.5 text-remediation" />
               {item}
             </span>
           ))}

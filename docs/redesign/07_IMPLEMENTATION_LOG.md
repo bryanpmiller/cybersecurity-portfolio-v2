@@ -8,11 +8,11 @@ Codex must update this file after each phase.
 
 ## Current Working Summary
 
-- Current phase: Phase 10 - Case Study Pages
+- Current phase: Phase 13 - Final Review
 - Current status: Complete
-- Last completed phase: Phase 10 - Case Study Pages
+- Last completed phase: Phase 13 - Final Review
 - Current blockers: None.
-- Next recommended action: Begin Phase 11 by searching for and removing remaining template signals.
+- Next recommended action: Redesign phases are complete; review the site locally or prepare for deployment.
 
 ## Design Decision Log
 
@@ -54,6 +54,11 @@ Codex must update this file after each phase.
 | 2026-06-26 / Phase 10 evidence-link polish | Make evidence-link buttons visually uniform and keep only Evidence Links sticky. | User noted the repository buttons looked jumbled and clarified that Case Study Focus should remain visible as normal context, but should not scroll with the sticky Evidence Links panel. Evidence-link buttons now use a fixed left GitHub icon column with centered text. | `components/sections/ProjectDetail.tsx`, `docs/redesign/05_CASE_STUDY_REDESIGN.md`, `docs/redesign/README.md`, `docs/redesign/07_IMPLEMENTATION_LOG.md` |
 | 2026-06-26 / Phase 10 project-index refinement | Refresh `/projects` to match the redesigned homepage project style. | User noted the dedicated projects page still used the old homepage card style. The page now uses a shared case-study card component, a restrained project review path, full-width numbered case-study panels, hiring relevance, tools, and GitHub evidence actions. | `app/projects/page.tsx`, `app/page.tsx`, `components/sections/ProjectCaseStudyCard.tsx`, `lib/data/projects.ts`, `docs/redesign/05_CASE_STUDY_REDESIGN.md`, `docs/redesign/README.md`, `docs/redesign/07_IMPLEMENTATION_LOG.md` |
 | 2026-06-26 / Design refinement | Add a mid-emphasis homepage case-study CTA and separate the navbar surfaces. | User liked the stronger `/projects` case-study CTA but wanted the homepage version less jarring than solid blue. The homepage now uses a light royal-blue featured CTA, while the navbar uses a pale-blue elevated header, distinct white nav group, blue-tinted border, and softer active state for better desktop/mobile separation. | `components/ui/Button.tsx`, `components/sections/ProjectCaseStudyCard.tsx`, `components/layout/Navbar.tsx`, `docs/redesign/03_DESIGN_SYSTEM.md`, `docs/redesign/04_HOMEPAGE_REDESIGN.md`, `docs/redesign/README.md`, `docs/redesign/07_IMPLEMENTATION_LOG.md` |
+| 2026-06-28 / Phase 11 | Remove stale template-signal implementation leftovers. | Phase 11 found unused old project-preview code and legacy naming from prior dashboard/badge/mint/terminal treatments. Removing or renaming those pieces keeps the implementation aligned with the professional redesign direction without changing approved content. | `app/page.tsx`, `app/about/page.tsx`, `app/contact/page.tsx`, `app/resume/page.tsx`, `app/globals.css`, `components/sections/FeaturedProjects.tsx`, `components/sections/VulnerabilityReductionProof.tsx`, `components/sections/NetworkSecurityProof.tsx`, `components/sections/ProjectCaseStudyCard.tsx`, `components/sections/ProjectDetail.tsx`, `components/ui/Card.tsx`, `components/ui/Button.tsx`, `components/ui/ToolTag.tsx`, `lib/data/resume.ts`, `tailwind.config.ts`, `docs/redesign/02_SITE_AUDIT.md`, `docs/redesign/README.md`, `docs/redesign/07_IMPLEMENTATION_LOG.md` |
+| 2026-06-28 / Phase 12 | Prioritize mobile tap targets and small-text contrast during QA. | Browser QA found no overflow, but mobile navigation/footer targets were smaller than comfortable touch size and remediation text was slightly low contrast for small labels. The fixes improve usability without changing the approved visual direction. | `components/layout/Navbar.tsx`, `components/layout/Footer.tsx`, `tailwind.config.ts`, `docs/redesign/03_DESIGN_SYSTEM.md`, `docs/redesign/08_QA_FINAL_REVIEW.md`, `docs/redesign/README.md`, `docs/redesign/07_IMPLEMENTATION_LOG.md` |
+| 2026-06-28 / Phase 13 | Accept the redesign after final designer and hiring-manager review. | The final review found the site meets the redesign acceptance criteria: professional visual direction, clear proof points, credible case studies, honest scope, mobile readiness, and no remaining required fixes. | `docs/redesign/08_QA_FINAL_REVIEW.md`, `docs/redesign/README.md`, `docs/redesign/07_IMPLEMENTATION_LOG.md` |
+| 2026-06-28 / Post-final refinement | Reorder the shared skills groups on the homepage and `/skills`. | The requested desktop order is Security Operations & Investigation with Vulnerability Management on the first row, then Hardening & Compliance with Automation / Scripting on the second row. The shared `skillGroups` data controls both pages, so one source change keeps them aligned. | `lib/data/skills.ts`, `docs/redesign/04_HOMEPAGE_REDESIGN.md`, `docs/redesign/README.md`, `docs/redesign/07_IMPLEMENTATION_LOG.md` |
+| 2026-06-28 / Post-final email contact | Add a visible recruiter-friendly email contact path. | The site is built for recruiters, so a visible direct email lowers contact friction. The contact page uses the cleaner recruiter-facing Gmail address, and the visible address now sits in the email card action area beside the Email button. | `lib/data/profile.ts`, `app/contact/page.tsx`, `components/layout/Footer.tsx`, `components/ui/Button.tsx`, `docs/redesign/08_QA_FINAL_REVIEW.md`, `docs/redesign/README.md`, `docs/redesign/07_IMPLEMENTATION_LOG.md` |
 
 ## Phase Log
 
@@ -586,39 +591,170 @@ Issues/blockers: None currently. Lint, type check, build, production route check
 
 ### Phase 11 - Template Signal Cleanup
 
-Status: Not started
+Status: Complete
 
-Summary:
+Summary: Searched active code for remaining template signals and removed stale implementation artifacts from earlier redesign phases. Deleted the unused old `FeaturedProjects` component, renamed live proof components away from dashboard language, removed unused card variants named `metric`, `project`, and `terminal`, renamed tool pills from Badge to ToolTag, replaced `badge-text` with `chip-text`, removed active `mint`/`cyan` aliases, changed remaining "dashboards" copy to "Sentinel workbooks," and removed non-code monospace styling from resume/case-study labels.
 
 Files changed:
 
+- `app/page.tsx`
+- `app/about/page.tsx`
+- `app/contact/page.tsx`
+- `app/resume/page.tsx`
+- `app/globals.css`
+- `components/sections/FeaturedProjects.tsx` (removed)
+- `components/sections/ImpactMetricsStrip.tsx` (renamed)
+- `components/sections/NetworkSecurityProof.tsx`
+- `components/sections/RiskReductionDashboard.tsx` (renamed)
+- `components/sections/VulnerabilityReductionProof.tsx`
+- `components/sections/HeroSection.tsx`
+- `components/sections/ProjectCaseStudyCard.tsx`
+- `components/sections/ProjectDetail.tsx`
+- `components/ui/Badge.tsx` (renamed)
+- `components/ui/ToolTag.tsx`
+- `components/ui/Button.tsx`
+- `components/ui/Card.tsx`
+- `lib/data/resume.ts`
+- `tailwind.config.ts`
+- `docs/redesign/02_SITE_AUDIT.md`
+- `docs/redesign/README.md`
+- `docs/redesign/07_IMPLEMENTATION_LOG.md`
+
 Commands run:
 
-Issues/blockers:
+- `Get-Content -Raw AGENTS.md`
+- `Get-Content -Raw docs/redesign/README.md`
+- `Get-Content -Raw docs/redesign/07_IMPLEMENTATION_LOG.md`
+- `Get-Content -Raw docs/redesign/02_SITE_AUDIT.md`
+- `rg -n` searches for `terminal`, `dashboard`, `grid`, `neon`, `glow`, `matrix`, prohibited copy, `badge`, `font-mono`, `cyan`, and `mint`
+- `Get-Content` inspections of the affected component, page, data, and token files
+- `Move-Item` to rename proof and tag component files
+- `npm.cmd run lint`
+- `npx.cmd tsc --noEmit`
+- `npm.cmd run build`
+- `npm.cmd run start -- -H 127.0.0.1 -p 3066` for production route checks
+- `Invoke-WebRequest` route checks for `/`, `/about`, `/resume`, `/skills`, `/projects`, all four project detail routes, and `/contact`
+
+Issues/blockers: None. Lint, type check, build, and production route checks passed.
 
 ### Phase 12 - Mobile / Accessibility / QA
 
-Status: Not started
+Status: Complete
 
-Summary:
+Summary: Completed Phase 12 responsive and accessibility QA. Browser checks covered desktop, tablet, and mobile widths across homepage, secondary pages, project index, and project detail pages. No horizontal overflow was found. Fixed mobile navigation and footer tap-target sizing, darkened the remediation color token for accessible small-text contrast, verified configured resume/GitHub/LinkedIn/contact paths, confirmed the resume PDF asset returns HTTP 200, and completed lint, type, build, console, and production route checks.
 
 Files changed:
 
+- `components/layout/Navbar.tsx`
+- `components/layout/Footer.tsx`
+- `tailwind.config.ts`
+- `docs/redesign/03_DESIGN_SYSTEM.md`
+- `docs/redesign/08_QA_FINAL_REVIEW.md`
+- `docs/redesign/README.md`
+- `docs/redesign/07_IMPLEMENTATION_LOG.md`
+
 Commands run:
 
-Issues/blockers:
+- `Get-Content -Raw AGENTS.md`
+- `Get-Content -Raw docs/redesign/README.md`
+- `Get-Content -Raw docs/redesign/08_QA_FINAL_REVIEW.md`
+- `Get-Content -Raw docs/redesign/07_IMPLEMENTATION_LOG.md`
+- Browser responsive QA at 1280x900, 768x1024, and 390x844 across key routes
+- Browser mobile tap-target verification after nav/footer fix
+- Browser console error check on sampled mobile routes
+- Contrast-ratio calculation for key text tokens
+- `Test-Path public\resume\Bryan_Miller_Resume.pdf`
+- `npm.cmd run lint`
+- `npx.cmd tsc --noEmit`
+- `npm.cmd run build`
+- `npm.cmd run start -- -H 127.0.0.1 -p 3068` for production route checks
+- `Invoke-WebRequest` route checks for `/`, secondary pages, all four project detail routes, `/contact`, and `/resume/Bryan_Miller_Resume.pdf`
+- `rg -n` source/documentation sweeps for stale token/template references
+
+Issues/blockers: Browser contrast script timed out after the responsive QA had already completed; token contrast was verified with a direct ratio calculation instead. Lint, type check, build, route checks, mobile overflow checks, tap-target checks, and sampled console checks passed.
 
 ### Phase 13 - Final Review
 
-Status: Not started
+Status: Complete
 
-Summary:
+Summary: Completed the final review from a senior frontend designer and cybersecurity hiring-manager perspective. The redesigned site now presents a restrained, light-first, professional portfolio with clear proof points, case-study-driven project pages, grounded cybersecurity copy, and honest scope. No required final fixes remain before acceptance. Optional future item is deployment-specific review.
 
 Files changed:
 
+- `docs/redesign/08_QA_FINAL_REVIEW.md`
+- `docs/redesign/README.md`
+- `docs/redesign/07_IMPLEMENTATION_LOG.md`
+
 Commands run:
 
-Issues/blockers:
+- `Get-Content -Raw AGENTS.md`
+- `Get-Content -Raw docs/redesign/README.md`
+- `Get-Content -Raw docs/redesign/08_QA_FINAL_REVIEW.md`
+- `Get-Content -Raw docs/redesign/07_IMPLEMENTATION_LOG.md`
+- `rg -n` final source sweep for prohibited copy, unsupported template language, dashboard/terminal/neon/matrix leftovers, and stale accent names
+- `Get-Content` inspections of homepage, hero, case-study card, project detail, and project data files
+- `npm.cmd run lint`
+- `npx.cmd tsc --noEmit`
+- `npm.cmd run build`
+- `npm.cmd run start -- -H 127.0.0.1 -p 3069` for final production route checks
+- `Invoke-WebRequest` route checks for `/`, secondary pages, all four project detail routes, `/contact`, and `/resume/Bryan_Miller_Resume.pdf`
+
+Issues/blockers: None. Final lint, type check, build, and production route checks passed.
+
+### Post-Final Skills Order Refinement
+
+Status: Complete
+
+Summary: Reordered the shared skills groups so the homepage and `/skills` page display Security Operations & Investigation, Vulnerability Management, Hardening & Compliance, and Automation / Scripting in the requested sequence.
+
+Files changed:
+
+- `lib/data/skills.ts`
+- `docs/redesign/04_HOMEPAGE_REDESIGN.md`
+- `docs/redesign/README.md`
+- `docs/redesign/07_IMPLEMENTATION_LOG.md`
+
+Commands run:
+
+- `Get-Content -Raw docs/redesign/README.md`
+- `Get-Content` inspections of Phase 8 documentation and skills implementation files
+- `npm.cmd run lint`
+- `npx.cmd tsc --noEmit`
+- `npm.cmd run build`
+- `npm.cmd run start -- -H 127.0.0.1 -p 3070` for production route checks
+- `Invoke-WebRequest` route checks for `/` and `/skills`
+
+Issues/blockers: None.
+
+### Post-Final Email Contact Refinement
+
+Status: Complete
+
+Summary: Added a visible recruiter-friendly email contact path using `bryan.p.miller7@gmail.com`. The contact page now leads with an email card that displays the address beside the Email button and opens a `mailto:` link, the footer includes an Email link, and the shared button component handles `mailto:` links as native anchors.
+
+Files changed:
+
+- `lib/data/profile.ts`
+- `app/contact/page.tsx`
+- `components/layout/Footer.tsx`
+- `components/ui/Button.tsx`
+- `docs/redesign/08_QA_FINAL_REVIEW.md`
+- `docs/redesign/README.md`
+- `docs/redesign/07_IMPLEMENTATION_LOG.md`
+
+Commands run:
+
+- `Get-Content -Raw docs/redesign/README.md`
+- `rg -n` email/contact source search
+- `Get-Content` inspections of contact, footer, profile, button, and QA documentation
+- `npm.cmd run lint`
+- `npx.cmd tsc --noEmit`
+- `npm.cmd run build`
+- `npm.cmd run start -- -H 127.0.0.1 -p 3071` for production route checks
+- `Invoke-WebRequest` route checks for `/contact`
+- Moved the visible contact email into the Email card action row beside the Email button
+
+Issues/blockers: None.
 
 ## Commands and Results
 
@@ -787,6 +923,36 @@ Issues/blockers:
 | `npm.cmd run build` | Design refinement build verification | Passed | Next.js production build completed and prerendered all routes after the CTA/nav updates |
 | `Invoke-WebRequest` route checks | Design refinement route verification | Passed | `/` and `/projects` returned HTTP 200 from production `next start` on port 3065 |
 | Browser visual inspection | Design refinement visual verification | Passed | Desktop and mobile homepage checks confirmed the navbar surface separation, light-blue homepage case-study CTA, and no horizontal overflow |
+| `rg -n` template-signal sweeps | Phase 11 source search | Completed | Searched active app/components/lib/theme code for dashboard, terminal, neon/glow, matrix, prohibited copy, badge, mono, cyan, and mint leftovers |
+| `npm.cmd run lint` | Phase 11 template cleanup lint verification | Passed | Completed after removing/renaming stale template-signal implementation leftovers |
+| `npx.cmd tsc --noEmit` | Phase 11 template cleanup type verification | Passed | Completed with no TypeScript errors |
+| `npm.cmd run build` | Phase 11 template cleanup build verification | Passed | Next.js production build completed and prerendered all routes |
+| `Invoke-WebRequest` route checks | Phase 11 template cleanup route verification | Passed | `/`, secondary pages, and all four project detail routes returned HTTP 200 from production `next start` on port 3066 |
+| Browser responsive QA | Phase 12 desktop/tablet/mobile verification | Passed | Checked key routes at 1280x900, 768x1024, and 390x844; no horizontal overflow found |
+| Browser mobile tap-target check | Phase 12 navigation/footer verification | Passed | After the fix, mobile nav links measured 44px tall and footer links measured 40px tall with no small nav/footer targets remaining |
+| Browser console check | Phase 12 sampled console verification | Passed | No console errors reported on sampled mobile routes after the tap-target fix |
+| Contrast-ratio calculation | Phase 12 token contrast verification | Passed | Key text tokens cleared AA on white; remediation now measures about 5.48:1 after darkening to `#1e6f9f` |
+| `npm.cmd run lint` | Phase 12 QA lint verification | Passed | Completed after nav/footer and token fixes |
+| `npx.cmd tsc --noEmit` | Phase 12 QA type verification | Passed | Completed with no TypeScript errors |
+| `npm.cmd run build` | Phase 12 QA build verification | Passed | Next.js production build completed and prerendered all routes |
+| `Invoke-WebRequest` route checks | Phase 12 QA production route verification | Passed | `/`, secondary pages, all four project detail routes, `/contact`, and the resume PDF returned HTTP 200 from production `next start` on port 3068 |
+| `rg -n` final source sweep | Phase 13 prohibited-copy/template verification | Passed | No active app/components/lib matches found for prohibited copy or dashboard/terminal/neon/matrix/stale accent leftovers |
+| `npm.cmd run lint` | Phase 13 final lint verification | Passed | Completed with no lint errors |
+| `npx.cmd tsc --noEmit` | Phase 13 final type verification | Passed | Completed with no TypeScript errors |
+| `npm.cmd run build` | Phase 13 final build verification | Passed | Next.js production build completed and prerendered all routes |
+| `Invoke-WebRequest` route checks | Phase 13 final production route verification | Passed | `/`, secondary pages, all four project detail routes, `/contact`, and the resume PDF returned HTTP 200 from production `next start` on port 3069 |
+| `npm.cmd run lint` | Post-final skills order lint verification | Passed | Completed with no lint errors |
+| `npx.cmd tsc --noEmit` | Post-final skills order type verification | Passed | Completed with no TypeScript errors |
+| `npm.cmd run build` | Post-final skills order build verification | Passed | Next.js production build completed and prerendered all routes |
+| `Invoke-WebRequest` route checks | Post-final skills order production route verification | Passed | `/` and `/skills` returned HTTP 200 from production `next start` on port 3070 |
+| `npm.cmd run lint` | Post-final email contact lint verification | Passed | Completed with no lint errors |
+| `npx.cmd tsc --noEmit` | Post-final email contact type verification | Passed | Completed with no TypeScript errors |
+| `npm.cmd run build` | Post-final email contact build verification | Passed | Next.js production build completed and prerendered all routes |
+| `Invoke-WebRequest` route checks | Post-final email contact production route verification | Passed | `/contact` returned HTTP 200 from production `next start` on port 3071 |
+| `npm.cmd run lint` | Email card layout refinement lint verification | Passed | Completed after moving the visible email beside the Email button |
+| `npx.cmd tsc --noEmit` | Email card layout refinement type verification | Passed | Completed with no TypeScript errors |
+| `npm.cmd run build` | Email card layout refinement build verification | Passed | Next.js production build completed and prerendered all routes |
+| `Invoke-WebRequest` route checks | Email card layout refinement production route verification | Passed | `/contact` returned HTTP 200 and rendered `bryan.p.miller7@gmail.com` plus its `mailto:` link |
 
 ## Files Changed Index
 
@@ -852,6 +1018,46 @@ Issues/blockers:
 | `docs/redesign/05_CASE_STUDY_REDESIGN.md` | Phase 10 | Documented found case-study routes, template completion, project-index refinement, files changed, and checklist completion. |
 | `docs/redesign/README.md` | Phase 10 | Marked Phase 10 complete in the phase status board and noted the refreshed `/projects` index. |
 | `docs/redesign/07_IMPLEMENTATION_LOG.md` | Phase 10 | Logged Phase 10 decisions, project-index refinement, files changed, commands, verification results, and next phase. |
+| `app/page.tsx` | Phase 11 | Updated proof component imports/names and changed remaining Sentinel dashboard wording to Sentinel workbooks. |
+| `app/about/page.tsx` | Phase 11 | Replaced the remaining `badge-text` utility reference with `chip-text`. |
+| `app/contact/page.tsx` | Phase 11 | Replaced legacy `mint` styling references with the semantic `remediation` token. |
+| `app/resume/page.tsx` | Phase 11 | Replaced `badge-text` usage and removed non-code monospace styling from skill summaries. |
+| `app/globals.css` | Phase 11 | Renamed `badge-text` to `chip-text` and made `technical-block` use normal text rather than monospace. |
+| `components/sections/FeaturedProjects.tsx` | Phase 11 | Removed the unused old animated project-preview component. |
+| `components/sections/NetworkSecurityProof.tsx` | Phase 11 | Renamed the former network dashboard component to proof-oriented naming. |
+| `components/sections/VulnerabilityReductionProof.tsx` | Phase 11 | Renamed the former risk-reduction dashboard component to proof-oriented naming. |
+| `components/sections/HeroSection.tsx` | Phase 11 | Replaced remaining proof-pill `badge-text` and `mint` references with neutral chip/remediation naming. |
+| `components/sections/ProjectCaseStudyCard.tsx` | Phase 11 | Replaced remaining badge utility usage and removed non-code monospace labels. |
+| `components/sections/ProjectDetail.tsx` | Phase 11 | Swapped the shared Badge component for `ToolTag`. |
+| `components/ui/Button.tsx` | Phase 11 | Removed the legacy `mint` accent option. |
+| `components/ui/Card.tsx` | Phase 11 | Removed unused `metric`, `project`, and `terminal` variants. |
+| `components/ui/ToolTag.tsx` | Phase 11 | Renamed the shared Badge primitive to a neutral tool tag. |
+| `lib/data/resume.ts` | Phase 11 | Changed remaining Sentinel dashboard wording to Sentinel workbooks. |
+| `tailwind.config.ts` | Phase 11 | Removed unused `cyan` and `mint` color aliases. |
+| `docs/redesign/02_SITE_AUDIT.md` | Phase 11 | Added cleanup results and aligned stale metric/project-order wording with the source of truth. |
+| `docs/redesign/README.md` | Phase 11 | Marked Phase 11 complete in the phase status board. |
+| `docs/redesign/07_IMPLEMENTATION_LOG.md` | Phase 11 | Logged Phase 11 decisions, files changed, commands, and verification results. |
+| `components/layout/Navbar.tsx` | Phase 12 | Increased mobile nav and brand link hit areas for better tap targets. |
+| `components/layout/Footer.tsx` | Phase 12 | Increased footer link hit areas for touch usability. |
+| `tailwind.config.ts` | Phase 12 | Darkened the remediation token to improve small-text contrast. |
+| `docs/redesign/03_DESIGN_SYSTEM.md` | Phase 12 | Updated remediation token documentation and corrected stale Phase 2 notes after Phase 11 cleanup. |
+| `docs/redesign/08_QA_FINAL_REVIEW.md` | Phase 12 | Filled the QA checklist, issues found/fixed, link review, quality checks, and Phase 12 notes. |
+| `docs/redesign/README.md` | Phase 12 | Marked Phase 12 complete in the phase status board. |
+| `docs/redesign/07_IMPLEMENTATION_LOG.md` | Phase 12 | Logged Phase 12 decisions, files changed, commands, and verification results. |
+| `docs/redesign/08_QA_FINAL_REVIEW.md` | Phase 13 | Completed final senior frontend designer review, cybersecurity hiring-manager review, acceptance checklist, final files changed, and final notes. |
+| `docs/redesign/README.md` | Phase 13 | Marked Phase 13 complete in the phase status board. |
+| `docs/redesign/07_IMPLEMENTATION_LOG.md` | Phase 13 | Logged Phase 13 decision, files changed, commands, verification results, and completion status. |
+| `lib/data/skills.ts` | Post-final refinement | Reordered shared skill groups so the homepage and `/skills` page use the requested desktop sequence. |
+| `docs/redesign/04_HOMEPAGE_REDESIGN.md` | Post-final refinement | Updated the final Phase 8 skill group table and note to reflect the refined order. |
+| `docs/redesign/README.md` | Post-final refinement | Updated the Phase 8 summary and suggested group order to match the implementation. |
+| `docs/redesign/07_IMPLEMENTATION_LOG.md` | Post-final refinement | Logged the skills order decision, changed files, commands, and verification results. |
+| `lib/data/profile.ts` | Post-final email contact | Added the shared visible portfolio email address and `mailto:` URL. |
+| `app/contact/page.tsx` | Post-final email contact | Added a direct email card, visible email address beside the email button, email button, and recruiter-focused contact copy. |
+| `components/layout/Footer.tsx` | Post-final email contact | Added a footer Email link. |
+| `components/ui/Button.tsx` | Post-final email contact | Rendered `mailto:` and `tel:` button links as native anchors without external-tab behavior. |
+| `docs/redesign/08_QA_FINAL_REVIEW.md` | Post-final email contact | Updated link review, recommendations, concerns, final files, and final notes for the verified email path. |
+| `docs/redesign/README.md` | Post-final email contact | Updated the Phase 13 summary now that the direct email path is complete. |
+| `docs/redesign/07_IMPLEMENTATION_LOG.md` | Post-final email contact | Logged the email contact decision, changed files, commands, and verification results. |
 
 ## Unresolved Issues
 

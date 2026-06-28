@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 type ButtonProps = {
   href: string;
   children: ReactNode;
-  accent?: "evidence" | "remediation" | "mint" | "white";
+  accent?: "evidence" | "remediation" | "white";
   ariaLabel?: string;
   className?: string;
   variant?: "primary" | "secondary" | "featured";
@@ -16,7 +16,6 @@ type ButtonProps = {
 const focusAccentClasses = {
   evidence: "focus-visible:ring-evidence/80",
   remediation: "focus-visible:ring-remediation/80",
-  mint: "focus-visible:ring-mint/80",
   white: "focus-visible:ring-white/75"
 };
 
@@ -25,13 +24,12 @@ const secondaryAccentClasses = {
     "hover:border-evidence/45 hover:bg-surfaceElevated hover:text-ink",
   remediation:
     "hover:border-remediation/45 hover:bg-remediation/10 hover:text-ink",
-  mint:
-    "hover:border-mint/45 hover:bg-mint/10 hover:text-ink",
   white:
     "hover:border-lineStrong hover:bg-surfaceElevated hover:text-ink"
 };
 
 export function Button({ href, children, accent = "evidence", ariaLabel, className, variant = "primary", external = false, icon }: ButtonProps) {
+  const isNativeLink = href.startsWith("mailto:") || href.startsWith("tel:");
   const classes =
     variant === "primary"
       ? "border border-evidence bg-evidence text-white shadow-soft hover:border-ink hover:bg-ink hover:text-white"
@@ -49,9 +47,9 @@ export function Button({ href, children, accent = "evidence", ariaLabel, classNa
     className
   );
 
-  if (external) {
+  if (external || isNativeLink) {
     return (
-      <a aria-label={ariaLabel} className={buttonClassName} href={href} rel="noreferrer" target="_blank">
+      <a aria-label={ariaLabel} className={buttonClassName} href={href} rel={external ? "noreferrer" : undefined} target={external ? "_blank" : undefined}>
         {icon}
         {children}
       </a>
