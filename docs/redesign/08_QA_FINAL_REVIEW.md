@@ -47,7 +47,7 @@ Review:
 | Link | Location | Status | Notes |
 |---|---|---|---|
 | Email | Contact page, footer | Pass | Visible email address and `mailto:` link use `bryan.p.miller7@gmail.com`. |
-| Resume | Hero, resume page, contact page, footer | Pass | `/resume/Bryan_Miller_Resume.pdf` exists locally and returned HTTP 200 as `application/pdf`. |
+| Resume | Hero, resume page, contact page, footer | Pass | `/resume/bryanpmiller_resume_public.pdf` exists locally and is the shared resume URL used by the site. |
 | GitHub | Hero, homepage CTA, project cards, project details, contact page, footer | Pass | Shared profile URL is `https://github.com/bryanpmiller`; project-specific GitHub URLs are present in project data. |
 | LinkedIn | Contact page, footer | Pass | Shared profile URL is `https://linkedin.com/in/bryan-p-miller`. |
 | Contact | Navbar and homepage CTA | Pass | `/contact` returned HTTP 200. |
@@ -159,4 +159,5 @@ The redesign is successful if:
 - No layout overflow was found across the checked desktop, tablet, and mobile routes.
 - Phase 13 found no required final fixes before acceptance.
 - Post-final update added a visible recruiter-friendly email contact path.
+- Post-final update repaired the shared resume PDF path after the public asset changed to `bryanpmiller_resume_public.pdf`.
 - Final lint, type check, build, and production route checks passed.

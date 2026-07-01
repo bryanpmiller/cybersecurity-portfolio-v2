@@ -62,6 +62,17 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
               </section>
             ) : null}
 
+            <div className="mt-8 max-w-3xl rounded-md border border-evidence/30 bg-evidence/10 p-4 sm:p-5">
+              <p className="eyebrow-text inline-flex items-center gap-2">
+                <FileText aria-hidden="true" className="size-3.5" />
+                Full technical write-up available
+              </p>
+              <p className="compact-copy mt-3">
+                This portfolio page summarizes the project for hiring review. Use the Evidence Links section to read
+                the full technical write-up and review the supporting project artifacts.
+              </p>
+            </div>
+
             {caseStudy ? (
               <div className="mt-8 grid gap-3 border-y border-line py-5 sm:grid-cols-2 xl:grid-cols-4">
                 {caseStudy.visual.stats.map((stat) => (
@@ -163,10 +174,13 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
 
           <Card as="section" className="p-5 lg:sticky lg:top-24" variant="glass">
             <p className="eyebrow-text">Evidence links</p>
+            <p className="compact-copy mt-3">
+              Read the full technical write-up and review the supporting evidence behind this summary.
+            </p>
             <div className="mt-4 grid gap-3">
               <Button className="grid w-full grid-cols-[1.25rem_minmax(0,1fr)_1.25rem] items-center gap-3 px-4 text-center" external href={project.githubUrl ?? profile.githubUrl} variant="secondary">
                 <GitHubMarkIcon className="size-4 justify-self-start" />
-                <span className="min-w-0 text-center">View repository</span>
+                <span className="min-w-0 text-center">Read Full Technical Write-Up</span>
                 <span aria-hidden="true" />
               </Button>
               {project.supportingLinks?.map((link) => (

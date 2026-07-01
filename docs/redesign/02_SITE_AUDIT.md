@@ -36,7 +36,7 @@ Identify why the site feels generic, AI-coded, hacker-themed, visually bland, or
 | Homepage sections | `components/sections/HeroSection.tsx`, `RiskReductionDashboard.tsx`, `ImpactMetricsStrip.tsx`, `FeaturedProjects.tsx`, `SkillsOverview.tsx` | Main source of dashboard, terminal, badge, mini-chart, and animated-card visual language. |
 | Project pages | `app/projects/page.tsx`, `app/projects/[project-slug]/page.tsx` files, `components/sections/ProjectDetail.tsx` | Project details are already data-driven case studies, but their presentation still uses dark cards, technical blocks, and visual stat panels. |
 | Content/data | `lib/data/profile.ts`, `lib/data/resume.ts`, `lib/data/projects.ts`, `lib/data/skills.ts` | Strongest source of real proof: metrics, project narratives, tools, caveats, links, and role alignment. |
-| Resume/contact links | `lib/data/profile.ts`, `app/resume/page.tsx`, `app/contact/page.tsx`, `public/resume/Bryan_Miller_Resume.pdf` | Resume, GitHub, LinkedIn, and contact path are present and should be preserved. |
+| Resume/contact links | `lib/data/profile.ts`, `app/resume/page.tsx`, `app/contact/page.tsx`, `public/resume/bryanpmiller_resume_public.pdf` | Resume, GitHub, LinkedIn, and contact path are present and should be preserved. |
 | Config | `package.json`, `next.config.ts`, `eslint.config.mjs`, `tsconfig.json`, `postcss.config.mjs` | Security headers exist in `next.config.ts`; no deployment-specific config was found. |
 
 ## Audit Checklist

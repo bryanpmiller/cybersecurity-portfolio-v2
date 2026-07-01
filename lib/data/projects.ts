@@ -51,7 +51,7 @@ export const projects: Project[] = [
     tools: ["Tenable", "Azure Cloud Infrastructure", "Azure Virtual Machines", "PowerShell", "Windows Server"],
     summary:
       "Lab vulnerability management program with policy creation, stakeholder buy-in, authenticated scanning, prioritization, remediation, and verification.",
-    githubUrl: "https://github.com/bryanpmiller/vulnerability-management-program",
+    githubUrl: "https://github.com/bryanpmiller/vulnerability-management-program/blob/main/README.md",
     supportingLinks: [
       {
         label: "CVE Remediation Mapping Repository",
@@ -135,7 +135,7 @@ export const projects: Project[] = [
     tools: ["PowerShell", "DISA STIG", "Custom DISA STIG GPT", "Windows 11", "Windows Registry", "auditpol", "gpupdate"],
     summary:
       "PowerShell remediation scripts with screenshot validation for selected Windows 11 DISA STIG findings in a lab environment.",
-    githubUrl: "https://github.com/bryanpmiller/DISA-STIG-Remediation",
+    githubUrl: "https://github.com/bryanpmiller/DISA-STIG-Remediation/blob/main/README.md",
     supportingLinks: [
       {
         label: "Scripts Folder",
@@ -214,7 +214,7 @@ export const projects: Project[] = [
     tools: ["MDE Advanced Hunting", "Microsoft Sentinel", "Microsoft Defender for Endpoint", "SIEM", "KQL", "MITRE ATT&CK"],
     summary:
       "Microsoft Defender and Sentinel-style threat hunt that reconstructs a cyber-range Windows VM compromise from password-spray RDP access through execution, persistence, evasion, C2, and attempted exfiltration.",
-    githubUrl: "https://github.com/bryanpmiller/password-spray-threat-hunt",
+    githubUrl: "https://github.com/bryanpmiller/password-spray-threat-hunt/blob/main/README.md",
     supportingLinks: [
       {
         label: "Screenshot Evidence Folder",
@@ -295,7 +295,7 @@ export const projects: Project[] = [
     tools: ["MDE Advanced Hunting", "Microsoft Sentinel", "Microsoft Defender for Endpoint", "SIEM", "KQL", "MITRE ATT&CK"],
     summary:
       "Cyber-range Akira ransomware hunt using Microsoft Defender telemetry to reconstruct remote access, staging, lateral movement, defense evasion, data staging, and impact artifacts.",
-    githubUrl: "https://github.com/bryanpmiller/the-buyer-threathunt",
+    githubUrl: "https://github.com/bryanpmiller/the-buyer-threathunt/blob/main/README.md",
     supportingLinks: [
       {
         label: "Screenshot Evidence",

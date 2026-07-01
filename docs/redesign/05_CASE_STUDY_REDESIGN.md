@@ -124,6 +124,18 @@ Avoid:
 
 ## Phase 10 Required Notes
 
+### Full Write-Up Visibility Refinement
+
+Each project detail page should make it clear that the portfolio page is a hiring-review summary, not the full technical artifact.
+
+- Keep the GitHub icon on evidence actions because the destination remains GitHub-hosted.
+- Label the primary GitHub evidence action `Read Full Technical Write-Up`.
+- Point the primary evidence action directly to the project `README.md` where possible, matching the resume's project write-up path instead of stopping at the repository root.
+- Use Title Case for supporting evidence-link labels so the action stack feels consistent.
+- Include a short near-top callout explaining that the full technical write-up and supporting artifacts are available through Evidence Links.
+- Include short helper copy in the Evidence Links panel so recruiters do not mistake the button for a generic repository link.
+- Preserve the professional case-study tone and avoid overexplaining the navigation.
+
 ### Project Index Refinement
 
 The `/projects` page should use the same restrained case-study card language as the homepage, with a slightly richer dedicated-page treatment:
@@ -162,7 +174,7 @@ The `/projects` page should use the same restrained case-study card language as 
 
 | File | Change Summary |
 |---|---|
-| `components/sections/ProjectDetail.tsx` | Reworked project detail pages into an article-style case-study layout with role alignment, executive summary, hiring relevance directly below the summary, proof stats, problem, environment/tools, approach, evidence, result, lessons, case-study focus context, and a sticky desktop evidence-links panel with uniform GitHub-icon buttons. |
+| `components/sections/ProjectDetail.tsx` | Reworked project detail pages into an article-style case-study layout with role alignment, executive summary, hiring relevance directly below the summary, proof stats, problem, environment/tools, approach, evidence, result, lessons, case-study focus context, a near-top full-write-up note, and a sticky desktop evidence-links panel with uniform GitHub-icon buttons labeled around the full technical write-up. |
 | `components/sections/ProjectCaseStudyCard.tsx` | Added a shared homepage/projects case-study card component with compact and expanded modes. |
 | `app/page.tsx` | Reused the shared compact case-study card component for homepage featured case studies. |
 | `app/projects/page.tsx` | Replaced the old project-preview grid with a refreshed project review path and expanded full-width case-study cards. |

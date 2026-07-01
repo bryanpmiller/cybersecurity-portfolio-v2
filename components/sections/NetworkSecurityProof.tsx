@@ -20,7 +20,7 @@ export function NetworkSecurityProof() {
             <p className="eyebrow-text">Network security proof</p>
             <h3 className="section-title mt-3">RDP brute-force attempts reduced through access controls</h3>
             <p className="body-copy mt-4 max-w-3xl">
-              Inbound NSG and firewall controls were applied to restrict RDP exposure, reducing observed
+              Inbound Azure NSG rules and VM-level host firewall controls were applied to restrict RDP exposure, reducing observed
               RDP-related brute-force attempts by 100%.
             </p>
           </div>

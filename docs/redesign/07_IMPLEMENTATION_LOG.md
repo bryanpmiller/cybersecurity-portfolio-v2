@@ -62,6 +62,10 @@ Codex must update this file after each phase.
 | 2026-06-28 / Post-final project tool refinement | List every project tool on homepage case-study cards. | The `+N more` chip hid relevant tools on compact homepage cards. Listing all tools keeps the evidence visible for recruiters while the project tool lists remain short enough to scan. | `components/sections/ProjectCaseStudyCard.tsx`, `docs/redesign/04_HOMEPAGE_REDESIGN.md`, `docs/redesign/07_IMPLEMENTATION_LOG.md` |
 | 2026-06-28 / Post-final homepage hiring relevance | Add compact Hiring Relevance strips to homepage case-study cards. | Recruiters and hiring managers can scan role value faster when the homepage connects each project to the job need before they open the full case study. The compact strip reuses approved case-study copy without adding a heavy new section. | `components/sections/ProjectCaseStudyCard.tsx`, `docs/redesign/04_HOMEPAGE_REDESIGN.md`, `docs/redesign/README.md`, `docs/redesign/07_IMPLEMENTATION_LOG.md` |
 | 2026-06-28 / Post-final hiring relevance copy | Rewrite hiring relevance copy as project proof statements. | User noted that "teams need analysts who..." sounds like explaining hiring needs back to recruiters. The revised copy keeps the same information but frames each card around what the project demonstrates, with varied sentence openings. | `lib/data/projects.ts`, `docs/redesign/06_CONTENT_AND_COPY.md`, `docs/redesign/05_CASE_STUDY_REDESIGN.md`, `docs/redesign/07_IMPLEMENTATION_LOG.md` |
+| 2026-07-01 / Post-final evidence-link clarity | Label project GitHub evidence actions as full technical write-ups and add page-level guidance. | User clarified that the GitHub destination should read as the full write-up, not just a repository. The shared project detail page now tells readers near the top that the portfolio page is a hiring-review summary and repeats the full-write-up cue inside the Evidence Links panel. | `components/sections/ProjectDetail.tsx`, `docs/redesign/05_CASE_STUDY_REDESIGN.md`, `docs/redesign/README.md`, `docs/redesign/07_IMPLEMENTATION_LOG.md` |
+| 2026-07-01 / Post-final evidence-link casing | Use Title Case for all Evidence Links buttons. | User preferred each first letter capitalized after comparing the primary full-write-up action with supporting evidence links. The Evidence Links action stack now uses Title Case consistently. | `components/sections/ProjectDetail.tsx`, `lib/data/projects.ts`, `docs/redesign/05_CASE_STUDY_REDESIGN.md`, `docs/redesign/README.md`, `docs/redesign/07_IMPLEMENTATION_LOG.md` |
+| 2026-07-01 / Post-final README link alignment | Point primary project evidence links directly to GitHub README write-ups. | User wanted the project-page `Read Full Technical Write-Up` links to mimic the resume project links and land readers in the full write-up rather than at a generic repository root. Extracted resume PDF hyperlinks, verified all four README URLs return 200, and updated the shared project URLs. | `lib/data/projects.ts`, `docs/redesign/05_CASE_STUDY_REDESIGN.md`, `docs/redesign/README.md`, `docs/redesign/07_IMPLEMENTATION_LOG.md` |
+| 2026-07-01 / Post-final resume path repair | Update the shared resume PDF URL to the new public asset filename. | User reported the Full Resume button on the Resume page was broken after replacing the resume PDF. The public asset is now `bryanpmiller_resume_public.pdf`, so the shared profile resume URL was updated from the old `Bryan_Miller_Resume.pdf` path. | `lib/data/profile.ts`, `docs/redesign/02_SITE_AUDIT.md`, `docs/redesign/08_QA_FINAL_REVIEW.md`, `docs/redesign/README.md`, `docs/redesign/07_IMPLEMENTATION_LOG.md` |
 
 ## Phase Log
 
@@ -835,6 +839,105 @@ Commands run:
 
 Issues/blockers: None.
 
+### Post-Final Evidence-Link Clarity Refinement
+
+Status: Complete
+
+Summary: Updated the shared project detail page so the Evidence Links GitHub action says `Read Full Technical Write-Up` and added two clear cues: a near-top note explaining that the portfolio page is a hiring-review summary, and helper copy in the Evidence Links panel that points readers to the full write-up and supporting evidence.
+
+Files changed:
+
+- `components/sections/ProjectDetail.tsx`
+- `docs/redesign/05_CASE_STUDY_REDESIGN.md`
+- `docs/redesign/README.md`
+- `docs/redesign/07_IMPLEMENTATION_LOG.md`
+
+Commands run:
+
+- `Get-Content -Raw docs/redesign/README.md`
+- `rg -n` search for repository/write-up evidence wording
+- `Get-Content` inspections of `ProjectDetail`, case-study documentation, and `package.json`
+- `npm.cmd run lint`
+- `npx.cmd tsc --noEmit`
+- `npm.cmd run build`
+
+Issues/blockers: None.
+
+### Post-Final Evidence-Link Casing Refinement
+
+Status: Complete
+
+Summary: Updated all Evidence Links button labels to Title Case so they visually match `Read Full Technical Write-Up`. The project data keeps labels such as `Screenshot Evidence Folder`, `Validation Evidence Folder`, and `Remediation Scripts Repository`.
+
+Files changed:
+
+- `lib/data/projects.ts`
+- `docs/redesign/05_CASE_STUDY_REDESIGN.md`
+- `docs/redesign/README.md`
+- `docs/redesign/07_IMPLEMENTATION_LOG.md`
+
+Commands run:
+
+- `Get-Content -Raw docs/redesign/README.md`
+- `rg -n` search for evidence-link labels
+- `Get-Content` inspection of `lib/data/projects.ts`
+- `npm.cmd run lint`
+- `npx.cmd tsc --noEmit`
+- `npm.cmd run build`
+
+Issues/blockers: None.
+
+### Post-Final README Link Alignment
+
+Status: Complete
+
+Summary: Updated all primary project `githubUrl` values so the `Read Full Technical Write-Up` action lands directly on each GitHub README full write-up. The resume PDF links were extracted with PyMuPDF; the first three resume project links already pointed to `blob/main/README.md`, while the DISA resume link pointed to the repository root. The site now uses direct README URLs for all four projects.
+
+Files changed:
+
+- `lib/data/projects.ts`
+- `docs/redesign/05_CASE_STUDY_REDESIGN.md`
+- `docs/redesign/README.md`
+- `docs/redesign/07_IMPLEMENTATION_LOG.md`
+
+Commands run:
+
+- `Get-Content -Raw docs/redesign/README.md`
+- `Get-Content` inspection of the PDF skill instructions
+- PyMuPDF hyperlink extraction from `C:\Users\pcgam\OneDrive\Desktop\Working Resume\bryanpmiller_resume_public.pdf`
+- `curl.exe` checks for the four GitHub README URLs
+- `npm.cmd run lint`
+- `npx.cmd tsc --noEmit`
+- `npm.cmd run build`
+
+Issues/blockers: None.
+
+### Post-Final Resume Path Repair
+
+Status: Complete
+
+Summary: Fixed the broken Full Resume button by updating the shared resume URL in `lib/data/profile.ts` to `/resume/bryanpmiller_resume_public.pdf`, matching the current PDF under `public/resume/`. This repairs the Resume page button and every other component that uses the shared resume path.
+
+Files changed:
+
+- `lib/data/profile.ts`
+- `docs/redesign/02_SITE_AUDIT.md`
+- `docs/redesign/08_QA_FINAL_REVIEW.md`
+- `docs/redesign/README.md`
+- `docs/redesign/07_IMPLEMENTATION_LOG.md`
+
+Commands run:
+
+- `Get-Content -Raw docs/redesign/README.md`
+- `rg -n` search for resume path references
+- `Get-ChildItem -Recurse public` to confirm the current PDF asset name
+- `Test-Path public\resume\bryanpmiller_resume_public.pdf`
+- `npm.cmd run lint`
+- `npx.cmd tsc --noEmit`
+- `npm.cmd run build`
+
+Issues/blockers: None.
+
 ## Commands and Results
 
 | Command | Purpose | Result | Notes |
@@ -1044,6 +1147,21 @@ Issues/blockers: None.
 | `npx.cmd tsc --noEmit` | Hiring relevance copy refinement type verification | Passed | Completed with no TypeScript errors |
 | `npm.cmd run build` | Hiring relevance copy refinement build verification | Passed | Next.js production build completed and prerendered all routes |
 | `Invoke-WebRequest` route checks | Hiring relevance copy refinement production route verification | Passed | `/` and `/projects` returned HTTP 200 from production `next start` on port 3077 |
+| `npm.cmd run lint` | Evidence-link clarity lint verification | Passed | Completed after updating shared project detail evidence-link copy |
+| `npx.cmd tsc --noEmit` | Evidence-link clarity type verification | Passed | Completed with no TypeScript errors |
+| `npm.cmd run build` | Evidence-link clarity build verification | Passed | Next.js production build completed and prerendered all routes |
+| `npm.cmd run lint` | Evidence-link casing lint verification | Passed | Completed after aligning Evidence Links labels to Title Case |
+| `npx.cmd tsc --noEmit` | Evidence-link casing type verification | Passed | Completed with no TypeScript errors |
+| `npm.cmd run build` | Evidence-link casing build verification | Passed | Next.js production build completed and prerendered all routes |
+| PyMuPDF hyperlink extraction | Resume project link inspection | Passed | Extracted eight links from the resume PDF, including four project links under Projects |
+| `curl.exe` README URL checks | Verify direct GitHub README targets | Passed | All four direct README URLs returned HTTP 200 |
+| `npm.cmd run lint` | README link alignment lint verification | Passed | Completed after updating project URLs |
+| `npx.cmd tsc --noEmit` | README link alignment type verification | Passed | Completed with no TypeScript errors |
+| `npm.cmd run build` | README link alignment build verification | Passed | Next.js production build completed and prerendered all routes |
+| `Test-Path public\resume\bryanpmiller_resume_public.pdf` | Resume PDF asset verification | Passed | Current public resume PDF exists at the shared profile URL target |
+| `npm.cmd run lint` | Resume path repair lint verification | Passed | Completed after updating the shared resume URL |
+| `npx.cmd tsc --noEmit` | Resume path repair type verification | Passed | Completed with no TypeScript errors |
+| `npm.cmd run build` | Resume path repair build verification | Passed | Next.js production build completed and prerendered all routes |
 
 ## Files Changed Index
 
@@ -1160,6 +1278,23 @@ Issues/blockers: None.
 | `docs/redesign/06_CONTENT_AND_COPY.md` | Post-final hiring relevance copy | Added hiring relevance copy direction to avoid recruiter-explaining phrasing. |
 | `docs/redesign/05_CASE_STUDY_REDESIGN.md` | Post-final hiring relevance copy | Updated the project data summary to reflect refined hiring relevance copy. |
 | `docs/redesign/07_IMPLEMENTATION_LOG.md` | Post-final hiring relevance copy | Logged the copy decision, changed files, commands, and verification results. |
+| `components/sections/ProjectDetail.tsx` | Post-final evidence-link clarity | Changed the primary GitHub evidence action to `Read Full Technical Write-Up` and added near-top/sidebar copy that explains the full write-up and supporting evidence are available through Evidence Links. |
+| `docs/redesign/05_CASE_STUDY_REDESIGN.md` | Post-final evidence-link clarity | Documented the full-write-up visibility pattern for project detail pages. |
+| `docs/redesign/README.md` | Post-final evidence-link clarity | Updated the Phase 10 summary to note the clarified full technical write-up evidence links. |
+| `docs/redesign/07_IMPLEMENTATION_LOG.md` | Post-final evidence-link clarity | Logged the evidence-link clarity decision, changed files, commands, and verification results. |
+| `lib/data/projects.ts` | Post-final evidence-link casing | Kept supporting Evidence Links labels in Title Case for consistency with the primary full-write-up action. |
+| `docs/redesign/05_CASE_STUDY_REDESIGN.md` | Post-final evidence-link casing | Documented Title Case for supporting evidence-link labels. |
+| `docs/redesign/README.md` | Post-final evidence-link casing | Updated the Phase 10 summary to include consistent Title Case action labels. |
+| `docs/redesign/07_IMPLEMENTATION_LOG.md` | Post-final evidence-link casing | Logged the evidence-link casing decision, changed files, commands, and verification results. |
+| `lib/data/projects.ts` | Post-final README link alignment | Updated all primary project URLs to direct GitHub README write-up links. |
+| `docs/redesign/05_CASE_STUDY_REDESIGN.md` | Post-final README link alignment | Documented that primary evidence actions should point to project README write-ups where possible. |
+| `docs/redesign/README.md` | Post-final README link alignment | Updated the Phase 10 summary to say Evidence Links lead directly to GitHub README full technical write-ups. |
+| `docs/redesign/07_IMPLEMENTATION_LOG.md` | Post-final README link alignment | Logged the README-link alignment decision, PDF hyperlink extraction, URL checks, files changed, and verification results. |
+| `lib/data/profile.ts` | Post-final resume path repair | Updated the shared resume URL to `/resume/bryanpmiller_resume_public.pdf`. |
+| `docs/redesign/02_SITE_AUDIT.md` | Post-final resume path repair | Updated the resume/contact link inventory to reference the current public resume PDF. |
+| `docs/redesign/08_QA_FINAL_REVIEW.md` | Post-final resume path repair | Updated the link review and final notes for the current resume PDF path. |
+| `docs/redesign/README.md` | Post-final resume path repair | Updated the Phase 13 summary to note the repaired shared resume PDF path. |
+| `docs/redesign/07_IMPLEMENTATION_LOG.md` | Post-final resume path repair | Logged the resume path repair, files changed, commands, and verification results. |
 
 ## Unresolved Issues
 
