@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0 # Still get history, but we change how we scan it below
 
@@ -30,7 +30,7 @@ jobs:
     needs: secret-scan # Only run SAST if secret scanning passes
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Run Semgrep Security Scan
         uses: semgrep/semgrep-action@v1
