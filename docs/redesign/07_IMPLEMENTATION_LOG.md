@@ -67,6 +67,10 @@ Codex must update this file after each phase.
 | 2026-07-01 / Post-final README link alignment | Point primary project evidence links directly to GitHub README write-ups. | User wanted the project-page `Read Full Technical Write-Up` links to mimic the resume project links and land readers in the full write-up rather than at a generic repository root. Extracted resume PDF hyperlinks, verified all four README URLs return 200, and updated the shared project URLs. | `lib/data/projects.ts`, `docs/redesign/05_CASE_STUDY_REDESIGN.md`, `docs/redesign/README.md`, `docs/redesign/07_IMPLEMENTATION_LOG.md` |
 | 2026-07-01 / Post-final resume path repair | Update the shared resume PDF URL to the new public asset filename. | User reported the Full Resume button on the Resume page was broken after replacing the resume PDF. The public asset is now `bryanpmiller_resume_public.pdf`, so the shared profile resume URL was updated from the old `Bryan_Miller_Resume.pdf` path. | `lib/data/profile.ts`, `docs/redesign/02_SITE_AUDIT.md`, `docs/redesign/08_QA_FINAL_REVIEW.md`, `docs/redesign/README.md`, `docs/redesign/07_IMPLEMENTATION_LOG.md` |
 | 2026-07-09 / Post-final footer evidence badges | Keep security scan badges in the footer as quiet site-assurance evidence. | The badges support credibility but should not compete with case-study outcomes. A secondary footer row preserves the professional redesign direction while linking build, Semgrep, and TruffleHog evidence to the GitHub Actions security workflow. | `components/layout/Footer.tsx`, `docs/redesign/08_QA_FINAL_REVIEW.md`, `docs/redesign/README.md`, `docs/redesign/07_IMPLEMENTATION_LOG.md` |
+| 2026-07-09 / Post-final compact footer refinement | Compact the security badge footer treatment into one responsive band. | The initial badge row made the footer feel bulky. Moving links and badges into one wrapped cluster and reducing vertical padding keeps the evidence visible without making the footer feel like a separate section. | `components/layout/Footer.tsx`, `docs/redesign/08_QA_FINAL_REVIEW.md`, `docs/redesign/README.md`, `docs/redesign/07_IMPLEMENTATION_LOG.md` |
+| 2026-07-09 / Post-final single live DevSecOps badge | Replace the three footer security badges with one live GitHub Actions badge. | The long workflow badge plus two static vendor badges still made the footer feel large. Renaming the workflow to `DevSecOps` preserves automatic `passing` status updates while making the public footer evidence compact. | `.github/workflows/security-pipeline.yml`, `components/layout/Footer.tsx`, `docs/redesign/08_QA_FINAL_REVIEW.md`, `docs/redesign/README.md`, `docs/redesign/07_IMPLEMENTATION_LOG.md` |
+| 2026-07-09 / Post-final hero DevSecOps badge placement | Move the single live DevSecOps badge from the footer to the hero proof row. | The footer placement was credible but low-visibility. Placing the one live badge beside the credential pills makes the pipeline evidence visible without turning it into a primary CTA or repeating it in multiple places. | `components/sections/HeroSection.tsx`, `components/layout/Footer.tsx`, `docs/redesign/04_HOMEPAGE_REDESIGN.md`, `docs/redesign/08_QA_FINAL_REVIEW.md`, `docs/redesign/README.md`, `docs/redesign/07_IMPLEMENTATION_LOG.md` |
+| 2026-07-09 / Post-final native DevSecOps pill | Restyle the hero security evidence as a native portfolio pill. | The external GitHub badge image still looked like a README artifact and clashed with the credential pills. A native `DevSecOps pipeline: passing` pill better matches the hero proof row while keeping the GitHub Actions evidence link. | `components/sections/HeroSection.tsx`, `docs/redesign/04_HOMEPAGE_REDESIGN.md`, `docs/redesign/08_QA_FINAL_REVIEW.md`, `docs/redesign/README.md`, `docs/redesign/07_IMPLEMENTATION_LOG.md` |
 
 ## Phase Log
 
@@ -943,12 +947,15 @@ Issues/blockers: None.
 
 Status: Complete
 
-Summary: Added a compact footer badge row for the DevSecOps build, Semgrep SAST, and TruffleHog secret scanning evidence. The badges are visually secondary, retain accessible labels, preserve mobile tap targets, and link to the GitHub Actions security workflow evidence page.
+Summary: Added footer badges for the DevSecOps build, Semgrep SAST, and TruffleHog secret scanning evidence, refined the treatment into one compact responsive footer band, reduced it to one GitHub Actions `DevSecOps` badge, moved that badge into the hero proof row for better visibility, then restyled it as a native `DevSecOps pipeline: passing` evidence pill. The pill remains visually secondary, retains an accessible label that names Semgrep and TruffleHog evidence, and links to the GitHub Actions security workflow evidence page.
 
 Files changed:
 
 - `components/layout/Footer.tsx`
+- `components/sections/HeroSection.tsx`
+- `.github/workflows/security-pipeline.yml`
 - `docs/redesign/README.md`
+- `docs/redesign/04_HOMEPAGE_REDESIGN.md`
 - `docs/redesign/08_QA_FINAL_REVIEW.md`
 - `docs/redesign/07_IMPLEMENTATION_LOG.md`
 
@@ -958,10 +965,11 @@ Commands run:
 - `npm.cmd run lint`
 - `npx.cmd tsc --noEmit`
 - `npm.cmd run build`
+- `git diff` / `git status` inspections
 
 Verification:
 
-- Lint passed after adding a scoped `@next/next/no-img-element` suppression for external SVG status badges.
+- Lint passed after replacing the external SVG badge image with a native linked status pill.
 - Type check passed.
 - Production build passed and prerendered all app routes.
 
@@ -1194,6 +1202,18 @@ Issues/blockers: None.
 | `npm.cmd run lint` | Footer evidence badge lint verification | Passed | Completed after adding the restrained footer security badge row |
 | `npx.cmd tsc --noEmit` | Footer evidence badge type verification | Passed | Completed with no TypeScript errors |
 | `npm.cmd run build` | Footer evidence badge build verification | Passed | Next.js production build completed and prerendered all routes |
+| `npm.cmd run lint` | Compact footer refinement lint verification | Passed | Completed after compacting the footer badge layout |
+| `npx.cmd tsc --noEmit` | Compact footer refinement type verification | Passed | Completed with no TypeScript errors |
+| `npm.cmd run build` | Compact footer refinement build verification | Passed | Next.js production build completed and prerendered all routes |
+| `npm.cmd run lint` | Single live DevSecOps badge lint verification | Passed | Completed after reducing the footer to one live workflow badge |
+| `npx.cmd tsc --noEmit` | Single live DevSecOps badge type verification | Passed | Completed with no TypeScript errors |
+| `npm.cmd run build` | Single live DevSecOps badge build verification | Passed | Next.js production build completed and prerendered all routes |
+| `npm.cmd run lint` | Hero DevSecOps badge placement lint verification | Passed | Completed after moving the badge from footer to hero proof row |
+| `npx.cmd tsc --noEmit` | Hero DevSecOps badge placement type verification | Passed | Completed with no TypeScript errors |
+| `npm.cmd run build` | Hero DevSecOps badge placement build verification | Passed | Next.js production build completed and prerendered all routes |
+| `npm.cmd run lint` | Native DevSecOps pill lint verification | Passed | Completed after replacing the external badge image with a native linked status pill |
+| `npx.cmd tsc --noEmit` | Native DevSecOps pill type verification | Passed | Completed with no TypeScript errors |
+| `npm.cmd run build` | Native DevSecOps pill build verification | Passed | Next.js production build completed and prerendered all routes |
 
 ## Files Changed Index
 
@@ -1331,6 +1351,26 @@ Issues/blockers: None.
 | `docs/redesign/08_QA_FINAL_REVIEW.md` | Post-final footer evidence badges | Added the footer security pipeline badge link review and final note. |
 | `docs/redesign/README.md` | Post-final footer evidence badges | Updated the Phase 13 summary to include the footer security pipeline evidence badges. |
 | `docs/redesign/07_IMPLEMENTATION_LOG.md` | Post-final footer evidence badges | Logged the footer evidence badge decision, commands, files changed, and verification results. |
+| `components/layout/Footer.tsx` | Post-final compact footer refinement | Moved footer links and security badges into one compact responsive band and reduced vertical padding. |
+| `docs/redesign/08_QA_FINAL_REVIEW.md` | Post-final compact footer refinement | Updated final footer notes to reflect the compact badge treatment. |
+| `docs/redesign/README.md` | Post-final compact footer refinement | Updated the Phase 13 summary to describe the compact footer badge treatment. |
+| `docs/redesign/07_IMPLEMENTATION_LOG.md` | Post-final compact footer refinement | Logged the compact footer refinement, commands, files changed, and verification results. |
+| `.github/workflows/security-pipeline.yml` | Post-final single live DevSecOps badge | Renamed the workflow display name to `DevSecOps` so the live badge renders compactly. |
+| `components/layout/Footer.tsx` | Post-final single live DevSecOps badge | Replaced the three footer security badges with one live GitHub Actions workflow badge. |
+| `docs/redesign/08_QA_FINAL_REVIEW.md` | Post-final single live DevSecOps badge | Updated footer security evidence notes for the single live badge treatment. |
+| `docs/redesign/README.md` | Post-final single live DevSecOps badge | Updated the Phase 13 summary to describe the single live `DevSecOps` badge. |
+| `docs/redesign/07_IMPLEMENTATION_LOG.md` | Post-final single live DevSecOps badge | Logged the single live badge decision, commands, files changed, and verification results. |
+| `components/sections/HeroSection.tsx` | Post-final hero DevSecOps badge placement | Added the single live `DevSecOps` workflow badge to the hero proof row beside the credential pills. |
+| `components/layout/Footer.tsx` | Post-final hero DevSecOps badge placement | Removed the single live workflow badge from the footer to avoid duplication. |
+| `docs/redesign/04_HOMEPAGE_REDESIGN.md` | Post-final hero DevSecOps badge placement | Updated Phase 4 hero notes to document the visible workflow badge placement. |
+| `docs/redesign/08_QA_FINAL_REVIEW.md` | Post-final hero DevSecOps badge placement | Updated security pipeline evidence notes from footer placement to hero proof-row placement. |
+| `docs/redesign/README.md` | Post-final hero DevSecOps badge placement | Updated the Phase 13 summary to describe the hero proof-row badge placement. |
+| `docs/redesign/07_IMPLEMENTATION_LOG.md` | Post-final hero DevSecOps badge placement | Logged the hero badge placement decision, commands, files changed, and verification results. |
+| `components/sections/HeroSection.tsx` | Post-final native DevSecOps pill | Replaced the external GitHub Actions badge image with a native linked `DevSecOps pipeline: passing` pill. |
+| `docs/redesign/04_HOMEPAGE_REDESIGN.md` | Post-final native DevSecOps pill | Updated Phase 4 hero notes for the native status pill treatment. |
+| `docs/redesign/08_QA_FINAL_REVIEW.md` | Post-final native DevSecOps pill | Updated security pipeline evidence notes for the native pill treatment. |
+| `docs/redesign/README.md` | Post-final native DevSecOps pill | Updated the Phase 13 summary to describe the native `DevSecOps pipeline: passing` pill. |
+| `docs/redesign/07_IMPLEMENTATION_LOG.md` | Post-final native DevSecOps pill | Logged the native pill decision, commands, files changed, and verification results. |
 
 ## Unresolved Issues
 

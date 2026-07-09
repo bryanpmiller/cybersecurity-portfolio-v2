@@ -153,7 +153,7 @@ Optional secondary links:
 
 | File | Change Summary |
 |---|---|
-| `components/sections/HeroSection.tsx` | Replaced the previous live-signal/dashboard-style hero panel with a restrained portfolio evidence panel, restored Bryan Miller as the controlled H1, removed the generic hero eyebrow, matched the name color to the supporting paragraph color, placed Vulnerability Management & Security Analyst below as the role line, reduced CTA sizing, moved credential pills below the buttons, and removed the oversized headline treatment. |
+| `components/sections/HeroSection.tsx` | Replaced the previous live-signal/dashboard-style hero panel with a restrained portfolio evidence panel, restored Bryan Miller as the controlled H1, removed the generic hero eyebrow, matched the name color to the supporting paragraph color, placed Vulnerability Management & Security Analyst below as the role line, reduced CTA sizing, moved credential pills below the buttons, added a native `DevSecOps pipeline: passing` evidence pill to the proof row for visibility, and removed the oversized headline treatment. |
 | `lib/data/profile.ts` | Rolled the risk-reduction sentence into the supporting positioning copy as the first sentence. |
 
 ## Phase 4 Checklist
