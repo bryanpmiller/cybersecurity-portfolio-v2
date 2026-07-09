@@ -1,8 +1,12 @@
 # Bryan Miller Cybersecurity Portfolio
 
+[![DevSecOps Portfolio Pipeline](https://github.com/bryanpmiller/cybersecurity-portfolio-v2/actions/workflows/security-pipeline.yml/badge.svg)](https://github.com/bryanpmiller/cybersecurity-portfolio-v2/actions/workflows/security-pipeline.yml)
+
 A professional cybersecurity portfolio website for Bryan Miller, built to showcase hands-on work in vulnerability management, remediation automation, secure configuration, threat hunting, and security operations.
 
 The site is designed for cybersecurity hiring managers and recruiters evaluating candidates for roles such as Vulnerability Management Analyst, Cybersecurity Analyst, SecOps Analyst, SOC Analyst, and Technical GRC / STIG Compliance Analyst.
+
+
 
 ## Purpose
 
@@ -211,3 +215,4 @@ Cybersecurity Analyst focused on vulnerability management, secure configuration,
 
 - GitHub: https://github.com/bryanpmiller
 - LinkedIn: https://linkedin.com/in/bryan-p-miller
+

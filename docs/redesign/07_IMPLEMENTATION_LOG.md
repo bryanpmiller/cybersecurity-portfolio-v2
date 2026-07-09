@@ -66,6 +66,7 @@ Codex must update this file after each phase.
 | 2026-07-01 / Post-final evidence-link casing | Use Title Case for all Evidence Links buttons. | User preferred each first letter capitalized after comparing the primary full-write-up action with supporting evidence links. The Evidence Links action stack now uses Title Case consistently. | `components/sections/ProjectDetail.tsx`, `lib/data/projects.ts`, `docs/redesign/05_CASE_STUDY_REDESIGN.md`, `docs/redesign/README.md`, `docs/redesign/07_IMPLEMENTATION_LOG.md` |
 | 2026-07-01 / Post-final README link alignment | Point primary project evidence links directly to GitHub README write-ups. | User wanted the project-page `Read Full Technical Write-Up` links to mimic the resume project links and land readers in the full write-up rather than at a generic repository root. Extracted resume PDF hyperlinks, verified all four README URLs return 200, and updated the shared project URLs. | `lib/data/projects.ts`, `docs/redesign/05_CASE_STUDY_REDESIGN.md`, `docs/redesign/README.md`, `docs/redesign/07_IMPLEMENTATION_LOG.md` |
 | 2026-07-01 / Post-final resume path repair | Update the shared resume PDF URL to the new public asset filename. | User reported the Full Resume button on the Resume page was broken after replacing the resume PDF. The public asset is now `bryanpmiller_resume_public.pdf`, so the shared profile resume URL was updated from the old `Bryan_Miller_Resume.pdf` path. | `lib/data/profile.ts`, `docs/redesign/02_SITE_AUDIT.md`, `docs/redesign/08_QA_FINAL_REVIEW.md`, `docs/redesign/README.md`, `docs/redesign/07_IMPLEMENTATION_LOG.md` |
+| 2026-07-09 / Post-final footer evidence badges | Keep security scan badges in the footer as quiet site-assurance evidence. | The badges support credibility but should not compete with case-study outcomes. A secondary footer row preserves the professional redesign direction while linking build, Semgrep, and TruffleHog evidence to the GitHub Actions security workflow. | `components/layout/Footer.tsx`, `docs/redesign/08_QA_FINAL_REVIEW.md`, `docs/redesign/README.md`, `docs/redesign/07_IMPLEMENTATION_LOG.md` |
 
 ## Phase Log
 
@@ -938,6 +939,34 @@ Commands run:
 
 Issues/blockers: None.
 
+### Post-Final Footer Evidence Badges
+
+Status: Complete
+
+Summary: Added a compact footer badge row for the DevSecOps build, Semgrep SAST, and TruffleHog secret scanning evidence. The badges are visually secondary, retain accessible labels, preserve mobile tap targets, and link to the GitHub Actions security workflow evidence page.
+
+Files changed:
+
+- `components/layout/Footer.tsx`
+- `docs/redesign/README.md`
+- `docs/redesign/08_QA_FINAL_REVIEW.md`
+- `docs/redesign/07_IMPLEMENTATION_LOG.md`
+
+Commands run:
+
+- `Get-Content` inspections of redesign source-of-truth docs, QA notes, implementation log, footer component, package scripts, and workflow file
+- `npm.cmd run lint`
+- `npx.cmd tsc --noEmit`
+- `npm.cmd run build`
+
+Verification:
+
+- Lint passed after adding a scoped `@next/next/no-img-element` suppression for external SVG status badges.
+- Type check passed.
+- Production build passed and prerendered all app routes.
+
+Issues/blockers: None.
+
 ## Commands and Results
 
 | Command | Purpose | Result | Notes |
@@ -1162,6 +1191,9 @@ Issues/blockers: None.
 | `npm.cmd run lint` | Resume path repair lint verification | Passed | Completed after updating the shared resume URL |
 | `npx.cmd tsc --noEmit` | Resume path repair type verification | Passed | Completed with no TypeScript errors |
 | `npm.cmd run build` | Resume path repair build verification | Passed | Next.js production build completed and prerendered all routes |
+| `npm.cmd run lint` | Footer evidence badge lint verification | Passed | Completed after adding the restrained footer security badge row |
+| `npx.cmd tsc --noEmit` | Footer evidence badge type verification | Passed | Completed with no TypeScript errors |
+| `npm.cmd run build` | Footer evidence badge build verification | Passed | Next.js production build completed and prerendered all routes |
 
 ## Files Changed Index
 
@@ -1295,6 +1327,10 @@ Issues/blockers: None.
 | `docs/redesign/08_QA_FINAL_REVIEW.md` | Post-final resume path repair | Updated the link review and final notes for the current resume PDF path. |
 | `docs/redesign/README.md` | Post-final resume path repair | Updated the Phase 13 summary to note the repaired shared resume PDF path. |
 | `docs/redesign/07_IMPLEMENTATION_LOG.md` | Post-final resume path repair | Logged the resume path repair, files changed, commands, and verification results. |
+| `components/layout/Footer.tsx` | Post-final footer evidence badges | Added a restrained security pipeline evidence badge row linked to the GitHub Actions security workflow. |
+| `docs/redesign/08_QA_FINAL_REVIEW.md` | Post-final footer evidence badges | Added the footer security pipeline badge link review and final note. |
+| `docs/redesign/README.md` | Post-final footer evidence badges | Updated the Phase 13 summary to include the footer security pipeline evidence badges. |
+| `docs/redesign/07_IMPLEMENTATION_LOG.md` | Post-final footer evidence badges | Logged the footer evidence badge decision, commands, files changed, and verification results. |
 
 ## Unresolved Issues
 

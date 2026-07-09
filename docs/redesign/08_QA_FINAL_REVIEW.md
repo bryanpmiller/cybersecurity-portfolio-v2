@@ -51,6 +51,7 @@ Review:
 | GitHub | Hero, homepage CTA, project cards, project details, contact page, footer | Pass | Shared profile URL is `https://github.com/bryanpmiller`; project-specific GitHub URLs are present in project data. |
 | LinkedIn | Contact page, footer | Pass | Shared profile URL is `https://linkedin.com/in/bryan-p-miller`. |
 | Contact | Navbar and homepage CTA | Pass | `/contact` returned HTTP 200. |
+| Security pipeline evidence | Footer | Pass | Build, Semgrep, and TruffleHog badges link to the GitHub Actions security workflow evidence page. |
 
 ## Quality Checks
 
@@ -134,7 +135,7 @@ Review the finished site from two perspectives:
 | `docs/redesign/README.md` | Marked Phase 13 complete in the redesign phase status board. |
 | `docs/redesign/07_IMPLEMENTATION_LOG.md` | Logged Phase 13 summary, commands, verification, and completion status. |
 | `app/contact/page.tsx` | Added a visible direct email card and updated contact copy for recruiter outreach. |
-| `components/layout/Footer.tsx` | Added a footer email link. |
+| `components/layout/Footer.tsx` | Added a footer email link and a restrained security pipeline evidence badge row. |
 | `components/ui/Button.tsx` | Allowed `mailto:` links to render as native anchors without opening a new tab. |
 | `lib/data/profile.ts` | Added the shared portfolio email address and `mailto:` URL. |
 
@@ -160,4 +161,5 @@ The redesign is successful if:
 - Phase 13 found no required final fixes before acceptance.
 - Post-final update added a visible recruiter-friendly email contact path.
 - Post-final update repaired the shared resume PDF path after the public asset changed to `bryanpmiller_resume_public.pdf`.
+- Post-final update added restrained footer badges for the DevSecOps build, Semgrep SAST, and TruffleHog secret scanning evidence.
 - Final lint, type check, build, and production route checks passed.
