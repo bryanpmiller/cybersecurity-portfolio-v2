@@ -22,7 +22,7 @@ jobs:
         with:
           path: ./
           # We remove the base/head restriction and pass a flag to scan the git history cleanly
-          extra_args: --only-verified --git
+          extra_args: --only-verified --directory
 
   sast-scan:
     name: Static Application Security Testing (Semgrep)
