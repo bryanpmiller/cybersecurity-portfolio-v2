@@ -15,14 +15,15 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v6
         with:
-          fetch-depth: 0 # Still get history, but we change how we scan it below
+          fetch-depth: 0
 
       - name: Scan for leaked secrets
         uses: trufflesecurity/trufflehog@main
         with:
+          # We tell the action wrapper itself to look at the workspace directory root
           path: ./
-          # We remove the base/head restriction and pass a flag to scan the git history cleanly
-          extra_args: --only-verified --directory
+          # We pass ONLY valid global engine flags to extra_args
+          extra_args: --only-verified
 
   sast-scan:
     name: Static Application Security Testing (Semgrep)
