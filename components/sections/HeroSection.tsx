@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useReducedMotion } from "framer-motion";
-import { Download, Folder, ShieldCheck } from "lucide-react";
+import { FileText, Folder, ShieldCheck } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
 import { GitHubMarkIcon } from "@/components/ui/GitHubMarkIcon";
@@ -62,8 +62,8 @@ export function HeroSection() {
             View Case Studies
           </Button>
           <div className="grid grid-cols-2 gap-3 sm:contents">
-            <Button className="w-full !min-h-10 gap-1.5 whitespace-nowrap !px-2.5 !py-2 !text-xs sm:w-auto sm:gap-2 sm:!px-4 sm:!text-[0.82rem]" href={profile.resumeUrl} icon={<Download aria-hidden="true" className="size-4" />} variant="secondary">
-              Download Resume
+            <Button className="w-full !min-h-10 gap-1.5 whitespace-nowrap !px-2.5 !py-2 !text-xs sm:w-auto sm:gap-2 sm:!px-4 sm:!text-[0.82rem]" href={profile.resumePageUrl} icon={<FileText aria-hidden="true" className="size-4" />} variant="secondary">
+              View Resumes
             </Button>
             <Button className="w-full !min-h-10 gap-1.5 whitespace-nowrap !px-2.5 !py-2 !text-xs sm:w-auto sm:gap-2 sm:!px-4 sm:!text-[0.82rem]" external href={profile.githubUrl} icon={<GitHubMarkIcon className="size-4" />} variant="secondary">
               View GitHub

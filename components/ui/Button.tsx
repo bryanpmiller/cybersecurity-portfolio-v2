@@ -10,6 +10,7 @@ type ButtonProps = {
   className?: string;
   variant?: "primary" | "secondary" | "featured";
   external?: boolean;
+  download?: boolean;
   icon?: ReactNode;
 };
 
@@ -28,7 +29,7 @@ const secondaryAccentClasses = {
     "hover:border-lineStrong hover:bg-surfaceElevated hover:text-ink"
 };
 
-export function Button({ href, children, accent = "evidence", ariaLabel, className, variant = "primary", external = false, icon }: ButtonProps) {
+export function Button({ href, children, accent = "evidence", ariaLabel, className, variant = "primary", external = false, download = false, icon }: ButtonProps) {
   const isNativeLink = href.startsWith("mailto:") || href.startsWith("tel:");
   const classes =
     variant === "primary"
@@ -41,15 +42,15 @@ export function Button({ href, children, accent = "evidence", ariaLabel, classNa
         );
 
   const buttonClassName = cn(
-    "inline-flex min-h-11 items-center justify-center gap-2 rounded-md px-5 py-3 text-sm font-semibold transition-[background,border-color,box-shadow,color] duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-surface active:bg-surfaceElevated",
+    "inline-flex min-h-11 items-center justify-center gap-2 rounded-md px-5 py-3 text-sm font-semibold transition-[background,border-color,box-shadow,color] duration-200 motion-reduce:transition-none focus:outline-none focus-visible:!outline focus-visible:!outline-2 focus-visible:!outline-offset-4 focus-visible:!outline-evidence focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-surface active:bg-surfaceElevated",
     focusAccentClasses[accent],
     classes,
     className
   );
 
-  if (external || isNativeLink) {
+  if (external || isNativeLink || download) {
     return (
-      <a aria-label={ariaLabel} className={buttonClassName} href={href} rel={external ? "noreferrer" : undefined} target={external ? "_blank" : undefined}>
+      <a aria-label={ariaLabel} className={buttonClassName} download={download || undefined} href={href} rel={external ? "noreferrer" : undefined} target={external ? "_blank" : undefined}>
         {icon}
         {children}
       </a>

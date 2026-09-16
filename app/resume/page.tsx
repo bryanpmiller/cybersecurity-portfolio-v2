@@ -1,99 +1,80 @@
-import { Download } from "lucide-react";
+import { ArrowUpRight, Download } from "lucide-react";
 import { PageContainer } from "@/components/layout/PageContainer";
 import { Button } from "@/components/ui/Button";
-import { Card } from "@/components/ui/Card";
-import { Reveal } from "@/components/ui/Reveal";
-import { SectionHeader } from "@/components/ui/SectionHeader";
-import { profile } from "@/lib/data/profile";
-import { impactMetrics, resumeHighlights } from "@/lib/data/resume";
-import { getSkillsForGroup, skillGroups } from "@/lib/data/skills";
+import { mainResume, roleResumes } from "@/lib/data/resume";
 import { createPageMetadata } from "@/lib/metadata";
 
-export const metadata = createPageMetadata("Resume", "Web resume and PDF download for Bryan Miller's full resume.", "/resume");
+export const metadata = createPageMetadata(
+  "Resumes",
+  "Explore Bryan Miller's main resume and focused versions for SOC analyst, vulnerability management, and IT support roles. View or download each PDF.",
+  "/resume"
+);
 
 export default function ResumePage() {
-  const experienceHighlight = resumeHighlights.find((highlight) => highlight.title === "Experience");
-  const profileHighlights = resumeHighlights.filter(
-    (highlight) => highlight.title === "Education" || highlight.title === "Certificates"
-  );
-  const snapshotTitleClassName =
-    "card-title break-words border-l-2 border-evidence/70 pl-3 text-[1.05rem] text-ink";
-
   return (
     <PageContainer>
-      <Reveal>
-        <div className="flex min-w-0 flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
-          <SectionHeader eyebrow="Resume" title="Resume Snapshot" description={profile.resumeSnapshot} />
-          <Button className="w-full sm:w-auto" href={profile.resumeUrl} icon={<Download aria-hidden="true" className="size-4" />}>
-            Full Resume
-          </Button>
+      <header>
+        <p className="eyebrow-text mb-6">Resume</p>
+        <h1 className="max-w-4xl font-heading text-[2.5rem] font-semibold leading-[1.06] tracking-[-0.04em] text-ink sm:text-6xl lg:text-7xl">
+          Experience, focused<br className="hidden sm:block" /> on the opportunity.
+        </h1>
+        <p className="lede-text mt-6 max-w-2xl">
+          Start with my main resume for the full overview, or choose a focused
+          version closest to your opening.
+        </p>
+      </header>
+
+      <section aria-labelledby="main-resume" className="mt-10 grid gap-7 rounded-md border border-ink bg-ink p-6 text-white shadow-soft sm:mt-12 sm:p-8 lg:grid-cols-[1.5fr_1fr] lg:items-center lg:gap-12">
+        <div>
+          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.12em] text-white/75">Start here · Complete overview</p>
+          <h2 className="font-heading text-3xl font-semibold tracking-tight sm:text-4xl" id="main-resume">Main Resume</h2>
+          <p className="mt-4 max-w-2xl text-base leading-7 text-white/85">{mainResume.description}</p>
         </div>
-      </Reveal>
+        <div className="flex flex-col gap-3 lg:items-stretch">
+          <Button ariaLabel="View main resume" className="!border-white !bg-white !text-ink !shadow-none hover:!bg-surfaceElevated focus-visible:!outline-white" href={mainResume.href}>
+            View main resume <ArrowUpRight aria-hidden="true" className="size-4" />
+          </Button>
+          <Button ariaLabel="Download main resume PDF" className="!border-white/50 !bg-transparent !text-white !shadow-none hover:!bg-white/10 focus-visible:!outline-white" download href={mainResume.pdfUrl} variant="secondary" icon={<Download aria-hidden="true" className="size-4" />}>
+            Download PDF
+          </Button>
+          <p className="text-center text-xs text-white/75">One-page PDF</p>
+        </div>
+      </section>
 
-      {experienceHighlight ? (
-        <Reveal delay={0.06}>
-          <Card as="section" className="mt-8 overflow-hidden sm:mt-10" variant="evidence">
-            <div className="grid gap-6 lg:grid-cols-[1.08fr_0.92fr]">
-              <div className="min-w-0">
-                <p className="eyebrow-text">Experience</p>
-                <h2 className="section-title mt-2">Experience Snapshot</h2>
-                <p className="body-copy mt-4">{experienceHighlight.body}</p>
-              </div>
-
-              <div className="min-w-0 rounded-md border border-line bg-ink-soft/60 p-4 sm:p-5">
-                <p className="eyebrow-text">Supported Metrics</p>
-                <div className="mt-4 grid gap-3">
-                  {impactMetrics.map((stat) => (
-                    <div
-                      className="grid min-w-0 grid-cols-[5.25rem_1fr] items-center gap-3 rounded-md border border-line bg-surface/70 p-3"
-                      key={stat.label}
-                    >
-                      <p className="heading-text text-2xl leading-none text-evidence">{stat.value}</p>
-                      <p className="compact-copy">{stat.label}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
+      <h2 className="section-title mt-12">Resumes by role</h2>
+      <section aria-label="Choose a role-specific resume" className="mt-6 grid gap-10 lg:grid-cols-3 lg:gap-8">
+        {roleResumes.map((resume, index) => (
+          <article className="flex min-w-0 flex-col border-t-2 border-ink pt-6 sm:pt-8" key={resume.slug}>
+            <p aria-hidden="true" className="eyebrow-text mb-5 text-slate-400">
+              {String(index + 1).padStart(2, "0")}
+            </p>
+            <h3 className="font-heading text-[1.75rem] font-medium leading-tight tracking-[-0.025em] text-ink lg:min-h-[4.375rem]">
+              {resume.title}
+            </h3>
+            <p className="supporting-copy mt-4 mb-7">{resume.description}</p>
+            <div className="mt-auto">
+              <Button
+                ariaLabel={`View ${resume.title} resume`}
+                className="w-full justify-between border-ink bg-ink shadow-none sm:w-auto sm:gap-6"
+                href={resume.href}
+              >
+                View resume
+                <ArrowUpRight aria-hidden="true" className="size-4" />
+              </Button>
             </div>
-          </Card>
-        </Reveal>
-      ) : null}
+          </article>
+        ))}
+      </section>
 
-      <Reveal delay={0.18}>
-        <Card as="section" className="mt-8">
-          <h2 className="panel-title">Skills Snapshot</h2>
-          <div className="mt-5 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-            {skillGroups.map((group) => (
-              <div className="min-w-0 rounded-md border border-line bg-ink-soft/70 p-4" key={group.title}>
-                <div className="flex min-w-0 items-start justify-between gap-3">
-                  <h3 className={`${snapshotTitleClassName} min-w-0`}>{group.title}</h3>
-                  <span className="chip-text shrink-0 rounded-md border border-lineStrong/70 bg-surface/70 px-2 py-1 text-slate-300">
-                    {getSkillsForGroup(group).length} skills
-                  </span>
-                </div>
-                <p className="technical-block mt-3 font-semibold text-evidence">
-                  {group.primarySkills.join(", ")}
-                </p>
-                <p className="compact-copy mt-2">{group.supportingSkills.join(", ")}</p>
-              </div>
-            ))}
-          </div>
-        </Card>
-      </Reveal>
-
-      <Reveal delay={0.12}>
-        <Card as="section" className="mt-8 sm:mt-10">
-          <h2 className="panel-title">Qualifications</h2>
-          <div className="mt-5 grid gap-5 md:grid-cols-2">
-            {profileHighlights.map((highlight) => (
-              <div className="min-w-0 rounded-md border border-line bg-ink-soft/70 p-4" key={highlight.title}>
-                <h3 className={snapshotTitleClassName}>{highlight.title}</h3>
-                <p className="compact-copy mt-2 whitespace-pre-line">{highlight.body}</p>
-              </div>
-            ))}
-          </div>
-        </Card>
-      </Reveal>
+      <section aria-labelledby="experience-context" className="mt-12 grid gap-5 rounded-md bg-evidence/[0.05] p-6 sm:mt-14 sm:p-8 lg:grid-cols-[0.9fr_1.3fr] lg:gap-12">
+        <h2 className="section-title" id="experience-context">
+          Professional experience.<br /> Clear training context.
+        </h2>
+        <p className="supporting-copy">
+          My Log(N) Pacific internship takes place in a simulated enterprise environment.
+          My professional background includes facilities operations and Marine Corps leadership.
+        </p>
+      </section>
     </PageContainer>
   );
 }

@@ -90,16 +90,16 @@ export default function ContactPage() {
                 <FileText aria-hidden="true" className="size-5" strokeWidth={1.8} />
               </span>
               <div className="min-w-0">
-                <p className="eyebrow-text text-remediation">Traditional Resume</p>
-                <h2 className="panel-title mt-2">PDF</h2>
+                <p className="eyebrow-text text-remediation">Role-specific PDFs</p>
+                <h2 className="panel-title mt-2">Resumes</h2>
               </div>
             </div>
             <p className="compact-copy mt-5">
-              Open the resume PDF to view my resume in the traditional format.
+              Choose a resume for SOC analyst, vulnerability management, or IT support roles. View or download the PDF.
             </p>
             <div className="mt-auto pt-6">
-              <Button accent="remediation" href={profile.resumeUrl} icon={<FileText aria-hidden="true" className="size-4" />} variant="secondary">
-                Open Resume
+              <Button accent="remediation" href={profile.resumePageUrl} icon={<FileText aria-hidden="true" className="size-4" />} variant="secondary">
+                View Resumes
               </Button>
             </div>
           </Card>
