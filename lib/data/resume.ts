@@ -1,3 +1,37 @@
+export const resumeVariants = [
+  {
+    slug: "main",
+    title: "Main",
+    description: "A broad overview of my cybersecurity experience, projects, education, and technical skills, spanning vulnerability management, security operations, and automation.",
+    pdfUrl: "/resume/bryanpmiller_resume.pdf"
+  },
+  {
+    slug: "soc",
+    title: "SOC Analyst",
+    description: "Microsoft Defender and KQL investigations, Microsoft Sentinel, incident triage, and technical reporting.",
+    pdfUrl: "/resume/Bryan_Miller_soc.pdf"
+  },
+  {
+    slug: "vulnerability",
+    title: "Vulnerability Management",
+    description: "Authenticated scanning, Windows hardening, PowerShell remediation, and follow-up validation.",
+    pdfUrl: "/resume/Bryan_Miller_vulnerability.pdf"
+  },
+  {
+    slug: "it-support",
+    title: "IT Support",
+    description: "Professional networking and device troubleshooting, vendor coordination, and Windows lab experience.",
+    pdfUrl: "/resume/Bryan_Miller_it_support.pdf"
+  }
+].map((resume) => ({ ...resume, href: `/resume/${resume.slug}` }));
+
+export const mainResume = resumeVariants[0];
+export const roleResumes = resumeVariants.filter((resume) => resume.slug !== "main");
+
+export function getResumeVariant(slug: string) {
+  return resumeVariants.find((resume) => resume.slug === slug);
+}
+
 export const resumeHighlights = [
   {
     title: "Education",

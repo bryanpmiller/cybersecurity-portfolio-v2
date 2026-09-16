@@ -13,6 +13,7 @@ export const profile = {
   emailUrl: "mailto:bryan.p.miller7@gmail.com",
   githubUrl: "https://github.com/bryanpmiller",
   linkedinUrl: "https://linkedin.com/in/bryan-p-miller",
+  resumePageUrl: "/resume",
   resumeUrl: "/resume/bryanpmiller_resume_public.pdf"
 };
 

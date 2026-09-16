@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import { resumeVariants } from "./lib/data/resume";
 
 const nextConfig: NextConfig = {
   async headers() {
@@ -23,7 +24,12 @@ const nextConfig: NextConfig = {
             value: "camera=(), microphone=(), geolocation=()"
           }
         ]
-      }
+      },
+      // Keep pages protected from framing; only these PDFs may be embedded by this site.
+      ...resumeVariants.map((resume) => ({
+        source: resume.pdfUrl,
+        headers: [{ key: "X-Frame-Options", value: "SAMEORIGIN" }]
+      }))
     ];
   }
 };
