@@ -4,7 +4,7 @@ import { resumeVariants } from "@/lib/data/resume";
 import { siteUrl } from "@/lib/metadata";
 
 const staticRoutes = ["/", "/about", "/resume", "/projects", "/skills", "/contact"];
-const lastModified = new Date("2026-05-26");
+const lastModified = new Date("2026-09-15");
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const projectRoutes = projects.map((project) => `/projects/${project.slug}`);

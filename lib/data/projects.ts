@@ -3,6 +3,7 @@ export type Project = {
   title: string;
   summary: string;
   role: string;
+  environment: "Lab project" | "Cyber-range investigation";
   tools: string[];
   githubUrl?: string;
   supportingLinks?: Array<{
@@ -48,9 +49,10 @@ export const projects: Project[] = [
     slug: "vulnerability-management-program",
     title: "Vulnerability Management Program Implementation",
     role: "Vulnerability Management Analyst",
+    environment: "Lab project",
     tools: ["Tenable", "Azure Cloud Infrastructure", "Azure Virtual Machines", "PowerShell", "Windows Server"],
     summary:
-      "Lab vulnerability management program with policy creation, stakeholder buy-in, authenticated scanning, prioritization, remediation, and verification.",
+      "Windows Server lab covering authenticated Tenable scanning, prioritized remediation, and verification, alongside simulated policy and stakeholder coordination.",
     githubUrl: "https://github.com/bryanpmiller/vulnerability-management-program/blob/main/README.md",
     supportingLinks: [
       {
@@ -63,9 +65,9 @@ export const projects: Project[] = [
       }
     ],
     cardSummary: {
-      problem: "No policy, scan approval, priority model, or verification loop existed.",
+      problem: "A simulated organization needed a scanning, prioritization, and verification process.",
       concepts: "Governance, authenticated scanning, risk prioritization, and validation.",
-      outcome: "Findings fell from 32 to 4, with criticals eliminated."
+      outcome: "Lab findings fell from 32 to 4 across seven scans; critical findings fell from 2 to 0."
     },
     caseStudy: {
       problem:
@@ -75,16 +77,16 @@ export const projects: Project[] = [
         "Simulated stakeholder and server-team meetings to secure buy-in, adjust remediation expectations, and authorize credentialed scanning.",
         "Provisioned an intentionally vulnerable Windows Server environment in Azure and performed authenticated vulnerability scans with Tenable Nessus.",
         "Prioritized remediation work by impact and ease of remediation, including third-party software removal, insecure protocol and cipher hardening, guest account group membership, Windows updates, WinVerifyTrust validation, and outdated software cleanup.",
-        "Packaged remediation scripts and scan reports for remediation teams, then validated each remediation round through follow-up scans."
+        "Prepared remediation scripts and scan reports as part of the simulated team workflow, then checked progress through follow-up scans."
       ],
       evidence: [
-        "The project repository documents policy drafting, stakeholder buy-in, initial scan permission, authenticated scan results, remediation emails, CAB review, and seven scan exports.",
+        "The repository documents policy drafting, mock stakeholder and CAB meetings, scanning permission, remediation communication, and seven scan cycles with reports or screenshots.",
         "The remediation workflow includes generating PowerShell scripts for Wireshark removal, insecure protocol and cipher remediation, guest account cleanup, Windows updates, WinVerifyTrust validation, and outdated software removal or updates.",
         "The supporting CVE remediation mapping repository connects findings to Tenable plugin IDs, CVEs, CVE descriptions, remediation method, and script locations.",
         "The scripts repository provides the remediation scripts referenced by the vulnerability-to-remediation mapping."
       ],
       outcome:
-        "The full remediation cycle reduced total vulnerabilities from 32 to 4 across seven scans. Critical vulnerabilities were eliminated, high vulnerabilities decreased from 12 to 1, and medium vulnerabilities decreased from 17 to 2.",
+        "The Windows Server lab finished with 4 findings, down from 32 across seven scans. Critical findings fell from 2 to 0, high from 12 to 1, and medium from 17 to 2. The high and medium reductions round to 92% and 88%; these are lab scan results, not production-wide risk measurements.",
       lessons: [
         "Vulnerability reduction depends as much on governance and stakeholder coordination as it does on technical scanning.",
         "Authenticated scanning and follow-up validation provide the evidence needed to show whether remediation actually worked.",
@@ -93,11 +95,11 @@ export const projects: Project[] = [
       hiringRelevance:
         "The vulnerability management project shows the ability to turn scan output into prioritized remediation, communicate risk clearly, and validate that fixes reduced exposure.",
       visual: {
-        label: "Full remediation cycle",
+        label: "Windows Server lab remediation cycle",
         stats: [
           {
             label: "32 to 4",
-            value: "Total Vulnerabilities"
+            value: "Lab Findings"
           },
           {
             label: "100%",
@@ -105,11 +107,11 @@ export const projects: Project[] = [
           },
           {
             label: "92%",
-            value: "High Reduction"
+            value: "High Reduction (Rounded)"
           },
           {
             label: "88%",
-            value: "Medium Reduction"
+            value: "Medium Reduction (Rounded)"
           }
         ]
       },
@@ -132,6 +134,7 @@ export const projects: Project[] = [
     slug: "disa-stig-remediation",
     title: "DISA STIG Remediation Project",
     role: "Security Analyst / Technical Compliance Analyst",
+    environment: "Lab project",
     tools: ["PowerShell", "DISA STIG", "Custom DISA STIG GPT", "Windows 11", "Windows Registry", "auditpol", "gpupdate"],
     summary:
       "PowerShell remediation scripts with screenshot validation for selected Windows 11 DISA STIG findings in a lab environment.",
@@ -155,7 +158,7 @@ export const projects: Project[] = [
       problem:
         "Selected Windows 11 DISA STIG findings required configuration changes and validation evidence showing failed, remediated, and passed states.",
       approach: [
-        "Built one PowerShell remediation script per selected STIG ID.",
+        "Used a custom GPT to help generate STIG-specific PowerShell scripts, then tested selected changes and checked the resulting configuration.",
         "Used registry policy keys for Windows security configuration controls.",
         "Used auditpol for audit-policy remediation where the STIG control required audit settings.",
         "Included verification commands in scripts to confirm configured values.",
@@ -181,7 +184,7 @@ export const projects: Project[] = [
         stats: [
           {
             label: "11",
-            value: "STIGS Remediated"
+            value: "Indexed STIG Controls"
           },
           {
             label: "Fail / Fix / Pass",
@@ -211,9 +214,10 @@ export const projects: Project[] = [
     slug: "password-spray-threat-hunt",
     title: "Password Spray Threat Hunt: RDP Compromise Investigation",
     role: "SecOps Analyst / SOC Analyst / Threat Detection Analyst",
+    environment: "Cyber-range investigation",
     tools: ["MDE Advanced Hunting", "Microsoft Sentinel", "Microsoft Defender for Endpoint", "SIEM", "KQL", "MITRE ATT&CK"],
     summary:
-      "Microsoft Defender and Sentinel-style threat hunt that reconstructs a cyber-range Windows VM compromise from password-spray RDP access through execution, persistence, evasion, C2, and attempted exfiltration.",
+      "Cyber-range investigation using Microsoft Defender for Endpoint and KQL to trace RDP access, execution, persistence, defense evasion, command-and-control activity, and attempted exfiltration.",
     githubUrl: "https://github.com/bryanpmiller/password-spray-threat-hunt/blob/main/README.md",
     supportingLinks: [
       {
@@ -222,8 +226,8 @@ export const projects: Project[] = [
       }
     ],
     cardSummary: {
-      problem: "RDP access after password spraying needed full endpoint pivots.",
-      concepts: "RDP logon analysis, KQL pivots, ATT&CK mapping, and exfil review.",
+      problem: "Suspicious RDP access in a cyber range required investigation across endpoint telemetry.",
+      concepts: "RDP logon analysis, KQL pivots, ATT&CK mapping, and exfiltration evidence review.",
       outcome: "The report reconstructs the attack path and attempted exfiltration."
     },
     caseStudy: {
@@ -244,7 +248,7 @@ export const projects: Project[] = [
         "The repository supports attempted exfiltration, not confirmed successful data theft."
       ],
       outcome:
-        "The investigation reconstructs a complete cyber-range attack chain and preserves reproducible KQL for major findings, including an attempted exfiltration path. It does not claim real-world containment or confirmed data theft.",
+        "The investigation reconstructs the observed cyber-range attack chain and preserves reproducible KQL for major findings, including an attempted exfiltration path. It does not claim real-world containment or confirmed data theft.",
       lessons: [
         "Successful RDP logons can become the pivot point for a full endpoint investigation.",
         "Process, registry, file, identity, and network telemetry need to be correlated to build a reliable attack timeline.",
@@ -269,7 +273,7 @@ export const projects: Project[] = [
           },
           {
             label: "Attempted",
-            value: "Exfil Status"
+            value: "Exfiltration Status"
           }
         ]
       },
@@ -292,6 +296,7 @@ export const projects: Project[] = [
     slug: "akira-ransomware-threat-hunt",
     title: "The Buyer / Akira Ransomware Threat Hunt",
     role: "Threat Hunter / SecOps Analyst",
+    environment: "Cyber-range investigation",
     tools: ["MDE Advanced Hunting", "Microsoft Sentinel", "Microsoft Defender for Endpoint", "SIEM", "KQL", "MITRE ATT&CK"],
     summary:
       "Cyber-range Akira ransomware hunt using Microsoft Defender telemetry to reconstruct remote access, staging, lateral movement, defense evasion, data staging, and impact artifacts.",
@@ -303,13 +308,13 @@ export const projects: Project[] = [
       }
     ],
     cardSummary: {
-      problem: "Akira activity needed host scoping, timeline rebuild, and gap review.",
+      problem: "A cyber-range ransomware scenario required host scoping, timeline analysis, and detection-gap review.",
       concepts: "Ransomware timeline, remote access triage, tampering, and impact.",
-      outcome: "Affected hosts, IOC timing, and detections are documented."
+      outcome: "Two affected lab hosts, investigation findings, and detection recommendations are documented."
     },
     caseStudy: {
       problem:
-        "The investigation needed to determine how a ransomware event unfolded across AS-PC2 and AS-SRV, identify supporting evidence, map observed behavior to ATT&CK, and document detection gaps.",
+        "This cyber-range investigation examined ransomware-related activity across AS-PC2 and AS-SRV, linked findings to telemetry, mapped observed behavior to ATT&CK, and documented detection gaps.",
       approach: [
         "Scoped the hunt to Microsoft Defender Advanced Hunting tables covering process, file, network, registry, logon, and device events.",
         "Used Akira ransom-note and .akira file artifacts to anchor the impact phase.",
@@ -326,7 +331,7 @@ export const projects: Project[] = [
         "The report supports data staging through exfil_data.zip but does not claim confirmed successful exfiltration."
       ],
       outcome:
-        "The report confirmed AS-PC2 and AS-SRV as affected hosts, documented a timeline from first known IOC on January 27, 2026 at 19:13:11 UTC through last known IOC on January 28, 2026 at 04:43:30 UTC, and identified detection recommendations for remote access misuse, Defender tampering, tool transfer, archive creation, shadow copy deletion, and privileged activity correlation.",
+        "The cyber-range report identified AS-PC2 and AS-SRV as affected hosts and documented activity on January 27–28, 2026. It connects remote access, Defender tampering, tool transfer, data staging, and recovery-inhibition artifacts to detection recommendations. Data staging is supported; successful exfiltration and real-world containment are not claimed.",
       lessons: [
         "Ransomware investigations require correlating impact artifacts with earlier remote access, staging, discovery, and defense evasion activity.",
         "MDE telemetry can support a timeline across process, file, registry, network, and logon evidence.",
@@ -347,11 +352,11 @@ export const projects: Project[] = [
           },
           {
             label: "Jan 27, 2026",
-            value: "First Known IOC"
+            value: "Documented Activity"
           },
           {
             label: "Jan 28, 2026",
-            value: "Last Known IOC"
+            value: "Documented Activity"
           }
         ]
       },

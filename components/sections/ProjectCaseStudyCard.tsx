@@ -57,6 +57,7 @@ function ToolList({ tools }: { tools: string[] }) {
 
 export function ProjectCaseStudyCard({ project, order, variant = "compact" }: ProjectCaseStudyCardProps) {
   const isExpanded = variant === "expanded";
+  const ProjectHeading = isExpanded ? "h2" : "h3";
 
   return (
     <Card
@@ -80,9 +81,10 @@ export function ProjectCaseStudyCard({ project, order, variant = "compact" }: Pr
                   {String(order).padStart(2, "0")}
                 </span>
               ) : null}
-              <p className="eyebrow-text">{project.role}</p>
+              <p className="eyebrow-text">{project.environment}</p>
             </div>
-            <h3 className="panel-title mt-3">{project.title}</h3>
+            <ProjectHeading className="panel-title mt-3">{project.title}</ProjectHeading>
+            <p className="compact-copy mt-2">Role alignment: {project.role}</p>
             <p className="supporting-copy mt-3 max-w-3xl">{project.summary}</p>
           </div>
           <div className="grid gap-3 sm:flex sm:flex-wrap lg:justify-end">
@@ -110,7 +112,7 @@ export function ProjectCaseStudyCard({ project, order, variant = "compact" }: Pr
               isExpanded ? "bg-surfaceElevated/75 p-4 sm:p-5" : "bg-surfaceElevated/65 px-4 py-3"
             )}
           >
-            <p className="eyebrow-text text-[0.62rem]">Hiring relevance</p>
+            <p className="eyebrow-text text-[0.62rem]">Skills demonstrated</p>
             <p className={cn("compact-copy max-w-4xl", isExpanded ? "mt-2" : "mt-1.5")}>{project.caseStudy.hiringRelevance}</p>
           </div>
         ) : null}

@@ -1,218 +1,47 @@
-# 06 — Content and Copy
+# Current content and copy guidance
 
-This document owns copy direction, approved wording, and wording to avoid.
+## Current scope correction — 2026-09-21
 
-`README.md` remains the source of truth. If this file conflicts with `README.md`, follow `README.md` and update this file.
+User excluded the resume page from this branch. Resume-page edits, shared resume/skills-data edits, and public PDF replacements/additions have been withdrawn relative to the branch base. The separate updates/resumepage branch and original resumes remain untouched. About/home content now uses experience.ts and portfolio-skills.ts; resume-specific profile fields and sitemap date retain base values. General navigation and sitewide branding remain reworded. The earlier resume implementation/validation details below are historical, not current deliverables. Added redacted PDF copies were moved outside the repository to C:/Users/pcgam/AppData/Local/Temp/rewording-withdrawn-resumes for recovery. Coordinator owns the two new data files and consumer import changes. Lint/build passed after isolation; no deployment, merge or push performed.
 
-## Copy Objective
+Updated for the user-approved rewording pass, September 2026. This replaces previous copy prescriptions; historical redesign logs remain a record of earlier decisions, not instructions to restore outdated wording.
 
-Make the site sound professional, human, specific, and credible.
+## Positioning
 
-The copy should not sound like generic cybersecurity marketing or AI-generated portfolio text.
+Role line: **Cybersecurity, Systems Security & Operations**.
 
-## Tone
+The site connects professional systems support and operational leadership with evidence-backed cybersecurity practice. Describe the background confidently and precisely; avoid both enterprise-expert claims and apologetic career-transition language.
 
-Use:
+## Experience boundaries
 
-- Direct
-- Practical
-- Grounded
-- Specific
-- Confident
-- Honest
-- Measured
-- Recruiter-friendly
+- UTB Ventures, March 2015–January 2026: professional facility networking, IP camera maintenance, connectivity/device-access troubleshooting, vendors, clients, and facility operations.
+- USMC, September 2009–December 2012: professional NCO leadership/training of 3–8 Marines, communications and targeting systems, accountability, and data verification.
+- Log(N) Pacific, January 2026–Present: Cybersecurity Support Analyst Intern in a cyber range / simulated enterprise environment.
+- All four current case studies are lab projects or cyber-range investigations. Keep the environment visible on preview cards and full pages. Role alignment is not an employment title held for the project.
 
-Avoid:
+## Claims and metrics
 
-- Overly dramatic
-- Apologetic
-- Generic
-- Buzzword-heavy
-- Hacker-themed
-- Fake military/cyber hero language
-- Unsupported senior-level claims
+- Windows Server lab: 32 findings to 4 across seven scan cycles; critical 2→0, high 12→1, medium 17→2. High/medium percentages are rounded to 92%/88%.
+- Never relabel these scan findings as production-wide risk reduction or enterprise impact.
+- Azure NSGs and host firewalls were configured to restrict inbound exposure in the cyber range. Do not restore the unqualified 100% RDP reduction claim.
+- DISA STIG: selected Windows 11 controls, indexed scripts, and verification evidence. Eleven indexed controls is not full system compliance. Preserve the unresolved control note and AI-assisted script provenance.
+- Password Spray: attempted exfiltration; Akira: data staging. Do not imply confirmed successful data theft, real-world containment, or deployed detections when only recommendations are supported.
+- Preserve technical evidence paths and the four project names. Use Microsoft Defender for Endpoint, Microsoft Sentinel, and KQL accurately; avoid vague “Sentinel-style” phrasing.
 
-## Approved Positioning
+## Shared copy and presentation
 
-Preferred positioning direction:
+Use shared profile/resume/skills/project data to keep the homepage, About, Resume, Skills, and metadata consistent. Skills cover SecOps/threat detection, vulnerability management, hardening/technical compliance, PowerShell, systems/network support, and operational leadership, with context in each group.
 
-> Cybersecurity analyst focused on reducing operational risk.
+Preserve the current design. Small experience sections and three resume choices are approved. Keep headings semantic, text readable, and evidence CTAs descriptive.
 
-Supporting direction:
+## Public resumes
 
-> I work across vulnerability management, secure configuration, PowerShell remediation, and security investigations — translating technical findings into measurable improvements.
+General CTAs say “View Resumes” or “Resumes” and lead to `/resume`. Each variant has accessible Open PDF and Download actions. Public copies remove the phone number from underlying content and preserve remaining words, embedded font appearance, and links. Keep originals untouched. The legacy PDF URL remains a redacted Vulnerability Management alias.
 
-## Approved Work Areas
+## Review checklist
 
-- Vulnerability management
-- Secure configuration
-- DISA STIG remediation
-- PowerShell automation
-- Tenable-based assessment
-- Microsoft Defender investigations
-- Sentinel/KQL-style analysis
-- Threat hunting
-- Incident response fundamentals
-- RDP-related brute-force attempt reduction
-- NSG and firewall controls
-- Practical risk reduction
-
-## Wording To Avoid
-
-Avoid phrases like:
-
-- Securing the digital frontier
-- Access granted
-- Welcome to my cyber domain
-- Elite hacker
-- Digital warrior
-- Cyber ninja
-- Passionate about protecting the digital world
-- Cutting-edge cyber defense
-- Next-generation security professional
-- Advanced threat expert
-- Battle-tested cyber operator
-- Matrix-inspired anything
-- Terminal-inspired intro copy
-
-## Hero Copy Options
-
-Codex may refine these, but should preserve the grounded tone.
-
-### Option A
-
-Headline:
-
-> Cybersecurity analyst focused on reducing operational risk.
-
-Supporting copy:
-
-> I work across vulnerability management, secure configuration, PowerShell remediation, and security investigations — translating technical findings into measurable improvements.
-
-### Option B
-
-Headline:
-
-> Practical security work, measured by risk reduction.
-
-Supporting copy:
-
-> My work focuses on vulnerability management, Windows hardening, remediation automation, and investigation workflows using tools like Tenable, PowerShell, Microsoft Defender, and KQL.
-
-### Option C
-
-Headline:
-
-> Security analyst building practical risk-reduction workflows.
-
-Supporting copy:
-
-> I use vulnerability data, secure configuration guidance, automation, and investigation techniques to help reduce exposure and improve operational security.
-
-## Metrics Copy Direction
-
-Preferred:
-
-> In my current security internship, I supported vulnerability management and remediation work that reduced critical server findings by 100%, high findings by 92%, and medium findings by 88%.
-
-Avoid:
-
-> I single-handedly eliminated enterprise cyber risk.
-
-Avoid exaggerating ownership beyond what the actual work supports.
-
-## Project Summary Patterns
-
-Use this pattern:
-
-```text
-[Action taken] through [tools/process], resulting in [measurable or practical outcome].
-```
-
-Examples:
-
-> Reduced critical server vulnerabilities by 100% through Tenable-based assessment, PowerShell remediation, and secure configuration review.
-
-> Investigated suspicious RDP activity by correlating logon, process, and network evidence to document likely compromise behavior.
-
-> Automated Windows security configuration checks and remediation steps using PowerShell to support repeatable hardening work.
-
-## Hiring Relevance Copy Direction
-
-Hiring relevance should explain what each project demonstrates about the work, not tell recruiters or hiring managers what their teams need.
-
-Prefer varied proof-focused phrasing:
-
-> The ransomware hunt demonstrates the ability to reconstruct ransomware activity from telemetry, preserve a defensible timeline, and turn observed behavior into detection opportunities.
-
-Avoid repetitive or recruiter-explaining phrasing:
-
-> Security teams need analysts who can...
-
-## Background Copy Direction
-
-The background should connect:
-
-- USMC experience
-- Operational leadership
-- Cybersecurity training
-- Current security internship
-- Practical security work
-
-Avoid making the transition sound apologetic.
-
-Preferred framing:
-
-> My Marine Corps fire direction control experience was built around pressure, precision, and accountability. I led small teams, trained Marines on required systems and operating procedures, and learned how much outcomes depend on accurate data.
-
-## Approved Final Copy
-
-Codex should fill this in as sections are finalized.
-
-### Hero
-
-Headline:
-
-> Vulnerability Management & Security Analyst
-
-Supporting copy:
-
-> Cybersecurity analyst focused on reducing operational risk. I work across vulnerability management, secure configuration, PowerShell remediation, and security investigations, translating technical findings into measurable improvements.
-
-### Proof Section
-
-> In my current security internship, I supported vulnerability management and remediation work that reduced critical server findings by 100%, high findings by 92%, and medium findings by 88%.
->
-> Inbound NSG and firewall controls were applied to restrict RDP exposure, reducing observed RDP-related brute-force attempts by 100%.
-
-### Featured Case Study
-
-> 
-
-### Skills
-
-> Skills used across vulnerability management, Windows hardening, PowerShell remediation, and security investigations.
->
-> Keep the public-facing label as Skills. Group the skills by work area and use concise tools/methods text rather than long badge lists.
-
-### Background
-
-> My Marine Corps fire direction control experience was built around pressure, precision, and accountability. I led small teams, trained Marines on required systems and operating procedures, and learned how much outcomes depend on accurate data. I bring that same mindset to vulnerability management, secure configuration, remediation scripting, and security investigation.
->
-> Supporting points should connect Marine Corps fire direction control, small-team leadership, systems training, cybersecurity education, Security+, current vulnerability management and SecOps internship work, PowerShell remediation, Defender detections, Sentinel dashboards, and measured risk reduction without overexplaining the career transition.
-
-### Contact CTA
-
-> 
-
-## Copy Review Checklist
-
-- [ ] Copy is specific
-- [ ] Copy is honest
-- [ ] Copy avoids generic cybersecurity slogans
-- [ ] Copy avoids hacker language
-- [ ] Copy does not exaggerate experience
-- [ ] Metrics are accurately represented
-- [ ] Project summaries include practical evidence
-- [ ] Tone is professional and recruiter-friendly
+- Professional and simulated experience are clearly distinguished.
+- Every metric retains environment, scope, and source.
+- Metadata matches visible text and route purpose.
+- No unsupported job seniority, employer, certification, compliance, or outcome claims.
+- Mobile wrapping, keyboard focus, evidence links, and all public PDFs are checked.

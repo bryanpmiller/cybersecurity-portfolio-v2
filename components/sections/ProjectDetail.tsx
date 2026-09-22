@@ -39,7 +39,7 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
   return (
     <PageContainer>
       <Reveal>
-        <SectionHeader eyebrow="Project case study" title={project.title} description={project.summary} />
+        <SectionHeader eyebrow={project.environment} title={project.title} description={project.summary} />
       </Reveal>
 
       <div className="mt-8 grid min-w-0 gap-6 sm:mt-10 lg:grid-cols-[minmax(0,1fr)_22rem] lg:items-start">
@@ -57,7 +57,7 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
 
             {caseStudy ? (
               <section className="mt-8 max-w-3xl border-t border-line pt-8">
-                <h2 className="panel-title">Hiring relevance</h2>
+                <h2 className="panel-title">Skills demonstrated</h2>
                 <p className="body-copy mt-4 break-words [overflow-wrap:anywhere]">{caseStudy.hiringRelevance}</p>
               </section>
             ) : null}
@@ -68,8 +68,8 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
                 Full technical write-up available
               </p>
               <p className="compact-copy mt-3">
-                This portfolio page summarizes the project for hiring review. Use the Evidence Links section to read
-                the full technical write-up and review the supporting project artifacts.
+                This page summarizes the scope, approach, and findings. Follow the evidence links for the full technical
+                write-up, queries, scripts, and supporting artifacts.
               </p>
             </div>
 
@@ -95,7 +95,8 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
                 </section>
 
                 <section className="max-w-3xl border-t border-line pt-8">
-                  <h2 className="panel-title">Environment / Tools</h2>
+                  <h2 className="panel-title">Environment & tools</h2>
+                  <p className="body-copy mt-3">{project.environment}</p>
                   <div className="mt-4 flex flex-wrap gap-2">
                     {project.tools.map((tool) => (
                       <ToolTag key={tool}>{tool}</ToolTag>

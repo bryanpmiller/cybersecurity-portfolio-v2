@@ -13,19 +13,19 @@ import { getOrderedCaseStudyProjects } from "@/lib/data/projects";
 
 const backgroundPoints = [
   {
-    label: "Operations foundation",
+    label: "Professional systems support",
     value:
-      "Marine Corps Fire Direction Control built experience performing under pressure, ensuring data accuracy, leading small teams, and training Marines on required systems."
+      "At UTB Ventures, I installed and maintained facility networking and IP cameras, resolved connectivity issues, and coordinated vendors and client needs."
   },
   {
-    label: "Cybersecurity preparation",
+    label: "Leadership and accountability",
     value:
-      "Norwich University cybersecurity coursework, CompTIA Security+, and current internship work support the technical foundation behind the portfolio."
+      "As a Marine Corps NCO, I led and trained teams of 3–8 Marines and used verification procedures while operating communications and targeting systems."
   },
   {
-    label: "Current security work",
+    label: "Cybersecurity education and practice",
     value:
-      "Internship work includes vulnerability scanning and reporting, risk prioritization, DISA STIG reviews, PowerShell remediation, Defender detections, Sentinel workbooks, and NSG/firewall controls."
+      "Building on my B.S. in Cybersecurity and Security+, I continue studying and practicing in the Log(N) Pacific cyber range beyond my degree curriculum. This ongoing work covers vulnerability management, PowerShell hardening, Defender/KQL investigations, and Azure access controls."
   }
 ];
 
@@ -39,10 +39,10 @@ export default function Home() {
       <section className="mt-14 min-w-0 scroll-mt-24 sm:mt-16" id="proof">
         <Reveal>
           <SectionHeader
-            description="Resume-backed outcomes presented with short context, exact numbers, and clear technical scope."
+            description="Lab findings, configuration work, and links to the evidence behind the results."
             eyebrow="Evidence"
             level="h2"
-            title="Measured security outcomes"
+            title="Lab results and security practice"
           />
         </Reveal>
         <VulnerabilityReductionProof />
@@ -52,10 +52,10 @@ export default function Home() {
       <section className="mt-14 min-w-0 scroll-mt-24 sm:mt-16" id="featured-case-studies">
         <Reveal>
           <SectionHeader
-            description="Evidence-backed project previews with role context, outcomes, tools, and direct links to the full writeups."
+            description="Four lab and cyber-range case studies with environment context, findings, tools, and links to full technical write-ups."
             eyebrow="Featured Case Studies"
             level="h2"
-            title="Security work presented as case studies"
+            title="Investigations and remediation, documented"
           />
         </Reveal>
         <div className="mt-8 grid min-w-0 gap-5">
@@ -74,10 +74,10 @@ export default function Home() {
       <section className="mt-14 min-w-0 scroll-mt-24 sm:mt-16" id="background">
         <Reveal>
           <SectionHeader
-            description="Marine Corps fire direction control, cybersecurity training, and current internship work inform a practical, evidence-first approach to security."
+            description="Professional systems support and operational leadership provide the foundation for my cybersecurity practice."
             eyebrow="Background"
             level="h2"
-            title="Background built around practical security work"
+            title="From operational systems to security analysis"
           />
         </Reveal>
         <Reveal delay={0.06} y={12}>
@@ -85,10 +85,10 @@ export default function Home() {
             <div className="min-w-0">
               <p className="eyebrow-text">Professional foundation</p>
               <p className="body-copy mt-3 max-w-2xl">
-                My Marine Corps Fire Direction Control experience was built around pressure, precision, and
-                accountability. Additionally, I led small teams, trained Marines on required systems and operating procedures, and
-                learned how much outcomes depend on accurate data. I bring that same mindset to vulnerability
-                management, secure configuration, remediation scripting, and security investigation.
+                My professional background combines facility networking and operations at UTB Ventures with
+                Marine Corps fire direction control and small-team leadership. Both required reliable systems,
+                accurate information, and clear communication. I apply those habits in cybersecurity labs:
+                understand the finding, make a controlled change, verify the result, and document the evidence.
               </p>
             </div>
 
@@ -111,12 +111,12 @@ export default function Home() {
               <p className="eyebrow-text">Contact</p>
               <h2 className="section-title mt-3">Review the work or start a conversation.</h2>
               <p className="body-copy mt-3 max-w-2xl">
-                The case studies, resume, and GitHub repositories are organized so hiring teams can quickly validate the work behind the metrics.
+                Explore the project evidence and role-specific resumes, or contact me about cybersecurity, security operations, and systems support opportunities.
               </p>
             </div>
             <div className="grid gap-3 sm:flex sm:flex-wrap md:justify-end">
               <Button href="/projects" variant="secondary">
-                View work
+                View case studies
               </Button>
               <Button href="/contact">
                 Contact
