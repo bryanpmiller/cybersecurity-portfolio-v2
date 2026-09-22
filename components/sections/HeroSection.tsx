@@ -9,22 +9,22 @@ import { profile } from "@/lib/data/profile";
 
 const heroProofPoints = [
   {
-    label: "Risk reduction",
-    value: "Reduced critical server vulnerabilities by 100% and high findings by 92%."
+    label: "Vulnerability management lab",
+    value: "Reduced Windows Server lab findings from 32 to 4 across seven scan cycles."
   },
   {
     label: "Remediation workflow",
-    value: "Built PowerShell-based remediation and validation workflows for Windows security findings."
+    value: "Developed and tested PowerShell workflows for selected Windows lab findings, with verification checks."
   },
   {
     label: "Security investigations",
-    value: "Documented Defender, Sentinel-style KQL, and threat-hunting investigations with evidence trails."
+    value: "Used Defender and KQL to reconstruct cyber-range activity and document findings, gaps, and detection opportunities."
   }
 ];
 
 const proofItems = [
   "CompTIA Security+",
-  "B.S. Cybersecurity | Vulnerability Management"
+  "B.S. Cybersecurity · Summa Cum Laude"
 ];
 
 export function HeroSection() {
@@ -89,9 +89,9 @@ export function HeroSection() {
         <Card as="aside" className="p-5 sm:p-6" variant="evidence">
           <div className="border-b border-line pb-5">
             <p className="eyebrow-text">Portfolio Evidence</p>
-            <h2 className="panel-title mt-2">Work tied to measurable security outcomes</h2>
+            <h2 className="panel-title mt-2">Security practice with traceable evidence</h2>
             <p className="compact-copy mt-3">
-              Case studies show how findings were prioritized, remediated, validated, and documented across lab security work.
+              Explore lab remediation results and cyber-range investigations through scan comparisons, scripts, queries, and technical write-ups.
             </p>
           </div>
 
@@ -107,7 +107,7 @@ export function HeroSection() {
           <div className="mt-5 rounded-md border border-lineStrong/25 bg-surfaceElevated/80 p-4">
             <p className="eyebrow-text text-[0.62rem]">Primary tools</p>
             <p className="compact-copy mt-2">
-              Tenable, PowerShell, DISA STIG, Microsoft Defender, Sentinel-style KQL, and Windows security telemetry.
+              Tenable/Nessus, PowerShell, Microsoft Defender for Endpoint, Microsoft Sentinel, and KQL.
             </p>
           </div>
         </Card>

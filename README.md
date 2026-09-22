@@ -1,218 +1,62 @@
 # Bryan Miller Cybersecurity Portfolio
 
-[![DevSecOps Portfolio Pipeline](https://github.com/bryanpmiller/cybersecurity-portfolio-v2/actions/workflows/security-pipeline.yml/badge.svg)](https://github.com/bryanpmiller/cybersecurity-portfolio-v2/actions/workflows/security-pipeline.yml)
+[![Portfolio Security Checks](https://github.com/bryanpmiller/cybersecurity-portfolio-v2/actions/workflows/security-pipeline.yml/badge.svg)](https://github.com/bryanpmiller/cybersecurity-portfolio-v2/actions/workflows/security-pipeline.yml)
 
-A professional cybersecurity portfolio website for Bryan Miller, built to showcase hands-on work in vulnerability management, remediation automation, secure configuration, threat hunting, and security operations.
+An evidence-first portfolio covering cybersecurity, systems security, and operations. It connects Bryan Miller’s professional facility networking and operational leadership with cybersecurity education, lab remediation, and cyber-range investigations.
 
-The site is designed for cybersecurity hiring managers and recruiters evaluating candidates for roles such as Vulnerability Management Analyst, Cybersecurity Analyst, SecOps Analyst, SOC Analyst, and Technical GRC / STIG Compliance Analyst.
+## Experience and evidence
 
+- **Professional experience:** facility networking, IP camera maintenance, connectivity troubleshooting, and operations at UTB Ventures; Marine Corps communications/targeting systems, verification procedures, and small-team leadership.
+- **Cybersecurity practice:** Log(N) Pacific’s simulated enterprise cyber range; vulnerability management, PowerShell remediation, hardening, and Defender/KQL investigations.
+- **Case studies:** Vulnerability Management Program Implementation, DISA STIG Remediation, Password Spray/RDP Investigation, and The Buyer/Akira Ransomware Hunt. Project role labels describe alignment, not employment.
+- **Measured results:** Windows Server lab findings decreased from 32 to 4 across seven scan cycles. Severity reductions are tied to that lab and its evidence. Access-control practice is described without an unsupported RDP reduction percentage.
 
+The site supports recruiting for vulnerability management, SOC/SecOps, security analysis, systems/IT support, and security configuration or compliance support.
 
-## Purpose
+## Pages
 
-This project has two main goals:
+Fourteen public HTML routes: Home, About, Resumes, Projects, Skills, Contact, four case-study pages, and four resume-view pages. Project routes and order remain stable. The public origin is `https://bryanpmiller.com`.
 
-1. Provide a clean, professional portfolio site for resume and job applications.
-2. Demonstrate the ability to plan, build, document, and deploy a modern technical project using secure and maintainable practices.
+The resume page and PDF assets are excluded from this branch's edits. The merged `updates/resumepage` redesign, featured overall resume and tailored options are included unchanged from current `main` (52c1de7). General resume links lead to `/resume`.
 
-## Target Roles
+Reworded About/home experience and skills data live in `lib/data/experience.ts` and `lib/data/portfolio-skills.ts`, separate from the unchanged resume dependencies.
 
-The portfolio is built around the following role targets:
+## Implementation
 
-- Vulnerability Management Analyst
-- Cybersecurity Analyst / Security Analyst
-- SecOps Analyst
-- SOC / Threat Detection Analyst
-- Technical GRC / STIG Compliance Analyst
+Next.js App Router, React, TypeScript, Tailwind CSS, and Framer Motion. Copy is stored primarily in `lib/data`, with page-specific text in `app` and shared sections in `components`. The existing light-first palette, self-hosted fonts, editorial case studies, and responsive components are retained.
 
-## Featured Work
+Metadata uses the Next.js Metadata API and one production origin. Robots and sitemap use framework-native route handlers. The site has no login, database, or contact form; contact uses email and professional profile links. The GitHub workflow runs Semgrep and TruffleHog checks.
 
-The website highlights selected cybersecurity projects, including:
-
-- Vulnerability Management Program Implementation
-- DISA STIG Remediation with PowerShell
-- Password Spray Threat Hunt: RDP Compromise Investigation
-- Akira Ransomware Threat Hunt
-
-Each project page is structured as a case study with:
-
-- Role demonstrated
-- Tools used
-- Problem statement
-- Technical approach
-- Evidence and artifacts
-- Outcome
-- GitHub project links
-
-## Tech Stack
-
-Current stack:
-
-- Next.js App Router
-- TypeScript
-- Tailwind CSS
-- React
-- Structured TypeScript content
-- `next/font` typography
-- Static-first content and Git-based deployment
-
-## Current Site Pages
-
-- `/` Home
-- `/about` About
-- `/resume` Web resume and PDF download
-- `/projects` Project index
-- `/projects/vulnerability-management-program`
-- `/projects/disa-stig-remediation`
-- `/projects/password-spray-threat-hunt`
-- `/projects/akira-ransomware-threat-hunt`
-- `/skills`
-- `/contact`
-
-## Key Features
-
-- Professional dark cybersecurity theme
-- Premium typography using Space Grotesk, Inter, and JetBrains Mono
-- Reusable card variants for default, metric, project, terminal, evidence, and glass panels
-- Dashboard-style homepage hero and risk reduction metrics
-- Project-specific visual previews instead of generic placeholder graphics
-- Responsive design
-- Resume page with downloadable PDF
-- Project case study pages
-- Skills grouped by cybersecurity role relevance
-- External links to GitHub and LinkedIn
-- SEO metadata
-- Security-conscious configuration
-- No unnecessary backend or user data collection
-
-## Project Structure
-
-Current structure:
-
-```text
-app/
-  about/
-  contact/
-  projects/
-    akira-ransomware-threat-hunt/
-    disa-stig-remediation/
-    password-spray-threat-hunt/
-    vulnerability-management-program/
-  resume/
-  skills/
-components/
-  layout/
-  sections/
-  ui/
-lib/
-  data/
-docs/
-public/
-```
-
-Content is primarily stored in structured TypeScript data under `lib/data`, while page and section presentation lives under `app` and `components`.
-
-## Local Development
-
-Install the required dependencies:
+## Local development and checks
 
 ```bash
-npm install
-```
-
-Run the local development server:
-
-```bash
+npm ci
 npm run dev
-```
-
-The local development server binds to `127.0.0.1` so it is available only from the local machine. Do not use `npm run dev` for production hosting.
-
-Build the site for production:
-
-```bash
+npm run lint
+npx tsc --noEmit
 npm run build
-```
-
-Start the production server after a build:
-
-```bash
 npm run start
 ```
 
-Run linting checks:
+Development binds to `127.0.0.1`. To review a production build on a specific local port:
 
 ```bash
-npm run lint
+node node_modules/next/dist/bin/next start --hostname 127.0.0.1 --port 3100
 ```
 
-Note: `next/font/google` fetches font metadata during production builds. In network-restricted sandboxes this may fail even when local development works normally. On a normal development machine or hosting provider with network access, the configured fonts should build correctly.
+Fonts are served locally from `public/fonts`; production builds do not require Google Fonts downloads. There is no dedicated test script; verify rendered routes, metadata, navigation, responsive layouts, and resume downloads alongside lint, types, and build.
 
-## Render Deployment
+## Content maintenance
 
-If deployed to Render as a Web Service, use:
+Use the current resume variants and linked project artifacts as factual sources. Distinguish professional employment from labs and simulated environments. Preserve evidence limitations, scoped metrics, and script provenance. Do not invent employers, clients, certifications, production outcomes, or successful exfiltration.
 
-- Build Command: `npm run build`
-- Start Command: `npm run start`
+For PDF updates, redact the underlying content rather than covering text with a rectangle. Check extracted text, metadata, annotations, links, rendering, and original-file hashes before making a public copy available.
 
-Do not configure Render to use `npm run dev`; it is for local development only.
-
-## Security and Privacy Notes
-
-This portfolio is designed as a static-first site.
-
-- No login system
-- No database
-- No contact form in version 1
-- No stored visitor data
-- No secrets committed to the repository
-- External links should use safe attributes
-- Security headers should be configured where supported by the hosting provider
-
-## Development Approach
-
-This project may use an AI-assisted development workflow with OpenAI Codex.
-
-Codex is used to help scaffold, build, review, and improve the website. All major architecture, content, security decisions, and final review remain human-directed.
-
-Development expectations:
-
-- Keep code readable and maintainable
-- Use reusable components
-- Avoid unnecessary dependencies
-- Keep dependencies minimal and avoid unnecessary backend features
-- Do not invent project claims or resume metrics
-- Run lint and build checks before considering work complete
-- Keep the site professional, evidence-based, and hiring-focused
-
-## Status
-
-Version 1 is focused on building and polishing the core portfolio experience:
-
-- Professional homepage
-- Resume page
-- Project index
-- Individual project case studies
-- Skills page
-- Contact links
-- Recruiter-friendly dark design system
-- Evidence-focused project presentation
-
-Future improvements may include:
-
-- Short technical writeups
-- Additional project pages
-- Accessibility improvements
-- Responsive navigation menu
-- Expanded deployment documentation
-- Additional security header documentation
-- Light/dark theme toggle
+Current rewrite tracking and validation are under `docs/seo`; copy guidance is in `docs/redesign/06_CONTENT_AND_COPY.md`. Historical redesign logs remain for context. Review changes locally before any separately authorized push, PR, merge, or deployment.
 
 ## Author
 
-Bryan Miller  
-Cybersecurity Analyst focused on vulnerability management, secure configuration, remediation automation, and threat hunting.
+Bryan Miller · Cybersecurity, Systems Security & Operations
 
-- GitHub: https://github.com/bryanpmiller
-- LinkedIn: https://linkedin.com/in/bryan-p-miller
-
+- [GitHub](https://github.com/bryanpmiller)
+- [LinkedIn](https://linkedin.com/in/bryan-p-miller)

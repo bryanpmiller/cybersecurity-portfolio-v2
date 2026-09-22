@@ -6,7 +6,7 @@ import { createPageMetadata } from "@/lib/metadata";
 
 export const metadata = createPageMetadata(
   "Skills",
-  "Cybersecurity skills across vulnerability management, Windows hardening, PowerShell remediation, and security investigations.",
+  "Bryan Miller’s skills in vulnerability management, SecOps labs, PowerShell hardening, professional network support, and operational leadership.",
   "/skills"
 );
 
@@ -16,8 +16,8 @@ export default function SkillsPage() {
       <Reveal>
         <SectionHeader
           eyebrow="Skills"
-          title="Security skills"
-          description="Skills used across vulnerability management, Windows hardening, PowerShell remediation, and security investigations."
+          title="Security, systems, and operational skills"
+          description="Lab and cyber-range practice in security analysis and hardening, supported by professional networking, troubleshooting, and team leadership."
         />
       </Reveal>
       <Reveal delay={0.06}>

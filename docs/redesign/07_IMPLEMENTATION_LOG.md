@@ -8,6 +8,14 @@ Codex must update this file after each phase.
 
 ## Current Working Summary
 
+### September 2026 — approved portfolio rewording
+
+Implemented on `updates/rewording` from local main `02bbbe3`. Broadened positioning, added professional UTB/USMC context, separated simulated cybersecurity experience, scoped lab metrics, and updated shared project/copy/metadata surfaces. Added three public resume variants with permanent phone redaction and retained the legacy PDF alias. Original resume hashes are unchanged; body appearance and remaining links are preserved.
+
+Existing layout tokens and project routes/order remain intact. Only restrained experience grouping, resume selection, environment labels, and heading semantics changed. Current validation and changed-file ownership are recorded in `docs/seo/STATE.md` and `docs/seo/IMPLEMENTATION-REPORT.md`. User diff review is the next action; no push, PR, merge, or deployment.
+
+The entries below preserve the prior redesign's history.
+
 - Current phase: Phase 13 - Final Review
 - Current status: Complete
 - Last completed phase: Phase 13 - Final Review

@@ -1,19 +1,21 @@
 import type { LucideIcon } from "lucide-react";
-import { Activity, ClipboardCheck, ShieldCheck, Wrench } from "lucide-react";
+import { Activity, ClipboardCheck, Network, ShieldCheck, Users, Wrench } from "lucide-react";
 import { Card } from "@/components/ui/Card";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionHeader } from "@/components/ui/SectionHeader";
-import { skillGroups } from "@/lib/data/skills";
+import { skillGroups } from "@/lib/data/portfolio-skills";
 
 type SkillsOverviewProps = {
   showHeader?: boolean;
 };
 
 const categoryIcons: Record<string, LucideIcon> = {
-  "Automation / Scripting": Wrench,
-  "Hardening & Compliance": ClipboardCheck,
-  "Security Operations & Investigation": Activity,
-  "Vulnerability Management": Activity
+  "PowerShell Automation": Wrench,
+  "Hardening & Technical Compliance": ClipboardCheck,
+  "Security Operations & Threat Detection": Activity,
+  "Vulnerability Management": Activity,
+  "Systems & Network Support": Network,
+  "Operational Leadership": Users
 };
 
 export function SkillsOverview({ showHeader = true }: SkillsOverviewProps) {
@@ -24,10 +26,10 @@ export function SkillsOverview({ showHeader = true }: SkillsOverviewProps) {
       {showHeader ? (
         <Reveal>
           <SectionHeader
-            description="Skills used across vulnerability management, Windows hardening, PowerShell remediation, and security investigations."
+            description="Security capabilities practiced in labs and cyber ranges, alongside professional systems support and operational leadership."
             eyebrow="Skills"
             level="h2"
-            title="Security skills"
+            title="Security, systems, and operational skills"
           />
         </Reveal>
       ) : null}

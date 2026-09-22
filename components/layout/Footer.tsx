@@ -17,7 +17,7 @@ export function Footer() {
               LinkedIn
             </a>
             <a className="text-link inline-flex min-h-10 items-center px-1" href={profile.resumePageUrl}>
-              View Resumes
+              Resumes
             </a>
           </nav>
         </div>

@@ -10,7 +10,7 @@ import { createPageMetadata } from "@/lib/metadata";
 
 export const metadata = createPageMetadata(
   "Projects",
-  "Evidence-based cybersecurity case studies covering vulnerability management, DISA STIG remediation, password spray investigation, and ransomware threat hunting.",
+  "Cybersecurity lab and cyber-range case studies: vulnerability management, PowerShell STIG remediation, password spray analysis, and ransomware investigation.",
   "/projects"
 );
 
@@ -23,7 +23,7 @@ export default function ProjectsPage() {
         <SectionHeader
           eyebrow="Projects"
           title="Security case studies with GitHub evidence"
-          description="A curated review path for vulnerability management, secure configuration, remediation automation, and threat hunting work backed by case-study notes and source evidence."
+          description="Lab and cyber-range work in vulnerability management, secure configuration, PowerShell automation, and threat investigation. Each case study links its findings to source evidence."
         />
       </Reveal>
       <Reveal delay={0.06}>
@@ -36,8 +36,8 @@ export default function ProjectsPage() {
             <p className="eyebrow-text">Project review path</p>
             <h2 className="panel-title mt-3">Start with the outcome, then drill into evidence.</h2>
             <p className="body-copy mt-3 max-w-2xl">
-              Each project is structured so the problem, result, tools, and repository evidence are clear beforing
-              opening the full case study.
+              Review the environment, problem, and findings, then follow the scan reports, scripts, queries, and
+              screenshots in the full technical write-up. Role alignment describes the skills practiced in each project.
             </p>
           </div>
           <nav aria-label="Project case studies" className="grid min-w-0 gap-2">
@@ -51,7 +51,7 @@ export default function ProjectsPage() {
                 <span className="min-w-0">
                   <span className="line-clamp-1 text-sm font-semibold leading-5 text-ink">{project.title}</span>
                   <span className="line-clamp-1 text-xs font-semibold uppercase tracking-[0.1em] text-slate-400">
-                    {project.role}
+                    {project.environment}
                   </span>
                 </span>
                 <ArrowUpRight

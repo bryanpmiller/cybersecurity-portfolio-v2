@@ -1,12 +1,11 @@
 export const profile = {
   name: "Bryan Miller",
-  title: "Vulnerability Management & Security Analyst",
-  headline:
-    "Cybersecurity analyst focused on reducing operational risk.",
+  title: "Cybersecurity, Systems Security & Operations",
+  headline: "Cybersecurity lab practice grounded in professional systems support and operational leadership.",
   positioning:
-    "Cybersecurity analyst focused on reducing operational risk. I work across vulnerability management, secure configuration, PowerShell remediation, and security investigations, translating technical findings into measurable improvements.",
+    "I’m a Security+ certified cybersecurity graduate and U.S. Marine Corps veteran with professional experience in facility networking, troubleshooting, and operations. My lab and cyber-range work covers vulnerability management, threat investigation, Windows hardening, and PowerShell remediation.",
   professionalSummary:
-    "My strongest fit is vulnerability management, security operations, threat detection, and technical compliance. This portfolio organizes the evidence: scanning, reporting, remediation automation, secure configuration, threat hunting, and validation.",
+    "I connect practical systems experience with evidence-based security work. At UTB Ventures, I maintained facility networking and IP cameras while coordinating daily operations. In the Log(N) Pacific cyber range, I practice scanning, remediation, and investigation in a simulated enterprise environment. This portfolio keeps those settings clear and links technical claims to project evidence.",
   resumeSnapshot:
     "Resume-backed qualifications, technical focus areas, and measurable security work. Open the full resume in the browser or download the PDF.",
   email: "bryan.p.miller7@gmail.com",
@@ -19,11 +18,9 @@ export const profile = {
 
 export const targetRoles = [
   "Vulnerability Management Analyst",
-  "Cybersecurity Analyst",
-  "Security Analyst",
-  "SecOps Analyst",
-  "SOC Analyst",
+  "Cybersecurity / Security Analyst",
+  "SOC / SecOps Analyst",
   "Threat Detection Analyst",
-  "Technical GRC Analyst",
-  "STIG Compliance Analyst"
+  "Systems / IT Support",
+  "Security Configuration & Compliance Support"
 ];

@@ -2,6 +2,12 @@
 
 Created: 2026-06-25
 
+## Current direction — approved rewording, September 2026
+
+The user approved a site-wide copy refresh on `updates/rewording`, retaining the existing design. Current positioning is **Cybersecurity, Systems Security & Operations**. Separate professional UTB/USMC experience from Log(N) Pacific's simulated enterprise cyber range and all lab case studies. Present three site-only phone-redacted resume variants; preserve originals. The old 100% RDP reduction promotion is retired; vulnerability percentages remain explicitly scoped to the Windows Server lab.
+
+`06_CONTENT_AND_COPY.md` contains current wording rules. Earlier phase summaries below are historical and do not override this approved direction. Implementation and fresh validation are tracked in `../seo/STATE.md`; final user diff review is pending. No publication or merge is authorized.
+
 This README is the controlling source of truth for the portfolio redesign.
 
 Codex must read this file before making any redesign decisions or code changes.
@@ -82,17 +88,19 @@ Avoid:
 
 ## Professional Positioning
 
-The site should position me as a cybersecurity analyst focused on:
+The site connects professional systems support and operational leadership with cybersecurity lab practice in:
 
 - Vulnerability management
 - Secure configuration
 - DISA STIG remediation
 - PowerShell automation
 - Microsoft Defender investigations
-- Sentinel/KQL-style analysis
+- Microsoft Sentinel and KQL analysis
 - Threat hunting
 - Incident response fundamentals
-- Practical risk reduction
+- Evidence-based remediation and validation
+- Professional facility networking and troubleshooting
+- Operational coordination and small-team leadership
 
 ## Preserve
 
@@ -248,12 +256,12 @@ Avoid terminal/hacker language.
 
 Keep metrics, but present them as executive proof points, not gamified dashboard stats.
 
-Metrics to preserve:
+Lab metrics to preserve with environment and scope:
 
 - 100% critical vulnerability reduction
 - 92% high vulnerability reduction
 - 88% medium vulnerability reduction
-- 100% RDP-related brute-force attempt reduction
+- Azure NSG and host firewall configuration is described without a reduction percentage.
 
 ### Phase 6 — Featured Case Study
 

@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 const navItems = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
-  { href: "/resume", label: "Resume" },
+  { href: "/resume", label: "Resumes" },
   { href: "/projects", label: "Projects" },
   { href: "/skills", label: "Skills" },
   { href: "/contact", label: "Contact" }
@@ -36,7 +36,7 @@ export function Navbar() {
             </span>
           </Link>
           <a
-            aria-label="View DevSecOps, Semgrep SAST, and TruffleHog secret scanning evidence"
+            aria-label="View this portfolio’s Semgrep and TruffleHog security checks"
             className="mt-1 hidden rounded sm:inline-flex"
             href={securityPipelineUrl}
             rel="noreferrer"
@@ -44,7 +44,7 @@ export function Navbar() {
           >
             {/* eslint-disable-next-line @next/next/no-img-element -- External SVG status badge should render directly. */}
             <img
-              alt="DevSecOps build status"
+              alt="Portfolio security workflow status"
               className="h-4 w-auto"
               loading="lazy"
               src={`${securityPipelineUrl}/badge.svg`}

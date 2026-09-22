@@ -1,119 +1,95 @@
-# SEO State
+# Portfolio rewrite / SEO state
 
-## GitHub handoff — 2026-09-16
+## Commit handoff — 2026-09-22
 
-- User explicitly authorized committing and pushing `updates/resumepage`. This supersedes the earlier no-push status for this branch only; no merge into main or deployment is requested.
-- Final pre-commit lint, TypeScript and diff checks passed; prior final production build, browser checks and independent review remain applicable to unchanged application files.
-- Branch retains the requested local-main base `02bbbe3`; original rewording checkout and main are preserved. Exact resume implementation/data/assets and coordination documentation are included in the commit.
+User authorized committing the reviewed changes locally and preparing for merge. Base remains current origin/main 52c1de7; resume pages/data/PDFs remain unchanged against that base. Rewording and dependency remediation are the commit scope. Earlier uncommitted-state statements below describe prior checkpoints. No push, PR creation, merge into main or deployment is authorized by this handoff. Retain the recovery stash. Final checks and commit identifier are reported in the task handoff.
 
-## Main resume addition — 2026-09-16
+## Current integration state — 2026-09-21
 
-- User authorized a fourth, prominently featured main resume. Root additionally owns `public/resume/bryanpmiller_resume.pdf`; existing owned selector/data/sitemap/header behavior and documentation cover this extension.
-- Feature main resume in a full-width navy panel above the three role cards. Central registry includes `/resume/main`, automatically supplying static parameters, metadata, sitemap and PDF SAMEORIGIN exception. Preserve supplied PDF unchanged. Remove the blanket claim that every resume explicitly distinguishes training context, because the supplied main PDF uses different wording.
-- Validation: lint, production build, TypeScript and diff checks passed. `/resume/main` generated; served main PDF is 200 application/pdf with SAMEORIGIN and SHA-256 `9417756E5571F4234B372075B37BC774B691AF7D5BEB41A8CA75AE18E3637973`, identical to supplied source. Sitemap includes all four resume detail routes. Chrome screenshots at 1440px and 390px confirm featured panel hierarchy and no horizontal overflow; main CTA navigates to the correctly labeled preview/download view. Original three role cards remain below the featured panel.
+User authorized bringing latest main into updates/rewording locally. Branch fast-forwarded to 52c1de7 (merged resume redesign), then uncommitted rewording/security changes reapplied. Recovery snapshot retained in Git stash, named "Safety snapshot: rewording before integrating main 52c1de7". Shared links, sitemap and lockfile reconciled. Resume route sources, lib/data/resume.ts, lib/data/skills.ts, all PDF assets, Button and next.config.ts match origin/main exactly. The current site has 14 public pages including /resume/main, /resume/soc, /resume/vulnerability and /resume/it-support; all 14 remain in the sitemap. Lint, build, TypeScript and audits pass; independent integration verification PASS. All 28 rendered route/viewport checks passed (14 routes at 1440px and 390px): metadata, headings, internal links/fragments, image loading and overflow. Keyboard skip focus and final console check passed. All four resume PDFs return 200 application/pdf with SAMEORIGIN. Evidence: combined-browser-audit.json in the existing local review scratch directory. Historical scope/base/count statements below are superseded by this section. No new commit, push, PR, deployment or merge into main; changes remain uncommitted on updates/rewording.
 
-## Resume selector implementation — 2026-09-13
+## Current scope correction — 2026-09-21
 
-- Coordinator/implementation owner: root. Active task: user-approved three-option resume selector plan (takes precedence over the broader SEO kit rollout).
-- Worktree: `E:/Code/Security/Portfolios/cybersecurity-portfolio-v2-resumepage`, branch `updates/resumepage`, created from local `main` at `02bbbe3`. Original `updates/rewording` checkout is untouched.
-- Baseline: clean tracked state; `npm ci`, lint and production build passed. Local production sweep of all 10 existing content routes returned 200, one H1 and route-specific titles/canonicals; nonexistent route returned 404. Existing SEO metadata and robots are present. New selector/detail routes and assets are missing; PDF embedding is currently blocked by global X-Frame-Options DENY.
-- Decision gate: production origin `https://bryanpmiller.com` from `lib/metadata.ts`; all existing public routes plus the three finite resume detail pages are indexable; unknown variants return 404. Preserve Next App Router metadata helper, robots and sitemap conventions. No unrelated SEO/content migration.
-- Exact root ownership: `app/resume/page.tsx`, `app/resume/[variant]/page.tsx`, `app/sitemap.ts`, `lib/data/resume.ts`, `lib/data/profile.ts`, `components/ui/Button.tsx`, `components/sections/HeroSection.tsx`, `app/contact/page.tsx`, `components/layout/Footer.tsx`, `next.config.ts`, `public/resume/Bryan_Miller_soc.pdf`, `public/resume/Bryan_Miller_vulnerability.pdf`, `public/resume/Bryan_Miller_it_support.pdf`, `docs/seo/STATE.md`, `docs/seo/ROUTES.md`. Verification evidence/scripts live in ignored `.next/resume-qa/`.
-- Decisions: use confirmed local Portfolio_Design_Concept.html Resume design; use supplied OneDrive PDFs byte-for-byte; preserve old PDF asset/link; scope SAMEORIGIN response header overrides to the three new PDFs. Extend shared Button with native download support. No new package dependencies.
-- Scope classification: existing framework SEO done at source/baseline route level; three-option selector missing; independent final verification pending. Broad whole-site content rewriting and full SEO-kit activation are n/a for this explicitly scoped feature request; the untouched template ledger below is not a claim that this feature performs that separate project.
-- Feature status: done, verified 2026-09-16. Next action: user review of local preview at `http://127.0.0.1:3075/resume`; commit/integration and publishing remain separate actions.
-- Implementation: selector and three static detail views, unchanged PDF copies, native download support, selector entry links, metadata/sitemap, PDF-only SAMEORIGIN headers, and explicit shared button focus outline/reduced-motion transitions. Only owned files changed; legacy PDF preserved.
-- Command evidence: final `npm run lint`, `npm run build`, `npx tsc --noEmit`, and `git diff --check` passed. Build generated all three resume variants. Final served sweep at port 3075: 13/13 public pages 200 with one H1; unknown variant 404.
-- Independent verifier: `/root/resume_review` PASS for source/served routes and final Button delta. Verified unique titles/descriptions, production canonicals/social metadata, sitemap/robots, 19 successful internal targets, unknown variant noindex, application/pdf responses, narrow SAMEORIGIN overrides, unchanged legacy PDF, and all three source SHA-256 matches. Verifier independently ran lint/type/diff checks.
-- Browser evidence: Chrome through chrome-devtools-axi; selector at 1440, 768, 390 and 320px without horizontal overflow; three desktop columns and stacked smaller layouts. Desktop/mobile PDF preview renders. Selector/detail/back navigation and keyboard Enter work. All three downloaded PDFs match supplied originals; Open PDF creates a separate tab. Final keyboard focus computes to a navy 2px solid outline with 4px offset. Resume content has no entrance animations; buttons honor reduced motion.
-- Limitations: browser engine coverage is Chrome with mobile viewport emulation, not physical iOS/Safari. Browser-native PDF controls vary; persistent external open/download actions provide a fallback. Chrome batch runner has a Windows ESM-path error; individual commands worked. The PDF viewer emitted a browser-extension form-field issue, not a site form error. No deployment/push/merge/PR or PDF edits occurred.
+User excluded the resume page from this branch. Resume-page edits, shared resume/skills-data edits, and public PDF replacements/additions have been withdrawn relative to the branch base. The separate updates/resumepage branch and original resumes remain untouched. About/home content now uses experience.ts and portfolio-skills.ts; resume-specific profile fields and sitemap date retain base values. General navigation and sitewide branding remain reworded. The earlier resume implementation/validation details below are historical, not current deliverables. Added redacted PDF copies were moved outside the repository to C:/Users/pcgam/AppData/Local/Temp/rewording-withdrawn-resumes for recovery. Coordinator owns the two new data files and consumer import changes. Lint/build passed after isolation; no deployment, merge or push performed.
 
-This is the only coordination ledger. Keep it short and current; put route detail in `docs/seo/ROUTES.md`. Replace bracketed fields when discovered. Allowed work-item statuses: `done`, `partial`, `missing`, `incorrect`, `n/a`, `blocked`. Use `blocked` only after safe in-scope discovery cannot resolve a required dependency and a matching row in Blockers names the needed action and owner.
+## Authorized dependency follow-up — 2026-09-21
 
-## Resume header
+User approved local dependency remediation after reviewing the Render audit. Coordinator additionally owns package.json, package-lock.json and generated next-env.d.ts compatibility change, plus updates to the three closeout reports. Existing rewrite content preserved. Next.js 16.3.5 and patched transitives are installed/locked. Full and production-only audits: zero vulnerabilities. Lint, types, build, lockfile dry-run and standard git diff --check passed. Fresh independent dependency review PASS. All ten routes passed rendered DOM checks at 1440px and 390px (20 combinations); keyboard skip focus works and final console is clear. Screenshot helper failed to report a saved path, so no new screenshot review is claimed. September 16 results below are historical; the previous nine-advisory limitation is resolved locally, not on Render. No commit, push, PR, merge or deployment occurred. Next action: user review before any release.
 
-- Updated (UTC): `[not recorded]`
-- Coordinator: `[unassigned]`
-- Target repository root: `[not recorded]`
-- SEO docs path: `docs/seo/`
-- Branch / commit: `[not recorded]`
-- Initial dirty-worktree summary: `[not inspected]`
-- Phase: `baseline`
-- Active task: `docs/seo/tasks/00-baseline.md`
-- Next action: `Run the baseline brief; make no application changes.`
+- Updated: 2026-09-16 UTC
+- Coordinator: Codex; independent verifier: verify_rewrite (read-only)
+- Repository: E:/Code/Security/Portfolios/cybersecurity-portfolio-v2
+- Branch: updates/rewording; base/local HEAD: 02bbbe36988dcda7f49b2f899117594ac4c5545b (main)
+- Initial worktree: clean. Current worktree: approved uncommitted rewrite only.
+- Phase: closeout; active brief: docs/seo/tasks/50-closeout.md
+- Next action: Bryan reviews the local diff and public resume choices; no publishing action is authorized.
 
 ## Gates
 
-| Gate | Status | Required evidence / blocker |
+| Gate | Status | Evidence |
 |---|---|---|
-| Installation reconciled | missing | Existing instructions, kit, SEO, and worktree inspected |
-| Baseline complete | missing | Full route and current-behavior inventory |
-| Decision gate | missing | Origin, indexable routes, native strategy, disjoint ownership not yet confirmed |
-| Implementation complete | missing | Not started; requires gap-only changes and owner evidence |
-| Independent verification | missing | Not started; requires fresh whole-site rendered and command evidence |
-| Closeout | missing | Not started; requires acceptance reconciliation and limitations |
+| Installation reconciled | done | AGENTS, kit, existing SEO and initial worktree reviewed |
+| Baseline complete | done | Ten page sources, supporting project evidence and resume sources reviewed before edits |
+| Decision gate | done | User approved implementation plan; scope and ownership below |
+| Implementation complete | done | IMPLEMENTATION-REPORT.md and current diff |
+| Independent verification | done | Fresh verifier PASS: built HTML, facts, links, PDF text/pixels/metadata, source hashes |
+| Closeout | done | ROUTES.md and all three reports reconciled with worktree |
 
-## Environment facts
+## Environment and decisions
 
-| Fact | Value | Status | Evidence |
+Next.js 16.2.6 App Router; npm and existing lockfile. Production origin https://bryanpmiller.com. Retain ten static indexable pages, native errors, Metadata API, shared canonical/social helper, robots and sitemap handlers. No new structured data or routes. Approved rewrite supersedes historical copy-preservation guidance. Design and evidence URLs preserved. No unrelated changes from codex/seo-workkit incorporated.
+
+Installed dependencies were restored to main's existing lockfile using npm ci --ignore-scripts. No package/lockfile or generated next-env.d.ts change remains. No dedicated test or SEO script exists.
+
+## Ownership and changes
+
+Coordinator owns all following paths, with serialized writes and no parallel application writers:
+
+- `lib/data/profile.ts`, `lib/data/resume.ts`, `lib/data/skills.ts`, `lib/data/projects.ts`, `lib/metadata.ts`.
+- `app/page.tsx`, `app/about/page.tsx`, `app/resume/page.tsx`, `app/skills/page.tsx`, `app/contact/page.tsx`, `app/projects/page.tsx`, `app/sitemap.ts`.
+- `components/sections/HeroSection.tsx`, `components/sections/VulnerabilityReductionProof.tsx`, `components/sections/NetworkSecurityProof.tsx`, `components/sections/SkillsOverview.tsx`, `components/sections/ProjectCaseStudyCard.tsx`, `components/sections/ProjectDetail.tsx`, `components/layout/Navbar.tsx`, `components/layout/Footer.tsx`.
+- `public/resume/Bryan_Miller_vulnerability_public.pdf`, `public/resume/Bryan_Miller_soc_public.pdf`, `public/resume/Bryan_Miller_it_support_public.pdf`, `public/resume/bryanpmiller_resume_public.pdf`.
+- `README.md`, `docs/redesign/README.md`, `docs/redesign/06_CONTENT_AND_COPY.md`, `docs/redesign/07_IMPLEMENTATION_LOG.md`, `docs/seo/STATE.md`, `docs/seo/ROUTES.md`, `docs/seo/IMPLEMENTATION-REPORT.md`, `docs/seo/INTERNAL-LINK-REPORT.md`, `docs/seo/PR-DESCRIPTION.md`.
+
+Verifier is read-only. Scratch scripts and screenshots remain outside the repository. Changes and purpose are grouped in IMPLEMENTATION-REPORT.md.
+
+## Acceptance
+
+| ID | Status | Evidence | Owner |
 |---|---|---|---|
-| Framework / version | `[not discovered]` | missing | |
-| Package manager | `[not discovered]` | missing | |
-| Build / lint / test / type commands | `[not discovered]` | missing | |
-| Production origin | `[not discovered]` | missing | |
-| Indexable route rule | `[not decided]` | missing | |
-| Framework-native SEO strategy | `[not decided]` | missing | |
-
-## Acceptance status
-
-Criteria are immutable in `docs/seo/ACCEPTANCE.md`. Evidence references point to `docs/seo/ROUTES.md`, Validation rows, generated reports, or exact repository artifacts.
-
-| ID | Status | Evidence reference | Owner |
-|---|---|---|---|
-| SEO-01 | missing | | coordinator |
-| SEO-02 | missing | | baseline |
-| SEO-03 | missing | | technical |
-| SEO-04 | missing | | technical |
-| SEO-05 | missing | | unassigned |
-| SEO-06 | missing | | content |
-| SEO-07 | missing | | links-media |
-| SEO-08 | missing | | links-media |
-| SEO-09 | missing | | links-media |
-| SEO-10 | missing | | verifier |
-| SEO-11 | missing | | coordinator |
-
-## Decisions
-
-| ID | Decision | Evidence / rationale | Status | Owner |
-|---|---|---|---|---|
-| D-001 | Indexable-route policy | | missing | coordinator |
-| D-002 | Framework-native SEO strategy | | missing | coordinator |
-
-## Ownership
-
-No agent may write until its exact paths are listed and overlaps are resolved.
-
-| Task / scope | Exact owned paths | Owner | Status | Overlap check |
-|---|---|---|---|---|
-| Baseline documentation | `docs/seo/STATE.md`; `docs/seo/ROUTES.md` | coordinator | missing | serialized shared files |
-
-## Changes
-
-| Path | Owner | Purpose | Status |
-|---|---|---|---|
+| SEO-01 | done | Initial clean state; final diff restricted to owned paths | coordinator |
+| SEO-02 | done | ROUTES.md: ten pages, discovery endpoints, query/redirect/error policy | coordinator |
+| SEO-03 | done | Rendered metadata on all ten pages, distinct titles/descriptions and correct canonical/social fields | verifier/coordinator |
+| SEO-04 | done | sitemap.xml has ten canonical URLs; robots.txt has correct production sitemap | verifier/coordinator |
+| SEO-05 | done | One H1 per page, no heading skips; schema n/a because none exists or was added | verifier/coordinator |
+| SEO-06 | done | Resume/project evidence cross-check; professional and lab contexts explicit | verifier |
+| SEO-07 | done | INTERNAL-LINK-REPORT.md; no broken/orphan page or invalid fragment | coordinator |
+| SEO-08 | done | No broken images; unchanged asset treatment reviewed; PDF privacy checks passed | verifier/coordinator |
+| SEO-09 | done | 20 rendered route/viewport checks; screenshots and keyboard skip/focus check | coordinator |
+| SEO-10 | done | Validation below; no application quality-check failure | verifier/coordinator |
+| SEO-11 | done | No secrets/unrelated files; no commit/push/PR/deploy/merge/search action | coordinator |
 
 ## Validation
 
-| UTC | Command / inspection | Scope | Exit | Result | Pre-existing? | Corrective owner |
-|---|---|---|---:|---|---|---|
+All checks ran 2026-09-16 UTC against this rewrite. Documentation-only closeout edits followed application validation.
 
-## Blockers
+| Command / inspection | Exit / outcome |
+|---|---|
+| npm run lint | 0 |
+| npx tsc --noEmit | 0 |
+| npm run build | 0; ten public pages |
+| git diff --check | 0 |
+| Browser route sweep, 1440px and 390px | 20 passed; metadata, headings, links, images, overflow |
+| External HTTP links | 13 of 13 returned 200 |
+| PDF verification | Three public variants and legacy alias; no phone content; originals unchanged |
+| Fresh independent verifier | PASS |
 
-| ID | Dependency | Affected item / criterion | Needed action / fact | Owner | Status |
-|---|---|---|---|---|---|
+Evidence files and before/after source hashes: IMPLEMENTATION-REPORT.md. Local detailed audit JSON/screenshots are outside the repository in the documented temporary review directory.
 
-Leave this table empty until a required dependency remains unresolved after safe in-scope discovery. Then add a named row before setting any affected item to `blocked`.
+## Blockers and limitations
 
-## Handoff note
+No unresolved rewrite blocker. Existing dependency audit reports nine advisories (one low, one moderate, six high, one critical); maintainer should triage separately. Native 404 retains pre-existing dual robots output with restrictive noindex. Targeted browser checks are not an exhaustive accessibility/security/performance audit. No production deployment/cache validation was performed.
 
-`[No implementation handoff yet. Resume from Next action.]`
+## Handoff
+
+Checked updates/rewording at the main base above with uncommitted owned changes. Independent verification PASS; lint, types, build, rendered route/link and PDF checks passed. Reports: IMPLEMENTATION-REPORT.md, INTERNAL-LINK-REPORT.md, PR-DESCRIPTION.md (draft only); route metadata in ROUTES.md. Original resumes unchanged. No publishing or merge occurred. Safe next step: user diff review. Any later deployment requires separate authorization and live PDF/cache verification by the maintainer.

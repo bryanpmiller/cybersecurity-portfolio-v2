@@ -10,7 +10,7 @@ import { SectionHeader } from "@/components/ui/SectionHeader";
 import { profile } from "@/lib/data/profile";
 import { createPageMetadata } from "@/lib/metadata";
 
-export const metadata = createPageMetadata("Contact", "Contact links for Bryan Miller, including direct email, LinkedIn, GitHub, and resume access.", "/contact");
+export const metadata = createPageMetadata("Contact", "Contact Bryan Miller about cybersecurity, security operations, or systems support opportunities. Find email, LinkedIn, project evidence, and role-specific resumes.", "/contact");
 
 export default function ContactPage() {
   return (
@@ -19,7 +19,7 @@ export default function ContactPage() {
         <SectionHeader
           eyebrow="Contact"
           title="Let's get in touch"
-          description="Email me directly for recruiter conversations, connect through LinkedIn, review my GitHub project evidence, or open my resume."
+          description="Contact me about cybersecurity, security operations, or systems support opportunities. You can also explore my professional background, project evidence, and role-specific resumes."
         />
       </Reveal>
       <section className="mt-8 grid min-w-0 gap-5 sm:mt-10 md:grid-cols-2 xl:grid-cols-4 lg:gap-6">
@@ -75,7 +75,7 @@ export default function ContactPage() {
                 <h2 className="panel-title mt-2">GitHub</h2>
               </div>
             </div>
-            <p className="compact-copy mt-3">Review project repositories for full in depth project write ups and supporting technical evidence.</p>
+            <p className="compact-copy mt-3">Read the full lab and cyber-range write-ups, including queries, remediation scripts, and supporting evidence.</p>
             <div className="mt-auto pt-6">
               <Button external href={profile.githubUrl} icon={<GitHubMarkIcon className="size-4" />} variant="secondary">
                 View GitHub
@@ -90,12 +90,12 @@ export default function ContactPage() {
                 <FileText aria-hidden="true" className="size-5" strokeWidth={1.8} />
               </span>
               <div className="min-w-0">
-                <p className="eyebrow-text text-remediation">Role-specific PDFs</p>
+                <p className="eyebrow-text text-remediation">Role-specific resumes</p>
                 <h2 className="panel-title mt-2">Resumes</h2>
               </div>
             </div>
             <p className="compact-copy mt-5">
-              Choose a resume for SOC analyst, vulnerability management, or IT support roles. View or download the PDF.
+              Choose a PDF focused on vulnerability management, SOC/security operations, or IT support.
             </p>
             <div className="mt-auto pt-6">
               <Button accent="remediation" href={profile.resumePageUrl} icon={<FileText aria-hidden="true" className="size-4" />} variant="secondary">

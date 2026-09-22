@@ -20,7 +20,11 @@ const keywords = [
   "Tenable",
   "PowerShell remediation",
   "DISA STIG",
-  "Azure network security"
+  "Azure network security",
+  "systems security",
+  "IT support",
+  "network troubleshooting",
+  "operational leadership"
 ];
 
 const robots: Metadata["robots"] = {
